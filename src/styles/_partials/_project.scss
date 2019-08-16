@@ -1,0 +1,71 @@
+@import "./_base.scss";
+#projects {
+width:75%;
+    padding:1.5rem;
+    margin: 2rem 12.5%;
+    background: $gradient0;
+    border: 3rem double $gray1;
+    border-radius:10px;
+    overflow: hidden;
+    display:flex;
+    flex-basis: border-box;
+    h1{
+        font-size: 6rem;
+        font-family:$style-font;
+        text-align: center;
+        color:$white;
+        margin-bottom:0 !important;
+    }
+    h3{
+        a{
+            color:$gray1;
+            text-decoration:none;
+            font-family:$style-font;
+            font-size:3rem;
+
+    }
+        a:hover{
+            background: $header-background ;
+            color:$gray3 !important;
+        }
+    }
+    p{
+        font-size: 0.8rem;
+        color:$white;
+margin-bottom: 2rem;
+    }
+    clear: both;
+    @include animate(zoomIn, 3s, 20, 1 );
+    @include for-size(tablet-landscape-down) {
+        width: 100% !important;
+    }
+    p{
+        margin-right:5%;
+        margin-left:5%;
+
+
+    }
+    section{
+        box-sizing: border-box;
+width:90%;
+    }
+
+main{
+    margin-left:10%;
+    float:left;
+    }
+    aside{
+    border-left: 0.5rem $gray1 solid;
+        margin-left:5%;
+        float:right;
+        h4{
+            color:$white;
+            margin-left: 5%;
+        }
+        p{
+            font-size: 0.8rem !important;
+        }
+    }
+
+}
+

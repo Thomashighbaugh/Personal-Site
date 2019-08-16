@@ -1,0 +1,15 @@
+@import "./_base.scss";
+h1,
+h2 {
+    font-family: $title-font;
+    color: $blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+}

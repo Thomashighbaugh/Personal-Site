@@ -1,0 +1,101 @@
+@import "./_base.scss";
+
+
+.grid {
+    display: flex;
+    max-width: #{$grid-width}px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 ($gutter * 2);
+
+    @media (min-width: $mobile-breakpoint) {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    // Grid modifiers
+    &.no--margin {
+        margin: 0 auto;
+    }
+
+    .col {
+        width: $column-width;
+        margin-bottom: 20px;
+        margin-left: $gutter;
+        margin-right: $gutter;
+        min-height: 1px;
+
+        &.v-align {
+            align-self: center;
+        }
+
+        &.fill-height {
+            flex: 1;
+        }
+
+        &.colored {
+            background-color: papayawhip;
+        }
+
+        &.padding {
+            margin-left: initial;
+            margin-right: initial;
+            padding: 20px;
+        }
+    }
+}
+
+@mixin generate-grid() {
+    @for $i from 2 through 6 {
+        $width: ((100% - ($gutter * $i)) / $i) - $gutter;
+        .grid-#{$i} {
+            .col {
+                width: $width * $i + ($gutter * $i * 2) - $gutter * 2;
+
+                @media (min-width: $mobile-breakpoint) {
+                    width: 100% / 2 - $gutter * 2;
+                }
+
+                @media (min-width: $tablet-breakpoint) {
+                    width: $width;
+                }
+
+                &--full {
+                    width: 100% - $gutter * 2;
+                }
+            }
+        }
+    } // End for
+}
+
+@include generate-grid();
+
+
+
+//
+//  Demo css
+img {
+    display: block;
+    width: 100%;
+}
+
+h2, h2, h3,
+p {
+    margin: 0;
+}
+
+.content-box {
+    & > * + * {
+        margin-top: 20px;
+    }
+}
+
+
+    .aboutCard {
+        background: $white !important;
+        width: 100%;
+        margin:5%;
+        display:inline-block;
+    }
+

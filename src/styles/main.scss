@@ -1,0 +1,25 @@
+//First the DOM Reset is Called
+@import "vendor/normalize";
+
+// Modules - Doesn't Cause Outputted CSS
+// Variables - Stores Reused Values
+@import "_modules/variables";
+//Stores Sizing of Viewports for Responsiveness
+@import "_modules/device";
+// Stores Base configurations for consistency
+@import "_modules/extend";
+
+//Partials - Styling By DOM Object
+@import "_partials/_about.scss";
+@import "_partials/_body.scss";
+@import "_partials/_card.scss";
+@import "_partials/_footer.scss";
+@import "_partials/_header.scss";
+@import "_partials/_headings.scss";
+@import "_partials/_home.scss";
+@import "_partials/_links.scss";
+@import "_partials/_nav-btns.scss";
+@import "_partials/_project.scss";
+@import "_partials/_resume.scss";
+
+

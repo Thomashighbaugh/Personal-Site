@@ -5,93 +5,167 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Thomas Leon Highbaugh's Web Development Portfolio
 </h1>
+# Thomas Leon Highbaugh Portfolio
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+> The portfolio site of Thomas Leon Highbaugh built with React, Redux, Webpack and SASS in a structured, modular form.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+This repository serves to host the source code of the developer portfolio of Thomas Leon Highbaugh. The site that is presented here is built primarily with React, thus serving as a living testament to the web development prowess of TLH, and includes functionality from Redux, SASS and WebPack to improve the site's UI and DX (developer experience).
 
-## 🚀 Quick start
+This site replaces TLH's former portfolio, Resurgens, and its associated branding as a means of demonstrating the increasing maturity of TLH as a developer while conforming it more to the traditional portfolio site's standards without compromising in regards to its style.
+![](screen.png)
 
-1.  **Create a Gatsby site.**
+## Table of Contents
+[Introduction](#thomas-leon-highbaugh-portfolio)
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+[Installation](#installation)
+   - [Run Dev Server](#run-dev-server)
+   - [Usage Example](#usage-example)
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+[Technology Stack](#technology-stack)
+ - [Development (Web)](#web-development)
+    - [Webpack](#webpack)   
+    - [React](#react)
+    - [Redux](#redux)
+    - [SASS](#sass)
+        - [Include Media](#include-media)
 
-1.  **Start developing.**
+- [Deployment](#deployment)
+    - [Hosting - Netlify](#hosting---netlify)    
 
-    Navigate into your new site’s directory and start it up.
+[Credits](#credits)
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+--- 
+## Installation
 
-1.  **Open the source code and start editing!**
+To install this site locally, assuming that you mean to adapt it to your own purposes, one simply needs to clone the repository locally and install its dependencies.
 
-    Your site is now running at `http://localhost:8000`!
+```bash
+git clone https://github.com/Thomashighbaugh/thomas-leon-highbaugh-portfolio
+cd thomas-leon-highbaugh-portfolio
+npm install
+```
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+### Run Dev Server
+One perk of using Gatsby instead of the original build's use of React + WebPack is that it includes a baked in _Development Server_ for seeing what your site would look like when hosted. Unlike the Webpack Dev Server without Gatsby, there are several features Gatsby provides that make that part of the process more seamless, such as suggesting alternative ports (instead of exiting with an error code buried in lines of hardly human-readable techno-babble) and greater consistency with what the site will look like in production. 
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+To use the development server simply enter:
 
-## 🧐 What's inside?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+```bash
+yarn develop
+# or 
+npm run develop 
+```
+If all is well, the server will give you a port number off of your local host (8000 by default) to navigate to so you can preview all your changes live. If there is an error that must first be addressed, Gatsby will point to the file and depending on what it is a suggestion or two on addressing that error. 
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+### Usage example
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+This site is being used as a portfolio for the development efforts of TLH for viewing by potential customers and employers of TLH.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+While the intended purpose is rather specific, this site can easily be adapted or used as a sort of extra-stylish boilerplate for your own purposes as well. The code base works with the latest node (no need to set NVM to version 8)
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## Design Considerations
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+### Style 
+The portfolio itself was stylized to capture the professional tone of my work without compromising on the signature flare I bring to my web development projects. The result is a site that is both easy to look at, regardless of outdoor lighting conditions, with the *neon* flare of its predecessors.  
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+### Component Reusibility and Modularity
+Object Orientation is useful to developers for a number of reasons, in writing the three React sites I produced these past few weeks has made it clear to me that it would enable me to reuse my code across projects. Having written React components and JS functions useful to me in making these sites, I have attempted to create reuseable portions of the source code that I could take out of them and use later if they become useful again.  
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+All of these components will (eventually) be available for public use through Bit, freely of course. 
+## Technology Stack
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+### Web Development 
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+#### Gatsby
+The static site generator that enables the generation of sites from React components. It handles the routing of the project's pages, the Webpack related functions and allows for the easy addition of various modules (called plugins) to increase the functionality of the site in various ways. The plugins used here include
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+- gatsby-plugin-sass - enables the use of SASS to style the site 
+- gatsby-plugin-react-helmet - enables modification of the head element on the generated HTML files 
+- gatsby-plugin-manifest 
+- gatsby-transformer-sharp 
+- gatsby-plugin-sharp
+- gatsby-source-filesystem
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+#### React
+The basic underpinnings of this entire effort and its two associated sites was in this JS framework/library. Used primarily for its powerful application and the manner in which it must be structured that provides PHP-like splitting of various functionality into its own file. This makes the process of maintaining and managing the code base far simpler as less time is spent scrolling through unruly JS files.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+The other utility of using React was its application of **JSX** which is a syntax for code that the transpiler will render as HTML that looks and behaves very much like it is (X)HTML, meaning the skills learned earlier as prerequistes for reaching this stage have renewed utility as well as a more comfortable developer experience. 
+#### SASS
+This variant of CSS allows for code structure that is similar to React and makes the code reuseable across projects with less adaptation as many CSS only stylesheets would have to be. It also includes such features as variables and mixins, that make it easier to change aspects of the site quickly and reuse values across the style sheets without need for search-and-replace functions or other refactoring tools that are generally less reliable. 
 
-## 🎓 Learning Gatsby
+### Web Resources 
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+#### GitHub -> GitLab
+The VCS I used was Git, specifically with [GitHub](https://github.com/Thomashighbaugh/thomas-leon-highbaugh-portfolio) being the remote repository I commit to and [GitLab](https://gitlab.com/ThomasLeonHighbaugh/thomas-leon-highbaugh-portfolio) being configured to back up the repository automatically thanks to the latter's suite of useful features for creating pipelines between itself and GitHub. 
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+#### Bit 
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+[Bit.dev](https://bit.dev) allows developers and organizations to create reuseable components out of there React code (or other JS frameworks/libraries) and reuse them in the future. Even without pulling any components from *Bit* I was able to use it to tease out my application logic by examining the pieces while backing them up and correct several issues I noticed in the process that may have lead to unexpected consequences. 
 
-## 💫 Deploy
+#### UI ZOO
+Like Bit, UI ZOO allows for a simple way to get commonly used components for your site without need for rewriting the same components over, only this is not a collection of various developer's work but instead generates the needed code for you using its handy UI. While an NPM package and local environment are available, it is possible to use the website to simply generate the same content and drop it into the site as needed. While more limited in options than Bit, the UI ZOO approach is a more flexible option for speeding up development time 
+### Deployment 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+#### Netlify 
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+> Note I am not paid for these opinions, just impressed with the service
+
+[Netlify](https://netlify.com) is the premier serverless hosting option available to the modern web developer, which I am fiercely loyal to simply because it provides a stable, reliable and featureful alternative to GitHub Pages while being **totally free** while offering **a custom subdomain for each site***. 
+
+Having tried other options that were themselves excellent, I have noticed no slow down or glitching since moving [thomasleonhighbaugh.me](https://thomasleonhighbaugh.me) to 
+Netlify. In fact, they even provided a **free SSL certificate** for the site.  
+
+I actually host copies of my old developer sites, the front pages to various projects and the many, many example sites that I make on Netlify and have never once paid a dime! 
+
+## Credits
+In addition to a hearty "thank you" to those responsible for the above listed technologies, I would also like to credit the following:
+
+### Articles
+
+-   [Front-End Development with JavaScript using Reactjs , Redux , Sass and Webpack](https://itnext.io/front-end-development-with-javascript-using-reactjs-redux-sass-and-webpack-1a2fdd46daba)
+
+-   [Fast and modern front-end setup with webpack, react, redux, router, saga and postcss, part 1](https://itnext.io/fast-and-modern-front-end-setup-with-webpack-react-redux-router-saga-and-postcss-1360e9715d17)
+    
+    [Part 2](https://itnext.io/fast-and-modern-front-end-setup-with-webpack-react-redux-router-saga-and-postcss-part-2-9ae7ad4e7cb2)
+    
+    [Part 3](https://itnext.io/fast-and-modern-front-end-setup-with-webpack-react-redux-router-saga-and-postcss-part-3-27ac4bc3f969)
+
+-   [React, SCSS and Webpack](https://medium.com/@joshuacrass/react-scss-and-webpack-ae9bd84b9e43)
+
+-   [Roll your own tiny React environment using Webpack, Babel, and Sass](https://www.codementor.io/valentinrad/roll-your-own-tiny-react-environment-using-webpack-babel-and-sass-ei70wyhjl)
+
+-   [Creating a Node app with React, Webpack 4, Babel 7, Express and Sass ](https://dev.to/kedar9/creating-a-node-app-with-react-webpack-4-babel-7-express-and-sass-3mae)
+
+- [React : Babel + Webpack + Sass boilerplate application](http://blog.marcnuri.com/react-babel-webpack-sass-application/)
+
+---
+### Boilerplate
+
+Due simply to the unavailablity of any previous project which had enough specific functionality I was looking for when composing this site, 
+I built this site from the Gatsby Basic Starter available when using the Gatsby CLI. 
+
+To obtain your own Gatsby Basic Starter, use the following command 
+
+```bash
+npm i -g gatsby-cli
+gatsby new [name of your project here]
+```
+The starter contains a basic set of files that are sufficient to build a more complex project on top of with a nice 
+selection of features, including helpful error dialog, for a multitude of use cases. If interested in structuring your own 
+project with varying needs from this one, I would reccomend examining Gatsby to make the process of deploying a static (or mostly static) 
+site with the benefits of React and far fewer problems of other tech stacks. 
+
+---
+And a big thank you to my dog tolerating me during the
+process of bringing you this site! 
+
+
+## Meta
+
+Thomas Leon Highbaugh – [Github](https://github.com/Thomashighbaugh) – thighbaugh@zoho.com
+
+Distributed under the MIT license.

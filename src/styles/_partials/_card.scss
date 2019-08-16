@@ -1,0 +1,60 @@
+@import './_base.scss';
+.card-header {
+  color: $gray2;
+}
+.card-footer {
+  color: $gray1;
+}
+.card-title {
+  font-family: $title-font;
+  color: $blue;
+  font-size: 2.3rem;
+  margin-left: 3rem;
+  margin-right: 6rem;
+  width:25%;
+}
+.card {
+  border-top: $gray1 0.5rem solid;
+  border-right: $gray2 1rem solid;
+  border-left: $blue 1rem solid;
+  border-bottom: $blue2 1rem solid;
+  padding: 2rem;
+  justify-content: center;
+  align-content: center;
+
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  background: $header-background;
+  @include for-size(big-desktop) {
+  }
+
+  @include for-size(desktop) {
+  }
+  @include for-size(tablet-landscape) {
+    font-size: 80% !important;
+  }
+  @include for-size(tablet-portrait) {
+    font-size: 75%;
+  }
+  @include for-size(phone-only) {
+  }
+}
+
+.layout-card{
+  border-top: $gray1 0.5rem solid;
+  border-right: $gray2 1rem solid;
+  border-left: $blue 1rem solid;
+  border-bottom: $blue2 1rem solid;
+  padding: 1rem;
+  width: 87%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin: 3rem 1rem;
+
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  background: $header-background;
+
+}

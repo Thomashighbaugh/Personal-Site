@@ -1,0 +1,87 @@
+//Creates templates for consistently used components
+
+@import "variables";
+@import "device";
+
+//Font Templates
+
+%prose {
+    font-family: $font;
+    color: $font-color;
+    background-color: $white;
+}
+
+//Layout Templates
+%section {
+    color: $gray2;
+    overflow: hidden;
+}
+
+
+/*
+* Buttons
+*/
+
+%btn-1 {
+    @extend %prose;
+    letter-spacing: 3px;
+    border: $gray1 solid 0.4rem;
+    padding: 0;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 900 !important;
+    background: linear-gradient(
+        -35deg,
+        #4df 10%,
+        #4df 20%,
+        #68b6e3 35%,
+        #80bdff 45%,
+        #68b6e3 55%,
+        #86cfda 65%,
+        #4df 76%
+    );
+    text-align: center;
+    color: $white !important;
+}
+%btn-2 {
+    border: $gray1 solid 0.4rem;
+    color: $blue;
+    text-decoration: none;
+    text-align: center;
+}
+%btn-3 {
+    border: $gray3 solid 0.4rem;
+    color:$white !important;
+    background: linear-gradient(
+        -35deg,
+        #4df 10%,
+        #4df 20%,
+        #68b6e3 35%,
+        #80bdff 45%,
+        #68b6e3 55%,
+        #86cfda 65%,
+        #4df 76%
+    );
+}
+%title{
+  background:$white;
+  font-size:8rem;
+  width:35%;
+  margin-left:28%;
+  margin-right:25%;
+  font-family:$style-font;
+  @include for-size(desktop){
+    font-size:5rem;
+    width:45%;
+  }
+  @include for-size(tablet-landscape) {
+    font-size:4rem;
+    width:55%;
+  }
+  @include for-size(tablet-portrait) {
+    font-size:65%;
+  }
+  @include for-size(phone-only) {
+    font-size:55%;
+  }
+}

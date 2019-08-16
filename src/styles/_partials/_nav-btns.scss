@@ -1,0 +1,37 @@
+@import "./_base.scss";
+
+.nav-btn {
+    @extend %btn-1;
+    color: $white !important;
+    text-decoration: none !important;
+}
+.nav-btn a:hover {
+    @extend %btn-2;
+}
+.nav-btn a:active {
+    @extend %btn-2;
+}
+.nav-btn a:visited {
+    @extend %btn-1;
+}
+.nav-link {
+    @extend %btn-1;
+    display: inline-block;
+}
+.nav-pills {
+    display: inline-block;
+}
+
+
+#nav0 {
+    background: $gradient1;
+}
+#nav1 {
+    background: $gradient2;
+}
+#nav2 {
+    background: $gradient3;
+}
+#nav3 {
+    background: $gradient4;
+}
