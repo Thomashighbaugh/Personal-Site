@@ -1,7 +1,8 @@
 import React, { Component, PropTypes } from "react";
 import { Button, Card, CardHeader, CardTitle, CardBody, CardSubtitle,  CardFooter, CardText } from 'reactstrap';
 import { Link } from 'gatsby';
-class AboutCard extends Component{
+import SocialIcons from './SocialIcons';
+class SocialCard extends Component{
   constructor(props) {
     super(props);
   }
@@ -10,13 +11,12 @@ class AboutCard extends Component{
     return(
       <Card className="aboutCard">
         <CardHeader>
-          <CardTitle>{cardTitle}</CardTitle>
-          <CardSubtitle>{cardSubtitle}</CardSubtitle>
+          <CardTitle>[social]</CardTitle>
+          <CardSubtitle>use the icons below to check out my social media profiles!</CardSubtitle>
+          <hr />
         </CardHeader>
         <CardBody>
-          <CardText>
-            <br /><p>{cardText}</p>
-          </CardText>
+        <SocialIcons />
         </CardBody>
 
       </Card>
@@ -26,4 +26,4 @@ class AboutCard extends Component{
   }
 
 }
-export default AboutCard;
+export default SocialCard;

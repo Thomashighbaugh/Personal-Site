@@ -1,12 +1,18 @@
+'use strict'
+const siteConfig = require("./config");
 module.exports = {
   siteMetadata: {
-    title: `Gatsby`,
-    description: `An interactive demonstration of the web development and design prowess of Thomas Leon Highbaugh`,
-    author: `Thomas Leon Highbaugh`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: siteConfig.url,
+    description: `An interactive demonstration of the web development, design and software engineer prowess of Thomas Leon Highbaugh`,
+    author: siteConfig.author.name,
+    siteUrl: siteConfig.url,
     social: {
-      twitter: `thomasleonhighbaugh`,
-      linkedIn: `https://linkedin.com/in/thomas-leon-highbaugh`
+      twitter: siteConfig.author.contacts.twitter,
+      linkedIn: siteConfig.author.contacts.linkedin,
+      github: siteConfig.author.contacts.github,
+      gitlab: siteConfig.author.contacts.gitlab,
+      dribbble: siteConfig.author.contacts.dribbble,
+      instagram: siteConfig.author.contacts.instagram,
     },
   },
   plugins: [

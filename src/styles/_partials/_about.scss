@@ -5,13 +5,24 @@
     display: flex;
     max-width: #{$grid-width}px;
     flex-wrap: wrap;
-    flex-direction: row;
+    margin-right:5% !important;
     justify-content: space-between;
-    margin: 0 ($gutter * 2);
 
     @media (min-width: $mobile-breakpoint) {
         flex-direction: row;
         margin: 0 auto;
+    }
+
+    .card{
+        height:75%;
+    }
+    .card-title{
+        font-family: $style-font;
+        font-size:4.5rem;
+        margin-left:0;
+    }
+    .card-subtitle{
+        font-family:$title-font;
     }
 
     // Grid modifiers
@@ -80,14 +91,11 @@ img {
     width: 100%;
 }
 
-h2, h2, h3,
-p {
-    margin: 0;
-}
+
 
 .content-box {
     & > * + * {
-        margin-top: 20px;
+        margin-top: 2rem;
     }
 }
 
@@ -98,4 +106,5 @@ p {
         margin:5%;
         display:inline-block;
     }
+
 

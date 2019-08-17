@@ -22,6 +22,7 @@ const IndexPage = () => (
     <CardTitle>
     [ welcome ]
     </CardTitle>
+
     </CardHeader>
         <CardBody>
       <section>
