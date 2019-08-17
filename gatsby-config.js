@@ -91,17 +91,6 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Lexend Exa`,
-          `Permanent Marker`,
-          `VT323`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
-        ]
-      }
-    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {

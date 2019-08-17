@@ -4,7 +4,6 @@ date: "2019-08-01"
 description: Opitx is a minimal markdown editor that I made so I could save my files where I want to on my local directory. The first effort I have made that employs Electron as well as being the second major React project.
 tags: electron, react, markdown, desktop, packaging, webpack, prismjs
 ---
-# Opitx
 ### Minimal Markdown Editor
 ![Screenshot of Opening Page of Opitx](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/Opitx.png)
 ## Problem
@@ -13,7 +12,7 @@ None of the Markdown Editors had save functions that were simple like other word
 ## Solution 
 An Electron application that uses the system standard menu options, the power of React to create the interface and Prismjs for syntax highlightings and creating the live preview mode. 
 
-### Packages Generated 
+#### Packages Generated 
 To install and use Opitx, which I warn you is still a work in progress but does its primary objective possible, I have packaged it in RPM DEB and APPIMAGE formats. Download the one you want from the Github Repo and BAM!
 
 ## To Do

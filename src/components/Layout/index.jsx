@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       </div>
     </Container>
   )
-}
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

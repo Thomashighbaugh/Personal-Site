@@ -4,14 +4,13 @@ date: '2019-07-05'
 description: BASH-Inception. A script for Ubuntu-based systems that generates installation scripts based on a system's currently installed packages and PPAs.
 tags: bash, linux,
 ---
-# Decommisioner 
 ### BASH-inception
 
 ## The Answer to Package Installation on Virtual Systems 
 
 When provisioning virtual systems, it is often the case that there will be a precise set of packages you wish to install on that virtual system to achieve whatever task it is you are using the system for. Remembering a long list of packages is often rather hard, especially when your primary focus is that task that you are doing with those virtual systems. While Docker images are a possible way around this dilemma, there are times when containers are simply not enough and you need the entire virtualized system, which is why I wrote this script. 
 
-### Other Use Cases
+#### Other Use Cases
 This script is also useful in the situation where I want to install the precise packages that are currently installed on my OS that include some not reflected in my auto-installation programs (or in an Ansible playlist if that is your thing). 
 
 It can also be useful when you achieve that perfect workstation configuration and want a back up for later installation. 

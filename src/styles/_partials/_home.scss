@@ -9,9 +9,7 @@
 #home {
   section {
     @include animate(lightSpeedIn, 1s, 6, 1);
-    //display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 
     .media {
       min-width: 0;
@@ -21,9 +19,9 @@
     img {
       margin-left: 6.5%;
       margin-right: 6.5%;
-      width: 100rem;
+      width: 200rem;
       max-width: 100%;
-      max-height: 1800px;
+      max-height: 2500px;
       object-fit: fill !important;
     }
   }

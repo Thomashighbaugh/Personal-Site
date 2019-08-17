@@ -5,7 +5,6 @@ description: Scripts that I use to quickly provision my systems after fresh inst
 image: "../../assets/Opitx.png"
 tags: bash, linux, shell-scripting
 ---
-# Blasted Auto Installer 
 ### Scripts for Quick Provisioning of a Fresh Install
 
 ## Problem 
@@ -25,10 +24,11 @@ Scripts and description thereof
 - install-snap - the reason I am using Manjaro over Arch 
 - nvm - for installing the node version manager 
 - yay - using YAY, available through the manjaro repos, this installs AUR packages 
+
 ## To Do 
+
 - [ ] add zenity gui for manjaro
 - [ ] create templates script 
 - [ ] cleanup the repo
 - [ ] zsh/powerlevel10k script 
 - [ ] add script for installing EvoPopDark
-- [ ] create landing page 
