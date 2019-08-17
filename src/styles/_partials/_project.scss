@@ -1,5 +1,6 @@
 @import "./_base.scss";
 #projects {
+    @include animate(pulse, 1s, 29);
 width:85%;
     padding:1.5rem;
     margin: 2rem 4.5%;

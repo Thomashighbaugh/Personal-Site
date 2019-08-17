@@ -12,6 +12,7 @@ import Footer from "../Footer"
 import Header from "../Header"
 import "../../styles/main.scss"
 import Container from "reactstrap/es/Container"
+import { Helmet } from 'react-helmet';
 
 const Layout = ({ children }) => {
 
@@ -23,13 +24,17 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <Container fluid>
       <Header/>
+      <Helmet>
+        <meta charSet="utf-8" />
+        {/*<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>*/}
+           </Helmet>
       <div>
-        <main className="layout-card">{children}</main>
+        <main>{children}</main>
 <Footer/>
       </div>
     </Container>

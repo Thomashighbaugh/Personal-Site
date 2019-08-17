@@ -21,7 +21,8 @@
   padding: 2rem;
   justify-content: center;
   align-content: center;
-
+margin-top:2rem;
+  margin-bottom: 2rem;
   margin-left: 5% !important;
   margin-right: 5% !important;
   background: $header-background;
@@ -40,21 +41,3 @@
   }
 }
 
-.layout-card{
-  border-top: $gray1 0.5rem solid;
-  border-right: $gray2 1rem solid;
-  border-left: $blue 1rem solid;
-  border-bottom: $blue2 1rem solid;
-  padding: 1rem;
-  width: 87%;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  margin: 3rem 1rem;
-
-  margin-left: 5% !important;
-  margin-right: 5% !important;
-  background: $header-background;
-
-}

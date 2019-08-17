@@ -10,7 +10,7 @@
   padding-right: 3rem;
   .card-title {
     color: $white;
-    @include animate(fadeIn, 2s, 20, 1 );
+    @include animate(fadeInRightBig, 2s, 20, 1 );
     width: 100%;
   }
   .contact{
@@ -66,11 +66,15 @@
   }
   h2 {
     font-size: 2em;
-    color: $gray1;
+    color: $gray1 !important;
     background: $gradient0;
     border-bottom: 1rem $gray1 solid;
 
     width: 100%;
+  }
+  h3{
+    color: $gray1;
+
   }
   ul {
     display: inline-block;

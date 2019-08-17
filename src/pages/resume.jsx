@@ -2,11 +2,15 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Obfuscate from 'react-obfuscate';
 import PageTransition from 'gatsby-plugin-page-transitions';
+import SEO from '../components/SEO';
+import Card from 'react-bootstrap/Card';
 class Resume extends React.Component {
   render() {
     return (
-      <PageTransition>
       <Layout>
+
+        <SEO title="[resume]" description="created from the output of JSONresume into HTML adapted into JSX, this is the live resume of TLH"/>
+       <Card>
         <div id="resume">
           <div className="card-resume">
               <section>
@@ -447,8 +451,8 @@ Gallery                  </a>
               </section>
           </div>
         </div>
+       </Card>
       </Layout>
-      </PageTransition>
     );
   }
 }

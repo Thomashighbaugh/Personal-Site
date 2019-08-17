@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
     return (
 <PageTransition>
 <Header />
-<SEO title="All posts" />
+<SEO title="Projects" description="Projects by TLH with links to additional descriptions written in Markdown then rendered into pages by Gatsby" />
       <div id="projects">
         <div className="projects-page">
         <h1>Projects</h1>
