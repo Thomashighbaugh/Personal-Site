@@ -1,8 +1,8 @@
 @import "base";
 
-.socialIcons{
-
+.socialIcons {
+  a {
+    color: $blue !important;
+    background: $white;
+  }
 }
-.socials{
-  background:$gradient0;
-  color:$white;}

@@ -11,39 +11,39 @@ import '../../../../../socials'
 
 const SocialIcons = (contacts) => {
   return (
-    <div style={{color: '#4df', background: '#fff', margin: '2rem'}} className="socialIcons">
+    <div  className="socialIcons">
       <a
          href={contacts.linkedin}>
-                    <FaLinkedin size={120} />
+                    <FaLinkedin size={50} />
       </a>
       <a
          href={contacts.github}>
-                                    <FaGithubSquare className="socials" size={120} />
+                                    <FaGithubSquare className="socials" size={50} />
                       </a>
       <a
          href={contacts.dribbble}>
 
-                    <FaDribbble className="socialIcons" size={120}/>
+                    <FaDribbble className="socialIcons" size={50}/>
 
       </a>
       <br/>
       <a
          href={contacts.gitlab}>
 
-                    <FaGitlab size={120} />
+                    <FaGitlab size={50} />
 
       </a>
       <a
          href={contacts.twitter}>
 
-                    <FaTwitterSquare size={120}/>
+                    <FaTwitterSquare size={50}/>
 
       </a>
       <a
 
          href={contacts.instagram}>
 
-                    <FaInstagram size={120}/>
+                    <FaInstagram size={50}/>
 
       </a>
     </div>

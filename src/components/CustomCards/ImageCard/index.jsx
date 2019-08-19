@@ -11,7 +11,7 @@ class ImageCard extends Component{
     return(
       <Card className="imageCard">
         <CardBody>
-    <CardImg src={cardImage} />
+    <CardImg className="img-fluid" src={cardImage} />
         </CardBody>
 
       </Card>

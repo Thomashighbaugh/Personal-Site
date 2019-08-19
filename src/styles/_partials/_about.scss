@@ -3,7 +3,10 @@
 
 .grid {
     display: flex;
+    max-width: #{$grid-width}px;
     flex-wrap: wrap;
+    margin-top: 5rem !important;
+    margin-right:5% !important;
     justify-content: space-between;
 
     @media (min-width: $mobile-breakpoint) {
@@ -11,7 +14,9 @@
         margin: 0 auto;
     }
 
-
+    .card{
+        height:90%;
+    }
     .card-title{
         font-family: $style-font;
         font-size:4.5rem;
@@ -32,7 +37,6 @@
         margin-left: $gutter;
         margin-right: $gutter;
         min-height: 1px;
-       width:27% !important;
 
         &.v-align {
             align-self: center;
@@ -97,47 +101,11 @@ img {
 }
 
 
-    .aboutCard {
-        background: $white !important;
-        width: 100%;
-        margin:5%;
-        display:inline-block;
-    }
-    .imageCard {
-        width: 100%;
-        margin:5%;
-
-    }
-.modal{
-    background:$gradient0 !important;
-    color:$white;
-    display: flex;
-    position:fixed;
-    max-width:75%;
-    max-height:75%;
-    box-shadow: 10rem 10rem  #343a40;
-    background-clip: padding-box;
-    border-radius:10px;
-    z-index: 2000;
-    top:5%;
-    bottom:5%;
-    left:10%;
-    right:5%;
-    border: $gray1 double 2rem;
-    padding:2rem;
-    section{
-        margin-right:5%;
-        h4{
-            font-size:2rem;
-        }
-        ul{
-            list-style: decimal;
-        }
-
-    }
-    .modal-body{
-        height:100%;
-        width:100%;
-    }
+.aboutCard {
+    background: $white !important;
+    width: 100%;
+    margin:5%;
+    display:inline-block;
 }
+
 

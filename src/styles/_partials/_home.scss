@@ -4,8 +4,7 @@
 #home-container {
   background-image: url('https://github.com/Thomashighbaugh/resurgens-iv/blob/master/dogpatchcircuit.png') !important;
 }
-.card-img {
-}
+
 #home {
   section {
     @include animate(lightSpeedIn, 1s, 6, 1);
