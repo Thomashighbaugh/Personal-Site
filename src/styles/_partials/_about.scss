@@ -1,111 +1,105 @@
 @import "./_base.scss";
 
+#about {
 
-.grid {
-    display: flex;
-    max-width: #{$grid-width}px;
-    flex-wrap: wrap;
-    margin-top: 5rem !important;
-    margin-right:5% !important;
-    justify-content: space-between;
 
-    @media (min-width: $mobile-breakpoint) {
-        flex-direction: row;
-        margin: 0 auto;
-    }
+    .grid {
+        display: flex;
+        max-width: #{$grid-width}px;
+        flex-wrap: wrap;
+        margin-top: 5rem !important;
+        margin-right: 5% !important;
+        justify-content: space-between;
 
-    .card{
-        height:90%;
-    }
-    .card-title{
-        font-family: $style-font;
-        font-size:4.5rem;
-        margin-left:0;
-    }
-    .card-subtitle{
-        font-family:$title-font;
-    }
-
-    // Grid modifiers
-    &.no--margin {
-        margin: 0 auto;
-    }
-
-    .col {
-        width: $column-width;
-        margin-bottom: 20px;
-        margin-left: $gutter;
-        margin-right: $gutter;
-        min-height: 1px;
-
-        &.v-align {
-            align-self: center;
+        @media (min-width: $mobile-breakpoint) {
+            flex-direction: row;
+            margin: 0 auto;
         }
 
-        &.fill-height {
-            flex: 1;
+
+        .card-title {
+            font-family: $style-font;
+            font-size: 4.5rem;
+            margin-left: 0;
         }
 
-        &.colored {
-            background-color: papayawhip;
+        .card-subtitle {
+            font-family: $title-font;
         }
 
-        &.padding {
-            margin-left: initial;
-            margin-right: initial;
-            padding: 20px;
+        // Grid modifiers
+        &.no--margin {
+            margin: 0 auto;
+        }
+
+        .col {
+            width: $column-width;
+            margin-bottom: 20px;
+            margin-left: $gutter;
+            margin-right: $gutter;
+            min-height: 1px;
+
+            &.v-align {
+                align-self: center;
+            }
+
+            &.fill-height {
+                flex: 1;
+            }
+
+            &.colored {
+                background-color: papayawhip;
+            }
+
+            &.padding {
+                margin-left: initial;
+                margin-right: initial;
+                padding: 20px;
+            }
         }
     }
-}
 
-@mixin generate-grid() {
-    @for $i from 2 through 6 {
-        $width: ((100% - ($gutter * $i)) / $i) - $gutter;
-        .grid-#{$i} {
-            .col {
-                width: $width * $i + ($gutter * $i * 2) - $gutter * 2;
+    @mixin generate-grid() {
+        @for $i from 2 through 6 {
+            $width: ((100% - ($gutter * $i)) / $i) - $gutter;
+            .grid-#{$i} {
+                .col {
+                    width: $width * $i + ($gutter * $i * 2) - $gutter * 2;
 
-                @media (min-width: $mobile-breakpoint) {
-                    width: 100% / 2 - $gutter * 2;
-                }
+                    @media (min-width: $mobile-breakpoint) {
+                        width: 100% / 2 - $gutter * 2;
+                    }
 
-                @media (min-width: $tablet-breakpoint) {
-                    width: $width;
-                }
+                    @media (min-width: $tablet-breakpoint) {
+                        width: $width;
+                    }
 
-                &--full {
-                    width: 100% - $gutter * 2;
+                    &--full {
+                        width: 100% - $gutter * 2;
+                    }
                 }
             }
         }
-    } // End for
-}
-
-@include generate-grid();
-
-
-
-//
-//  Demo css
-img {
-    display: block;
-    width: 100%;
-}
-
-
-
-.content-box {
-    & > * + * {
-        margin-top: 2rem;
+        // End for
     }
+
+    @include generate-grid();
+
+
+    .content-box {
+        & > * + * {
+            margin-top: 2rem;
+        }
+    }
+
+
+    .aboutCard {
+        background: $white !important;
+        width: 100%;
+        margin: 3%;
+        display: inline-block;
+    }
+
+
+
 }
-
-
-.aboutCard {
-    background: $white !important;
-    width: 100%;
-    margin:5%;
-    display:inline-block;
-}
-
-

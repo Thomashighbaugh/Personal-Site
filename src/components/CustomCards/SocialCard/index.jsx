@@ -15,7 +15,7 @@ class SocialCard extends Component{
           <CardSubtitle>use the icons below to check out my social media profiles!</CardSubtitle>
           <hr />
         </CardHeader>
-        <CardBody>
+        <CardBody className="socialBody">
         <SocialIcons />
         </CardBody>
 

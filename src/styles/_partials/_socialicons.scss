@@ -4,5 +4,18 @@
   a {
     color: $blue !important;
     background: $white;
+    padding: 2rem;
   }
+  a:hover{
+    color: $gray1 !important;
+background: $white;
+    border:none;
+  }
+  div{
+    margin:3rem;
+  }
+}
+
+.socialBody{
+  padding-top: 2rem;
 }

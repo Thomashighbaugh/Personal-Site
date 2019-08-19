@@ -14,36 +14,36 @@ const SocialIcons = (contacts) => {
     <div  className="socialIcons">
       <a
          href={contacts.linkedin}>
-                    <FaLinkedin size={50} />
+                    <FaLinkedin size={80} />
       </a>
       <a
          href={contacts.github}>
-                                    <FaGithubSquare className="socials" size={50} />
+                                    <FaGithubSquare className="socials" size={80} />
                       </a>
       <a
          href={contacts.dribbble}>
 
-                    <FaDribbble className="socialIcons" size={50}/>
+                    <FaDribbble className="socialIcons" size={80}/>
 
       </a>
-      <br/>
+      <div> </div>
       <a
          href={contacts.gitlab}>
 
-                    <FaGitlab size={50} />
+                    <FaGitlab size={80} />
 
       </a>
       <a
          href={contacts.twitter}>
 
-                    <FaTwitterSquare size={50}/>
+                    <FaTwitterSquare size={80}/>
 
       </a>
       <a
 
          href={contacts.instagram}>
 
-                    <FaInstagram size={50}/>
+                    <FaInstagram size={80}/>
 
       </a>
     </div>

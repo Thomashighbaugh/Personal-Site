@@ -9,7 +9,7 @@ class ImageCard extends Component{
   render(){
     const {cardImage} = this.props;
     return(
-      <Card className="imageCard">
+      <Card className="imageCard" style={{width:'100%'}}>
         <CardBody>
     <CardImg className="img-fluid" src={cardImage} />
         </CardBody>

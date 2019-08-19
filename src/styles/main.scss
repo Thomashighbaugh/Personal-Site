@@ -10,18 +10,19 @@
 @import "_modules/extend";
 
 //Partials - Styling By DOM Object
-@import "_partials/_about.scss";
-@import "_partials/_body.scss";
-@import "_partials/_blog-post.scss";
-@import "_partials/_card.scss";
-@import "_partials/_footer.scss";
-@import "_partials/_header.scss";
-@import "_partials/_headings.scss";
-@import "_partials/_home.scss";
-@import "_partials/_links.scss";
-@import "_partials/_nav-btns.scss";
-@import "_partials/_project.scss";
-@import "_partials/_socialicons.scss";
-@import "_partials/_resume.scss";
+@import "./_partials/_about.scss";
+@import "./_partials/_body.scss";
+@import "./_partials/_blog-post.scss";
+@import "./_partials/_card.scss";
+@import "./_partials/_footer.scss";
+@import "./_partials/_header.scss";
+@import "./_partials/_headings.scss";
+@import "./_partials/_home.scss";
+@import "./_partials/_links.scss";
+@import "././_partials/_modal.scss";
+@import "././_partials/_nav-btns.scss";
+@import "././_partials/_project.scss";
+@import "././_partials/_socialicons.scss";
+@import "././_partials/_resume.scss";
 
 

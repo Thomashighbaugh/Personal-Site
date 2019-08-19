@@ -13,9 +13,8 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-<PageTransition>
-<Header />
-<SEO title="Projects" description="Projects by TLH with links to additional descriptions written in Markdown then rendered into pages by Gatsby" />
+<Layout>
+      <SEO title="Projects" description="Projects by TLH with links to additional descriptions written in Markdown then rendered into pages by Gatsby" />
       <div id="projects">
         <div className="projects-page">
         <h1>Projects</h1>
@@ -48,8 +47,7 @@ class BlogIndex extends React.Component {
         </section>
 </main>
       </div>
-<Footer />
-      </PageTransition>
+</Layout>
     )
   }
 }

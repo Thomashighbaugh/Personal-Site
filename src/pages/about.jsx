@@ -20,7 +20,8 @@ import Row from 'reactstrap/es/Row';
 import ImageCard from '../components/CustomCards/ImageCard';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import DropDownCard from '../components/CustomCards/DropDownCard';
+import ModalCard from '../components/CustomCards/ModalCard';
+import Container from 'react-bootstrap/Container';
 
 // The About Page
 
@@ -45,7 +46,9 @@ class About extends Component {
   render() {
     return (
       <Layout>
+        <div id="about">
         <Row className="grid grid-3 no--margin">
+
           <Col className="col">
             <AboutCard
               id="1"
@@ -89,7 +92,7 @@ class About extends Component {
         </Row>
         <Row className="grid grid-3 no--margin">
           <Col>
-<DropDownCard/>
+<ModalCard/>
           </Col>
           <Col>
             <ImageCard
@@ -101,6 +104,7 @@ class About extends Component {
 </Col>
 
         </Row>
+        </div>
       </Layout>    );
   }
 }

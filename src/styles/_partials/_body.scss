@@ -1,6 +1,5 @@
 @import "./_base.scss";
 
-
 html{
     margin:0 !important;
     padding:0 !important;
@@ -30,4 +29,9 @@ body {
         width: 100% !important;
     }
 }
+img {
+    display: block;
+    width: 100%;
+}
+
 

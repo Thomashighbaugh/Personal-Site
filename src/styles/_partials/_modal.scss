@@ -1,0 +1,27 @@
+@import './_base.scss';
+.modal {
+  padding: 10rem;
+  position:relative;
+  background: $white;
+  opacity: 90%;
+
+
+  .modal-body {
+    background: $gradient0;
+    color: white;
+
+  }
+
+  .modal-header {
+    background: $gradient0;
+  }
+
+  .modal-footer {
+    background: $gradient0;
+
+    button {
+      color: white;
+      background: $gray1;
+    }
+  }
+}

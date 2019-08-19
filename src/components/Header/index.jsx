@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import Logo from './Logo'
-import Navbar from 'reactstrap/es/Navbar';
-import NavbarBrand from 'reactstrap/es/NavbarBrand';
+import { Navbar, NavbarBrand } from 'react-bootstrap';
+import Row from 'react-bootstrap/Row';
 class Header extends Component {
   render() {
     return (
       <header>
-        <Navbar className="nav-fill navbar-expand">
+        <nav>
+        <Navbar className="navbar">
           <NavbarBrand><Link to="/">[ tlh development portfolio ]</Link></NavbarBrand>
           <div className="links">
-            <div className="row">
+            <Row>
               <br className="d-md-none"/>
              <div className="col-12 btn-group">
 
@@ -39,9 +39,10 @@ class Header extends Component {
                 [resume]
               </Link>
             </div>
-          </div>
+          </Row>
           </div>
         </Navbar>
+        </nav>
       </header>
     );
   }

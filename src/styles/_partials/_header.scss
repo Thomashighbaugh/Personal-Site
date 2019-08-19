@@ -3,18 +3,16 @@
 /*
 * The styles for the Header Component
 */
-header {
-font-size:1rem !important;
-    box-sizing: border-box;
+
     nav {
         border-right: $gray2 1rem solid;
         border-left: $blue 1rem solid;
         border-bottom: $gray1 1rem solid;
         background: $header-background;
+        margin: 0 !important;
         clear: both;
-        padding: 2rem;
-        height: 2.5rem;
-        display: block;
+        display: block !important;
+font-size: 1.5rem;
 
 
         @include for-size(tablet-landscape) {
@@ -33,15 +31,15 @@ font-size:1rem !important;
     }
     .links{
         float:right;
-        padding:0;
+        padding:1rem;
         margin:0;
+        position:relative;
     }
 
-}
+
 .navbar-brand{
     color:$white;
     font-weight:900;
-    margin:1rem;
     display:inline !important;
 
     a{
