@@ -9,7 +9,6 @@
   section {
     @include animate(lightSpeedIn, 1s, 6, 1);
     justify-content: center;
-
     .media {
       min-width: 0;
       margin: 5px;
@@ -25,12 +24,7 @@
     }
   }
 
-  .card-subtitle {
-    background: $white;
-    font-size: 2rem;
-    width: 85%;
-    font-family: $style-font;
-  }
+
 
   hr {
     border-bottom: 0.125rem solid $gray1;

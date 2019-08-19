@@ -1,0 +1,25 @@
+@import "./_base.scss";
+.grid {
+  display: flex;
+  max-width: #{$grid-width}px;
+  flex-wrap: wrap;
+  margin-top: 5rem !important;
+  margin-right: 5% !important;
+  justify-content: space-between;
+
+  @media (min-width: $mobile-breakpoint) {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+}
+
+
+.col {
+  width: $column-width;
+  margin-bottom: 20px;
+  margin-left: $gutter;
+  margin-right: $gutter;
+  min-height: 1px;
+}
+

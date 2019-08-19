@@ -6,65 +6,25 @@ import React, { useState } from 'react';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-function MyVerticallyCenteredModal(props) {
-  return (
-    <Modal
-      {...props}
-      size="xl"
-      style={{opacity:1}}
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-      className="modal-xl"
-    >
-      <Modal.Header closeButton>
+import WebDevModal from './WebDevModal';
+import CardHeader from 'reactstrap/es/CardHeader';
+import CardSubtitle from 'reactstrap/es/CardSubtitle';
+import CardTitle from 'reactstrap/es/CardTitle';
+import DevOpsModal from './DevOpsModal';
 
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Web Development Skills</h4>
-   <h5>
-    These are the languages, libraries and frameworks that I have
-    experience with.
-   </h5>
-        <ul>
-          <li>HTML5/CSS3</li>
-          <li>Vanilla JS</li>
-          <li>ECMAScript 6</li>
-          <li>EMCAScript 7</li>
-          <li>React</li>
-          <li>SASS/SCSS</li>
-          <li>LESS</li>
-          <li>Redux</li>
-          <li>WebPack</li>
-          <li>Gatsby</li>
-          <li>MaterialUI</li>
-          <li>Bootstrap</li>
-          <li>Markdown</li>
-          <li>CSS Grid</li>
-          <li>jQuery</li>
-          <li>WordPress</li>
-        </ul>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-  );
-}
 
 function ModalCard() {
-  const [modalShow, setModalShow] = React.useState(false);
+  //   const [smShow, setSmShow] = useState(false);
+  //   const [lgShow, setLgShow] = useState(false);
+
+  const [smShow, setSmShow] = useState(false);
+  const [lgShow, setLgShow] = useState(false);
+  const [xlShow, setxlShow] = useState(false);
 
   return (
-    <ButtonToolbar>
-      <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
-      </Button>
+    <Card id="skills-card">
 
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
-    </ButtonToolbar>
+    </Card>
   );
 }
 export default ModalCard;
@@ -146,4 +106,32 @@ export default ModalCard;
 //     </Modal.Header>
 //     <Modal.Body>...</Modal.Body>
 //   </Modal>
+// </ButtonToolbar>
+
+
+//
+// <CardHeader>
+//   <CardTitle>
+//     [skills]
+//   </CardTitle>
+//   <CardSubtitle>
+//     Click the buttons below to view modals listing topical skills I have obtained in the process of learning web development.
+//   </CardSubtitle>
+//   <hr/>
+// </CardHeader>
+// <ButtonToolbar>
+// <Button onClick={() => setModalShow(true)}>
+// [webdev]
+// </Button>
+// <WebDevModal
+//   show={modalShow}
+//   onHide={() => setModalShow(false)}
+// />
+// <Button onClick={() => setModalShow2(true)}>
+// [devops]
+// </Button>
+// <DevOpsModal
+//   show={modalShow2}
+//   onHide={() => setModalShow2(false)}
+// />
 // </ButtonToolbar>

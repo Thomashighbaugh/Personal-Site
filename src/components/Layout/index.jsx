@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <Container fluid>
+    <div>
       <Helmet>
         <meta charSet="utf-8" />
         <link
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <Footer />
       </div>
-    </Container>
+    </div>
   );
 };
 

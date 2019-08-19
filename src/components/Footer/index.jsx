@@ -14,9 +14,10 @@ class Footer extends Component {
         © {new Date().getFullYear()}, Built with
         <a href="https://www.gatsbyjs.org">Gatsby</a>
         </div>
+        <br/>
         <div className="float-right btn-group">
-          <Link className="nav-btn" to="https://netlify.com">Blog</Link>
-          <Link className="nav-btn" to="https://netlify.com">Gallery</Link>
+          <Link className="nav-btn footer-btn" to="https://netlify.com">Blog</Link>
+          <Link className="nav-btn footer-btn" to="https://netlify.com">Gallery</Link>
 
         </div>
       </footer>

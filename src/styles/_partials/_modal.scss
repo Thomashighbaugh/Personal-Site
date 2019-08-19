@@ -3,25 +3,27 @@
   padding: 10rem;
   position:relative;
   background: $white;
-  opacity: 90%;
 
 
   .modal-body {
     background: $gradient0;
     color: white;
-
+    button {
+      color: white;
+      background: $gray1;
+      float: start;
+    }
   }
 
   .modal-header {
     background: $gradient0;
+  border-bottom: 0.25rem solid gray;
   }
 
   .modal-footer {
     background: $gradient0;
+    border-top: 0.25rem solid gray;
 
-    button {
-      color: white;
-      background: $gray1;
-    }
+
   }
 }

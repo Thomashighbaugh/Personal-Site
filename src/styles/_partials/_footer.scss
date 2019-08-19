@@ -1,18 +1,15 @@
 @import "./_base.scss";
 
 footer {
-    justify-content: center;
-    padding: 1rem;
-    clear: both;
-    position: relative;
+    position: static;
+    margin-top:5%;
     width: 100% !important;
-    display: inline-flex;
     background: $header-background;
     border-top: $blue2 0.5rem solid;
     border-right: $gray2 1rem solid;
     border-left: $blue 1rem solid;
-    font-size: 1.25rem;
     @include for-size(big-desktop) {
+        font-size: 100% !important;
     }
 
     @include for-size(desktop) {
@@ -23,32 +20,29 @@ footer {
 
     @include for-size(phone-only) {
         font-size: 75% !important;
-        height: 10rem;
     }
     h1 {
         font-family: $title-font;
     }
 }
 
-#footer .btn {
-    width: 13rem !important;
-    margin: 0;
-    height: 3rem;
-    border-radius: 5px;
-
-    @include for-size(big-desktop) {
-    }
-
-    @include for-size(desktop) {
-    }
-    @include for-size(tablet-landscape) {
-        font-size: 85% !important;
-    }
-    @include for-size(tablet-portrait) {
-        font-size: 80% !important;
-    }
-    @include for-size(phone-only) {
-        font-size: 75% !important;
-        margin-top: 0;
-    }
+.footer-btn {
+    border-radius: 15px;
+    display: inline-flex;
+    //
+    //@include for-size(big-desktop) {
+    //}
+    //
+    //@include for-size(desktop) {
+    //}
+    //@include for-size(tablet-landscape) {
+    //    font-size: 85% !important;
+    //}
+    //@include for-size(tablet-portrait) {
+    //    font-size: 80% !important;
+    //}
+    //@include for-size(phone-only) {
+    //    font-size: 75% !important;
+    //    margin-top: 0;
+    //}
 }
