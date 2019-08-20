@@ -1,8 +1,10 @@
 @import "./_base.scss";
 
 footer {
-    position: static;
+    position: relative;
     margin-top:5%;
+clear:both;
+    margin-bottom:0 !important;
     width: 100% !important;
     background: $header-background;
     border-top: $blue2 0.5rem solid;
@@ -24,25 +26,8 @@ footer {
     h1 {
         font-family: $title-font;
     }
+a{
+    @extend %btn-1
 }
 
-.footer-btn {
-    border-radius: 15px;
-    display: inline-flex;
-    //
-    //@include for-size(big-desktop) {
-    //}
-    //
-    //@include for-size(desktop) {
-    //}
-    //@include for-size(tablet-landscape) {
-    //    font-size: 85% !important;
-    //}
-    //@include for-size(tablet-portrait) {
-    //    font-size: 80% !important;
-    //}
-    //@include for-size(phone-only) {
-    //    font-size: 75% !important;
-    //    margin-top: 0;
-    //}
 }
