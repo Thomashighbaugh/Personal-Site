@@ -9,46 +9,67 @@ function DevOpsModal(props) {
       {...props}
       size="xl"
       style={{opacity:1}}
-      aria-labelledby="contained-modal-title-vcenter"
+      aria-labelledby="contained-modal-title-center"
       centered
-      className="modal-xl"
+      className="modal2"
     >
 
       <Modal.Body>
-        <h4>Web Development Skills</h4>
-        <h5>
-          These are the languages, libraries and frameworks that I have
-          experience with.
-        </h5>
-        <hr/>
+                 <h3>[technical skills]</h3>
+     <hr/>
         <section>
-        <ul>
-          <h6>[technical skills]</h6>
+      <ul>
+          <h6>Linux</h6>
         <li>Linux SysAd</li>
           <li>Linux Shell Scripting</li>
           <li>Linux Internals Customization ('Ricing')</li>
-          <li>Git</li>
+          <li>Modal Editing & Emacs</li>
+        </ul>
+     </section>
+          <section>
+          <ul>
+          <h6>Containerization & Virtualization</h6>
           <li>Docker</li>
           <li>LXC/LXD</li>
-
-          <li>Bazaar</li>
-          <li>Subversion</li>
-          <li>Modal Editing & Emacs</li>
           <li>KVM + QEMU</li>
-          <li>Web Development Skills (see other modal)</li>
+          <li>OpenVZ</li>
+          <li>CoreOS && rkt</li>
+          <li>Proxmox</li>
+          </ul>
+          </section>
+<section>
+  <ul>
+          <h6>Continuous Integration</h6>
           <li>Jenkins</li>
           <li>Travis CI</li>
+  </ul>
+  </section>
+  <section>
+       <ul>
+          <h6>Infrastructure Automation</h6>
           <li>Ansible</li>
-        </ul></section>
+          <li>Puppet</li>
+          <li>Chef</li>
+       </ul>
+</section>
+  <section>
+    <ul>
+          <h6>Security</h6>
+          <li>Kali Linux</li>
+          <li>Black Arch</li>
+    </ul>
+    </section>
+<section>
+          <h6>Deployment && Orchestration</h6>
+          <li>Kubernetes</li>
+          <li>Docker Swarm</li>
+          <li>Apache Mesos</li>
+</section>
         <section> <ul>
-          <h6>Soft Skills</h6>
- <li>Communication</li>
-          <li>Professional Relationship Cultivation</li>
-          <li>Attentive Listening</li>
-          <li>Source Code Management and Quality Assurance</li>
+
         </ul>
         </section>
-        <Button onClick={props.onHide}>Close</Button>
+          <Button onClick={props.onHide}>Close</Button>
       </Modal.Body>
     </Modal>
   );

@@ -25,20 +25,49 @@ function WebDevModal(props) {
           <li>Vanilla JS</li>
           <li>ECMAScript 6</li>
           <li>EMCAScript 7</li>
-          <li>React</li>
+
           <li>SASS/SCSS</li>
           <li>LESS</li>
           <li>Redux</li>
-          <li>WebPack</li>
-          <li>Gatsby</li>
-          <li>MaterialUI</li>
-          <li>Bootstrap</li>
-          <li>Markdown</li>
-          <li>CSS Grid</li>
-          <li>jQuery</li>
-          <li>WordPress</li>
+
         </ul>
-        <Button onClick={props.onHide}>Close</Button>
+        <section>
+          <ul>
+            <h4>Frameworks && Libraries</h4>
+            <li>React</li>
+            <li>MaterialUI</li>
+            <li>Bootstrap</li>
+            <li>CSS Grid</li>
+            <li>jQuery</li>
+          </ul>
+        </section>
+          <section>
+  <ul>
+    <h4>CMS && Content Creation</h4>
+    <li>WordPress</li>
+    <li>Markdown</li>
+
+  </ul>
+          </section>
+        <section>
+          <ul>
+
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <h4>Code Optimization</h4>
+            <li>WebPack</li>
+            <li>Gatsby</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Linters</h4>
+          <li>ESLint</li>
+          <li>JSLint</li>
+          <li>SCSSLint</li>
+        </section>
+            <Button onClick={props.onHide}>Close</Button>
       </Modal.Body>
 
     </Modal>

@@ -1,23 +1,30 @@
 @import './_base.scss';
 .modal {
-  padding: 10rem;
-  position:relative;
   background: $white;
-
-
+padding-top:20rem;
+  button {
+    color: white;
+  border-bottom: 15px;
+    background: $gray1;
+  }  button:hover {
+    color: white;
+    background: $gradient0;
+  border:0.2rem solid $white!important;
+  }
   .modal-body {
     background: $gradient0;
     color: white;
-    button {
-      color: white;
-      background: $gray1;
-      float: start;
-    }
+
   }
 
   .modal-header {
     background: $gradient0;
   border-bottom: 0.25rem solid gray;
+    h1{
+      color:$white;
+      font-weight: 900;
+      font: $style-font !important;
+    }
   }
 
   .modal-footer {
@@ -25,5 +32,35 @@
     border-top: 0.25rem solid gray;
 
 
+  }
+}
+.modal-about-card{
+  section{
+    width:33%;
+    display: flex;
+
+    overflow: no-display;
+clear:both;
+  }
+}
+.fullStackModal{
+  position:relative;
+  display: block;
+
+  section{
+    width:27%;
+
+display: inline-grid;
+    //outline:0.2rem solid $white;
+    margin: 3%;
+    overflow: no-display;
+    clear:both;
+    ul{
+      list-style: outside;
+      h4{
+        font-size:2rem;
+        font-weight:700;
+      }
+    }
   }
 }

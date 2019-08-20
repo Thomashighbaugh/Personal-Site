@@ -1,29 +1,53 @@
-import Card from 'reactstrap/es/Card';
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-import Row from 'reactstrap/es/Row';
 import React, { useState } from 'react';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import WebDevModal from './WebDevModal';
-import CardHeader from 'reactstrap/es/CardHeader';
-import CardSubtitle from 'reactstrap/es/CardSubtitle';
-import CardTitle from 'reactstrap/es/CardTitle';
 import DevOpsModal from './DevOpsModal';
-
+import Card from 'react-bootstrap/Card';
+import FullStackModal from './FullStackModal';
 
 function ModalCard() {
-  //   const [smShow, setSmShow] = useState(false);
-  //   const [lgShow, setLgShow] = useState(false);
-
-  const [smShow, setSmShow] = useState(false);
+  const [XShow, setXShow] = useState(false);
   const [lgShow, setLgShow] = useState(false);
-  const [xlShow, setxlShow] = useState(false);
-
+const[xlShow, setXlShow] = useState(false);
   return (
-    <Card id="skills-card">
+    <Card className="modal-about-card">
+      <Card.Header>
+        <Card.Title>
+          [skills]
+        </Card.Title>
+        <Card.Subtitle>
+        click the buttons below to see modals
+        </Card.Subtitle>
 
+      </Card.Header>
+      <hr/>
+      <ButtonToolbar>
+        <Button className="nav-btn" onClick={() => setXShow(true)}>DevOps</Button>
+        <Button className="nav-btn" onClick={() => setLgShow(true)}>WebDev</Button>
+        <Button className="nav-btn" onClick={() => setXlShow(true)}>FullStack</Button>
+
+        <DevOpsModal
+          size="xl"
+          show={XShow}
+          onHide={() => setXShow(false)}
+          aria-labelledby="example-modal-sizes-title-X"
+        />
+        <WebDevModal
+          size="xl"
+          show={lgShow}
+          onHide={() => setLgShow(false)}
+          aria-labelledby="example-modal-sizes-title-lg"
+        />
+        <FullStackModal
+          size="xl"
+          show={xlShow}
+          onHide={() => setXlShow(false)}
+          aria-labelledby="example-modal-sizes-title-xl"
+        />
+
+      </ButtonToolbar>
     </Card>
   );
 }
@@ -106,32 +130,4 @@ export default ModalCard;
 //     </Modal.Header>
 //     <Modal.Body>...</Modal.Body>
 //   </Modal>
-// </ButtonToolbar>
-
-
-//
-// <CardHeader>
-//   <CardTitle>
-//     [skills]
-//   </CardTitle>
-//   <CardSubtitle>
-//     Click the buttons below to view modals listing topical skills I have obtained in the process of learning web development.
-//   </CardSubtitle>
-//   <hr/>
-// </CardHeader>
-// <ButtonToolbar>
-// <Button onClick={() => setModalShow(true)}>
-// [webdev]
-// </Button>
-// <WebDevModal
-//   show={modalShow}
-//   onHide={() => setModalShow(false)}
-// />
-// <Button onClick={() => setModalShow2(true)}>
-// [devops]
-// </Button>
-// <DevOpsModal
-//   show={modalShow2}
-//   onHide={() => setModalShow2(false)}
-// />
 // </ButtonToolbar>
