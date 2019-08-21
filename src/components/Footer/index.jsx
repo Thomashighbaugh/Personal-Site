@@ -12,33 +12,34 @@ class Footer extends Component {
     return (
       <footer>
         <nav>
-          <Row>
             <Navbar>
-              <Col>
-                <Navbar.Text>
+              <Col md={{ span: 5, offset: 2 }}>
+                <Navbar.Text >
                   <h3>Thomas Leon Highbaugh</h3>© {new Date().getFullYear()},
                   Built with
                   <a href="https://www.gatsbyjs.org">Gatsby</a>
                 </Navbar.Text>
               </Col>
-              <div className="btn-group">
+              <Row className="btn-group">
                 <Col>
-                  <NavItem>
-                    <a className="nav-btn" href="https://netlify.com">
+                  <h4>More by [tlh]</h4>
+                </Col>
+                <Col>
+                  <NavItem className="nav-foot">
+                    <a className="nav-btn"  href="https://netlify.com">
                       Blog
                     </a>
                   </NavItem>
                 </Col>
                 <Col>
-                  <NavItem>
+                  <NavItem className="nav-foot">
                     <a className="nav-btn" href="https://netlify.com">
                       Gallery
                     </a>
                   </NavItem>
                 </Col>
-              </div>
+              </Row>
             </Navbar>
-          </Row>
         </nav>
       </footer>
     );
