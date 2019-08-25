@@ -13,13 +13,14 @@ function DevOpsModal(props) {
       centered
       className="modal2"
     >
+<Modal.Header>
+  <Modal.Title><h4>Systems Administration</h4></Modal.Title>
+</Modal.Header>
 
       <Modal.Body>
-                 <h3>[technical skills]</h3>
-     <hr/>
         <section>
       <ul>
-          <h6>Linux</h6>
+          <h4>Linux</h4>
         <li>Linux SysAd</li>
           <li>Linux Shell Scripting</li>
           <li>Linux Internals Customization ('Ricing')</li>
@@ -28,7 +29,7 @@ function DevOpsModal(props) {
      </section>
           <section>
           <ul>
-          <h6>Containerization & Virtualization</h6>
+          <h4>Containerization & Virtualization</h4>
           <li>Docker</li>
           <li>LXC/LXD</li>
           <li>KVM + QEMU</li>
@@ -37,19 +38,13 @@ function DevOpsModal(props) {
           <li>Proxmox</li>
           </ul>
           </section>
-<section>
-  <ul>
-          <h6>Continuous Integration</h6>
-          <li>Jenkins</li>
-          <li>Travis CI</li>
-  </ul>
-  </section>
   <section>
        <ul>
-          <h6>Infrastructure Automation</h6>
+          <h4>Infrastructure && Automation</h4>
           <li>Ansible</li>
           <li>Puppet</li>
           <li>Chef</li>
+         <li>Terraform</li>
        </ul>
 </section>
   <section>

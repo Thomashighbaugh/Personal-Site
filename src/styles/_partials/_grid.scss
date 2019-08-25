@@ -3,9 +3,10 @@
   display: flex;
   max-width: #{$grid-width}px;
   flex-wrap: wrap;
-  margin-top: 5rem !important;
-  margin-right: 5% !important;
-  overflow:no-display;
+  margin-top: 1rem !important;
+  margin-right: 1rem !important;
+  margin-bottom: 1rem !important;
+  overflow:no-content;
   justify-content: space-between;
 
   @media (min-width: $mobile-breakpoint) {
@@ -19,8 +20,9 @@
 .col {
   width: $column-width;
   margin-bottom: 20px;
-  margin-left: $gutter;
-  margin-right: $gutter;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem !important;
   min-height: 1px;
 }
 

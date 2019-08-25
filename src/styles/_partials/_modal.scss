@@ -1,5 +1,6 @@
 @import './_base.scss';
 .modalCard {
+
     display: block;
     clear: both;
   a:hover{
@@ -18,13 +19,11 @@
   @include animate(fadeInDown, 1s, 77);
   text-align: center;
   padding: 0.1rem !important;
+  overflow: no-display;
   position: center;
 
 .modal-header{
   background: $gradient5;
-button{
-  @extend %btn-4
-}
 }
   .modal-title {
     h4 {
@@ -49,6 +48,7 @@ button{
         li {
           font: $font !important;
           font-size: 120% !important;
+          color:$white;
         }
 
         h4 {
@@ -70,11 +70,12 @@ button{
 .modal:before {
   content: '';
   display: inline-block;
+  height: 100%;
   vertical-align: middle;
   margin-right: -4px;
 }
 
 
 .modal-backdrop{
-  opacity: 0.95 !important;
+  opacity: 0.75 !important;
 }

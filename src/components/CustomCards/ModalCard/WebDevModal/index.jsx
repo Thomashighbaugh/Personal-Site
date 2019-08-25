@@ -31,8 +31,10 @@ function FrontEndModal(props) {
           <li>Vanilla JS</li>
           <li>Typescript</li>
           <li>Lua</li>
+          <li>GraphQL</li>
         </ul>
 </section>
+
         <section>
           <ul>
             <h4>Frameworks && Libraries</h4>
@@ -46,6 +48,24 @@ function FrontEndModal(props) {
           </ul>
         </section>
 
+        <section>
+          <ul>
+            <h4>Languages & Stacks</h4>
+            <li>PHP</li>
+            <li>NodeJS</li>
+            <li>LAMP Stack</li>
+            <li>Nginx Server</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <h4>Databases</h4>
+            <li>MySQL</li>
+            <li>SQLite</li>
+            <li>PostgreSQL</li>
+            <li>Redis</li>
+          </ul>
+        </section>
       </Modal.Body>
     </Modal>
   );

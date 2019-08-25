@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import FrontEndModal from './WebDevModal';
 import DevOpsModal from './DevOpsModal';
 import Card from 'react-bootstrap/Card';
-import FullStackModal from './FullStackModal';
+import ServerCloudModal from './ServerCloudModal';
 import { Container } from 'react-bootstrap';
 import { FaDev } from 'react-icons';
 
@@ -28,8 +28,8 @@ const[xlShow, setXlShow] = useState(false);
       <Card.Body>
 
         <a className="nav-btn" onClick={() => setXShow(true)}>DevOps</a><br/>
-<br/>        <a className="nav-btn" onClick={() => setLgShow(true)}>WebDev</a> <br/>
-<br/>        <a className="nav-btn" onClick={() => setXlShow(true)}>FullStack</a>
+<br/>        <a className="nav-btn" onClick={() => setLgShow(true)}>[front end]</a> <br/>
+<br/>        <a className="nav-btn" onClick={() => setXlShow(true)}>[server cloud]</a>
 
         <DevOpsModal
           size="xl"
@@ -42,7 +42,7 @@ const[xlShow, setXlShow] = useState(false);
           onHide={() => setLgShow(false)}
           aria-labelledby="example-modal-sizes-title-lg"
         />
-        <FullStackModal
+        <ServerCloudModal
           size="xl"
           show={xlShow}
           onHide={() => setXlShow(false)}
