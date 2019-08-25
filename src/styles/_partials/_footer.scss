@@ -1,63 +1,62 @@
-@import "./_base.scss";
+@import './_base.scss';
 
 footer {
-    position: relative;
-    margin-top:5%;
-clear:both;
-    margin-bottom:0 !important;
-    width: 100% !important;
-    background: $header-background;
-    border-top: $blue2 0.5rem solid;
-    border-right: $gray2 1rem solid;
-    border-left: $blue 1rem solid;
-    @include for-size(big-desktop) {
-        font-size: 100% !important;
-    }
+  position: relative;
+  margin-top: 5%;
+  clear: both;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+  background: $header-background;
+  border-top: $blue2 0.5rem solid;
+  border-right: $gray2 1rem solid;
+  border-left: $blue 1rem solid;
+  @include for-size(big-desktop) {
+    font-size: 100% !important;
+  }
 
-    @include for-size(desktop) {
-    }
-    @include for-size(tablet-landscape) {
-        font-size: 85% !important;
-    }
+  @include for-size(desktop) {
+  }
+  @include for-size(tablet-landscape) {
+    font-size: 85% !important;
+  }
 
-    @include for-size(phone-only) {
-        font-size: 75% !important;
-    }
-    h1 {
-        font-family: $title-font;
-    }
-a{
-    @extend %btn-1
-}
-.row{
-    width:30%;
+  @include for-size(phone-only) {
+    font-size: 75% !important;
+  }
+  h1 {
+    font-family: $title-font;
+  }
+
+  .row {
+    width: 30%;
     display: inline-flex;
-    margin-top:1%;
-    float:right;
-    margin-left:0;
-    margin-right:0;
-    padding:0;
-
+    margin-top: 1%;
+    float: right;
     align-content: flex-end;
     align-self: flex-end;
     align-items: center;
+  }
+  h4 {
+    color: $gray1;
+    background: $white;
+    font-family: $style-font;
+    width: 100%;
+    height: 80%;
+    font-size: 3rem !important;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+      @extend %btn-1;
+    margin-left: 0.2rem !important;
+    margin-right: 0.2rem !important;
+  }
+.container{
+    margin:0;
+    padding:1%;
 }
-    h4{
-        color:$gray1;
-        background: $white;
-        font-family: $style-font;
-        width:100%;
-        height:80%;
-        font-size:3rem;
-        padding:0;
-        margin: 0;
+    .row{
+        width:30%;
+        display: inline-block;
     }
-    a{
-        margin-left:0.2rem !important;
-        margin-right: 0.2rem !important;
-    }
-.nav-foot{
-    margin-right: 0;
-    margin-left: 0;
-}
 }

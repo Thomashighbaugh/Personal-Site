@@ -12,23 +12,23 @@ const SocialIcons = contacts => {
   return (
     <div className="socialIcons">
       <a href="https://www.linkedin.com/in/thomas-leon-highbaugh">
-        <FaLinkedin size={80} />
+        <FaLinkedin size={65} className="nav-btn"/>
       </a>
       <a href="https://github.com/Thomashighbaugh">
-        <FaGithubSquare className="socials" size={80} />
+        <FaGithubSquare size={65} className="nav-btn"/>
       </a>
       <a href="https://dribbble.com/thighbaugh">
-        <FaDribbble className="socialIcons" size={80} />
+        <FaDribbble size={65} className="nav-btn"/>
       </a>
       <div> </div>
       <a href="https://github.com/thomasleonhighbaugh">
-        <FaGitlab size={80} />
+        <FaGitlab size={65} className="nav-btn"/>
       </a>
       <a href="https://twitter.com/thomasleonhighbaugh">
-        <FaTwitterSquare size={80} />
+        <FaTwitterSquare size={65} className="nav-btn"/>
       </a>
       <a href="https://instagram.com/tlh-resurgens">
-        <FaInstagram size={80} />
+        <FaInstagram size={65} className="nav-btn"/>
       </a>
     </div>
   );

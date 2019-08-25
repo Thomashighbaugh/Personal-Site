@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   margin-top: 5rem !important;
   margin-right: 5% !important;
+  overflow:no-display;
   justify-content: space-between;
 
   @media (min-width: $mobile-breakpoint) {

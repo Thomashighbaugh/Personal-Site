@@ -9,6 +9,11 @@
 }
 .nav-btn a:hover {
     @extend %btn-2;
+    width:32% !important;
+    padding:0.7rem !important;
+    color: $white !important;
+
+
 }
 .nav-btn a:active {
     @extend %btn-2;

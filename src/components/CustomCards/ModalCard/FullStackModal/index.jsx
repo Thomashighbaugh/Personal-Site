@@ -7,11 +7,14 @@ function FullStackModal(props) {
   return (
     <Modal
       {...props}
-      size="xl"
       style={{opacity:1}}
       className="fullStackModal"
     >
-      <Modal.Header>
+      <Modal.Header
+      centered
+      scrollable
+      size="xl"
+      >
         <h1>[full stack technologies]</h1>
 
       </Modal.Header>

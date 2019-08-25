@@ -9,7 +9,7 @@ class SocialCard extends Component{
   render(){
     const {cardTitle, cardSubtitle, cardText, cardText2, cardText3,cardLink, cardLinkLabel } = this.props;
     return(
-      <Card className="aboutCard">
+      <Card className="socialCard">
         <CardHeader>
           <CardTitle>[social]</CardTitle>
           <CardSubtitle>use the icons below to check out my social media profiles!</CardSubtitle>

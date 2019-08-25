@@ -23,6 +23,8 @@ margin-top:2rem;
   margin-bottom: 2rem;
   margin-left: 5% !important;
   margin-right: 5% !important;
+  overflow:no-display;
+
   height:90%;
   background: $header-background;
   @include for-size(big-desktop) {

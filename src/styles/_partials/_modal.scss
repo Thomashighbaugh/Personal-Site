@@ -1,66 +1,80 @@
 @import './_base.scss';
+.modalCard {
+    display: block;
+    clear: both;
+  a:hover{
+    background: none;
+    border:none;
+    .nav-btn{
+      border: $gray1;
+    }
+  }
+  a{
+    margin: 5rem!important;
+  }
+}
+
 .modal {
-  background: $white;
-padding-top:20rem;
-  button {
-    color: white;
-  border-bottom: 15px;
-    background: $gray1;
-  }  button:hover {
-    color: white;
-    background: $gradient0;
-  border:0.2rem solid $white!important;
-  }
-  .modal-body {
-    background: $gradient0;
-    color: white;
+  @include animate(fadeInDown, 1s, 77);
+  text-align: center;
+  padding: 0.1rem !important;
+  position: center;
 
-  }
-
-  .modal-header {
-    background: $gradient0;
-  border-bottom: 0.25rem solid gray;
-    h1{
+.modal-header{
+  background: $gradient5;
+button{
+  @extend %btn-4
+}
+}
+  .modal-title {
+    h4 {
+      font-size: 3rem;
+      font-family:$title-font;
       color:$white;
-      font-weight: 900;
-      font: $style-font !important;
     }
   }
 
-  .modal-footer {
+  .modal-body {
     background: $gradient0;
-    border-top: 0.25rem solid gray;
+    section {
+      display: inline-grid;
+      width: 40%;
+      margin-right: 3rem;
 
+      ul {
+        list-style: square;
 
-  }
-}
-.modal-about-card{
-  section{
-    width:33%;
-    display: flex;
+        margin: 0;
 
-    overflow: no-display;
-clear:both;
-  }
-}
-.fullStackModal{
-  position:relative;
-  display: block;
+        li {
+          font: $font !important;
+          font-size: 120% !important;
+        }
 
-  section{
-    width:27%;
+        h4 {
+          font-size: 2.125rem;
+          font-family: $style-font-alt;
 
-display: inline-grid;
-    //outline:0.2rem solid $white;
-    margin: 3%;
-    overflow: no-display;
-    clear:both;
-    ul{
-      list-style: outside;
-      h4{
-        font-size:2rem;
-        font-weight:700;
+        }
       }
     }
   }
+  .modal-dialog {
+    display: inline-grid;
+    text-align: left;
+    vertical-align: middle;
+
+  }
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+
+.modal-backdrop{
+  opacity: 0.95 !important;
 }

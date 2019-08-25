@@ -2,17 +2,19 @@ import React, { useState } from 'react';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import WebDevModal from './WebDevModal';
+import FrontEndModal from './WebDevModal';
 import DevOpsModal from './DevOpsModal';
 import Card from 'react-bootstrap/Card';
 import FullStackModal from './FullStackModal';
+import { Container } from 'react-bootstrap';
+import { FaDev } from 'react-icons';
 
 function ModalCard() {
   const [XShow, setXShow] = useState(false);
   const [lgShow, setLgShow] = useState(false);
 const[xlShow, setXlShow] = useState(false);
   return (
-    <Card className="modal-about-card">
+    <Card className="modalCard">
       <Card.Header>
         <Card.Title>
           [skills]
@@ -23,10 +25,11 @@ const[xlShow, setXlShow] = useState(false);
 
       </Card.Header>
       <hr/>
-      <ButtonToolbar>
-        <Button className="nav-btn" onClick={() => setXShow(true)}>DevOps</Button>
-        <Button className="nav-btn" onClick={() => setLgShow(true)}>WebDev</Button>
-        <Button className="nav-btn" onClick={() => setXlShow(true)}>FullStack</Button>
+      <Card.Body>
+
+        <a className="nav-btn" onClick={() => setXShow(true)}>DevOps</a><br/>
+<br/>        <a className="nav-btn" onClick={() => setLgShow(true)}>WebDev</a> <br/>
+<br/>        <a className="nav-btn" onClick={() => setXlShow(true)}>FullStack</a>
 
         <DevOpsModal
           size="xl"
@@ -34,8 +37,7 @@ const[xlShow, setXlShow] = useState(false);
           onHide={() => setXShow(false)}
           aria-labelledby="example-modal-sizes-title-X"
         />
-        <WebDevModal
-          size="xl"
+        <FrontEndModal
           show={lgShow}
           onHide={() => setLgShow(false)}
           aria-labelledby="example-modal-sizes-title-lg"
@@ -47,7 +49,7 @@ const[xlShow, setXlShow] = useState(false);
           aria-labelledby="example-modal-sizes-title-xl"
         />
 
-      </ButtonToolbar>
+      </Card.Body>
     </Card>
   );
 }

@@ -46,8 +46,6 @@
 %btn-2 {
     border: $gray1 solid 0.4rem;
     color: $blue;
-    text-decoration: none;
-    text-align: center;
 }
 %btn-3 {
     border: $gray3 solid 0.4rem;
@@ -62,6 +60,11 @@
         #86cfda 65%,
         #4df 76%
     );
+}
+
+%btn-4{
+  color:$white;
+  background: $gray1;
 }
 %title{
   background:$white;
