@@ -1,62 +1,60 @@
-@import "./_base.scss";
+@import './_base.scss';
 @include generate-grid();
 
 #about {
-overflow: no-content;
-    height: 90% !important;
-
-.card{
+  overflow: no-content;
+  height: 90% !important;
+  .card {
     background: $white;
-    width:100%;
-    @include animate(flipInX, 1.5s, 25 );
+    width: 100%;
+    @include animate(flipInX, 1.5s, 25);
     overflow: no-display;
+    padding: 3rem;
 
+    .card-title {
+      font-size: 4.5rem;
+      margin-left: 0;
+      font-family: $title-font-alt0;
+    }
+
+    .card-subtitle {
+      font-family: $title-font;
+    }
+  }
+  .aboutCard {
+    background: $white !important;
+    width: 100%;
+    overflow: no-display;
+    margin: 3%;
+    display: inline-block;
+  }
+  button {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
-    .image-card{
-        background: $header-background;
-    }
 
-        .card-title {
-            font-family: $style-font;
-            font-size: 4.5rem;
-            margin-left: 0;
-        }
+.moreCard {
+  justify-content: center;
+  align-content: center;
 
-        .card-subtitle {
-            font-family: $title-font;
-        }
-
-    .aboutCard {
-        background: $white !important;
-        width: 100%;
-        overflow:no-display;
-        margin: 3%;
-        display: inline-block;
-    }
-button{
-    margin-left:10%;
-    margin-right:10%;
-} }
-
-
-.moreCard{
-    justify-content: center;
-    align-content: center;
-    a{
-
-        margin-left:2%;
-    }
-    a:nth-of-type(odd){
-        margin-left:12% !important;
-    }
-    hr{
-        margin-bottom: 0;
-    }
-    br{
-        margin-top:0;
-    }
-    p{
-        margin-top:0 !important;
-        margin-bottom:15%;
-    }
+  .nav-btn {
+    font-size: 2.5rem !important;
+    width: 30%;
+    padding: 1rem;
+    margin: 0;
+  }
+  .nav-btn:nth-of-type(odd) {
+    margin-left: 12% !important;
+  }
+  hr {
+    margin-bottom: 0;
+  }
+  br {
+    margin-top: 0;
+  }
+  p {
+    margin-top: 0 !important;
+    margin-bottom: 15%;
+  }
 }

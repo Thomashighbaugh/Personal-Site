@@ -42,10 +42,30 @@ $gray3: #868686;
 //font family
 $font: "Nova Mono",monospace;
 $font-alt:"Rock Salt", monospace;
+$font-alt0: "Oxygen Mono", monospace;
+$font-alt1: "Share Tech Mono", monospace;
+$font-alt2: "Nova Mono", monospace;
+$font-alt3: "Fira Code", monospace;
+$font-alt4: "Anonymous Pro", monospace;
+$font-alt5: "Averia Serif Libre", monospace;
+$font-alt6: "Squada One", monospace;
+
 $style-font: "Long Cang",monospace;
 $style-font-alt: "Space Mono", monospace;
-$title-font: "Knewave", "Permanent Marker","VT323", monospace;
+$style-font-alt0: "VT323", monospace;
+$style-font-alt1: "Libre Barcode 128", monospace;
+$style-font-alt2: "Libre Barcode 39", monospace;
+$style-font-alt3: "Lexend Giga", monospace;
+$style-font-alt4: "Lexend Peta", monospace;
+$style-font-alt5: "Lexend Exa", monospace;
+$style-font-alt6: "Lalezar", monospace;
+
+$title-font: "Knewave", monospace;
 $title-font-alt: "Rubik Mono One", monospace;
+$title-font-alt0: "VT323", monospace;
+$title-font-alt1: "Gochi Hand", monospace;
+$title-font-alt2: "Permanent Marker", monospace;
+
 
 // Grid Variables
 //used on the about page, which foregoes the usual layout and instead uses CSS Grid in SASS to style the cards
@@ -53,6 +73,6 @@ $mobile-breakpoint: 560px;
 $tablet-breakpoint: 960px;
 
 $grid-width: 2400;
-$column-gap: 200;
+$column-gap: 100;
 $gutter: ($column-gap / 2 / $grid-width * 100%);
 $column-width: 100% - $gutter * 2;

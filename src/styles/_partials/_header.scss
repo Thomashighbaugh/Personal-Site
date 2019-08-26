@@ -1,71 +1,69 @@
-@import "./_base.scss";
+@import './_base.scss';
 
 /*
 * The styles for the Header Component
 */
 
-    nav {
-        border-right: $gray2 1rem solid;
-        border-left: $blue 1rem solid;
-        border-bottom: $gray1 1rem solid;
-        background: $header-background;
-        margin: 0 !important;
-        clear: both;
-        display: block !important;
-font-size: 1.5rem;
+nav {
+  border-right: $gray2 1rem solid;
+  border-left: $blue 1rem solid;
+  border-bottom: $gray1 1rem solid;
+  background: $header-background;
+  margin: 0 !important;
+  clear: both;
+  display: block !important;
+  font-size: 1.75rem;
+  @include for-size(tablet-landscape) {
+    padding: 3rem;
+  }
+  @include for-size(tablet-portrait) {
+  }
+  @include for-size(phone-only) {
+    margin-bottom: 3rem;
+    margin-top: 0;
+    width: 100% !important;
+    padding: 1rem;
+    display: inline-grid;
+  }
+}
+.links {
+  float: right;
+  margin: 0;
+  position: relative;
+  margin: 1rem;
+  .nav-btn {
+    width: 20rem !important;
+    font-size: 2.25rem;
+  }
+}
 
-
-        @include for-size(tablet-landscape) {
-            padding:3rem;
-
-        }
-        @include for-size(tablet-portrait) {
-        }
-        @include for-size(phone-only) {
-            margin-bottom: 3rem;
-            margin-top: 0;
-            width: 100% !important;
-            padding: 1rem;
-            display: inline-grid;
-        }
-    }
-    .links{
-        float:right;
-        padding:1rem;
-        margin:0;
-        position:relative;
-    }
-
-
-.navbar-brand{
-    color:$white;
-    font-weight:900;
-    display:inline !important;
-
-    a{
-        @extend %btn-1;
-        width: 100%;
-        font-size:1.8rem;
-    }
-    a:hover{
-        @extend %btn-3;
-        width: 80%;
-    }
-    @include for-size(tablet-landscape) {
-        font-size:1.5rem;
-        margin-bottom: 3rem;
-
-    }
-    @include for-size(tablet-portrait) {
-        padding:0;
-        margin-top:0;
-        display:none !important;
-        font-size:1.25rem;
-
-    }
-    @include for-size(phone-only) {
-        margin-top: 0;
-        display: none;
-        padding: 0;
-    }
+.navbar-brand {
+  color: $white;
+  font-weight: 900;
+  font-family: $style-font-alt1 !important;
+  display: inline-block !important;
+  font-size: 2.25rem !important;
+    padding-top: 1rem !important;
+  a {
+    @extend %btn-1;
+    width: 100%;
+  }
+  a:hover {
+    @extend %btn-3;
+  }
+  @include for-size(tablet-landscape) {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  @include for-size(tablet-portrait) {
+    padding: 0;
+    margin-top: 0;
+    display: none !important;
+    font-size: 1.25rem;
+  }
+  @include for-size(phone-only) {
+    margin-top: 0;
+    display: none;
+    padding: 0;
+  }
 }

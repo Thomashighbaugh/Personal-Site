@@ -1,17 +1,18 @@
 @import './_base.scss';
 .modalCard {
-
-    display: block;
-    clear: both;
-  a:hover{
+  clear: both;
+  .nav-btn {
+    font-size: 2.5rem !important;
+    margin: 0;
+    width: 30%;
+    padding: 1rem;
+  }
+  a:hover {
     background: none;
-    border:none;
-    .nav-btn{
+    border: none;
+    .nav-btn {
       border: $gray1;
     }
-  }
-  a{
-    margin: 5rem!important;
   }
 }
 
@@ -22,14 +23,13 @@
   overflow: no-display;
   position: center;
 
-.modal-header{
-  background: $gradient5;
-}
+  .modal-header {
+    background: $gradient5;
+  }
   .modal-title {
     h4 {
       font-size: 3rem;
-      font-family:$title-font;
-      color:$white;
+      color: $white;
     }
   }
 
@@ -48,13 +48,11 @@
         li {
           font: $font !important;
           font-size: 120% !important;
-          color:$white;
+          color: $white;
         }
 
         h4 {
           font-size: 2.125rem;
-          font-family: $style-font-alt;
-
         }
       }
     }
@@ -63,7 +61,6 @@
     display: inline-grid;
     text-align: left;
     vertical-align: middle;
-
   }
 }
 
@@ -75,7 +72,6 @@
   margin-right: -4px;
 }
 
-
-.modal-backdrop{
+.modal-backdrop {
   opacity: 0.75 !important;
 }

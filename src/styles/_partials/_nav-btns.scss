@@ -3,14 +3,13 @@
 .nav-btn {
     @extend %btn-1;
     color: $white !important;
-    padding:0.7rem !important;
-    width:32% !important;
+    font-family: $title-font-alt0 !important;
+    width:30% !important;
     text-decoration: none !important;
+        text-align: center !important;
 }
 .nav-btn a:hover {
     @extend %btn-2;
-    width:32% !important;
-    padding:0.7rem !important;
     color: $white !important;
 
 
@@ -24,9 +23,12 @@
 .nav-link {
     @extend %btn-1;
     display: inline-block;
+    font-family: $title-font-alt0 !important;
+
 }
 .nav-pills {
     display: inline-block;
+    font-family: $title-font-alt0 !important;
 }
 
 

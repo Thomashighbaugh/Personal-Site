@@ -8,11 +8,10 @@ class Header extends Component {
       <header>
         <nav>
           <Navbar className="navbar">
-            <NavbarBrand>
-              <Link to="/">[ tlh development portfolio ]</Link>
+            <NavbarBrand className="navbar-brand">
+              <Link className="navbar-brand" to="/">[tlh development portfolio]</Link>
             </NavbarBrand>
             <div className="links">
-              <Row>
                 <br className="d-md-none" />
                 <div className="col-12 btn-group">
                   <Link
@@ -40,7 +39,6 @@ class Header extends Component {
                     [resume]
                   </Link>
                 </div>
-              </Row>
             </div>
           </Navbar>
         </nav>

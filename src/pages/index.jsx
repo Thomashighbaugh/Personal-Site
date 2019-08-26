@@ -20,7 +20,7 @@ const IndexPage = () => (
         <CardBody>
       <section>
     <div className='media'>
-    <img src="https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/dogpatchcircuit.png" alt="dog[atch"/>
+    <img src="https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/dogpatchcircuit.png" alt="dogpatch"/>
     </div>
       </section>
         </CardBody>

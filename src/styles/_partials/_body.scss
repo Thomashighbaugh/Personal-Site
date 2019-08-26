@@ -1,14 +1,13 @@
-@import "./_base.scss";
+@import './_base.scss';
 
-html{
-    margin:0 !important;
-    padding:0 !important;
-    width:100%;
-    box-sizing: border-box;
-    overflow:no-display;
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: no-display;
 
-}
-body {
+  body {
     background: $background !important;
     margin: 0;
     padding: 0;
@@ -25,12 +24,13 @@ body {
     //@include for-size(tablet-portrait) {
     //}
     @include for-size(phone-only) {
-        width: 100% !important;
+      width: 100% !important;
     }
-}
-img {
-    display: block;
-    width: 100%;
-}
+  }
 
-
+  img {
+         display: block;
+        width: 100%;
+      min-height:100%;
+     }
+}

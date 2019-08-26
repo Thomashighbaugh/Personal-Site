@@ -16,7 +16,7 @@ function FrontEndModal(props) {
     >
 
       <Modal.Header  className="modal-header">
-        <Modal.Title id="example-custom-modal-styling-title">
+        <Modal.Title>
           <h4 className="text-center">Front End Skills</h4>        </Modal.Title>
         <Button onClick={props.onHide}>[close]</Button>
 
