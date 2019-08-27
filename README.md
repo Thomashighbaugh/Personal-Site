@@ -47,7 +47,7 @@ cd thomas-leon-highbaugh-portfolio
 npm install
 ```
 
-### Run Dev Server
+### Run Development Server
 One perk of using Gatsby instead of the original build's use of React + WebPack is that it includes a baked in _Development Server_ for seeing what your site would look like when hosted. Unlike the Webpack Dev Server without Gatsby, there are several features Gatsby provides that make that part of the process more seamless, such as suggesting alternative ports (instead of exiting with an error code buried in lines of hardly human-readable techno-babble) and greater consistency with what the site will look like in production. 
 
 To use the development server simply enter:
