@@ -5,15 +5,15 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:react/recommended",
-    "prettier",
-    "prettier/react"
+    "eslint-plugin-graphql",
+    "eslint-plugin-prettier",
+    "gatsby-standard"
   ],
   "plugins": ["react"],
   "env": {
     "node": true,
     "es6": true,
-    "browser": true,
-    "jest": true
+    "browser": true
   },
   "parserOptions": {
     "ecmaVersion": 2016,
@@ -65,9 +65,6 @@
       "version": "16.0"
     },
     "import/core-modules": [],
-    "import/ignore": [
-      "node_modules",
-      "\\.(coffee|scss|css|less|hbs|svg|json)$"
-    ]
+    "import/ignore": ["node_modules", "\\.(coffee|scss|css|less|hbs|svg|json)$"]
   }
 }

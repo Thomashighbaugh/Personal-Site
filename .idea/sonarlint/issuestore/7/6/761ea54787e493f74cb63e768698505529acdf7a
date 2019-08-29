@@ -1,0 +1,13 @@
+
+@javascript:S1128"$Remove this unused import of 'Link'.(´Ûñï
+Ejavascript:S1128")Remove this unused import of 'PropTypes'.(âïÊﬂ
+Gjavascript:S1128"&Remove this unused import of 'Button'.(Ø˛öÖ¯ˇˇˇˇ
+Kjavascript:S1128"*Remove this unused import of 'CardFooter'.(Ø˛öÖ¯ˇˇˇˇ
+bjavascript:UnusedVariable	">Remove the declaration of the unused 'cardLinkLabel' variable.(“ù¨
+^javascript:UnusedVariable	":Remove the declaration of the unused 'cardText2' variable.(“ù¨
+^javascript:UnusedVariable	":Remove the declaration of the unused 'cardText3' variable.(“ù¨
+]javascript:UnusedVariable	"9Remove the declaration of the unused 'cardLink' variable.(“ù¨
+Wjavascript:S1854	"<Remove this useless assignment to local variable "cardText3"(“ù¨
+Wjavascript:S1854	"<Remove this useless assignment to local variable "cardText2"(“ù¨
+Vjavascript:S1854	";Remove this useless assignment to local variable "cardLink"(“ù¨
+[javascript:S1854	"@Remove this useless assignment to local variable "cardLinkLabel"(“ù¨

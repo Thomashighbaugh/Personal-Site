@@ -1,33 +1,50 @@
 import React, { useState } from 'react';
 import FrontEndModal from './FrontEndModal';
 import DevOpsModal from './DevOpsModal';
+import SysAdModal from './SysAdModal';
 import Card from 'react-bootstrap/Card';
-import ServerCloudModal from './ServerCloudModal';
+import ServerCloudModal from './DevOpsModal';
+import ServerSideModal from './ServerSideModal';
+import Button from 'react-bootstrap/Button';
 function ModalCard() {
   const [XShow, setXShow] = useState(false);
   const [lgShow, setLgShow] = useState(false);
   const [xlShow, setXlShow] = useState(false);
+  const [xxlShow, setXXlShow] = useState(false);
   return (
     <Card className="modalCard">
       <Card.Header>
         <Card.Title>[skills]</Card.Title>
-        <Card.Subtitle>click the buttons below to see modals</Card.Subtitle>
+        <Card.Subtitle>These are some of the technologies I have experience with!</Card.Subtitle>
       </Card.Header>
       <hr />
       <Card.Body>
-        <a className="nav-btn" onClick={() => setXShow(true)}>
-          [sys admin]
-        </a>
+        {/*buttons*/}
+        <p>Click the buttons to see a modal with a list of the technologies in that category.</p>
+        <main>
+        <button className="modalNav" onClick={() => setXShow(true)}>
+          [devOps]
+        </button>
         <br />
-        <br />{' '}
-        <a className="nav-btn" onClick={() => setLgShow(true)}>
-          [front end]
-        </a>{' '}
         <br />
-        <br />{' '}
-        <a className="nav-btn" onClick={() => setXlShow(true)}>
-          [server side]
-        </a>
+        <button className="modalNav" onClick={() => setLgShow(true)}>
+          [frontEnd]
+        </button>
+
+
+        </main>
+        <aside>
+          <button className="modalNav" onClick={() => setXlShow(true)}>
+            [sysAd]
+          </button>
+          <br />
+          <br />
+          <button className="modalNav" onClick={() => setXXlShow(true)}>
+            [backEnd]
+          </button>
+        </aside>
+        {/*end buttons*/}
+        {/*Begin Modal Calls*/}
         <DevOpsModal
           size="xl"
           show={XShow}
@@ -35,14 +52,21 @@ function ModalCard() {
           aria-labelledby="example-modal-sizes-title-X"
         />
         <FrontEndModal
+          size="xl"
           show={lgShow}
           onHide={() => setLgShow(false)}
           aria-labelledby="example-modal-sizes-title-lg"
         />
-        <ServerCloudModal
+        <SysAdModal
           size="xl"
           show={xlShow}
           onHide={() => setXlShow(false)}
+          aria-labelledby="example-modal-sizes-title-xl"
+        />
+        <ServerSideModal
+          size="xl"
+          show={xxlShow}
+          onHide={() => setXXlShow(false)}
           aria-labelledby="example-modal-sizes-title-xl"
         />
       </Card.Body>

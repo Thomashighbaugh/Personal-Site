@@ -1,18 +1,29 @@
 @import './_base.scss';
 .modalCard {
   clear: both;
-  .nav-btn {
-    font-size: 2.5rem !important;
+  button {
+    background: $gradient0;
+    color: $white;
+    border: 0.45rem $gray1 solid !important;
+    width: 75%;
+    font-size: 2.5rem;
+    font-weight: 900;
+    border-radius: 10px;
+    font-family: $style-font;
     margin: 0;
-    width: 30%;
-    padding: 1rem;
+    padding: 0;
   }
-  a:hover {
-    background: none;
-    border: none;
-    .nav-btn {
-      border: $gray1;
-    }
+  main {
+    width: 45%;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+  }
+  aside {
+    width: 45%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -25,16 +36,33 @@
 
   .modal-header {
     background: $gradient5;
+    border: 0.5rem solid $gray1;
+
   }
   .modal-title {
     h4 {
       font-size: 3rem;
       color: $white;
     }
+    margin:0;
+    padding:0;
   }
+  .modal-footer{
+    background:$gradient0;
+    border: 0.5rem solid $gray1;
 
+  }
+  .close-btn {
+    width: 25%;
+    background: $white;
+    color:$gray1;
+    font-size:2rem;
+    font-weight:900;
+  }
   .modal-body {
     background: $gradient0;
+    border: 0.5rem solid $gray1;
+
     section {
       display: inline-grid;
       width: 40%;
@@ -48,11 +76,11 @@
         li {
           font: $font !important;
           font-size: 120% !important;
-          color: $white;
+          color: $white !important;
         }
 
         h4 {
-          font-size: 2.125rem;
+          font-size: 2rem;
         }
       }
     }

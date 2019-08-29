@@ -1,0 +1,63 @@
+
+<
+package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
+9
+	config.js,1/6/1677f29b39bf4fb465d7689c0b6b95fc646fcdbc
+=
+gatsby-ssr.js,1/b/1b751cfe4e47ea2067637b99b8d62f89ed7ce4e3
+P
+ src/styles/_partials/_links.scss,6/b/6bb5c28b7787b70c260f5cf10bc4ae7a5d04e68b
+F
+src/pages/projects.jsx,4/4/4481435c62dbf1084ac624860adc43e9639f2e97
+@
+gatsby-config.js,4/f/4f261c6e46142df5e9a7303296b3fca674d719a9
+P
+ src/styles/_modules/_extend.scss,3/b/3b717516f08e74fd2a648554cc6aa73da965bb9a
+>
+gatsby-node.js,a/2/a23780635b5930667a9b325dccf9af8bbfc26434
+^
+.src/components/CustomCards/AboutCard/index.jsx,7/6/761ea54787e493f74cb63e768698505529acdf7a
+S
+#src/styles/_modules/_variables.scss,c/c/cc2706ec5f6c7d1ea7b5342894ef7104395012ac
+D
+src/styles/main.scss,3/5/353030f31ac807524e80367dd0726728089e12af
+R
+"src/styles/_partials/_project.scss,f/3/f3ad602c72abd55f19c412cfd4e0acc57b2898f5
+O
+src/styles/_partials/_body.scss,b/4/b4e64b83b9e6c4a13e3813a66c326d1cdf090b1a
+Q
+!src/styles/_partials/_resume.scss,1/5/15cdb1de9872e2bb28bd1d5dd28906a7a7998ffd
+S
+#src/styles/_partials/_nav-btns.scss,c/6/c687b3d17bac9feead97dc40e7756abc54d12bc8
+Q
+!src/styles/_partials/_header.scss,4/e/4e7a8f8ae249db3c784bfe40f6badab0cd209bbd
+O
+src/styles/_partials/_home.scss,e/0/e0235409f2aef4c55d7e61ec11c801ab0dfed2f0
+O
+src/styles/_partials/_text.scss,c/f/cf05fb4750ec74b0c9c7fad805b741555504d04d
+T
+$src/styles/_partials/_blog-post.scss,6/e/6ef011690ea604f5867a33834a7db11c23a206ba
+O
+src/styles/_partials/_card.scss,9/2/92aef4a2ef959eba3062e414e7cc6e149a4df07d
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+O
+src/styles/_partials/_base.scss,6/1/613ac7b7dfd13ea66927e172f885480ea1857b97
+Q
+!src/styles/_partials/_social.scss,6/b/6b1435df48c08d75396c2f76a1b904ca1c87c4cd
+^
+.src/components/CustomCards/ImageCard/index.jsx,e/c/ec63755e4f19e029704df1674c21826a0f9f1799
+^
+.src/components/CustomCards/ModalCard/index.jsx,c/e/ce423c8914aa2582bac03aeff618e4be2978fca0
+i
+9src/components/CustomCards/ModalCard/SysAdModal/index.jsx,d/2/d2d669f3078d424518d3da7aca8bab9fea9bfe26
+l
+<src/components/CustomCards/ModalCard/FrontEndModal/index.jsx,e/3/e38fcf9cf83bf042ff71c5d3aa28d9eb359d60d4
+P
+ src/styles/_partials/_modal.scss,5/9/590cec8337d89ec618e1d8442a7cefd880ffe007
+j
+:src/components/CustomCards/ModalCard/DevOpsModal/index.jsx,f/5/f58beece6440b8b6004dd6ecc0dc36443daea2ef
+9
+	.eslintrc,4/b/4be5f5e3cea171c304090be92469b2f2cb51039a
+n
+>src/components/CustomCards/ModalCard/ServerSideModal/index.jsx,c/f/cfe65d7c1bcf9a356d4f86c046ac7933afbe76db

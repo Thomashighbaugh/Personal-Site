@@ -5,56 +5,51 @@ function DevOpsModal(props) {
   return (
     <Modal
       {...props}
-      size="xl"
       style={{ opacity: 1 }}
-      aria-labelledby="contained-modal-title-center"
+      aria-labelledby="example-custom-modal-styling-title"
       centered
-      className="modal2"
+      scrollable
+      backdropClassName="bg-dark"
+      dialogClassName="modal-90w"
     >
-      <Modal.Header  className="modal-header">
-        <Modal.Title>
-          <h4 className="text-center">[systems administration]</h4>
+      <Modal.Header className="modal-header">
+        <Modal.Title id="example-custom-modal-styling-title">
+          <h4 className="text-center d-inline">Development Operations</h4>{' '}
         </Modal.Title>
-        <Button onClick={props.onHide}>[close]</Button>
       </Modal.Header>
-
       <Modal.Body>
         <section>
           <ul>
-            <h4>Linux</h4>
-            <li>Linux SysAd</li>
-            <li>Linux Shell Scripting</li>
-            <li>Linux Internals Customization</li>
-            <li>Modal Editing & Emacs</li>
+            <h4>Cloud/Serverless Services</h4>
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>GitHub/GitLab Pages</li>
+            <li>Surge</li>
+            <li>Netlify</li>
           </ul>
         </section>
         <section>
           <ul>
-            <h4>Containerization && Virtualization</h4>
-            <li>Docker</li>
-            <li>LXC/LXD</li>
-            <li>KVM + QEMU</li>
-            <li>OpenVZ</li>
-            <li>CoreOS && rkt</li>
-            <li>Proxmox</li>
+            <h4>Version Control</h4>
+            <li>Git</li>
+            <li>Bazaar</li>
+            <li>Subversion</li>
           </ul>
         </section>
         <section>
           <ul>
-            <h4>Infrastructure && Automation</h4>
-            <li>Ansible</li>
-            <li>Puppet</li>
-            <li>Chef</li>
-            <li>Terraform</li>
+            <h4>Continuous Integration</h4>
+            <li>Jenkins</li>
+            <li>Travis CI</li>
+            <li>GitLab Pipelines</li>
           </ul>
-        </section>
-        <section>
-          <h4>Deployment && Orchestration</h4>
-          <li>Kubernetes</li>
-          <li>Docker Swarm</li>
-          <li>Apache Mesos</li>
         </section>
       </Modal.Body>
+      <Modal.Footer>
+        <Button className="close-btn" onClick={props.onHide}>
+          [close]
+        </Button>
+      </Modal.Footer>
     </Modal>
   );
 }

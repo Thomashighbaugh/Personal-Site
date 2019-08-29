@@ -18,8 +18,6 @@ function FrontEndModal(props) {
       <Modal.Header  className="modal-header">
         <Modal.Title>
           <h4 className="text-center">Front End Skills</h4>        </Modal.Title>
-        <Button onClick={props.onHide}>[close]</Button>
-
       </Modal.Header>
       <Modal.Body>
 
@@ -67,6 +65,9 @@ function FrontEndModal(props) {
           </ul>
         </section>
       </Modal.Body>
+      <Modal.Footer>
+        <Button className="close-btn" onClick={props.onHide}>[close]</Button>
+      </Modal.Footer>
     </Modal>
   );
 }
