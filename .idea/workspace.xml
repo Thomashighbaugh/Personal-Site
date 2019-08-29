@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1a083478-515a-43b8-94d5-89b5c03b707f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/CustomCards/ModalCard/ServerSideModal/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CustomCards/ModalCard/SysAdModal/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomCards/ModalCard/DevOpsModal/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomCards/ModalCard/DevOpsModal/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomCards/ModalCard/FrontEndModal/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomCards/ModalCard/FrontEndModal/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomCards/ModalCard/ServerCloudModal/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomCards/ModalCard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomCards/ModalCard/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_modules/_extend.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_modules/_extend.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_modules/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_modules/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_partials/_blog-post.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_partials/_blog-post.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_partials/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_partials/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_partials/_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_partials/_project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_partials/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_partials/_text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/main.scss" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Q3Xe2eQbvYTIu0MEep1rs0FPPY" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a083478-515a-43b8-94d5-89b5c03b707f" name="Default Changelist" comment="" />
+      <created>1567000344229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567000344229</updated>
+      <workItem from="1567000346535" duration="43338000" />
+      <workItem from="1567101626096" duration="10859000" />
+      <workItem from="1567112714464" duration="1224000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
