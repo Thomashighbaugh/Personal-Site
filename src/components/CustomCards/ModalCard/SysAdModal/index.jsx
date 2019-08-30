@@ -7,8 +7,8 @@ function SysAdModal(props) {
       {...props}
       size="xl"
       style={{ opacity: 1 }}
-      aria-labelledby="contained-modal-title-center"
-      centered
+       aria-labelledby="contained-modal-title-center"
+       centered
       className="modal2"
     >
       <Modal.Header  className="modal-header">
@@ -45,10 +45,12 @@ function SysAdModal(props) {
           </ul>
         </section>
         <section>
+          <ul>
           <h4>Deployment && Orchestration</h4>
           <li>Kubernetes</li>
           <li>Docker Swarm</li>
           <li>Apache Mesos</li>
+          </ul>
         </section>
       </Modal.Body>
       <Modal.Footer>

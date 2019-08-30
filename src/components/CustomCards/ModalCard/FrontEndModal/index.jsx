@@ -37,6 +37,7 @@ function FrontEndModal(props) {
           <ul>
             <h4>Frameworks && Libraries</h4>
             <li>React</li>
+            <li>TSReact</li>
             <li>MaterialUI</li>
             <li>Bootstrap</li>
             <li>CSS Grid</li>
@@ -48,22 +49,14 @@ function FrontEndModal(props) {
 
         <section>
           <ul>
-            <h4>Languages & Stacks</h4>
-            <li>PHP</li>
-            <li>NodeJS</li>
-            <li>LAMP Stack</li>
-            <li>Nginx Server</li>
+            <h4>[transpilers, bundlers && site generators]</h4>
+            <li>Babel</li>
+            <li>Webpack</li>
+            <li>Gatsby</li>
+            <li>Gulp.js</li>
           </ul>
         </section>
-        <section>
-          <ul>
-            <h4>Databases</h4>
-            <li>MySQL</li>
-            <li>SQLite</li>
-            <li>PostgreSQL</li>
-            <li>Redis</li>
-          </ul>
-        </section>
+
       </Modal.Body>
       <Modal.Footer>
         <Button className="close-btn" onClick={props.onHide}>[close]</Button>

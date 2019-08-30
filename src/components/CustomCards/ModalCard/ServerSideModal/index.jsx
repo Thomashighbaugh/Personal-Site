@@ -20,14 +20,14 @@ function ServerSideModal(props) {
       <Modal.Body>
         <section>
           <ul>
-            <h4>Server Side Languages</h4>
+            <h4>[server side languages]</h4>
             <li>PHP</li>
             <li>Node.js</li>
           </ul>
         </section>
         <section>
           <ul>
-            <h4>Databases</h4>
+            <h4>[databases]</h4>
             <li>PostgreSQL</li>
             <li>MySQL</li>
             <li>SQLite</li>
@@ -36,17 +36,21 @@ function ServerSideModal(props) {
         </section>
         <section>
           <ul>
-            <h4>Back Up and Personal Clouds</h4>
+            <h4>[back up]</h4>
             <li>NextCloud</li>
+            <li>Sandstorm</li>
             <li>Borg</li>
             <li>RSync</li>
           </ul>
         </section>
         <section>
-          <h4>Development Servers & Stacks</h4>
+          <ul>
+          <h4>[dev servers & stacks]</h4>
           <li>LAMP</li>
           <li>Apache</li>
           <li>Nginx</li>
+            <li>WebPack Dev Server</li>
+          </ul>
         </section>
       </Modal.Body>
       <Modal.Footer>
