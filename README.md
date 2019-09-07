@@ -47,54 +47,54 @@ This site replaces TLH's former portfolio, Resurgens, and its associated brandin
 Like all projects, much can still be done. With this site, I have moved to releasing features and components of the site in a "rolling" fashion instead of completely rebuilding my portfolio, especially now that Iam comfortable and competent using React, Webpack, Gatsby and associated tools to create web interfaces and have a well ordered dev environment in which to craft these experiences. Below are the features I am aware need to be addressed promptly [and kujeky am already toiling with]
 
 ### Deployment 
--[x] deploy devlog
--[x] deploy portfolio site 
--[ ] deploy gallery site 
--[ ] link sites
+- [x] deploy devlog
+- [x] deploy portfolio site 
+- [ ] deploy gallery site 
+- [ ] link sites
 
 ### Structure
--[ ] move scss from easily replacable but cumbersome isolated SASS sheet structure to Atomic Design Model with components that call SCSS wuthin same durectory (to solve stylesheet inconsistencies and specific needs) 
+- [ ] move scss from easily replacable but cumbersome isolated SASS sheet structure to Atomic Design Model with components that call SCSS wuthin same durectory (to solve stylesheet inconsistencies and specific needs) 
 
 ### Meta
-- icons replacing social names, clevefr but generic ones for devlog and gallery
-- gray hover effect for buttons
+- [ ] icons replacing social names, clevefr but generic ones for devlog and gallery
+- [ ] gray hover effect for buttons
 
 
 ### About Page
--[ ] deal with card display on mobile (make width:100% at mobiler breakpoint)
--[ ] add blurb about art falling under differenct license
--[ ] adjust button and text responsiveness
+- [ ] deal with card display on mobile (make width:100% at mobiler breakpoint)
+- [ ] add blurb about art falling under differenct license
+- [ ] adjust button and text responsiveness
 
 ### Resume Page
--[ ] fix title font color
--[ ] fix references name color
--[ ] languages font color
--[ ] internal buttons to gray style
--[ ] tel number link copy-to-clipboard on click
--[ ] add devlog to contact/personal sites
--[ ] specific adjustments to fonts for page
--[ ] add blurb at end about JSONresume basis 
--[ ] remove whatever is causing some sections to align center, change to left for this page.
--[ ] create specific classes and ids for page
+- [ ] fix title font color
+- [ ] fix references name color
+- [ ] languages font color
+- [ ] internal buttons to gray style
+- [ ] tel number link copy-to-clipboard on click
+- [ ] add devlog to contact/personal sites
+- [ ] specific adjustments to fonts for page
+- [ ] add blurb at end about JSONresume basis 
+- [ ] remove whatever is causing some sections to align center, change to left for this page.
+- [ ] create specific classes and ids for page
 
 ### Projects Page
 
--[ ] consider refactoring and changing name to "work"
--[ ] Add RSS Feed for Projects Page
--[ ] Add repository and hosted links to each project
--[ ] add additional projects to showcase
--[ ] implement a system of categorization to projects allowing users to sort by involved skills
--[ ] reduce description width for mobile, prioritize projects
--[ ] create complete descriptions for all listed projects
+- [ ] consider refactoring and changing name to "work"
+- [ ] Add RSS Feed for Projects Page
+- [ ] Add repository and hosted links to each project
+- [ ] add additional projects to showcase
+- [ ] implement a system of categorization to projects allowing users to sort by involved skills
+- [ ] reduce description width for mobile, prioritize projects
+- [ ] create complete descriptions for all listed projects
 
 ### Gatsby Config
--[ ] optimize plugins, remove duplicates and ineffecencies
+- [ ] optimize plugins, remove duplicates and ineffecencies
 
 ### Responsiveness
--[ ] further optimize site for mobile/tablet/vertically-split-tiling-wm widths 
--[ ] achieve consistent animation effects
--[ ] remove unneeded animations from mobile experiences
--[ ] fix header button display 
+- [ ] further optimize site for mobile/tablet/vertically-split-tiling-wm widths 
+- [ ] achieve consistent animation effects
+- [ ] remove unneeded animations from mobile experiences
+- [ ] fix header button display 
 
 
 ## Installation
