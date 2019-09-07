@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         />
       </Helmet>
-      <Header className="header"/>
+      <Header className="header" />
       <div>
         <main>{children}</main>
         <Footer />

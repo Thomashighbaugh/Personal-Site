@@ -45,16 +45,18 @@ function ServerSideModal(props) {
         </section>
         <section>
           <ul>
-          <h4>[dev servers & stacks]</h4>
-          <li>LAMP</li>
-          <li>Apache</li>
-          <li>Nginx</li>
+            <h4>[dev servers & stacks]</h4>
+            <li>LAMP</li>
+            <li>Apache</li>
+            <li>Nginx</li>
             <li>WebPack Dev Server</li>
           </ul>
         </section>
       </Modal.Body>
       <Modal.Footer>
-        <Button className="close-btn" onClick={props.onHide}>[close]</Button>
+        <Button className="close-btn" onClick={props.onHide}>
+          [close]
+        </Button>
       </Modal.Footer>
     </Modal>
   );

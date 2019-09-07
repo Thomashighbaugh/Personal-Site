@@ -1,29 +1,44 @@
-import React, { Component, PropTypes } from "react";
-import { Button, Card, CardHeader, CardTitle, CardBody, CardSubtitle,  CardFooter, CardText } from 'reactstrap';
+import React, { Component, PropTypes } from 'react';
+import {
+  Button,
+  Card,
+  CardHeader,
+  CardTitle,
+  CardBody,
+  CardSubtitle,
+  CardFooter,
+  CardText,
+} from 'reactstrap';
 import { Link } from 'gatsby';
 import SocialIcons from './SocialIcons';
-class SocialCard extends Component{
+class SocialCard extends Component {
   constructor(props) {
     super(props);
   }
-  render(){
-    const {cardTitle, cardSubtitle, cardText, cardText2, cardText3,cardLink, cardLinkLabel } = this.props;
-    return(
+  render() {
+    const {
+      cardTitle,
+      cardSubtitle,
+      cardText,
+      cardText2,
+      cardText3,
+      cardLink,
+      cardLinkLabel,
+    } = this.props;
+    return (
       <Card className="socialCard">
         <CardHeader>
           <CardTitle>[social]</CardTitle>
-          <CardSubtitle>use the icons below to check out my social media profiles!</CardSubtitle>
+          <CardSubtitle>
+            use the icons below to check out my social media profiles!
+          </CardSubtitle>
           <hr />
         </CardHeader>
         <CardBody className="socialBody">
-        <SocialIcons />
+          <SocialIcons />
         </CardBody>
-
       </Card>
-
-
-    )
+    );
   }
-
 }
 export default SocialCard;

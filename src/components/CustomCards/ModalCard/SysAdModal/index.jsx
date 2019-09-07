@@ -7,11 +7,11 @@ function SysAdModal(props) {
       {...props}
       size="xl"
       style={{ opacity: 1 }}
-       aria-labelledby="contained-modal-title-center"
-       centered
+      aria-labelledby="contained-modal-title-center"
+      centered
       className="modal2"
     >
-      <Modal.Header  className="modal-header">
+      <Modal.Header className="modal-header">
         <Modal.Title>
           <h4 className="text-center">[systems administration]</h4>
         </Modal.Title>
@@ -46,16 +46,17 @@ function SysAdModal(props) {
         </section>
         <section>
           <ul>
-          <h4>Deployment && Orchestration</h4>
-          <li>Kubernetes</li>
-          <li>Docker Swarm</li>
-          <li>Apache Mesos</li>
+            <h4>Deployment && Orchestration</h4>
+            <li>Kubernetes</li>
+            <li>Docker Swarm</li>
+            <li>Apache Mesos</li>
           </ul>
         </section>
       </Modal.Body>
       <Modal.Footer>
-        <Button className="close-btn" onClick={props.onHide}>[close]</Button>
-
+        <Button className="close-btn" onClick={props.onHide}>
+          [close]
+        </Button>
       </Modal.Footer>
     </Modal>
   );

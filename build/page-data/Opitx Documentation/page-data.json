@@ -1,1 +1,37 @@
-{"componentChunkName":"component---src-templates-blog-post-js","path":"/Opitx Documentation/","webpackCompilationHash":"483bf0ebf55d75542fdd","result":{"data":{"site":{"siteMetadata":{"title":"https://thomasleonhighbaugh.me","author":"Thomas Leon Highbaugh"}},"markdownRemark":{"id":"52640306-d122-5aea-af2e-bcfb7baf67cd","excerpt":"The Stylish Alternative to Docs Site Boilerplate Opitx Documentation Front Page More Than Boilerplate While many docs sites have troubles far more essential in…","html":"<h3>The Stylish Alternative to Docs Site Boilerplate</h3>\n<p><img src=\"https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/Screenshot_2019-08-12_19-35-21.png\" alt=\"Opitx Documentation Front Page\"></p>\n<h2>More Than Boilerplate</h2>\n<p>While many docs sites have troubles far more essential in dealing with than the appearance, like making coherent statements that indicate how to use the program, there is none the less a tendency for otherwise well designed and thorough programs to have docs sites that are merely boilerplate + cryptic text. Additionally, if an effort does not generate a web site like developing BASH scripts or Electron apps, as this is the docs site to, I normally host some front end splash page for the project as a means of sharpening my skills. However, this site is a particular point of pride for me due to the very appealing and easy to use interface that makes the information clear and easily accessible. </p>\n<h4>Branding</h4>\n<p>Like the Opitx application, this site features all of my own branding that I came up with while developing the application and implemented personally. This branding is such that the site and application are consistent and coherent. This follow through in implementation of the design, as well as the particular functionality of the design, are why this page is being showcased at all. </p>\n<h2>To Do</h2>\n<ul>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled> Keep Documentation Current With Changes to the Application</li>\n</ul>\n<h2>Visit the Site</h2>\n<p>If you would like to explore the Opitx documentation site, follow <a href=\"https://opitx-docs.netlify.com\">this link</a></p>","frontmatter":{"title":"Opitx Documentation Site","date":"August 01, 2019","description":"Opitx is a minimal markdown editor that I made so I could save my files where I want to on my local directory. The first effort I have made that employs Electron as well as being the second major React project."}}},"pageContext":{"isCreatedByStatefulCreatePages":false,"slug":"/Opitx Documentation/","previous":{"fields":{"slug":"/Decommisioner/"},"frontmatter":{"title":"Decommissioner"}},"next":{"fields":{"slug":"/Opitx/"},"frontmatter":{"title":"Opitx"}}}}}
+{
+  "componentChunkName": "component---src-templates-blog-post-js",
+  "path": "/Opitx Documentation/",
+  "webpackCompilationHash": "483bf0ebf55d75542fdd",
+  "result": {
+    "data": {
+      "site": {
+        "siteMetadata": {
+          "title": "https://thomasleonhighbaugh.me",
+          "author": "Thomas Leon Highbaugh"
+        }
+      },
+      "markdownRemark": {
+        "id": "52640306-d122-5aea-af2e-bcfb7baf67cd",
+        "excerpt": "The Stylish Alternative to Docs Site Boilerplate Opitx Documentation Front Page More Than Boilerplate While many docs sites have troubles far more essential in…",
+        "html": "<h3>The Stylish Alternative to Docs Site Boilerplate</h3>\n<p><img src=\"https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/Screenshot_2019-08-12_19-35-21.png\" alt=\"Opitx Documentation Front Page\"></p>\n<h2>More Than Boilerplate</h2>\n<p>While many docs sites have troubles far more essential in dealing with than the appearance, like making coherent statements that indicate how to use the program, there is none the less a tendency for otherwise well designed and thorough programs to have docs sites that are merely boilerplate + cryptic text. Additionally, if an effort does not generate a web site like developing BASH scripts or Electron apps, as this is the docs site to, I normally host some front end splash page for the project as a means of sharpening my skills. However, this site is a particular point of pride for me due to the very appealing and easy to use interface that makes the information clear and easily accessible. </p>\n<h4>Branding</h4>\n<p>Like the Opitx application, this site features all of my own branding that I came up with while developing the application and implemented personally. This branding is such that the site and application are consistent and coherent. This follow through in implementation of the design, as well as the particular functionality of the design, are why this page is being showcased at all. </p>\n<h2>To Do</h2>\n<ul>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled> Keep Documentation Current With Changes to the Application</li>\n</ul>\n<h2>Visit the Site</h2>\n<p>If you would like to explore the Opitx documentation site, follow <a href=\"https://opitx-docs.netlify.com\">this link</a></p>",
+        "frontmatter": {
+          "title": "Opitx Documentation Site",
+          "date": "August 01, 2019",
+          "description": "Opitx is a minimal markdown editor that I made so I could save my files where I want to on my local directory. The first effort I have made that employs Electron as well as being the second major React project."
+        }
+      }
+    },
+    "pageContext": {
+      "isCreatedByStatefulCreatePages": false,
+      "slug": "/Opitx Documentation/",
+      "previous": {
+        "fields": { "slug": "/Decommisioner/" },
+        "frontmatter": { "title": "Decommissioner" }
+      },
+      "next": {
+        "fields": { "slug": "/Opitx/" },
+        "frontmatter": { "title": "Opitx" }
+      }
+    }
+  }
+}

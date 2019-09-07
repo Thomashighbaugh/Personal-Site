@@ -15,23 +15,26 @@ function ModalCard() {
     <Card className="modalCard">
       <Card.Header>
         <Card.Title>[skills]</Card.Title>
-        <Card.Subtitle>These are some of the technologies I have experience with!</Card.Subtitle>
+        <Card.Subtitle>
+          These are some of the technologies I have experience with!
+        </Card.Subtitle>
       </Card.Header>
       <hr />
       <Card.Body>
         {/*buttons*/}
-        <p>Click the buttons to see a modal with a list of the technologies in that category.</p>
+        <p>
+          Click the buttons to see a modal with a list of the technologies in
+          that category.
+        </p>
         <main>
-        <button className="modalNav" onClick={() => setXShow(true)}>
-          [devOps]
-        </button>
-        <br />
-        <br />
-        <button className="modalNav" onClick={() => setLgShow(true)}>
-          [frontEnd]
-        </button>
-
-
+          <button className="modalNav" onClick={() => setXShow(true)}>
+            [devOps]
+          </button>
+          <br />
+          <br />
+          <button className="modalNav" onClick={() => setLgShow(true)}>
+            [frontEnd]
+          </button>
         </main>
         <aside>
           <button className="modalNav" onClick={() => setXlShow(true)}>

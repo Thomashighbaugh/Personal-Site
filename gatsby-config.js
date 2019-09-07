@@ -1,5 +1,5 @@
-'use strict'
-const siteConfig = require("./config");
+'use strict';
+const siteConfig = require('./config');
 module.exports = {
   siteMetadata: {
     title: siteConfig.url,
@@ -105,7 +105,7 @@ module.exports = {
       },
     },
 
-   `gatsby-plugin-netlify`,
-	  `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-offline`,
   ],
-}
+};

@@ -12,34 +12,34 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <div  className="layout-card">
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-<div className="blog-post">
-  <p id="date">{post.frontmatter.date}</p>
-        <h1>{post.frontmatter.title}</h1>
-  <hr />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr/>
-        <ul className="nav">
-          <li className="nav-btn">
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li className="nav-btn">
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-</div>
+        <div className="layout-card">
+          <SEO
+            title={post.frontmatter.title}
+            description={post.frontmatter.description || post.excerpt}
+          />
+          <div className="blog-post">
+            <p id="date">{post.frontmatter.date}</p>
+            <h1>{post.frontmatter.title}</h1>
+            <hr />
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <hr />
+            <ul className="nav">
+              <li className="nav-btn">
+                {previous && (
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li className="nav-btn">
+                {next && (
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </div>
         </div>
       </Layout>
     );

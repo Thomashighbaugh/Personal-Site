@@ -5,7 +5,6 @@ description: A GUI application installer for Ubuntu based distros
 tags: bash, linux, shell-scripting
 ---
 
-
 ### System Provisioning Faster Than A Speeding Bullet
 
 ## Problem

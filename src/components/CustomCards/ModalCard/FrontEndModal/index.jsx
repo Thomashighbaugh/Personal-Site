@@ -7,31 +7,30 @@ function FrontEndModal(props) {
   return (
     <Modal
       {...props}
-      style={{opacity:1}}
+      style={{ opacity: 1 }}
       aria-labelledby="example-custom-modal-styling-title"
       centered
       scrollable
       backdropClassName="bg-dark"
       dialogClassName="modal-90w"
     >
-
-      <Modal.Header  className="modal-header">
+      <Modal.Header className="modal-header">
         <Modal.Title>
-          <h4 className="text-center">Front End Skills</h4>        </Modal.Title>
+          <h4 className="text-center">Front End Skills</h4>{' '}
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-
-<section>
-        <ul>
-          <h4>Languages</h4>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Vanilla JS</li>
-          <li>Typescript</li>
-          <li>Lua</li>
-          <li>GraphQL</li>
-        </ul>
-</section>
+        <section>
+          <ul>
+            <h4>Languages</h4>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Vanilla JS</li>
+            <li>Typescript</li>
+            <li>Lua</li>
+            <li>GraphQL</li>
+          </ul>
+        </section>
 
         <section>
           <ul>
@@ -56,10 +55,11 @@ function FrontEndModal(props) {
             <li>Gulp.js</li>
           </ul>
         </section>
-
       </Modal.Body>
       <Modal.Footer>
-        <Button className="close-btn" onClick={props.onHide}>[close]</Button>
+        <Button className="close-btn" onClick={props.onHide}>
+          [close]
+        </Button>
       </Modal.Footer>
     </Modal>
   );

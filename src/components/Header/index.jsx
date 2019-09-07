@@ -9,36 +9,38 @@ class Header extends Component {
         <nav>
           <Navbar className="navbar">
             <NavbarBrand className="navbar-brand">
-              <Link className="navbar-brand" to="/">[tlh development portfolio]</Link>
+              <Link className="navbar-brand" to="/">
+                [tlh development portfolio]
+              </Link>
             </NavbarBrand>
             <div className="links">
-                <br className="d-md-none" />
-                <div className="col-12 btn-group">
-                  <Link
-                    to="/about/"
-                    onlyActiveOnIndex
-                    className="nav-btn nav-link col-lg-3 nav-btn-pill"
-                    id="nav1"
-                  >
-                    [about]
-                  </Link>
-                  <Link
-                    to="/projects/"
-                    onlyActiveOnIndex
-                    className="nav-btn nav-link col-lg-3 nav-btn-pill"
-                    id="nav2"
-                  >
-                    [projects]
-                  </Link>
-                  <Link
-                    to="/resume/"
-                    onlyActiveOnIndex
-                    className="nav-btn nav-link col-lg-3 nav-btn-pill"
-                    id="nav3"
-                  >
-                    [resume]
-                  </Link>
-                </div>
+              <br className="d-md-none" />
+              <div className="col-12 btn-group">
+                <Link
+                  to="/about/"
+                  onlyActiveOnIndex
+                  className="nav-btn nav-link col-lg-3 nav-btn-pill"
+                  id="nav1"
+                >
+                  [about]
+                </Link>
+                <Link
+                  to="/projects/"
+                  onlyActiveOnIndex
+                  className="nav-btn nav-link col-lg-3 nav-btn-pill"
+                  id="nav2"
+                >
+                  [projects]
+                </Link>
+                <Link
+                  to="/resume/"
+                  onlyActiveOnIndex
+                  className="nav-btn nav-link col-lg-3 nav-btn-pill"
+                  id="nav3"
+                >
+                  [resume]
+                </Link>
+              </div>
             </div>
           </Navbar>
         </nav>

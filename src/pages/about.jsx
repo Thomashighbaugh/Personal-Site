@@ -74,16 +74,16 @@ class About extends Component {
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/020.jpg" />
             </Col>
             <Col>
-<MoreCard
-  id="3"
-  cardTitle="[sites]"
-  cardSubtitle="More by TLH, in case you haven't had enough yet"
-  cardText="Follow the links below to see what else I am up to!"
-  cardLink1="https://netlify.com"
-  cardLinkLabel1="[blog]"
-  cardLink2="https://netlify.com"
-  cardLinkLabel2="[gallery]"
-  />
+              <MoreCard
+                id="3"
+                cardTitle="[sites]"
+                cardSubtitle="More by TLH, in case you haven't had enough yet"
+                cardText="Follow the links below to see what else I am up to!"
+                cardLink1="https://netlify.com"
+                cardLinkLabel1="[blog]"
+                cardLink2="https://netlify.com"
+                cardLinkLabel2="[gallery]"
+              />
             </Col>
             <Col className="col">
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/019.jpg" />
