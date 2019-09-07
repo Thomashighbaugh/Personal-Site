@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[https://thomasleonhighbaugh.me]]></title><description><![CDATA[An interactive demonstration of the web development, design and software engineer prowess of Thomas Leon Highbaugh]]></description><link>https://thomasleonhighbaugh.me</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 07 Sep 2019 12:06:15 GMT</lastBuildDate><item><title><![CDATA[Manjaro Workstation Ansible Playbook]]></title><description><![CDATA[And the Value of Structured Examples Initially I was resistant to using Ansible to provision anything other than virtual 
+systems I use for…]]></description><link>https://thomasleonhighbaugh.me/Ansible-Manjaro/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/Ansible-Manjaro/</guid><pubDate>Tue, 20 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;And the Value of Structured Examples&lt;/h3&gt;
+&lt;p&gt;Initially I was resistant to using &lt;strong&gt;Ansible&lt;/strong&gt; to provision anything other than virtual
+systems I use for development purposes, as I was under the impression there was need for
+a central server (what my workstation or the hypervisor system work as) and I had not
+seen great examples of well structured &lt;strong&gt;Ansible&lt;/strong&gt; playbooks from watching and reading the
+jargon heavy, cringe-worthy documentation available for the project. While my frustrations
+with the documentation is likely to become a blog post soon, it is worth noting here that
+I value well structured projects to a point I had not realized before having a word for the
+concept of neaty organizing, topical directories. In frustration with an attempt to make a
+GUI for the Blasted Auto Installer, I looked up &lt;strong&gt;Ansible&lt;/strong&gt; playbooks for pacman-based systems and
+found an example that has changed my opinion about using &lt;strong&gt;Ansible&lt;/strong&gt; completely. &lt;/p&gt;
+&lt;p&gt;The Spark playbook, unrelated to &lt;strong&gt;Ansible&lt;/strong&gt; Spark, structured itself in a way that was similar to
+the approach I have recently started taking with SASS and React, where each role is separated
+into its own directory. This is in opposition to a monolithic role file or set of haphazardly
+arranged role files that were part of my prior confusion. Having some experience with &lt;strong&gt;Ansible&lt;/strong&gt;
+from before, I used it as the basis for writing a playbook to provision my workstation and am
+corrected in my dismissal of deploying &lt;strong&gt;Ansible&lt;/strong&gt; for that purpose. Instead of being an unnecessary
+pain to deploy in the context of a single machine and requiring a server (which when I
+read the docs lasted seemed imperative), I was able to set the target machine to the
+localhost! While the reader may be thinking, “Well DUH!” this was not inherently obvious to
+me before and since my knowledge of all things tech has been rapidly expanding recently, I
+won’t be too hard on myself. Nonetheless, I now have an even more automated way to provision
+my workstation that also features modular components, allowing for the creation of new playbooks
+rapidly without re-writing code. &lt;/p&gt;
+&lt;h3&gt;Modularization is Key&lt;/h3&gt;
+&lt;p&gt;The value of modularizing the components of a project like a Playbook may be less obvious
+due to the extremely helpful error codes &lt;strong&gt;Ansible&lt;/strong&gt; offers the user, but this is an
+exceptionally rare feature in my other efforts. By comparison, the most helpful Webpack
+wrapper I have used, Gatsby, does not have nearly as reliable or helpful error codes
+&lt;em&gt;and it is the most helpful I have seen!&lt;/em&gt; When writing code that can be segmented as this Playbook, I like
+writing it accordingly because it makes for a less frustrating debug process regardless of error codes.&lt;/p&gt;
+&lt;p&gt;The other aspect of modular source code that draws me to using that paradigm almost exclusively,
+if possible, is that I can assess the entire function occuring in that file more easily if I am
+not first forced to scroll through some massive file to find what I need. While for some scrolling
+through a directory with a lot of files may be harder, I find myself distracted by all the other
+things I have to fix if I am scrolling through code and do not have that issue when that code
+is not in front of me. Or in the words of many,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Out of sight, out of mind&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;To Do&lt;/h2&gt;
+&lt;p&gt;-[ ] Create extension to wrap the &lt;code class=&quot;language-text&quot;&gt;sudo aura -Ax&lt;/code&gt; command (used to install AUR packages without needing an AUR user or other work around for YAY not running for root)
+-[ ] refine deployment of Firejail to wrap less programs
+-[ ] add firejail wrapper to virt-manager
+-[ ] debug using fresh installs
+-[ ] create more elegant wrapper for dotbro (dotfile manager)
+-[ ] make branchs for my laptop, server and hypervisor systems&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Blasted-Auto-Installer]]></title><description><![CDATA[Scripts for Quick Provisioning of a Fresh Install Problem I reinstall my OS somewhat often, due to my tinkering with its internals. While…]]></description><link>https://thomasleonhighbaugh.me/BlastedAutoInstaller/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/BlastedAutoInstaller/</guid><pubDate>Mon, 05 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Scripts for Quick Provisioning of a Fresh Install&lt;/h3&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I reinstall my OS somewhat often, due to my tinkering with its internals. While this has engendered in me the natural inclination to back everything up several times, and other great habits, it means reinstalling programs became a real nightmare. I could use Ansible, but my workstation isn’t something I am going to remotely provision from another PC, considering any such provisioning would be from that computer and spending money on a digital ocean ansible host is not possible at the moment, nor is running another PC simply for this purpose. Enter Blasted Auto Installer. &lt;/p&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;p&gt;The scripts contained in the git repo all provision specific things that I often use. Each of them perform a different task, ennumerated below, and can all be called individually or from a central script that asks the user if they want to install the script and takes the command from the keypress, no enter required (which is easier than Ansible for these purposes let’s be real)&lt;/p&gt;
+&lt;p&gt;Scripts and description thereof &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;black - installs the Black Arch Repo and All Programs (if you need them all)&lt;/li&gt;
+&lt;li&gt;manjaro - central script that will call the others&lt;/li&gt;
+&lt;li&gt;pacman - uses pacman package manager to install files (—noconfirm means no additional input should be needed unless I missed that flag on a package)&lt;/li&gt;
+&lt;li&gt;gedit - provisions Gedit’s settings &lt;/li&gt;
+&lt;li&gt;dots - calls in my dotfiles and installs them in the home directory&lt;/li&gt;
+&lt;li&gt;github = packages pulled in from Github with automation of the next steps &lt;/li&gt;
+&lt;li&gt;spacemacs - installs spacemacs over emacs and starts it for initial configuration&lt;/li&gt;
+&lt;li&gt;install-snap - the reason I am using Manjaro over Arch &lt;/li&gt;
+&lt;li&gt;nvm - for installing the node version manager &lt;/li&gt;
+&lt;li&gt;yay - using YAY, available through the manjaro repos, this installs AUR packages &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;To Do&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; add zenity gui for manjaro&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; create templates script &lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; cleanup the repo&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; zsh/powerlevel10k script &lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; add script for installing EvoPopDark&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Colt-45-GUI]]></title><description><![CDATA[System Provisioning Faster Than A Speeding Bullet Problem This application and Blasted-Auto-Installer both answer for a similar need. The…]]></description><link>https://thomasleonhighbaugh.me/Colt45-GUI/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/Colt45-GUI/</guid><pubDate>Mon, 05 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;System Provisioning Faster Than A Speeding Bullet&lt;/h3&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;This application and Blasted-Auto-Installer both answer for a similar need. The Colt45 application answers the multi-pronged needs of installing applications on a system that has Ubuntu installed on it. Before I switched to using pacman based systems, I became frustrated with the many steps that setting up my Ubuntu workstations took and, as in the case of the Blasted Auto Installer, I found Ansible to be overkill. So I made some install scripts that evolved into this form.&lt;/p&gt;
+&lt;h2&gt;Solution &amp;#x26; Features&lt;/h2&gt;
+&lt;p&gt;The program is a lot less targeted than the Blasted Auto Installer, as it is intended to be useful to a broader audience and takes the place of the program installer than some distros come with. It adds PPA packages when necessary and uses a rather complicated system of looping through the users selection to achieve the desired installation script. It also includes SNAP package support, which it manages to do all of while presenting a single menu with radio boxes that the user may select.&lt;/p&gt;
+&lt;h4&gt;Zenity GUI&lt;/h4&gt;
+&lt;p&gt;The application uses Zenity to render the GUI screen presented to the user. This makes for a relatively “quick and dirty” UI that wasn’t heavily modified due to the nature of its use cases making excessive design a cumbersome and unneeded process. The use of Zenity as the basis was perfect for my needs in writing it, however developing the program in Python would have probably made it a little more stylish and still able to affect as much on a Linux system.&lt;/p&gt;
+&lt;h2&gt;Deprecation&lt;/h2&gt;
+&lt;p&gt;This program is no longer actively maintained, due to my using other OSes at the moment. If I go back to Ubuntu Budgie, it is useful to have around however the reason it is offered here in my portfolio is due to its relatively interesting internal structure, demonstrating competence with Linux and because it will likely be used as the shell for the rewrite of the Blasted Auto Installer in the near future.&lt;/p&gt;
+&lt;h2&gt;Repository Link &amp;#x26;&amp;#x26; Hosted Front End&lt;/h2&gt;
+&lt;button className=&quot;nav-btn  ml-2&quot;&gt;
+   &lt;a href=&quot;https://github.com/Thomashighbaugh/colt45gui&quot;&gt;
+   [github]
+   &lt;/a&gt;
+&lt;/button&gt;
+&lt;button className=&quot;nav-btn ml-2&quot;&gt;
+ &lt;a href=&quot;https://colt45gui.netlify.com/&quot;&gt;
+   [hosted]
+   &lt;/a&gt;
+&lt;/button&gt;</content:encoded></item><item><title><![CDATA[Not-Another-Devlog]]></title><link>https://thomasleonhighbaugh.me/NotAnotherDevlog/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/NotAnotherDevlog/</guid><pubDate>Mon, 05 Aug 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Electric-Tantra-Themes]]></title><link>https://thomasleonhighbaugh.me/GTK3Themes/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/GTK3Themes/</guid><pubDate>Mon, 05 Aug 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Resurgens2]]></title><link>https://thomasleonhighbaugh.me/ResurgensII/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/ResurgensII/</guid><pubDate>Mon, 05 Aug 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Resurgens2]]></title><link>https://thomasleonhighbaugh.me/ResurgensIII/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/ResurgensIII/</guid><pubDate>Mon, 05 Aug 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Resurgens4]]></title><link>https://thomasleonhighbaugh.me/ResurgensIV/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/ResurgensIV/</guid><pubDate>Mon, 05 Aug 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[SaarJanak]]></title><link>https://thomasleonhighbaugh.me/SaarJanak/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/SaarJanak/</guid><pubDate>Mon, 05 Aug 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Snippets]]></title><link>https://thomasleonhighbaugh.me/Snippets/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/Snippets/</guid><pubDate>Mon, 05 Aug 2019 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[EvoPopDark]]></title><description><![CDATA[A smooth GTK3 Theme With Dark Interfaces For Easy Viewing At Any Hour Screenshot of EvoPopDark in use Perserving the Theme The EvoPop theme…]]></description><link>https://thomasleonhighbaugh.me/EvoPopDark/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/EvoPopDark/</guid><pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;A smooth GTK3 Theme With Dark Interfaces For Easy Viewing At Any Hour&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://resurgens-iii.netlify.com/Project-Images/EvoPopDark.png&quot; alt=&quot;Screenshot of EvoPopDark in use&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Perserving the Theme&lt;/h2&gt;
+&lt;p&gt;The EvoPop theme is a Budgie DE designed alternative to the standard GTK3+ theme by the Gnome team. It is a gray theme with accents of a twitter-ish blue that is smooth and easy to look at. It is also, unfortunately, discontinued and though still available via repository that could easily change. Having a back up copy of the theme is one thing, however I always preferred it with a dark background and use a variety of DEs, most of which lack the dark mode toggle. &lt;/p&gt;
+&lt;p&gt;Thus I created a version of EvoPop that is dark for myself to use. I modified some of the windows that still appear light even with the toggle to make the theme even better for my purposes and host it for anyone else who finds themselves needing EvoPop and wanting the dark theme. &lt;/p&gt;
+&lt;h4&gt;Using CSS for GTK3+&lt;/h4&gt;
+&lt;p&gt;The technical aspect of this project, and any others featuring GTK themes, is that it utilizes CSS and therefore speaks to a set of skills I have developed for use on websites that is becoming increasingly useful in the context of the Linux desktop. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Opitx]]></title><description><![CDATA[Minimal Markdown Editor Screenshot of Opening Page of Opitx Problem None of the Markdown Editors had save functions that were simple like…]]></description><link>https://thomasleonhighbaugh.me/Opitx/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/Opitx/</guid><pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Minimal Markdown Editor&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/Opitx.png&quot; alt=&quot;Screenshot of Opening Page of Opitx&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;None of the Markdown Editors had save functions that were simple like other word processors or the text editor that comes with your OS. Most options either save in some database format, which can lead to being left with a mess of backups with random strings as the file names. &lt;/p&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;p&gt;An Electron application that uses the system standard menu options, the power of React to create the interface and Prismjs for syntax highlightings and creating the live preview mode. &lt;/p&gt;
+&lt;h4&gt;Packages Generated&lt;/h4&gt;
+&lt;p&gt;To install and use Opitx, which I warn you is still a work in progress but does its primary objective possible, I have packaged it in RPM DEB and APPIMAGE formats. Download the one you want from the Github Repo and BAM!&lt;/p&gt;
+&lt;h2&gt;To Do&lt;/h2&gt;
+&lt;p&gt;The application is not getting the attention I would prefer due to my time being consumed elsewhere, however it is going to receive some major renovations soon. They include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Theme switcher allowing users to change primsjs theme on the editor tab&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Better ReadME&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Fixed Menu&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Open from last file used feature&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Keybindings &lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Refreshed visuals &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Documentation Site &amp;#x26;&amp;#x26; Repository&lt;/h2&gt;
+&lt;p&gt;To see the documentation for the program see:    &lt;button className=&quot;nav-btn  ml-2&quot;&gt;
+&lt;a href=&quot;https://opitx-docs.netlify.com&quot;&gt;
+[ opitx docs]
+&lt;/a&gt;
+&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt; See the source code on   &lt;button className=&quot;nav-btn   ml-2&quot;&gt;
+&lt;a href=&quot;https://github.com/Thomashighbaugh/Opitx&quot;&gt;
+[github]
+&lt;/a&gt;
+&lt;/button&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Opitx Documentation Site]]></title><description><![CDATA[The Stylish Alternative to Docs Site Boilerplate Opitx Documentation Front Page More Than Boilerplate While many docs sites have troubles…]]></description><link>https://thomasleonhighbaugh.me/Opitx Documentation/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/Opitx Documentation/</guid><pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;The Stylish Alternative to Docs Site Boilerplate&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/Screenshot_2019-08-12_19-35-21.png&quot; alt=&quot;Opitx Documentation Front Page&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;More Than Boilerplate&lt;/h2&gt;
+&lt;p&gt;While many docs sites have troubles far more essential in dealing with than the appearance, like making coherent statements that indicate how to use the program, there is none the less a tendency for otherwise well designed and thorough programs to have docs sites that are merely boilerplate + cryptic text. Additionally, if an effort does not generate a web site like developing BASH scripts or Electron apps, as this is the docs site to, I normally host some front end splash page for the project as a means of sharpening my skills. However, this site is a particular point of pride for me due to the very appealing and easy to use interface that makes the information clear and easily accessible. &lt;/p&gt;
+&lt;h4&gt;Branding&lt;/h4&gt;
+&lt;p&gt;Like the Opitx application, this site features all of my own branding that I came up with while developing the application and implemented personally. This branding is such that the site and application are consistent and coherent. This follow through in implementation of the design, as well as the particular functionality of the design, are why this page is being showcased at all. &lt;/p&gt;
+&lt;h2&gt;To Do&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Keep Documentation Current With Changes to the Application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Visit the Site&lt;/h2&gt;
+&lt;p&gt;If you would like to explore the Opitx documentation site, follow &lt;a href=&quot;https://opitx-docs.netlify.com&quot;&gt;this link&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Decommissioner]]></title><description><![CDATA[BASH-inception The Answer to Package Installation on Virtual Systems When provisioning virtual systems, it is often the case that there will…]]></description><link>https://thomasleonhighbaugh.me/Decommisioner/</link><guid isPermaLink="false">https://thomasleonhighbaugh.me/Decommisioner/</guid><pubDate>Fri, 05 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;BASH-inception&lt;/h3&gt;
+&lt;h2&gt;The Answer to Package Installation on Virtual Systems&lt;/h2&gt;
+&lt;p&gt;When provisioning virtual systems, it is often the case that there will be a precise set of packages you wish to install on that virtual system to achieve whatever task it is you are using the system for. Remembering a long list of packages is often rather hard, especially when your primary focus is that task that you are doing with those virtual systems. While Docker images are a possible way around this dilemma, there are times when containers are simply not enough and you need the entire virtualized system, which is why I wrote this script. &lt;/p&gt;
+&lt;h4&gt;Other Use Cases&lt;/h4&gt;
+&lt;p&gt;This script is also useful in the situation where I want to install the precise packages that are currently installed on my OS that include some not reflected in my auto-installation programs (or in an Ansible playlist if that is your thing). &lt;/p&gt;
+&lt;p&gt;It can also be useful when you achieve that perfect workstation configuration and want a back up for later installation. &lt;/p&gt;
+&lt;h5&gt;And A Whole Lot More!&lt;/h5&gt;
+&lt;h2&gt;What It Does&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Process&lt;/strong&gt;&lt;/p&gt;
+&lt;h5&gt;Ubuntu&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;make-script.sh &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;creates a bash script to reinstall the PPAs installed &lt;/li&gt;
+&lt;li&gt;creates a text file with the names of the installed packages (called the manifest)&lt;/li&gt;
+&lt;li&gt;creates an array of the names of those packages stripped of extra information (using regular expressions)&lt;/li&gt;
+&lt;li&gt;creates a file (with a proper shebang) to add package install dialog to&lt;/li&gt;
+&lt;li&gt;adds each package name to a line starting with “sudo apt-get install -y”&lt;/li&gt;
+&lt;li&gt;creates a file with both the PPAs and Packages on them for a single install scripts &lt;/li&gt;
+&lt;li&gt;moves the generated install scripts and manifest to a new directory &lt;/li&gt;
+&lt;li&gt;creates a tarball out of the directory&lt;/li&gt;
+&lt;li&gt;cleans up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Built With&lt;/h2&gt;
+&lt;p&gt;This project was built with just BASH scripts and was a short detour into understanding more about Regular Expressions. Being motivated by a desire to simplify a process, which is of particular frustration due to the nebulous nature of Ubuntu (my primary OS when I wrote this originally), there was no GUI generated or even CLI echo statements. &lt;/p&gt;
+&lt;h2&gt;Landing Page&lt;/h2&gt;
+&lt;p&gt;The landing page is an early example of me using effects in SCSS, which at the time it was written I was only beginning to dabble in the use of, it is not an interactive or featureful site but serves the purpose of giving the project some web presence and as a playground served its function. &lt;/p&gt;
+&lt;h2&gt;To Do&lt;/h2&gt;
+&lt;p&gt;[x] create a landing page
+[ ] create echo statements enabling determination of where in the process the script is or failed
+[ ] create a GUI to confirm the process and output to the user where the scripts where saved&lt;/p&gt;</content:encoded></item></channel></rss>
