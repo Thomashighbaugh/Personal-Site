@@ -3,7 +3,7 @@ const siteConfig = require("./config");
 module.exports = {
   siteMetadata: {
     title: siteConfig.url,
-    description: `An interactive demonstration of the web development, design and software engineer prowess of Thomas Leon Highbaugh`,
+    description: `An interactive demonstration of the web development, design and overall technical prowess of Thomas Leon Highbaugh`,
     author: siteConfig.author.name,
     siteUrl: siteConfig.url,
     social: {
@@ -86,7 +86,6 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
