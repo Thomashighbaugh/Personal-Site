@@ -29,12 +29,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-page-transitions',
-      options: {
-        transitionTime: 900
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -111,6 +105,7 @@ module.exports = {
       },
     },
 
-     `gatsby-plugin-offline`,
+   `gatsby-plugin-netlify`,
+	  `gatsby-plugin-offline`,
   ],
 }
