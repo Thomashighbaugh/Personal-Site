@@ -6,17 +6,21 @@
   background: $white;
   display:block;
   .card-title{
-    width:90%;
+    width:95%;
     @extend %resume-title;
     font-size: 5rem;
+    margin-right:5%;
     margin-bottom:0;
     text-align:center;
   }
   .card-title-description{
-    width:90%;
+    width:95%;
     margin-top:0;
+    margin-left:2.05%;
     font-size:3.5rem;
     @extend %resume-title;
+    border-bottom: 1rem $gray1 solid;
+
   }
   .card-subtitle{
     @extend %resume-subtitle;
@@ -30,6 +34,11 @@
   .col{
     width:45%;
     display:inline-block;
+  }
+  .highlights{
+    list-style: inside;
+    font-family: $style-font-alt1;
+    font-size:1.5rem;
   }
   #basics{
     .contact{
@@ -69,8 +78,12 @@
   }
   #work{
     clear:both;
-
-    .col:nth-of-type(2){
+    .col{
+      margin-left: 5%;
+      margin-right: 5%;
+      width:40%;
+    }
+    .col:nth-child(even){
       float:right;
     }
     .work-name{
@@ -92,12 +105,12 @@
       text-align: center;
       font-family: $style-font-alt1;
       font-size:2rem;
+      p{
+        font-size: 1.75rem;
+        text-align:left;
+      }
     }
-    .highlights{
-      list-style: inside;
-      font-family: $style-font-alt1;
-      font-size:1.5rem;
-    }
+
     .work-website {
       a {
         @extend %resume-basics-btn-hover;
@@ -106,6 +119,38 @@
       a:hover{
         @extend %resume-basics-btn;
       }
+    }
+  }
+  #education{
+    clear:both;
+    .col{
+      margin-left: 5%;
+      margin-right: 5%;
+      width:40%;
+    }
+    .col:nth-child(even){
+      float:right;
+    }
+    .institution{
+      background: $gray1;
+      font-family: $style-font-alt0;
+      color: $white;
+      margin-bottom:0;
+      font-size: 3rem;
+      border-bottom: $blue solid 0.5rem;
+    }
+    .study-date{
+      text-align: center;
+      font-family: $style-font-alt1;
+      font-size:2rem;
+    }
+    .gpa{
+      color:$white;
+      background: $blue;
+      font-size: 1.75rem;
+      width:25%;
+      margin-left: 5%;
+      font-family: $title-font-alt;
     }
   }
 }
