@@ -5,6 +5,7 @@
   margin-right:5%;
   background: $white;
   display:block;
+  //common classes styles
   .card-title{
     width:95%;
     @extend %resume-title;
@@ -40,6 +41,8 @@
     font-family: $style-font-alt1;
     font-size:1.5rem;
   }
+
+  // section styles
   #basics{
     .contact{
       margin-bottom: 1rem;
@@ -151,6 +154,27 @@
       width:25%;
       margin-left: 5%;
       font-family: $title-font-alt;
+    }
+  }
+  #skills{
+    clear:both;
+    .col{
+      margin-left: 5%;
+      margin-right: 5%;
+      width:40%;
+    }
+    .col:nth-child(even){
+      float:right;
+    }
+    .category{
+      margin-top:5%;
+      padding:1%;
+      background: $gray1;
+      font-family: $style-font-alt0;
+      color: $white;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      border-bottom: $blue solid 0.5rem;
     }
   }
 }
