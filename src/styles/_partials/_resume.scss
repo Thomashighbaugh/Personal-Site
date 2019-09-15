@@ -177,4 +177,56 @@
       border-bottom: $blue solid 0.5rem;
     }
   }
+  #misc {
+    clear: both;
+justify-content: center;
+    align-content: center;
+    #languages {
+      padding-right: 2%;
+      .languages {
+        list-style: none;
+        text-align: center;
+        text-align: center;
+
+        .language {
+          background: $blue;
+          color: $white;
+          font-size: 3rem;
+          font-weight: 900;
+          font-family: $style-font;
+        }
+
+        .level {
+          background: $gray1;
+          color: $white;
+          font-size: 3rem;
+          font-weight: 900;
+          font-family: $style-font;
+        }
+      }
+    }
+#references{
+  .people {
+    list-style: none;
+    text-align: center;
+    text-align: center;
+
+    .name {
+      background: $blue;
+      color: $white;
+      font-size: 3rem;
+      font-weight: 900;
+      font-family: $style-font;
+    }
+    .phone{
+      background: $gray1;
+      color: $white;
+      font-size: 3rem;
+      font-weight: 900;
+      font-family: $style-font;
+    }
+  }
 }
+      }
+    }
+

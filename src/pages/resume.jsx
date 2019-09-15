@@ -340,6 +340,54 @@ class Resume extends React.Component {
                 </ul>
               </Col>
             </Row>
+              <Row className="row" id="misc">
+                <Col className="col" id="languages">
+                  <h2 className="card-subtitle">Languages</h2>
+                  <Row className="languages">
+                    <Col>
+                      <div className="language">English</div>
+                      <div className="level">
+                        <em>Native speaker</em>
+                      </div>
+                    </Col>
+                    <Col>
+                      <div className="language">Spanish</div>
+                      <div className="level">
+                        <em>Conversational</em>
+                      </div>
+                    </Col>
+                    <Col>
+                      <div className="language">German</div>
+                      <div className="level">
+                        <em>Basic</em>
+                      </div>
+                    </Col>
+                  </Row>
+                </Col>
+                <Col className="col" id="references">
+                  <h2 className="card-subtitle">References</h2>
+                  <Row className="people">
+                    <Col>
+                      <div className="name">English</div>
+                      <div className="phone">
+                        <em>Native speaker</em>
+                      </div>
+                    </Col>
+                    <Col>
+                      <div className="name">Spanish</div>
+                      <div className="level">
+                        <em>Conversational</em>
+                      </div>
+                    </Col>
+                    <Col>
+                      <div className="language">German</div>
+                      <div className="level">
+                        <em>Basic</em>
+                      </div>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
             </div></div>
         </Card>
       </Layout>
