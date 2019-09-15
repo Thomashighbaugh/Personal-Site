@@ -368,22 +368,19 @@ class Resume extends React.Component {
                   <h2 className="card-subtitle">References</h2>
                   <Row className="people">
                     <Col>
-                      <div className="name">English</div>
+                      <div className="name">Kenneth Gary</div>
                       <div className="phone">
-                        <em>Native speaker</em>
-                      </div>
+                        <Obfuscate className="reference" tel="1-510-875-9086" />                      </div>
                     </Col>
                     <Col>
-                      <div className="name">Spanish</div>
-                      <div className="level">
-                        <em>Conversational</em>
-                      </div>
+                      <div className="name">Tim Weiland</div>
+                      <div className="phone">
+                        <Obfuscate className="reference" tel="1-650-773-4744" />                      </div>
                     </Col>
                     <Col>
-                      <div className="language">German</div>
-                      <div className="level">
-                        <em>Basic</em>
-                      </div>
+                      <div className="name">Austin Blaylock</div>
+                      <div className="phone">
+                        <Obfuscate className="reference" tel="1-925-337-2712" />                      </div>
                     </Col>
                   </Row>
                 </Col>

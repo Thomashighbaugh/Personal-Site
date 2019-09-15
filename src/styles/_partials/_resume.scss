@@ -217,13 +217,17 @@ justify-content: center;
       font-size: 3rem;
       font-weight: 900;
       font-family: $style-font;
+
     }
     .phone{
       background: $gray1;
-      color: $white;
-      font-size: 3rem;
-      font-weight: 900;
+
       font-family: $style-font;
+      .reference{
+        color: $white !important;
+        font-size: 3rem;
+        font-weight: 900;
+      }
     }
   }
 }
