@@ -18,7 +18,6 @@ class Resume extends React.Component {
           <div id="resume">
             <h1 className="card-title">Thomas Leon Highbaugh</h1>
             <h2 className="card-title-description">
-              
               Web Developer &amp;&amp; Freelance IT Professional
             </h2>
             <div id="content" className="card-body offset-2">
@@ -189,7 +188,6 @@ class Resume extends React.Component {
                   <div className="work-position">South Hayward Parish</div>
                   <div className="work-date">
                     <p>
-                      
                       A local, community-run homeless shelter in Hayward,
                       California that leverages volunteer work and community
                       donations to help the needy
@@ -284,62 +282,55 @@ class Resume extends React.Component {
                     <span> GPA 3.7</span>
                   </div>
                 </Col>
-
               </Row>
-            <Row className="row" id="skills">
-              <h2 className="card-title">Skills</h2>
-              <Col className="col">
-                <h3 className="category">
-                  Web Development
-                </h3>
-                <ul className="highlights">
-                  <li>HTML5 &amp; CSS3</li>
-                  <li>Javascript, JSX, Node &amp; React</li>
-                  <li>PHP, LAMP &amp; MySQL</li>
-                  <li>Python &amp; Perl</li>
-                  <li>SASS, SCSS &amp; Less</li>
-                  <li>BASH, ZSH &amp; Shell Scripting</li>
-                </ul>
-              </Col>
-              <Col className="col">
-                <h3 className="category">
-                  Linux Systems Administration
-                </h3>
-                <ul className="highlights">
-                  <li>BASH</li>
-                  <li>ZSH</li>
-                  <li>Linux</li>
-                  <li>Ansible</li>
-                  <li>SSH</li>
-                  <li>Virtualization</li>
-                  <li>Containers</li>
-                </ul>
-              </Col>
-              <Col className="col">
-                <h3 className="category">
-                  Hardware Configuration &amp; Repair
-                </h3>
-                <ul className="highlights">
-                  <li>Windows</li>
-                  <li>macOS</li>
-                  <li>Linux</li>
-                  <li>Server</li>
-                  <li>Component Installation</li>
-                  <li>Troubleshooting</li>
-                </ul>
-              </Col>
-              <Col className="col">
-                <h3 className="category">
-                  Linux Development
-                </h3>
-                <ul className="highlights">
-                  <li>BASH Shell Scripting</li>
-                  <li>Electron Platform</li>
-                  <li>Linux Configuration (aka dotfiles)</li>
-                  <li>C++</li>
-                </ul>
-              </Col>
-            </Row>
+              <Row className="row" id="skills">
+                <h2 className="card-title">Skills</h2>
+                <Col className="col">
+                  <h3 className="category">Web Development</h3>
+                  <ul className="highlights">
+                    <li>HTML5 &amp; CSS3</li>
+                    <li>Javascript, JSX, Node &amp; React</li>
+                    <li>PHP, LAMP &amp; MySQL</li>
+                    <li>Python &amp; Perl</li>
+                    <li>SASS, SCSS &amp; Less</li>
+                    <li>BASH, ZSH &amp; Shell Scripting</li>
+                  </ul>
+                </Col>
+                <Col className="col">
+                  <h3 className="category">Linux Systems Administration</h3>
+                  <ul className="highlights">
+                    <li>BASH</li>
+                    <li>ZSH</li>
+                    <li>Linux</li>
+                    <li>Ansible</li>
+                    <li>SSH</li>
+                    <li>Virtualization</li>
+                    <li>Containers</li>
+                  </ul>
+                </Col>
+                <Col className="col">
+                  <h3 className="category">
+                    Hardware Configuration &amp; Repair
+                  </h3>
+                  <ul className="highlights">
+                    <li>Windows</li>
+                    <li>macOS</li>
+                    <li>Linux</li>
+                    <li>Server</li>
+                    <li>Component Installation</li>
+                    <li>Troubleshooting</li>
+                  </ul>
+                </Col>
+                <Col className="col">
+                  <h3 className="category">Linux Development</h3>
+                  <ul className="highlights">
+                    <li>BASH Shell Scripting</li>
+                    <li>Electron Platform</li>
+                    <li>Linux Configuration (aka dotfiles)</li>
+                    <li>C++</li>
+                  </ul>
+                </Col>
+              </Row>
               <Row className="row" id="misc">
                 <Col className="col" id="languages">
                   <h2 className="card-subtitle">Languages</h2>
@@ -370,22 +361,26 @@ class Resume extends React.Component {
                     <Col>
                       <div className="name">Kenneth Gary</div>
                       <div className="phone">
-                        <Obfuscate className="reference" tel="1-510-875-9086" />                      </div>
+                        <Obfuscate className="reference" tel="1-510-875-9086" />{' '}
+                      </div>
                     </Col>
                     <Col>
                       <div className="name">Tim Weiland</div>
                       <div className="phone">
-                        <Obfuscate className="reference" tel="1-650-773-4744" />                      </div>
+                        <Obfuscate className="reference" tel="1-650-773-4744" />{' '}
+                      </div>
                     </Col>
                     <Col>
                       <div className="name">Austin Blaylock</div>
                       <div className="phone">
-                        <Obfuscate className="reference" tel="1-925-337-2712" />                      </div>
+                        <Obfuscate className="reference" tel="1-925-337-2712" />{' '}
+                      </div>
                     </Col>
                   </Row>
                 </Col>
               </Row>
-            </div></div>
+            </div>
+          </div>
         </Card>
       </Layout>
     );
