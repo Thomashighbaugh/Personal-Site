@@ -7,6 +7,10 @@
   width: 95%;
   margin-left: 2.5%;
   margin-right: 2.5%;
+  border-left: 0.5rem solid $blue;
+  border-right: 0.5rem solid $gray2;
+  border-bottom: 0.5rem solid $gray1;
+  border-top: 0.25rem solid $blue1;
   h1 {
     font-family: $style-font;
     font-size: 5rem;
