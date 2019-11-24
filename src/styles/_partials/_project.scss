@@ -1,9 +1,10 @@
 @import './_base.scss';
 #projects {
   @include animate(pulse, 1s, 39);
-  width: 85%;
+  width: 95%;
   padding: 1.5rem;
-  margin: 2rem 4.5%;
+  margin-left: 2.5%;
+  margin-top: 2rem;
   background: $gradient0;
   border: 3rem double $gray1;
   border-radius: 10px;
@@ -17,6 +18,7 @@
     color: $white;
     border-bottom: $gray1 solid 0.5rem;
     margin-left: 02rem;
+    margin-bottom: 30%;
   }
   .post {
     a {
@@ -63,10 +65,12 @@
 
     h4 {
       color: $white;
-      margin-left: 5%;
+  font-size: 4rem;
+      font-family: $style-font;
+      margin-left:0.5rem;
     }
     p {
-      font-size: 1.75rem;
+      font-size: 2rem;
       background: none;
       margin-left: 1rem;
       font-family: $font-alt;
