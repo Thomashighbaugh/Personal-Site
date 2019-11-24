@@ -61,15 +61,8 @@ class About extends Component {
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/020.jpg" />
             </Col>
             <Col>
-              <MoreCard
-                id="3"
-                cardTitle="[sites]"
-                cardSubtitle="More by TLH, in case you haven't had enough yet"
-                cardText="Follow the links below to see what else I am up to!"
-                cardLink1="https://netlify.com"
-                cardLinkLabel1="[blog]"
-                cardLink2="https://netlify.com"
-                cardLinkLabel2="[gallery]"
+              <ImageCard
+                cardImage="https://avatars3.githubusercontent.com/u/32242061?s=460&v=4"
               />
             </Col>
             <Col className="col">

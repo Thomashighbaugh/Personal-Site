@@ -9,8 +9,8 @@ html {
 
   body {
     background: $background !important;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     color: $font-color;
     font-family: $font;
     border-radius: 10px;
@@ -19,8 +19,8 @@ html {
     //
     //@include for-size(desktop) {
     //}
-    //@include for-size(tablet-landscape) {
-    //}
+   // @include for-size(tablet-landscape) {
+   // }
     //@include for-size(tablet-portrait) {
     //}
     @include for-size(phone-only) {

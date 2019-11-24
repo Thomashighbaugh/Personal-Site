@@ -19,8 +19,15 @@
     border-bottom: $gray1 solid 0.5rem;
     margin-left: 02rem;
     margin-bottom: 30%;
+    @include for-size(tablet-landscape) {
+      width: 100%;
+      display: block;
+      margin: 0.125rem 0 0;
+      padding: 0;
+    }
   }
-  .post {
+
+   .post {
     a {
       text-decoration: none;
       font-family: $title-font-alt2;
@@ -40,11 +47,14 @@
       font-size: 3rem;
       color: $gray3 !important;
     }
+
+
   }
 
   section {
     box-sizing: border-box;
     width: 95%;
+
   }
 
   main {
@@ -56,6 +66,8 @@
     p {
       background: none;
     }
+    justify-content: center;
+
   }
   aside {
     float: right;
@@ -75,18 +87,21 @@
       font-family: $font-alt;
     }
   }
-  @include for-size(tablet-landscape-down) {
-    width: 100% !important;
+  @include for-size(tablet-landscape) {
+    width: 100%;
+    display: block;
+    margin-left: 0;
     h1 {
-      font-size: 5rem !important;
+      font-size: 6rem !important;
       font-family: $style-font;
       text-align: center;
       color: $white;
-      margin-bottom: 0 !important;
     }
-
+h4{
+  font-size: 1.4rem;
+}
     p {
-      font-size: 0.8rem;
+      font-size: 1.2rem !important;
       margin-bottom: 2rem;
       margin-right: 5%;
       margin-left: 5%;

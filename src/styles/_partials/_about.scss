@@ -32,6 +32,21 @@
     margin-left: 10%;
     margin-right: 10%;
   }
+
+  //@include for-size(big-desktop) {
+  //}
+  //
+  //@include for-size(desktop) {
+  //}
+   @include for-size(tablet-landscape) {
+
+
+   }
+  //@include for-size(tablet-portrait) {
+  //}
+  @include for-size(phone-only) {
+    width: 100% !important;
+  }
 }
 
 .moreCard {

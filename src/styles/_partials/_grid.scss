@@ -9,18 +9,37 @@
   overflow:no-content;
   justify-content: space-between;
 
-  @media (min-width: $mobile-breakpoint) {
-    flex-direction: row;
-    margin: 0 auto;
-    padding: 0;
+  //@include for-size(big-desktop) {
+  //}
+  //
+  //@include for-size(desktop) {
+  //}
+  @include for-size(tablet-landscape) {
+display: block;
+.col{
+  width: 90%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+align-content: center;
+  justify-content: center;
+  a{
+    font-size: 3rem !important
+  }
+}
 
+
+  }
+  //@include for-size(tablet-portrait) {
+  //}
+  @include for-size(phone-only) {
+    width: 100% !important;
   }
 }
 
 
 .col {
   width: $column-width;
-  margin-bottom: 20px;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;

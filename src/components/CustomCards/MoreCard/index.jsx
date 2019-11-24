@@ -34,16 +34,17 @@ class MoreCard extends Component {
         <CardBody>
           <CardText>
             <br />
+
             <p>{cardText}</p>
-            <Container fluid className="d-inline-flex">
-              <br />
-              <a className="nav-btn" href={cardLink1}>
+             <a className="nav-btn" href={cardLink1}>
                 {cardLinkLabel1}
               </a>
-              <a className="nav-btn" href={cardLink2}>
+            <br />
+            <p>{cardText2}</p>
+             <a className="nav-btn" href={cardLink2}>
                 {cardLinkLabel2}
               </a>
-            </Container>
+
           </CardText>
         </CardBody>
       </Card>
