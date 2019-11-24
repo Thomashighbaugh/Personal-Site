@@ -13,7 +13,7 @@
     margin-right: 5%;
     margin-bottom: 0;
     text-align: center;
-    @include animate(zoomIn, 1s, 100)
+    @include animate(zoomIn, 1s, 100);
   }
   .card-title-description {
     width: 95%;
@@ -22,7 +22,7 @@
     font-size: 3.5rem;
     @extend %resume-title;
     border-bottom: 1rem $gray1 solid;
-    @include animate(zoomIn, 1s, 100)
+    @include animate(zoomIn, 1s, 100);
   }
   .card-subtitle {
     @extend %resume-subtitle;
@@ -36,7 +36,7 @@
   .col {
     width: 45%;
     display: inline-block;
-    @include animate(lightSpeedIn, 1s, 100 )
+    @include animate(lightSpeedIn, 1s, 100);
   }
   .highlights {
     list-style: inside;

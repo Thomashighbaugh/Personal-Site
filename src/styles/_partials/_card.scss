@@ -9,23 +9,23 @@
   font-size: 2.3rem;
   margin-left: 3rem;
   margin-right: 6rem;
-  width:25%;
+  width: 25%;
 }
 .card {
-  border-top: $gray1 0.5rem solid;
-  border-right: $gray2 1rem solid;
-  border-left: $blue 1rem solid;
-  border-bottom: $blue2 1rem solid;
-  padding: 2rem;
+  border-top: $gray1 0.25rem solid;
+  border-right: $gray2 0.5rem solid;
+  border-left: $blue 0.5rem solid;
+  border-bottom: $blue2 0.5rem solid;
+  padding: 1.5rem;
   justify-content: center;
   align-content: center;
-margin-top:2rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 5% !important;
   margin-right: 5% !important;
-  overflow:no-display;
+  overflow: no-display;
 
-  height:90%;
+  height: 90%;
   background: $header-background;
   @include for-size(big-desktop) {
   }
@@ -41,6 +41,9 @@ margin-top:2rem;
   @include for-size(phone-only) {
   }
 }
-.card-title{
-  color:$blue !important;
+.card-title {
+  color: $blue !important;
+  background: $white;
+  width: auto;
+  overflow: no-content;
 }

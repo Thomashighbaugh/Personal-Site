@@ -20,9 +20,13 @@ class BlogPostTemplate extends React.Component {
           <div className="blog-post">
             <p id="date">{post.frontmatter.date}</p>
             <h1>{post.frontmatter.title}</h1>
-            <hr />
+            <hr className="blog-hr" />
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <hr />
+            <br />
+            <br />
+            <hr className="blog-hr" />
+            <br />
+            <br />
             <ul className="nav">
               <li className="nav-btn">
                 {previous && (

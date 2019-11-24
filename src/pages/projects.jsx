@@ -1,6 +1,6 @@
 /*
-* This page is the showcase page that renders markdown files into articles about
-* each listed project
+ * This page is the showcase page that renders markdown files into articles about
+ * each listed project
  */
 // TODO - add links to all the projects in their markdown files
 // TODO - standarize the writing in each article using format from SaarJanak
@@ -27,12 +27,13 @@ class BlogIndex extends React.Component {
             <aside>
               <h4>[ description ]</h4>
               <p>
-                Listed here are some of the projects that demonstrate my
-                capacity and flare as a developer.
+                These are some of the projects I have worked on recently.
+                Clicking the title will take you to a description of the project
+                with information about what it does and why I made it.
               </p>
               <p>
-                The projects listed here range from BASH scripts for Linux-based
-                OSes to my Web Development efforts.
+                The projects listed include those pertaining to development,
+                operations... and both!
               </p>
             </aside>
           </div>

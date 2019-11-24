@@ -1,10 +1,10 @@
-@import "./_base.scss";
+@import './_base.scss';
 
-.socialCard{
-  a:hover{
-background: none;
-    border:none;
-    .nav-btn{
+.socialCard {
+  a:hover {
+    background: none;
+    border: none;
+    .nav-btn {
       border: $gray1;
     }
   }

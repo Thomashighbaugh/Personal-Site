@@ -12,81 +12,81 @@
   flex-basis: border-box;
   clear: both;
   @include animate(zoomIn, 3s, 20, 1);
-    h1{
-        font-size:10rem !important;
-        color:$white;
-    }
-   .post {
-       a {
-           text-decoration: none;
-           font-family: $font-alt2;
-           font-size: 2.5rem;
-           color: $gray3 !important;
-       }
-
-       a:hover {
-           @extend %btn-5;
-           color: $gray3;
-
-       }
-
-       a:visited {
-           text-decoration: none;
-           font-family: $style-font;
-           font-size: 3rem;
-           color: $gray3 !important;
-       }
-   }
-
-    section {
-        box-sizing: border-box;
-        width: 90%;
+  h1 {
+    font-size: 13rem !important;
+    color: $white;
+    border-bottom: $gray1 solid 0.5rem;
+    margin-left: 02rem;
+  }
+  .post {
+    a {
+      text-decoration: none;
+      font-family: $title-font-alt2;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: $gray3 !important;
     }
 
-    main {
-        margin-left: 10%;
-        float: left;
-        color:$white;
-        p {
-            background: none;
-        }
+    a:hover {
+      @extend %btn-5;
+      color: $gray3;
     }
-    aside {
-        border-left: 0.5rem $gray1 solid;
-        margin-left: 5%;
-        float: right;
-        color:$white;
 
-        h4 {
-            color: $white;
-            margin-left: 5%;
-        }
-        p {
-            font-size: 1.5rem;
-            background: none;
-            margin-left: 1rem;
-        }
-
+    a:visited {
+      text-decoration: none;
+      font-family: $style-font;
+      font-size: 3rem;
+      color: $gray3 !important;
     }
+  }
+
+  section {
+    box-sizing: border-box;
+    width: 90%;
+  }
+
+  main {
+    margin-left: 10%;
+    float: left;
+    color: $white;
+    font-weight: 900;
+    p {
+      background: none;
+    }
+  }
+  aside {
+    border-left: 0.5rem $gray1 solid;
+    margin-left: 5%;
+    float: right;
+    color: $white;
+    font-weight: 900;
+
+    h4 {
+      color: $white;
+      margin-left: 5%;
+    }
+    p {
+      font-size: 1.75rem;
+      background: none;
+      margin-left: 1rem;
+      font-family: $font-alt;
+    }
+  }
   @include for-size(tablet-landscape-down) {
-      width: 100% !important;
-      h1 {
-          font-size: 5rem !important;
-          font-family: $style-font;
-          text-align: center;
-          color: $white;
-          margin-bottom: 0 !important;
-      }
+    width: 100% !important;
+    h1 {
+      font-size: 5rem !important;
+      font-family: $style-font;
+      text-align: center;
+      color: $white;
+      margin-bottom: 0 !important;
+    }
 
-
-
-          p {
-              font-size: 0.8rem;
-              margin-bottom: 2rem;
-              margin-right: 5%;
-              margin-left: 5%;
-          }
-      }
-
-
+    p {
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+  }
 }
