@@ -4,6 +4,7 @@
 #about {
   overflow: no-content;
   height: 90% !important;
+
   .card {
     background: $white;
     width: 100%;
@@ -21,6 +22,7 @@
       font-family: $title-font;
     }
   }
+
   .aboutCard {
     background: $white !important;
     width: 100%;
@@ -28,6 +30,7 @@
     margin: 3%;
     display: inline-block;
   }
+
   button {
     margin-left: 10%;
     margin-right: 10%;
@@ -38,38 +41,39 @@
   //
   //@include for-size(desktop) {
   //}
-   @include for-size(tablet-landscape) {
-
-
-   }
+  @include for-size(tablet-landscape) {
+  }
   //@include for-size(tablet-portrait) {
   //}
   @include for-size(phone-only) {
     width: 100% !important;
   }
-}
 
-.moreCard {
-  justify-content: center;
-  align-content: center;
+  .moreCard {
+    justify-content: center;
+    align-content: center;
 
-  .nav-btn {
-    font-size: 2.5rem !important;
-    width: 30%;
-    padding: 1rem;
-    margin: 0;
-  }
-  .nav-btn:nth-of-type(odd) {
-    margin-left: 12% !important;
-  }
-  hr {
-    margin-bottom: 0;
-  }
-  br {
-    margin-top: 0;
-  }
-  p {
-    margin-top: 0 !important;
-    margin-bottom: 15%;
+    .card-title {
+      width: 100%;
+    }
+
+    hr {
+      margin-bottom: 0;
+    }
+
+    br {
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 0 !important;
+      font-size: 1.33rem;
+    }
+    em {
+      font-family: $style-font;
+      font-weight: 900;
+      color: $blue;
+      font-size: 2rem;
+    }
   }
 }

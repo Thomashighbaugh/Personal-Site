@@ -8,6 +8,8 @@ import {
   CardText,
 } from 'reactstrap';
 import Container from 'react-bootstrap/Container';
+import { Col, Row } from 'react-bootstrap';
+import { CardFooter } from 'react-bootstrap/Card';
 class MoreCard extends Component {
   constructor(props) {
     super(props);
@@ -16,13 +18,9 @@ class MoreCard extends Component {
     const {
       cardTitle,
       cardSubtitle,
+      cardText3,
       cardText,
       cardText2,
-      cardText3,
-      cardLink1,
-      cardLinkLabel1,
-      cardLink2,
-      cardLinkLabel2,
     } = this.props;
     return (
       <Card className="moreCard">
@@ -34,16 +32,13 @@ class MoreCard extends Component {
         <CardBody>
           <CardText>
             <br />
-
-            <p>{cardText}</p>
-            <a className="nav-btn" href={cardLink1}>
-              {cardLinkLabel1}
-            </a>
-            <br />
-            <p>{cardText2}</p>
-            <a className="nav-btn" href={cardLink2}>
-              {cardLinkLabel2}
-            </a>
+            <Container fluid>
+              <CardBody>
+                <p className="moreText">{cardText}</p>
+                <p className="moreText">{cardText2}</p>
+                <em className="moreText">{cardText3}</em>
+              </CardBody>
+            </Container>
           </CardText>
         </CardBody>
       </Card>

@@ -60,7 +60,13 @@ class About extends Component {
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/020.jpg" />
             </Col>
             <Col>
-              <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site/master/src/images/me.png" />
+              <MoreCard
+                cardTitle="[art]"
+                cardSubtitle="about the graphics used on this site"
+                cardText="All of the graphics, except for the backgrounds, were created by me, Thomas Leon Highbaugh. Like everything else about the site, they are OPEN SOURCE as long as you make sure to give me credit for them ."
+                cardText2="Each piece began as a photograph I took with my phone of some landscape or building and then I stylized it accordingly. They are supposed to highlight the majestic scenery that is all around us if you just look for it."
+                cardText3="If you like them, check out my Instagram (@tlhresurgens) for more!"
+              />
             </Col>
             <Col className="col">
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/019.jpg" />
