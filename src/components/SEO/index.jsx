@@ -1,6 +1,6 @@
 /**
- * Index component that queries for data with
- *  Gatsby's useStaticQuery React hook
+ * Component to make the website more friendly
+ * to search engine queries
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
@@ -27,9 +27,10 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-
+// variable holds description to offer it to the search engines in a format they can
+  //utilize
   return (
-    <Helmet
+    <Helmet //tag provides the head element to the rendered html pages
       htmlAttributes={{
         lang,
       }}
@@ -75,7 +76,7 @@ function SEO({ description, lang, meta, title }) {
     />
   );
 }
-
+// defaults for search engines, in this case providing the language name
 SEO.defaultProps = {
   lang: `en`,
   meta: [],

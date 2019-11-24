@@ -1,35 +1,22 @@
+/* The About Page
+*
+* This page is to introduce myself to the visitor, what I do (as far as
+* development) and go more in depth with the two other sites
+*
+that are part of this effort */
+
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
-import CardTitle from 'reactstrap/es/CardTitle';
-import CardBody from 'reactstrap/es/CardBody';
-import Card from 'reactstrap/es/Card';
-
 import AboutCard from '../components/CustomCards/AboutCard';
 import '../styles/main.scss';
 import Col from 'reactstrap/es/Col';
-import {
-  FaLinkedin,
-  FaGithubSquare,
-  FaStackOverflow,
-  FaFreeCodeCamp,
-  FaTwitterSquare,
-} from 'react-icons/fa';
-import SocialIcons from '../components/CustomCards/SocialCard/SocialIcons';
 import SocialCard from '../components/CustomCards/SocialCard';
 import Row from 'reactstrap/es/Row';
 import ImageCard from '../components/CustomCards/ImageCard';
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
 import ModalCard from '../components/CustomCards/ModalCard';
-import Container from 'react-bootstrap/Container';
 import MoreCard from '../components/CustomCards/MoreCard';
 
-// The About Page
 
-// This page is to introduce myself to the visitor, what I do (as far as
-// development) and go more in depth with the two other sites
-
-// that are part of this effort
 
 class About extends Component {
   constructor(props) {
@@ -44,7 +31,7 @@ class About extends Component {
     console.log('selected ' + key);
     this.setState({ key });
   }
-  render() {
+  render() {//each card will pass in its data as arguments to the properties set up in the components themselves
     return (
       <Layout>
         <div id="about">

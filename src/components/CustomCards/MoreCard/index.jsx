@@ -1,15 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 import {
-  Button,
   Card,
   CardHeader,
   CardTitle,
   CardBody,
   CardSubtitle,
-  CardFooter,
   CardText,
 } from 'reactstrap';
-import { Link } from 'gatsby';
 import Container from 'react-bootstrap/Container';
 class MoreCard extends Component {
   constructor(props) {

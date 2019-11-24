@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import { Navbar, NavbarBrand } from 'react-bootstrap';
-import Row from 'react-bootstrap/Row';
 class Header extends Component {
   render() {
     return (

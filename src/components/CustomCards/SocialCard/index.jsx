@@ -1,15 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import {
-  Button,
   Card,
   CardHeader,
   CardTitle,
   CardBody,
   CardSubtitle,
-  CardFooter,
-  CardText,
 } from 'reactstrap';
-import { Link } from 'gatsby';
 import SocialIcons from './SocialIcons';
 class SocialCard extends Component {
   constructor(props) {

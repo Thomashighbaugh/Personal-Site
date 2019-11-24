@@ -3,9 +3,7 @@ import FrontEndModal from './FrontEndModal';
 import DevOpsModal from './DevOpsModal';
 import SysAdModal from './SysAdModal';
 import Card from 'react-bootstrap/Card';
-import ServerCloudModal from './DevOpsModal';
 import ServerSideModal from './ServerSideModal';
-import Button from 'react-bootstrap/Button';
 function ModalCard() {
   const [XShow, setXShow] = useState(false);
   const [lgShow, setLgShow] = useState(false);

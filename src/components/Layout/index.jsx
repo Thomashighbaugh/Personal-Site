@@ -1,9 +1,7 @@
 /**
- * Index component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+ * Exists to create the layout for each page when called
+ * provides consistency in design
+ * */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -11,7 +9,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Footer from '../Footer';
 import Header from '../Header';
 import '../../styles/main.scss';
-import Container from 'reactstrap/es/Container';
 import { Helmet } from 'react-helmet';
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

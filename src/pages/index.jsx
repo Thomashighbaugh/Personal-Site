@@ -1,5 +1,11 @@
+/*
+* This page serves as the front page of the site. I opted to not overload the user with
+* information from the onset, instead using some of my art and a few transitions to make
+* the page attractive to users, demonstrative of my skillset and as a place to showcase my art
+*
+ */
+// TODO fix image margins (and likely adjust card size)
 import React from 'react';
-import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import CardTitle from 'reactstrap/es/CardTitle';
@@ -9,7 +15,8 @@ import Card from 'react-bootstrap/Card';
 const IndexPage = () => (
   <Layout id="home">
     <div id="home">
-      <SEO title="[welcome]" />
+      <SEO title="[welcome]"
+      description="The front page of the developer portfolio of Thomas Leon Highbaugh. Featuring artwork by TLH himself."/>
       <Card>
         <CardHeader>
           <CardTitle>[welcome]</CardTitle>

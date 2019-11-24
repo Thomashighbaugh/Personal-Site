@@ -2,11 +2,6 @@
 //The Footer Component
 //
 import React, { Component, PropTypes } from 'react';
-import { Link } from 'gatsby';
-import Navbar from 'react-bootstrap/es/Navbar';
-import NavItem from 'react-bootstrap/es/NavItem';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 class Footer extends Component {
   render() {
