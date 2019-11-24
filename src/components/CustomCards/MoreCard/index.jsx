@@ -36,15 +36,14 @@ class MoreCard extends Component {
             <br />
 
             <p>{cardText}</p>
-             <a className="nav-btn" href={cardLink1}>
-                {cardLinkLabel1}
-              </a>
+            <a className="nav-btn" href={cardLink1}>
+              {cardLinkLabel1}
+            </a>
             <br />
             <p>{cardText2}</p>
-             <a className="nav-btn" href={cardLink2}>
-                {cardLinkLabel2}
-              </a>
-
+            <a className="nav-btn" href={cardLink2}>
+              {cardLinkLabel2}
+            </a>
           </CardText>
         </CardBody>
       </Card>

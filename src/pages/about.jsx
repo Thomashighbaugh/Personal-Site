@@ -16,8 +16,6 @@ import ImageCard from '../components/CustomCards/ImageCard';
 import ModalCard from '../components/CustomCards/ModalCard';
 import MoreCard from '../components/CustomCards/MoreCard';
 
-
-
 class About extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +29,8 @@ class About extends Component {
     console.log('selected ' + key);
     this.setState({ key });
   }
-  render() {//each card will pass in its data as arguments to the properties set up in the components themselves
+  render() {
+    //each card will pass in its data as arguments to the properties set up in the components themselves
     return (
       <Layout>
         <div id="about">
@@ -61,9 +60,7 @@ class About extends Component {
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/020.jpg" />
             </Col>
             <Col>
-              <ImageCard
-                cardImage="https://raw.githubusercontent.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site/master/src/images/me.png"
-              />
+              <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site/master/src/images/me.png" />
             </Col>
             <Col className="col">
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/019.jpg" />

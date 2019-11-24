@@ -1,4 +1,4 @@
-@import "./_base.scss";
+@import './_base.scss';
 .grid {
   display: flex;
   max-width: #{$grid-width}px;
@@ -6,7 +6,7 @@
   margin-top: 1rem !important;
   margin-right: 1rem !important;
   margin-bottom: 1rem !important;
-  overflow:no-content;
+  overflow: no-content;
   justify-content: space-between;
 
   //@include for-size(big-desktop) {
@@ -15,20 +15,18 @@
   //@include for-size(desktop) {
   //}
   @include for-size(tablet-landscape) {
-display: block;
-.col{
-  width: 90%;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 3rem;
-align-content: center;
-  justify-content: center;
-  a{
-    font-size: 3rem !important
-  }
-}
-
-
+    display: block;
+    .col {
+      width: 90%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 3rem;
+      align-content: center;
+      justify-content: center;
+      a {
+        font-size: 3rem !important;
+      }
+    }
   }
   //@include for-size(tablet-portrait) {
   //}
@@ -37,7 +35,6 @@ align-content: center;
   }
 }
 
-
 .col {
   width: $column-width;
   margin-left: 1rem;
@@ -45,4 +42,3 @@ align-content: center;
   margin-bottom: 1rem;
   min-height: 1px;
 }
-
