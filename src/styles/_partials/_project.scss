@@ -44,21 +44,20 @@
 
   section {
     box-sizing: border-box;
-    width: 90%;
+    width: 95%;
   }
 
   main {
     margin-left: 10%;
     float: left;
     color: $white;
+    min-width:50%;
     font-weight: 900;
     p {
       background: none;
     }
   }
   aside {
-    border-left: 0.5rem $gray1 solid;
-    margin-left: 5%;
     float: right;
     color: $white;
     font-weight: 900;

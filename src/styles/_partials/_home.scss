@@ -7,29 +7,39 @@
 
 #home {
   //home responsive styling
-
+  @include for-size(tablet-landscape) {
+    margin-bottom:0 !important;
+    padding-bottom:0;
+  }
+  @include for-size(tablet-portrait) {
+    padding: 0;
+    margin-top: 0;
+  }
+  @include for-size(phone-only) {
+    padding: 0;
+    margin-bottom: 25%;
+  }
   section {
     @include animate(lightSpeedIn, 1s, 6, 1);
     justify-content: center;
 
     @include for-size(tablet-landscape) {
-      margin-bottom:0;
+      margin-bottom:0 !important;
+      padding-bottom:0;
     }
     @include for-size(tablet-portrait) {
       padding: 0;
       margin-top: 0;
-      display: none !important;
-      font-size: 1.25rem;
     }
     @include for-size(phone-only) {
-      display: none;
       padding: 0;
       margin-bottom: 25%;
 
+
     }
     img {
-      margin-left: 6.5%;
-      margin-right: 6.5%;
+      margin-left: 2rem;
+      margin-right: 2rem;
       width: 200rem;
       max-width: 100%;
       max-height: 2500px;
@@ -52,4 +62,7 @@
     @extend %title;
     @include animate(bounceInDown, 2s, 20, 1 );
   }
+  .card-subtitle{
+    @extend %subtitle;
+    @include animate(slideInUp, 1s, 20, 1 );  }
 }

@@ -12,6 +12,7 @@ import CardTitle from 'reactstrap/es/CardTitle';
 import CardHeader from 'reactstrap/es/CardHeader';
 import CardBody from 'reactstrap/es/CardBody';
 import Card from 'react-bootstrap/Card';
+import CardSubtitle from 'reactstrap/es/CardSubtitle'
 const IndexPage = () => (
   <Layout id="home">
     <div id="home">
@@ -19,7 +20,8 @@ const IndexPage = () => (
       description="The front page of the developer portfolio of Thomas Leon Highbaugh. Featuring artwork by TLH himself."/>
       <Card>
         <CardHeader>
-          <CardTitle>[welcome]</CardTitle>
+          <CardTitle>[developer portfolio]</CardTitle>
+          <CardSubtitle className="card-subtitle">[thomas leon highbaugh]</CardSubtitle>
         </CardHeader>
         <CardBody>
           <section>

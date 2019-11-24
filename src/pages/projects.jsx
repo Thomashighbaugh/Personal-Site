@@ -22,17 +22,21 @@ class BlogIndex extends React.Component {
         />
         <div id="projects">
           <div className="projects-page">
-            <h1>Projects</h1>
             <aside>
+            <h1>Projects</h1>
               <h4>[ description ]</h4>
               <p>
                 These are some of the projects I have worked on recently.
                 Clicking the title will take you to a description of the project
-                with information about what it does and why I made it.
+                with information about what it does, why I made it and links to
+                the source code as well as any hosted web presence that exists
+                for that particular project.
               </p>
+              <br/>
               <p>
-                The projects listed include those pertaining to development,
-                operations... and both!
+                The projects listed range from those purely web development
+                related to those that focus on the administration of my
+                workstation using DevOps methodology.
               </p>
             </aside>
           </div>

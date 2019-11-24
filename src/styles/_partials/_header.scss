@@ -52,8 +52,11 @@ nav {
     @extend %btn-3;
   }
   @include for-size(tablet-landscape) {
-    font-size: 1.5rem;
+    font-size: 1.95rem;
     margin-bottom: 3rem;
+    font-weight:900;
+    width: 85%;
+    margin-left: 5%;
   }
   @include for-size(tablet-portrait) {
     padding: 0;
