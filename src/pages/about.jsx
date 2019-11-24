@@ -62,7 +62,7 @@ class About extends Component {
             </Col>
             <Col>
               <ImageCard
-                cardImage="https://avatars3.githubusercontent.com/u/32242061?s=460&v=4"
+                cardImage="https://raw.githubusercontent.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site/master/src/images/me.png"
               />
             </Col>
             <Col className="col">
