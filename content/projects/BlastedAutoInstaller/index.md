@@ -7,6 +7,13 @@ tags: bash, linux, shell-scripting
 ---
 
 ### Scripts for Quick Provisioning of a Fresh Install
+## Links
+<button className="nav-btn  ml-2">
+   <a href="https://github.com/Thomashighbaugh/Blasted-Auto-Installer">
+   [github]
+   </a>
+</button>
+
 
 ## Problem
 

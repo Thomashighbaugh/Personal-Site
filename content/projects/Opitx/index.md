@@ -1,17 +1,29 @@
 ---
 title: Opitx
-date: '2019-08-01'
+date: '2019-06-05'
 description: Opitx is a minimal markdown editor that I made so I could save my files where I want to on my local directory. The first effort I have made that employs Electron as well as being the second major React project.
 tags: electron, react, markdown, desktop, packaging, webpack, prismjs
 ---
 
-### Minimal Markdown Editor
+### Minimal Markdown Edito
+## Links
+<button className="nav-btn  ml-2">
+<a href="https://opitx-docs.netlify.com">
+[ opitx docs]
+</a>
+</button>
+
+<button className="nav-btn   ml-2">
+<a href="https://github.com/Thomashighbaugh/Opitx">
+[github]
+</a>
+</button>
 
 ![Screenshot of Opening Page of Opitx](https://raw.githubusercontent.com/Thomashighbaugh/Opitx/master/Opitx.png)
 
 ## Problem
 
-None of the Markdown Editors had save functions that were simple like other word processors or the text editor that comes with your OS. Most options either save in some database format, which can lead to being left with a mess of backups with random strings as the file names.
+None of the Markdown Editors for Linux I had found had save functions that were simple like other word processors or the text editor that comes with your OS. Most options either save in some database format, which can lead to being left with a mess of backups with random strings as the file names.
 
 ## Solution
 
@@ -32,16 +44,3 @@ The application is not getting the attention I would prefer due to my time being
 - [ ] Keybindings
 - [ ] Refreshed visuals
 
-## Documentation Site && Repository
-
-To see the documentation for the program see: <button className="nav-btn  ml-2">
-<a href="https://opitx-docs.netlify.com">
-[ opitx docs]
-</a>
-</button>
-
-See the source code on <button className="nav-btn   ml-2">
-<a href="https://github.com/Thomashighbaugh/Opitx">
-[github]
-</a>
-</button>

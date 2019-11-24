@@ -5,7 +5,18 @@ description: A GUI application installer for Ubuntu based distros
 tags: bash, linux, shell-scripting
 ---
 
-### System Provisioning Faster Than A Speeding Bullet
+### System Provisioning Fast!
+## Links
+<button className="nav-btn  ml-2">
+   <a href="https://github.com/Thomashighbaugh/colt45gui">
+   [github]
+   </a>
+</button>
+<button className="nav-btn ml-2">
+ <a href="https://colt45gui.netlify.com/">
+   [hosted]
+   </a>
+</button>
 
 ## Problem
 
@@ -23,15 +34,4 @@ The application uses Zenity to render the GUI screen presented to the user. This
 
 This program is no longer actively maintained, due to my using other OSes at the moment. If I go back to Ubuntu Budgie, it is useful to have around however the reason it is offered here in my portfolio is due to its relatively interesting internal structure, demonstrating competence with Linux and because it will likely be used as the shell for the rewrite of the Blasted Auto Installer in the near future.
 
-## Repository Link && Hosted Front End
 
-<button className="nav-btn  ml-2">
-   <a href="https://github.com/Thomashighbaugh/colt45gui">
-   [github]
-   </a>
-</button>
-<button className="nav-btn ml-2">
- <a href="https://colt45gui.netlify.com/">
-   [hosted]
-   </a>
-</button>

@@ -1,55 +1,53 @@
 ---
-title: Manjaro Workstation Ansible Playbook
+title: Manjaro Ansible Playbooks
 date: '2019-08-20'
 description: A playbook for provisioning my workstation that was written as a response to increasing frustrations with the other solutions.
 tags: bash, linux, shell-scripting
 ---
+### Unattended Provisioning
+## Links
 
-### And the Value of Structured Examples
+<button className="nav-btn  ml-2">
+   <a href="https://github.com/Thomashighbaugh/manjaro-workstation-playbook">
+   [workstation]
+   </a>
+</button>
+<button className="nav-btn ml-2">
+   <a href="https://github.com/Thomashighbaugh/manjaro-hypervisor-playbook">
+   [workstation]
+   </a>
+</button>
 
-Initially I was resistant to using **Ansible** to provision anything other than virtual
-systems I use for development purposes, as I was under the impression there was need for
-a central server (what my workstation or the hypervisor system work as) and I had not
-seen great examples of well structured **Ansible** playbooks from watching and reading the
-jargon heavy, cringe-worthy documentation available for the project. While my frustrations
-with the documentation is likely to become a blog post soon, it is worth noting here that
-I value well structured projects to a point I had not realized before having a word for the
-concept of neaty organizing, topical directories. In frustration with an attempt to make a
-GUI for the Blasted Auto Installer, I looked up **Ansible** playbooks for pacman-based systems and
-found an example that has changed my opinion about using **Ansible** completely.
 
-The Spark playbook, unrelated to **Ansible** Spark, structured itself in a way that was similar to
-the approach I have recently started taking with SASS and React, where each role is separated
-into its own directory. This is in opposition to a monolithic role file or set of haphazardly
-arranged role files that were part of my prior confusion. Having some experience with **Ansible**
-from before, I used it as the basis for writing a playbook to provision my workstation and am
-corrected in my dismissal of deploying **Ansible** for that purpose. Instead of being an unnecessary
-pain to deploy in the context of a single machine and requiring a server (which when I
-read the docs lasted seemed imperative), I was able to set the target machine to the
-localhost! While the reader may be thinking, "Well DUH!" this was not inherently obvious to
-me before and since my knowledge of all things tech has been rapidly expanding recently, I
-won't be too hard on myself. Nonetheless, I now have an even more automated way to provision
-my workstation that also features modular components, allowing for the creation of new playbooks
-rapidly without re-writing code.
+## Problem
+The BASH scripts that I had used, as well as the colt45 GUI, are no longer 
+useful as I have switched from Ubuntu to Manjaro and they use radically 
+different package management systems. Thus I took the oppurtunity to explore 
+using Ansible to provision my systems instead. 
 
-### Modularization is Key
+## What is Ansible?
+Ansible is a CLI application that takes scripts, or sets there of called `playbooks`, and
+uses them to provision systems based on the `plays` contained there within. 
+These `playbooks` are written in YAML format, which makes reading and writing
+them relatively easy to do and there is a bounty of documentation available about the various 
+`plays` that come with Ansible. 
 
-The value of modularizing the components of a project like a Playbook may be less obvious
-due to the extremely helpful error codes **Ansible** offers the user, but this is an
-exceptionally rare feature in my other efforts. By comparison, the most helpful Webpack
-wrapper I have used, Gatsby, does not have nearly as reliable or helpful error codes
-_and it is the most helpful I have seen!_ When writing code that can be segmented as this Playbook, I like
-writing it accordingly because it makes for a less frustrating debug process regardless of error codes.
+Essentially it enables one to write provisioning scripts that can be run from 
+remote machines, or `hosts`, on any number of systems. Ansible also installs
+and provisions on top of the system running so there is no threat to a current
+system inherent in running these `plays`. 
 
-The other aspect of modular source code that draws me to using that paradigm almost exclusively,
-if possible, is that I can assess the entire function occuring in that file more easily if I am
-not first forced to scroll through some massive file to find what I need. While for some scrolling
-through a directory with a lot of files may be harder, I find myself distracted by all the other
-things I have to fix if I am scrolling through code and do not have that issue when that code
-is not in front of me. Or in the words of many,
+## Notes on Source Code
+- **MULTIPLE VARIANTS** There are several variants of these playbooks, which reflect the machines
+they were used on. While the definition of `roles` within the playbook would
+have enabled their consolidation into a single playbook, I found this method
+the easiest way to properly segregate the configurations in a reliable way. 
 
-> > > Out of sight, out of mind
+- **NESTING** Like many projects I undertake, I prefer heavily nesting the components within 
+subdirectories as a means of keeping track of things and to make a return to the 
+project later less daunting as I find this an easy way to understand the internal
+structure of a project. 
 
-## To Do
-
--[ ] Create extension to wrap the `sudo aura -Ax` command (used to install AUR packages without needing an AUR user or other work around for YAY not running for root) -[ ] refine deployment of Firejail to wrap less programs -[ ] add firejail wrapper to virt-manager -[ ] debug using fresh installs -[ ] create more elegant wrapper for dotbro (dotfile manager) -[ ] make branchs for my laptop, server and hypervisor systems
+- **DEPRECIATED** I have since moved on from using Ansible to using Makefile to provision my 
+systems, thus I no longer maintain these playbooks other than as a testament 
+to my ability with this technology.

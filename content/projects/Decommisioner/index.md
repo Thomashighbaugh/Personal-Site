@@ -6,37 +6,31 @@ tags: bash, linux,
 ---
 
 ### BASH-inception
+<button className="nav-btn  ml-2">
+   <a href="https://github.com/Thomashighbaugh/decommisioner">
+   [github]
+   </a>
+</button>
+<button className="nav-btn ml-2">
+ <a href="https://decommisioner.netlify.com/">
+   [hosted]
+   </a>
+</button>
 
-## The Answer to Package Installation on Virtual Systems
+## Problem 
+In order to reinstall systems after something happens to them, I found it hard to replicate the exqct same configuration as I had before. Remembering all the package names was impossible and simply having a list of them made for a tedious provisioning process. 
 
-When provisioning virtual systems, it is often the case that there will be a precise set of packages you wish to install on that virtual system to achieve whatever task it is you are using the system for. Remembering a long list of packages is often rather hard, especially when your primary focus is that task that you are doing with those virtual systems. While Docker images are a possible way around this dilemma, there are times when containers are simply not enough and you need the entire virtualized system, which is why I wrote this script.
+## Solution 
+This script takes the package names of the installed packages, then appends the installation command to the front of them and creates an installation script for all of the 
+PPAs installed on the system. 
 
-#### Other Use Cases
-
-This script is also useful in the situation where I want to install the precise packages that are currently installed on my OS that include some not reflected in my auto-installation programs (or in an Ansible playlist if that is your thing).
-
-It can also be useful when you achieve that perfect workstation configuration and want a back up for later installation.
-
-##### And A Whole Lot More!
-
-## What It Does
-
-**Process**
-
-##### Ubuntu
-
-- make-script.sh - creates a bash script to reinstall the PPAs installed - creates a text file with the names of the installed packages (called the manifest) - creates an array of the names of those packages stripped of extra information (using regular expressions) - creates a file (with a proper shebang) to add package install dialog to - adds each package name to a line starting with "sudo apt-get install -y" - creates a file with both the PPAs and Packages on them for a single install scripts - moves the generated install scripts and manifest to a new directory - creates a tarball out of the directory - cleans up
-
-## Built With
-
-This project was built with just BASH scripts and was a short detour into understanding more about Regular Expressions. Being motivated by a desire to simplify a process, which is of particular frustration due to the nebulous nature of Ubuntu (my primary OS when I wrote this originally), there was no GUI generated or even CLI echo statements.
-
-## Landing Page
-
-The landing page is an early example of me using effects in SCSS, which at the time it was written I was only beginning to dabble in the use of, it is not an interactive or featureful site but serves the purpose of giving the project some web presence and as a playground served its function.
+## Notes on the Source Code
+- **UBUNTU BASED** - this script works on Ubuntu and its variants that use the apt package manager, which is the command appened to the package names. 
+- **PPAs** - It creates a script based on the current system that enables the rapid reinstallation of the PPAs the system was using to pull in packages 
+that the official PPAs do not offer. 
+- **EASY** - this script makes copying one configuration to another a seamless process. 
 
 ## To Do
 
-[x] create a landing page
-[ ] create echo statements enabling determination of where in the process the script is or failed
-[ ] create a GUI to confirm the process and output to the user where the scripts where saved
+- [x] create a landing page
+- [ ] create Pacman variant 

@@ -13,10 +13,8 @@ footer {
   align-content: flex-end;
   align-self: flex-end;
   align-items: center;
+  font-family: $title-font-alt1;
 
-  h1 {
-    font-family: $title-font;
-  }
   h4 {
     color: $gray1;
     background: $white;
@@ -25,7 +23,7 @@ footer {
     height: 80%;
     font-size: 3rem !important;
     padding: 0;
-    margin: 0 ;
+    margin: 0;
   }
   a {
     @extend %btn-4;
@@ -33,38 +31,35 @@ footer {
     margin-right: 0.2rem !important;
   }
 
-
   .copyright {
     background: $white;
     box-sizing: content-box;
-    display:block;
-    display:block;
-    margin-left:35%;
-    margin-right:35%;
+    display: block;
+    display: block;
+    margin-left: 35%;
+    margin-right: 35%;
     width: 20%;
     margin-bottom: 1rem;
     @include for-size(big-desktop) {
       font-size: 100% !important;
-      margin-left:35%;
-      margin-right:35%;
+      margin-left: 35%;
+      margin-right: 35%;
     }
 
     @include for-size(desktop) {
       font-size: 95% !important;
-      margin-left:35%;
-      margin-right:35%;
+      margin-left: 35%;
+      margin-right: 35%;
     }
 
     @include for-size(tablet-landscape) {
       font-size: 85% !important;
-      margin-left:40%;
-
+      margin-left: 40%;
     }
 
     @include for-size(phone-only) {
       font-size: 75% !important;
-      margin-left:55%;
-
+      margin-left: 55%;
     }
   }
 }
