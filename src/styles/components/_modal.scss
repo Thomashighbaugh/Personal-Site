@@ -1,0 +1,106 @@
+.modalCard {
+  clear: both;
+  button {
+    background: $gradient0;
+    color: $white;
+    border: 0.45rem $gray1 solid !important;
+    width: 75%;
+    font-size: 2.5rem;
+    font-weight: 900;
+    border-radius: 10px;
+    font-family: $style-font;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    width: 45%;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+  }
+  aside {
+    width: 45%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.modal {
+  @include animate(fadeInDown, 1s, 77);
+  text-align: center;
+  padding: 0.1rem !important;
+  overflow: no-display;
+  position: center;
+
+  .modal-header {
+    background: $gradient5;
+    border: 0.5rem solid $gray1;
+
+  }
+  .modal-title {
+    h4 {
+      font-size: 3rem;
+      color: $white;
+    }
+    margin:0;
+    padding:0;
+  }
+  .modal-footer{
+    background:$gradient0;
+    border: 0.5rem solid $gray1;
+
+  }
+  .close-btn {
+    width: 25%;
+    background: $white;
+    color:$gray1;
+    font-size:2rem;
+    font-weight:900;
+  }
+  .modal-body {
+    background: $gradient0;
+    border: 0.5rem solid $gray1;
+
+    section {
+      display: inline-grid;
+      width: 40%;
+      margin-right: 3rem;
+
+      ul {
+        list-style: square;
+
+        margin: 0;
+
+        li {
+          font: $font !important;
+          font-size: 120% !important;
+          color: $white !important;
+        }
+
+        h4 {
+          font-size: 2.75rem;
+          color:$white;
+          font-family: $style-font;
+        }
+      }
+    }
+  }
+  .modal-dialog {
+    display: inline-grid;
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-backdrop {
+  opacity: 0.75 !important;
+}

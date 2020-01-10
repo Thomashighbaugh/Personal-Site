@@ -1,0 +1,21 @@
+
+.nav-btn {
+  @extend %btn-1;
+  color: $white !important;
+  font-family: $title-font-alt0 !important;
+  width:30% !important;
+  text-decoration: none !important;
+  text-align: center !important;
+}
+.nav-btn a:hover {
+  @extend %btn-2;
+  color: $white !important;
+
+
+}
+.nav-btn a:active {
+  @extend %btn-2;
+}
+.nav-btn a:visited {
+  @extend %btn-1;
+}

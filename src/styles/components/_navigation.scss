@@ -1,0 +1,24 @@
+.nav-link {
+  @extend %btn-1;
+  display: inline-block;
+  font-family: $title-font-alt0 !important;
+
+}
+.nav-pills {
+  display: inline-block;
+  font-family: $title-font-alt0 !important;
+}
+
+
+#nav0 {
+  background: $gradient1;
+}
+#nav1 {
+  background: $gradient2;
+}
+#nav2 {
+  background: $gradient3;
+}
+#nav3 {
+  background: $gradient4;
+}
