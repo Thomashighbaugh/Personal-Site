@@ -16,20 +16,7 @@ Imports
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
-/*******************************************
- Grid Variables
-*********************************************/
-// for about page's card grid
-$mobile-breakpoint: 560px;
-$tablet-breakpoint: 960px;
 
-$grid-width: 2400;
-$column-gap: 100;
-$gutter: ($column-gap / 2 / $grid-width * 100%);
-$column-width: 100% - $gutter * 2;
-
-$enable-grid-classes: true !default; // generate grid classes
-$enable-reset-defaults: true !default; // reset default browser values
 /*******************************************
 * Color Configuration
 * @TODO phase out the old color standard variables in favor of newer, better standard
@@ -222,7 +209,7 @@ $fw-base: 400 !default;
 $fz-base: 16px !default;
 
 $fz-huge: 3.5rem !default;
-$fz-big: 2rem !default;
+$fz-big: 2.3rem !default;
 $fz-medium: 1.5rem !default;
 $fz-small: 12px !default;
 
@@ -248,6 +235,7 @@ $fz-body: $fz-base !default;
 $fw-body: $fw-base !default;
 $lh-body: $lh-base !default;
 
+
 /********************************************
 * Border
 ********************************************/
@@ -256,6 +244,11 @@ $bd-medium: 1px solid $bdc-base !default;
 $bdr-base: 3px !default;
 $bdr-medium: $bdr-base !default;
 $bdr-rounded-corners: 10px !default;
+
+$bdr-ct:  $light 0.75rem solid;
+$bdr-cr: $gray 1rem solid;
+$bdr-cl:  $primary 1rem solid;
+$bdr-cb:  $secondary 1rem solid;
 
 /********************************************
 * Default
@@ -281,6 +274,14 @@ $m-h1: 1.5rem;
 $m-h2: 2.5rem;
 $m-h3: 1.5rem;
 $ml-nav: 1rem;
+$m-card: 6rem;
+$ml-ct: 3rem;
+$mr-ct:6rem;
+/********************************************
+* Width
+********************************************/
+$w-ct: 25%;
+
 /********************************************
 * Padding
 ********************************************/
@@ -289,6 +290,10 @@ $p-medium: 8px !default;
 $p-big: 16px !default;
 $p-huge: 36px !default;
 
+$p-xs: 0.25rem;
+$p-s: 0.5rem;
+$p-l: 1rem;
+$p-xl: 1.5rem;
 /********************************************
 * Container
 ********************************************/
@@ -298,26 +303,6 @@ $mwi-container-medium: 944px !default;
 $mwi-container-small: 400px !default;
 $w-gutter: 24px !default;
 
-/********************************************
-* Grid
-********************************************/
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-) !default;
-
-$grid-columns: 12 !default;
-$grid-gutter-width: $w-gutter !default;
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-) !default;
 
 /********************************************
 * Badges
@@ -459,3 +444,35 @@ $size-tag-dot: 5px !default;
 ********************************************/
 $d-base: block !default;
 $d-in: inline-block !default;
+
+/********************************************
+* Grid
+********************************************/
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+) !default;
+
+$grid-columns: 12 !default;
+$grid-gutter-width: $w-gutter !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+) !default;
+
+// for about page's card grid
+$mobile-breakpoint: 560px;
+$tablet-breakpoint: 960px;
+
+$grid-width: 2400;
+$column-gap: 100;
+$gutter: ($column-gap / 2 / $grid-width * 100%);
+$column-width: 100% - $gutter * 2;
+
+$enable-grid-classes: true !default; // generate grid classes

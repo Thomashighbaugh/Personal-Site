@@ -21,24 +21,23 @@
 .card-title {
   font-family: $title-font;
   color: $primary;
-  font-size: 2.3rem;
-  margin-left: 3rem;
-  margin-right: 6rem;
-  width: 25%;
+  font-size: $fz-h1;
+  margin-left: $ml-ct;
+  margin-right: $mr-ct;
+  width: $w-ct;
 }
 .card {
-  border-top: $light 0.25rem solid;
-  border-right: $gray 0.5rem solid;
-  border-left: $primary 0.5rem solid;
-  border-bottom: $secondary 0.5rem solid;
-  padding: 1.5rem;
+  border-top: $bdr-ct;
+  border-right:$bdr-cr;
+  border-left: $bdr-cl;
+  border-bottom: $bdr-cb;
+  padding: $p-xl;
   justify-content: center;
   align-content: center;
-  margin: 5rem;
-
+  margin: $m-card;
   overflow: no-display;
-
   background: $header-background;
+
   @include for-size(big-desktop) {
   }
 
@@ -53,8 +52,43 @@
   @include for-size(phone-only) {
   }
 }
+
 .card-title {
   color: $primary !important;
   background: $white;
   overflow: no-content;
 }
+
+
+.image-card{
+  background: $header-background !important;
+
+
+  @include for-size(tablet-landscape) {
+    display:flex;
+
+  }
+  @include for-size(tablet-portrait) {
+  }
+  @include for-size(phone-only) {
+
+    display:none;
+
+  }
+}
+.socialCard {
+  a:hover {
+    background: none;
+    border: none;
+    .nav-btn {
+      border: $gray1;
+    }
+  }
+}
+    .media{
+      align-content: center;
+      width: 100%;
+      img{
+       margin-left: 5rem !important;
+      }
+    }

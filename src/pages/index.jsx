@@ -4,7 +4,6 @@
 * the page attractive to users, demonstrative of my skillset and as a place to showcase my art
 *
  */
-// TODO fix image margins (and likely adjust card size)
 import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
