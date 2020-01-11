@@ -5,13 +5,34 @@
 *
 **************************************************************************************/
 
-@import '../../../node_modules/awesome-sass-easing/sass-easing';
-
-#home-container {
-  background-image: url('https://github.com/Thomashighbaugh/resurgens-iv/blob/master/dogpatchcircuit.png') !important;
-}
-
 #home {
+  .home-card {
+    border-top: $bdr-ct;
+    border-right:$bdr-cr;
+    border-left: $bdr-cl;
+    border-bottom: $bdr-cb;
+    padding: $p-xl;
+    justify-content: center;
+    align-content: center;
+    margin: $m-card;
+    overflow: no-display;
+    background: $header-background;
+
+    @include for-size(big-desktop) {
+    }
+
+    @include for-size(desktop) {
+    }
+    @include for-size(tablet-landscape) {
+      font-size: 80% !important;
+    }
+    @include for-size(tablet-portrait) {
+      font-size: 75%;
+    }
+    @include for-size(phone-only) {
+    }
+
+  }
 
   //home responsive styling
   @include for-size(tablet-landscape) {
@@ -56,19 +77,56 @@
       margin: 5px;
     }
   }
-
-
-
   hr {
     border-bottom: 0.125rem solid $gray1;
     width: 15%;
   }
 
   .card-title {
-    @extend %title;
     @include animate(bounceInDown, 2s, 20, 1 );
+    background: $white;
+    font-size: $fz-h1;
+    width: 80%;
+    margin-bottom: 0;
+    text-align: left;
+    color: $primary;
+    font-family: $ff-title;
+
+    @include for-size(tablet-landscape) {
+      font-size: 6rem;
+      width: 80%;
+      margin-left: 10%;
+    }
+    @include for-size(tablet-portrait) {
+      font-size:4rem;
+      margin:0;
+    }
+    @include for-size(phone-only) {
+      font-size:2.7rem;
+      width: 100%;
+      margin:0;
+    }
   }
   .card-subtitle{
-    @extend %subtitle;
-    @include animate(slideInUp, 1s, 20, 1 );  }
+    @include animate(slideInUp, 1s, 20, 1 );
+    background: $white;
+    font-size: $fz-h2;
+float: right;
+    margin-top: 0;
+    width: 43%;
+    color: $primary;
+    font-family: $title-font-alt2;
+
+    @include for-size(tablet-landscape) {
+      font-size: 55%;
+      width: 80%;
+      margin-left: 10%;
+    }
+    @include for-size(tablet-portrait) {
+      font-size:50%;
+    }
+    @include for-size(phone-only) {
+      display:none;
+    }
+  }
 }

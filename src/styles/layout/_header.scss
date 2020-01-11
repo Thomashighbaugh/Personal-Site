@@ -7,14 +7,16 @@
 
 
 nav {
-  border-right: $gray2 1rem solid;
-  border-left: $blue 1rem solid;
-  border-bottom: $gray1 1rem solid;
+  border-right: $bdr-nr;
+  border-left: $bdr-nl;
+  border-bottom: $bdr-nb;
   background: $header-background;
   margin: 0 !important;
+  padding: 0;
   clear: both;
+  font-family: $ff-title;
+
   display: block !important;
-  font-size: 1.75rem;
   @include for-size(tablet-landscape) {
     padding: 3rem;
   }
@@ -32,7 +34,7 @@ nav {
   float: right;
   margin: 0;
   position: relative;
-  margin: 1rem;
+  font-family: $ff-title;
   .nav-btn {
     width: 20rem !important;
     font-size: 2.25rem;
@@ -42,10 +44,10 @@ nav {
 .navbar-brand {
   color: $white;
   font-weight: 900;
-  font-family: $style-font-alt1 !important;
+  font-family: $ff-title;
   display: inline-block !important;
   font-size: 2.25rem !important;
-    padding-top: 1rem !important;
+    padding: 0.75rem !important;
   a {
     @extend %btn-1;
     width: 100%;

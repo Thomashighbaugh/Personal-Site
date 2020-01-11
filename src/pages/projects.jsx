@@ -4,6 +4,9 @@
  */
 // TODO - add links to all the projects in their markdown files
 // TODO - standarize the writing in each article using format from SaarJanak
+// @TODO - add new projects and update links
+// @TODO - pull awesome window manager configuration and put it in its own repo
+// @TODO - link all dat on Gitlab
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 

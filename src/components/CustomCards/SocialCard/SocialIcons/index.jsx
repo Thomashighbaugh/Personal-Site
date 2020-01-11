@@ -11,25 +11,27 @@ import {
 const SocialIcons = contacts => {
   return (
     <div className="socialIcons">
-      <a href="https://www.linkedin.com/in/thomas-leon-highbaugh">
-        <FaLinkedin size={65} className="nav-btn" />
+  <section>
+      <a className="social-button" href="https://www.linkedin.com/in/thomas-leon-highbaugh">
+        <FaLinkedin size={120}  id="linkedin"/>
       </a>
-      <a href="https://github.com/Thomashighbaugh">
-        <FaGithubSquare size={65} className="nav-btn" />
+      <a className="social-button" href="https://github.com/Thomashighbaugh">
+        <FaGithubSquare size={120}  id="github"/>
       </a>
-      <a href="https://dribbble.com/thighbaugh">
-        <FaDribbble size={65} className="nav-btn" />
+     <a className="social-button" href="https://dribbble.com/thighbaugh">
+        <FaDribbble size={120}  id="dribbble" />
       </a>
-      <div> </div>
-      <a href="https://github.com/thomasleonhighbaugh">
-        <FaGitlab size={65} className="nav-btn" />
+  </section>
+      <section>
+      <a className="social-button" href="https://github.com/thomasleonhighbaugh">
+        <FaGitlab size={120}  id="gitlab" />
       </a>
-      <a href="https://twitter.com/thomasleonhighbaugh">
-        <FaTwitterSquare size={65} className="nav-btn" />
+      <a className="social-button" href="https://twitter.com/thomasleonhighbaugh">
+        <FaTwitterSquare size={120}  id="twitter"/>
       </a>
-      <a href="https://instagram.com/tlh-resurgens">
-        <FaInstagram size={65} className="nav-btn" />
-      </a>
+      <a className="social-button" href="https://instagram.com/tlh-resurgens">
+        <FaInstagram size={120}  id="instagram"/>
+      </a></section>
     </div>
   );
 };

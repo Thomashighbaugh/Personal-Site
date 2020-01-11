@@ -1,6 +1,7 @@
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
+import { FaWindowClose } from 'react-icons';
 function DevOpsModal(props) {
   return (
     <Modal
@@ -14,7 +15,7 @@ function DevOpsModal(props) {
     >
       <Modal.Header className="modal-header">
         <Modal.Title id="example-custom-modal-styling-title">
-          <h4 className="text-center d-inline">Development Operations</h4>{' '}
+          <h4>Development Operations</h4>{' '}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -47,7 +48,7 @@ function DevOpsModal(props) {
       </Modal.Body>
       <Modal.Footer>
         <Button className="close-btn" onClick={props.onHide}>
-          [close]
+      close
         </Button>
       </Modal.Footer>
     </Modal>

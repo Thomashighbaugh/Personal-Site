@@ -5,8 +5,6 @@
 *
 **************************************************************************************/
 
-
-
 @include generate-grid();
 
 #about {
@@ -23,11 +21,13 @@
     .card-title {
       font-size: 4.5rem;
       margin-left: 0;
-      font-family: $title-font-alt0;
+      font-family: $ff-title;
     }
 
     .card-subtitle {
-      font-family: $title-font;
+      font-family: $ff-mono;
+      font-weight: $fw-bold;
+
     }
   }
 
@@ -75,13 +75,23 @@
 
     p {
       margin-top: 0 !important;
-      font-size: 1.33rem;
+      font-size: 1rem;
     }
     em {
       font-family: $style-font;
       font-weight: 900;
-      color: $blue;
+      color: $primary;
       font-size: 2rem;
     }
   }
+}
+.techs{
+  font-family: $ff-title;
+  font-weight: 900;
+  color: $primary;
+  font-size: 1.5rem;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 5%;
+  line-height: $lh-small;
 }

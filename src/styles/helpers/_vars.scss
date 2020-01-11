@@ -47,8 +47,8 @@ $secondary: #80bdff !default;
 $dark: #24262a !default;
 $dark-alt: #17161b;
 $light: $gray-light !default;
-
-$text: $white !default;
+$light-alt: #939597;
+$text: $dark !default;
 $link: $primary !default;
 $link-hover: $secondary !default;
 
@@ -98,6 +98,9 @@ $youtube: #ff3333 !default;
 $linkedin: #4875b4 !default;
 $flickr: #fe0883 !default;
 $foursquare: #8fd400 !default;
+$dribbble: #ea4c89 !default;
+$github: #24292E !default;
+$gitlab: #FC6D26 !default;
 
 $gradient0: linear-gradient(
   -35deg,
@@ -203,28 +206,30 @@ $fw-bold: 600 !default;
 $fw-headings: $fw-light !default;
 
 $ff-base: 'Kanit', sans-serif !default;
-$ff-mono: 'Source Code Pro', monospace !default;
+$ff-mono: 'Share Tech Mono', monospace !default;
 $ff-title: 'Bungee', 'Kanit', sans-serif !default;
+
 $fw-base: 400 !default;
 $fz-base: 16px !default;
 
-$fz-huge: 3.5rem !default;
-$fz-big: 2.3rem !default;
-$fz-medium: 1.5rem !default;
-$fz-small: 12px !default;
+$fz-huge: 2.5rem !default;
+$fz-big: 1.5rem !default;
+$fz-medium: 1.25rem !default;
+$fz-small: 1rem !default;
 
-$fz-h1: 2.5rem !default;
-$fz-h2: 2rem !default;
-$fz-h3: 1.5em !default;
-$fz-h4: 1.25em !default;
-$fz-h5: 1em !default;
-$fz-h6: 0.75em !default;
+$fz-h1: 5.5rem !default;
+$fz-h2: 3.5rem !default;
+$fz-h3: 1.25em !default;
+$fz-h4: 1em !default;
+$fz-h5: 0.75em !default;
+$fz-h6: 0.5em !default;
 
 $lh-base: 1.65em !default;
 $lh-huge: 2em !default;
 $lh-big: 1.75em !default;
 $lh-medium: $lh-base !default;
-$lh-small: 1.25em !default;
+$lh-small: 1em !default;
+$lh-xsmall: 0.5em !default;
 
 /********************************************
 * Body
@@ -250,6 +255,11 @@ $bdr-cr: $gray 1rem solid;
 $bdr-cl:  $primary 1rem solid;
 $bdr-cb:  $secondary 1rem solid;
 
+$bdr-nr: $dark-alt 0.75rem solid;
+$bdr-nl: $primary 0.75rem solid;
+$bdr-nb: $light 0.75rem solid;
+$bdr-button:  0.35rem $light solid;
+$bdr-button-hover:  0.35rem $light-alt solid;
 /********************************************
 * Default
 ********************************************/

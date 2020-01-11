@@ -16,6 +16,8 @@ class AboutCard extends Component {
       cardTitle,
       cardSubtitle,
       cardText,
+      cardText2,
+      cardText3
         } = this.props;
     return (
       <Card className="aboutCard">
@@ -28,6 +30,8 @@ class AboutCard extends Component {
           <CardText>
             <br />
             <p>{cardText}</p>
+            <h4 className="techs">{cardText2}</h4>
+            <h4 className="techs">{cardText3}</h4>
           </CardText>
         </CardBody>
       </Card>

@@ -24,7 +24,6 @@ button {
 
 .button {
   background-color: $bg-button;
-  border: 0;
   border-radius: $bdr-button;
   color: $c-button;
   display: inline-block;
@@ -39,11 +38,13 @@ button {
   text-transform: $tt-button;
   transition: opacity .2s ease-in-out;
   white-space: nowrap;
-  border: none;
+  border: $bdr-button;
   &:focus,
   &:hover,
   &:active {
     color: $c-button;
+    border: $bdr-button-hover;
+
   }
 
   &:hover {
@@ -154,22 +155,62 @@ button {
 }
 
 .nav-btn {
-  @extend %btn-1;
   color: $white !important;
-  font-family: $title-font-alt0 !important;
-  width:30% !important;
+  font-family: $ff-title;
+  width: 30% !important;
   text-decoration: none !important;
   text-align: center !important;
+  padding: $p-xs;
 }
-.nav-btn a:hover {
-  @extend %btn-2;
-  color: $white !important;
+.social-button{
+  color: $white;
+  width: 100%;
+  height:100%;
+&:hover{
+  color:$dark;
+}
+}
+#linkedin{
+  background: $linkedin;
+  &:hover{
+    background:$white;
+    color: $linkedin;
+  }
+}
+#instagram{
+  background: $instagram;
+  &:hover{
+    background:$white;
+    color: $instagram;
+  }
+}
+#twitter{
+  background: $tw;
+  &:hover{
+    background:$white;
+    color: $tw;
+  }
+}
 
+#dribbble{
+background: $dribbble;
+  &:hover{
+    background:$white;
+    color: $dribbble;
+  }
+}
 
+#github{
+  background: $github;
+  &:hover{
+    color:$github;
+    background: $white;
+  }
 }
-.nav-btn a:active {
-  @extend %btn-2;
-}
-.nav-btn a:visited {
-  @extend %btn-1;
+#gitlab{
+  background: $gitlab;
+  &:hover{
+    color:$gitlab;
+    background: $white;
+  }
 }
