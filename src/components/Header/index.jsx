@@ -18,7 +18,7 @@ class Header extends Component {
                 <Link
                   to="/about/"
                   onlyActiveOnIndex
-                  className="nav-btn nav-link col-lg-3 nav-btn-pill"
+                  className="nav-btn nav-link "
                   id="nav1"
                 >
                   [about]
@@ -26,7 +26,7 @@ class Header extends Component {
                 <Link
                   to="/projects/"
                   onlyActiveOnIndex
-                  className="nav-btn nav-link col-lg-3 nav-btn-pill"
+                  className="nav-btn nav-link "
                   id="nav2"
                 >
                   [projects]
@@ -34,7 +34,7 @@ class Header extends Component {
                 <Link
                   to="/resume/"
                   onlyActiveOnIndex
-                  className="nav-btn nav-link col-lg-3 nav-btn-pill"
+                  className="nav-btn nav-link "
                   id="nav3"
                 >
                   [resume]

@@ -8,9 +8,6 @@ import {
   CardText,
 } from 'reactstrap';
 class AboutCard extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const {
       cardTitle,

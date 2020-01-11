@@ -8,7 +8,6 @@ that are part of this effort */
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import AboutCard from '../components/CustomCards/AboutCard';
-import Col from 'reactstrap/es/Col';
 import SocialCard from '../components/CustomCards/SocialCard';
 import ImageCard from '../components/CustomCards/ImageCard';
 import ModalCard from '../components/CustomCards/ModalCard';

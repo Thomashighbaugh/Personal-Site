@@ -7,47 +7,49 @@
 
 #home {
   .home-card {
+    background: url("https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/dogpatchcircuit.png");
+    background-size: cover;
     border-top: $bdr-ct;
     border-right:$bdr-cr;
     border-left: $bdr-cl;
     border-bottom: $bdr-cb;
-    padding: $p-xl;
+    padding: $p-xxl;
     justify-content: center;
     align-content: center;
-    margin: $m-card;
-    overflow: no-display;
-    background: $header-background;
+    width: 73%;
+    margin: 3rem;
+    margin-left: 14%;
+height: 80vh;
 
+
+//home card styling
     @include for-size(big-desktop) {
     }
 
     @include for-size(desktop) {
+
     }
     @include for-size(tablet-landscape) {
       font-size: 80% !important;
+      width:100%;
+
+      margin-bottom:0 !important;
+      padding:0;
     }
     @include for-size(tablet-portrait) {
       font-size: 75%;
+      width:100%;
+      padding: 0;
+      margin-top: 0;
     }
     @include for-size(phone-only) {
+      width:100%;
+      padding: 0;
+      margin: 0;
     }
 
   }
 
-  //home responsive styling
-  @include for-size(tablet-landscape) {
-    margin-bottom:0 !important;
-    padding:0;
-
-  }
-  @include for-size(tablet-portrait) {
-    padding: 0;
-    margin-top: 0;
-  }
-  @include for-size(phone-only) {
-    padding: 0;
-    margin: 0;
-  }
   section {
     @include animate(lightSpeedIn, 1s, 6, 1);
     justify-content: center;
@@ -64,33 +66,25 @@
       padding: 0;
 
     }
-    img {
-      margin-left: 2rem;
-      margin-right: 2rem;
-      width: 200rem;
-      max-width: 100%;
-      max-height: 2500px;
-      object-fit: fill !important;
-    }
-    .media {
-      min-width: 0;
-      margin: 5px;
-    }
+
   }
   hr {
-    border-bottom: 0.125rem solid $gray1;
-    width: 15%;
+    border-bottom: 1rem solid $gray1;
+    width: 95%;
+    @include animate(pulse, 2s, 20, 1 );
+    margin: 3.5rem;
   }
 
   .card-title {
     @include animate(bounceInDown, 2s, 20, 1 );
     background: $white;
     font-size: $fz-h1;
-    width: 80%;
+    width: 95%;
     margin-bottom: 0;
     text-align: left;
     color: $primary;
     font-family: $ff-title;
+    border: $bdr-button;
 
     @include for-size(tablet-landscape) {
       font-size: 6rem;
@@ -111,11 +105,12 @@
     @include animate(slideInUp, 1s, 20, 1 );
     background: $white;
     font-size: $fz-h2;
-float: right;
-    margin-top: 0;
-    width: 43%;
+    float: right;
+    margin-top: 3rem;
+    width: 57%;
     color: $primary;
-    font-family: $title-font-alt2;
+    border:$bdr-button;
+    font-family: $ff-sub;
 
     @include for-size(tablet-landscape) {
       font-size: 55%;

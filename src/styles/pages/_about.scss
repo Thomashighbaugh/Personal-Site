@@ -9,14 +9,30 @@
 
 #about {
   overflow: no-content;
-  height: 90% !important;
-
+  height: 100%;
+  margin-top:3rem;
   .card {
     background: $white;
     width: 100%;
     @include animate(flipInX, 1.5s, 25);
     overflow: no-display;
-    padding: 3rem;
+    padding: 2rem;
+
+    //@include for-size(big-desktop) {
+    //}
+    //
+    @include for-size(desktop) {
+      margin-top: 3rem;
+    }
+    @include for-size(tablet-landscape) {
+      margin-top: 3rem;
+    }
+    @include for-size(tablet-portrait) {
+      width: 100%;
+    }
+    @include for-size(phone-only) {
+      width: 100% !important;
+    }
 
     .card-title {
       font-size: 4.5rem;
@@ -44,18 +60,6 @@
     margin-right: 10%;
   }
 
-  //@include for-size(big-desktop) {
-  //}
-  //
-  //@include for-size(desktop) {
-  //}
-  @include for-size(tablet-landscape) {
-  }
-  //@include for-size(tablet-portrait) {
-  //}
-  @include for-size(phone-only) {
-    width: 100% !important;
-  }
 
   .moreCard {
     justify-content: center;

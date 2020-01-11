@@ -208,7 +208,7 @@ $fw-headings: $fw-light !default;
 $ff-base: 'Kanit', sans-serif !default;
 $ff-mono: 'Share Tech Mono', monospace !default;
 $ff-title: 'Bungee', 'Kanit', sans-serif !default;
-
+$ff-sub: 'Permanent Marker', monospace !default;
 $fw-base: 400 !default;
 $fz-base: 16px !default;
 
@@ -217,7 +217,7 @@ $fz-big: 1.5rem !default;
 $fz-medium: 1.25rem !default;
 $fz-small: 1rem !default;
 
-$fz-h1: 5.5rem !default;
+$fz-h1: 5rem !default;
 $fz-h2: 3.5rem !default;
 $fz-h3: 1.25em !default;
 $fz-h4: 1em !default;
@@ -278,7 +278,7 @@ $m-big: 1rem !default;
 $m-huge: 1.75rem !default;
 
 $mt-nav: 0.96rem;
-$mb-nav: 0.06rem;
+$mb-nav: 0.5rem;
 $m-p: 1.5rem;
 $m-h1: 1.5rem;
 $m-h2: 2.5rem;
@@ -304,6 +304,7 @@ $p-xs: 0.25rem;
 $p-s: 0.5rem;
 $p-l: 1rem;
 $p-xl: 1.5rem;
+$p-xxl: 2.5rem;
 /********************************************
 * Container
 ********************************************/
@@ -311,7 +312,7 @@ $bgc-container: transparent !default;
 $mwi-container: 1380px !default;
 $mwi-container-medium: 944px !default;
 $mwi-container-small: 400px !default;
-$w-gutter: 24px !default;
+$w-gutter: 2rem !default;
 
 
 /********************************************

@@ -3,15 +3,48 @@
  *
  *******************************************************************/
 
-.nav-link {
-  @extend %btn-1;
-  display: inline-block;
-  font-family: $title-font-alt0 !important;
+
+
+.links {
+  float: right;
+  margin: 0;
+  position: relative;
+  font-family: $ff-title;
 
 }
-.nav-pills {
-  display: inline-block;
-  font-family: $title-font-alt0 !important;
+
+.navbar-brand {
+  color: $white;
+  font-weight: 900;
+  font-family: $ff-title;
+  display: inline-block !important;
+  font-size: 2.25rem !important;
+  padding: 0.75rem !important;
+  a {
+    @extend %btn-1;
+    width: 100%;
+  }
+  a:hover {
+border: $bdr-button-hover;
+  }
+  @include for-size(tablet-landscape) {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight:900;
+    width: 85%;
+    margin-left: 5%;
+  }
+  @include for-size(tablet-portrait) {
+    padding: 0;
+    margin-top: 0;
+    display: none !important;
+    font-size: 1.25rem;
+  }
+  @include for-size(phone-only) {
+    margin-top: 0;
+    display: none;
+    padding: 0;
+  }
 }
 
 
@@ -26,4 +59,32 @@
 }
 #nav3 {
   background: $gradient4;
+}
+
+.nav-btn {
+  color: $white !important;
+  font-family: $ff-title;
+  text-decoration: none !important;
+  text-align: center !important;
+  padding: $p-l;
+  font-size: 1.5rem;
+  margin-right: $mb-nav;
+  @extend %btn-1;
+  display: inline-block;
+&:hover{
+  border: $bdr-button-hover
+}
+  @include for-size(desktop) {
+    margin-bottom: 3rem;
+    width: 20%;
+  }
+  @include for-size(tablet-landscape) {
+    margin-top: 3rem;
+  }
+  @include for-size(tablet-portrait) {
+    width: 100%;
+  }
+  @include for-size(phone-only) {
+    width: 100% !important;
+  }
 }
