@@ -1,10 +1,7 @@
-import React, { Component, PropTypes } from 'react';
-import { Card, CardBody} from 'reactstrap';
+import React, { Component } from 'react';
+import { Card, CardBody } from 'reactstrap';
 import CardImg from 'reactstrap/es/CardImg';
 class ImageCard extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const { cardImage } = this.props;
     return (

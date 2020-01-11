@@ -1,0 +1,43 @@
+/****************************************************************
+*  BADGE
+*
+*
+*
+*  Defines the border class
+*  ----------------------------------------------------------------
+*  Markup:
+*  -------
+*
+*  <ul>
+*    <li class="border">Bordered 1</li>
+*    <li class="border-bottom border-left">Bordered 2</li>
+*  </ul>
+*
+*****************************************************************/
+
+.border {
+  border: $bd-medium;
+}
+.border-radius {
+  border-radius: 10px;
+  font-size: 1rem;
+  overflow-x: auto;;
+  line-height: 2rem;
+  padding: 1.45rem;
+  word-wrap: break-word;
+}
+.border-bottom {
+  border-bottom: $bd-medium;
+}
+
+.border-left {
+  border-left: $bd-medium;
+}
+
+.border-right {
+  border-right: $bd-medium;
+}
+
+.border-top {
+  border-top: $bd-medium;
+}

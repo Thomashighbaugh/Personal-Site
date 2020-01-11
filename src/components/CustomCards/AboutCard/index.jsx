@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component} from 'react';
 import {
   Card,
   CardHeader,
@@ -16,11 +16,7 @@ class AboutCard extends Component {
       cardTitle,
       cardSubtitle,
       cardText,
-      cardText2,
-      cardText3,
-      cardLink,
-      cardLinkLabel,
-    } = this.props;
+        } = this.props;
     return (
       <Card className="aboutCard">
         <CardHeader>

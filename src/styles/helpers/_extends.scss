@@ -1,14 +1,11 @@
-//Creates templates for consistently used components
-
-
+/*************************************************************************************
+*  EXTENDS
+*
+*
+*  Creates templates for consistently used components
+**************************************************************************************/
 
 //Font Templates
-
-%prose {
-  font-family: $font;
-  color: $font-color;
-  background-color: $white;
-}
 
 %resume-title {
   color: $white !important;
@@ -49,7 +46,7 @@
 */
 
 %btn-1 {
-  @extend %prose;
+
   letter-spacing: 3px;
   border: $gray1 solid 0.4rem;
   padding: 0;

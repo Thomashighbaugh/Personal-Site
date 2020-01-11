@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import {
   Card,
   CardHeader,
@@ -12,15 +12,6 @@ class SocialCard extends Component {
     super(props);
   }
   render() {
-    const {
-      cardTitle,
-      cardSubtitle,
-      cardText,
-      cardText2,
-      cardText3,
-      cardLink,
-      cardLinkLabel,
-    } = this.props;
     return (
       <Card className="socialCard">
         <CardHeader>

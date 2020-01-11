@@ -1,0 +1,43 @@
+/*********************************************************************
+*  JUMBOTRON
+*
+*
+*
+*  Defines Jumbotron component
+*  ------------------------------------------------------------------
+*  Markup:
+*  -------
+*
+*  <div className="jumbotron> <h3> Some Big Text on a Big Ass Colorful </h3> </div>
+*
+ *******************************************************************/
+
+
+.jumbotron{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: $background-gradient;
+  color: #DEE6E7;
+  width: 100%;
+  h1{
+    font-weight: 300;
+    font-size: 4rem;
+    margin: 1.5rem;
+    color: $white;
+  }
+  image{
+    height: 12rem;
+    background:$gray;
+    border-radius: 1rem;
+    margin: 1rem
+  }
+  h2{
+    font-weight: 300;
+    font-size: 2rem;
+    margin: .5rem
+  }
+
+}
+

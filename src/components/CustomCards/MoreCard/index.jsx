@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import {
   Card,
   CardHeader,
@@ -8,8 +8,6 @@ import {
   CardText,
 } from 'reactstrap';
 import Container from 'react-bootstrap/Container';
-import { Col, Row } from 'react-bootstrap';
-import { CardFooter } from 'react-bootstrap/Card';
 class MoreCard extends Component {
   constructor(props) {
     super(props);

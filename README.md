@@ -6,6 +6,7 @@
 <h1 align="center">
   Thomas Leon Highbaugh's Web Development Portfolio
 </h1>
+
 # Thomas Leon Highbaugh Portfolio
 
 > The portfolio site of Thomas Leon Highbaugh built with React, Redux, Webpack and SASS in a structured, modular form.
@@ -49,12 +50,12 @@ Like all projects, much can still be done. With this site, I have moved to relea
 ### Deployment 
 - [x] deploy devlog
 - [x] deploy portfolio site 
-- [ ] deploy gallery site 
-- [ ] link sites
+- [x] link sites
 
 ### Structure
-- [ ] move scss from easily replacable but cumbersome isolated SASS sheet structure to Atomic Design Model with components that call SCSS wuthin same durectory (to solve stylesheet inconsistencies and specific needs) 
-
+- [ ] migrate to new SASS structure and integrate Bismuth Library Functionality as early staging/proving grounds 
+- [x] Investigate various organizational models and determine what works best (SASS in sass directory with inline styling in Atomic fashion where it is fitting)
+- [x] determine appropiate method of isolating functional blocks of components (components directory, page directory)
 ### Meta
 - [ ] icons replacing social names, clevefr but generic ones for devlog and gallery
 - [ ] gray hover effect for buttons

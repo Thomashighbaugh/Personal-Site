@@ -1,7 +1,14 @@
+/**************************************
+* Typography
+*
+*
+* Sets font related variables and styles font related tags
+**************************************/
+
 
 h1,
 h2 {
-  font-family: $title-font-alt0 !important;
+  font-family: $ff-title;
   color: $blue;
 }
 

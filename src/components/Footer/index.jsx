@@ -1,7 +1,7 @@
 //
 //The Footer Component
 //
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 class Footer extends Component {
   render() {
