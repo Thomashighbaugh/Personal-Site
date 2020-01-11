@@ -7,13 +7,11 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <Container fluid>
-          <div className="text-center copyright">
-            <h3>Thomas Leon Highbaugh</h3>© {new Date().getFullYear()}, Built
-            with
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <div className="container-fluid">
+          <div>
+            <h3>Thomas Leon Highbaugh © {new Date().getFullYear()}</h3>
           </div>
-        </Container>
+        </div>
       </footer>
     );
   }

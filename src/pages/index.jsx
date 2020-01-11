@@ -15,6 +15,7 @@ const IndexPage = () => (
       description="The front page of the developer portfolio of Thomas Leon Highbaugh. Featuring artwork by TLH himself."/>
       <div className="home-card">
         <div className="card-header">
+<hr />
           <h1 className="card-title">[developer portfolio]</h1>
           <hr/>
           <h2 className="card-subtitle">thomas leon highbaugh</h2>
