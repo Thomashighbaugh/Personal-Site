@@ -21,11 +21,11 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div>
+    <div className="layout">
       <Helmet>
         <meta charSet="utf-8" />
       </Helmet>
-      <Header className="header" />
+      <Header />
       <div>
         <main>{children}</main>
         <Footer />

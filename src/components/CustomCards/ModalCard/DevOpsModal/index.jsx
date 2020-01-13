@@ -1,7 +1,6 @@
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
-import { FaWindowClose } from 'react-icons';
 function DevOpsModal(props) {
   return (
     <Modal

@@ -31,20 +31,15 @@ class About extends Component {
     return (
       <Layout>
         <div id="about">
-          <div className="grid grid-3 no--margin">
-            <div className="col">
+    <div className="row">
               <AboutCard
                 id="1"
                 cardTitle="[dev]"
                 cardSubtitle="the developer behind this site"
                 cardText="My name is Thomas Leon Highbaugh and I am an autodidactic web developer and Linux fanatic with an eye for design."
               />
-            </div>
-            <div className="col">
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/160.jpg" />
-            </div>
-            <div className="col">
-              <AboutCard
+           <AboutCard
                 id="2"
                 cardTitle="[site]"
                 cardSubtitle="showcase React Portfolio Site"
@@ -52,35 +47,26 @@ class About extends Component {
                 cardText2=" YEOMAN + REACT + GATSBY "
                 cardText3=" SCSS + ESLINT + NETLIFY "
               />
-            </div>
-          </div>
-          <div className="grid grid-3 no--margin">
-            <div className="col">
+    </div>
+<br/>
+          <div className="row">
+
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/020.jpg" />
-            </div>
-            <div className="col">
               <MoreCard
                 cardTitle="[art]"
                 cardSubtitle="about the graphics used on this site"
                 cardText="All of the graphics, except for the backgrounds, were created by me, Thomas Leon Highbaugh. Like everything else about the site, they are OPEN SOURCE as long as you make sure to give me credit for them ."
                 cardText3="If you like them, check out my Instagram for more!"
               />
-            </div>
-            <div className="col">
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/019.jpg" />
-            </div>
           </div>
-          <div className="grid grid-3 no--margin">
-            <div className="col">
+              <br />
+            <div className="row">
+
               <ModalCard />
-            </div>
-            <div className="col">
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/061.jpg" />
-            </div>
-            <div className="col">
               <SocialCard />
             </div>
-          </div>
         </div>
       </Layout>
     );

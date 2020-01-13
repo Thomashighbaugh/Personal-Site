@@ -7,7 +7,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import '../styles/main.scss';
 const IndexPage = () => (
   <Layout>
     <div id="home">
@@ -15,6 +14,7 @@ const IndexPage = () => (
         title="tlh developer portfolio"
         description="The front page of the developer portfolio of Thomas Leon Highbaugh. Featuring artwork by TLH himself."
       />
+      <div className="space" />
       <div className="card home-card">
           <hr className="hr-basic" />
           <hr className="hr-basic" />

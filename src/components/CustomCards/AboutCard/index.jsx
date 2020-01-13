@@ -1,12 +1,4 @@
 import React, { Component} from 'react';
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardBody,
-  CardSubtitle,
-  CardText,
-} from 'reactstrap';
 class AboutCard extends Component {
   render() {
     const {
@@ -17,21 +9,20 @@ class AboutCard extends Component {
       cardText3
         } = this.props;
     return (
-      <Card className="aboutCard">
-        <CardHeader>
-          <CardTitle>{cardTitle}</CardTitle>
-          <CardSubtitle>{cardSubtitle}</CardSubtitle>
+      <div className="card about-card">
+        <div className="card-header">
+          <h3 className="card-title">{cardTitle}</h3>
+          <h4 className="card-subtitle">{cardSubtitle}</h4>
           <hr />
-        </CardHeader>
-        <CardBody>
-          <CardText>
+        </div>
+        <div className="card-body">
             <br />
             <p>{cardText}</p>
             <h4 className="techs">{cardText2}</h4>
             <h4 className="techs">{cardText3}</h4>
-          </CardText>
-        </CardBody>
-      </Card>
+
+        </div>
+      </div>
     );
   }
 }

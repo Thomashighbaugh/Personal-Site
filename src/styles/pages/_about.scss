@@ -1,101 +1,27 @@
-/*************************************************************************************
-*  ABOUT PAGE
-*
-*
-*
-**************************************************************************************/
-
-@include generate-grid();
-
 #about {
-  overflow: no-content;
-  height: 100%;
-  margin-top:3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(3fr, 3fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+.row {
+  display: flex;
+
   .card {
-    background: $white;
-    width: 100%;
-    @include animate(flipInX, 1.5s, 25);
-    overflow: no-display;
-    padding: 2rem;
+    height: 32rem;
+    min-width: 28%;
+    margin: 1rem;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .05);
 
-    //@include for-size(big-desktop) {
-    //}
-    //
-    @include for-size(desktop) {
-      margin-top: 3rem;
-    }
-    @include for-size(tablet-landscape) {
-      margin-top: 3rem;
-    }
-    @include for-size(tablet-portrait) {
-      width: 100%;
-    }
-    @include for-size(phone-only) {
-      width: 100% !important;
+    &:hover {
+      background-image: url("https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/dogpatchcircuit.png");
+      background-size: cover;
+      box-shadow: 0 0 1rem -.25rem var(--background);
     }
 
-    .card-title {
-      font-size: 4.5rem;
-      margin-left: 0;
-      font-family: $ff-title;
-    }
-
-    .card-subtitle {
-      font-family: $ff-mono;
-      font-weight: $fw-bold;
-
-    }
-  }
-
-  .aboutCard {
-    background: $white !important;
-    width: 100%;
-    overflow: no-display;
-    margin: 3%;
-    display: inline-block;
-  }
-
-  button {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-
-  .moreCard {
-    justify-content: center;
-    align-content: center;
-
-    .card-title {
-      width: 100%;
-    }
-
-    hr {
-      margin-bottom: 0;
-    }
-
-    br {
-      margin-top: 0;
-    }
-
-    p {
-      margin-top: 0 !important;
-      font-size: 1rem;
-    }
-    em {
-      font-family: $style-font;
-      font-weight: 900;
-      color: $primary;
-      font-size: 2rem;
+    &:hover .multi-button, .multi-button:focus-within { //Hover or a button inside is focused
+      width: 10rem;
+      height: 10rem;
     }
   }
 }
-.techs{
-  font-family: $ff-title;
-  font-weight: 900;
-  color: $primary;
-  font-size: 1.5rem;
-  width: 100%;
-  margin-left: 5%;
-  margin-top: 5%;
-  line-height: $lh-small;
 }

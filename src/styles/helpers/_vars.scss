@@ -467,7 +467,7 @@ $grid-breakpoints: (
         xl: 1200px,
 ) !default;
 
-$grid-columns: 12 !default;
+$grid-columns: 9 !default;
 $grid-gutter-width: $w-gutter !default;
 
 $container-max-widths: (
@@ -481,7 +481,7 @@ $container-max-widths: (
 $mobile-breakpoint: 560px;
 $tablet-breakpoint: 960px;
 
-$grid-width: 2400;
+$grid-width: 1800;
 $column-gap: 100;
 $gutter: ($column-gap / 2 / $grid-width * 100%);
 $column-width: 100% - $gutter * 2;

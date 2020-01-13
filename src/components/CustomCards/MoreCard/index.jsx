@@ -1,13 +1,4 @@
 import React, { Component } from 'react';
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardBody,
-  CardSubtitle,
-  CardText,
-} from 'reactstrap';
-import Container from 'react-bootstrap/Container';
 class MoreCard extends Component {
   constructor(props) {
     super(props);
@@ -21,25 +12,19 @@ class MoreCard extends Component {
       cardText2,
     } = this.props;
     return (
-      <Card className="moreCard">
-        <CardHeader>
-          <CardTitle>{cardTitle}</CardTitle>
-          <CardSubtitle>{cardSubtitle}</CardSubtitle>
+      <div className="card more-card">
+        <div className="card-header">
+          <div className="card-title">{cardTitle}</div>
+          <div className="card-subtitle">{cardSubtitle}</div>
           <hr />
-        </CardHeader>
-        <CardBody>
-          <CardText>
+        </div>
+        <div className="card-body">
             <br />
-            <Container fluid>
-              <CardBody>
                 <p className="moreText">{cardText}</p>
                 <p className="moreText">{cardText2}</p>
                 <em className="moreText">{cardText3}</em>
-              </CardBody>
-            </Container>
-          </CardText>
-        </CardBody>
-      </Card>
+        </div>
+      </div>
     );
   }
 }

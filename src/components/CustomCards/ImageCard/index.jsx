@@ -5,7 +5,7 @@ class ImageCard extends Component {
   render() {
     const { cardImage } = this.props;
     return (
-      <Card className="image-card" style={{ width: '100%' }}>
+      <Card className="image-card card">
         <CardBody>
           <CardImg className="img-fluid" src={cardImage} />
         </CardBody>

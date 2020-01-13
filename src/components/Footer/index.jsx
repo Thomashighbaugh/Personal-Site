@@ -6,12 +6,10 @@ import Container from 'react-bootstrap/Container';
 class Footer extends Component {
   render() {
     return (
-      <footer>
-        <div className="container-fluid">
+      <footer className="footer container-fluid">
           <div>
             <h3>Thomas Leon Highbaugh © {new Date().getFullYear()}</h3>
           </div>
-        </div>
       </footer>
     );
   }

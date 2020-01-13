@@ -13,18 +13,18 @@ class SocialCard extends Component {
   }
   render() {
     return (
-      <Card className="socialCard">
-        <CardHeader>
-          <CardTitle>[social]</CardTitle>
-          <CardSubtitle>
+      <card className="card social-card">
+        <div className="card-header">
+          <h3 className="card-title">[social]</h3>
+          <h4 className="card-subtitle">
             use the icons below to check out my social media profiles!
-          </CardSubtitle>
+          </h4>
           <hr />
-        </CardHeader>
-        <CardBody className="socialBody">
+        </div>
+        <CardBody className="card-body">
           <SocialIcons />
         </CardBody>
-      </Card>
+      </card>
     );
   }
 }

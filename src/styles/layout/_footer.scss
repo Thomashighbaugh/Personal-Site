@@ -9,9 +9,7 @@ footer {
   position: absolute;
   display: inline-block;
   margin-top: 1rem;
-  min-width: 100vw;
-  margin-bottom: 0 !important;
-  padding-bottom: 0.5rem;
+  width: 100%;
   background: $header-background;
   border-top: $bdr-cb;
   border-right: $bdr-cr;
