@@ -6,17 +6,16 @@
 **************************************************************************************/
 
 footer {
-  position: static;
-  display: block;
+  position: absolute;
+  display: inline-block;
   margin-top: 1rem;
-  clear: both;
+  min-width: 100vw;
   margin-bottom: 0 !important;
-  width: 100% !important;
+  padding-bottom: 0.5rem;
   background: $header-background;
   border-top: $bdr-cb;
   border-right: $bdr-cr;
   border-left: $bdr-cl;
-  align-content: flex-end;
   align-items: center;
   font-family: $ff-title;
 
