@@ -9,18 +9,22 @@ class AboutCard extends Component {
       cardText3
         } = this.props;
     return (
-      <div className="card about-card">
+      <div className="about-card card">
         <div className="card-header">
           <h3 className="card-title">{cardTitle}</h3>
           <h4 className="card-subtitle">{cardSubtitle}</h4>
           <hr />
         </div>
+        <hr />
         <div className="card-body">
             <br />
-            <p>{cardText}</p>
+            <p className="card-text">{cardText}</p>
             <h4 className="techs">{cardText2}</h4>
             <h4 className="techs">{cardText3}</h4>
 
+        </div>
+        <div className="card-footer">
+        <hr />
         </div>
       </div>
     );

@@ -3,114 +3,36 @@
  *
  *
  *  ------------------------------------------------------------------
- *  Markup:
- *  ---------
- *  <div class='loadingSpinner'>
- *    <span class='loadingSpinner-inner'></span>
- *    <span class='loadingSpinner-inner'></span>
- *    <span class='loadingSpinner-inner'></span>
- *    <span class='loadingSpinner-inner'></span>
- *  </div>
  *
  *******************************************************************/
 
-.modalCard {
-  clear: both;
-  button {
-    background: $gradient0;
-    color: $white;
-    border: $bdr-button;
-    width: 95%;
-    font-size: 2rem;
-    font-weight: 900;
-    border-radius: 10px;
-    font-family: $style-font;
-    margin-right: 0.5rem;
-    padding: 0;
-    &:hover {
-      border: $bdr-button-hover;
-    }
-  }
-  main {
-    width: 45%;
-    margin: 0;
-    display: inline-block;
-    padding: 0;
-  }
-  aside {
-    width: 45%;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-  }
-}
 
-.modal {
-  @include animate(fadeInDown, 1s, 77);
-  position: sticky;
-  max-height: 100vh;
-  margin:0;
-  padding:0;
-overflow: auto;
-  max-width: 100%;
+.modal {}
 
-  .modal-header {
-    background: $gradient5;
-    border: 0.5rem solid $gray1;
-  }
-  .modal-title {
+  h3 {
+    width: 100%;
+    color: $primary !important;
+    font-size: $fz-h2 !important;
+    text-align: center;
+    magin: 0 !important;
+
+
     h4 {
-      font-size: 3rem;
-      color: $white;
+      width: 100%;
+      color: $primary !important;
+      font-size: $fz-h2 !important;
+      text-align: center;
+      magin: 0 !important;
     }
-    margin: 0;
-    padding: 0;
-  }
-  .modal-footer {
-    background: $gradient0;
-    border: 0.5rem solid $gray1;
-  }
-  .close-btn {
-    color: $gray1;
-  }
-  .modal-body {
-    border: 0.5rem solid $gray1;
-background: $background3;
-    section {
-      display: inline-grid;
-      width: 45%;
-      margin-right: 1.5rem;
-      margin-left: 1.5rem;
-      margin-top: 0.75rem;
-      background: $gradient0;
 
-      ul {
-        margin: 0;
-        outline: $bdr-button;
-        margin-top: 1rem;
-        li {
-          font: $font !important;
-          font-size: 120% !important;
-          color: $text !important;
-        }
 
-        h4 {
-          font-size: 2.75rem;
-          font-family: $style-font;
-        }
-      }
-    }
   }
-  .modal-dialog {
-    text-align: left;
-    vertical-align: middle;
-  }
-}
 
-.modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px;
-}
+  .modal-subtitle {
+    width: 100%;
+    color: $primary !important;
+    font-size: $fz-h3 !important;
+    text-align: center;
+    magin: 0 !important;
+  }
+

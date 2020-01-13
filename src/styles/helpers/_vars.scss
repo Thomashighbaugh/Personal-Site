@@ -412,7 +412,8 @@ $p-paginator-item: $p-medium $p-big !default;
 
 /********************************************
 * Table
-********************************************/$bgc-table-header: $bgc-body !default;
+********************************************/
+$bgc-table-header: $bgc-body !default;
 $bgc-table: $light !default;
 $bd-table: $bd-medium !default;
 $c-table-heading: $gray !default;

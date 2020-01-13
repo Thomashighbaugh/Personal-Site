@@ -764,7 +764,7 @@
                     null,
                     'Linux Internals Customization'
                   ),
-                  r.a.createElement('li', null, 'Modal Editing & Emacs')
+                  r.a.createElement('li', null, 'SkillsModal Editing & Emacs')
                 )
               ),
               r.a.createElement(

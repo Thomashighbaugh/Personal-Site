@@ -18,11 +18,15 @@ class MoreCard extends Component {
           <div className="card-subtitle">{cardSubtitle}</div>
           <hr />
         </div>
+        <hr/>
         <div className="card-body">
             <br />
                 <p className="moreText">{cardText}</p>
                 <p className="moreText">{cardText2}</p>
                 <em className="moreText">{cardText3}</em>
+        </div>
+        <div className="card-footer">
+          <hr />
         </div>
       </div>
     );

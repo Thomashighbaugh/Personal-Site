@@ -14,26 +14,12 @@
 *  <div className="nav-btn"> Button 3 </div> </div>
 *
  *******************************************************************/
-
-.card-footer {
-  color: $light;
-}
-.card-title {
-  font-family: $title-font;
-  color: $primary;
-  font-size: $fz-h1;
-  margin-left: $ml-ct;
-  margin-right: $mr-ct;
-  width: $w-ct;
-}
 .card {
   border-top: $bdr-ct;
-  border-right:$bdr-cr;
+  border-right: $bdr-cr;
   border-left: $bdr-cl;
   border-bottom: $bdr-cb;
   padding: $p-s;
-  justify-content: center;
-  align-content: center;
   background: $header-background;
   @include for-size(big-desktop) {
   }
@@ -48,44 +34,89 @@
   }
   @include for-size(phone-only) {
   }
+  .card-header {
+    background: $white;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+    outline: $primary 0.35rem solid;
+    .card-title {
+      font-family: $ff-title;
+      color: $primary;
+      font-size: $fz-h2;
+      width: $w-ct;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    .card-subtitle {
+      font-family: $ff-sub;
+      color: $text;
+      text-align: right;
+      font-size: $fz-h5;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  hr {
+    color: $primary;
+    border-bottom: 0.5rem $light solid;
+  }
+  .card-body {
+    margin: 0;
+    padding: 0;
+    margin-bottom:30%;
+    .card-text {
+      font-family: $ff-body;
+      color: $text;
+      text-align: center;
+    }
+    .techs {
+      color: $primary;
+      font-family: $ff-mono;
+      background: $white;
+      width:auto;
+      font-size: $fz-h3;
+      text-align: center;
+      font-family: $ff-title;
+    }
+  }
 }
-
-.card-title {
-  color: $primary !important;
-  background: $white;
-  overflow: no-content;
-  padding: 0;
-  width: auto;
-  text-align: center;
-
-}
-
-
-.image-card{
+.image-card {
   background: $header-background !important;
-  height: 32rem ;
+  height: 32rem;
   @include for-size(tablet-landscape) {
-    display:flex;
-
+    display: flex;
   }
   @include for-size(tablet-portrait) {
   }
   @include for-size(phone-only) {
-
-    display:none;
-
+    display: none;
   }
-  img{
-    height:32rem
+  img {
+    height: 32rem;
   }
 }
 .socialCard {
-
 }
-    .media{
-      align-content: center;
-      width: 100%;
-      img{
-       margin-left: 5rem !important;
-      }
-    }
+
+.more-card {
+}
+
+.about-card {
+}
+
+.modal-card {
+  clear: both;
+  display: block;
+  .modal-button-group {
+    display: flex;
+    margin: 3%;
+  }
+  button {
+    @extend %btn-1;
+    font-family: $ff-title;
+    font-size: 1.25rem;
+    height: 5rem;
+  }
+}
