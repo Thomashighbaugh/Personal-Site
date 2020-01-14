@@ -9,34 +9,34 @@
 
 %resume-title {
   color: $white !important;
-  background: $blue;
+  background: $primary;
   padding:1%;
-  font-family: $title-font-alt !important;
+  font-family: $ff-sub !important;
   float:left;
 }
 %resume-subtitle {
   color: $white !important;
-  background: $blue;
-  font-family: $title-font-alt !important;
+  background: $primary;
+  font-family: $ff-sub !important;
   font-size:2.5rem;
-  border-bottom: 1rem $gray1 solid;
+  border-bottom: 1rem $gray solid;
 }
 %resume-basics-btn {
-  background: $gray1;
+  background: $gray;
   color: $white;
-  border: 0.25rem solid $gray1;
+  border: 0.25rem solid $gray;
   font-size: 1.75rem;
-  font-family: $style-font-alt1;
+  font-family: $ff-sub;
   border-radius: 10px;
   font-weight: 600;
 }
 %resume-basics-btn-hover {
   text-decoration: none;
-  background: $blue;
+  background: $primary;
   color:$white;
-  border: 0.25rem solid $blue;
+  border: 0.25rem solid $primary;
   font-size: 1.75rem;
-  font-family: $style-font-alt1;
+  font-family: $ff-sub;
   border-radius: 10px;
   font-weight: 600;
 }
@@ -83,12 +83,12 @@
 
 %btn-4 {
   color: $white;
-  background: $gray1;
+  background: $gray;
 }
 
 %btn-5 {
   background: $header-background;
-  color: $gray1;
+  color: $gray;
 }
 
 

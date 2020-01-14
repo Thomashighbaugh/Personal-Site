@@ -12,7 +12,7 @@
   margin-left: 2.5%;
   margin-top: 2rem;
   background: $gradient0;
-  border: 3rem double $gray1;
+  border: 3rem double $gray;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -22,7 +22,7 @@
   h1 {
     font-size: 13rem !important;
     color: $white;
-    border-bottom: $gray1 solid 0.5rem;
+    border-bottom: $gray solid 0.5rem;
     margin-left: 02rem;
     margin-bottom: 30%;
     @include for-size(tablet-landscape) {
@@ -36,22 +36,22 @@
    .post {
     a {
       text-decoration: none;
-      font-family: $title-font-alt2;
+      font-family: $ff-sub;
       font-size: 2.5rem;
       font-weight: 900;
-      color: $gray3 !important;
+      color:$dark !important;
     }
 
     a:hover {
       @extend %btn-5;
-      color: $gray3;
+      color:$dark;
     }
 
     a:visited {
       text-decoration: none;
-      font-family: $style-font;
+      font-family:$ff-title;
       font-size: 3rem;
-      color: $gray3 !important;
+      color:$dark !important;
     }
 
 
@@ -83,14 +83,14 @@
     h4 {
       color: $white;
   font-size: 4rem;
-      font-family: $style-font;
+      font-family:$ff-title;
       margin-left:0.5rem;
     }
     p {
       font-size: 2rem;
       background: none;
       margin-left: 1rem;
-      font-family: $font-alt;
+      font-family: $ff-body;
     }
   }
   @include for-size(tablet-landscape) {
@@ -99,7 +99,7 @@
     margin-left: 0;
     h1 {
       font-size: 6rem !important;
-      font-family: $style-font;
+      font-family:$ff-title;
       text-align: center;
       color: $white;
     }
@@ -116,11 +116,11 @@ h4{
 }
 .blog-post {
     a {
-   background:$gray1;
-      color: $blue;
+   background:$gray;
+      color: $primary;
       text-decoration: none;
-      font-family: $style-font;
-      border: $blue 0.25rem solid;
+      font-family:$ff-title;
+      border: $primary 0.25rem solid;
       padding:0.25rem;
       border-radius: 10px;
       font-size: 2.5rem;
@@ -131,13 +131,13 @@ h4{
 
 
     a:hover {
-      color: $blue2;
+      color: $secondary;
     }
 
     a:visited {
       text-decoration: none;
       font-size: 3rem;
-      color: $blue !important;
+      color: $primary !important;
     }
   }
 

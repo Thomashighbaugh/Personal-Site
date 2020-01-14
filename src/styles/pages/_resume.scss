@@ -26,7 +26,7 @@
     margin-left: 2.05%;
     font-size: 3.5rem;
     @extend %resume-title;
-    border-bottom: 1rem $gray1 solid;
+    border-bottom: 1rem $light solid;
     @include animate(zoomIn, 1s, 100);
   }
   .card-subtitle {
@@ -34,7 +34,7 @@
   }
   .row {
     margin-bottom: 3rem;
-    border-bottom: 0.75rem solid $gray1;
+    border-bottom: 0.75rem solid $light;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -45,7 +45,7 @@
   }
   .highlights {
     list-style: inside;
-    font-family: $style-font-alt1;
+    font-family: $ff-sub;
     font-size: 1.5rem;
   }
 
@@ -56,11 +56,11 @@
       line-height: 3rem;
       margin-right: 0;
       strong {
-        background: $blue;
+        background: $primary;
         color: $white;
-        font-family: $style-font-alt1;
+        font-family: $ff-sub;
         font-size: 2rem;
-        border-bottom: 0.5rem solid $gray1;
+        border-bottom: 0.5rem solid $light;
       }
       a {
         float: right;
@@ -97,23 +97,23 @@
       float: right;
     }
     .work-name {
-      background: $gray1;
-      font-family: $style-font-alt0;
+      background: $light;
+      font-family: $ff-title;
       color: $white;
       margin-bottom: 0;
       font-size: 3rem;
     }
     .work-position {
-      background: $gray1;
-      font-family: $style-font-alt0;
+      background: $light;
+      font-family: $ff-title;
       color: $white;
       font-size: 3rem;
       margin-top: 0;
-      border-bottom: 0.5rem solid $blue;
+      border-bottom: 0.5rem solid $primary;
     }
     .work-date {
       text-align: center;
-      font-family: $style-font-alt1;
+      font-family: $ff-sub;
       font-size: 2rem;
       p {
         font-size: 1.75rem;
@@ -142,25 +142,25 @@
       float: right;
     }
     .institution {
-      background: $gray1;
-      font-family: $style-font-alt0;
+      background: $light;
+      font-family: $ff-title;
       color: $white;
       margin-bottom: 0;
       font-size: 3rem;
-      border-bottom: $blue solid 0.5rem;
+      border-bottom: $primary solid 0.5rem;
     }
     .study-date {
       text-align: center;
-      font-family: $style-font-alt1;
+      font-family: $ff-sub;
       font-size: 2rem;
     }
     .gpa {
       color: $white;
-      background: $blue;
+      background: $primary;
       font-size: 1.75rem;
       width: 25%;
       margin-left: 5%;
-      font-family: $title-font-alt;
+      font-family: $ff-title;
     }
   }
   #skills {
@@ -176,12 +176,12 @@
     .category {
       margin-top: 5%;
       padding: 1%;
-      background: $gray1;
-      font-family: $style-font-alt0;
+      background: $light;
+      font-family: $ff-title;
       color: $white;
       margin-bottom: 1rem;
       font-size: 3rem;
-      border-bottom: $blue solid 0.5rem;
+      border-bottom: $primary solid 0.5rem;
     }
   }
   #misc {
@@ -195,19 +195,19 @@
         text-align: center;
 
         .language {
-          background: $blue;
+          background: $primary;
           color: $white;
           font-size: 3rem;
           font-weight: 900;
-          font-family: $style-font;
+          font-family: $ff-title;
         }
 
         .level {
-          background: $gray1;
+          background: $light;
           color: $white;
           font-size: 3rem;
           font-weight: 900;
-          font-family: $style-font;
+          font-family: $ff-title;
         }
       }
     }
@@ -217,16 +217,16 @@
         text-align: center;
 
         .name {
-          background: $blue;
+          background: $primary;
           color: $white;
           font-size: 3rem;
           font-weight: 900;
-          font-family: $style-font;
+          font-family: $ff-title;
         }
         .phone {
-          background: $gray1;
+          background: $light;
 
-          font-family: $style-font;
+          font-family: $ff-title;
           .reference {
             color: $white !important;
             font-size: 3rem;

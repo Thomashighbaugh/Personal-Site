@@ -4,41 +4,61 @@
 *
 *
 **************************************************************************************/
-header{
+header {
   margin-bottom: 0.5rem;
+  padding-bottom: 2.5rem;
+  margin-top:0;
+  padding-top: 0;
+  justify-content: center;
+  align-content: center;
 
-}
+  nav {
+    border-right: $bdr-nr;
+    border-left: $bdr-nl;
+    border-bottom: $bdr-nb;
+    background: $header-background;
+    margin-top: 0;
+    padding: 0 !important;
+    clear: both;
+    font-family: $ff-title;
+    display: block ;
+    @include for-size(big-desktop) {
+      width: 100%;
+      font-size: 100%;
+      margin-bottom: 1rem;
+    } @include for-size(desktop) {
+      margin-bottom: 2rem;
+      margin-top: 0;
+      display: inline-block;
+      font-size:85%;
+            width: 100%;
 
-nav {
-  border-right: $bdr-nr;
-  border-left: $bdr-nl;
-  border-bottom: $bdr-nb;
-  background: $header-background;
-  margin: 0;
+          } @include for-size(tablet-landscape) {
+      margin-bottom: 2rem;
+      margin-top: 0;
+      display: inline-grid;
+      font-size:75%;
+                  width: 100%;
+
+                }
+    @include for-size(tablet-portrait) {
+      margin-bottom: 1.5rem;
+      margin-top: 0;
+      display: inline-block;
+      font-size: 65%;
+      width: 100%;
+
+    }
+    @include for-size(phone-only) {
+      margin-bottom: 1rem;
+      margin-top: 0;
+      display: inline-block;
+      font-size:50%;
+      width: 100%;
+    }
+.links{
+  margin-top: 1rem;
   padding: 0;
-  clear: both;
-  font-family: $ff-title;
-
-  display: block !important;
-  @include for-size(tablet-landscape) {
-    margin-bottom: 2rem;
-    margin-top: 0;
-    width: 100% !important;
-    padding: 1rem;
-    display: inline-grid;
-  }
-  @include for-size(tablet-portrait) {
-    margin-bottom: 1.5rem;
-    margin-top: 0;
-    width: 100% !important;
-    padding: 1rem;
-    display: inline-grid;
-  }
-  @include for-size(phone-only) {
-    margin-bottom: 1rem;
-    margin-top: 0;
-    width: 100% !important;
-    padding: 1rem;
-    display: inline-grid;
+}
   }
 }

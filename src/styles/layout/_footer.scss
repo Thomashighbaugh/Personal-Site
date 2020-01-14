@@ -6,43 +6,49 @@
 **************************************************************************************/
 
 footer {
-  position: absolute;
+  position: relative;
+  margin:0;
+  margin-top:1rem;
+  left:0;
+  right:0;
+  padding:0;
+  padding-bottom: 0.5rem;
   display: inline-block;
-  margin-top: 1rem;
-  width: 100%;
   background: $header-background;
   border-top: $bdr-cb;
   border-right: $bdr-cr;
   border-left: $bdr-cl;
   align-items: center;
   font-family: $ff-title;
+  clear:both;
+  width:100%;
 
-  h3 {
-    color: $gray1;
-    background: $white;
-    width: 30%;
-    margin: 0;
-    margin-left: 35%;
-    text-align:center;
+
+
+  @include for-size(desktop) {
     font-size: 2rem !important;
-    padding: 0;
-
+    margin-left: 35%;
+    margin-right: 35%;
   }
 
-
-    @include for-size(desktop) {
-      font-size: 2rem !important;
-      margin-left: 35%;
-      margin-right: 35%;
-    }
-
-    @include for-size(tablet-landscape) {
-      font-size: 2rem;
-    }
-
-    @include for-size(phone-only) {
-      font-size: 1rem !important;
-      margin-left: 55%;
-    }
+  @include for-size(tablet-landscape) {
+    font-size: 2rem;
   }
 
+  @include for-size(phone-only) {
+    font-size: 1rem !important;
+    margin-left: 55%;
+  }
+}
+
+.footer-title {
+  color: $light !important;
+  background: $white;
+  width: 30%;
+  margin: 0;
+  margin-left: 35%;
+  text-align:center;
+  font-size: 2rem !important;
+  padding: 0;
+
+}

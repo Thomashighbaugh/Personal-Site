@@ -2,8 +2,8 @@
 * This is the page which hosts a version of my resume in HTML mark up within the JSX of the component.
 *  It exists as a way of tying the site's information together in one place
  */
-// TODO - convert new resume from XeLaTeX to HTML
-// TODO - add in new resume
+// @TODO - convert new resume from XeLaTeX to HTML
+// @TODO - add in new resume
 import React from 'react';
 import Layout from '../components/Layout';
 import Obfuscate from 'react-obfuscate';

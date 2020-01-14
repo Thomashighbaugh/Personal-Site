@@ -1,8 +1,8 @@
-<p align="center">
+<div align="center" style="background-color: #343a40; outline: #669933 solid 5px;">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="200" />
   </a>
-</p>
+</div>
 <h1 align="center">
   Thomas Leon Highbaugh's Web Development Portfolio
 </h1>
@@ -26,62 +26,58 @@ This site replaces TLH's former portfolio, Resurgens, and its associated brandin
 
 - [Run Dev Server](#run-dev-server)
 - [Usage Example](#usage-example)
-
-[Technology Stack](#technology-stack)
-
-- [Development (Web)](#web-development)
-
-  - [Webpack](#webpack)
+- [ Technical Highlights and Considerations](#technical-highlights-and-considerations)
   - [React](#react)
-  - [Redux](#redux)
   - [SASS](#sass)
-    - [Include Media](#include-media)
+  - [Netlify](#netlify)
 
-- [Deployment](#deployment)
-  - [Hosting - Netlify](#hosting---netlify)
-
-[Credits](#credits)
+[Note On My Development Environment](#note-on-my-development-environment)
+[License](#license)
 
 ---
 
 ## To-Do-List
+
 Like all projects, much can still be done. With this site, I have moved to releasing features and components of the site in a "rolling" fashion instead of completely rebuilding my portfolio, especially now that Iam comfortable and competent using React, Webpack, Gatsby and associated tools to create web interfaces and have a well ordered dev environment in which to craft these experiences. Below are the features I am aware need to be addressed promptly [and kujeky am already toiling with]
 
-### Deployment 
+### Deployment
+
 - [x] deploy devlog
-- [x] deploy portfolio site 
+- [x] deploy portfolio site
 - [x] link sites
 
 ### Structure
-- [ ] migrate to new SASS structure and integrate Bismuth Library Functionality as early staging/proving grounds 
+
+- [x] migrate to new SASS structure and integrate Bismuth Library Functionality as early staging/proving grounds
 - [x] Investigate various organizational models and determine what works best (SASS in sass directory with inline styling in Atomic fashion where it is fitting)
 - [x] determine appropiate method of isolating functional blocks of components (components directory, page directory)
-### Meta
-- [ ] icons replacing social names, clevefr but generic ones for devlog and gallery
-- [ ] gray hover effect for buttons
 
+### Meta
+
+- [ ] icons replacing social names, clevefr but generic ones for devlog and gallery
+- [x] gray hover effect for buttons
 
 ### About Page
-- [ ] deal with card display on mobile (make width:100% at mobiler breakpoint)
-- [ ] add blurb about art falling under differenct license
-- [ ] adjust button and text responsiveness
+
+- [x] deal with card display on mobile (make width:100% at mobiler breakpoint)
+- [x] adjust button and text responsiveness
+- [ ] deal with the ongoing nightmare the modals for the skills section has become
 
 ### Resume Page
-- [ ] fix title font color
+
+- [x] fix title font color
 - [ ] fix references name color
 - [ ] languages font color
 - [ ] internal buttons to gray style
 - [ ] tel number link copy-to-clipboard on click
 - [ ] add devlog to contact/personal sites
 - [ ] specific adjustments to fonts for page
-- [ ] add blurb at end about JSONresume basis 
+- [ ] add blurb at end about JSONresume basis
 - [ ] remove whatever is causing some sections to align center, change to left for this page.
 - [ ] create specific classes and ids for page
 
 ### Projects Page
 
-- [ ] consider refactoring and changing name to "work"
-- [ ] Add RSS Feed for Projects Page
 - [ ] Add repository and hosted links to each project
 - [ ] add additional projects to showcase
 - [ ] implement a system of categorization to projects allowing users to sort by involved skills
@@ -89,14 +85,15 @@ Like all projects, much can still be done. With this site, I have moved to relea
 - [ ] create complete descriptions for all listed projects
 
 ### Gatsby Config
-- [ ] optimize plugins, remove duplicates and ineffecencies
+
+- [x] optimize plugins, remove duplicates and ineffecencies
 
 ### Responsiveness
-- [ ] further optimize site for mobile/tablet/vertically-split-tiling-wm widths 
-- [ ] achieve consistent animation effects
-- [ ] remove unneeded animations from mobile experiences
-- [ ] fix header button display 
 
+- [x] further optimize site for mobile/tablet/vertically-split-tiling-wm widths
+- [x] achieve consistent animation effects
+- [x] remove unneeded animations from mobile experiences
+- [x] fix header button display
 
 ## Installation
 
@@ -132,7 +129,7 @@ While the intended purpose is rather specific, this site can easily be adapted o
 
 ### Style
 
-The portfolio itself was stylized to capture the professional tone of my work without compromising on the signature flare I bring to my web development projects. The result is a site that is both easy to look at, regardless of outdoor lighting conditions, with the _neon_ flare of its predecessors.
+This site is the first of the sites I am reponsible for that I am using as the basis for the Bismuth SASS Library, which I hope to be a consistent SASS library somewhat like Bootstrap that enables quick stylization within React utilizing classes (which are being developed here, so bare with me) that roll in my rather opinionated opinions of SASS based web stylization thus enablig the user to set it and forget it much like Bootstrap enables. The primary goal is making things easier on myself and fighting with SASS less when making sites thus we shall see how much others find my opinions helpful....
 
 ### Component Reusibility and Modularity
 
@@ -140,106 +137,43 @@ Object Orientation is useful to developers for a number of reasons, in writing t
 
 All of these components will (eventually) be available for public use through Bit, freely of course.
 
-## Technology Stack
+## Technical Highlights and Considerations
 
-### Web Development
+These are some interesting features or otherwise noteworthy aspects of the technologies that went into this site that I felt necessary to mention in the Readme for the sake of anyone porting this site for their own use.
 
-#### Gatsby
+#### Gatsby Plugins
 
-The static site generator that enables the generation of sites from React components. It handles the routing of the project's pages, the Webpack related functions and allows for the easy addition of various modules (called plugins) to increase the functionality of the site in various ways. The plugins used here include
+These are all included, with configuration and at times their own plugins, within the Gatsby configuration file `gatsby-config.js` in the project's root directory.
 
-- gatsby-plugin-sass - enables the use of SASS to style the site
-- gatsby-plugin-react-helmet - enables modification of the head element on the generated HTML files
-- gatsby-plugin-manifest
-- gatsby-transformer-sharp
-- gatsby-plugin-sharp
-- gatsby-source-filesystem
+| Plugin                     | What It's Doing                                                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| gatsby-plugin-sass         | enables the use of SASS to style the site                                                                                                           |
+| gatsby-plugin-react-helmet | enables modification of the head element on the generated HTML files                                                                                |
+| gatsby-plugin-manifest     | keeps track of all the other stuff going on in here, creating a manifest for the underlaying generator of additional actions it will be rolling in. |
+| gatsby-transformer-sharp   | enables the transmuting of Markdown to React to HTML/CSS in Gatsby's process rendering static site from the numerous components it is made of.      |
+| gatsby-plugin-sharp        |                                                                                                                                                     |
+| gatsby-source-filesystem   | enables accessing local resources from within the filesystem                                                                                        |
 
 #### React
 
-The basic underpinnings of this entire effort and its two associated sites was in this JS framework/library. Used primarily for its powerful application and the manner in which it must be structured that provides PHP-like splitting of various functionality into its own file. This makes the process of maintaining and managing the code base far simpler as less time is spent scrolling through unruly JS files.
-
-The other utility of using React was its application of **JSX** which is a syntax for code that the transpiler will render as HTML that looks and behaves very much like it is (X)HTML, meaning the skills learned earlier as prerequistes for reaching this stage have renewed utility as well as a more comfortable developer experience.
+Obviously, Gatsby uses React to compile static sites in HTML CSS, so the entire web application is written in React, with SASS as its stylization due to my particular taste and quest for a independent and opinionated SASS library tenatively called the Bismuth SASS Library (as well as my distaste for the camel casing of Styled Components).
 
 #### SASS
 
-This variant of CSS allows for code structure that is similar to React and makes the code reuseable across projects with less adaptation as many CSS only stylesheets would have to be. It also includes such features as variables and mixins, that make it easier to change aspects of the site quickly and reuse values across the style sheets without need for search-and-replace functions or other refactoring tools that are generally less reliable.
+Or in my usage its properly known as SCSS, as I prefer that syntax for my own projects for organizational purposes. I have deliberately eschewed any styling within the files or other aspects of Atomic Design as I am using this site as the basis for a SASS library I am writing that would in theory allow for more Atomic Designs than even the "directory with its own stylesheet" method as only class names would be needed to style the bare JSX once completed. Thus all of the relelvant SASS is found in the styles directory and called by the gatsby-browser.js file meaning no component even calls it directly thus eliminating some of the quriks of using a monolithic library as has I had been experiencing it.
 
-### Web Resources
+### Netlify
 
-#### GitHub -> GitLab
-
-The VCS I used was Git, specifically with [GitHub](https://github.com/Thomashighbaugh/thomas-leon-highbaugh-portfolio) being the remote repository I commit to and [GitLab](https://gitlab.com/ThomasLeonHighbaugh/thomas-leon-highbaugh-portfolio) being configured to back up the repository automatically thanks to the latter's suite of useful features for creating pipelines between itself and GitHub.
-
-#### Bit
-
-[Bit.dev](https://bit.dev) allows developers and organizations to create reuseable components out of there React code (or other JS frameworks/libraries) and reuse them in the future. Even without pulling any components from _Bit_ I was able to use it to tease out my application logic by examining the pieces while backing them up and correct several issues I noticed in the process that may have lead to unexpected consequences.
-
-#### UI ZOO
-
-Like Bit, UI ZOO allows for a simple way to get commonly used components for your site without need for rewriting the same components over, only this is not a collection of various developer's work but instead generates the needed code for you using its handy UI. While an NPM package and local environment are available, it is possible to use the website to simply generate the same content and drop it into the site as needed. While more limited in options than Bit, the UI ZOO approach is a more flexible option for speeding up development time
-
-### Deployment
-
-#### Netlify
-
-> Note I am not paid for these opinions, just impressed with the service
-
-[Netlify](https://netlify.com) is the premier serverless hosting option available to the modern web developer, which I am fiercely loyal to simply because it provides a stable, reliable and featureful alternative to GitHub Pages while being **totally free** while offering **a custom subdomain for each site\***.
-
-Having tried other options that were themselves excellent, I have noticed no slow down or glitching since moving [thomasleonhighbaugh.me](https://thomasleonhighbaugh.me) to
-Netlify. In fact, they even provided a **free SSL certificate** for the site.
-
-I actually host copies of my old developer sites, the front pages to various projects and the many, many example sites that I make on Netlify and have never once paid a dime!
-
-## Credits
-
-In addition to a hearty "thank you" to those responsible for the above listed technologies, I would also like to credit the following:
-
-### Articles
-
-- [Front-End Development with JavaScript using Reactjs , Redux , Sass and Webpack](https://itnext.io/front-end-development-with-javascript-using-reactjs-redux-sass-and-webpack-1a2fdd46daba)
-
-- [Fast and modern front-end setup with webpack, react, redux, router, saga and postcss, part 1](https://itnext.io/fast-and-modern-front-end-setup-with-webpack-react-redux-router-saga-and-postcss-1360e9715d17)
-
-  [Part 2](https://itnext.io/fast-and-modern-front-end-setup-with-webpack-react-redux-router-saga-and-postcss-part-2-9ae7ad4e7cb2)
-
-  [Part 3](https://itnext.io/fast-and-modern-front-end-setup-with-webpack-react-redux-router-saga-and-postcss-part-3-27ac4bc3f969)
-
-- [React, SCSS and Webpack](https://medium.com/@joshuacrass/react-scss-and-webpack-ae9bd84b9e43)
-
-- [Roll your own tiny React environment using Webpack, Babel, and Sass](https://www.codementor.io/valentinrad/roll-your-own-tiny-react-environment-using-webpack-babel-and-sass-ei70wyhjl)
-
-- [Creating a Node app with React, Webpack 4, Babel 7, Express and Sass ](https://dev.to/kedar9/creating-a-node-app-with-react-webpack-4-babel-7-express-and-sass-3mae)
-
-- [React : Babel + Webpack + Sass boilerplate application](http://blog.marcnuri.com/react-babel-webpack-sass-application/)
+Ask anyone, Netlify does for free what most hosting services don't do for any amount of money. Sure other services exist for static sites but none have the smooth interface, ease of deployment and consistent functionality of Netlify so the choice is natural to host example sites or even my main web presence (this site) on a platform that takes the pain out of hosting as well as **the cost**.
 
 ---
 
-### Boilerplate
+## Note on My Development Environment
 
-Due simply to the unavailablity of any previous project which had enough specific functionality I was looking for when composing this site,
-I built this site from the Gatsby Basic Starter available when using the Gatsby CLI.
+I made all of this, in fact I have exclusively written code only on, Linux. Specifically this project has been entirely written while I have utilized Manjaro Linux. For my specific configurations, see [my dotfiles](https://github.com/Thomashighbaugh/dotfiles)
 
-To obtain your own Gatsby Basic Starter, use the following command
+## License
 
-```bash
-npm i -g gatsby-cli
-gatsby new [name of your project here]
-```
+This site is distributed under the MIT license. I offer no guarentees of anything other than a reminder that there is only two things certain in programming, frustration and swearing.
 
-The starter contains a basic set of files that are sufficient to build a more complex project on top of with a nice
-selection of features, including helpful error dialog, for a multitude of use cases. If interested in structuring your own
-project with varying needs from this one, I would reccomend examining Gatsby to make the process of deploying a static (or mostly static)
-site with the benefits of React and far fewer problems of other tech stacks.
-
----
-
-And a big thank you to my dog tolerating me during the
-process of bringing you this site!
-
-## Meta
-
-Thomas Leon Highbaugh – [Github](https://github.com/Thomashighbaugh) – thighbaugh@zoho.com
-
-Distributed under the MIT license.
+` And a big thank you to my dog tolerating me during the process of bringing you this site! His patience is a model for even saints to aspire to. ``And a big thank you to my dog tolerating me during the process of bringing you this site! His patience is a model for even saints to aspire to. `

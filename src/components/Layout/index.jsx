@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="layout">
+    <div>
       <Helmet>
         <meta charSet="utf-8" />
       </Helmet>

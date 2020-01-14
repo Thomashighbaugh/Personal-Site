@@ -6,39 +6,35 @@
 **************************************************************************************/
 
 #home {
- margin: 0;
-  padding: 0;
-display: flex;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
   flex-direction: row;
-
-  div {
-    background-image: url("https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/dogpatchcircuit.png");
+  .home-card {
+    background-image: url('https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/dogpatchcircuit.png');
     background-size: cover;
-    min-height: 80vh;
-    position: relative;
+    position: center;
     background-attachment: fixed;
-flex-grow: initial;
+    flex-grow: initial;
   }
   hr {
-    border-bottom: 1rem solid $gray1;
+    border-bottom: 1rem solid $light;
     width: 30%;
-    @include animate(pulse, 2s, 20, 1 );
-    margin: 4.5rem;
+    @include animate(pulse, 2s, 20, 1);
+    margin: 4rem;
     margin-left: 35%;
-
   }
-.hr-blue{
-  border: $bdr-cl;
-}
+  .hr-blue {
+    border: $bdr-cl;
+  }
   .card-title {
-    @include animate(bounceInDown, 2s, 20, 1 );
+    @include animate(bounceInDown, 2s, 20, 1);
     background: $white;
     font-size: $fz-h1;
-    width: 85%;
     margin-bottom: 0;
     position: relative;
     text-align: center;
-border-radius: 10px;
+    border-radius: 10px;
     color: $primary;
     font-family: $ff-title;
     border: $bdr-button;
@@ -49,25 +45,25 @@ border-radius: 10px;
       margin-left: 10%;
     }
     @include for-size(tablet-portrait) {
-      font-size:4rem;
-      margin:0;
+      font-size: 4rem;
+      margin: 0;
     }
     @include for-size(phone-only) {
-      font-size:2.7rem;
+      font-size: 2.7rem;
       width: 100%;
-      margin:0;
+      margin: 0;
     }
   }
-  .card-subtitle{
-    @include animate(slideInUp, 1s, 20, 1 );
+  .card-subtitle {
+    @include animate(slideInUp, 1s, 20, 1);
     background: $white;
-    font-size: $fz-h3;
+    font-size: $fz-h2;
     float: right;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     position: relative;
     width: auto;
     color: $primary;
-    border:$bdr-button;
+    border: $bdr-button;
     font-family: $ff-sub;
     @include for-size(tablet-landscape) {
       font-size: 55%;
@@ -75,16 +71,14 @@ border-radius: 10px;
       margin-left: 10%;
     }
     @include for-size(tablet-portrait) {
-      font-size:50%;
+      font-size: 50%;
     }
     @include for-size(phone-only) {
-      display:none;
+      display: none;
     }
-
   }
-
 }
-.space{
+.space {
   width: 20%;
   float: left;
   background: transparent !important;
@@ -94,7 +88,7 @@ border-radius: 10px;
   }
 
   @include for-size(desktop) {
-  width: 10%;
+    width: 10%;
   }
 
   @include for-size(tablet-landscape) {
@@ -102,6 +96,6 @@ border-radius: 10px;
   }
 
   @include for-size(phone-only) {
-display: none;
+    display: none;
   }
 }

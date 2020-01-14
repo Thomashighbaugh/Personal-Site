@@ -13,70 +13,70 @@
   width: 95%;
   margin-left: 2.5%;
   margin-right: 2.5%;
-  border-left: 0.5rem solid $blue;
-  border-right: 0.5rem solid $gray2;
-  border-bottom: 0.5rem solid $gray1;
-  border-top: 0.25rem solid $blue1;
+  border-left: 0.5rem solid $primary;
+  border-right: 0.5rem solid $gray;
+  border-bottom: 0.5rem solid $light;
+  border-top: 0.25rem solid $primary;
   h1 {
-    font-family: $style-font;
+    font-family: $ff-sub;
     font-size: 5rem;
-    color: $gray1;
+    color: $light;
     text-align: right;
   }
   .blog-hr {
     color: $white;
-    border-bottom: 0.5rem $blue solid;
+    border-bottom: 0.5rem $primary solid;
   }
   h2 {
     font-size: 4rem;
     margin-bottom: 3rem;
-    font-family: $font-alt;
+    font-family: $ff-body;
     margin-top: 3.5rem;
-    border-bottom: 0.25rem solid $gray3;
-    color: $gray1;
+    border-bottom: 0.25rem solid $dark;
+    color: $light;
   }
   h3 {
-    font-family: $font-alt;
-    color: $gray1;
+    font-family: $ff-body;
+    color: $light;
     font-size: 2.5rem;
     text-align: right;
     margin-bottom: 2rem;
   }
   h4 {
-    font-family: $font-alt;
-    color: $gray1;
+    font-family: $ff-body;
+    color: $light;
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
   a {
-    color: $blue !important;
+    color: $primary !important;
     text-decoration: none;
   }
   a:hover {
     background: $white;
-    color: $gray1 !important;
+    color: $light !important;
     border: none;
   }
   #date {
     font-size: 1.4rem;
-    color: $gray1;
+    color: $light;
     width: 15%;
     text-align: center;
   }
   hr {
     color: $white;
     background: $white;
-    border-bottom: solid $gray1 0.5rem;
+    border-bottom: solid $light 0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
 
   ul {
     li {
-      font-family: $style-font;
+      font-family: $ff-sub;
       font-size: 2rem;
       margin-left: 1rem;
-      color: $gray1;
+      color: $light;
       width: 40%;
     }
   }
@@ -87,7 +87,7 @@
     // margin-left: 35%;
     .nav-btn {
       display: inline-block;
-      background: $gray1 !important;
+      background: $light !important;
       text-decoration: none;
       font-size: 2.5rem;
       width: 40% !important;
@@ -99,12 +99,12 @@
     }
     .nav-btn:hover {
       text-decoration: none;
-      background: $blue !important;
+      background: $primary !important;
       outline: none;
       border: none;
       a {
-        color: $gray1;
-        background: $blue;
+        color: $light;
+        background: $primary;
       }
     }
   }
@@ -112,7 +112,7 @@
     width: 75%;
     margin-left: 12%;
     margin-right: 12%;
-    outline: 0.5rem solid $gray1;
+    outline: 0.5rem solid $light;
   }
   p {
     width: 85%;
