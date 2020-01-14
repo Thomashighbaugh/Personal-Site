@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-remark-images`,
       options: {
-        maxWidth: 1800,
+        maxWidth: 2400,
       },
     },
     {
@@ -60,7 +60,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 2400,
             },
           },
           {

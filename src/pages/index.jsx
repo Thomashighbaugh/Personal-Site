@@ -9,20 +9,17 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 const IndexPage = () => (
   <Layout>
-    <div id="home">
       <SEO
         title="tlh developer portfolio"
         description="The front page of the developer portfolio of Thomas Leon Highbaugh. Featuring artwork by TLH himself."
       />
-      <div className="space" />
-      <div className="card home-card">
+          <div id="home" className="card home-card">
           <hr className="hr-basic" />
           <hr className="hr-basic" />
           <h1 className="card-title">[developer portfolio]</h1>
           <hr className="hr-blue" />
           <h2 className="card-subtitle">thomas leon highbaugh</h2>
       </div>
-    </div>
   </Layout>
 );
 

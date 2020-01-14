@@ -26,10 +26,9 @@ const Layout = ({ children }) => {
         <meta charSet="utf-8" />
       </Helmet>
       <Header />
-      <div>
         <main>{children}</main>
-        <Footer />
-      </div>
+      <Footer />
+
     </div>
   );
 };
