@@ -7,14 +7,24 @@
  *******************************************************************/
 
 .modal {
-  font-size: 12px;
+display: block;
+  background: $white;
+}
+.content{
+  display: inline-block;
+  margin-top: 1rem;
+
 }
 .modal > .header {
-  width: 100%;
-  border-bottom: 1px solid gray;
-  font-size: 18px;
+  min-width: 100%;
+  max-height: 3rem;
+border-bottom: $light 0.5rem solid;
+margin-bottom: 0.5rem;
+  font-size: $fz-h2;
   text-align: center;
-  padding: 5px;
+font-family: $ff-sub;
+  color: $primary;
+  padding: 1rem;
 }
 .modal > .content {
   width: 100%;
@@ -34,8 +44,37 @@
   line-height: 20px;
   right: -10px;
   top: -10px;
-  font-size: 24px;
-  background: #ffffff;
+  font-size: 2rem;
+  background: $light;
+  color: $primary;
   border-radius: 18px;
-  border: 1px solid #cfcece;
+  font-weight: 900;
+  border: 1px solid $white;
+}
+
+.modal-list{
+  width: 25%;
+  float: left;
+  position: relative;
+  .modal-list-heading{
+    color: $primary;
+    font-family: $ff-title;
+    font-size: $fz-h4;
+    border-bottom: $light solid 0.15rem;
+    margin-bottom: 0;
+  }
+  .modal-list-item{
+    color: $light;
+    font-family: $ff-body;
+    font-weight: 900;
+    font-size: 0.75rem;
+  }
+}
+
+.actions{
+  background: $white;
+  border-radius: 10px;
+  color: $light;
+  font-family: $ff-body;
+  font-weight: 900;
 }
