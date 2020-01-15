@@ -1,156 +1,73 @@
 import React, { useState } from 'react';
-import FrontEndModal from './FrontEndModal';
-import DevOpsModal from './DevOpsModal';
-import SysAdModal from './SysAdModal';
-import Card from 'react-bootstrap/Card';
-import ServerSideModal from './ServerSideModal';
+import Popup from "reactjs-popup";
+
 function ModalCard() {
-  const [XShow, setXShow] = useState(false);
-  const [lgShow, setLgShow] = useState(false);
-  const [xlShow, setXlShow] = useState(false);
-  const [xxlShow, setXXlShow] = useState(false);
+
   return (
-    <Card className="modalCard">
-      <Card.Header>
-        <Card.Title>[skills]</Card.Title>
-        <Card.Subtitle>
-          These are some of the technologies I have experience with!
-        </Card.Subtitle>
-      </Card.Header>
-      <hr />
-      <Card.Body>
+    <div className="card">
+
+        <div className="card-header">
+          <h3 className="card-title">[skills]</h3>
+          <h4 className="card-subtitle">Some technologies I have experience with</h4>
+          <hr />
+        </div>
+
+
+      <div className="card-body">
         {/*buttons*/}
-        <p>
+        <p className="card-text">
           Click the buttons to see a modal with a list of the technologies in
           that category.
         </p>
-        <main>
-          <button className="modalNav" onClick={() => setXShow(true)}>
-            [devOps]
-          </button>
-          <br />
-          <br />
-          <button className="modalNav" onClick={() => setLgShow(true)}>
-            [frontEnd]
-          </button>
-        </main>
-        <aside>
-          <button className="modalNav" onClick={() => setXlShow(true)}>
-            [sysAd]
-          </button>
-          <br />
-          <br />
-          <button className="modalNav" onClick={() => setXXlShow(true)}>
-            [backEnd]
-          </button>
-        </aside>
+
+
+        <Popup trigger={<button className="button"> Open Modal </button>} modal>
+          {close => (
+            <div className="modal">
+              <a className="close" onClick={close}>
+                &times;
+              </a>
+              <div className="header"> Modal Title </div>
+              <div className="content">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
+                Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
+                delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
+                commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
+                explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
+              </div>
+              <div className="actions">
+                <Popup
+                  trigger={<button className="button"> Trigger </button>}
+                  position="top center"
+                  closeOnDocumentClick
+                >
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              magni omnis delectus nemo, maxime molestiae dolorem numquam
+              mollitia, voluptate ea, accusamus excepturi deleniti ratione
+              sapiente! Laudantium, aperiam doloribus. Odit, aut.
+            </span>
+                </Popup>
+                <button
+                  className="button"
+                  onClick={() => {
+                    console.log("modal closed ");
+                    close();
+                  }}
+                >
+                  close modal
+                </button>
+              </div>
+            </div>
+          )}
+        </Popup>
         {/*end buttons*/}
         {/*Begin Modal Calls*/}
-        <DevOpsModal
-          size="xl"
-          show={XShow}
-          onHide={() => setXShow(false)}
-          aria-labelledby="example-modal-sizes-title-X"
-        />
-        <FrontEndModal
-          size="xl"
-          show={lgShow}
-          onHide={() => setLgShow(false)}
-          aria-labelledby="example-modal-sizes-title-lg"
-        />
-        <SysAdModal
-          size="xl"
-          show={xlShow}
-          onHide={() => setXlShow(false)}
-          aria-labelledby="example-modal-sizes-title-xl"
-        />
-        <ServerSideModal
-          size="xl"
-          show={xxlShow}
-          onHide={() => setXXlShow(false)}
-          aria-labelledby="example-modal-sizes-title-xl"
-        />
-      </Card.Body>
-    </Card>
+      </div>
+    </div>
   );
 }
 export default ModalCard;
-//   <Card>
-//   <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-//   <Tab eventKey="landing" title="Skills">
-//   <h3>[ skills ]</h3>
-// <p>Click the tabs to check out some of the technology skills I bring to projects I work on!</p>
-// </Tab>
-// <Tab eventKey="web-dev" title="[web dev]">
-
-// </Tab>
-// <Tab eventKey="dev-ops" title="[dev ops]">
-//   <ul>
-//   <li>Linux SysAd</li>
-// <li>Shell Scripting</li>
-// <li>Systems Administration</li>
-// <li>'Ricing'</li>
-// <li>Virtualization</li>
-// <li>KVM/QEMU</li>
-// <li>OpenVZ</li>
-// <li>Xen</li>
-// <li>SSH</li>
-// <li>LAMP</li>
-// <li>Containerization</li>
-// <li>Docker</li>
-// <li>Ansible</li>
-// </ul>
-// </Tab>
-// </Tabs>
-// // </Card>
-
-//
-// <ButtonToolbar>
-//   <Button onClick={() => setSmShow(true)}>Web Development</Button>
-//   <Button onClick={() => setLgShow(true)}>Systems Administration</Button>
-//   <Button onClick={() => setLgShow(true)}>DevOps</Button>
-//   <Modal
-//     size="xl"
-//     show={smShow}
-//     style={{ opacity: 1 }}
-//     onHide={() => setSmShow(false)}
-//     aria-labelledby="example-modal-sizes-title-sm"
-//   >
-//     <Modal.Header closeButton>
-//       <Modal.Title id="example-modal-sizes-title-sm">
-//         Web Development
-//       </Modal.Title>
-//     </Modal.Header>
-//     <Modal.Body>
-//
-//     </Modal.Body>
-//   </Modal>
-//
-//   <Modal
-//     style={{ opacity: 1 }}
-//     size="xl"
-//     show={lgShow}
-//     onHide={() => setLgShow(false)}
-//     aria-labelledby="example-modal-sizes-title-lg"
-//   >
-//     <Modal.Header closeButton>
-//       <Modal.Title id="example-modal-sizes-title-lg">
-//         Systems Administration{' '}
-//       </Modal.Title>
-//     </Modal.Header>
-//     <Modal.Body>...</Modal.Body>
-//   </Modal>
-//   <Modal
-//     size="xl"
-//     show={lgShow}
-//     onHide={() => setLgShow(false)}
-//     aria-labelledby="example-modal-sizes-title-lg"
-//   >
-//     <Modal.Header closeButton>
-//       <Modal.Title id="example-modal-sizes-title-lg">
-//         DevOps
-//       </Modal.Title>
-//     </Modal.Header>
-//     <Modal.Body>...</Modal.Body>
-//   </Modal>
-// </ButtonToolbar>

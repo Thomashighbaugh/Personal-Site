@@ -19,8 +19,9 @@
   border-right: $bdr-cr;
   border-left: $bdr-cl;
   border-bottom: $bdr-cb;
-  padding: $p-s;
+  padding: 1rem;
   background: $header-background;
+  border-radius: 10px;
   @include for-size(big-desktop) {
   }
 
@@ -34,20 +35,39 @@
   }
   @include for-size(phone-only) {
   }
+  &:hover {
+    background: $background;
+    background-size: cover;
+    box-shadow: 0 0 1rem -0.25rem var(--background);
+  }
+
   .card-header {
     background: $white;
+    border-radius: 10px;
+    padding: 1rem;
     margin: 0;
     margin-bottom: 2rem;
     padding: 0;
     outline: $primary 0.35rem solid;
+    &:hover {
+      background: $light;
+      color: $primary;
+      box-shadow: 0 0 1rem -0.25rem var(--background);
+    }
     .card-title {
       font-family: $ff-title;
       color: $primary;
       font-size: $fz-h2;
-      width: $w-ct;
+      width: auto;
+      background: $white;
       text-align: left;
       margin: 0;
       padding: 0;
+      &:hover {
+        background: $light;
+        color: $primary;
+        box-shadow: 0 0 1rem -0.25rem var(--background);
+      }
     }
     .card-subtitle {
       font-family: $ff-sub;
@@ -56,35 +76,55 @@
       font-size: $fz-h5;
       margin-top: 0;
       margin-bottom: 1rem;
+      &:hover {
+        background: $light;
+        color: $primary;
+        box-shadow: 0 0 1rem -0.25rem var(--background);
+      }
     }
   }
   hr {
     color: $primary;
     border-bottom: 0.5rem $light solid;
+    outline: none;
   }
   .card-body {
     margin: 0;
     padding: 0;
-    margin-bottom:30%;
+    margin-bottom: 30%;
     .card-text {
+      border-radius: 10px;
       font-family: $ff-body;
       color: $text;
       text-align: center;
+      background: $white;
+      &:hover {
+        background: $light;
+        color: $primary;
+        box-shadow: 0 0 1rem -0.25rem var(--background);
+      }
     }
     .techs {
+      border-radius: 10px;
       color: $primary;
       font-family: $ff-mono;
       background: $white;
-      width:auto;
+      width: auto;
       font-size: $fz-h3;
       text-align: center;
       font-family: $ff-title;
+      &:hover {
+        background: $light;
+        color: $primary;
+        box-shadow: 0 0 1rem -0.25rem var(--background);
+      }
     }
   }
 }
 .image-card {
   background: $header-background !important;
-  height: 32rem;
+  height: 30rem;
+  overflow: hidden;
   @include for-size(tablet-landscape) {
     display: flex;
   }
@@ -94,29 +134,54 @@
     display: none;
   }
   img {
-    height: 32rem;
+    height: 25rem;
+  }
+  &:hover {
+    background: $light;
+    color: $primary;
+    box-shadow: 0 0 1rem -0.25rem var(--background);
   }
 }
-.socialCard {
-}
+
 
 .more-card {
+  padding: 1rem;
+  .card-header {
+    background: $white;
+  }
 }
 
 .about-card {
+  padding: 1rem;
+  .card-header {
+    background: $white;
+  }
+  .shoutout {
+    font-size: 1.5rem;
+    background: $white;
+    color: $primary;
+    font-weight: 900;
+    &:hover {
+      background: $light;
+      color: $primary;
+      box-shadow: 0 0 1rem -0.25rem var(--background);
+    }
+  }
 }
 
 .modal-card {
-  clear: both;
-  display: block;
-  .modal-button-group {
-    display: flex;
-    margin: 3%;
+ .card-header{
+   margin-top: 0.5rem;
+padding-top:0.5rem;
+   hr{
+     padding-bottom: 0;
+   }
+ }
+    button {
+      @extend %btn-1;
+      font-family: $ff-title;
+      font-size: 1.25rem;
+      height: 5rem;
+    }
   }
-  button {
-    @extend %btn-1;
-    font-family: $ff-title;
-    font-size: 1.25rem;
-    height: 5rem;
-  }
-}
+

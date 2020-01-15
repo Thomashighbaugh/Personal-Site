@@ -11,7 +11,6 @@ import AboutCard from '../components/CustomCards/AboutCard';
 import SocialCard from '../components/CustomCards/SocialCard';
 import ImageCard from '../components/CustomCards/ImageCard';
 import ModalCard from '../components/CustomCards/ModalCard';
-import MoreCard from '../components/CustomCards/MoreCard';
 
 class About extends Component {
   constructor(props) {
@@ -48,19 +47,17 @@ class About extends Component {
                 cardText3=" SCSS + ESLINT + NETLIFY "
               />
     </div>
-<br/>
           <div className="row">
 
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/020.jpg" />
-              <MoreCard
+              <AboutCard
                 cardTitle="[art]"
                 cardSubtitle="about the graphics used on this site"
                 cardText="All of the graphics, except for the backgrounds, were created by me, Thomas Leon Highbaugh. Like everything else about the site, they are OPEN SOURCE as long as you make sure to give me credit for them ."
-                cardText3="If you like them, check out my Instagram for more!"
+                cardText4="If you like them, check out my Instagram for more!"
               />
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/019.jpg" />
           </div>
-              <br />
             <div className="row">
 
               <ModalCard />

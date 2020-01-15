@@ -1,27 +1,25 @@
 #about {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(3fr, 3fr));
-  grid-gap: 1rem;
-  padding: 1rem;
+margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 .row {
   display: flex;
-
+  margin-left: 8%;
   .card {
-    height: 32rem;
-    min-width: 28%;
+    height: 28rem;
+width: 28%;
     margin: 1rem;
     box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .05);
 
     &:hover {
-      background-image: url("https://raw.githubusercontent.com/Thomashighbaugh/resurgens-iv/master/dogpatchcircuit.png");
+      background: $background;
       background-size: cover;
       box-shadow: 0 0 1rem -.25rem var(--background);
     }
 
-    &:hover .multi-button, .multi-button:focus-within { //Hover or a button inside is focused
-      width: 10rem;
-      height: 10rem;
-    }
+
   }
 }
 }
