@@ -8,7 +8,12 @@
 
 .modal {
 display: block;
+  background: $header-background;
+}
+.header{
   background: $white;
+  padding: 1rem !important;
+  margin-bottom: 3rem !important;
 }
 .content{
   display: inline-block;
@@ -17,7 +22,6 @@ display: block;
 }
 .modal > .header {
   min-width: 100%;
-  max-height: 3rem;
 border-bottom: $light 0.5rem solid;
 margin-bottom: 0.5rem;
   font-size: $fz-h2;
@@ -55,7 +59,10 @@ font-family: $ff-sub;
 .modal-list{
   width: 25%;
   float: left;
+  list-style: inside;
   position: relative;
+  background: $white;
+  border: 0.2rem solid $light;
   .modal-list-heading{
     color: $primary;
     font-family: $ff-title;
@@ -77,4 +84,8 @@ font-family: $ff-sub;
   color: $light;
   font-family: $ff-body;
   font-weight: 900;
+  button{
+    @extend %btn-1;
+  }
+
 }

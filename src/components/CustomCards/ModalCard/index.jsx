@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Popup from "reactjs-popup";
-import WebDevelopmentModal from './WebDevelopmentModal'
+import FrontEndModal from './FrontEndModal';
+import DevOpsModal from './DevOpsModal';
 function ModalCard() {
 
   return (
@@ -19,11 +19,11 @@ function ModalCard() {
           Click the buttons to see a modal with a list of the technologies in
           that category.
         </p>
-<WebDevelopmentModal />
+<FrontEndModal />
+<DevOpsModal />
 
 
         {/*end buttons*/}
-        {/*Begin Modal Calls*/}
       </div>
     </div>
   );
