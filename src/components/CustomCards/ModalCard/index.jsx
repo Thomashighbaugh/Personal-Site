@@ -1,28 +1,26 @@
 import React, { useState } from 'react';
-import FrontEndModal from './FrontEndModal';
+import WebDevModal from './WebDevModal';
 import DevOpsModal from './DevOpsModal';
+import OperationsModal from './OperationsModal';
 function ModalCard() {
-
   return (
     <div className="card">
+      <div className="card-header">
+        <h3 className="card-title">[skills]</h3>
+        <h4 className="card-subtitle">
+          click the buttons for a modal displaying some of the technologies I
+          have experience with and skills I have cultivated.
+        </h4>
 
-        <div className="card-header">
-          <h3 className="card-title">[skills]</h3>
-          <h4 className="card-subtitle">Some technologies I have experience with</h4>
-          <hr />
-        </div>
-
+        <hr />
+      </div>
 
       <div className="card-body">
         {/*buttons*/}
-        <p className="card-text">
-          Click the buttons to see a modal with a list of the technologies in
-          that category.
-        </p>
-<FrontEndModal />
-<DevOpsModal />
 
-
+        <WebDevModal />
+        <DevOpsModal />
+        <OperationsModal />
         {/*end buttons*/}
       </div>
     </div>

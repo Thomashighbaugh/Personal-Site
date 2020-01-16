@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Popup from "reactjs-popup";
 
-function FrontEndModal() {
+function WebDevModal() {
 
   return (
-    <Popup trigger={<button className="modal-button"> front end </button>} modal>
+    <Popup trigger={<button className="modal-button"> webdev </button>} modal>
       {close => (
         <div className="modal">
           <a className="close" onClick={close}>
@@ -22,10 +22,12 @@ function FrontEndModal() {
             <li className="modal-list-item">GraphQL</li>
             <li className="modal-list-item">Typescript</li>
             <li className="modal-list-item">PHP</li>
+            <li className="modal-list-item">Node.js</li>
           </ul>
             <ul className="modal-list">
               <h3 className="modal-list-heading">Frameworks && Libraries</h3>
-              <li className="modal-list-item">React</li>
+              <li className="modal-list-item">React.js</li>
+              <li className="modal-list-item">Redux</li>
               <li className="modal-list-item">Bootstrap</li>
               <li className="modal-list-item">jQuery</li>
               <li className="modal-list-item">SASS</li>
@@ -82,4 +84,4 @@ function FrontEndModal() {
 
   );
 }
-export default FrontEndModal;
+export default WebDevModal;
