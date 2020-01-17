@@ -19,17 +19,17 @@ class Resume extends React.Component {
           title="resume"
           description="The resume of Thomas Leon Highbaugh in JSX format."
         />
-        <Card>
+        <div>
           <div id="resume">
-            <h1 className="card-title">Thomas Leon Highbaugh<hr />
-            Web Developer &amp;&amp; Freelance IT Professional
-            </h1>
+            <div className="card-title"><h1>Thomas Leon Highbaugh</h1><hr />
+              <h2>Web Developer &amp;&amp; DevOps Professional</h2>
+            </div>
             <div id="content" className="card-body offset-2">
-              <Row className="row">
-                <Col className="col" id="basics">
+              <div className="row">
+                <div className="col" id="basics">
                   <section id="basics">
-                    <div className="col-4">
-                      <h2 className="card-subtitle">Contact</h2>
+                    <div>
+                      <h2 className="card-subtitle">Contact Information</h2>
                     </div>
                     <div className="contact">
                       <strong>Website:</strong>
@@ -45,7 +45,7 @@ class Resume extends React.Component {
                       <strong>Phone: </strong>
                       <Obfuscate tel="510-907-0654" />
                     </div>
-                    <div className="profiles content-block">
+                    <div className="profiles">
                       <h2 className="card-subtitle">Internet Profiles</h2>
                       <a href="http://linkedin.com/in/thomas-leon-highbaugh">
                         LinkedIn
@@ -61,19 +61,21 @@ class Resume extends React.Component {
                       <a href="https://gitlab.com/thighbaugh">Gallery </a>
                     </div>
                   </section>
-                </Col>
-                <Col className="col" id="summary">
+                </div>
+                <div className="col" id="summary">
                   <h3 className="card-subtitle">Summary</h3>
                   <p>
                     A self-taught software developer with an eye for design and
                     a passion for Linux, looking for a team to cultivate skills
                     while contributing to.
                   </p>
-                </Col>
-              </Row>
-              <Row className="row" id="work">
-                <h2 className="card-title-description">Work</h2>
-                <Col className="col">
+                </div>
+              </div>
+              <div className="row" id="work">
+                < div className="card-title-section">
+                <h2>Work Experience</h2>
+                </div>
+                <div className="col">
                   <h3 className="work-name">Freelance</h3>
 
                   <div className="work-position">Web Developer</div>
@@ -104,8 +106,8 @@ class Resume extends React.Component {
                       https://thomasleonhighbaugh.me
                     </a>
                   </div>
-                </Col>
-                <Col className="col">
+                </div>
+                <div className="col">
                   <h3 className="work-name">Freelance</h3>
 
                   <div className="work-position">
@@ -147,8 +149,8 @@ class Resume extends React.Component {
                       https://thomasleonhighbaugh.me
                     </a>
                   </div>
-                </Col>
-                <Col className="col">
+                </div>
+                <div className="col">
                   <h3 className="work-name">Pet Food Express: Blackhawk</h3>
 
                   <div className="work-position">Assistant Manager</div>
@@ -185,8 +187,8 @@ class Resume extends React.Component {
                       https://petfoodexpress.com
                     </a>
                   </div>
-                </Col>
-                <Col className="col">
+                </div>
+                <div className="col">
                   <h3 className="work-name">Volunteer</h3>
 
                   <div className="work-position">South Hayward Parish</div>
@@ -217,11 +219,13 @@ class Resume extends React.Component {
                       http://southhaywardparish.org/
                     </a>
                   </div>
-                </Col>
-              </Row>
-              <Row className="row" id="education">
-                <h2 className="card-title-description">Education</h2>
-                <Col className="col">
+                </div>
+              </div>
+              <div className="row" id="education">
+                <div className="card-title-section">
+                <h2>Education</h2>
+                </div>
+                <div className="col">
                   <div className="institution">Codify Academy</div>
 
                   <div className="study-date">
@@ -242,8 +246,8 @@ class Resume extends React.Component {
                   <div className="gpa">
                     <span>GPA 4.0</span>
                   </div>
-                </Col>
-                <Col className="col">
+                </div>
+                <div className="col">
                   <div className="institution">
                     Las Positas/Chabot Community College
                   </div>
@@ -264,8 +268,8 @@ class Resume extends React.Component {
                   <div className="gpa">
                     <span> GPA 4.0</span>
                   </div>
-                </Col>
-                <Col className="col">
+                </div>
+                <div className="col">
                   <div className="institution">
                     California State University East Bay (unrelated major)
                   </div>
@@ -285,11 +289,12 @@ class Resume extends React.Component {
                   <div className="gpa">
                     <span> GPA 3.7</span>
                   </div>
-                </Col>
-              </Row>
-              <Row className="row" id="skills">
-                <h2 className="card-title">Skills</h2>
-                <Col className="col">
+                </div>
+              </div>
+              <div className="row" id="skills">
+                <div className="card-title-section">
+                <h2>Skills</h2></div>
+                <div className="col">
                   <h3 className="category">Web Development</h3>
                   <ul className="highlights">
                     <li>HTML5 &amp; CSS3</li>
@@ -299,8 +304,8 @@ class Resume extends React.Component {
                     <li>SASS, SCSS &amp; Less</li>
                     <li>BASH, ZSH &amp; Shell Scripting</li>
                   </ul>
-                </Col>
-                <Col className="col">
+                </div>
+                <div className="col">
                   <h3 className="category">Linux Systems Administration</h3>
                   <ul className="highlights">
                     <li>BASH</li>
@@ -311,8 +316,8 @@ class Resume extends React.Component {
                     <li>Virtualization</li>
                     <li>Containers</li>
                   </ul>
-                </Col>
-                <Col className="col">
+                </div>
+                <div className="col">
                   <h3 className="category">
                     Hardware Configuration &amp; Repair
                   </h3>
@@ -324,8 +329,8 @@ class Resume extends React.Component {
                     <li>Component Installation</li>
                     <li>Troubleshooting</li>
                   </ul>
-                </Col>
-                <Col className="col">
+                </div>
+                <div className="col">
                   <h3 className="category">Linux Development</h3>
                   <ul className="highlights">
                     <li>BASH Shell Scripting</li>
@@ -333,59 +338,59 @@ class Resume extends React.Component {
                     <li>Linux Configuration (aka dotfiles)</li>
                     <li>C++</li>
                   </ul>
-                </Col>
-              </Row>
-              <Row className="row" id="misc">
-                <Col className="col" id="languages">
+                </div>
+              </div>
+              <div className="row" id="misc">
+                <div className="col" id="languages">
                   <h2 className="card-subtitle">Languages</h2>
-                  <Row className="languages">
-                    <Col>
+                  <div className="languages">
+                    <div>
                       <div className="language">English</div>
                       <div className="level">
                         <em>Native speaker</em>
                       </div>
-                    </Col>
-                    <Col>
+                    </div>
+                    <div>
                       <div className="language">Spanish</div>
                       <div className="level">
                         <em>Conversational</em>
                       </div>
-                    </Col>
-                    <Col>
+                    </div>
+                    <div>
                       <div className="language">German</div>
                       <div className="level">
                         <em>Basic</em>
                       </div>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col className="col" id="references">
+                    </div>
+                  </div>
+                </div>
+                <div className="col" id="references">
                   <h2 className="card-subtitle">References</h2>
-                  <Row className="people">
-                    <Col>
+                  <div className="people">
+                    <div>
                       <div className="name">Kenneth Gary</div>
                       <div className="phone">
                         <Obfuscate className="reference" tel="1-510-875-9086" />{' '}
                       </div>
-                    </Col>
-                    <Col>
+                    </div>
+                    <div>
                       <div className="name">Tim Weiland</div>
                       <div className="phone">
                         <Obfuscate className="reference" tel="1-650-773-4744" />{' '}
                       </div>
-                    </Col>
-                    <Col>
+                    </div>
+                    <div>
                       <div className="name">Austin Blaylock</div>
                       <div className="phone">
                         <Obfuscate className="reference" tel="1-925-337-2712" />{' '}
                       </div>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </Card>
+        </div>
       </Layout>
     );
   }
