@@ -5,41 +5,6 @@
 *  Creates templates for consistently used components
 **************************************************************************************/
 
-//Font Templates
-
-%resume-title {
-  color: $white !important;
-  background: $primary;
-  padding:1%;
-  font-family: $ff-sub !important;
-  float:left;
-}
-%resume-subtitle {
-  color: $white !important;
-  background: $primary;
-  font-family: $ff-sub !important;
-  font-size:2.5rem;
-  border-bottom: 1rem $gray solid;
-}
-%resume-basics-btn {
-  background: $gray;
-  color: $white;
-  border: 0.25rem solid $gray;
-  font-size: 1.75rem;
-  font-family: $ff-sub;
-  border-radius: 10px;
-  font-weight: 600;
-}
-%resume-basics-btn-hover {
-  text-decoration: none;
-  background: $primary;
-  color:$white;
-  border: 0.25rem solid $primary;
-  font-size: 1.75rem;
-  font-family: $ff-sub;
-  border-radius: 10px;
-  font-weight: 600;
-}
 
 /*
 * Buttons

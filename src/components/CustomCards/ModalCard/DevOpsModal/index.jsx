@@ -9,7 +9,7 @@ function DevOpsModal() {
           <a className="close" onClick={close}>
             &times;
           </a>
-          <h3 className="header">Web Development</h3>
+          <h3 className="header">DevOps</h3>
 
           <div className="content">
             <ul className="modal-list">

@@ -137,7 +137,7 @@
     height: 25rem;
   }
   &:hover {
-    background: $light;
+    background: $background !important;
     color: $primary;
     box-shadow: 0 0 1rem -0.25rem var(--background);
   }
@@ -170,15 +170,20 @@
 }
 
 .modal-card {
+  align-content: center;
+  align-items: center;
+
  .card-header{
    margin-top: 0.5rem;
 padding-top:0.5rem;
+   padding-left: 1rem;
    hr{
      padding-bottom: 0;
    }
  }
     button {
-      @extend %btn-1;
+      @extend %btn-2;
+      align-self: center;
       font-family: $ff-title;
       font-size: 1.25rem;
       height: 5rem;

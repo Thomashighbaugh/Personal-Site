@@ -16,15 +16,14 @@ class Resume extends React.Component {
     return (
       <Layout>
         <SEO
-          title="[resume]"
-          description="created from the output of JSONresume into HTML adapted into JSX, this is the live resume of TLH"
+          title="resume"
+          description="The resume of Thomas Leon Highbaugh in JSX format."
         />
         <Card>
           <div id="resume">
-            <h1 className="card-title">Thomas Leon Highbaugh</h1>
-            <h2 className="card-title-description">
-              Web Developer &amp;&amp; Freelance IT Professional
-            </h2>
+            <h1 className="card-title">Thomas Leon Highbaugh<hr />
+            Web Developer &amp;&amp; Freelance IT Professional
+            </h1>
             <div id="content" className="card-body offset-2">
               <Row className="row">
                 <Col className="col" id="basics">

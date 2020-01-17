@@ -5,32 +5,36 @@
 *
 **************************************************************************************/
 #resume {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 99%;
   background: $white;
   display: block;
   //common classes styles
   .card-title {
-    width: 95%;
-    @extend %resume-title;
+    width: 100%;
+    color: $white !important;
+    background: $primary;
+    width: 100%;
+    padding:1%;
+    font-family: $ff-sub !important;
+    float:left;
     font-size: 5rem;
-    margin-right: 5%;
     margin-bottom: 0;
     text-align: center;
     @include animate(zoomIn, 1s, 100);
   }
   .card-title-description {
-    width: 95%;
+    width: 100%;
     margin-top: 0;
-    margin-left: 2.05%;
     font-size: 3.5rem;
-    @extend %resume-title;
     border-bottom: 1rem $light solid;
     @include animate(zoomIn, 1s, 100);
   }
   .card-subtitle {
-    @extend %resume-subtitle;
+    color: $white !important;
+    background: $primary;
+    font-family: $ff-sub !important;
+    font-size:2.5rem;
+    border-bottom: 1rem $light solid;
   }
   .row {
     margin-bottom: 3rem;
@@ -64,20 +68,44 @@
       }
       a {
         float: right;
-        @extend %resume-basics-btn;
+        background: $light;
+        color: $white;
+        border: 0.25rem solid $light;
+        font-size: 1.75rem;
+        font-family: $ff-sub;
+        border-radius: 10px;
+        font-weight: 600;
       }
       a:hover {
-        @extend %resume-basics-btn-hover;
+        text-decoration: none;
+        background: $primary;
+        color:$white;
+        border: 0.25rem solid $primary;
+        font-size: 1.75rem;
+        font-family: $ff-sub;
+        border-radius: 10px;
+        font-weight: 600;
       }
     }
     .profiles {
       a {
         margin-left: 0.75rem;
-        @extend %resume-basics-btn;
-      }
+        background: $light;
+        color: $white;
+        border: 0.25rem solid $light;
+        font-size: 1.75rem;
+        font-family: $ff-sub;
+        border-radius: 10px;
+        font-weight: 600;      }
       a:hover {
-        @extend %resume-basics-btn-hover;
-      }
+        text-decoration: none;
+        background: $primary;
+        color:$white;
+        border: 0.25rem solid $primary;
+        font-size: 1.75rem;
+        font-family: $ff-sub;
+        border-radius: 10px;
+        font-weight: 600;      }
     }
   }
   #summary {
@@ -123,14 +151,26 @@
 
     .work-website {
       a {
-        @extend %resume-basics-btn-hover;
-        margin-left: 5%;
+        margin-left: 0.75rem;
+        background: $light;
+        color: $white;
+        border: 0.25rem solid $light;
+        font-size: 1.75rem;
+        font-family: $ff-sub;
+        border-radius: 10px;
+        font-weight: 600;      }        margin-left: 5%;
       }
       a:hover {
-        @extend %resume-basics-btn;
-      }
+        text-decoration: none;
+        background: $primary;
+        color:$white;
+        border: 0.25rem solid $primary;
+        font-size: 1.75rem;
+        font-family: $ff-sub;
+        border-radius: 10px;
+        font-weight: 600;      }      }
     }
-  }
+
   #education {
     clear: both;
     .col {
@@ -236,4 +276,4 @@
       }
     }
   }
-}
+

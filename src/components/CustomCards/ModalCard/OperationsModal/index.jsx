@@ -3,7 +3,10 @@ import Popup from 'reactjs-popup';
 
 function OperationsModal() {
   return (
-    <Popup trigger={<button className="modal-button"> ops </button>} modal>
+    <Popup
+      trigger={<button className="modal-button"> Operations </button>}
+      modal
+    >
       {close => (
         <div className="modal">
           <a className="close" onClick={close}>
@@ -64,9 +67,7 @@ function OperationsModal() {
               </span>
             </Popup>
             <Popup
-              trigger={
-                <button className="button"> Provisioner </button>
-              }
+              trigger={<button className="button"> Provisioner </button>}
               position="top center"
               closeOnDocumentClick
             >
