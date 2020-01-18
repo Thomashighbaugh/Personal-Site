@@ -31,31 +31,30 @@
       font-size: 3.5rem;
       font-family: $ff-sub;
       @include animate(zoomIn, 1s, 100);
-
     }
   }
-  hr{
+  hr {
     color: $light;
     border-bottom: $light solid 2rem;
     margin-top: 5%;
     margin-bottom: 5%;
   }
-.card-title-section{
-  width: 100%;
-  color: $white;
-  margin-top: 5%;
-  margin-bottom: 5%;
-justify-content: center;
-  border: 0.5rem $primary double;
-  background: $light;
-  padding: 2rem;
-  padding-bottom: 0;
-  h2{
-    font-size: 3rem;
-    font-family: $ff-title;
-    text-align: center;
+  .card-title-section {
+    width: 100%;
+    color: $white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    border: 0.5rem $primary double;
+    background: $light;
+    padding: 2rem;
+    padding-bottom: 0;
+    h2 {
+      font-size: 3rem;
+      font-family: $ff-title;
+      text-align: center;
+    }
   }
-}
   .card-subtitle {
     color: $white !important;
     background: $primary;
@@ -130,7 +129,6 @@ justify-content: center;
         font-family: $ff-title;
         border-radius: 10px;
         font-weight: 600;
-
       }
       a:hover {
         text-decoration: none;
@@ -154,10 +152,10 @@ justify-content: center;
   }
   #work {
     clear: both;
-    ul{
+    ul {
       font-family: $ff-body;
     }
-    p{
+    p {
       font-family: $ff-sub;
     }
     .col {
@@ -192,7 +190,6 @@ justify-content: center;
         font-size: 1.75rem;
         text-align: left;
       }
-
     }
 
     .work-website {
@@ -230,7 +227,7 @@ justify-content: center;
     margin-top: 3rem;
 
     width: 40%;
-    ul{
+    ul {
       font-weight: 600;
       font-family: $ff-body;
     }
@@ -268,10 +265,9 @@ justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
     width: 40%;
-    ul{
+    ul {
       font-weight: 600;
-      font-family: $ff-body
-
+      font-family: $ff-body;
     }
   }
   .col:nth-child(even) {
@@ -287,7 +283,6 @@ justify-content: center;
     margin-bottom: 1rem;
     font-size: 3rem;
     border-bottom: $primary solid 0.5rem;
-
   }
 }
 #misc {
@@ -342,4 +337,3 @@ justify-content: center;
     }
   }
 }
-

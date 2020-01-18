@@ -24,10 +24,13 @@ class BlogIndex extends React.Component {
           description="Projects by TLH with links to additional descriptions written in Markdown then rendered into pages by Gatsby"
         />
         <div id="projects">
-          <div className="projects-page">
-            <aside>
-            <h1>Projects</h1>
-              <h4>[ description ]</h4>
+          <div className="card">
+            <aside className="projects-intro about-card">
+              <div className="card-header">
+            <h1 className="card-title">Projects</h1>
+              <hr/>
+              </div>
+<div className="card-body">
               <p>
                 These are some of the projects I have worked on recently.
                 Clicking the title will take you to a description of the project
@@ -35,36 +38,29 @@ class BlogIndex extends React.Component {
                 the source code as well as any hosted web presence that exists
                 for that particular project.
               </p>
-              <br/>
-              <p>
-                The projects listed range from those purely web development
-                related to those that focus on the administration of my
-                workstation using DevOps methodology.
-              </p>
-            </aside>
-          </div>
+</div>
+                     </aside>
           <main>
-            <section>
+            <ul>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug;
                 return (
-                  <div className="post" key={node.fields.slug}>
-                    <h3>
-                      <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <li className="post" key={node.fields.slug}>
+                      <Link className="link-heading" to={node.fields.slug}>
                         {title}
                       </Link>
-                    </h3>
+                    <hr/>
                     <small>{node.frontmatter.date}</small>
                     <p
                       dangerouslySetInnerHTML={{
                         __html: node.frontmatter.description || node.excerpt,
                       }}
                     />
-                  </div>
+                  </li>
                 );
-              })}
-            </section>
+              })}</ul>
           </main>
+          </div>
         </div>
       </Layout>
     );

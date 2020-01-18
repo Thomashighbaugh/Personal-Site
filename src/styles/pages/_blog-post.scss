@@ -8,8 +8,7 @@
 .blog-post {
   @include animate(fadeInDown, 1s, 20, 1);
   padding: 2rem;
-  background: $white !important;
-  margin-top: 2rem !important;
+  background: $white;
   width: 95%;
   margin-left: 2.5%;
   margin-right: 2.5%;
@@ -20,61 +19,55 @@
   h1 {
     font-family: $ff-sub;
     font-size: 5rem;
-    color: $light;
+    color: $primary;
     text-align: right;
   }
   .blog-hr {
-    color: $white;
-    border-bottom: 0.5rem $primary solid;
+    border-bottom: 0.5rem $light solid;
   }
   h2 {
-    font-size: 4rem;
-    margin-bottom: 3rem;
-    font-family: $ff-body;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: $ff-title;
     margin-top: 3.5rem;
-    border-bottom: 0.25rem solid $dark;
+    border-bottom: 0.25rem solid $primary;
     color: $light;
   }
   h3 {
-    font-family: $ff-body;
+    font-family: $ff-title;
     color: $light;
     font-size: 2.5rem;
     text-align: right;
     margin-bottom: 2rem;
   }
   h4 {
-    font-family: $ff-body;
+    font-family: $ff-title;
     color: $light;
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
   a {
-    color: $primary !important;
+    color: $white;
     text-decoration: none;
-  }
-  a:hover {
-    background: $white;
-    color: $light !important;
-    border: none;
+
+    &:hover {
+      background: $white;
+      color: $light !important;
+      border: none;
+    }
   }
   #date {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: $light;
-    width: 15%;
-    text-align: center;
+    text-align:left;
+    font-family:$ff-mono
   }
-  hr {
-    color: $white;
-    background: $white;
-    border-bottom: solid $light 0.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-  }
+
 
   ul {
     li {
       font-family: $ff-sub;
-      font-size: 2rem;
+      font-size: 1.25rem;
       margin-left: 1rem;
       color: $light;
       width: 40%;
@@ -84,30 +77,16 @@
     list-style: none;
     align-content: center;
     align-items: center;
-    // margin-left: 35%;
     .nav-btn {
       display: inline-block;
-      background: $light !important;
-      text-decoration: none;
-      font-size: 2.5rem;
       width: 40% !important;
       margin-left: 7%;
-      a {
-        text-decoration: none;
-        color: $white !important;
-      }
-    }
-    .nav-btn:hover {
+
+    &:hover {
       text-decoration: none;
-      background: $primary !important;
-      outline: none;
-      border: none;
-      a {
-        color: $light;
-        background: $primary;
+      background: $primary ;
       }
-    }
-  }
+  }}
   img {
     width: 75%;
     margin-left: 12%;
@@ -116,6 +95,8 @@
   }
   p {
     width: 85%;
+    font-family: $ff-sub;
     margin-left: 1.5rem;
+    font-size:1.25rem;
   }
 }

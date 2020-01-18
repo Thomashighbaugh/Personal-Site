@@ -1,6 +1,6 @@
 /*
-* This is the page which hosts a version of my resume in HTML mark up within the JSX of the component.
-*  It exists as a way of tying the site's information together in one place
+ * This is the page which hosts a version of my resume in HTML mark up within the JSX of the component.
+ *  It exists as a way of tying the site's information together in one place
  */
 // @TODO - convert new resume from XeLaTeX to HTML
 // @TODO - add in new resume
@@ -21,7 +21,9 @@ class Resume extends React.Component {
         />
         <div>
           <div id="resume">
-            <div className="card-title"><h1>Thomas Leon Highbaugh</h1><hr />
+            <div className="card-title">
+              <h1>Thomas Leon Highbaugh</h1>
+              <hr />
               <h2>Web Developer &amp;&amp; DevOps Professional</h2>
             </div>
             <div id="content" className="card-body offset-2">
@@ -72,8 +74,8 @@ class Resume extends React.Component {
                 </div>
               </div>
               <div className="row" id="work">
-                < div className="card-title-section">
-                <h2>Work Experience</h2>
+                <div className="card-title-section">
+                  <h2>Work Experience</h2>
                 </div>
                 <div className="col">
                   <h3 className="work-name">Freelance</h3>
@@ -223,7 +225,7 @@ class Resume extends React.Component {
               </div>
               <div className="row" id="education">
                 <div className="card-title-section">
-                <h2>Education</h2>
+                  <h2>Education</h2>
                 </div>
                 <div className="col">
                   <div className="institution">Codify Academy</div>
@@ -293,7 +295,8 @@ class Resume extends React.Component {
               </div>
               <div className="row" id="skills">
                 <div className="card-title-section">
-                <h2>Skills</h2></div>
+                  <h2>Skills</h2>
+                </div>
                 <div className="col">
                   <h3 className="category">Web Development</h3>
                   <ul className="highlights">
