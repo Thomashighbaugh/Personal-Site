@@ -20,7 +20,7 @@
   border-left: $bdr-cl;
   border-bottom: $bdr-cb;
   padding: 1rem;
-justify-self: center;
+  justify-self: center;
   background: $header-background;
   border-radius: 10px;
   @include for-size(big-desktop) {
@@ -37,24 +37,39 @@ justify-self: center;
   @include for-size(phone-only) {
   }
   &:hover {
-    background: $background;
-    background-size: cover;
-    box-shadow: 0 0 1rem -0.25rem var(--background);
+    hr {
+      border-bottom: $primary 0.5rem solid;
+    }
+    .card-header {
+      color: $primary;
+      background: $light;
+      .card-title {
+        color: $primary;
+        background: $light;
+      }
+      .card-subtitle {
+        color: $primary;
+        background: $light;
+      }
+    }
+    .card-body {
+      .card-text {
+        color: $primary;
+        background: $light;
+      }
+      .techs {
+        color: $primary;
+        background: $light;
+      }
+    }
   }
 
   .card-header {
     background: $white;
     border-radius: 10px;
-    padding: 1rem;
-    margin: 0;
-    margin-bottom: 2rem;
-    padding: 0;
-    outline: $primary 0.35rem solid;
-    &:hover {
-      background: $light;
-      color: $primary;
-      box-shadow: 0 0 1rem -0.25rem var(--background);
-    }
+    padding: 0.5rem;
+    margin: 0 0 0.5rem;
+    border: $primary 0.35rem solid;
     .card-title {
       font-family: $ff-title;
       color: $primary;
@@ -64,11 +79,6 @@ justify-self: center;
       text-align: left;
       margin: 0;
       padding: 0;
-      &:hover {
-        background: $light;
-        color: $primary;
-        box-shadow: 0 0 1rem -0.25rem var(--background);
-      }
     }
     .card-subtitle {
       font-family: $ff-sub;
@@ -77,11 +87,6 @@ justify-self: center;
       font-size: $fz-h5;
       margin-top: 0;
       margin-bottom: 1rem;
-      &:hover {
-        background: $light;
-        color: $primary;
-        box-shadow: 0 0 1rem -0.25rem var(--background);
-      }
     }
   }
   hr {
@@ -93,33 +98,22 @@ justify-self: center;
     margin: 0;
     padding: 0;
     clear: both;
-    margin-bottom: 30%;
     .card-text {
       border-radius: 10px;
       font-family: $ff-body;
       color: $text;
       text-align: center;
       background: $white;
-      &:hover {
-        background: $light;
-        color: $primary;
-        box-shadow: 0 0 1rem -0.25rem var(--background);
-      }
     }
     .techs {
       border-radius: 10px;
       color: $primary;
-      font-family: $ff-mono;
+      margin: 0.25rem;
       background: $white;
       width: auto;
       font-size: $fz-h3;
       text-align: center;
       font-family: $ff-title;
-      &:hover {
-        background: $light;
-        color: $primary;
-        box-shadow: 0 0 1rem -0.25rem var(--background);
-      }
     }
   }
 }
@@ -144,7 +138,6 @@ justify-self: center;
     box-shadow: 0 0 1rem -0.25rem var(--background);
   }
 }
-
 
 .more-card {
   padding: 1rem;
@@ -175,20 +168,19 @@ justify-self: center;
   align-content: center;
   align-items: center;
 
- .card-header{
-   margin-top: 0.5rem;
-padding-top:0.5rem;
-   padding-left: 1rem;
-   hr{
-     padding-bottom: 0;
-   }
- }
-    button {
-      @extend %btn-2;
-      align-self: center;
-      font-family: $ff-title;
-      font-size: 1.25rem;
-      height: 5rem;
+  .card-header {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    hr {
+      padding-bottom: 0;
     }
   }
-
+  button {
+    @extend %btn-2;
+    align-self: center;
+    font-family: $ff-title;
+    font-size: 1.25rem;
+    height: 5rem;
+  }
+}

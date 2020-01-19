@@ -11,7 +11,7 @@ margin: 0;
     height: 28rem;
 width: 28%;
     margin: 1rem;
-    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .05);
+    box-shadow: 0.25rem 0.25rem 2rem -1rem rgba(0, 0, 0, .05);
 
     &:hover {
       background: $background;

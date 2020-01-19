@@ -119,7 +119,9 @@ header {
   display: inline-block;
 
   &:hover {
-    border: $bdr-button-hover
+    border: $bdr-button-hover;
+    background: $gradient5;
+
   }
 
   @include for-size(big-desktop) {

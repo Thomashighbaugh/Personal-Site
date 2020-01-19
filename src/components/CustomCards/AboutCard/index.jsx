@@ -18,16 +18,13 @@ class AboutCard extends Component {
         </div>
         <hr />
         <div className="card-body">
-            <br />
             <p className="card-text">{cardText}</p>
             <h4 className="techs">{cardText2}</h4>
             <h4 className="techs">{cardText3}</h4>
             <h5 className="shoutout">{cardText4}</h5>
 
         </div>
-        <div className="card-footer">
-        <hr />
-        </div>
+
       </div>
     );
   }
