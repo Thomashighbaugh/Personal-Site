@@ -10,7 +10,7 @@
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: flex;
-
+  @include animate(fadeIn, 1s, 100);
   &:hover {
     background: $header-background !important;
   }
@@ -19,6 +19,7 @@
     border-bottom: 0.5rem solid $primary;
     color: $primary;
     border-top: none;
+    @include animate(fadeIn, 5s, 100, );
     display: block;
     &:hover {
       border-bottom: 0.5rem $primary solid;
@@ -29,6 +30,7 @@
     width: 29%;
     display: block;
     padding: 1rem;
+    @include animate(fadeIn, 5s, 100, );
 
     p {
       font-family: $ff-sub;

@@ -3,15 +3,6 @@
 *
 *
 *
-*  Defines the card classes
-*  ------------------------------------------------------------------
-*  Markup:
-*  -------
-*
-*  <div class="card">Button</button>
-*  <div class="card">
-*  <div class="card-title">Title</div>
-*  <div className="nav-btn"> Button 3 </div> </div>
 *
  *******************************************************************/
 .card {
@@ -121,65 +112,3 @@
   }
 
 }
-.image-card {
-  background: $header-background !important;
-  height: 30rem;
-  overflow: hidden;
-  @include for-size(tablet-landscape) {
-    display: flex;
-  }
-  @include for-size(tablet-portrait) {
-  }
-  @include for-size(phone-only) {
-    display: none;
-  }
-  img {
-    height: 25rem;
-  }
-  &:hover {
-    background: $background !important;
-    color: $primary;
-    box-shadow: 0 0 1rem -0.25rem var(--background);
-  }
-}
-
-.more-card {
-  padding: 1rem;
-  .card-header {
-    background: $white;
-  }
-}
-
-.about-card {
-  padding: 1rem;
-  .card-header {
-    background: $white;
-  }
-  .shoutout {
-    font-size: 1.5rem;
-    background: $white;
-    color: $primary;
-    font-weight: 900;
-    &:hover {
-      background: $light;
-      color: $primary;
-      box-shadow: 0 0 1rem -0.25rem var(--background);
-    }
-  }
-}
-
-.modal-card {
-  align-content: center;
-  align-items: center;
-
-  .card-header {
-    margin-top: 0.5rem;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    hr {
-      padding-bottom: 0;
-    }
-  }
-
-}
-

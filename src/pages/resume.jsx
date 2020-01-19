@@ -8,9 +8,6 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Obfuscate from 'react-obfuscate';
 import SEO from '../components/SEO';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 class Resume extends React.Component {
   render() {
     return (

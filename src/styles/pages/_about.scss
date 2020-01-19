@@ -1,3 +1,9 @@
+/*************************************************************************************
+*  About Page
+*
+*
+*
+**************************************************************************************/
 #about {
   margin: 0;
   padding: 0;
@@ -14,17 +20,18 @@
       width: 28%;
       margin: 1rem;
       box-shadow: 0.25rem 0.25rem 2rem -1rem rgba(0, 0, 0, .05);
+      @include animate(flipInX, 2s, 70 );
+
 
       &:hover {
-        background: $background;
+        background: $background3;
         background-size: cover;
         box-shadow: 0 0 1rem -.25rem var(--background);
 
         .socialIcons {
           button {
-            background: $primary;
+            background: $gradient0;
           color: $white;
-border-color: $white;
           }
         }
       }
@@ -97,3 +104,65 @@ border-color: $white;
     }
   }
 }
+
+.image-card {
+  background: $header-background !important;
+  height: 30rem;
+  overflow: hidden;
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
+  @include for-size(tablet-portrait) {
+  }
+  @include for-size(phone-only) {
+    display: none;
+  }
+  img {
+    height: 25rem;
+  }
+  &:hover {
+    background: $background3 !important;
+    color: $primary;
+    box-shadow: 0 0 1rem -0.25rem var(--background);
+  }
+}
+
+.more-card {
+  padding: 1rem;
+  .card-header {
+    background: $white;
+  }
+}
+
+.about-card {
+  padding: 1rem;
+  .card-header {
+    background: $white;
+  }
+  .shoutout {
+    font-size: 1.5rem;
+    background: $white;
+    color: $primary;
+    font-weight: 900;
+    &:hover {
+      background: $light;
+      color: $primary;
+      box-shadow: 0 0 1rem -0.25rem var(--background);
+    }
+  }
+}
+
+.modal-card {
+  align-content: center;
+  align-items: center;
+
+  .card-header {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    hr {
+      padding-bottom: 0;
+    }
+  }
+}
+
