@@ -21,7 +21,6 @@ button {
   cursor: pointer;
   border-radius: 10px;
   background-color: $bg-button;
-  border-radius: $bdr-button;
   color: $c-button;
   display: inline-block;
   font-family: $ff-button;
@@ -47,6 +46,7 @@ button {
   &:hover {
     background-color: rgba($primary, .8);
     color: $white;
+    border-color: $white;
     cursor: pointer;
     text-decoration: none;
   }
@@ -150,81 +150,3 @@ button {
     }
   }
 }
-
-
-
-.social-button{
-  color: $white;
-margin:1rem;
-  border-radius: 25px;
-padding: 0;
-  width: 100%;
-
-  &:hover{
-border:$primary solid 0.5rem;
-margin:0;
-padding:0;}
-  button{
-    padding: 0;
-    width: 25%;
-    background: $white;
-    &:hover{
-      background: $background;
-      color:$white !important;
-       padding: 0;
-    width:25%;
-    height: inherit;
-    width: 25%;}
-  }
-}
-#linkedin {
-  color: $linkedin;
-  &:hover{
-    background: $background;
-    color:$white !important;
-    margin: 0;
-    padding: 0;}}
-
-  #instagram {
-    color: $instagram;
-    &:hover{
-      background: $background;
-      color:$white !important;
-      margin: 0;
-      padding: 0;}
-  }
-
-  #twitter {
-    color: $tw;
-    &:hover{
-      background: $background;
-      color:$white !important;
-      margin: 0;
-      padding: 0;}
-  }
-
-  #dribbble {
-    color: $dribbble;
-    &:hover{
-      background: $background;
-      color:$white !important;
-      margin: 0;
-      padding: 0;}
-  }
-
-  #github {
-    color: $github;
-    &:hover{
-      background: $background;
-      color:$white !important;
-      margin: 0;
-      padding: 0;}
-  }
-
-  #gitlab {
-    color: $gitlab;
-    &:hover{
-      background: $background;
-      color:$white !important;
-      margin: 0;
-      padding: 0;}}

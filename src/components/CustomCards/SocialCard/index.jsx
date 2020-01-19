@@ -1,11 +1,4 @@
 import React, { Component } from 'react';
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardBody,
-  CardSubtitle,
-} from 'reactstrap';
 import SocialIcons from './SocialIcons';
 class SocialCard extends Component {
   constructor(props) {
@@ -21,9 +14,9 @@ class SocialCard extends Component {
           </h4>
           <hr />
         </div>
-        <CardBody className="card-body">
+        <div className="card-body">
           <SocialIcons />
-        </CardBody>
+        </div>
       </card>
     );
   }

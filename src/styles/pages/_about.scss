@@ -1,25 +1,99 @@
 #about {
-margin: 0;
+  margin: 0;
   padding: 0;
   width: 100%;
   height: auto;
   overflow: hidden;
-.row {
-  display: flex;
-  margin-left: 8%;
-  .card {
-    height: 28rem;
-width: 28%;
-    margin: 1rem;
-    box-shadow: 0.25rem 0.25rem 2rem -1rem rgba(0, 0, 0, .05);
 
-    &:hover {
-      background: $background;
-      background-size: cover;
-      box-shadow: 0 0 1rem -.25rem var(--background);
+  .row {
+    display: flex;
+    margin-left: 8%;
+
+    .card {
+      height: 28rem;
+      width: 28%;
+      margin: 1rem;
+      box-shadow: 0.25rem 0.25rem 2rem -1rem rgba(0, 0, 0, .05);
+
+      &:hover {
+        background: $background;
+        background-size: cover;
+        box-shadow: 0 0 1rem -.25rem var(--background);
+
+        .socialIcons {
+          button {
+            background: $primary;
+          color: $white;
+border-color: $white;
+          }
+        }
+      }
+
+
+    }
+  }
+
+
+  .social-button {
+    margin: 0;
+    margin-left: 0.75rem;
+    border-radius: 25px;
+    padding: 0;
+
+    width: 100%;
+    background: $white;
+
+
+    button {
+      padding: 0.125rem;
+
+      width: auto;
+      background: $white;
+      &:hover{
+        color:$white;
+      }
     }
 
+    #linkedin {
+      color: $linkedin;
+      &:hover{
+        color:$white;
+      }
+    }
 
+    #instagram {
+      color: $instagram;
+      &:hover{
+        color:$white;
+      }
+    }
+
+    #twitter {
+      color: $tw;
+      &:hover{
+        color:$white;
+      }
+    }
+
+    #dribbble {
+      color: $dribbble ;
+      &:hover{
+        color:$white;
+      }
+    }
+
+    #github {
+      color: $github;
+      &:hover{
+        color:$white;
+      }
+    }
+
+    #gitlab {
+      color: $gitlab;
+      &:hover{
+        color:$white;
+      }
+    }
   }
-}
 }

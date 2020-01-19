@@ -91,13 +91,14 @@ font-family: $ff-sub;
 }
 
 .modal-button{
-  color: $light;
+  color: $white;
   width: 45%;
   border: $light solid 0.5rem;
   background: $gradient0;
-  &:hover{
-    color: $primary;
-    background: $light;
-    border: $primary solid 0.5rem;
-  }
+font-family: $ff-title;
+  font-size: 1.1rem;
+  padding:0;
+  padding-top:0.25rem;
+  padding-bottom: 0.25rem;
+
 }

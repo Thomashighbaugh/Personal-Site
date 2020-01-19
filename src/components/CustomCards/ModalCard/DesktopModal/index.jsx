@@ -5,7 +5,7 @@ function DesktopModal() {
 
   return (
     <Popup
-      trigger={<button className="modal-button"> Development </button>}
+      trigger={<button className="modal-button"> Desktop </button>}
       modal
     >
       {close => (
