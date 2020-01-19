@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 class AboutCard extends Component {
   render() {
     const {
@@ -7,8 +7,10 @@ class AboutCard extends Component {
       cardText,
       cardText2,
       cardText3,
-      cardText4
-        } = this.props;
+      cardText4,
+      cardText5,
+      cardText6,
+    } = this.props;
     return (
       <div className="about-card card">
         <div className="card-header">
@@ -18,13 +20,13 @@ class AboutCard extends Component {
         </div>
         <hr className="hr-blue" />
         <div className="card-body">
-            <p className="card-text">{cardText}</p>
-            <h4 className="techs">{cardText2}</h4>
-            <h4 className="techs">{cardText3}</h4>
-            <h5 className="shoutout">{cardText4}</h5>
-
+          <p className="card-text">{cardText}</p>
+          <h4 className="techs">{cardText2}</h4>
+          <h4 className="techs">{cardText3}</h4>
+          <h5 className="shoutout">{cardText4}</h5>
+          <p className="card-text">{cardText5}</p>
+          <p className="card-text">{cardText6}</p>
         </div>
-
       </div>
     );
   }

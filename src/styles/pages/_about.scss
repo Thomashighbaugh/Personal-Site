@@ -178,6 +178,8 @@
   a{
     button{
       margin-left: 15%;
+      width: 30%;
+
     }
   }
 }
@@ -213,6 +215,7 @@ padding: 1rem;
   button{
    @extend %btn-1;
     margin-left: 35%;
+    width:30%;
     padding: 1rem;
     a{
       color: $white;
