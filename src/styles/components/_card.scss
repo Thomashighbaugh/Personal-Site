@@ -100,6 +100,12 @@
     }
     .card-body {
       background: $light;
+.shoutout{
+  color: $primary;
+  background:$light;
+  font-family: $ff-title;
+  font-weight: 900;
+}
       .card-text {
         color: $primary;
         background: $light;

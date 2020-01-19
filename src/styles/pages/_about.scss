@@ -43,7 +43,7 @@
 
   .social-button {
     margin: 0;
-    margin-left: 0.75rem;
+    margin: 0.75rem;
     border-radius: 25px;
     padding: 0;
 
@@ -176,5 +176,10 @@
     button{
       margin-left: 15%;
     }
+  }
+}
+.resume-card{
+  button{
+    margin-top: 3rem;
   }
 }

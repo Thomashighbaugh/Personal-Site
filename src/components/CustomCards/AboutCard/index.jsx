@@ -16,7 +16,7 @@ class AboutCard extends Component {
           <h4 className="card-subtitle">{cardSubtitle}</h4>
           <hr />
         </div>
-        <hr />
+        <hr className="hr-blue" />
         <div className="card-body">
             <p className="card-text">{cardText}</p>
             <h4 className="techs">{cardText2}</h4>

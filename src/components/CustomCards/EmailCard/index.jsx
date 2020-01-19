@@ -9,6 +9,7 @@ class EmailCard extends Component {
           <h4 className="card-subtitle">check out my official Email!</h4>
           <hr />
         </div>
+        <hr className="hr-blue"/>
         <div className="card-body">
           To download my official Email, click the button below.
 <button className="nav-btn">

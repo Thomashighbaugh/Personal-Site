@@ -10,6 +10,7 @@ class PhoneCard extends Component {
           <h4 className="card-subtitle">interested in having me on your team? Call me!</h4>
           <hr />
         </div>
+        <hr className="hr-blue"/>
         <div className="card-body">
 To give me a call click the number (works on cell phone, but right click and Open With ... [your VOIP] may work as well.
           <button className="nav-btn"><Obfuscate tel="510-907-0654" /></button>

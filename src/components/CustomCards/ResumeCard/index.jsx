@@ -5,10 +5,11 @@ class ResumeCard extends Component {
     return (
       <div className="card resume-card">
         <div className="card-header">
-          <h3 className="card-title">Resume</h3>
-          <h4 className="card-subtitle">check out my official resume!</h4>
-          <hr />
+          <h3 className="card-title">[Resume]</h3>
+          <h4 className="card-subtitle">check out my resume!</h4>
+          <hr className="hr-blue" />
         </div>
+        <hr/>
         <div className="card-body">
           Download the resume I learned Latex to make by clicking the button below.
 
