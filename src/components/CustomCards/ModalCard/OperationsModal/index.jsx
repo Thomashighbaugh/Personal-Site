@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
+import { FiCpu } from 'react-icons/all';
 
 function OperationsModal() {
   return (
     <Popup
-      trigger={<button className="modal-button"> Operations </button>}
+      trigger={<button className="modal-button"> <FiCpu size={50}/> </button>}
       modal
     >
       {close => (

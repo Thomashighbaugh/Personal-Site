@@ -39,8 +39,11 @@
 
     }
   }
-
-
+.shoutout{
+  font-family: $ff-title;
+  font-size: 1.5rem;
+  text-align: center;
+}
   .social-button {
     margin: 0;
     margin: 0.75rem;
@@ -178,8 +181,43 @@
     }
   }
 }
-.resume-card{
+.resume-card {
+  a {
+margin-left: 20%;
+    button {
+      padding: 1rem;
+      margin-top: 2rem;
+
+    }
+  }
+}
+
+.hr-blue{
+  border-bottom: $primary solid 0.5rem !important;
+}
+
+.Email-card{
   button{
-    margin-top: 3rem;
+    margin-left: 5%;
+    margin-top: 1rem;
+padding: 1rem;
+    a{
+      color:$white;
+      text-decoration: none;
+      font-size:1rem;
+      font-family: $ff-title;
+    }
+  }
+}
+.phone-card{
+  button{
+   @extend %btn-1;
+    margin-left: 35%;
+    padding: 1rem;
+    a{
+      color: $white;
+      font-family: $ff-title;
+      text-decoration: none;
+    }
   }
 }

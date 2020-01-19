@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Popup from "reactjs-popup";
+import { FaDesktop, FaGitAlt } from 'react-icons/all';
 
 function DesktopModal() {
 
   return (
     <Popup
-      trigger={<button className="modal-button"> Desktop </button>}
+      trigger={<button className="modal-button"> <FaDesktop size={50} /> </button>}
       modal
     >
       {close => (

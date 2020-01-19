@@ -1,9 +1,10 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
+import { FaPenSquare } from 'react-icons/all';
 
 function WebDevModal() {
   return (
-    <Popup trigger={<button className="modal-button"> webdev </button>} modal>
+    <Popup trigger={<button className="modal-button"> <FaPenSquare size={50} /> </button>} modal>
       {close => (
         <div className="modal">
           <a className="close" onClick={close}>

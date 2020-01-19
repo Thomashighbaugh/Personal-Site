@@ -9,6 +9,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout/index';
 import SEO from '../components/SEO';
+import { Helmet } from 'react-helmet/es/Helmet';
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,6 +18,13 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout>
+        <Helmet>
+
+
+          <title>Projects -- Thomas Leon Highbaugh</title>
+
+        </Helmet>
+
         <SEO
           title="Projects"
           description="Projects by TLH with links to additional descriptions written in Markdown then rendered into pages by Gatsby"

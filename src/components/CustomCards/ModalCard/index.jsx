@@ -12,9 +12,9 @@ function ModalCard() {
           click the buttons for a modal displaying some of my skills
         </h4>
 
-        <hr className="hr-blue" />
+        <hr />
       </div>
-<hr/>
+<hr className="hr-blue" />
         {/*buttons*/}
 
         <WebDevModal />

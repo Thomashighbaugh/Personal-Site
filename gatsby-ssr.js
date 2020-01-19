@@ -14,3 +14,5 @@ function useWindowSize(defaultValue) {
 
   return windowSize;
 }
+ReactDOMServer.renderToString(<Handler />);
+const helmet = Helmet.renderStatic();

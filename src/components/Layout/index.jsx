@@ -24,6 +24,10 @@ const Layout = ({ children }) => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/c38251b988.css"/>
+
+        <script src="https://use.fontawesome.com/c38251b988.js"/>
       </Helmet>
       <Header />
         <main>{children}</main>

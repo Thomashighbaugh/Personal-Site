@@ -14,6 +14,7 @@ import ModalCard from '../components/CustomCards/ModalCard';
 import ResumeCard from '../components/CustomCards/ResumeCard';
 import PhoneCard from '../components/CustomCards/PhoneCard';
 import EmailCard from '../components/CustomCards/EmailCard';
+import { Helmet } from 'react-helmet/es/Helmet';
 class About extends Component {
   constructor(props) {
     super(props);
@@ -31,6 +32,12 @@ class About extends Component {
     //each card will pass in its data as arguments to the properties set up in the components themselves
     return (
       <Layout>
+        <Helmet>
+
+          <title>About --Thomas Leon Highbaugh</title>
+
+        </Helmet>
+
         <div id="about">
     <div className="row">
               <AboutCard
@@ -57,7 +64,7 @@ class About extends Component {
             <AboutCard
                 cardTitle="[art]"
                 cardSubtitle="about the graphics used on this site"
-                cardText="All of the graphics, except for the backgrounds, were created by me, Thomas Leon Highbaugh. Like everything else about the site, they are OPEN SOURCE as long as you make sure to give me credit for them ."
+                cardText="All the artwork featured are original pieces by me, except the background patterns. Thanks Hero Patterns"
                 cardText4="If you like them, check out my Instagram for more!"
               />
    </div>
