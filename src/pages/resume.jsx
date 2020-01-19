@@ -8,6 +8,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Obfuscate from 'react-obfuscate';
 import SEO from '../components/SEO';
+import { FaGlobe } from 'react-icons';
 class Resume extends React.Component {
   render() {
     return (
@@ -32,17 +33,42 @@ class Resume extends React.Component {
                     </div>
                     <div className="contact">
                       <strong>Website:</strong>
-                      <a href="http://thomasleonhighbaugh.me">
-                        thomasleonhighbaugh.me
-                      </a>
+                      <button>
+                        <a href="http://thomasleonhighbaugh.me">
+                          thomasleonhighbaugh.me
+                        </a>
+                      </button>
                     </div>
                     <div className="contact">
                       <strong>Email: </strong>
-                      <Obfuscate email="thighbaugh@zoho.com" />
+                      <button>
+                        {' '}
+                        <Obfuscate email="thighbaugh@zoho.com" />
+                      </button>
                     </div>
                     <div className="contact">
                       <strong>Phone: </strong>
-                      <Obfuscate tel="510-907-0654" />
+                      <button>
+                        {' '}
+                        <Obfuscate tel="510-907-0654" />
+                      </button>
+                    </div>
+                    <div className="contact">
+                      <strong>Official Resume:</strong>
+                      <div>
+                        <div>
+                          <a
+                            //this will save the file as "your_cv.pdf"
+                            download="cv_highbaugh_latex.pdf"
+                            //put the path of your pdf file
+                            href="content/assets/cv_highbaugh_latex.pdf"
+                            className="nav-btn"
+                          >
+                            Official Resume
+                          </a>
+                        </div>
+
+                      </div>
                     </div>
                     <div className="profiles">
                       <h2 className="card-subtitle">Internet Profiles</h2>
