@@ -1026,7 +1026,7 @@
                 'textarea' === e
               )),
               (e = !r);
-            break e;
+            break;
           default:
             e = !1;
         }
@@ -1609,7 +1609,7 @@
             case 10:
             case 9:
               var n = '';
-              break e;
+              break;
             default:
               var r = e._debugOwner,
                 a = e._debugSource,
@@ -4859,7 +4859,7 @@
                 (e.child.return = e), (e = e.child);
                 continue;
               }
-              if (e === t) break e;
+              if (e === t) break;
               for (; null === e.sibling; ) {
                 if (null === e.return || e.return === t) break e;
                 e = e.return;
@@ -5415,7 +5415,7 @@
                     continue;
                   }
                 }
-                if (e === n) break e;
+                if (e === n) break;
                 for (; null === e.sibling; ) {
                   if (null === e.return || e.return === n) break e;
                   e = e.return;

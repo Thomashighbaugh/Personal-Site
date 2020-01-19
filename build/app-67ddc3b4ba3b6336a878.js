@@ -3952,7 +3952,7 @@
       t.exports = (function() {
         try {
           if (!Object.assign) return !1;
-          var t = new String('abc');
+          var t = String('abc');
           if (((t[5] = 'de'), '5' === Object.getOwnPropertyNames(t)[0]))
             return !1;
           for (var e = {}, n = 0; n < 10; n++)

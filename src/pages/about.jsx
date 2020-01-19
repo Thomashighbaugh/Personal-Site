@@ -11,6 +11,7 @@ import AboutCard from '../components/CustomCards/AboutCard';
 import SocialCard from '../components/CustomCards/SocialCard';
 import ImageCard from '../components/CustomCards/ImageCard';
 import ModalCard from '../components/CustomCards/ModalCard';
+import ResumeCard from '../components/CustomCards/ResumeCard';
 
 class About extends Component {
   constructor(props) {
@@ -37,7 +38,8 @@ class About extends Component {
                 cardSubtitle="the developer behind this site"
                 cardText="My name is Thomas Leon Highbaugh, a self taught web developer from Hayward, California!"
               />
-              <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/160.jpg" />
+              <ResumeCard
+              id="3"/>
            <AboutCard
                 id="2"
                 cardTitle="[site]"

@@ -28,15 +28,7 @@ class Header extends Component {
               >
                 [projects]
               </Link>
-              <Link
-                to="/resume/"
-                onlyActiveOnIndex
-                className="nav-btn nav-link "
-                id="nav3"
-                asModal      >
-                [resume]
-              </Link>
-            </div>
+             </div>
         </nav>
       </header>
     )
