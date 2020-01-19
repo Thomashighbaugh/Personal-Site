@@ -31,9 +31,11 @@
     padding: 1rem;
 
     p {
-      font-family: $ff-mono;
+      font-family: $ff-sub;
       font-weight: 900;
       color: $light;
+      margin-left: 5%;
+      margin-right: 5%;
     }
 
     .blurb {
@@ -59,7 +61,7 @@
       }
 
       #sub {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
 
       &:hover {
@@ -87,6 +89,7 @@
     hr {
       width: 85%;
       margin-left: 15%;
+    margin-bottom: 0.25rem;
     }
     &:hover {
       background: $light;
@@ -95,6 +98,9 @@
       p {
         color: $white;
       }
+    small{
+      color: $white;
+    }
     }
 
     .link-heading {
@@ -107,13 +113,11 @@
 
     small {
       text-align: right;
-      font-family: $ff-body;
+      font-family: $ff-mono;
       font-size: 0.9rem;
-    font-weight:600;
+    font-weight:900;
       color:$light;
-      &:hover{
-        color: $white;
-      }
+      margin-top: 0;
 
     }
 
@@ -121,6 +125,8 @@
       font-family: $ff-sub;
       color: $light;
       font-weight: 900;
+      margin-left: 15%;
+      text-align: left;
     }
   }
 }
