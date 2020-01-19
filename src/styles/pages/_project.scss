@@ -6,116 +6,94 @@
 **************************************************************************************/
 
 #projects {
-  width:95%;
+  width: 95%;
   margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
 
-  .card {
-    width: 95%;
-    display: grid;
-    grid-gap: 10px;
-    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
-    &:hover{
-      background:$header-background !important;
-    }
-.card-header{
+  &:hover {
+    background: $header-background !important;
+  }
 
-  &:hover{
-    background: $background;
-    color: $white;
-    .card-title{
-      background: $background;
-      color: $white;
-    }
-    .information{
-      background: $background;
-      color:$white;
+  hr {
+    border-bottom: 0.5rem solid $primary;
+    color: $primary;
+    border-top: none;
+    display: block;
+    &:hover {
+      border-bottom: 0.5rem $primary solid;
     }
   }
-}
 
-    .information{
-  font-family: $ff-sub;
-  color: $light;
-  font-weight: 900;
-  background: $white;
-
-  padding: 1rem;
-  font-size:1.25rem;
-
-}
-      .blurb {
-        color: $light;
+  .projects-intro {
+    width: 25%;
+    display: block;
+    padding: 1rem;
+    p {
+      font-family: $ff-sub;
+    }
+    .card-header {
+      margin-top: 7.5rem;
+      border: $light 0.5rem solid;
+      outline: none;
+      padding: 1rem;
+      hr{
+        width: 85%;
+        margin-left: 6%;
+      }
+      .blurb-title {
+        color: $primary;
+        font-size: 2.5rem;
         font-weight: 900;
-        background: $white;
-        font-family: $ff-sub;
-        font-size: 0.75rem;
-      }
-
-    }
-    hr {
-      border-bottom: 0.5rem solid $primary;
-      color: $light;
-      border-top: none;
-      display: block;
-      &:hover {
-        border-bottom: 0.5rem $primary solid;
-      }
-    }
-
-    .projects-intro {
-      grid-column: 1;
-      .card-header {
-        .card-title {
-          text-align: center;
-          color: $primary;
-          font-family: $ff-title;
-          &:hover{
-            background: $background;
-            color: $white;
-
-          }
-
-        }
-      }
-    }
-
-    main {
-grid-column: 3;
-      grid-row: 1;
-      .post {
-        display: block;
-text-align: right;
-        margin-right: 5%;
         padding: 1rem;
-        background: $white;
-        border: $primary 0.5rem solid;
-        &:hover{
-          background:$background;
-          color: $white;
-        }
-            .link-heading {
-              font-size: 2rem;
-              font-family: $ff-title;
-              color: $primary;
-              text-decoration: none;
-              width: 100%;
-&:hover{
-  color:$white;
-}
-            }
+        text-align: center;
+        font-family: $ff-title;
+      }
 
-            small {
-              text-align: right;
-              font-family: $ff-mono;
-              font-size: 0.9rem;
-            }
+      &:hover {
+        border: $primary solid 0.5rem;
+        background: $background;
+        color: $white;
+      }
+    }
+  }
 
-            p {
-              font-family: $ff-sub;
-            }
-          }
+  .post {
+    width: 100%;
+    float: right;
+    display: block;
+    text-align: right;
+    padding: 1rem;
+    border-radius: 10px;
+    background: $white;
+    border: $light 0.5rem solid;
 
+    &:hover {
+      background: $background;
+      color: $white;
+      border: $primary solid 0.5rem;
+    }
 
+    .link-heading {
+      font-size: 2rem;
+      font-family: $ff-title;
+      color: $primary;
+      text-decoration: none;
+      width: 100%;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    small {
+      text-align: right;
+      font-family: $ff-mono;
+      font-size: 0.9rem;
+    }
+
+    p {
+      font-family: $ff-sub;
     }
   }
 }
