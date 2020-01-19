@@ -166,3 +166,15 @@
   }
 }
 
+.resume-card{
+  color:$light;
+  font-family: $ff-sub;
+  &:hover{
+    color:$primary
+  }
+  a{
+    button{
+      margin-left: 15%;
+    }
+  }
+}

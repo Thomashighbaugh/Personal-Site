@@ -12,7 +12,8 @@ import SocialCard from '../components/CustomCards/SocialCard';
 import ImageCard from '../components/CustomCards/ImageCard';
 import ModalCard from '../components/CustomCards/ModalCard';
 import ResumeCard from '../components/CustomCards/ResumeCard';
-
+import PhoneCard from '../components/CustomCards/PhoneCard';
+import EmailCard from '../components/CustomCards/EmailCard';
 class About extends Component {
   constructor(props) {
     super(props);
@@ -50,20 +51,19 @@ class About extends Component {
               />
     </div>
           <div className="row">
+<EmailCard/>
+            <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/061.jpg" />
 
-              <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/020.jpg" />
-              <AboutCard
+            <AboutCard
                 cardTitle="[art]"
                 cardSubtitle="about the graphics used on this site"
                 cardText="All of the graphics, except for the backgrounds, were created by me, Thomas Leon Highbaugh. Like everything else about the site, they are OPEN SOURCE as long as you make sure to give me credit for them ."
                 cardText4="If you like them, check out my Instagram for more!"
               />
-              <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/019.jpg" />
-          </div>
+   </div>
             <div className="row">
-
+              <PhoneCard />
               <ModalCard />
-              <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/061.jpg" />
               <SocialCard />
             </div>
         </div>
