@@ -89,3 +89,15 @@ font-family: $ff-sub;
   }
 
 }
+
+.modal-button{
+  color: $light;
+  width: 45%;
+  border: $light solid 0.5rem;
+  background: $gradient0;
+  &:hover{
+    color: $primary;
+    background: $light;
+    border: $primary solid 0.5rem;
+  }
+}

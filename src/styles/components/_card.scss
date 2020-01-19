@@ -43,7 +43,8 @@
     background: $white;
     .card-text {
       border-radius: 10px;
-      font-family: $ff-body;
+      font-family: $ff-sub;
+      font-weight: 600;
       color: $text;
       text-align: center;
       background: $white;
@@ -178,12 +179,6 @@
       padding-bottom: 0;
     }
   }
-  button {
-    @extend %btn-2;
-    align-self: center;
-    font-family: $ff-title;
-    font-size: 1.25rem;
-    height: 5rem;
-  }
+  
 }
 

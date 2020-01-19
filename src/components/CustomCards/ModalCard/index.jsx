@@ -15,7 +15,6 @@ function ModalCard() {
         <hr />
       </div>
 
-      <div className="card-body">
         {/*buttons*/}
 
         <WebDevModal />
@@ -23,7 +22,6 @@ function ModalCard() {
         <DevOpsModal />
         <OperationsModal />
         {/*end buttons*/}
-      </div>
     </div>
   );
 }

@@ -35,7 +35,7 @@ class About extends Component {
                 id="1"
                 cardTitle="[dev]"
                 cardSubtitle="the developer behind this site"
-                cardText="My name is Thomas Leon Highbaugh and I am an autodidactic web developer and Linux fanatic with an eye for design."
+                cardText="My name is Thomas Leon Highbaugh, a self taught web developer from Hayward, California!"
               />
               <ImageCard cardImage="https://raw.githubusercontent.com/Thomashighbaugh/galleries-images/master/images/160.jpg" />
            <AboutCard
