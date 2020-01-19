@@ -4,20 +4,7 @@ date: '2019-08-20'
 description: A playbook for provisioning my workstation that was written as a response to increasing frustrations with the other solutions.
 tags: bash, linux, shell-scripting
 ---
-### Unattended Provisioning
-## Links
-
-<button className="nav-btn  ml-2">
-   <a href="https://github.com/Thomashighbaugh/manjaro-workstation-playbook">
-   [workstation]
-   </a>
-</button>
-<button className="nav-btn ml-2">
-   <a href="https://github.com/Thomashighbaugh/manjaro-hypervisor-playbook">
-   [workstation]
-   </a>
-</button>
-
+### Unattended Provisioning for Any System
 
 ## Problem
 The BASH scripts that I had used, as well as the colt45 GUI, are no longer 
@@ -51,3 +38,14 @@ structure of a project.
 - **DEPRECIATED** I have since moved on from using Ansible to using Makefile to provision my 
 systems, thus I no longer maintain these playbooks other than as a testament 
 to my ability with this technology.
+
+<button className="nav-btn  ml-2">
+   <a href="https://github.com/Thomashighbaugh/manjaro-workstation-playbook">
+   [workstation]
+   </a>
+</button>
+<button className="nav-btn ml-2">
+   <a href="https://github.com/Thomashighbaugh/manjaro-hypervisor-playbook">
+   [hypervisor]
+   </a>
+</button>

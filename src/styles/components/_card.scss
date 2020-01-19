@@ -20,6 +20,7 @@
   border-left: $bdr-cl;
   border-bottom: $bdr-cb;
   padding: 1rem;
+justify-self: center;
   background: $header-background;
   border-radius: 10px;
   @include for-size(big-desktop) {
@@ -91,6 +92,7 @@
   .card-body {
     margin: 0;
     padding: 0;
+    clear: both;
     margin-bottom: 30%;
     .card-text {
       border-radius: 10px;

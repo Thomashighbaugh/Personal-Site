@@ -6,16 +6,7 @@ tags: bash, linux,
 ---
 
 ### BASH-inception
-<button className="nav-btn  ml-2">
-   <a href="https://github.com/Thomashighbaugh/decommisioner">
-   [github]
-   </a>
-</button>
-<button className="nav-btn ml-2">
- <a href="https://decommisioner.netlify.com/">
-   [hosted]
-   </a>
-</button>
+
 
 ## Problem 
 In order to reinstall systems after something happens to them, I found it hard to replicate the exqct same configuration as I had before. Remembering all the package names was impossible and simply having a list of them made for a tedious provisioning process. 
@@ -33,4 +24,14 @@ that the official PPAs do not offer.
 ## To Do
 
 - [x] create a landing page
-- [ ] create Pacman variant 
+
+<button className="nav-btn">
+   <a href="https://github.com/Thomashighbaugh/decommisioner">
+   [github]
+   </a>
+</button>
+<button className="nav-btn">
+ <a href="https://decommisioner.netlify.com/">
+   [hosted]
+   </a>
+</button>

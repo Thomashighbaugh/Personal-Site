@@ -8,25 +8,52 @@
 #projects {
   width:95%;
   margin-left: 2.5%;
+
   .card {
-    min-height: 70vh;
-    display: flex;
-    flex-direction: row;
-.card-body{
+    width: 95%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+    &:hover{
+      background:$header-background !important;
+    }
+.card-header{
+
+  &:hover{
+    background: $background;
+    color: $white;
+    .card-title{
+      background: $background;
+      color: $white;
+    }
+    .information{
+      background: $background;
+      color:$white;
+    }
+  }
+}
+
+    .information{
   font-family: $ff-sub;
   color: $light;
   font-weight: 900;
   background: $white;
-border: $primary solid 0.5rem;
+
   padding: 1rem;
   font-size:1.25rem;
-  &:hover{
-    color:$white;
-    background:$background;
-  }
+
 }
+      .blurb {
+        color: $light;
+        font-weight: 900;
+        background: $white;
+        font-family: $ff-sub;
+        font-size: 0.75rem;
+      }
+
+    }
     hr {
-      border-bottom: 0.5rem solid $light;
+      border-bottom: 0.5rem solid $primary;
       color: $light;
       border-top: none;
       display: block;
@@ -36,23 +63,25 @@ border: $primary solid 0.5rem;
     }
 
     .projects-intro {
-      width: 35%;
-      display: block;
+      grid-column: 1;
       .card-header {
         .card-title {
           text-align: center;
           color: $primary;
           font-family: $ff-title;
-          margin-bottom: 0;
+          &:hover{
+            background: $background;
+            color: $white;
+
+          }
+
         }
       }
     }
 
     main {
-      max-width: 55%;
-      margin-left: 6%;
-      float: right;
-
+grid-column: 3;
+      grid-row: 1;
       .post {
         display: block;
 text-align: right;

@@ -3,10 +3,8 @@
  * each listed project
  */
 // @TODO - add links to all the projects in their markdown files
-// @TODO - standarize the writing in each article using format from SaarJanak
 // @TODO - add new projects and update links
 // @TODO - pull awesome window manager configuration and put it in its own repo
-// @TODO - link all dat on Gitlab
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
@@ -24,44 +22,49 @@ class BlogIndex extends React.Component {
           description="Projects by TLH with links to additional descriptions written in Markdown then rendered into pages by Gatsby"
         />
         <div id="projects">
-          <div className="card">
-            <aside className="projects-intro about-card">
-              <div className="card-header">
-            <h1 className="card-title">Projects</h1>
-              <hr/>
+            <aside className="projects-intro">
+              <div className="card">
+              <h1 className="card-title">Projects</h1>
+                <hr />
+                <p className="information">
+                  These are some of the projects I have worked on recently.
+                </p>
+                <hr />
               </div>
-<div className="card-body">
-              <p>
-                These are some of the projects I have worked on recently.
-                Clicking the title will take you to a description of the project
-                with information about what it does, why I made it and links to
-                the source code as well as any hosted web presence that exists
-                for that particular project.
-              </p>
-</div>
-                     </aside>
-          <main>
-            <ul>
-              {posts.map(({ node }) => {
-                const title = node.frontmatter.title || node.fields.slug;
-                return (
-                  <li className="post" key={node.fields.slug}>
+            <div className="card">
+                <h4 className="card-title">About This Page</h4>
+                <hr />
+                <p className="blurb">
+                  The pages for each project are rendered from Markdown files
+                  using the power of GraphQL and Gatsby, the Static Site
+                  Generator responsible for rendering the React and SASS I wrote
+                  for this site into the HTML and CSS it exists as on Netlify's
+                  server.
+                </p>
+            </div>
+          </aside>
+            <main>
+              <ul>
+                {posts.map(({ node }) => {
+                  const title = node.frontmatter.title || node.fields.slug;
+                  return (
+                    <li className="post" key={node.fields.slug}>
                       <Link className="link-heading" to={node.fields.slug}>
                         {title}
                       </Link>
-                    <hr/>
-                    <small>{node.frontmatter.date}</small>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: node.frontmatter.description || node.excerpt,
-                      }}
-                    />
-                  </li>
-                );
-              })}</ul>
-          </main>
+                      <hr />
+                      <small>{node.frontmatter.date}</small>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: node.frontmatter.description || node.excerpt,
+                        }}
+                      />
+                    </li>
+                  );
+                })}
+              </ul>
+            </main>
           </div>
-        </div>
       </Layout>
     );
   }
