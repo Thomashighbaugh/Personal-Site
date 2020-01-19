@@ -23,14 +23,14 @@ class BlogIndex extends React.Component {
         />
         <div className="card" id="projects">
             <aside className="projects-intro">
-              <div className="card-header">
+              <div className="blurb">
               <h1 className="blurb-title">Projects</h1>
                 <hr />
                 <p>
                   These are some of the projects I have worked on recently.
                 </p>
               </div>
-            <div className="card-header">
+            <div className="blurb">
                 <h4 className="blurb-title" id="sub">This Page</h4>
                 <hr />
                 <p className="information">

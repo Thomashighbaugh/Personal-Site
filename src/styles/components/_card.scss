@@ -36,34 +36,29 @@
   }
   @include for-size(phone-only) {
   }
-  &:hover {
-    hr {
-      border-bottom: $primary 0.5rem solid;
+  .card-body {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    background: $white;
+    .card-text {
+      border-radius: 10px;
+      font-family: $ff-body;
+      color: $text;
+      text-align: center;
+      background: $white;
     }
-    .card-header {
+    .techs {
+      border-radius: 10px;
       color: $primary;
-      background: $light;
-      .card-title {
-        color: $primary;
-        background: $light;
-      }
-      .card-subtitle {
-        color: $primary;
-        background: $light;
-      }
-    }
-    .card-body {
-      .card-text {
-        color: $primary;
-        background: $light;
-      }
-      .techs {
-        color: $primary;
-        background: $light;
-      }
+      margin: 0.25rem;
+      background: $white;
+      width: auto;
+      font-size: $fz-h4;
+      text-align: center;
+      font-family: $ff-title;
     }
   }
-
   .card-header {
     background: $white;
     border-radius: 10px;
@@ -94,28 +89,35 @@
     border-bottom: 0.5rem $light solid;
     outline: none;
   }
-  .card-body {
-    margin: 0;
-    padding: 0;
-    clear: both;
-    .card-text {
-      border-radius: 10px;
-      font-family: $ff-body;
-      color: $text;
-      text-align: center;
-      background: $white;
+  &:hover {
+    hr {
+      border-bottom: $primary 0.5rem solid;
     }
-    .techs {
-      border-radius: 10px;
+    .card-header {
       color: $primary;
-      margin: 0.25rem;
-      background: $white;
-      width: auto;
-      font-size: $fz-h3;
-      text-align: center;
-      font-family: $ff-title;
+      background: $light;
+      .card-title {
+        color: $primary;
+        background: $light;
+      }
+      .card-subtitle {
+        color: $primary;
+        background: $light;
+      }
+    }
+    .card-body {
+      background: $light;
+      .card-text {
+        color: $primary;
+        background: $light;
+      }
+      .techs {
+        color: $primary;
+        background: $light;
+      }
     }
   }
+
 }
 .image-card {
   background: $header-background !important;
@@ -184,3 +186,4 @@
     height: 5rem;
   }
 }
+

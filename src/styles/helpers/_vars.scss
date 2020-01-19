@@ -433,10 +433,8 @@ $container-max-widths: (
 // for about page's card grid
 $mobile-breakpoint: 560px;
 $tablet-breakpoint: 960px;
-
 $grid-width: 1800;
 $column-gap: 100;
 $gutter: ($column-gap / 2 / $grid-width * 100%);
 $column-width: 100% - $gutter * 2;
-
 $enable-grid-classes: true !default; // generate grid classes
