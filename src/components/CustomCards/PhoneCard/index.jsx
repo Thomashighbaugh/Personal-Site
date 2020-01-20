@@ -7,17 +7,19 @@ class PhoneCard extends Component {
     return (
       <div className="card phone-card">
         <div className="card-header">
-          <h3 className="card-title">Phone</h3>
+          <h3 className="card-title">[Phone]</h3>
           <h4 className="card-subtitle">interested in having me on your team? Call me!</h4>
           <hr />
         </div>
         <hr className="hr-blue"/>
         <div className="card-body">
-          <p className="card-text">
-            To give me a call click the number (works on cell phone, but right click and Open With ... [your VOIP] may work as well.
+          <p className="techs">
+            works on cell phones or VOIP
           </p>
-          <button className="nav-btn`"><Obfuscate tel="510-907-0654"><FaPhoneSquare size={50} /> </Obfuscate></button>
+
         </div>
+        <br/>
+        <button className="nav-btn`"><Obfuscate tel="510-907-0654"><FaPhoneSquare size={90} /> </Obfuscate></button>
       </div>
     );
   }

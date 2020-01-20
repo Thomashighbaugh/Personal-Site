@@ -5,7 +5,7 @@ import { FiCpu } from 'react-icons/all';
 function OperationsModal() {
   return (
     <Popup
-      trigger={<button className="modal-button"> <FiCpu size={50}/> </button>}
+      trigger={<button className="modal-button"> <FiCpu size={70}/> </button>}
       modal
     >
       {close => (

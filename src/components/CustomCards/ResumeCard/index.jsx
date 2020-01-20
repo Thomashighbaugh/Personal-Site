@@ -12,17 +12,16 @@ class ResumeCard extends Component {
         </div>
         <hr className="hr-blue"/>
         <div className="card-body">
-          Download the resume I learned Latex to make by clicking the button below.
+<p className="techs"> Made with XeLaTex</p>        </div>
 
           <a
               download="cv_highbaugh_latex.pdf"
               href="content/assets/cv_highbaugh_latex.pdf"
             >
               <button className="nav-btn">
-<FaListAlt size={50}/>        </button>
+<FaListAlt size={60}/>        </button>
             </a>
 
-        </div>
       </div>
     );
   }

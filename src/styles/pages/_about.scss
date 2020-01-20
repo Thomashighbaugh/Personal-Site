@@ -21,19 +21,33 @@
       margin: 1rem;
       box-shadow: 0.25rem 0.25rem 2rem -1rem rgba(0, 0, 0, .05);
       @include animate(flipInX, 2s, 70 );
-
-
+.card-title{
+  text-shadow: 0.25rem 0.25rem $light;
+}
+.socialIcons{
+  button{
+  @extend %btn-1;
+    padding:0;
+    margin-top: 0;
+}}
       &:hover {
         background: $background3;
         background-size: cover;
         box-shadow: 0 0 1rem -.25rem var(--background);
-
+.card-title{
+  text-shadow: 0.125rem 0.125rem $white;
+}.card-text{
+        color: $primary;
+ }
         .socialIcons {
           button {
             background: $gradient0;
           color: $white;
           }
         }
+  .shoutout{
+    text-shadow: 0.125rem 0.125rem $white;
+  }
       }
 
 
@@ -43,7 +57,13 @@
   font-family: $ff-title;
   font-size: 1.5rem;
   text-align: center;
+  text-shadow: 0.2rem 0.2rem $light;
+
 }
+  .card-text{
+    font-size: 1.25rem;
+    color: $light;
+  }
   .social-button {
     margin: 0;
     margin: 0.75rem;
@@ -65,44 +85,54 @@
     }
 
     #linkedin {
-      color: $linkedin;
+      color:$white;
       &:hover{
-        color:$white;
+        color: $linkedin;
+background: $header-background;
       }
     }
 
     #instagram {
-      color: $instagram;
+      color:$white;
+
       &:hover{
-        color:$white;
+        color: $instagram;
+background: $header-background;
       }
     }
 
     #twitter {
-      color: $tw;
+      color:$white;
       &:hover{
-        color:$white;
+        color: $tw!important;
+        background: $header-background;
       }
     }
 
     #dribbble {
-      color: $dribbble ;
+      color:$white;
       &:hover{
-        color:$white;
+        color: $dribbble !important;
+        background: $header-background;
+
       }
     }
 
     #github {
-      color: $github;
+      color:$white;
       &:hover{
-        color:$white;
+        color: $github !important;
+        background: $header-background;
+
       }
     }
 
     #gitlab {
-      color: $gitlab;
+      color:$white;
       &:hover{
-        color:$white;
+        color: $gitlab !important;
+        background: $header-background;
+
       }
     }
   }
@@ -172,14 +202,15 @@
 .resume-card{
   color:$light;
   font-family: $ff-sub;
+  font-size: 1.5rem;
+  text-align: center;
   &:hover{
     color:$primary
   }
   a{
     button{
-      margin-left: 15%;
       width: 30%;
-
+margin-right: 20%;
     }
   }
 }
@@ -200,7 +231,7 @@ margin-left: 20%;
 
 .Email-card{
   button{
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top: 1rem;
 padding: 1rem;
     a{
@@ -214,9 +245,9 @@ padding: 1rem;
 .phone-card{
   button{
    @extend %btn-1;
-    margin-left: 35%;
-    width:30%;
-    padding: 1rem;
+    width:40%;
+    margin-left:28%;
+    padding: 0.25rem;
     a{
       color: $white;
       font-family: $ff-title;

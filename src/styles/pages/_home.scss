@@ -32,7 +32,7 @@
   }
 
   .hr-blue {
-    border-bottom: $bdr-cl;
+    border-bottom: $primary 1rem solid !important;
   }
 
   .card-title {
@@ -40,6 +40,7 @@
     background: $white;
     font-size: $fz-h1;
     margin-bottom: 0;
+    text-shadow: 0.25rem 0.25rem $light;
     width: auto;
     position: relative;
     text-align: center;
@@ -68,6 +69,8 @@
     @include animate(slideInUp, 1s, 20, 1);
     background: $white;
     font-size: $fz-h2;
+    text-shadow: 0.25rem 0.25rem $light;
+
     float: right;
     position: relative;
     border-radius: 10px;

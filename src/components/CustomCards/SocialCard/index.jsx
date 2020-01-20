@@ -12,9 +12,7 @@ class SocialCard extends Component {
           <hr />
         </div>
         <hr className="hr-blue"/>
-        <div className="card-body">
           <SocialIcons />
-        </div>[
       </div>
     );
   }

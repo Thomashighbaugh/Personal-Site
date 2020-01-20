@@ -45,6 +45,7 @@
       border-radius: 10px;
       color: $primary;
       margin: 0.25rem;
+      text-shadow: 0.125rem 0.125rem $light;
       background: $white;
       width: auto;
       font-size: $fz-h4;
@@ -67,6 +68,8 @@
       text-align: left;
       margin: 0;
       padding: 0;
+      text-shadow: 0.25rem 0.25rem $light;
+
     }
     .card-subtitle {
       font-family: $ff-sub;
@@ -92,6 +95,8 @@
       .card-title {
         color: $primary;
         background: $light;
+        text-shadow: 0.125rem 0.125rem $white;
+
       }
       .card-subtitle {
         color: $primary;

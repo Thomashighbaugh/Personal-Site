@@ -6,7 +6,7 @@ function DesktopModal() {
 
   return (
     <Popup
-      trigger={<button className="modal-button"> <FaDesktop size={50} /> </button>}
+      trigger={<button className="modal-button"> <FaDesktop size={70} /> </button>}
       modal
     >
       {close => (

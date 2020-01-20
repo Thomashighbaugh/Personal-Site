@@ -71,6 +71,7 @@ header {
       display: inline-block !important;
       font-size: 2.25rem !important;
       padding: 0.75rem !important;
+      text-shadow: 0.18rem 0.18rem $light;
 
       a {
         @extend %btn-1;
@@ -117,7 +118,8 @@ header {
   margin-right: $mb-nav;
   @extend %btn-1;
   display: inline-block;
-
+  border: $light solid 0.5rem;
+text-shadow: 0.16rem 0.16rem $light;
   &:hover {
     border: $bdr-button-hover;
     background: $gradient5;

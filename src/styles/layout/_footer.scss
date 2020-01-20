@@ -19,6 +19,8 @@ footer {
   font-family: $ff-title;
   clear:both;
   width:100%;
+color: $primary;
+  text-shadow: 0.2rem 0.2rem $light;
 
 
 
@@ -39,13 +41,12 @@ footer {
 }
 
 .footer-title {
-  color: $light !important;
   background: $white;
-  width: 30%;
+  width: 40%;
   margin: 0;
-  margin-left: 35%;
+  margin-left: 30%;
   text-align:center;
   font-size: 2rem !important;
   padding: 0;
-
+font-family: $ff-title;
 }

@@ -8,24 +8,22 @@ class EmailCard extends Component {
     return (
       <div className="card Email-card">
         <div className="card-header">
-          <h3 className="card-title">Email</h3>
+          <h3 className="card-title">[Email]</h3>
           <h4 className="card-subtitle">take your pick</h4>
           <hr />
         </div>
         <hr className="hr-blue" />
-        <div className="card-body">
           <button className="nav-btn">
-            <Obfuscate email="thighbaugh@zoho.com">  <FaEnvelope size={50}/></Obfuscate>
+            <Obfuscate email="thighbaugh@zoho.com">  <FaEnvelope size={60}/></Obfuscate>
           </button>
           <button className="nav-btn">
             {' '}
-            <Obfuscate email="thighbaugh510@gmail.com">  <FaEnvelope size={50}/></Obfuscate>
+            <Obfuscate email="thighbaugh510@gmail.com">  <FaEnvelope size={60}/></Obfuscate>
           </button>
           <button className="nav-btn">
             {' '}
-            <Obfuscate email="thomasleonhighbaugh@gmail.com"> <FaEnvelope size={50}/> </Obfuscate>
+            <Obfuscate email="thomasleonhighbaugh@gmail.com"> <FaEnvelope size={60}/> </Obfuscate>
           </button>
-        </div>
       </div>
     );
   }
