@@ -1,3 +1,9 @@
+/******************************************************************************
+ * Phone Card
+ *
+ *
+ * Creates a link to allow mobile and VOIP users an option to call me
+ *******************************************************************************/
 import React, { Component } from 'react';
 import Obfuscate from 'react-obfuscate';
 import 'font-awesome/css/font-awesome.min.css';

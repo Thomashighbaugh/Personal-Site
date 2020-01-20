@@ -1,3 +1,10 @@
+/******************************************************************************
+ * Social Card
+ *
+ *
+ * Provides social card for about page
+ *******************************************************************************/
+
 import React, { Component } from 'react';
 import SocialIcons from './SocialIcons';
 class SocialCard extends Component {
@@ -11,8 +18,8 @@ class SocialCard extends Component {
           </h4>
           <hr />
         </div>
-        <hr className="hr-blue"/>
-          <SocialIcons />
+        <hr className="hr-blue" />
+        <SocialIcons />
       </div>
     );
   }

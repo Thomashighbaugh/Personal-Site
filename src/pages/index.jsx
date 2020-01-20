@@ -1,9 +1,9 @@
-/*
- * This page serves as the front page of the site. I opted to not overload the user with
- * information from the onset, instead using some of my art and a few transitions to make
- * the page attractive to users, demonstrative of my skillset and as a place to showcase my art
+/******************************************************************************
+ * Index
  *
- */
+ *
+ * Page that users arrive at, the home or landing page of the site.
+ ******************************************************************************/
 import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';

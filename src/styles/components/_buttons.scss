@@ -15,7 +15,6 @@
 *
  *******************************************************************/
 
-
 // reset default buttons
 button {
   cursor: pointer;
@@ -32,7 +31,7 @@ button {
   text-align: center;
   text-decoration: none;
   text-transform: $tt-button;
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   white-space: nowrap;
   border: $bdr-button;
   &:focus,
@@ -40,11 +39,10 @@ button {
   &:active {
     color: $c-button;
     border: $bdr-button-hover;
-
   }
 
   &:hover {
-    background-color: rgba($primary, .8);
+    background-color: rgba($primary, 0.8);
     color: $white;
     border-color: $white;
     cursor: pointer;
@@ -88,7 +86,7 @@ button {
     color: $white;
 
     &:hover {
-      background-color: rgba($secondary, .8);
+      background-color: rgba($secondary, 0.8);
       color: $white;
     }
   }
@@ -98,8 +96,8 @@ button {
     color: $primary;
 
     &:hover {
-      background-color: rgba($white, .8);
-      color: rgba($primary, .8);
+      background-color: rgba($white, 0.8);
+      color: rgba($primary, 0.8);
     }
   }
 
@@ -108,7 +106,7 @@ button {
     color: $white;
 
     &:hover {
-      background-color: rgba($success, .8);
+      background-color: rgba($success, 0.8);
       color: $white;
     }
   }
@@ -118,7 +116,7 @@ button {
     color: $white;
 
     &:hover {
-      background-color: rgba($error, .8);
+      background-color: rgba($error, 0.8);
       color: $white;
     }
   }
@@ -131,8 +129,8 @@ button {
     &:hover,
     &:focus {
       background-color: transparent;
-      color: rgba($c-button-transparent, .8);
-      opacity: .8;
+      color: rgba($c-button-transparent, 0.8);
+      opacity: 0.8;
     }
   }
 
@@ -145,8 +143,8 @@ button {
     &:hover,
     &:focus {
       background-color: transparent;
-      color: rgba($c-button-outlined, .8);
-      opacity: .8;
+      color: rgba($c-button-outlined, 0.8);
+      opacity: 0.8;
     }
   }
 }

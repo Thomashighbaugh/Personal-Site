@@ -1,9 +1,10 @@
-/* The About Page
-*
-* This page is to introduce myself to the visitor, what I do (as far as
-* development) and go more in depth with the two other sites
-*
-that are part of this effort */
+/*******************************************************************************
+ * About
+ *
+ *
+ * page describing the author in a card grid layout
+*******************************************************************************/
+
 
 import React, { Component } from 'react';
 import Layout from '../components/Layout';

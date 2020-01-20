@@ -1,4 +1,11 @@
-import React, { useState } from 'react';
+/******************************************************************************
+ * Modal Card
+ *
+ *
+ * Provides card from which skill modals are launched for about page
+ *******************************************************************************/
+
+import React from 'react';
 import WebDevModal from './WebDevModal';
 import DevOpsModal from './DevOpsModal';
 import OperationsModal from './OperationsModal';
@@ -14,14 +21,14 @@ function ModalCard() {
 
         <hr />
       </div>
-<hr className="hr-blue" />
-        {/*buttons*/}
+      <hr className="hr-blue" />
+      {/*buttons*/}
 
-        <WebDevModal />
-        <DesktopModal />
-        <DevOpsModal />
-        <OperationsModal />
-        {/*end buttons*/}
+      <WebDevModal />
+      <DesktopModal />
+      <DevOpsModal />
+      <OperationsModal />
+      {/*end buttons*/}
     </div>
   );
 }

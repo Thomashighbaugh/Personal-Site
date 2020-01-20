@@ -1,10 +1,9 @@
-/**
- * Component to make the website more friendly
- * to search engine queries
+/******************************************************************************
+ * SEO
  *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
+ *
+ * Provides search engine friendly functionality to site
+ *******************************************************************************/
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -27,7 +26,7 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-// variable holds description to offer it to the search engines in a format they can
+  // variable holds description to offer it to the search engines in a format they can
   //utilize
   return (
     <Helmet //tag provides the head element to the rendered html pages

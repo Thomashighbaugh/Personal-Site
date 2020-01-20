@@ -92,18 +92,16 @@
         font-size: 2rem;
         border-bottom: 0.5rem solid $light;
       }
-      button{
-        &:hover{
+      button {
+        &:hover {
           border: $bdr-button-hover;
         }
         @extend %btn-1;
-        a{
+        a {
           color: $white;
           text-decoration: none;
           font-family: $ff-title;
-
         }
-
       }
     }
     .profiles {

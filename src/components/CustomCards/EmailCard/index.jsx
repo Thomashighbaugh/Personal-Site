@@ -1,3 +1,10 @@
+/******************************************************************************
+ * EmailCard
+ *
+ *
+ * Provides links to my various email addresses
+ * @TODO add in configured domain address from namecheap
+ *******************************************************************************/
 import React, { Component } from 'react';
 import Obfuscate from 'react-obfuscate';
 import 'font-awesome/css/font-awesome.min.css';
@@ -13,17 +20,26 @@ class EmailCard extends Component {
           <hr />
         </div>
         <hr className="hr-blue" />
-          <button className="nav-btn">
-            <Obfuscate email="thighbaugh@zoho.com">  <FaEnvelope size={60}/></Obfuscate>
-          </button>
-          <button className="nav-btn">
+        <button className="nav-btn">
+          <Obfuscate email="thighbaugh@zoho.com">
             {' '}
-            <Obfuscate email="thighbaugh510@gmail.com">  <FaEnvelope size={60}/></Obfuscate>
-          </button>
-          <button className="nav-btn">
+            <FaEnvelope size={60} />
+          </Obfuscate>
+        </button>
+        <button className="nav-btn">
+          {' '}
+          <Obfuscate email="thighbaugh510@gmail.com">
             {' '}
-            <Obfuscate email="thomasleonhighbaugh@gmail.com"> <FaEnvelope size={60}/> </Obfuscate>
-          </button>
+            <FaEnvelope size={60} />
+          </Obfuscate>
+        </button>
+        <button className="nav-btn">
+          {' '}
+          <Obfuscate email="thomasleonhighbaugh@gmail.com">
+            {' '}
+            <FaEnvelope size={60} />{' '}
+          </Obfuscate>
+        </button>
       </div>
     );
   }

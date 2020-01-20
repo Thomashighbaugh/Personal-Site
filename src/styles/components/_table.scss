@@ -3,7 +3,6 @@
 *
 ****************************************************************/
 
-
 .table {
   background-color: $bgc-table;
   border: $bd-table;
@@ -15,7 +14,7 @@
   th,
   td {
     border-bottom: $bd-table;
-    padding:  $p-table-cell;
+    padding: $p-table-cell;
     position: relative;
   }
 
@@ -70,7 +69,6 @@
  */
 
 .table--responsive {
-
   th {
     display: none;
   }
@@ -86,7 +84,7 @@
         display: none;
       }
       color: $c-table-heading;
-      content: attr(data-th)': ';
+      content: attr(data-th) ': ';
       display: block;
       font-weight: normal;
     }

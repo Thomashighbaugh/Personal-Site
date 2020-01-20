@@ -1,3 +1,9 @@
+/******************************************************************************
+ *  ImageCard
+ *
+ *
+ * Provides card for artwork featured on about page
+ *******************************************************************************/
 import React, { Component } from 'react';
 import { Card, CardBody } from 'reactstrap';
 import CardImg from 'reactstrap/es/CardImg';

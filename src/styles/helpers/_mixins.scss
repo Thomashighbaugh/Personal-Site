@@ -5,7 +5,6 @@
 *  Creates reusable functionality that takes arguments
 **************************************************************************************/
 
-
 // To create standard sizes for consistent responsiveness
 
 @mixin for-size($size) {
@@ -28,10 +27,9 @@
   } @else if $size == big-desktop {
     @media (max-width: 1800px) {
       @content;
-
     }
-  }}
-
+  }
+}
 
 @mixin generate-grid() {
   @for $i from 2 through 6 {
@@ -76,6 +74,5 @@
     &.no--margin {
       margin: 0 auto;
     }
-
   }
 }

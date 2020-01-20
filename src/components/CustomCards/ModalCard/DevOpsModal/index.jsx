@@ -1,10 +1,24 @@
+/******************************************************************************
+ * DevOps Modal
+ *
+ *
+ * Skill modal focusing on Dev+Ops skill set
+ *******************************************************************************/
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import { FaGitAlt } from 'react-icons/all';
 
 function DevOpsModal() {
   return (
-    <Popup trigger={<button className="modal-button"> <FaGitAlt size={70}/></button>} modal>
+    <Popup
+      trigger={
+        <button className="modal-button">
+          {' '}
+          <FaGitAlt size={70} />
+        </button>
+      }
+      modal
+    >
       {close => (
         <div className="modal">
           <a className="close" onClick={close}>

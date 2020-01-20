@@ -1,36 +1,36 @@
-#contact{
-width: 90%;
+#contact {
+  width: 90%;
   margin-left: 5%;
   margin-right: 5%;
- .header{
-   border: $primary 0.5rem solid;
-   border-radius: 10px;
-   background: $white;
-   h1{
-     color: $primary;
-     font-family:$ff-title;
-     font-size: 3rem;
-     background: $white;
-     text-align: left;
-       }
-   h2{
-     color: $light;
-     font-weight: 900;
-     font-size: 2rem;
-     background: $white;
-     text-align: right;
-     font-family: $ff-sub;
-   }
-   }
-.nav-btn{
-  width: 100%;
-  a {
-    text-decoration: none;
-    color: $white;
+  .header {
+    border: $primary 0.5rem solid;
+    border-radius: 10px;
+    background: $white;
+    h1 {
+      color: $primary;
+      font-family: $ff-title;
+      font-size: 3rem;
+      background: $white;
+      text-align: left;
+    }
+    h2 {
+      color: $light;
+      font-weight: 900;
+      font-size: 2rem;
+      background: $white;
+      text-align: right;
+      font-family: $ff-sub;
+    }
+  }
+  .nav-btn {
     width: 100%;
+    a {
+      text-decoration: none;
+      color: $white;
+      width: 100%;
+    }
   }
-  }
-  .contact{
+  .contact {
     display: block;
     width: 100%;
   }

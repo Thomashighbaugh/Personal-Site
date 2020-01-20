@@ -19,7 +19,7 @@
     border-bottom: 0.5rem solid $primary;
     color: $primary;
     border-top: none;
-    @include animate(fadeIn, 5s, 100, );
+    @include animate(fadeIn, 5s, 100);
     display: block;
     &:hover {
       border-bottom: 0.5rem $primary solid;
@@ -30,7 +30,7 @@
     width: 29%;
     display: block;
     padding: 1rem;
-    @include animate(fadeIn, 5s, 100, );
+    @include animate(fadeIn, 5s, 100);
 
     p {
       font-family: $ff-sub;
@@ -91,7 +91,7 @@
     hr {
       width: 85%;
       margin-left: 15%;
-    margin-bottom: 0.25rem;
+      margin-bottom: 0.25rem;
     }
     &:hover {
       background: $light;
@@ -100,9 +100,9 @@
       p {
         color: $white;
       }
-    small{
-      color: $white;
-    }
+      small {
+        color: $white;
+      }
     }
 
     .link-heading {
@@ -117,10 +117,9 @@
       text-align: right;
       font-family: $ff-mono;
       font-size: 0.9rem;
-    font-weight:900;
-      color:$light;
+      font-weight: 900;
+      color: $light;
       margin-top: 0;
-
     }
 
     p {

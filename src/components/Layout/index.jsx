@@ -1,8 +1,9 @@
-/**
- * Exists to create the layout for each page when called
- * provides consistency in design
- * */
-
+/******************************************************************************
+ * Layout
+ *
+ *
+ * Provides wrapper for pages, includes header, footer && html head portions
+ *******************************************************************************/
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -25,14 +26,16 @@ const Layout = ({ children }) => {
       <Helmet>
         <meta charSet="utf-8" />
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/c38251b988.css"/>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/c38251b988.css"
+        />
 
-        <script src="https://use.fontawesome.com/c38251b988.js"/>
+        <script src="https://use.fontawesome.com/c38251b988.js" />
       </Helmet>
       <Header />
-        <main>{children}</main>
+      <main>{children}</main>
       <Footer />
-
     </div>
   );
 };

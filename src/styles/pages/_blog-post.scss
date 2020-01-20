@@ -59,10 +59,9 @@
   #date {
     font-size: 1.2rem;
     color: $light;
-    text-align:left;
-    font-family:$ff-mono
+    text-align: left;
+    font-family: $ff-mono;
   }
-
 
   ul {
     li {
@@ -82,11 +81,12 @@
       width: 40% !important;
       margin-left: 7%;
 
-    &:hover {
-      text-decoration: none;
-      background: $primary ;
+      &:hover {
+        text-decoration: none;
+        background: $primary;
       }
-  }}
+    }
+  }
   img {
     width: 75%;
     margin-left: 12%;
@@ -97,6 +97,6 @@
     width: 85%;
     font-family: $ff-sub;
     margin-left: 1.5rem;
-    font-size:1.25rem;
+    font-size: 1.25rem;
   }
 }

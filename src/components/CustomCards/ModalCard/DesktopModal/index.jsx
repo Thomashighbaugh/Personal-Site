@@ -1,12 +1,22 @@
+/******************************************************************************
+ * DesktopModal
+ *
+ *
+ * Skill modal focused on traditional development skills
+ *******************************************************************************/
 import React, { useState } from 'react';
-import Popup from "reactjs-popup";
+import Popup from 'reactjs-popup';
 import { FaDesktop, FaGitAlt } from 'react-icons/all';
 
 function DesktopModal() {
-
   return (
     <Popup
-      trigger={<button className="modal-button"> <FaDesktop size={70} /> </button>}
+      trigger={
+        <button className="modal-button">
+          {' '}
+          <FaDesktop size={70} />{' '}
+        </button>
+      }
       modal
     >
       {close => (

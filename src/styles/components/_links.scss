@@ -7,14 +7,14 @@
  *******************************************************************/
 
 .url:hover {
-    @extend %btn-3;
-    text-decoration: none;
+  @extend %btn-3;
+  text-decoration: none;
 }
 .url:active {
-    @extend %btn-3;
-    text-decoration: none;
+  @extend %btn-3;
+  text-decoration: none;
 }
 .url:visited {
-    @extend %btn-1;
-    text-decoration: none;
+  @extend %btn-1;
+  text-decoration: none;
 }

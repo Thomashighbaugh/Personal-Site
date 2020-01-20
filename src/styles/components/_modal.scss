@@ -7,26 +7,25 @@
  *******************************************************************/
 
 .modal {
-display: block;
+  display: block;
   background: $header-background;
 }
-.header{
+.header {
   background: $white;
   padding: 1rem !important;
   margin-bottom: 3rem !important;
 }
-.content{
+.content {
   display: inline-block;
   margin-top: 1rem;
-
 }
 .modal > .header {
   min-width: 100%;
-border-bottom: $light 0.5rem solid;
-margin-bottom: 0.5rem;
+  border-bottom: $light 0.5rem solid;
+  margin-bottom: 0.5rem;
   font-size: $fz-h2;
   text-align: center;
-font-family: $ff-sub;
+  font-family: $ff-sub;
   color: $primary;
   padding: 1rem;
 }
@@ -56,21 +55,21 @@ font-family: $ff-sub;
   border: 1px solid $white;
 }
 
-.modal-list{
+.modal-list {
   width: 25%;
   float: left;
   list-style: inside;
   position: relative;
   background: $white;
   border: 0.2rem solid $light;
-  .modal-list-heading{
+  .modal-list-heading {
     color: $primary;
     font-family: $ff-title;
     font-size: $fz-h4;
     border-bottom: $light solid 0.15rem;
     margin-bottom: 0;
   }
-  .modal-list-item{
+  .modal-list-item {
     color: $light;
     font-family: $ff-body;
     font-weight: 900;
@@ -78,27 +77,25 @@ font-family: $ff-sub;
   }
 }
 
-.actions{
+.actions {
   background: $white;
   border-radius: 10px;
   color: $light;
   font-family: $ff-body;
   font-weight: 900;
-  button{
+  button {
     @extend %btn-1;
   }
-
 }
 
-.modal-button{
+.modal-button {
   color: $white;
   width: 45%;
   border: $light solid 0.5rem;
   background: $gradient0;
-font-family: $ff-title;
+  font-family: $ff-title;
   font-size: 1.1rem;
-  padding:0;
-  padding-top:0.25rem;
+  padding: 0;
+  padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-
 }

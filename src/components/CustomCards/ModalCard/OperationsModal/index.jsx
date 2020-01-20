@@ -1,11 +1,22 @@
-import React, { useState } from 'react';
+/******************************************************************************
+ * OperationsModal
+ *
+ *
+ * Skill Modal focused on operations
+ *******************************************************************************/
+import React from 'react';
 import Popup from 'reactjs-popup';
 import { FiCpu } from 'react-icons/all';
 
 function OperationsModal() {
   return (
     <Popup
-      trigger={<button className="modal-button"> <FiCpu size={70}/> </button>}
+      trigger={
+        <button className="modal-button">
+          {' '}
+          <FiCpu size={70} />{' '}
+        </button>
+      }
       modal
     >
       {close => (

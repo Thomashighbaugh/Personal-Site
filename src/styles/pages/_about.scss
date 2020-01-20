@@ -19,48 +19,47 @@
       height: 28rem;
       width: 28%;
       margin: 1rem;
-      box-shadow: 0.25rem 0.25rem 2rem -1rem rgba(0, 0, 0, .05);
-      @include animate(flipInX, 2s, 70 );
-.card-title{
-  text-shadow: 0.25rem 0.25rem $light;
-}
-.socialIcons{
-  button{
-  @extend %btn-1;
-    padding:0;
-    margin-top: 0;
-}}
+      box-shadow: 0.25rem 0.25rem 2rem -1rem rgba(0, 0, 0, 0.05);
+      @include animate(flipInX, 2s, 70);
+      .card-title {
+        text-shadow: 0.25rem 0.25rem $light;
+      }
+      .socialIcons {
+        button {
+          @extend %btn-1;
+          padding: 0;
+          margin-top: 0;
+        }
+      }
       &:hover {
         background: $background3;
         background-size: cover;
-        box-shadow: 0 0 1rem -.25rem var(--background);
-.card-title{
-  text-shadow: 0.125rem 0.125rem $white;
-}.card-text{
-        color: $primary;
- }
+        box-shadow: 0 0 1rem -0.25rem var(--background);
+        .card-title {
+          text-shadow: 0.125rem 0.125rem $white;
+        }
+        .card-text {
+          color: $primary;
+        }
         .socialIcons {
           button {
             background: $gradient0;
-          color: $white;
+            color: $white;
           }
         }
-  .shoutout{
-    text-shadow: 0.125rem 0.125rem $white;
-  }
+        .shoutout {
+          text-shadow: 0.125rem 0.125rem $white;
+        }
       }
-
-
     }
   }
-.shoutout{
-  font-family: $ff-title;
-  font-size: 1.5rem;
-  text-align: center;
-  text-shadow: 0.2rem 0.2rem $light;
-
-}
-  .card-text{
+  .shoutout {
+    font-family: $ff-title;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem $light;
+  }
+  .card-text {
     font-size: 1.25rem;
     color: $light;
   }
@@ -73,66 +72,62 @@
     width: 100%;
     background: $white;
 
-
     button {
       padding: 0.125rem;
 
       width: auto;
       background: $white;
-      &:hover{
-        color:$white;
+      &:hover {
+        color: $white;
       }
     }
 
     #linkedin {
-      color:$white;
-      &:hover{
+      color: $white;
+      &:hover {
         color: $linkedin;
-background: $header-background;
+        background: $header-background;
       }
     }
 
     #instagram {
-      color:$white;
+      color: $white;
 
-      &:hover{
+      &:hover {
         color: $instagram;
-background: $header-background;
+        background: $header-background;
       }
     }
 
     #twitter {
-      color:$white;
-      &:hover{
-        color: $tw!important;
+      color: $white;
+      &:hover {
+        color: $tw !important;
         background: $header-background;
       }
     }
 
     #dribbble {
-      color:$white;
-      &:hover{
+      color: $white;
+      &:hover {
         color: $dribbble !important;
         background: $header-background;
-
       }
     }
 
     #github {
-      color:$white;
-      &:hover{
+      color: $white;
+      &:hover {
         color: $github !important;
         background: $header-background;
-
       }
     }
 
     #gitlab {
-      color:$white;
-      &:hover{
+      color: $white;
+      &:hover {
         color: $gitlab !important;
         background: $header-background;
-
       }
     }
   }
@@ -199,56 +194,55 @@ background: $header-background;
   }
 }
 
-.resume-card{
-  color:$light;
+.resume-card {
+  color: $light;
   font-family: $ff-sub;
   font-size: 1.5rem;
   text-align: center;
-  &:hover{
-    color:$primary
+  &:hover {
+    color: $primary;
   }
-  a{
-    button{
+  a {
+    button {
       width: 30%;
-margin-right: 20%;
+      margin-right: 20%;
     }
   }
 }
 .resume-card {
   a {
-margin-left: 20%;
+    margin-left: 20%;
     button {
       padding: 1rem;
       margin-top: 2rem;
-
     }
   }
 }
 
-.hr-blue{
+.hr-blue {
   border-bottom: $primary solid 0.5rem !important;
 }
 
-.Email-card{
-  button{
+.Email-card {
+  button {
     margin-left: 3%;
     margin-top: 1rem;
-padding: 1rem;
-    a{
-      color:$white;
+    padding: 1rem;
+    a {
+      color: $white;
       text-decoration: none;
-      font-size:1rem;
+      font-size: 1rem;
       font-family: $ff-title;
     }
   }
 }
-.phone-card{
-  button{
-   @extend %btn-1;
-    width:40%;
-    margin-left:28%;
+.phone-card {
+  button {
+    @extend %btn-1;
+    width: 40%;
+    margin-left: 28%;
     padding: 0.25rem;
-    a{
+    a {
       color: $white;
       font-family: $ff-title;
       text-decoration: none;

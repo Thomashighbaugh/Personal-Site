@@ -31,7 +31,6 @@ header {
       display: inline-block;
       font-size: 85%;
       width: 100%;
-
     }
     @include for-size(tablet-landscape) {
       margin-bottom: 2rem;
@@ -39,7 +38,6 @@ header {
       display: inline-grid;
       font-size: 75%;
       width: 100%;
-
     }
     @include for-size(tablet-portrait) {
       margin-bottom: 1.5rem;
@@ -47,7 +45,6 @@ header {
       display: inline-block;
       font-size: 65%;
       width: 100%;
-
     }
     @include for-size(phone-only) {
       margin-bottom: 1rem;
@@ -75,7 +72,7 @@ header {
 
       a {
         @extend %btn-1;
-        width: 100%;;
+        width: 100%;
       }
 
       a:hover {
@@ -119,11 +116,10 @@ header {
   @extend %btn-1;
   display: inline-block;
   border: $light solid 0.5rem;
-text-shadow: 0.16rem 0.16rem $light;
+  text-shadow: 0.16rem 0.16rem $light;
   &:hover {
     border: $bdr-button-hover;
     background: $gradient5;
-
   }
 
   @include for-size(big-desktop) {
@@ -139,12 +135,10 @@ text-shadow: 0.16rem 0.16rem $light;
   @include for-size(tablet-portrait) {
     width: 100%;
     font-size: 1.5rem;
-
   }
   @include for-size(phone-only) {
     width: 100% !important;
     font-size: 1.5rem;
-
   }
 }
 .links {

@@ -1,3 +1,9 @@
+/******************************************************************************
+ * AboutCard
+ *
+ *
+ * Generic card for about page that has its data passed in as called
+ *******************************************************************************/
 import React, { Component } from 'react';
 class AboutCard extends Component {
   render() {

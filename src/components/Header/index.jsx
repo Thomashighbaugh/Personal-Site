@@ -1,3 +1,9 @@
+/******************************************************************************
+ * Header
+ *
+ *
+ * Provides navigation bar at the top of the page
+*******************************************************************************/
 import React, { Component } from "react"
 import { Link } from "gatsby"
 class Header extends Component {
