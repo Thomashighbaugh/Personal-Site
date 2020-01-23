@@ -8,7 +8,7 @@ tags: html5, css3, resurgens, portfolio, design
 
 ### Subtitle
 
-![Resurgens III](/content/assets/resurgensIII.png)
+![Resurgens III](https://raw.githubusercontent.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site/master/content/assets/resurgensIII.png)
 
 ## Problem
 
