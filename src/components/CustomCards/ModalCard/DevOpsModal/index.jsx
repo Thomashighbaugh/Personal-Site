@@ -1,32 +1,47 @@
-/******************************************************************************
- * DevOps Modal
- *
- *
- * Skill modal focusing on Dev+Ops skill set
- *******************************************************************************/
-import React, { useState } from 'react';
-import Popup from 'reactjs-popup';
+import React from 'react';
+// reactstrap components
+import { Button, Modal } from 'reactstrap';
+import { Container } from 'react-bootstrap';
 import { FaGitAlt } from 'react-icons/all';
 
-function DevOpsModal() {
-  return (
-    <Popup
-      trigger={
-        <button className="modal-button">
-          {' '}
+class DevOpsModal extends React.Component {
+  state = {
+    DevOpsModal: false,
+  };
+  toggleModal = state => {
+    this.setState({
+      [state]: !this.state[state],
+    });
+  };
+  render() {
+    return (
+      <div>
+        {/* Button trigger modal */}
+        <button type="button" onClick={() => this.toggleModal('DevOpsModal')}>
           <FaGitAlt size={70} />
         </button>
-      }
-      modal
-    >
-      {close => (
-        <div className="modal">
-          <a className="close" onClick={close}>
-            &times;
-          </a>
-          <h3 className="header">DevOps</h3>
-
-          <div className="content">
+        {/* Modal */}
+        <Modal
+          className="modal modal-dialog-centered"
+          isOpen={this.state.DevOpsModal}
+          toggle={() => this.toggleModal('DevOpsModal')}
+        >
+          <div className="modal-header">
+            <h2 className="modal-title" id="DevOpsModalLabel">
+              DevOps
+            </h2>
+            <Button
+              aria-label="Close"
+              className="close"
+              data-dismiss="modal"
+              type="button"
+              onClick={() => this.toggleModal('DevOpsModal')}
+            >
+              <span aria-hidden={true}>X</span>
+            </Button>
+          </div>
+          <br />
+          <Container className="modal-body w-100 content">
             <ul className="modal-list">
               <h3 className="modal-list-heading">Clouds // Serverless</h3>
               <li className="modal-list-item">AWS</li>
@@ -56,58 +71,26 @@ function DevOpsModal() {
               <li className="modal-list-item">PostgreSQL</li>
               <li className="modal-list-item">Redis</li>
             </ul>
-          </div>
-          <br />
-          <div className="actions">
-            <Popup
-              trigger={<button className="button">Experience Driven</button>}
-              position="top center"
-              closeOnDocumentClick
-            >
-              <span>
-                All of these skills are born of my needs and subsequent
-                experimentation within my own network environment in which I
-                have several systems with varied use cases ranging from
-                workstations to hypervisors to network access points. Utilizing
-                these tools within my own environment, for my own operations,
-                gives me a robust understanding of them and their use cases as
-                well as their implementation in production.
-              </span>
-            </Popup>
-            <Popup
-              trigger={<button className="button">Linux Aware</button>}
-              position="top center"
-              closeOnDocumentClick
-            >
-              <span>
-                All of my development and operations efforts have occurred since
-                becoming a user of Linux within the desktop context that
-                expanded beyond the simple use case of daily OS use. Thus
-                implementation of the tools typical within DevOps and the
-                systems used in typical operations are already within the scope
-                of things I have considerable experience with thus having
-                already surmounted the learning curve.{' '}
-              </span>
-            </Popup>
 
-            <Popup
-              trigger={<button className="button"> Hobbyist at Heart</button>}
-              position="top center"
-              closeOnDocumentClick
+          </Container>
+          <br />
+          <Container className="modal-footer">
+            <Button
+              color="secondary"
+              data-dismiss="modal"
+              type="button"
+              onClick={() => this.toggleModal('DevOpsModal')}
             >
-              <span>
-                As strange as it may seem, I happen to find these technologies
-                highly interesting, setting up a homelab and experimenting with
-                them being a past time for me that has swelled to occupy a
-                consideration portion of my freetime. Thus I bring the interest
-                and dedication to my DevOps efforts that one expects more of a
-                hobbyist and as always I am enthusiastically thorough!{' '}
-              </span>
-            </Popup>
-          </div>
-        </div>
-      )}
-    </Popup>
-  );
+              Close
+            </Button>
+            <Button color="primary" type="button">
+              Save changes
+            </Button>
+          </Container>
+        </Modal>
+      </div>
+    );
+  }
 }
+
 export default DevOpsModal;

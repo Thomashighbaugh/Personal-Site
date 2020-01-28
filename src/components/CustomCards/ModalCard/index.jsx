@@ -12,7 +12,7 @@ import OperationsModal from './OperationsModal';
 import DesktopModal from './DesktopModal';
 function ModalCard() {
   return (
-    <div className="card">
+    <div className="card" id="modal-card">
       <div className="card-header">
         <h3 className="card-title">[skills]</h3>
         <h4 className="card-subtitle">
@@ -23,12 +23,16 @@ function ModalCard() {
       </div>
       <hr className="hr-blue" />
       {/*buttons*/}
-
+      <div className="modal-box">
       <WebDevModal />
       <DesktopModal />
-      <DevOpsModal />
-      <OperationsModal />
+      </div>
+      <div className="modal-box">
+    <OperationsModal />
+<DevOpsModal />
+      </div>
       {/*end buttons*/}
+
     </div>
   );
 }

@@ -67,6 +67,8 @@
       background: $white;
       text-align: left;
       margin: 0;
+      margin-bottom: 1rem;
+
       padding: 0;
       text-shadow: 0.25rem 0.25rem $light;
     }
@@ -74,15 +76,17 @@
       font-family: $ff-sub;
       color: $text;
       text-align: right;
-      font-size: $fz-h5;
       margin-top: 0;
       margin-bottom: 1rem;
+      font-size:1rem;
+
     }
   }
   hr {
     color: $primary;
     border-bottom: 0.5rem $light solid;
     outline: none;
+    margin-bottom: 0.15rem;
   }
   &:hover {
     hr {
@@ -99,6 +103,9 @@
       .card-subtitle {
         color: $primary;
         background: $light;
+        text-shadow: 0.1rem 0.1rem $white;
+        font-size:1rem;
+
       }
     }
     .card-body {
@@ -112,10 +119,15 @@
       .card-text {
         color: $primary;
         background: $light;
+        text-shadow: 0.125rem 0.125rem $white;
+
+
       }
       .techs {
         color: $primary;
         background: $light;
+        text-shadow: 0.125rem 0.125rem $white;
+
       }
     }
   }

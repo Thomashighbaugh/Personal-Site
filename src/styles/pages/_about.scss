@@ -31,22 +31,22 @@
           margin-top: 0;
         }
       }
+      text-shadow: 0.125rem 0.125rem $white;
+
       &:hover {
         background: $background3;
         background-size: cover;
         box-shadow: 0 0 1rem -0.25rem var(--background);
+        text-shadow: 0.125rem 0.125rem $white;
+
         .card-title {
           text-shadow: 0.125rem 0.125rem $white;
         }
         .card-text {
           color: $primary;
+          text-shadow: 0.125rem 0.125rem $white;
         }
-        .socialIcons {
-          button {
-            background: $gradient0;
-            color: $white;
-          }
-        }
+
         .shoutout {
           text-shadow: 0.125rem 0.125rem $white;
         }
@@ -64,17 +64,16 @@
     color: $light;
   }
   .social-button {
-    margin: 0;
     margin: 0.75rem;
     border-radius: 25px;
     padding: 0;
-
     width: 100%;
     background: $white;
 
     button {
       padding: 0.125rem;
-
+      background: $gradient0;
+      color: $white;
       width: auto;
       background: $white;
       &:hover {
@@ -164,6 +163,12 @@
 
 .about-card {
   padding: 1rem;
+  &:hover {
+    h4,
+    p {
+      text-shadow: 0.125rem 0.125rem $white !important;
+    }
+  }
   .card-header {
     background: $white;
   }
@@ -176,24 +181,36 @@
       background: $light;
       color: $primary;
       box-shadow: 0 0 1rem -0.25rem var(--background);
+      text-shadow: 0.125rem 0.125rem $white;
     }
   }
 }
 
-.modal-card {
+#modal-card {
   align-content: center;
   align-items: center;
-
+  button{
+    min-width:10rem;
+  }
   .card-header {
     margin-top: 0.5rem;
     padding-top: 0.5rem;
     padding-left: 1rem;
     hr {
       padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 }
-
+.modal-box {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  button {
+    margin-right: 1rem;
+    @extend %btn-1;
+  }
+}
 .resume-card {
   color: $light;
   font-family: $ff-sub;

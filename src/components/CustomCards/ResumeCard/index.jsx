@@ -12,7 +12,7 @@ class ResumeCard extends Component {
     return (
       <div className="card resume-card">
         <div className="card-header">
-          <h3 className="card-title">[Resume]</h3>
+          <h3 className="card-title">[resume]</h3>
           <h4 className="card-subtitle">check out my resume!</h4>
           <hr />
         </div>
@@ -26,7 +26,7 @@ class ResumeCard extends Component {
           href="content/assets/cv_highbaugh_latex.pdf"
         >
           <button className="nav-btn">
-            <FaListAlt size={60} />{' '}
+            <FaListAlt size={70} />{' '}
           </button>
         </a>
       </div>

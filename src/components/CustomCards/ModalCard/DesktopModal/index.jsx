@@ -1,32 +1,47 @@
-/******************************************************************************
- * DesktopModal
- *
- *
- * Skill modal focused on traditional development skills
- *******************************************************************************/
-import React, { useState } from 'react';
-import Popup from 'reactjs-popup';
-import { FaDesktop, FaGitAlt } from 'react-icons/all';
+import React from 'react';
+// reactstrap components
+import { Button, Modal } from 'reactstrap';
+import { Container } from 'react-bootstrap';
+import { FaDesktop} from 'react-icons/all';
 
-function DesktopModal() {
-  return (
-    <Popup
-      trigger={
-        <button className="modal-button">
-          {' '}
-          <FaDesktop size={70} />{' '}
+class DesktopModal extends React.Component {
+  state = {
+    DesktopModal: false,
+  };
+  toggleModal = state => {
+    this.setState({
+      [state]: !this.state[state],
+    });
+  };
+  render() {
+    return (
+      <div>
+        {/* Button trigger modal */}
+        <button type="button" onClick={() => this.toggleModal('DesktopModal')}>
+          <FaDesktop size={70} />
         </button>
-      }
-      modal
-    >
-      {close => (
-        <div className="modal">
-          <a className="close" onClick={close}>
-            &times;
-          </a>
-          <h3 className="header"> Desktop Software Development</h3>
-
-          <div className="content">
+        {/* Modal */}
+        <Modal
+          className="modal modal-dialog-centered"
+          isOpen={this.state.DesktopModal}
+          toggle={() => this.toggleModal('DesktopModal')}
+        >
+          <div className="modal-header">
+            <h2 className="modal-title" id="DesktopModalLabel">
+              DevOps
+            </h2>
+            <Button
+              aria-label="Close"
+              className="close"
+              data-dismiss="modal"
+              type="button"
+              onClick={() => this.toggleModal('DesktopModal')}
+            >
+              <span aria-hidden={true}>X</span>
+            </Button>
+          </div>
+          <br />
+          <Container className="modal-body w-100 content">
             <ul className="modal-list">
               <h3 className="modal-list-heading">Languages && Platforms</h3>
               <li className="modal-list-item">C</li>
@@ -55,57 +70,25 @@ function DesktopModal() {
               <li className="modal-list-item">GTK</li>
               <li className="modal-list-item">Zenity</li>
             </ul>
-          </div>
+          </Container>
           <br />
-          <div className="actions">
-            <Popup
-              trigger={<button className="button"> Cross Platform </button>}
-              position="top center"
-              closeOnDocumentClick
+          <Container className="modal-footer">
+            <Button
+              color="secondary"
+              data-dismiss="modal"
+              type="button"
+              onClick={() => this.toggleModal('DesktopModal')}
             >
-              <span>
-                Due to the variance within Linux alone, I try to insure that my
-                work products are easily utilized in as wide a context as
-                possible as a matter of design and implementation thus enabling
-                as many users as possible to use them without additional
-                configuration.{' '}
-              </span>
-            </Popup>
-            <Popup
-              trigger={
-                <button className="button"> Functional Commenting</button>
-              }
-              position="top center"
-              closeOnDocumentClick
-            >
-              <span>
-                As with web development, I cannot stand looking at code where
-                the functionality is unknown to other developers because of a
-                lack of commenting. Thus I try to insure that comments are
-                placed at least above various sections to describe the
-                functionality of that block to anyone else maintaining it.{' '}
-              </span>
-            </Popup>
-
-            <Popup
-              trigger={<button className="button"> Work Ethic</button>}
-              position="top center"
-              closeOnDocumentClick
-            >
-              <span>
-                All of my sites that are built utilizing front end technologies
-                are still subject to the work ethic that I bring to teams and my
-                efforts freelancing. This work ethic is defined by thoroughness,
-                as in I don't cut corners and will put in the extra time for an
-                optimal and optimized result. This makes the website a more
-                reliable and meaningful work product, with better documentation
-                and commenting, that is easier to maintain and upgrade.
-              </span>
-            </Popup>
-          </div>
-        </div>
-      )}
-    </Popup>
-  );
+              Close
+            </Button>
+            <Button color="primary" type="button">
+              Save changes
+            </Button>
+          </Container>
+        </Modal>
+      </div>
+    );
+  }
 }
+
 export default DesktopModal;

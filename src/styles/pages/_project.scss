@@ -60,6 +60,7 @@
         padding: 1rem;
         text-align: center;
         font-family: $ff-title;
+        text-shadow: 0.25rem 0.25rem $light;
       }
 
       #sub {
@@ -70,7 +71,9 @@
         border: $primary solid 0.5rem;
         background: $light;
         color: $white;
-
+        .blurb-title {
+          text-shadow: 0.18rem 0.18rem $white;
+        }
         p {
           background: $light;
           color: $white;
@@ -97,6 +100,9 @@
       background: $light;
       color: $white;
       border: $primary solid 0.5rem;
+      .link-heading {
+        text-shadow: 0.18rem 0.18rem $white;
+      }
       p {
         color: $white;
       }
@@ -111,6 +117,7 @@
       color: $primary;
       text-decoration: none;
       width: 100%;
+      text-shadow: 0.25rem 0.25rem $light;
     }
 
     small {

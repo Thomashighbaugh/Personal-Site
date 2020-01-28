@@ -13,7 +13,7 @@ class PhoneCard extends Component {
     return (
       <div className="card phone-card">
         <div className="card-header">
-          <h3 className="card-title">[Phone]</h3>
+          <h3 className="card-title">[phone]</h3>
           <h4 className="card-subtitle">interested in having me on your team? Call me!</h4>
           <hr />
         </div>
