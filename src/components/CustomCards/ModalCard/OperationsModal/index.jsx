@@ -1,20 +1,16 @@
-import React from "react";
+import React from 'react';
 // reactstrap components
-import {
-  Button,
-  Modal,
-
-} from "reactstrap";
+import { Button, Modal } from 'reactstrap';
 import { Container } from 'react-bootstrap';
-import {  FiCpu } from 'react-icons/all';
+import { FiCpu } from 'react-icons/all';
 
 class OperationsModal extends React.Component {
   state = {
-    OperationsModal: false
+    OperationsModal: false,
   };
   toggleModal = state => {
     this.setState({
-      [state]: !this.state[state]
+      [state]: !this.state[state],
     });
   };
   render() {
@@ -23,16 +19,15 @@ class OperationsModal extends React.Component {
         {/* Button trigger modal */}
         <button
           type="button"
-          onClick={() => this.toggleModal("OperationsModal")}
+          onClick={() => this.toggleModal('OperationsModal')}
         >
           <FiCpu size={70} />{' '}
-
         </button>
         {/* Modal */}
         <Modal
           className="modal modal-dialog-centered"
           isOpen={this.state.OperationsModal}
-          toggle={() => this.toggleModal("OperationsModal")}
+          toggle={() => this.toggleModal('OperationsModal')}
         >
           <div className="modal-header">
             <h2 className="modal-title" id="OperationsModalLabel">
@@ -43,12 +38,12 @@ class OperationsModal extends React.Component {
               className="close"
               data-dismiss="modal"
               type="button"
-              onClick={() => this.toggleModal("OperationsModal")}
+              onClick={() => this.toggleModal('OperationsModal')}
             >
               <span aria-hidden={true}>X</span>
             </Button>
           </div>
-          <br/>
+          <br />
           <Container className="modal-body w-100 content">
             <ul className="modal-list">
               <h3 className="modal-list-heading">Linux</h3>
@@ -81,13 +76,13 @@ class OperationsModal extends React.Component {
               <li className="modal-list-item">Apache Mesos</li>
             </ul>
           </Container>
-          <br/>
+          <br />
           <Container className="modal-footer">
             <Button
               color="secondary"
               data-dismiss="modal"
               type="button"
-              onClick={() => this.toggleModal("OperationsModal")}
+              onClick={() => this.toggleModal('OperationsModal')}
             >
               Close
             </Button>

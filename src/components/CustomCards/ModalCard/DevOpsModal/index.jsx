@@ -71,7 +71,6 @@ class DevOpsModal extends React.Component {
               <li className="modal-list-item">PostgreSQL</li>
               <li className="modal-list-item">Redis</li>
             </ul>
-
           </Container>
           <br />
           <Container className="modal-footer">

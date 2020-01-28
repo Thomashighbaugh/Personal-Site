@@ -8,11 +8,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  min-width: 50vw;
-  min-height: 50%;
-  padding: 1rem;
+  right:0;
+  bottom:0;
+  min-width: 100vw;
+  height:100%;
+padding: 1rem;
 
 }
 
@@ -124,4 +124,8 @@ margin: 25%;
   button {
     @extend %btn-1;
   }
+}
+
+.modal-button {
+
 }

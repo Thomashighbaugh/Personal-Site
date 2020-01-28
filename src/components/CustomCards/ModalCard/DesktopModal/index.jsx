@@ -2,7 +2,7 @@ import React from 'react';
 // reactstrap components
 import { Button, Modal } from 'reactstrap';
 import { Container } from 'react-bootstrap';
-import { FaDesktop} from 'react-icons/all';
+import { FaDesktop } from 'react-icons/all';
 
 class DesktopModal extends React.Component {
   state = {

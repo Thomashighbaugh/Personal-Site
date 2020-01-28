@@ -24,15 +24,14 @@ function ModalCard() {
       <hr className="hr-blue" />
       {/*buttons*/}
       <div className="modal-box">
-      <WebDevModal />
-      <DesktopModal />
+        <WebDevModal />
+        <DesktopModal />
       </div>
       <div className="modal-box">
-    <OperationsModal />
-<DevOpsModal />
+        <OperationsModal />
+        <DevOpsModal />
       </div>
       {/*end buttons*/}
-
     </div>
   );
 }
