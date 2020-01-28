@@ -24,17 +24,16 @@ footer {
 
   @include for-size(desktop) {
     font-size: 2rem !important;
-    margin-left: 35%;
-    margin-right: 35%;
+
   }
 
   @include for-size(tablet-landscape) {
     font-size: 2rem;
+    width: 100%;
   }
 
   @include for-size(phone-only) {
     font-size: 1rem !important;
-    margin-left: 55%;
   }
 }
 

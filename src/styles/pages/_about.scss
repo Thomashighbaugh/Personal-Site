@@ -14,16 +14,51 @@
   .row {
     display: flex;
     margin-left: 8%;
+    @include for-size(desktop) {
+      padding: 0;
+    }
+
+    @include for-size(tablet-landscape) {
+      display: block;
+      overflow: hidden;
+      margin-left: 7%;
+      padding: 0;
+      font-size: 2rem;
+    }
+
+    @include for-size(phone-only) {
+    }
 
     .card {
       height: 28rem;
       width: 28%;
       margin: 1rem;
       box-shadow: 0.25rem 0.25rem 2rem -1rem rgba(0, 0, 0, 0.05);
+
+      @include for-size(desktop) {
+        width: 26%;
+        margin: 1rem;
+        padding: 0;
+      }
+
+      @include for-size(tablet-landscape) {
+        display: block;
+        overflow: hidden;
+        min-width: 90%;
+        margin: 1rem;
+        padding: 0;
+      }
+
+      @include for-size(phone-only) {
+        width: 100%;
+      }
+
       @include animate(flipInX, 2s, 70);
+
       .card-title {
         text-shadow: 0.25rem 0.25rem $light;
       }
+
       .socialIcons {
         button {
           @extend %btn-1;
@@ -69,13 +104,21 @@
     padding: 0;
     width: 100%;
     background: $white;
+    @include for-size(tablet-landscape) {
+      margin: 4rem;
+    }
+    @include for-size(tablet-portrait) {
+    }
+    @include for-size(phone-only) {
+      display: none;
+    }
 
     button {
-      padding: 0.125rem;
+      padding: 1rem;
       background: $gradient0;
       color: $white;
-      width: auto;
       background: $white;
+
       &:hover {
         color: $white;
       }
@@ -146,6 +189,8 @@
   }
   img {
     height: 25rem;
+    width: 99%;
+    margin: 0.125%;
   }
   &:hover {
     background: $background3 !important;
@@ -189,13 +234,16 @@
 #modal-card {
   align-content: center;
   align-items: center;
-  button{
-    min-width:10rem;
+
+  button {
+    min-width: 10rem;
   }
+
   .card-header {
     margin-top: 0.5rem;
     padding-top: 0.5rem;
     padding-left: 1rem;
+
     hr {
       padding-bottom: 0;
       margin-bottom: 0;
@@ -245,6 +293,21 @@
     margin-left: 3%;
     margin-top: 1rem;
     padding: 1rem;
+    @include for-size(desktop) {
+    }
+
+    @include for-size(tablet-landscape) {
+      overflow: hidden;
+      margin-left: 7%;
+      padding: 3rem;
+      font-size: 2rem;
+      width: 24%;
+
+    }
+
+    @include for-size(phone-only) {
+    }
+
     a {
       color: $white;
       text-decoration: none;
@@ -258,7 +321,8 @@
     @extend %btn-1;
     width: 40%;
     margin-left: 28%;
-    padding: 0.25rem;
+    padding: 2rem;
+
     a {
       color: $white;
       font-family: $ff-title;
