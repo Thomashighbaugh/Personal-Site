@@ -14,18 +14,21 @@ class PhoneCard extends Component {
       <div className="card phone-card">
         <div className="card-header">
           <h3 className="card-title">[phone]</h3>
-          <h4 className="card-subtitle">interested in having me on your team? Call me!</h4>
+          <h4 className="card-subtitle">
+            interested in having me on your team? Call me!
+          </h4>
           <hr />
         </div>
-        <hr className="hr-blue"/>
+        <hr className="hr-blue" />
         <div className="card-body">
-          <p className="techs">
-            works on cell phones or VOIP
-          </p>
-
+          <p className="techs">works on cell phones or VOIP</p>
         </div>
-        <br/>
-        <button className="nav-btn`"><Obfuscate tel="510-907-0654"><FaPhoneSquare size={90} /> </Obfuscate></button>
+        <br />
+        <button className="nav-btn`">
+          <Obfuscate tel="510-907-0654">
+            <FaPhoneSquare size={90} />{' '}
+          </Obfuscate>
+        </button>
       </div>
     );
   }

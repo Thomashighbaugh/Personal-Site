@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 // reactstrap components
 import {
   Button,
@@ -13,36 +13,32 @@ import {
   InputGroup,
   Modal,
   Row,
-  Col
-} from "reactstrap";
+  Col,
+} from 'reactstrap';
 import { Container } from 'react-bootstrap';
 import { FaPenSquare } from 'react-icons/all';
 
 class Modals extends React.Component {
   state = {
-    WebDevModal: false
+    WebDevModal: false,
   };
   toggleModal = state => {
     this.setState({
-      [state]: !this.state[state]
+      [state]: !this.state[state],
     });
   };
   render() {
     return (
       <div>
         {/* Button trigger modal */}
-        <button
-          type="button"
-          onClick={() => this.toggleModal("WebDevModal")}
-        >
+        <button type="button" onClick={() => this.toggleModal('WebDevModal')}>
           <FaPenSquare size={70} />{' '}
-
         </button>
         {/* Modal */}
         <Modal
           className="modal modal-dialog-centered"
           isOpen={this.state.WebDevModal}
-          toggle={() => this.toggleModal("WebDevModal")}
+          toggle={() => this.toggleModal('WebDevModal')}
         >
           <div className="modal-header">
             <h2 className="modal-title" id="WebDevModalLabel">
@@ -53,12 +49,12 @@ class Modals extends React.Component {
               className="close"
               data-dismiss="modal"
               type="button"
-              onClick={() => this.toggleModal("WebDevModal")}
+              onClick={() => this.toggleModal('WebDevModal')}
             >
               <span aria-hidden={true}>X</span>
             </Button>
           </div>
-          <br/>
+          <br />
           <Container className="modal-body content w-100">
             <ul className="modal-list">
               <h3 className="modal-list-heading">Languages</h3>
@@ -94,13 +90,13 @@ class Modals extends React.Component {
               <li className="modal-list-item">SonarLint</li>
             </ul>
           </Container>
-          <br/>
+          <br />
           <Container className="modal-footer">
             <Button
               color="secondary"
               data-dismiss="modal"
               type="button"
-              onClick={() => this.toggleModal("WebDevModal")}
+              onClick={() => this.toggleModal('WebDevModal')}
             >
               Close
             </Button>
