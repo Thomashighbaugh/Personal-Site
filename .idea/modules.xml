@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ThomasLeonHighbaugh-Personal-Site.iml" filepath="$PROJECT_DIR$/.idea/ThomasLeonHighbaugh-Personal-Site.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/portfolio-redux-app.iml" filepath="$PROJECT_DIR$/.idea/portfolio-redux-app.iml" />
     </modules>
   </component>
 </project>
