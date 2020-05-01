@@ -1,47 +1,43 @@
-import { createStore, applyMiddleware, compose } from 'redux';
-import { devTools } from 'redux-devtools';
-import { reduxReactRouter } from 'redux-router';
-import thunk from 'redux-thunk';
-import createHistory from 'history/lib/createBrowserHistory';
-import createLogger from 'redux-logger';
-import promiseMiddleware from '../api/promiseMiddleware';
-import rootReducer from '../reducers';
+import { createStore, applyMiddleware, compose } from "redux";
+import { devTools } from "redux-devtools";
+import { reduxReactRouter } from "redux-router";
+import thunk from "redux-thunk";
+import createHistory from "history/lib/createBrowserHistory";
+import createLogger from "redux-logger";
+import promiseMiddleware from "../api/promiseMiddleware";
+import rootReducer from "../reducers";
 
 const middlewareBuilder = () => {
-
   let middleware = {};
-  let universalMiddleware = [thunk,promiseMiddleware];
+  let universalMiddleware = [thunk, promiseMiddleware];
   let allComposeElements = [];
-  
-  if(process.browser){
-    if(process.env.NODE_ENV === 'production'){
+
+  if (process.browser) {
+    if (process.env.NODE_ENV === "production") {
       middleware = applyMiddleware(...universalMiddleware);
       allComposeElements = [
         middleware,
         reduxReactRouter({
-          createHistory
-        })
-      ]
-    }else{
-      middleware = applyMiddleware(...universalMiddleware,createLogger());
+          createHistory,
+        }),
+      ];
+    } else {
+      middleware = applyMiddleware(...universalMiddleware, createLogger());
       allComposeElements = [
         middleware,
         reduxReactRouter({
-          createHistory
+          createHistory,
         }),
-        devTools()
-      ]
+        devTools(),
+      ];
     }
-  }else{
+  } else {
     middleware = applyMiddleware(...universalMiddleware);
-    allComposeElements = [
-      middleware
-    ]
+    allComposeElements = [middleware];
   }
 
   return allComposeElements;
-
-}
+};
 
 const finalCreateStore = compose(...middlewareBuilder())(createStore);
 
@@ -50,8 +46,8 @@ export default function configureStore(initialState) {
 
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
-    module.hot.accept('../reducers', () => {
-      const nextRootReducer = require('../reducers');
+    module.hot.accept("../reducers", () => {
+      const nextRootReducer = require("../reducers");
       store.replaceReducer(nextRootReducer);
     });
   }

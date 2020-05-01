@@ -1,24 +1,23 @@
-import request from 'axios';
+import request from "axios";
 
-export const INVALIDATE_REPOS = 'INVALIDATE_REPOS';
-export const REPOS_GET = 'REPOS_GET';
-export const REPOS_GET_REQUEST = 'REPOS_GET_REQUEST';
-export const REPOS_GET_SUCCESS = 'REPOS_GET_SUCCESS';
-export const REPOS_GET_FAILURE = 'REPOS_GET_FAILURE';
-
+export const INVALIDATE_REPOS = "INVALIDATE_REPOS";
+export const REPOS_GET = "REPOS_GET";
+export const REPOS_GET_REQUEST = "REPOS_GET_REQUEST";
+export const REPOS_GET_SUCCESS = "REPOS_GET_SUCCESS";
+export const REPOS_GET_FAILURE = "REPOS_GET_FAILURE";
 
 export function invalidateRepos(repos) {
   return {
     type: INVALIDATE_REPOS,
-    repos
+    repos,
   };
 }
 
 export function fetchRepos() {
   return {
     type: REPOS_GET,
-    promise: request.get(`https://api.github.com/users/Thomashighbaugh/repos`)
-  }
+    promise: request.get(`https://api.github.com/users/Thomashighbaugh/repos`),
+  };
 }
 
 function shouldFetchRepos(state) {

@@ -1,17 +1,23 @@
 import {
-  INVALIDATE_REPOS, REPOS_GET_REQUEST, REPOS_GET_SUCCESS, REPOS_GET_FAILURE
-} from '../actions/about';
+  INVALIDATE_REPOS,
+  REPOS_GET_REQUEST,
+  REPOS_GET_SUCCESS,
+  REPOS_GET_FAILURE,
+} from "../actions/about";
 
-export function reposByUser(state = {
-  error: {},
-  isFetching: false,
-  didInvalidate: false,
-  results: []
-}, action) {
+export function reposByUser(
+  state = {
+    error: {},
+    isFetching: false,
+    didInvalidate: false,
+    results: [],
+  },
+  action
+) {
   switch (action.type) {
     case INVALIDATE_REPOS:
       return Object.assign({}, state, {
-        didInvalidate: true
+        didInvalidate: true,
       });
     case REPOS_GET_REQUEST:
       return Object.assign({}, state, {
@@ -20,24 +26,24 @@ export function reposByUser(state = {
       });
     case REPOS_GET_SUCCESS:
       let data = [];
-      if(action.req && action.req.data){
-        data = action.req.data.sort((a,b) => {
+      if (action.req && action.req.data) {
+        data = action.req.data.sort((a, b) => {
           return new Date(b.pushed_at) - new Date(a.pushed_at);
         });
         data.length = 5;
       }
       return Object.assign({}, state, {
-          isFetching: false,
-          results: data,
-          lastUpdated: new Date()
+        isFetching: false,
+        results: data,
+        lastUpdated: new Date(),
       });
     case REPOS_GET_FAILURE:
       return Object.assign({}, state, {
         isFetching: false,
-        error : {
+        error: {
           status: action.error.status,
-          statusText : action.error.statusText
-        }
+          statusText: action.error.statusText,
+        },
       });
     default:
       return state;

@@ -1,23 +1,24 @@
-import React from 'react';
-import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
+import React from "react";
+import { DevTools, DebugPanel, LogMonitor } from "redux-devtools/lib/react";
 
 /*
-* Redux Dev Tools Window
+ * Redux Dev Tools Window
  * Based on https://gist.github.com/tlrobinson/1e63d15d3e5f33410ef7#gistcomment-1560218.
  */
 export default function createDevToolsWindow(store) {
   // Give it a name so it reuses the same window
-  const name = 'Redux DevTools';
+  const name = "Redux DevTools";
   const win = window.open(
     null,
     name,
-    'menubar=yes,location=yes,resizable=yes,scrollbars=no,status=yes,width=450,height=600'
+    "menubar=yes,location=yes,resizable=yes,scrollbars=no,status=yes,width=450,height=600"
   );
 
   if (!win) {
-    console.error( // eslint-disable-line no-console
-      'Couldn\'t open Redux DevTools due to a popup blocker. ' +
-      'Please disable the popup blocker for the current page.'
+    console.error(
+      // eslint-disable-line no-console
+      "Couldn't open Redux DevTools due to a popup blocker. " +
+        "Please disable the popup blocker for the current page."
     );
     return;
   }
@@ -29,10 +30,14 @@ export default function createDevToolsWindow(store) {
   win.document.title = name;
 
   // Wait a little bit for it to reload, then render.
-  setTimeout(() => React.render(
-    <DebugPanel top right bottom left>
-      <DevTools store={store} monitor={LogMonitor} />
-    </DebugPanel>,
-    win.document.body.appendChild(document.createElement('div'))
-  ), 10);
+  setTimeout(
+    () =>
+      React.render(
+        <DebugPanel top right bottom left>
+          <DevTools store={store} monitor={LogMonitor} />
+        </DebugPanel>,
+        win.document.body.appendChild(document.createElement("div"))
+      ),
+    10
+  );
 }
