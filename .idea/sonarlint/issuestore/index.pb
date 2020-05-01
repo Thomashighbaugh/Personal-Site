@@ -21,8 +21,6 @@ K
 src/common/api/portfolio.js,e/1/e12b83c040310cc7e4001808b396d36e66c8c610
 S
 #src/common/api/promiseMiddleware.js,1/3/136eb0b8f5e746386d11b773053f572a162c80c2
-;
-.travis.yml,d/e/dea01dd89a3b602828e630677fde5d77c06441c8
 <
 package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 A
@@ -81,3 +79,6 @@ M
 src/common/components/Home.js,c/7/c7ccdd16bcfd71b19dfe5d41b396bda4fd49338e
 @
 styles/index.css,f/b/fb7f0b3ad4eb1b196be9ae9692e6835a12d7028d
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
