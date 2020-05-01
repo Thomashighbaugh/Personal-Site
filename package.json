@@ -1,17 +1,17 @@
 {
-  "name": "portfolio-redux-app",
-  "version": "0.0.1",
-  "description": "A portfolio template built with Redux and React",
+  "name": "tlh-portfolio-site",
+  "version": "0.6.0",
+  "description": "Please, please, please hire me!",
   "scripts": {
     "slate": "rm -rf node_modules && npm install",
     "clean": "rm -rf dist",
     "start": "node src/server/index.js --progress --colors --profile",
-    "build": "npm run clean && NODE_ENV=production webpack -p --progress --colors --profile",
+    "build": "NODE_ENV=production webpack -p --progress --colors --profile",
     "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caljrimmer/portfolio-redux-app.git"
+    "url": "git+https://github.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site.git"
   },
   "license": "MIT",
   "dependencies": {
