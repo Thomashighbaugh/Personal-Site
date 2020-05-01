@@ -9,9 +9,7 @@ var webpackConfig = {
     filename: "bundle.js",
     publicPath: "/static/",
   },
-  plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
-  ],
+  plugins: [new webpack.optimize.OccurenceOrderPlugin()],
 };
 
 if (process.env.NODE_ENV === "production") {
