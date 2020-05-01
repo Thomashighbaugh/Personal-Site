@@ -11,7 +11,6 @@ var webpackConfig = {
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.NoErrorsPlugin(),
   ],
 };
 
