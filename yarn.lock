@@ -2213,14 +2213,7 @@ react-proxy@^1.1.7:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
 
-react-redux@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-2.1.2.tgz#4b26e02a7e049d1dc8ba5200999a3e153b28afc7"
-  integrity sha1-SybgKn4EnR3IulIAmZo+FTsor8c=
-  dependencies:
-    invariant "^2.0.0"
-
-react-redux@^3.0.0:
+react-redux@^3.0.0, react-redux@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-3.1.2.tgz#2a888b124e9d01144853612acee19f81d498a836"
   integrity sha1-KoiLEk6dARRIU2EqzuGfgdSYqDY=
