@@ -1,7 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from "react";
 
 class Counter extends Component {
-
   constructor(props) {
     super(props);
   }
@@ -11,16 +10,16 @@ class Counter extends Component {
     return (
       <div className="posts">
         <h1>Counter</h1>
-        <p>This counter is here to show the state is conserved as you navigate through the app.</p> 
         <p>
-          <b>Counter: {counter} times</b>
-          {' '}
-          <button onClick={incrementCounter}>+</button>
-          {' '}
+          This counter is here to show the state is conserved as you navigate
+          through the app.
+        </p>
+        <p>
+          <b>Counter: {counter} times</b>{" "}
+          <button onClick={incrementCounter}>+</button>{" "}
           <button onClick={decrementCounter}>-</button>
         </p>
       </div>
-      
     );
   }
 }
@@ -30,7 +29,7 @@ Counter.propTypes = {
   incrementIfOdd: PropTypes.func.isRequired,
   incrementAsync: PropTypes.func.isRequired,
   decrementCounter: PropTypes.func.isRequired,
-  counter: PropTypes.number.isRequired
+  counter: PropTypes.number.isRequired,
 };
 
 export default Counter;

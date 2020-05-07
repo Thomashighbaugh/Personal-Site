@@ -1,6 +1,6 @@
-import React, { Component, PropTypes } from 'react';
-import Header from './todo/Header';
-import Section from './todo/Section';
+import React, { Component, PropTypes } from "react";
+import Header from "./todo/Header";
+import Section from "./todo/Section";
 
 class Todo extends Component {
   render() {
@@ -15,7 +15,7 @@ class Todo extends Component {
 }
 
 Todo.propTypes = {
-  todos: PropTypes.array.isRequired
+  todos: PropTypes.array.isRequired,
 };
 
 export default Todo;

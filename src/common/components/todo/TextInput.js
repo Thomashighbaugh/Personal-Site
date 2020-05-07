@@ -1,11 +1,11 @@
-import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames';
+import React, { Component, PropTypes } from "react";
+import classnames from "classnames";
 
 class TextInput extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      text: this.props.text || ''
+      text: this.props.text || "",
     };
   }
 
@@ -14,7 +14,7 @@ class TextInput extends Component {
     if (e.which === 13) {
       this.props.onSave(text);
       if (this.props.newTodo) {
-        this.setState({ text: '' });
+        this.setState({ text: "" });
       }
     }
   }
@@ -31,10 +31,10 @@ class TextInput extends Component {
 
   render() {
     return (
-      <input className={
-        classnames({
+      <input
+        className={classnames({
           edit: this.props.editing,
-          'new-todo': this.props.newTodo
+          "new-todo": this.props.newTodo,
         })}
         type="text"
         placeholder={this.props.placeholder}
@@ -42,7 +42,8 @@ class TextInput extends Component {
         value={this.state.text}
         onBlur={this.handleBlur.bind(this)}
         onChange={this.handleChange.bind(this)}
-        onKeyDown={this.handleSubmit.bind(this)} />
+        onKeyDown={this.handleSubmit.bind(this)}
+      />
     );
   }
 }
@@ -52,7 +53,7 @@ TextInput.propTypes = {
   text: PropTypes.string,
   placeholder: PropTypes.string,
   editing: PropTypes.bool,
-  newTodo: PropTypes.bool
+  newTodo: PropTypes.bool,
 };
 
 export default TextInput;

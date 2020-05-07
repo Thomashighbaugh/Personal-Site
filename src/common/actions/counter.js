@@ -1,23 +1,23 @@
-export const SET_COUNTER = 'SET_COUNTER';
-export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
-export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
+export const SET_COUNTER = "SET_COUNTER";
+export const INCREMENT_COUNTER = "INCREMENT_COUNTER";
+export const DECREMENT_COUNTER = "DECREMENT_COUNTER";
 
 export function setCounter(value) {
   return {
     type: SET_COUNTER,
-    payload: value
+    payload: value,
   };
 }
 
 export function incrementCounter() {
   return {
-    type: INCREMENT_COUNTER
+    type: INCREMENT_COUNTER,
   };
 }
 
 export function decrementCounter() {
   return {
-    type: DECREMENT_COUNTER
+    type: DECREMENT_COUNTER,
   };
 }
 
@@ -32,7 +32,7 @@ export function incrementIfOdd() {
 }
 
 export function incrementAsync(delay = 1000) {
-  return dispatch => {
+  return (dispatch) => {
     setTimeout(() => {
       dispatch(increment());
     }, delay);
