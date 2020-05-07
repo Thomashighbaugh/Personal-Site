@@ -7,7 +7,7 @@ import webpackHotMiddleware from "webpack-hot-middleware";
 
 import React from "react";
 import { RoutingContext, match } from "react-router";
-import { Provider } from "react-redux";
+import  Provider  from "react-redux";
 import createLocation from "history/lib/createLocation";
 import { fetchComponentDataBeforeRender } from "../common/api/fetchComponentDataBeforeRender";
 
@@ -18,7 +18,7 @@ const app = express();
 const renderFullPage = (html, initialState) => {
   return `
     <!doctype html>
-    <html>
+    <html lang="en">
       <head>
         <meta charset="utf-8">
         <title>Thomas Leon Highbaugh</title>
