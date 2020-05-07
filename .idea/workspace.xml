@@ -33,8 +33,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7474770-2e18-4bef-a56d-71d18c65c26b" name="Default Changelist" comment="try again">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1bayI150psaHRQv8TxcQ6KA4zHS" />
   <component name="ProjectLevelVcsManager">
@@ -74,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588884415680</updated>
       <workItem from="1588884416956" duration="623000" />
-      <workItem from="1588893195143" duration="374000" />
+      <workItem from="1588893195143" duration="871000" />
     </task>
     <task id="LOCAL-00001" summary="try again">
       <created>1588884457412</created>
@@ -97,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588885004594</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="try again">
+      <created>1588893575299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588893575299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,9 +130,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="try again" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="366" width="808" height="506" key="Vcs.Push.Dialog.v2" timestamp="1588884570013">
+    <state x="560" y="424" width="808" height="506" key="Vcs.Push.Dialog.v2" timestamp="1588893785220">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="560" y="366" width="808" height="506" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1588884570013" />
+    <state x="560" y="424" width="808" height="506" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1588893785220" />
   </component>
 </project>
