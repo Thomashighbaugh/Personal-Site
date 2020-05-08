@@ -21,7 +21,7 @@
     "redux-router": "^2.1.2",
     "react-redux": "^3.1.2",
     "redux": "^3.0.0",
-    "redux-thunk": "^0.1.0",
+    "redux-thunk": "^2.3.0",
     "history": "1.13.0",
     "classnames": "^2.1.5",
     "axios": "^0.7.0"
