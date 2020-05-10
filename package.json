@@ -33,7 +33,7 @@
     "redux-devtools": "^2.1.5",
     "redux-logger": "^3.0.6",
     "babel-plugin-react-transform": "^3.0.0",
-    "babel-runtime": "^5.8.20",
+    "babel-runtime": "^6.26.0",
     "webpack": "^1.11.0",
     "style-loader": "^0.23.1",
     "css-loader": "^0.9.0",
