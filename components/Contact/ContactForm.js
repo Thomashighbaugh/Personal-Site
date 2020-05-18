@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import fetch from 'isomorphic-unfetch';
+import { useState } from "react";
+import fetch from "isomorphic-unfetch";
 
 export default () => {
   const [status, setStatus] = useState({
@@ -8,8 +8,8 @@ export default () => {
     info: { error: false, msg: null },
   });
   const [inputs, setInputs] = useState({
-    email: '',
-    message: '',
+    email: "",
+    message: "",
   });
 
   const handleServerResponse = (ok, msg) => {
@@ -20,8 +20,8 @@ export default () => {
         info: { error: false, msg: msg },
       });
       setInputs({
-        email: '',
-        message: '',
+        email: "",
+        message: "",
       });
     } else {
       setStatus({
@@ -30,9 +30,9 @@ export default () => {
     }
   };
 
-  const handleOnChange = e => {
+  const handleOnChange = (e) => {
     e.persist(); // async access to event https://reactjs.org/docs/events.html
-    setInputs(prev => ({
+    setInputs((prev) => ({
       ...prev,
       [e.target.id]: e.target.value,
     }));
@@ -43,32 +43,29 @@ export default () => {
     });
   };
 
-  const handleOnSubmit = e => {
+  const handleOnSubmit = (e) => {
     e.preventDefault();
-    setStatus(prevStatus => ({ ...prevStatus, submitting: true }));
-    fetch('https://formspree.io/mrgejkql', {
-      method: 'POST',
+    setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
+    fetch("https://formspree.io/mrgejkql", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ data: inputs }),
     })
-      .then(_response => {
+      .then((_response) => {
         gtag.event({
-          action: 'submit_form',
+          action: "submit_form",
         });
-        handleServerResponse(
-          true,
-          'Thanks, your message has been sent.',
-        );
+        handleServerResponse(true, "Thanks, your message has been sent.");
       })
-      .catch(_error => {
+      .catch((_error) => {
         gtag.event({
-          action: 'form_error',
+          action: "form_error",
         });
         handleServerResponse(
           false,
-          "Sorry, we weren't able to send your message!",
+          "Sorry, we weren't able to send your message!"
         );
       });
   };
@@ -109,9 +106,9 @@ export default () => {
           >
             {!status.submitting
               ? !status.submitted
-                ? 'Send'
-                : 'Sent'
-              : 'Sending...'}
+                ? "Send"
+                : "Sent"
+              : "Sending..."}
           </button>
         </div>
         {status.info.error && (

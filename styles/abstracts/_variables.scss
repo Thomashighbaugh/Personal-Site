@@ -13,29 +13,29 @@ $xxl-breakpoint: 1200px;
 // COLOURS
 
 // fallbacks for IE
-$primaryColor: #00E3FF;
+$primaryColor: #00e3ff;
 $secondaryColor: #24262d;
 
 :root {
-  --primary-color: #00E3FF;
-  --secondary-color:#24262d;
+  --primary-color: #00e3ff;
+  --secondary-color: #24262d;
   --font-color: #24262d;
   --bg-color: #fdfdfd;
   --heading-color: #555;
   --white-color: #fdfdfd;
-  --svg-color: #00E3FF;
+  --svg-color: #00e3ff;
   --form-color: #eceff2;
   --pagination-color: #c1cad6;
   --placeholder-color: #c1cad6;
-  --gray-color: #686868
+  --gray-color: #686868;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --secondary-color: #fdfdfd;
   --font-color: #fdfdfd;
   --bg-color: #343a40;
   --heading-color: #c1cad6;
-  --svg-color: #00E3FF;
+  --svg-color: #00e3ff;
   --pagination-color: #909090;
   --placeholder-color: #c1cad6;
 }

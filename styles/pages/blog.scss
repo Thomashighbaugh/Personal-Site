@@ -1,4 +1,4 @@
-#blog{
+#blog {
   background-color: var(--bg-color);
 }
 .blog-layout {
@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--bg-color);
-margin-top: 3rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   border-radius: 18px;
   border: 0.25rem solid var(--primary-color);
@@ -16,7 +16,7 @@ margin-top: 3rem;
 .blog-post {
   @include animate(fadeIn, 5s, 100);
   margin: 2rem 20%;
-padding: 3%;
+  padding: 3%;
   background-color: var(--bg-color);
   border-radius: 18px;
   border: 0.25rem solid var(--primary-color);

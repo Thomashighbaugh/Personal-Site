@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
 p {
   font-size: 1.6rem;
-  font-family: 'Baloo Da 2', sans-serif;
+  font-family: "Baloo Da 2", sans-serif;
   max-width: 90ch * 0.7986; //https://johndjameson.com/blog/making-sense-of-ch-units/
   @media only screen and (max-width: $sm-breakpoint) {
     font-size: 1.25rem;
@@ -23,7 +23,7 @@ pre {
 }
 
 %heading {
-  font-family: 'Bungee', 'Kanit', sans-serif;
+  font-family: "Bungee", "Kanit", sans-serif;
   line-height: 1;
   font-weight: 900;
   text-shadow: var(--gray-color) 0.25rem 0.25rem;
@@ -54,7 +54,6 @@ pre {
   color: var(--svg-color);
   text-transform: uppercase;
   text-shadow: none;
-
 }
 
 .heading-4 {

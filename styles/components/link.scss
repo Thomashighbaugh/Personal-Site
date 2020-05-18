@@ -9,7 +9,7 @@
   min-width: 3rem;
   @extend .gradient-underline;
   background-size: 0% 5px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .link:hover {
@@ -17,7 +17,6 @@
   text-shadow: var(--gray-color) 0.165rem 0.165rem;
   color: var(--primary-color);
   @extend .gradient-underline;
-
 }
 
 .selected {

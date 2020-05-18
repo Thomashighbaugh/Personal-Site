@@ -8,9 +8,9 @@
   border: 0.25rem var(--primary-color) solid;
   background: var(--bg-color);
 
-@include lg{
-  height: 16%;
-}
+  @include lg {
+    height: 16%;
+  }
   &__links {
     display: flex;
     justify-content: space-between;
@@ -22,8 +22,7 @@
     }
   }
   button {
-
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     border: none;
     border-radius: 18px;
     background: inherit;
@@ -38,8 +37,8 @@
       border-radius: 18px;
       background-color: var(--secondary-color);
 
-      &:hover{
-        @include animate(pulse, 0.5s, 20 );
+      &:hover {
+        @include animate(pulse, 0.5s, 20);
       }
     }
   }
@@ -64,11 +63,7 @@
     padding: 0.5rem;
     margin-right: 3rem;
     background-color: var(--secondary-color);
-    @include hover-svg(
-      var(--svg-color),
-      var(--secondary-color),
-      0.4s
-    );
+    @include hover-svg(var(--svg-color), var(--secondary-color), 0.4s);
   }
   @include sm-md {
     margin-right: 17rem;
@@ -79,7 +74,6 @@
 }
 
 .nav-links {
-
   @include lg {
     display: none;
   }
@@ -113,7 +107,7 @@
     left: 1rem;
     right: 2.5rem;
     background-image: radial-gradient($primaryColor, $secondaryColor);
-    color:#eceff2;
+    color: #eceff2;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   }
 
@@ -209,7 +203,7 @@
     position: relative;
     margin-top: 1rem;
 
-      width: 3rem;
+    width: 3rem;
     &::before {
       width: 2rem;
     }
@@ -226,7 +220,7 @@
 
     &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       transition: all 0.2s;
@@ -240,8 +234,8 @@
   }
 
   &__text {
-color: var(--primary-color);
-text-shadow: var(--gray-color) 0.25rem 0.25rem;
+    color: var(--primary-color);
+    text-shadow: var(--gray-color) 0.25rem 0.25rem;
     display: inline-block;
     margin-top: 1rem;
   }

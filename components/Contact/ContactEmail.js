@@ -1,12 +1,12 @@
-import { useRef } from 'react';
-import { TiClipboard } from 'react-icons/ti';
+import { useRef } from "react";
+import { TiClipboard } from "react-icons/ti";
 
 function ContactEmail() {
   const inputRef = useRef(null);
 
   const copyToClipboard = () => {
     inputRef.current.select();
-    document.execCommand('copy');
+    document.execCommand("copy");
   };
 
   return (

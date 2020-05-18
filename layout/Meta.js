@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import Head from 'next/head';
-import data from '../data/config.json';
+import PropTypes from "prop-types";
+import Head from "next/head";
+import data from "../data/config.json";
 
 function Meta({ title }) {
   const { site, description, url, twitterHandle } = data;
@@ -34,25 +34,15 @@ function Meta({ title }) {
       <meta property="og:image:height" content="630"></meta>
 
       <meta name="msapplication-TileColor" content="#8265ff" />
-      <meta
-        name="msapplication-config"
-        content="/browserconfig.xml"
-      />
+      <meta name="msapplication-config" content="/browserconfig.xml" />
       <meta name="theme-color" content="#ffffff"></meta>
-      <meta
-        name="msapplication-config"
-        content="/browserconfig.xml"
-      />
+      <meta name="msapplication-config" content="/browserconfig.xml" />
 
       <link
         href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto&display=swap"
         rel="stylesheet"
       />
-      <link
-        rel="shortcut icon"
-        type="image/x-icon"
-        href="/circle.png"
-      />
+      <link rel="shortcut icon" type="image/x-icon" href="/circle.png" />
       <link rel="apple-touch-icon" href="/circle.png" />
       <link
         rel="apple-touch-icon"
@@ -72,11 +62,7 @@ function Meta({ title }) {
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/manifest.json" />
-      <link
-        rel="mask-icon"
-        href="/safari-pinned-tab.svg"
-        color="#5bbad5"
-      />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 
       <link rel="canonical" href={url} />
     </Head>
