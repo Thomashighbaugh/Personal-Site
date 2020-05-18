@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import Head from "next/head";
-import data from "../data/config.json";
+import PropTypes from 'prop-types';
+import Head from 'next/head';
+import data from '../data/config.json';
 
 function Meta({ title }) {
   const { site, description, url, twitterHandle } = data;
@@ -28,7 +28,7 @@ function Meta({ title }) {
       <meta property="og:locale" content="en_GB" />
       <meta
         property="og:image"
-        content="https://clarebee.com/twitter_landing_page.jpg"
+        content="https://thomasleonhighbaugh.me/dogpatchcircuit.png"
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630"></meta>
@@ -39,7 +39,7 @@ function Meta({ title }) {
       <meta name="msapplication-config" content="/browserconfig.xml" />
 
       <link
-        href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto&display=swap"
+        href="https://fonts.googleapis.com/css?family=Bungee|Kanit&display=swap"
         rel="stylesheet"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/circle.png" />
