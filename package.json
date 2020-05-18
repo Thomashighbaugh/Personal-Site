@@ -21,11 +21,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ClareBee/p.git"
+    "url": "git://github.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site"
   },
   "keywords": [],
-  "author": "ClareBee",
-  "license": "ISC",
+  "author": "Thomas Leon Highbaugh",
+  "license": "MIT",
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
     "@next/bundle-analyzer": "^9.1.6",
