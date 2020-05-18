@@ -1,0 +1,41 @@
+// BREAKPOINTS
+// ems best option for media queries due to browsers
+// base is 16px
+$xsm-breakpoint: 320px;
+$sm-breakpoint: 600px;
+$sm-md-breakpoint: 768px;
+$md-breakpoint: 916px;
+$lg-breakpoint: 976px;
+// TODO: check these
+$xl-breakpoint: 1024px;
+$xxl-breakpoint: 1200px;
+
+// COLOURS
+
+// fallbacks for IE
+$primaryColor: #00E3FF;
+$secondaryColor: #24262d;
+
+:root {
+  --primary-color: #00E3FF;
+  --secondary-color:#24262d;
+  --font-color: #24262d;
+  --bg-color: #fdfdfd;
+  --heading-color: #555;
+  --white-color: #fdfdfd;
+  --svg-color: #00E3FF;
+  --form-color: #eceff2;
+  --pagination-color: #c1cad6;
+  --placeholder-color: #c1cad6;
+  --gray-color: #686868
+}
+
+[data-theme='dark'] {
+  --secondary-color: #fdfdfd;
+  --font-color: #fdfdfd;
+  --bg-color: #343a40;
+  --heading-color: #c1cad6;
+  --svg-color: #00E3FF;
+  --pagination-color: #909090;
+  --placeholder-color: #c1cad6;
+}

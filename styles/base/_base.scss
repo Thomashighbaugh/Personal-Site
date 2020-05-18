@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 67.5%; // 1rem = 10px
+  background-color: var(--bg-color);
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--font-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+label {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.1;
+  color: var(--svg-color);
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: var(--form-color);
+  border-radius: 3px;
+  padding: 1rem;
+  margin: 0.5rem 0 1rem 0;
+  border: none;
+}
+
+// add defaults for placeholder styling
+// TODO: check prefixes across app
+::-webkit-input-placeholder {
+  color: var(--placeholder-color);
+}
+
+:-ms-input-placeholder {
+  color: var(--placeholder-color);
+}
+::placeholder {
+  color: var(--placeholder-color);
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.status-code {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

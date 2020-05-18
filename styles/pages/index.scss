@@ -1,0 +1,52 @@
+
+.introduction {
+  @include animate(fadeIn, 3s, 63);
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  flex: 1 1 auto;
+  letter-spacing: 0.55rem;
+  margin: 5rem 0 5rem ;
+  padding: 10rem;
+  padding-left: 15rem;
+  padding-right: 25rem;
+  border-radius: 18px;
+  border: 0.25rem var(--primary-color) solid;
+  background-color: var(--bg-color);
+    &__content {
+    @extend .gradient-underline;
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem;
+    background-size: 100% 5px;
+    background-blend-mode: soft-light, lighten;
+    transition: background-size 0.01s;
+    &:hover {
+      background-size: 0% 5px;
+      color: #00E3FF;
+
+    }
+  }
+  &__subtitle {
+    margin-top: 1rem;
+    font-weight: 100;
+    letter-spacing: 0;
+    opacity: 0.58;
+    font-family: 'Baloo Da 2', sans-serif;
+    color: var(--heading-color);
+    font-size: 2rem;
+  }
+  &__icon {
+    svg {
+      fill: var(--svg-color);
+    }
+  }
+  @include sm {
+    padding: 2rem 0;
+    letter-spacing: normal;
+    &__subtitle {
+      margin-top: 1.5rem;
+      line-height: 1.25;
+    }
+  }
+}

@@ -15,98 +15,80 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7474770-2e18-4bef-a56d-71d18c65c26b" name="Default Changelist" comment="try again">
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/portfolio-site" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="ProjectId" id="1bayI150psaHRQv8TxcQ6KA4zHS" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1c0R9X6Q8Y5sVVXmZffoAGNaUJE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles/vendor/sassimate" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles/vendor/sassimate" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/ScrollMagic" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/higher_order_components/GSAPwrapper" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b7474770-2e18-4bef-a56d-71d18c65c26b" name="Default Changelist" comment="" />
-      <created>1588884415680</created>
+      <changelist id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="" />
+      <created>1589663372401</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588884415680</updated>
-      <workItem from="1588884416956" duration="623000" />
-      <workItem from="1588893195143" duration="871000" />
+      <updated>1589663372401</updated>
+      <workItem from="1589663373600" duration="13737000" />
+      <workItem from="1589679968098" duration="31410000" />
+      <workItem from="1589785837100" duration="6991000" />
+      <workItem from="1589802215638" duration="1001000" />
+      <workItem from="1589803414799" duration="1252000" />
     </task>
-    <task id="LOCAL-00001" summary="try again">
-      <created>1588884457412</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1588884457412</updated>
-    </task>
-    <task id="LOCAL-00002" summary="try again">
-      <created>1588884561187</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1588884561187</updated>
-    </task>
-    <task id="LOCAL-00003" summary="try again">
-      <created>1588885004594</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1588885004594</updated>
-    </task>
-    <task id="LOCAL-00004" summary="try again">
-      <created>1588893575299</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1588893575299</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,14 +107,61 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="try again" />
-    <option name="LAST_COMMIT_MESSAGE" value="try again" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/portfolio-site" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="424" width="808" height="506" key="Vcs.Push.Dialog.v2" timestamp="1588893785220">
+    <state x="802" y="492" width="323" height="195" key="#ESLint" timestamp="1589681889509">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="560" y="424" width="808" height="506" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1588893785220" />
+    <state x="802" y="492" width="323" height="195" key="#ESLint/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589681889509" />
+    <state x="644" y="577" width="664" height="200" key="#Stylelint" timestamp="1589695957987">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="644" y="577" width="664" height="200" key="#Stylelint/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589695957987" />
+    <state x="0" y="98" width="532" height="480" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589804386492">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="98" width="532" height="480" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589804386492" />
+    <state width="1840" height="251" key="GridCell.Tab.0.bottom" timestamp="1589803777733">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1840" height="251" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589803777733" />
+    <state width="1864" height="268" key="GridCell.Tab.0.bottom/1920.0.1600.900/0.0.1920.1080@0.0.1920.1080" timestamp="1589663429009" />
+    <state width="1840" height="251" key="GridCell.Tab.0.center" timestamp="1589803777733">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1840" height="251" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589803777733" />
+    <state width="1864" height="268" key="GridCell.Tab.0.center/1920.0.1600.900/0.0.1920.1080@0.0.1920.1080" timestamp="1589663429008" />
+    <state width="1840" height="251" key="GridCell.Tab.0.left" timestamp="1589803777733">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1840" height="251" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589803777733" />
+    <state width="1864" height="268" key="GridCell.Tab.0.left/1920.0.1600.900/0.0.1920.1080@0.0.1920.1080" timestamp="1589663429008" />
+    <state width="1840" height="251" key="GridCell.Tab.0.right" timestamp="1589803777733">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1840" height="251" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589803777733" />
+    <state width="1864" height="268" key="GridCell.Tab.0.right/1920.0.1600.900/0.0.1920.1080@0.0.1920.1080" timestamp="1589663429008" />
+    <state x="439" y="308" width="1042" height="708" key="SettingsEditor" timestamp="1589783730453">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="439" y="308" width="1042" height="708" key="SettingsEditor/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589783730453" />
+    <state x="439" y="250" width="1042" height="708" key="SettingsEditor/1920.0.1600.900/0.0.1920.1080@0.0.1920.1080" timestamp="1589665095683" />
+    <state x="653" y="447" width="621" height="285" key="cloudConfig.PluginsDialog" timestamp="1589785781758">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="653" y="447" width="621" height="285" key="cloudConfig.PluginsDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589785781758" />
+    <state x="829" y="447" width="270" height="285" key="cloudConfig.SelfSettingsDialog" timestamp="1589785764704">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="829" y="447" width="270" height="285" key="cloudConfig.SelfSettingsDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589785764704" />
+    <state x="575" y="243" width="778" height="751" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589682393571">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="575" y="243" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589682393571" />
+    <state x="575" y="214" width="778" height="751" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1600.900/0.0.1920.1080@0.0.1920.1080" timestamp="1589677233862" />
   </component>
 </project>
