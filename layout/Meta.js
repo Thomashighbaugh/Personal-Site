@@ -28,7 +28,7 @@ function Meta({ title }) {
       <meta property="og:locale" content="en_GB" />
       <meta
         property="og:image"
-        content="https://thomasleonhighbaugh.me/dogpatchcircuit.png"
+        content="https://thomasleonhighbaugh.me/images/dogpatchcircuit.png"
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630"></meta>
@@ -42,8 +42,8 @@ function Meta({ title }) {
         href="https://fonts.googleapis.com/css?family=Bungee|Kanit&display=swap"
         rel="stylesheet"
       />
-      <link rel="shortcut icon" type="image/x-icon" href="/circle.png" />
-      <link rel="apple-touch-icon" href="/circle.png" />
+      <link rel="shortcut icon" type="image/x-icon" href="/logo.svg" />
+      <link rel="apple-touch-icon" href="/logo.svg" />
       <link
         rel="apple-touch-icon"
         sizes="114x114"
@@ -62,7 +62,7 @@ function Meta({ title }) {
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/manifest.json" />
-      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8265ff" />
 
       <link rel="canonical" href={url} />
     </Head>
