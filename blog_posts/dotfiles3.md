@@ -1,10 +1,10 @@
 ---
-title: Dotfiles && Provisioning 
-date: '2020-01-11'
-subtitle: 'Dotfiles and First Boot Working Together'
-banner: ansible.png 
-alt_text: 'dotfiles III'
-tags: [Productivity, Dotfiles] 
+title: Dotfiles && Provisioning
+date: "2020-01-11"
+subtitle: "Dotfiles and First Boot Working Together"
+banner: ansible.png
+alt_text: "dotfiles III"
+tags: [Productivity, Dotfiles]
 ---
 
 In cases of provisioning systems for others to use who may hate you configurations or want to use their own, like the
