@@ -1,7 +1,7 @@
 {
   "name": "thomas-leon-highbaugh-personal-site",
   "version": "1.0.0",
-  "description": "Portfolio site of Thomas Leon Highbaugh",
+  "description": "Portfolio site of TLH",
   "main": "index.js",
   "scripts": {
     "dev": "next",

@@ -1,10 +1,10 @@
 {
-  "name": "ClareBee Portfolio",
-  "short_name": "ClareBee Portfolio",
+  "name": "TLH Portfolio Site",
+  "short_name": "TLH",
   "icons": [
     {
-      "src": "android-chrome-96x96.png",
-      "sizes": "96x96",
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ],

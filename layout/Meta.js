@@ -25,7 +25,7 @@ function Meta({ title }) {
       />
       <meta property="og:site_name" content={site} />
       <meta property="og:url" content={url} />
-      <meta property="og:locale" content="en_GB" />
+      <meta property="og:locale" content="en_US" />
       <meta
         property="og:image"
         content="https://thomasleonhighbaugh.me/dogpatchcircuit.png"

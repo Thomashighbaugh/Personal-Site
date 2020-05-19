@@ -9,7 +9,7 @@ const Footer = ({ footerVisibility }) => (
         href="https://github.com/Thomashighbaugh"
         target="_blank"
         rel="noopener noreferrer"
-        title="ClareBee GitHub Profile"
+        title="TLH GitHub Profile"
       >
         {" "}
         Thomas Leon Highbaugh{" "}
