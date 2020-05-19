@@ -1,18 +1,18 @@
-import matter from "gray-matter";
-import fs from "fs";
-import path from "path";
-import dynamic from "next/dynamic";
-import PropTypes from "prop-types";
-import ReactMarkdown from "react-markdown";
-import Layout from "../../layout/Layout";
-import Spinner from "../../components/Spinner/Spinner";
-import { useRouter } from "next/router";
+import matter from 'gray-matter';
+import fs from 'fs';
+import path from 'path';
+import dynamic from 'next/dynamic';
+import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
+import Layout from '../../layout/Layout';
+import Spinner from '../../components/Spinner/Spinner';
+import { useRouter } from 'next/router';
 
-import { reformatDate, formatToSlug } from "../../utils/format";
+import { reformatDate, formatToSlug } from '../../utils/format';
 
 const DynamicHighlight = dynamic(
-  () => import("../../components/WithHighlight/WithHighlight"),
-  { ssr: false }
+  () => import('../../components/WithHighlight/WithHighlight'),
+  { ssr: false },
 );
 
 const Blog = ({ data, content, siteTitle }) => {
@@ -35,7 +35,9 @@ const Blog = ({ data, content, siteTitle }) => {
           <p>{reformatDate(data.date)}</p>
         </div>
         <hr className="divider" />
-        <h4 className="heading-4 blog-post__subtitle">{data.subtitle}</h4>
+        <h4 className="heading-4 blog-post__subtitle">
+          {data.subtitle}
+        </h4>
         <div className="blog-post__img-container">
           <img
             src={require(`../../images/${data.banner}`)}
@@ -54,10 +56,10 @@ const Blog = ({ data, content, siteTitle }) => {
 };
 
 export async function getStaticPaths() {
-  const blogsDirectory = path.join(process.cwd(), "blog_posts");
+  const blogsDirectory = path.join(process.cwd(), 'blog_posts');
   const filenames = fs.readdirSync(blogsDirectory);
-  const blogSlugs = filenames.map((file) => formatToSlug(file));
-  const paths = blogSlugs.map((slug) => `/blog/${slug}`);
+  const blogSlugs = filenames.map(file => formatToSlug(file));
+  const paths = blogSlugs.map(slug => `/blog/${slug}`);
   return {
     paths,
     fallback: true,

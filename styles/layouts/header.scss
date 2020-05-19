@@ -1,7 +1,7 @@
 .header {
   font-size: 1.8rem;
   letter-spacing: 0.15rem;
-  flex: none; // prevents shrinkage http://bit.ly/1Mn35US for details
+  flex: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,20 +22,21 @@
     }
   }
   button {
-    font-family: "Kanit", sans-serif;
+    font-family: 'Kanit', sans-serif;
     border: none;
     border-radius: 18px;
     background: inherit;
     .logo {
-      max-height: 8rem;
-      max-width: 8rem;
+      max-height: 7rem;
+      max-width: 7rem;
+      justify-self: center;
+      align-self: center;
       padding: 0;
       margin: 0;
       border: 0.25rem var(--primary-color) solid;
 
       transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
       border-radius: 18px;
-      background-color: var(--secondary-color);
 
       &:hover {
         @include animate(pulse, 0.5s, 20);
@@ -54,22 +55,24 @@
 
 .lightbulb {
   border-radius: 18px;
+
   svg {
     border: 0.25rem var(--primary-color) solid;
 
     min-height: 7rem;
     min-width: 7rem;
     border-radius: 18px;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-right: 3rem;
-    background-color: var(--secondary-color);
-    @include hover-svg(var(--svg-color), var(--secondary-color), 0.4s);
-  }
-  @include sm-md {
-    margin-right: 17rem;
-  }
-  @include sm {
-    transform: scale(0.7);
+    &:hover {
+      @include animate(pulse, 0.5s, 20);
+    }
+    @include lg {
+      margin-right: 7rem;
+    }
+    @include sm {
+      transform: scale(0.7);
+    }
   }
 }
 
@@ -86,29 +89,33 @@
     display: none;
   }
   &__button {
-    background-color: var(--bg-color);
     height: 7rem;
     width: 7rem;
-    position: fixed;
-    top: 1.5rem;
+    position: absolute;
+    top: 1rem;
     right: 2rem;
-    border-radius: 50%;
-    z-index: 2000;
+    border-radius: 18px;
     text-align: center;
     cursor: pointer;
+    z-index: 35;
+    border: 0.25rem var(--primary-color) solid;
+    background-color: var(--bg-color);
+    &:hover {
+      @include animate(pulse, 0.5s, 20);
+    }
   }
 
   &__background {
-    height: 6rem;
-    width: 6rem;
+    width: 100vw;
+    height: 50vh;
     border-radius: 50%;
     position: relative;
-    top: 2rem;
-    left: 1rem;
-    right: 2.5rem;
-    background-image: radial-gradient($primaryColor, $secondaryColor);
-    color: #eceff2;
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    overflow: no-display;
+    z-index: 20;
+    top: 0;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    transition: transform 0.8s cubic-bezier(0.89, 1, 0.7, 1);
   }
 
   &__nav {
@@ -116,7 +123,7 @@
     top: 0;
 
     left: 0;
-    z-index: 1500;
+    z-index: 25;
     // hides it until check box clicked
     pointer-events: none;
     opacity: 0;
@@ -126,6 +133,8 @@
 
   &__list {
     @include absoluteCentre;
+    z-index: 25;
+
     width: 100%;
     text-align: center;
     @include landscape {
@@ -140,14 +149,16 @@
 
   &__link {
     border-radius: 18px;
-
+    color: var(--heading-color);
+    text-shadow: var(--gray-color) 0.125rem 0.125rem;
+    font-size: 3rem;
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 3rem;
-      font-weight: 300;
+      font-weight: 900;
+      font-family: 'Bungee', 'Kanit', sans-serif;
+
       padding: 1rem 5rem;
-      color: var(--white-color);
       text-transform: uppercase;
       background-image: linear-gradient(
         90deg,
@@ -162,22 +173,26 @@
         display: inline-block;
       }
       @include sm {
-        font-size: 1.5rem;
+        font-size: 3rem;
       }
       @include landscape {
-        font-size: 1.5rem;
+        font-size: 3rem;
       }
     }
 
     &:hover,
     &:active {
       background-position: 100%;
-      color: var(--secondary-color);
       transform: translateX(1rem);
+      color: var(--primary-color);
     }
     &.selected {
-      background-color: rgba(255, 255, 255, 0.9);
-      color: var(--secondary-color);
+      background-color: var(--primary-color);
+      color: var(--white-color);
+      transform: translateX(1rem);
+      &:hover {
+        color: var(--primary-color);
+      }
     }
   }
 
@@ -220,7 +235,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       transition: all 0.2s;
@@ -235,9 +250,12 @@
 
   &__text {
     color: var(--primary-color);
-    text-shadow: var(--gray-color) 0.25rem 0.25rem;
+    text-shadow: var(--gray-color) 0.125rem 0.125rem;
+    font-size: 1.7rem;
+    font-family: 'Bungee', 'Kanit', sans-serif;
+    font-weight: 900;
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   &__button:hover &__icon::before {

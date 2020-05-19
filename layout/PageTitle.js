@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const PageTitle = ({ title, subtitle }) => (
   <div className="page-title">

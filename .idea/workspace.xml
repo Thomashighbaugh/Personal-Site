@@ -87,7 +87,8 @@
       <workItem from="1589679968098" duration="31410000" />
       <workItem from="1589785837100" duration="6991000" />
       <workItem from="1589802215638" duration="1001000" />
-      <workItem from="1589803414799" duration="6866000" />
+      <workItem from="1589803414799" duration="8810000" />
+      <workItem from="1589852635976" duration="4030000" />
     </task>
     <servers />
   </component>
@@ -121,10 +122,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="644" y="577" width="664" height="200" key="#Stylelint/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589695957987" />
-    <state x="0" y="98" width="532" height="480" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589804386492">
+    <state x="0" y="127" width="532" height="480" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589846876606">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="0" y="98" width="532" height="480" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589804386492" />
+    <state x="0" y="127" width="532" height="480" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589846876606" />
     <state width="1840" height="251" key="GridCell.Tab.0.bottom" timestamp="1589803777733">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -163,5 +164,9 @@
     </state>
     <state x="575" y="243" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589682393571" />
     <state x="575" y="214" width="778" height="751" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1600.900/0.0.1920.1080@0.0.1920.1080" timestamp="1589677233862" />
+    <state x="690" y="432" width="548" height="315" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1589846858784">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="432" width="548" height="315" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589846858784" />
   </component>
 </project>

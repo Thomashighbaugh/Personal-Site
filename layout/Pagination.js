@@ -1,15 +1,15 @@
-import PropTypes from "prop-types";
-import Link from "./Link";
+import PropTypes from 'prop-types';
+import Link from './Link';
 
 const Pagination = ({ pagesArray, currentPage }) => {
   const sequence = (active, presentPage, index) => {
     if (active) return;
-    return index < Number(presentPage) ? "prev" : "next";
+    return index < Number(presentPage) ? 'prev' : 'next';
   };
   const pageLinks = () => {
     return pagesArray.map((_page, index) => {
       const isCurrent = index + 1 === currentPage;
-      const style = isCurrent ? "active" : "";
+      const style = isCurrent ? 'active' : '';
 
       return (
         <Link
@@ -19,7 +19,10 @@ const Pagination = ({ pagesArray, currentPage }) => {
             query: { page: index + 1 },
           }}
         >
-          <a className={style} rel={sequence(isCurrent, currentPage, index)}>
+          <a
+            className={style}
+            rel={sequence(isCurrent, currentPage, index)}
+          >
             {index + 1}
           </a>
         </Link>

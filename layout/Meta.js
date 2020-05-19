@@ -34,15 +34,25 @@ function Meta({ title }) {
       <meta property="og:image:height" content="630"></meta>
 
       <meta name="msapplication-TileColor" content="#8265ff" />
-      <meta name="msapplication-config" content="/browserconfig.xml" />
+      <meta
+        name="msapplication-config"
+        content="/browserconfig.xml"
+      />
       <meta name="theme-color" content="#ffffff"></meta>
-      <meta name="msapplication-config" content="/browserconfig.xml" />
+      <meta
+        name="msapplication-config"
+        content="/browserconfig.xml"
+      />
 
       <link
         href="https://fonts.googleapis.com/css?family=Bungee|Kanit&display=swap"
         rel="stylesheet"
       />
-      <link rel="shortcut icon" type="image/x-icon" href="/logo.svg" />
+      <link
+        rel="shortcut icon"
+        type="image/x-icon"
+        href="/logo.svg"
+      />
       <link rel="apple-touch-icon" href="/logo.svg" />
       <link
         rel="apple-touch-icon"
@@ -62,7 +72,11 @@ function Meta({ title }) {
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/manifest.json" />
-      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8265ff" />
+      <link
+        rel="mask-icon"
+        href="/safari-pinned-tab.svg"
+        color="#8265ff"
+      />
 
       <link rel="canonical" href={url} />
     </Head>

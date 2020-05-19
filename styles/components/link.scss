@@ -2,9 +2,11 @@
   text-shadow: var(--gray-color) 0.165rem 0.165rem;
   color: var(--primary-color);
   margin: 1rem 1em;
+  font-family: 'Bungee', 'Kanit', sans-serif;
+  font-weight: 900;
   text-decoration: none;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   min-height: 2.5rem;
   min-width: 3rem;
   @extend .gradient-underline;
@@ -12,14 +14,12 @@
   transition: all 0.5s;
 }
 
-.link:hover {
+.link:hover,
+.link:active {
   background-size: 100% 5px;
-  text-shadow: var(--gray-color) 0.165rem 0.165rem;
-  color: var(--primary-color);
   @extend .gradient-underline;
 }
 
 .selected {
   background-size: 100% 5px;
-  color: var(--font-color);
 }
