@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import Meta from './Meta';
-import Header from './Header';
-import Footer from './Footer';
-import { CSSTransition } from 'react-transition-group';
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import Meta from "./Meta";
+import Header from "./Header";
+import Footer from "./Footer";
+import { CSSTransition } from "react-transition-group";
 
 const Layout = ({ title, children }) => {
-  const [pageTitle, setPageTitle] = useState('');
+  const [pageTitle, setPageTitle] = useState("");
   const [footerVisibility, setFooterVisibility] = useState(false);
   useEffect(() => {
     setPageTitle(title);
@@ -25,9 +25,7 @@ const Layout = ({ title, children }) => {
         <main className="content">{children}</main>
       </CSSTransition>
       <Footer footerVisibility={footerVisibility} />
-      <noscript>
-        You need to enable JavaScript to run this app.
-      </noscript>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
     </div>
   );
 };

@@ -11,7 +11,7 @@ export const questionsAndAnswers = [
     id: 1111,
   },
   {
-    question: 'Graphic Design',
+    question: "Graphic Design",
     answers: [
       `GUI Image Manipulation Tools: Photoshop, GIMP, Inkscape, Illustrator, Krita`,
       `CLI Image Manipulation Tools: imagemagick, graphicsmagick`,
