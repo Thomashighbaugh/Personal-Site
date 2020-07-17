@@ -5,7 +5,7 @@ subtitle: "An introduction to dotfiles and unlocking the power of your Linux OS.
 banner: dots.jpg
 alt_text: "dotfiles I"
 tags: [Dotfiles]
-promoted: true
+promoted: false
 ---
 
 ## Dotfiles: The What
