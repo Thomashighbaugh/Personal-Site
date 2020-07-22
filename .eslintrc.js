@@ -1,5 +1,4 @@
 module.exports = {
-  
   env: {
     node: true, // allows require
     browser: true, // allows document
