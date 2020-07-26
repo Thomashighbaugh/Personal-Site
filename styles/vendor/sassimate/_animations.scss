@@ -1,81 +1,81 @@
 // @george 08/12/2015
 //Animation Library
 
-@import 'animation/bounce';
-@import 'animation/bounceIn';
-@import 'animation/bounceInLeft';
-@import 'animation/bounceInRight';
-@import 'animation/bounceInUp';
-@import 'animation/bounceInDown';
-@import 'animation/bounceOut';
-@import 'animation/bounceOutUp';
-@import 'animation/bounceOutDown';
-@import 'animation/bounceOutLeft';
-@import 'animation/bounceOutRight';
-@import 'animation/fadeIn';
-@import 'animation/fadeInUp';
-@import 'animation/fadeInDown';
-@import 'animation/fadeInLeft';
-@import 'animation/fadeInRight';
-@import 'animation/fadeOut';
-@import 'animation/fadeOutDown';
-@import 'animation/fadeOutUp';
-@import 'animation/fadeOutLeft';
-@import 'animation/fadeOutRight';
-@import 'animation/fadeInUpBig';
-@import 'animation/fadeInDownBig';
-@import 'animation/fadeInRightBig';
-@import 'animation/fadeInLeftBig';
-@import 'animation/fadeOutUpBig';
-@import 'animation/fadeOutDownBig';
-@import 'animation/fadeOutRightBig';
-@import 'animation/fadeOutLeftBig';
-@import 'animation/flash';
-@import 'animation/flip';
-@import 'animation/flipInX';
-@import 'animation/flipInY';
-@import 'animation/flipOutY';
-@import 'animation/flipOut';
-@import 'animation/hinge';
-@import 'animation/jello';
-@import 'animation/lightSpeedIn';
-@import 'animation/lightSpeedOut';
-@import 'animation/pulse';
-@import 'animation/rollIn';
-@import 'animation/rollOut';
-@import 'animation/rotateIn';
-@import 'animation/rotateInUpLeft';
-@import 'animation/rotateInUpRight';
-@import 'animation/rotateInDownLeft';
-@import 'animation/rotateInDownRight';
-@import 'animation/rotateOut';
-@import 'animation/rotateOutUpLeft';
-@import 'animation/rotateOutUpLeft';
-@import 'animation/rotateOutDownLeft';
-@import 'animation/rotateOutDownRight';
-@import 'animation/rubberBand';
-@import 'animation/shake';
-@import 'animation/slideInUp';
-@import 'animation/slideInDown';
-@import 'animation/slideInLeft';
-@import 'animation/slideInRight';
-@import 'animation/slideOutUp';
-@import 'animation/slideOutLeft';
-@import 'animation/slideOutDown';
-@import 'animation/slideOutRight';
-@import 'animation/swing';
-@import 'animation/tada';
-@import 'animation/wobble';
-@import 'animation/zoomIn';
-@import 'animation/zoomInUp';
-@import 'animation/zoomInDown';
-@import 'animation/zoomInLeft';
-@import 'animation/zoomInRight';
-@import 'animation/zoomOut';
-@import 'animation/zoomOutUp';
-@import 'animation/zoomOutDown';
-@import 'animation/zoomOutLeft';
-@import 'animation/zoomOutRight';
+@import "animation/bounce";
+@import "animation/bounceIn";
+@import "animation/bounceInLeft";
+@import "animation/bounceInRight";
+@import "animation/bounceInUp";
+@import "animation/bounceInDown";
+@import "animation/bounceOut";
+@import "animation/bounceOutUp";
+@import "animation/bounceOutDown";
+@import "animation/bounceOutLeft";
+@import "animation/bounceOutRight";
+@import "animation/fadeIn";
+@import "animation/fadeInUp";
+@import "animation/fadeInDown";
+@import "animation/fadeInLeft";
+@import "animation/fadeInRight";
+@import "animation/fadeOut";
+@import "animation/fadeOutDown";
+@import "animation/fadeOutUp";
+@import "animation/fadeOutLeft";
+@import "animation/fadeOutRight";
+@import "animation/fadeInUpBig";
+@import "animation/fadeInDownBig";
+@import "animation/fadeInRightBig";
+@import "animation/fadeInLeftBig";
+@import "animation/fadeOutUpBig";
+@import "animation/fadeOutDownBig";
+@import "animation/fadeOutRightBig";
+@import "animation/fadeOutLeftBig";
+@import "animation/flash";
+@import "animation/flip";
+@import "animation/flipInX";
+@import "animation/flipInY";
+@import "animation/flipOutY";
+@import "animation/flipOut";
+@import "animation/hinge";
+@import "animation/jello";
+@import "animation/lightSpeedIn";
+@import "animation/lightSpeedOut";
+@import "animation/pulse";
+@import "animation/rollIn";
+@import "animation/rollOut";
+@import "animation/rotateIn";
+@import "animation/rotateInUpLeft";
+@import "animation/rotateInUpRight";
+@import "animation/rotateInDownLeft";
+@import "animation/rotateInDownRight";
+@import "animation/rotateOut";
+@import "animation/rotateOutUpLeft";
+@import "animation/rotateOutUpLeft";
+@import "animation/rotateOutDownLeft";
+@import "animation/rotateOutDownRight";
+@import "animation/rubberBand";
+@import "animation/shake";
+@import "animation/slideInUp";
+@import "animation/slideInDown";
+@import "animation/slideInLeft";
+@import "animation/slideInRight";
+@import "animation/slideOutUp";
+@import "animation/slideOutLeft";
+@import "animation/slideOutDown";
+@import "animation/slideOutRight";
+@import "animation/swing";
+@import "animation/tada";
+@import "animation/wobble";
+@import "animation/zoomIn";
+@import "animation/zoomInUp";
+@import "animation/zoomInDown";
+@import "animation/zoomInLeft";
+@import "animation/zoomInRight";
+@import "animation/zoomOut";
+@import "animation/zoomOutUp";
+@import "animation/zoomOutDown";
+@import "animation/zoomOutLeft";
+@import "animation/zoomOutRight";
 
 @mixin keyframes($name, $strength) {
   @if $name == bounce {
@@ -310,12 +310,7 @@
 }
 
 //mixin to call the strength
-@mixin dynamicStrength(
-  $animation-name,
-  $duration,
-  $strength,
-  $iteration
-) {
+@mixin dynamicStrength($animation-name, $duration, $strength, $iteration) {
   // for use in example only. Remove for the real project files!
   .#{$animation-name}#{$strength} {
     @include animate(
@@ -329,12 +324,7 @@
 
 //our actual animation mixin
 //call using @include animate(bounce,1s,100,1);
-@mixin animate(
-  $animation-name,
-  $duration,
-  $strength: 100,
-  $iteration: 1
-) {
+@mixin animate($animation-name, $duration, $strength: 100, $iteration: 1) {
   //calls in the correct keyframe
   @include keyframes($animation-name, $strength);
   -webkit-animation-fill-mode: both;

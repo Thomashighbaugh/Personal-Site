@@ -1,9 +1,9 @@
 ---
 title: Dotfile Management
-date: '2020-01-04'
+date: "2020-01-04"
 subtitle: Using Makefiles to provision your system with dotfiles.
 banner: make.jpg
-alt_text: 'dotfiles II'
+alt_text: "dotfiles II"
 tags: [Dotfiles, Makefile]
 ---
 

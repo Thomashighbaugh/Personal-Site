@@ -1,25 +1,20 @@
-import Link from 'next/link';
-import dynamic from 'next/dynamic';
-import Layout from '../layout/Layout';
-import PictureSet from '../components/PictureSet/PictureSet';
-import Spinner from '../components/Spinner/Spinner';
+import Link from "next/link";
+import dynamic from "next/dynamic";
+import Layout from "../layout/Layout";
+import PictureSet from "../components/PictureSet/PictureSet";
+import Spinner from "../components/Spinner/Spinner";
 /* eslint-disable */
 /* eslint-disable */
 const DynamicComponentWithNoSSR = dynamic(
   () => {
-    return import('../components/ScrollMagic/scrollmagic');
+    return import("../components/ScrollMagic/scrollmagic");
   },
-  { loading: () => <Spinner />, ssr: false },
+  { loading: () => <Spinner />, ssr: false }
 );
 /* eslint-enable */
 /* eslint-enable */
-import {
-  FaGithub,
-  FaDesktop,
-  FaStar,
-  FaArrowDown,
-} from 'react-icons/fa';
-import React from 'react';
+import { FaGithub, FaDesktop, FaStar, FaArrowDown } from "react-icons/fa";
+import React from "react";
 
 const Projects = () => {
   return (
@@ -45,20 +40,18 @@ const Projects = () => {
                 </div>
                 <div className="project__description">
                   <p>
-                    Portfolio site which removes unnecessary clutter
-                    from the UI while maintaining an attractive
-                    interface.
+                    Portfolio site which removes unnecessary clutter from the UI
+                    while maintaining an attractive interface.
                   </p>
                   <ul>
                     <li>
                       <FaStar />
-                      Nested stylesheet, custom graphics, tasteful
-                      colorscheme
+                      Nested stylesheet, custom graphics, tasteful colorscheme
                     </li>
                     <li>
                       <FaStar />
-                      Multiple pages using the Gatsby Link component
-                      to break from monotonous single page layouts.
+                      Multiple pages using the Gatsby Link component to break
+                      from monotonous single page layouts.
                     </li>
                     <li>
                       <FaStar />
@@ -91,7 +84,8 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-            </div>            <div className="project">
+            </div>{" "}
+            <div className="project">
               <div className="project__video project__left">
                 <PictureSet
                   pictureName="portfolio-last.png"
@@ -109,20 +103,18 @@ const Projects = () => {
                 </div>
                 <div className="project__description">
                   <p>
-                    Portfolio site which removes unnecessary clutter
-                    from the UI while maintaining an attractive
-                    interface.
+                    Portfolio site which removes unnecessary clutter from the UI
+                    while maintaining an attractive interface.
                   </p>
                   <ul>
                     <li>
                       <FaStar />
-                      Nested stylesheet, custom graphics, tasteful
-                      colorscheme
+                      Nested stylesheet, custom graphics, tasteful colorscheme
                     </li>
                     <li>
                       <FaStar />
-                      Multiple pages using the Gatsby Link component
-                      to break from monotonous single page layouts.
+                      Multiple pages using the Gatsby Link component to break
+                      from monotonous single page layouts.
                     </li>
                     <li>
                       <FaStar />
@@ -178,8 +170,8 @@ const Projects = () => {
                     </li>
                     <li>
                       <FaStar />
-                      Functional Template built with low overhead from
-                      the end user in mind
+                      Functional Template built with low overhead from the end
+                      user in mind
                     </li>
                     <li>
                       <FaStar />
@@ -214,7 +206,6 @@ const Projects = () => {
                 />
               </div>
             </div>
-
             <div className="project">
               <div className="project__video project__left">
                 <PictureSet
@@ -236,23 +227,21 @@ const Projects = () => {
 
                 <div className="project__description">
                   <p>
-                    My extensive Linux configurations backed up with
-                    Git and provisioned by a Makefile that also
-                    provisions a fresh installation and features a
-                    completely customized and finely tuned UI built on
-                    top of AwesomeWM with Lua.
+                    My extensive Linux configurations backed up with Git and
+                    provisioned by a Makefile that also provisions a fresh
+                    installation and features a completely customized and finely
+                    tuned UI built on top of AwesomeWM with Lua.
                   </p>
                   <ul>
                     <li>
                       <FaStar />
-                      Thorough customization of dozens of programs,
-                      custom executable scripts and custom GTK & Grub
-                      themes. Vice.
+                      Thorough customization of dozens of programs, custom
+                      executable scripts and custom GTK & Grub themes. Vice.
                     </li>
                     <li>
                       <FaStar />
-                      Custom Base16 theme, Vice, applied universally
-                      to provisioned applications.
+                      Custom Base16 theme, Vice, applied universally to
+                      provisioned applications.
                     </li>
                     <li>
                       <FaStar />
@@ -260,8 +249,8 @@ const Projects = () => {
                     </li>
                     <li>
                       <FaStar />
-                      Modular deployment via Makefile enabling
-                      consistent environment across systems.
+                      Modular deployment via Makefile enabling consistent
+                      environment across systems.
                     </li>
                   </ul>
                 </div>
@@ -290,11 +279,10 @@ const Projects = () => {
                 </div>
                 <div className="project__description">
                   <p>
-                    Experiment with Electron and solution to Markdown
-                    editor woes, this Markdown editor implements the
-                    basic save feature that so many other options
-                    lacked and is packaged in several formats to work
-                    across Linux distros.
+                    Experiment with Electron and solution to Markdown editor
+                    woes, this Markdown editor implements the basic save feature
+                    that so many other options lacked and is packaged in several
+                    formats to work across Linux distros.
                   </p>
                   <ul>
                     <li>
@@ -311,7 +299,7 @@ const Projects = () => {
                     </li>
                     <li>
                       <FaStar />
-                      Packaged in Multiple Formats using Webpack{' '}
+                      Packaged in Multiple Formats using Webpack{" "}
                     </li>
                     <li>
                       <FaStar />

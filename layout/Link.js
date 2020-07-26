@@ -1,25 +1,21 @@
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import { useRouter } from 'next/router';
+import Link from "next/link";
+import PropTypes from "prop-types";
+import { useRouter } from "next/router";
 
 const nestedPath = (href, router) => {
   if (!href.pathname) return false;
-  return href.pathname.match('blog') && router.pathname.match('blog');
+  return href.pathname.match("blog") && router.pathname.match("blog");
 };
 function NextLink({ href, children }) {
   const router = useRouter();
-  let className = children.props.className || '';
+  let className = children.props.className || "";
   if (
-    (router.pathname === href && children.type !== 'svg') ||
+    (router.pathname === href && children.type !== "svg") ||
     nestedPath(href, router)
   ) {
     className = `${className} selected`;
   }
-  return (
-    <Link href={href}>
-      {React.cloneElement(children, { className })}
-    </Link>
-  );
+  return <Link href={href}>{React.cloneElement(children, { className })}</Link>;
 }
 
 NextLink.propTypes = {

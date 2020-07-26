@@ -1,9 +1,9 @@
 ---
 title: The Electric Tantra Branding
-date: '2020-07-15'
-subtitle: 'The Origin of the Electric Tantra'
+date: "2020-07-15"
+subtitle: "The Origin of the Electric Tantra"
 banner: dogpatchcircuit.png
-alt_text: 'do digital sadhus speak of the electric tantra?'
+alt_text: "do digital sadhus speak of the electric tantra?"
 tags: [Design]
 promoted: true
 ---

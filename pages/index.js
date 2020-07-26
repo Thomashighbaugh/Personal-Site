@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Layout from '../layout/Layout';
-import PictureSet from '../components/PictureSet/PictureSet';
-import React from 'react';
+import Link from "next/link";
+import Layout from "../layout/Layout";
+import PictureSet from "../components/PictureSet/PictureSet";
+import React from "react";
 /* eslint-disable */
 
 const Index = () => {
@@ -10,9 +10,7 @@ const Index = () => {
       <div className="introduction">
         <h2 className="heading-2" id="intro">
           Hi! I&apos;m <br />
-          <span className="introduction__content">
-            Thomas Leon Highbaugh
-          </span>
+          <span className="introduction__content">Thomas Leon Highbaugh</span>
         </h2>
 
         <hr />
