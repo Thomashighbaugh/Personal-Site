@@ -8,24 +8,14 @@ const PictureSet = ({
   height,
 }) => {
   return (
-    <picture>
-      <source
-        srcSet={require(`../../images/${pictureName}?webp`)}
-        type="image/webp"
-      />
-      <source
-        srcSet={require(`../../images/${pictureName}`)}
-        type="image/png"
-      />
-      <img
-        className={styleSelector}
-        width={width}
-        height={height}
-        src={require(`../../images/${pictureName}`)}
-        alt={altText}
-        id={id}
-      />
-    </picture>
+    <img
+      className={styleSelector}
+      width={width}
+      height={height}
+      src={require(`../../images/${pictureName}`)}
+      alt={altText}
+      id={id}
+    />
   );
 };
 

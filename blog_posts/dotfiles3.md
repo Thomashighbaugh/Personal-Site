@@ -1,9 +1,9 @@
 ---
 title: Dotfiles && Provisioning
-date: "2020-01-11"
-subtitle: "Dotfiles and First Boot Working Together"
+date: '2020-01-11'
+subtitle: 'Dotfiles and First Boot Working Together'
 banner: ansible.png
-alt_text: "dotfiles III"
+alt_text: 'dotfiles III'
 tags: [Productivity, Dotfiles]
 ---
 

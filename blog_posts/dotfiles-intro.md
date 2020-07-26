@@ -1,9 +1,9 @@
 ---
 title: Dotfiles for the Masses
-date: "2020-01-02"
-subtitle: "An introduction to dotfiles and unlocking the power of your Linux OS."
+date: '2020-01-02'
+subtitle: 'An introduction to dotfiles and unlocking the power of your Linux OS.'
 banner: dots.jpg
-alt_text: "dotfiles I"
+alt_text: 'dotfiles I'
 tags: [Dotfiles]
 promoted: false
 ---

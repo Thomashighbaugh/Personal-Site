@@ -1,16 +1,19 @@
-import PropTypes from "prop-types";
-import Layout from "../layout/Layout";
-import PageTitle from "../layout/PageTitle";
+import PropTypes from 'prop-types';
+import Layout from '../layout/Layout';
+import PageTitle from '../layout/PageTitle';
 
 function Error({ statusCode }) {
   return (
     <Layout title="error">
-      <PageTitle title="Error" subtitle="Houston, we have a problem!" />
+      <PageTitle
+        title="Error"
+        subtitle="Houston, we have a problem!"
+      />
       <div className="status-code">
         <p>
           {statusCode
             ? `An error ${statusCode} occurred on the server`
-            : "An error occurred on the client"}
+            : 'An error occurred on the client'}
         </p>
       </div>
     </Layout>
@@ -18,7 +21,11 @@ function Error({ statusCode }) {
 }
 
 Error.getInitialProps = ({ res, err }) => {
-  const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
+  const statusCode = res
+    ? res.statusCode
+    : err
+    ? err.statusCode
+    : 404;
   return { statusCode };
 };
 

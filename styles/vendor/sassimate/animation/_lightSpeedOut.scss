@@ -10,8 +10,10 @@
     }
 
     to {
-      -webkit-transform: translate3d($keyValueTranslate, 0, 0) skewX($keyValue);
-      transform: translate3d($keyValueTranslate, 0, 0) skewX($keyValue);
+      -webkit-transform: translate3d($keyValueTranslate, 0, 0)
+        skewX($keyValue);
+      transform: translate3d($keyValueTranslate, 0, 0)
+        skewX($keyValue);
       opacity: 0;
     }
   }
@@ -22,8 +24,10 @@
     }
 
     to {
-      -webkit-transform: translate3d($keyValueTranslate, 0, 0) skewX($keyValue);
-      transform: translate3d($keyValueTranslate, 0, 0) skewX($keyValue);
+      -webkit-transform: translate3d($keyValueTranslate, 0, 0)
+        skewX($keyValue);
+      transform: translate3d($keyValueTranslate, 0, 0)
+        skewX($keyValue);
       opacity: 0;
     }
   }

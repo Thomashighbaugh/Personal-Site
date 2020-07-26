@@ -11,7 +11,8 @@
     15% {
       -webkit-transform: translate3d(-$keyValue, 0, 0)
         rotate3d(0, 0, 1, -$keyValueDeg);
-      transform: translate3d(-$keyValue, 0, 0) rotate3d(0, 0, 1, -$keyValueDeg);
+      transform: translate3d(-$keyValue, 0, 0)
+        rotate3d(0, 0, 1, -$keyValueDeg);
     }
 
     30% {
@@ -57,7 +58,8 @@
     15% {
       -webkit-transform: translate3d(-$keyValue, 0, 0)
         rotate3d(0, 0, 1, -$keyValueDeg);
-      transform: translate3d(-$keyValue, 0, 0) rotate3d(0, 0, 1, -$keyValueDeg);
+      transform: translate3d(-$keyValue, 0, 0)
+        rotate3d(0, 0, 1, -$keyValueDeg);
     }
 
     30% {

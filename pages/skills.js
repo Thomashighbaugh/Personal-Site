@@ -1,6 +1,6 @@
-import Layout from "../layout/Layout";
-import PageTitle from "../layout/PageTitle";
-import Accordion from "../components/Accordion/Accordion";
+import Layout from '../layout/Layout';
+import PageTitle from '../layout/PageTitle';
+import Accordion from '../components/Accordion/Accordion';
 
 export default function Skills() {
   return (

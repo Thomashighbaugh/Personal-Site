@@ -1,6 +1,6 @@
-import Link from "next/link";
-import PropTypes from "prop-types";
-import PictureSet from "../PictureSet/PictureSet";
+import Link from 'next/link';
+import PropTypes from 'prop-types';
+import PictureSet from '../PictureSet/PictureSet';
 
 function PromotedBlog({
   blog,
@@ -11,10 +11,10 @@ function PromotedBlog({
   const promotedBlog = blog.document.data;
   const { alt_text: altText } = promotedBlog;
 
-  const truncateSummary = (content) => {
-    return content.slice(0, 250) + "...";
+  const truncateSummary = content => {
+    return content.slice(0, 250) + '...';
   };
-  const tags = promotedBlog.tags.map((tag) => {
+  const tags = promotedBlog.tags.map(tag => {
     return (
       <li key={tag} className="tag-icon">
         {tag}
@@ -25,15 +25,15 @@ function PromotedBlog({
     <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
       <a className="promoted">
         <div className="promoted__container">
-          <div className="promoted__img">
-            <PictureSet pictureName={promotedBlog.banner} altText={altText} />
-          </div>
+          <img src={promotedBlog.banner} alt={altText} />
           <div className="promoted__content">
             <div className="promoted__title">
               <h1 className="blog__title">{promotedBlog.title}</h1>
               <span className="promoted__msg">Pinned</span>
             </div>
-            <h2 className="blog__subtitle">{promotedBlog.subtitle}</h2>
+            <h2 className="blog__subtitle">
+              {promotedBlog.subtitle}
+            </h2>
             <p>{truncateSummary(content)}</p>
             <div className="blog-list__read-more">Read More</div>
             <ul className="tag-icons">{tags}</ul>

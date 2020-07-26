@@ -6,8 +6,10 @@
   animation-timing-function: ease-out;
   @-webkit-keyframes lightSpeedIn#{$strength} {
     from {
-      -webkit-transform: translate3d($keyValueTranslate, 0, 0) skewX(-$keyValue);
-      transform: translate3d($keyValueTranslate, 0, 0) skewX(-$keyValue);
+      -webkit-transform: translate3d($keyValueTranslate, 0, 0)
+        skewX(-$keyValue);
+      transform: translate3d($keyValueTranslate, 0, 0)
+        skewX(-$keyValue);
       opacity: 0;
     }
 
@@ -32,8 +34,10 @@
 
   @keyframes lightSpeedIn#{$strength} {
     from {
-      -webkit-transform: translate3d($keyValueTranslate, 0, 0) skewX(-$keyValue);
-      transform: translate3d($keyValueTranslate, 0, 0) skewX(-$keyValue);
+      -webkit-transform: translate3d($keyValueTranslate, 0, 0)
+        skewX(-$keyValue);
+      transform: translate3d($keyValueTranslate, 0, 0)
+        skewX(-$keyValue);
       opacity: 0;
     }
 

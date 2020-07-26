@@ -4,8 +4,10 @@
   @-webkit-keyframes rollIn#{$strength} {
     from {
       opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -$keyValue);
-      transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -$keyValue);
+      -webkit-transform: translate3d(-100%, 0, 0)
+        rotate3d(0, 0, 1, -$keyValue);
+      transform: translate3d(-100%, 0, 0)
+        rotate3d(0, 0, 1, -$keyValue);
     }
 
     to {
@@ -18,8 +20,10 @@
   @keyframes rollIn#{$strength} {
     from {
       opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -$keyValue);
-      transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -$keyValue);
+      -webkit-transform: translate3d(-100%, 0, 0)
+        rotate3d(0, 0, 1, -$keyValue);
+      transform: translate3d(-100%, 0, 0)
+        rotate3d(0, 0, 1, -$keyValue);
     }
 
     to {
