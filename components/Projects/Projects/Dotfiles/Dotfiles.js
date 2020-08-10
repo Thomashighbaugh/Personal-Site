@@ -1,6 +1,6 @@
-import PictureSet from '../../../PictureSet/PictureSet';
-import React from 'react';
-import Body from '../../Body/Body';
+import PictureSet from "../../../PictureSet/PictureSet";
+import React from "react";
+import Body from "../../Body/Body";
 
 function Project() {
   return (
