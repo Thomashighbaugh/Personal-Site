@@ -1,9 +1,9 @@
 ---
 title: Styled Components
-date: '2020-07-29'
-subtitle: 'Or How I Learned to Stop Fearing and Start Loving Internal Stylesheets'
+date: "2020-07-29"
+subtitle: "Or How I Learned to Stop Fearing and Start Loving Internal Stylesheets"
 banner: dots.jpg
-alt_text: 'Styled Components'
+alt_text: "Styled Components"
 tags: [Dotfiles]
 promoted: false
 ---
@@ -20,4 +20,3 @@ and I decided that stripping them out would take too long and in the spirit of a
 design thought it wouldn't hurt to try and...
 
 ### WOW I GET IT NOW
-
