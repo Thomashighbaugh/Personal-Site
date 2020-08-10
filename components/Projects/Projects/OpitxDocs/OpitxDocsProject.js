@@ -1,6 +1,6 @@
-import PictureSet from '../../../PictureSet/PictureSet';
-import React from 'react';
-import Body from '../../Body/Body';
+import PictureSet from "../../../PictureSet/PictureSet";
+import React from "react";
+import Body from "../../Body/Body";
 
 function OpitxDocsProject() {
   return (
@@ -23,10 +23,7 @@ function OpitxDocsProject() {
           />
         </div>
         <div className="project__video project__right">
-          <PictureSet
-            pictureName="opitxdocsproject.png"
-            altText=" "
-          />
+          <PictureSet pictureName="opitxdocsproject.png" altText=" " />
         </div>
       </div>
     </div>
