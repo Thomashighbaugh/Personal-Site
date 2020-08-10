@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="Fixing Projects 2: Populating the Projects">
-      <change afterPath="$PROJECT_DIR$/styles/javascript/syntax-theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/[slug].js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <workItem from="1595383854333" duration="3082000" />
       <workItem from="1595439151060" duration="2513000" />
       <workItem from="1595791241386" duration="1543000" />
-      <workItem from="1597021030220" duration="18093000" />
+      <workItem from="1597021030220" duration="18124000" />
     </task>
     <task id="LOCAL-00001" summary="adding pattern.scss">
       <created>1597021577640</created>
