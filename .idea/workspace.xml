@@ -19,8 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="adding pattern.scss">
-      <change beforePath="$PROJECT_DIR$/blog_posts/styled-components.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog_posts/styled-components.md" afterDir="false" />
+    <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="blog post">
+      <change afterPath="$PROJECT_DIR$/components/Projects/Body/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/Bhairava/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/Dhumavati/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/Dotfiles/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/G5/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/Generic/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/NAD/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/Opitx/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/OpitxDocs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/ResurgensIII/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/TimeIsNigh/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PictureSet/PictureSet.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PictureSet/PictureSet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +60,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/Projects/TimeIsNigh" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -66,18 +79,18 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/ScrollMagic" />
-      <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/components" />
-      <recent name="$PROJECT_DIR$/higher_order_components/GSAPwrapper" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/styles/vendor/sassimate" />
-      <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/components/Projects/TimeIsNigh" />
+      <recent name="$PROJECT_DIR$/components/Projects/ResurgensIII" />
+      <recent name="$PROJECT_DIR$/components/Projects/OpitxDocs" />
+      <recent name="$PROJECT_DIR$/components/Projects/Opitx" />
+      <recent name="$PROJECT_DIR$/components/Projects/Bhairava" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/Projects/Projects" />
+      <recent name="$PROJECT_DIR$/components/Projects/Dhumavati" />
+      <recent name="$PROJECT_DIR$/components/Projects" />
+      <recent name="$PROJECT_DIR$/components/ScrollMagic" />
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
@@ -101,7 +114,7 @@
       <workItem from="1595383854333" duration="3082000" />
       <workItem from="1595439151060" duration="2513000" />
       <workItem from="1595791241386" duration="1543000" />
-      <workItem from="1597021030220" duration="1274000" />
+      <workItem from="1597021030220" duration="6882000" />
     </task>
     <task id="LOCAL-00001" summary="adding pattern.scss">
       <created>1597021577640</created>
@@ -117,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597021984941</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="blog post">
+      <created>1597022318741</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597022318741</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +162,8 @@
       <path value="$PROJECT_DIR$/portfolio-site" />
     </ignored-roots>
     <MESSAGE value="adding pattern.scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding pattern.scss" />
+    <MESSAGE value="blog post" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog post" />
   </component>
   <component name="WindowStateProjectService">
     <state x="802" y="492" width="323" height="195" key="#ESLint" timestamp="1589681889509">
@@ -190,15 +211,19 @@
       <screen x="3360" y="0" width="1920" height="1080" />
     </state>
     <state x="3552" y="132" key="MergeDialog/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@3360.0.1920.1080" timestamp="1595440458799" />
+    <state x="589" y="297" key="MultipleFileMergeDialog" timestamp="1597022329422">
+      <screen x="0" y="27" width="1920" height="1017" />
+    </state>
+    <state x="589" y="297" key="MultipleFileMergeDialog/0.27.1920.1017/1920.0.1920.1080@0.27.1920.1017" timestamp="1597022329422" />
     <state x="439" y="308" width="1042" height="708" key="SettingsEditor" timestamp="1589783730453">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="439" y="308" width="1042" height="708" key="SettingsEditor/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589783730453" />
     <state x="439" y="250" width="1042" height="708" key="SettingsEditor/1920.0.1600.900/0.0.1920.1080@0.0.1920.1080" timestamp="1589665095683" />
-    <state x="559" y="270" key="Vcs.Push.Dialog.v2" timestamp="1597022003454">
+    <state x="559" y="270" key="Vcs.Push.Dialog.v2" timestamp="1597022322599">
       <screen x="0" y="27" width="1920" height="1017" />
     </state>
-    <state x="559" y="270" key="Vcs.Push.Dialog.v2/0.27.1920.1017/1920.0.1920.1080@0.27.1920.1017" timestamp="1597022003454" />
+    <state x="559" y="270" key="Vcs.Push.Dialog.v2/0.27.1920.1017/1920.0.1920.1080@0.27.1920.1017" timestamp="1597022322599" />
     <state x="653" y="447" width="621" height="285" key="cloudConfig.PluginsDialog" timestamp="1589785781758">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
