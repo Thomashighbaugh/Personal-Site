@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import { FaGithub, FaDesktop, FaStar } from 'react-icons/fa';
-import React from 'react';
+import PropTypes from "prop-types";
+import { FaGithub, FaDesktop, FaStar } from "react-icons/fa";
+import React from "react";
 
 const Body = ({
   projectTitle,
