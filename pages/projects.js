@@ -11,11 +11,12 @@ const DynamicComponentWithNoSSR = dynamic(
 );
 /* eslint-enable */
 import React from 'react';
-import DotfilesProject from '../components/Projects/Projects/Dotfiles';
-import OpitxProject from '../components/Projects/Projects/Opitx';
+import DotfilesProject from '../components/Projects/Projects/Dotfiles/Dotfiles';
+import OpitxProject from '../components/Projects/Projects/Opitx/OpitxProject';
 import TimeIsNighProject from '../components/Projects/Projects/TimeIsNigh/TimeIsNighProject';
 import ResurgensIIIProject from '../components/Projects/Projects/ResurgensIII/ResurgensIIIProject';
 import OpitxDocsProject from '../components/Projects/Projects/OpitxDocs/OpitxDocsProject';
+import G5CCLifeBlogProject from '../components/Projects/Projects/G5/G5CCLifeBlogProject';
 
 const Projects = () => {
   return (
@@ -24,6 +25,7 @@ const Projects = () => {
         <div className="Projects">
           <div className="projects">
             <TimeIsNighProject />
+            <G5CCLifeBlogProject />
             <DotfilesProject />
             <OpitxProject />
             <OpitxDocsProject />

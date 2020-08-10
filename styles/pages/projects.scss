@@ -2,6 +2,9 @@
 .projects {
   width: 100%;
   margin-top: 3rem;
+  svg {
+    margin-left: 1rem;
+  }
   .project {
     margin: 4rem;
     padding: 2rem 4rem;
@@ -24,12 +27,13 @@
     &__left {
       opacity: 0;
       transform: translateX(-100px);
-      transition: all 1s ease-out;
+      transition: all 1.5s ease-out;
     }
     &__right {
       opacity: 0;
       transform: translateX(100px);
-      transition: all 1s ease-out;
+      transition: all 1.5s ease-out;
+      border-left: var(--gray-color) 0.25rem solid;
     }
     &__left.visible,
     &__right.visible {
@@ -87,9 +91,7 @@
       justify-content: flex-start;
       font-size: 2rem;
       margin-top: 2.5rem;
-      svg {
-        margin-left: 1rem;
-      }
+
       a {
         margin-right: 2rem;
         display: flex;
@@ -113,5 +115,7 @@
       text-transform: uppercase;
       @include link-states(--primary-color, --font-color);
     }
+
   }
+
 }

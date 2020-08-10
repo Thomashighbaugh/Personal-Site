@@ -20,9 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="Fixing Projects 2: Populating the Projects">
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/G5/G5CCLifeBlogProject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/g5cclife.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Opitx/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Opitx/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/OpitxDocs/OpitxDocsProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/OpitxDocs/OpitxDocsProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.47b6a10c2267a5a4ec60.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.47b6a10c2267a5a4ec60.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.73463c31d6a490d085fe.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.73463c31d6a490d085fe.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.881f2457794a8c2a309e.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.881f2457794a8c2a309e.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.90494900849f05a06ced.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.90494900849f05a06ced.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.d4f795d473506c3e7caa.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.d4f795d473506c3e7caa.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.dbf0557f4c31cfaec13e.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.dbf0557f4c31cfaec13e.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.ed68b3a1f0e6b4d77047.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/projects.js.ed68b3a1f0e6b4d77047.hot-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Bhairava/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Bhairava/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Dhumavati/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Dhumavati/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Dotfiles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Dotfiles/Dotfiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/G5/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Generic/GenericProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Generic/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Opitx/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Opitx/OpitxProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/abstracts/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/javascript/syntax-theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/projects.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +123,7 @@
       <workItem from="1595383854333" duration="3082000" />
       <workItem from="1595439151060" duration="2513000" />
       <workItem from="1595791241386" duration="1543000" />
-      <workItem from="1597021030220" duration="11042000" />
+      <workItem from="1597021030220" duration="14693000" />
     </task>
     <task id="LOCAL-00001" summary="adding pattern.scss">
       <created>1597021577640</created>
@@ -141,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597037845673</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixing Projects 2: Populating the Projects">
+      <created>1597039397656</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597039397656</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,10 +203,11 @@
     </state>
     <state x="802" y="492" width="323" height="195" key="#ESLint/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589681889509" />
     <state x="802" y="490" key="#ESLint/0.27.1920.1017/1920.0.1920.1080@0.27.1920.1017" timestamp="1597035827751" />
-    <state x="4004" y="645" width="900" height="200" key="#Stylelint" timestamp="1595383917562">
-      <screen x="3360" y="0" width="1920" height="1080" />
+    <state x="644" y="631" width="966" height="225" key="#Stylelint" timestamp="1597042613303">
+      <screen x="0" y="27" width="1920" height="1011" />
     </state>
     <state x="644" y="577" width="664" height="200" key="#Stylelint/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589695957987" />
+    <state x="644" y="631" width="966" height="225" key="#Stylelint/0.27.1920.1011/1920.0.1920.1080@0.27.1920.1011" timestamp="1597042613303" />
     <state x="4004" y="645" width="900" height="200" key="#Stylelint/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@3360.0.1920.1080" timestamp="1595383917562" />
     <state x="0" y="127" width="532" height="480" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589846876606">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -252,10 +279,11 @@
       <screen x="0" y="27" width="1920" height="1017" />
     </state>
     <state x="623" y="247" key="search.everywhere.popup/0.27.1920.1017/1920.0.1920.1080@0.27.1920.1017" timestamp="1597035636212" />
-    <state x="690" y="434" width="548" height="315" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597037752718">
-      <screen x="0" y="27" width="1920" height="1017" />
+    <state x="690" y="432" width="548" height="315" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597042745852">
+      <screen x="0" y="27" width="1920" height="1011" />
     </state>
     <state x="690" y="432" width="548" height="315" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1589846858784" />
+    <state x="690" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1920.1011/1920.0.1920.1080@0.27.1920.1011" timestamp="1597042745852" />
     <state x="690" y="434" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1920.1017/1920.0.1920.1080@0.27.1920.1017" timestamp="1597037752718" />
   </component>
 </project>
