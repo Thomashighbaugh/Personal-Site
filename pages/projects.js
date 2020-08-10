@@ -1,7 +1,5 @@
-import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Layout from '../layout/Layout';
-import PictureSet from '../components/PictureSet/PictureSet';
 import Spinner from '../components/Spinner/Spinner';
 /* eslint-disable */
 /* eslint-disable */
@@ -13,10 +11,9 @@ const DynamicComponentWithNoSSR = dynamic(
 );
 /* eslint-enable */
 import React from 'react';
-import Project from '../components/Projects/Projects/Generic';
-import NADProject from '../components/Projects/Projects/NAD';
 import DotfilesProject from '../components/Projects/Projects/Dotfiles';
 import OpitxProject from '../components/Projects/Projects/Opitx';
+import TimeIsNighProject from '../components/Projects/Projects/TimeIsNigh';
 
 const Projects = () => {
   return (
@@ -24,7 +21,7 @@ const Projects = () => {
       <DynamicComponentWithNoSSR>
         <div className="Projects">
           <div className="projects">
-            <NADProject />
+            <TimeIsNighProject />
             <DotfilesProject />
             <OpitxProject />
           </div>

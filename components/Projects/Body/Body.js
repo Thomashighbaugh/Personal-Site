@@ -1,17 +1,4 @@
-import dynamic from 'next/dynamic';
-import Spinner from '../../../Spinner/Spinner';
 import PropTypes from 'prop-types';
-
-/* eslint-disable */
-/* eslint-disable */
-const DynamicComponentWithNoSSR = dynamic(
-  () => {
-    return import('../../../ScrollMagic/scrollmagic');
-  },
-  { loading: () => <Spinner />, ssr: false },
-);
-/* eslint-enable */
-/* eslint-enable */
 import { FaGithub, FaDesktop, FaStar } from 'react-icons/fa';
 import React from 'react';
 
@@ -32,37 +19,37 @@ const Body = ({
   return (
     <div>
       <div className="project__title">
-        <h3 className="heading-3">{props.projectTitle}</h3>
+        <h3 className="heading-3">{projectTitle}</h3>
         <div className="tag-icons">
-          <span className="tag-icon">{props.projectTag1}</span>
-          <span className="tag-icon">{props.projectTag2}</span>
-          <span className="tag-icon">{props.projectTag3}</span>
+          <span className="tag-icon">{projectTag1}</span>
+          <span className="tag-icon">{projectTag2}</span>
+          <span className="tag-icon">{projectTag3}</span>
         </div>
       </div>
       <div className="project__description">
-        <p>{props.projectDescription}</p>
+        <p>{projectDescription}</p>
         <ul>
           <li>
             <FaStar />
-            {props.feature1}
+            {feature1}
           </li>
           <li>
             <FaStar />
-            {props.feature2}
+            {feature2}
           </li>
           <li>
             <FaStar />
-            {props.feature3}
+            {feature3}
           </li>
           <li>
             <FaStar />
-            {props.feature4}
+            {feature4}
           </li>
         </ul>
       </div>
       <div className="project__links">
         <a
-          href={props.githubLink}
+          href={githubLink}
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub Repository"
@@ -71,10 +58,10 @@ const Body = ({
           <FaGithub />
         </a>
         <a
-          href={props.hostedLink}
+          href={hostedLink}
           target="blank"
           rel="noopener noreferrer"
-          title={props.hostedTitle}
+          title={hostedTitle}
         >
           Website
           <FaDesktop />
