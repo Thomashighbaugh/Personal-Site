@@ -1,26 +1,28 @@
-import Link from "./Link";
-import React, { useState, useEffect } from "react";
-import { FaLightbulb } from "react-icons/fa";
+import Link from './Link';
+import React, { useState, useEffect } from 'react';
+import { RiLightbulbFlashLine } from 'react-icons/ri';
 
-const Checkbox = (props) => <input type="checkbox" id="checkbox" {...props} />;
+const Checkbox = props => (
+  <input type="checkbox" id="checkbox" {...props} />
+);
 
 function Header() {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem("theme");
-    const darkMode = currentTheme === "dark";
+    const currentTheme = localStorage.getItem('theme');
+    const darkMode = currentTheme === 'dark';
     if (darkMode) {
       setChecked(true);
     }
-    const mode = checked || darkMode ? "dark" : "light";
-    document.documentElement.setAttribute("data-theme", mode);
-    localStorage.setItem("theme", mode);
+    const mode = checked || darkMode ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', mode);
+    localStorage.setItem('theme', mode);
   });
 
   const toggleMode = () => {
     setChecked(!checked);
-    localStorage.setItem("theme", checked);
+    localStorage.setItem('theme', checked);
   };
 
   const logoLink = () => (
@@ -29,7 +31,7 @@ function Header() {
         <img
           className="logo pattern-dots-md gray-light"
           id="img-button"
-          src={require("../images/logo.svg")}
+          src={require('../images/logo.svg')}
         />
       </button>
     </Link>
@@ -51,7 +53,11 @@ function Header() {
 
   const hamburgerMenu = () => (
     <div className="hamburger">
-      <input type="checkbox" className="hamburger__checkbox" id="navi-toggle" />
+      <input
+        type="checkbox"
+        className="hamburger__checkbox"
+        id="navi-toggle"
+      />
       <label htmlFor="navi-toggle" className="hamburger__button">
         <span className="hamburger__text">MENU</span>
         <span className="hamburger__icon">&nbsp;</span>
@@ -106,7 +112,7 @@ function Header() {
           <label className="theme-switch" htmlFor="checkbox">
             <Checkbox checked={checked} onChange={toggleMode} />
             <div className="lightbulb ">
-              <FaLightbulb className="pattern-dots-md gray-light" />
+              <RiLightbulbFlashLine className="pattern-dots-md gray-light" />
             </div>
           </label>
         </div>

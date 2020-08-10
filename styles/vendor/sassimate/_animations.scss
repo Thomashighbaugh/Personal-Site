@@ -81,230 +81,230 @@
   @if $name == bounce {
     @include bounce($strength);
   }
-  @elseif $name == bounceIn {
+  @else if $name == bounceIn {
     @include bounceIn($strength);
   }
-  @elseif $name == bounceInDown {
+  @else if $name == bounceInDown {
     @include bounceInDown($strength);
   }
-  @elseif $name == bounceInLeft {
+  @else if $name == bounceInLeft {
     @include bounceInLeft($strength);
   }
-  @elseif $name == bounceInRight {
+  @else if $name == bounceInRight {
     @include bounceInRight($strength);
   }
-  @elseif $name == bounceInUp {
+  @else if $name == bounceInUp {
     @include bounceInUp($strength);
   }
-  @elseif $name == bounceOut {
+  @else if $name == bounceOut {
     @include bounceOut($strength);
   }
-  @elseif $name == bounceOutDown {
+  @else if $name == bounceOutDown {
     @include bounceOutDown($strength);
   }
-  @elseif $name == bounceOutLeft {
+  @else if $name == bounceOutLeft {
     @include bounceOutLeft($strength);
   }
-  @elseif $name == bounceOutRight {
+  @else if $name == bounceOutRight {
     @include bounceOutRight($strength);
   }
-  @elseif $name == bounceOutUp {
+  @else if $name == bounceOutUp {
     @include bounceOutUp($strength);
   }
-  @elseif $name == fadeIn {
+  @else if $name == fadeIn {
     @include fadeIn($strength);
   }
-  @elseif $name == fadeInDown {
+  @else if $name == fadeInDown {
     @include fadeInDown($strength);
   }
-  @elseif $name == fadeInDownBig {
+  @else if $name == fadeInDownBig {
     @include fadeInDownBig($strength);
   }
-  @elseif $name == fadeInLeft {
+  @else if $name == fadeInLeft {
     @include fadeInLeft($strength);
   }
-  @elseif $name == fadeInLeftBig {
+  @else if $name == fadeInLeftBig {
     @include fadeInLeftBig($strength);
   }
-  @elseif $name == fadeInRight {
+  @else if $name == fadeInRight {
     @include fadeInRight($strength);
   }
-  @elseif $name == fadeInRightBig {
+  @else if $name == fadeInRightBig {
     @include fadeInRightBig($strength);
   }
-  @elseif $name == fadeInUp {
+  @else if $name == fadeInUp {
     @include fadeInUp($strength);
   }
-  @elseif $name == fadeInUpBig {
+  @else if $name == fadeInUpBig {
     @include fadeInUpBig($strength);
   }
 
-  @elseif $name == fadeOut {
+  @else if $name == fadeOut {
     @include fadeOut($strength);
   }
-  @elseif $name == fadeOutDown {
+  @else if $name == fadeOutDown {
     @include fadeOutDown($strength);
   }
-  @elseif $name == fadeOutDownBig {
+  @else if $name == fadeOutDownBig {
     @include fadeOutDownBig($strength);
   }
-  @elseif $name == fadeOutLeft {
+  @else if $name == fadeOutLeft {
     @include fadeOutLeft($strength);
   }
-  @elseif $name == fadeOutLeftBig {
+  @else if $name == fadeOutLeftBig {
     @include fadeOutLeftBig($strength);
   }
-  @elseif $name == fadeOutRight {
+  @else if $name == fadeOutRight {
     @include fadeOutRight($strength);
   }
-  @elseif $name == fadeOutRightBig {
+  @else if $name == fadeOutRightBig {
     @include fadeOutRightBig($strength);
   }
-  @elseif $name == fadeOutUp {
+  @else if $name == fadeOutUp {
     @include fadeOutUp($strength);
   }
-  @elseif $name == fadeOutUpBig {
+  @else if $name == fadeOutUpBig {
     @include fadeOutUpBig($strength);
   }
-  @elseif $name == flash {
+  @else if $name == flash {
     @include flash($strength);
   }
-  @elseif $name == flip {
+  @else if $name == flip {
     @include flip($strength);
   }
-  @elseif $name == flipInX {
+  @else if $name == flipInX {
     @include flipInX($strength);
   }
-  @elseif $name == flipInY {
+  @else if $name == flipInY {
     @include flipInY($strength);
   }
-  @elseif $name == flipOut {
+  @else if $name == flipOut {
     @include flipOut($strength);
   }
-  @elseif $name == flipOutY {
+  @else if $name == flipOutY {
     @include flipOutY($strength);
   }
-  @elseif $name == hinge {
+  @else if $name == hinge {
     @include hinge($strength);
   }
-  @elseif $name == jello {
+  @else if $name == jello {
     @include jello($strength);
   }
-  @elseif $name == lightSpeedIn {
+  @else if $name == lightSpeedIn {
     @include lightSpeedIn($strength);
   }
-  @elseif $name == lightSpeedOut {
+  @else if $name == lightSpeedOut {
     @include lightSpeedOut($strength);
   }
-  @elseif $name == pulse {
+  @else if $name == pulse {
     @include pulse($strength);
   }
-  @elseif $name == rollIn {
+  @else if $name == rollIn {
     @include rollIn($strength);
   }
-  @elseif $name == rollOut {
+  @else if $name == rollOut {
     @include rollOut($strength);
   }
-  @elseif $name == rotateIn {
+  @else if $name == rotateIn {
     @include rotateIn($strength);
   }
-  @elseif $name == rotateInDownLeft {
+  @else if $name == rotateInDownLeft {
     @include rotateInDownLeft($strength);
   }
-  @elseif $name == rotateInDownRight {
+  @else if $name == rotateInDownRight {
     @include rotateInDownRight($strength);
   }
-  @elseif $name == rotateInUpLeft {
+  @else if $name == rotateInUpLeft {
     @include rotateInUpLeft($strength);
   }
-  @elseif $name == rotateInUpRight {
+  @else if $name == rotateInUpRight {
     @include rotateInUpRight($strength);
   }
-  @elseif $name == rotateOut {
+  @else if $name == rotateOut {
     @include rotateOut($strength);
   }
-  @elseif $name == rotateOutDownLeft {
+  @else if $name == rotateOutDownLeft {
     @include rotateOutDownLeft($strength);
   }
-  @elseif $name == rotateOutDownRight {
+  @else if $name == rotateOutDownRight {
     @include rotateOutDownRight($strength);
   }
-  @elseif $name == rotateOutUpLeft {
+  @else if $name == rotateOutUpLeft {
     @include rotateOutUpLeft($strength);
   }
-  @elseif $name == rotateOutUpRight {
+  @else if $name == rotateOutUpRight {
     @include rotateOutUpRight($strength);
   }
-  @elseif $name == rubberBand {
+  @else if $name == rubberBand {
     @include rubberBand($strength);
   }
-  @elseif $name == shake {
+  @else if $name == shake {
     @include shake($strength);
   }
-  @elseif $name == slideInDown {
+  @else if $name == slideInDown {
     @include slideInDown($strength);
   }
-  @elseif $name == slideInLeft {
+  @else if $name == slideInLeft {
     @include slideInLeft($strength);
   }
-  @elseif $name == slideInRight {
+  @else if $name == slideInRight {
     @include slideInRight($strength);
   }
-  @elseif $name == slideInUp {
+  @else if $name == slideInUp {
     @include slideInUp($strength);
   }
-  @elseif $name == slideOutDown {
+  @else if $name == slideOutDown {
     @include slideOutDown($strength);
   }
-  @elseif $name == slideOutLeft {
+  @else if $name == slideOutLeft {
     @include slideOutLeft($strength);
   }
-  @elseif $name == slideOutRight {
+  @else if $name == slideOutRight {
     @include slideOutRight($strength);
   }
-  @elseif $name == slideOutUp {
+  @else if $name == slideOutUp {
     @include slideOutUp($strength);
   }
-  @elseif $name == swing {
+  @else if $name == swing {
     @include swing($strength);
   }
-  @elseif $name == tada {
+  @else if $name == tada {
     @include tada($strength);
   }
-  @elseif $name == wobble {
+  @else if $name == wobble {
     @include wobble($strength);
   }
-  @elseif $name == zoomIn {
+  @else if $name == zoomIn {
     @include zoomIn($strength);
   }
-  @elseif $name == zoomInDown {
+  @else if $name == zoomInDown {
     @include zoomInDown($strength);
   }
-  @elseif $name == zoomInLeft {
+  @else if $name == zoomInLeft {
     @include zoomInLeft($strength);
   }
-  @elseif $name == zoomInRight {
+  @else if $name == zoomInRight {
     @include zoomInRight($strength);
   }
-  @elseif $name == zoomInUp {
+  @else if $name == zoomInUp {
     @include zoomInUp($strength);
   }
-  @elseif $name == zoomOut {
+  @else if $name == zoomOut {
     @include zoomOut($strength);
   }
-  @elseif $name == zoomOutDown {
+  @else if $name == zoomOutDown {
     @include zoomOutDown($strength);
   }
-  @elseif $name == zoomOutLeft {
+  @else if $name == zoomOutLeft {
     @include zoomOutLeft($strength);
   }
-  @elseif $name == zoomOutRight {
+  @else if $name == zoomOutRight {
     @include zoomOutRight($strength);
   }
-  @elseif $name == zoomInUp {
+  @else if $name == zoomInUp {
     @include zoomInUp($strength);
   }
-  @elseif $name == zoomOutUp {
+  @else if $name == zoomOutUp {
     @include zoomOutUp($strength);
   }
 }

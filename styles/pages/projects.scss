@@ -83,6 +83,19 @@
     }
     &__title {
       margin-bottom: 2rem;
+      text-align: center;
+    }
+    .heading-3{
+      font-size: 3.75rem;
+      text-shadow: var(--gray-color) 0.2rem 0.2rem;
+
+    }
+    .tag-icon{
+      color: var(--gray-color);
+      border-color: var(--gray-color);
+      font-size: 1.35rem;
+      font-weight: 900;
+
     }
     &__links {
       width: 100%;

@@ -11,12 +11,12 @@ $xxl-breakpoint: 1200px;
 
 // fallbacks for IE
 $primaryColor: #3FEBFF;
-$secondaryColor: #24262d;
+$secondaryColor: #556;
 
 :root {
   --primary-color: #3FEBFF;
-  --secondary-color: #24262d;
-  --font-color: #24262d;
+  --secondary-color: #555566;
+  --font-color: #555566;
   --bg-color: #fdfdfd;
   --heading-color: #555;
   --white-color: #fdfdfd;
@@ -24,7 +24,7 @@ $secondaryColor: #24262d;
   --form-color: #eceff2;
   --pagination-color: #c1cad6;
   --placeholder-color: #c1cad6;
-  --gray-color: #686868;
+  --gray-color: #555566;
   --black-color: #24262d;
 }
 
@@ -36,4 +36,5 @@ $secondaryColor: #24262d;
   --svg-color: #3FEBFF;
   --pagination-color: #909090;
   --placeholder-color: #c1cad6;
+  --gray-color: #909090;
 }
