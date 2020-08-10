@@ -4,7 +4,7 @@
 @import "abstracts/variables", "abstracts/mixins";
 
 // 2. Vendors
-@import "vendor/sassimate/animations";
+@import "vendor/sassimate/animations", "vendor/pattern";
 // 3. Base stuff
 @import "base/base", "base/animations", "base/typography", "base/helpers";
 
