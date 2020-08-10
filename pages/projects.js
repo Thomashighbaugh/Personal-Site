@@ -15,6 +15,7 @@ import DotfilesProject from '../components/Projects/Projects/Dotfiles';
 import OpitxProject from '../components/Projects/Projects/Opitx';
 import TimeIsNighProject from '../components/Projects/Projects/TimeIsNigh/TimeIsNighProject';
 import ResurgensIIIProject from '../components/Projects/Projects/ResurgensIII/ResurgensIIIProject';
+import OpitxDocsProject from '../components/Projects/Projects/OpitxDocs/OpitxDocsProject';
 
 const Projects = () => {
   return (
@@ -25,6 +26,7 @@ const Projects = () => {
             <TimeIsNighProject />
             <DotfilesProject />
             <OpitxProject />
+            <OpitxDocsProject />
             <ResurgensIIIProject />
           </div>
         </div>
