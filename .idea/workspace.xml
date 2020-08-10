@@ -20,20 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="Fixing Projects 1: Creating Body Component">
-      <change afterPath="$PROJECT_DIR$/images/resurgens3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/timeisnigh.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Body/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Body/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Bhairava/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Bhairava/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Dhumavati/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Dhumavati/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Dotfiles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Dotfiles/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/G5/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/G5/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Generic/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Generic/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/NAD/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Opitx/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Opitx/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/OpitxDocs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/OpitxDocs/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Projects/Projects/ResurgensIII/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/ResurgensIII/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/TimeIsNigh/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/TimeIsNigh/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +103,7 @@
       <workItem from="1595383854333" duration="3082000" />
       <workItem from="1595439151060" duration="2513000" />
       <workItem from="1595791241386" duration="1543000" />
-      <workItem from="1597021030220" duration="9263000" />
+      <workItem from="1597021030220" duration="9360000" />
     </task>
     <task id="LOCAL-00001" summary="adding pattern.scss">
       <created>1597021577640</created>

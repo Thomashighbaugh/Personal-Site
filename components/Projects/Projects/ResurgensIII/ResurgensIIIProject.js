@@ -2,7 +2,7 @@ import PictureSet from '../../../PictureSet/PictureSet';
 import React from 'react';
 import Body from '../../Body/Body';
 
-function Project() {
+function ResurgensIIIProject() {
   return (
     <div>
       <div className="project">
@@ -29,4 +29,4 @@ function Project() {
     </div>
   );
 }
-export default Project;
+export default ResurgensIIIProject;

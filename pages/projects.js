@@ -13,7 +13,8 @@ const DynamicComponentWithNoSSR = dynamic(
 import React from 'react';
 import DotfilesProject from '../components/Projects/Projects/Dotfiles';
 import OpitxProject from '../components/Projects/Projects/Opitx';
-import TimeIsNighProject from '../components/Projects/Projects/TimeIsNigh';
+import TimeIsNighProject from '../components/Projects/Projects/TimeIsNigh/TimeIsNighProject';
+import ResurgensIIIProject from '../components/Projects/Projects/ResurgensIII/ResurgensIIIProject';
 
 const Projects = () => {
   return (
@@ -24,6 +25,7 @@ const Projects = () => {
             <TimeIsNighProject />
             <DotfilesProject />
             <OpitxProject />
+            <ResurgensIIIProject />
           </div>
         </div>
       </DynamicComponentWithNoSSR>
