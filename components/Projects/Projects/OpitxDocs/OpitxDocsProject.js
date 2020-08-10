@@ -24,7 +24,7 @@ function OpitxDocsProject() {
         </div>
         <div className="project__video project__right">
           <PictureSet
-            pictureName="optixdocsproject.png"
+            pictureName="opitxdocsproject.png"
             altText=" "
           />
         </div>
