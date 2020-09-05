@@ -19,19 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="Fixing Projects 2: Populating the Projects">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/cssxfire.xml" afterDir="false" />
+    <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Icons/Icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Icons/Icons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/browserconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/layouts/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/layouts/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/pages/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +105,7 @@
       <workItem from="1595439151060" duration="2513000" />
       <workItem from="1595791241386" duration="1543000" />
       <workItem from="1597021030220" duration="18124000" />
-      <workItem from="1599327867373" duration="4274000" />
+      <workItem from="1599327867373" duration="5209000" />
     </task>
     <task id="LOCAL-00001" summary="adding pattern.scss">
       <created>1597021577640</created>
@@ -166,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597043508309</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="minor fix to icons and animations">
+      <created>1599342062915</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599342062915</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +191,8 @@
     <MESSAGE value="blog post" />
     <MESSAGE value="Fixing Projects 1: Creating Body Component" />
     <MESSAGE value="Fixing Projects 2: Populating the Projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Projects 2: Populating the Projects" />
+    <MESSAGE value="minor fix to icons and animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fix to icons and animations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="802" y="490" width="323" height="195" key="#ESLint" timestamp="1597035827751">
@@ -210,6 +208,10 @@
       <screen x="0" y="27" width="1920" height="1011" />
     </state>
     <state x="0" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1011/1920.0.1920.1080@0.27.1920.1011" timestamp="1597046290369" />
+    <state x="2365" y="133" width="1032" height="872" key="CommitChangelistDialog2" timestamp="1599342062819">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2365" y="133" width="1032" height="872" key="CommitChangelistDialog2/3840.0.2560.1440/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1599342062819" />
     <state width="1871" height="259" key="GridCell.Tab.0.bottom" timestamp="1599340546453">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -246,10 +248,11 @@
       <screen x="0" y="27" width="1920" height="1011" />
     </state>
     <state x="439" y="309" width="1042" height="729" key="SettingsEditor/0.27.1920.1011/1920.0.1920.1080@0.27.1920.1011" timestamp="1597045704355" />
-    <state x="559" y="270" key="Vcs.Push.Dialog.v2" timestamp="1597022322599">
-      <screen x="0" y="27" width="1920" height="1017" />
+    <state x="2479" y="284" width="802" height="500" key="Vcs.Push.Dialog.v2" timestamp="1599342069981">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="559" y="270" key="Vcs.Push.Dialog.v2/0.27.1920.1017/1920.0.1920.1080@0.27.1920.1017" timestamp="1597022322599" />
+    <state x="2479" y="284" width="802" height="500" key="Vcs.Push.Dialog.v2/3840.0.2560.1440/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1599342069981" />
     <state x="4092" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595440449765">
       <screen x="3360" y="0" width="1920" height="1080" />
     </state>
