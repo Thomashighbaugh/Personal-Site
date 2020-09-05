@@ -25,7 +25,7 @@
     font-family: "Kanit", sans-serif;
     border: none;
     border-radius: 18px;
-    background: inherit;
+    background: transparent;
     .logo {
       max-height: 7rem;
       max-width: 7rem;
@@ -58,7 +58,7 @@
 
   svg {
     border: 0.25rem var(--primary-color) solid;
-
+    color: var(--secondary-color);
     min-height: 7rem;
     min-width: 7rem;
     border-radius: 18px;

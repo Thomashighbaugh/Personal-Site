@@ -1,6 +1,6 @@
 import Link from './Link';
 import React, { useState, useEffect } from 'react';
-import { RiLightbulbFlashLine } from 'react-icons/ri';
+import { GiLightningArc } from 'react-icons/gi';
 
 const Checkbox = props => (
   <input type="checkbox" id="checkbox" {...props} />
@@ -29,7 +29,7 @@ function Header() {
     <Link href="/">
       <button className="link">
         <img
-          className="logo pattern-dots-md gray-light"
+          className="logo gray-light"
           id="img-button"
           src={require('../images/logo.svg')}
         />
@@ -112,7 +112,7 @@ function Header() {
           <label className="theme-switch" htmlFor="checkbox">
             <Checkbox checked={checked} onChange={toggleMode} />
             <div className="lightbulb ">
-              <RiLightbulbFlashLine className="pattern-dots-md gray-light" />
+              <GiLightningArc className="gray-light" />
             </div>
           </label>
         </div>

@@ -1,15 +1,13 @@
 .introduction {
-  @include animate(fadeIn, 3s, 63);
+  @include animate(pulse, 1s, 18, 3 );
   width: 100%;
   display: flex;
   align-content: flex-start;
   flex-direction: column;
   flex: 1 1 auto;
   letter-spacing: 0.55rem;
-  margin: 5rem 0 5rem;
-  padding: 10rem;
-  padding-left: 15rem;
-  padding-right: 25rem;
+  margin-top: 7% ;
+  padding: 10rem 25rem 10rem 15rem;
   border-radius: 18px;
   border: 0.25rem var(--primary-color) solid;
   background-color: var(--bg-color);
@@ -21,7 +19,7 @@
     background-blend-mode: soft-light, lighten;
     transition: background-size 0.01s;
     &:hover {
-      background-size: 0% 5px;
+      background-size: 0 5px;
       color: #00e3ff;
     }
   }
