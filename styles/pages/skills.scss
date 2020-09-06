@@ -5,12 +5,12 @@
   margin: 5%;
   overflow: hidden;
 }
-.skills-container{
+.skills-container {
   display: flex;
   flex-direction: row;
 }
 
-.skills-image{
+.skills-image {
   height: 100%;
   padding: 1rem;
   margin-left: 2%;
@@ -18,6 +18,6 @@
   border-radius: 18px;
   border: var(--secondary-color) solid 0.25rem;
   @include md {
-display: none;
+    display: none;
   }
 }
