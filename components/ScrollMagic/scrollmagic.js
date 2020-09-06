@@ -1,74 +1,80 @@
-import React from "react";
-import { useEffect } from "react";
-import PropTypes from "prop-types";
-import ScrollMagic from "scrollmagic";
-import { gsap } from "gsap/dist/gsap";
-import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
+import React from 'react';
+import { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import ScrollMagic from 'scrollmagic';
+import { gsap } from 'gsap/dist/gsap';
+import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 // Provides scroll loading effects on the client side for projects page. Nifty!
 ScrollMagicPluginGsap(ScrollMagic, gsap);
 
 const ScrollMagicContext = ({ children }) => {
   useEffect(() => {
-    gsap.set(".portrait__image", {
+    gsap.set('.portrait__image', {
       opacity: 0,
     });
-    gsap.set(".arrow", {
+    gsap.set('.arrow', {
       opacity: 1,
     });
     const tl = gsap.timeline();
-    tl.from(".introduction", { ease: "linear", autoAlpha: 0 })
-      .from("#intro", {
+    tl.from('.introduction', { ease: 'linear', autoAlpha: 0 })
+      .from('#intro', {
         duration: 3,
         x: -300,
         // TODO custom easing
-        ease: "back",
+        ease: 'back',
       })
       .from(
-        ".introduction__subtitle",
+        '.introduction__subtitle',
         {
           duration: 3,
           x: 300,
-          ease: "back",
+          ease: 'back',
         },
-        "-=3"
+        '-=3',
       )
       .from(
-        ".arrow",
+        '.arrow',
         {
           duration: 2,
           y: -70,
           opacity: 0,
-          ease: "bounce",
+          ease: 'bounce',
         },
-        "-=0.75"
+        '-=0.75',
       )
       .to(
-        ".portrait__image",
+        '.portrait__image',
         {
           opacity: 1,
           duration: 2.5,
         },
-        "0"
+        '0',
       )
-      .to(".footer", {
+      .to('.footer', {
         opacity: 1,
         duration: 2,
       });
 
     let controller = new ScrollMagic.Controller();
-    const projectTriggers = document.getElementsByClassName("project");
+    const projectTriggers = document.getElementsByClassName(
+      'project',
+    );
     for (let i = 0; i < projectTriggers.length; i++) {
       // create a scene for each element
-      const leftTrigger = projectTriggers[i].querySelector(".project__left");
-      const rightTrigger = projectTriggers[i].querySelector(".project__right");
+      const leftTrigger = projectTriggers[i].querySelector(
+        '.project__left',
+      );
+      const rightTrigger = projectTriggers[i].querySelector(
+        '.project__right',
+      );
 
       new ScrollMagic.Scene({
         triggerElement: leftTrigger,
         offset: 50,
         triggerHook: 0.9,
       })
-        .setClassToggle(projectTriggers[i], "visible")
-        .setClassToggle(leftTrigger, "visible")
+        .setClassToggle(projectTriggers[i], 'visible')
+        .setClassToggle(leftTrigger, 'visible')
         .addTo(controller)
         .reverse(true);
 
@@ -77,7 +83,7 @@ const ScrollMagicContext = ({ children }) => {
         offset: 50,
         triggerHook: 0.9,
       })
-        .setClassToggle(rightTrigger, "visible")
+        .setClassToggle(rightTrigger, 'visible')
         .addTo(controller)
         .reverse(true);
     }

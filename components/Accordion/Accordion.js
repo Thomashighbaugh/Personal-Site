@@ -1,10 +1,10 @@
-import { useState } from "react";
-import AccordionItem from "./AccordionItem";
-import { questionsAndAnswers } from "../../data/accordion-data";
+import React, { useState } from 'react';
+import AccordionItem from './AccordionItem';
+import { questionsAndAnswers } from '../../data/accordion-data';
 
 function Accordion() {
   const [content, setContent] = useState(questionsAndAnswers);
-  const toggleItem = (index) => {
+  const toggleItem = index => {
     setContent(
       content.map((item, i) => {
         if (i === index) {
@@ -14,19 +14,22 @@ function Accordion() {
         }
 
         return item;
-      })
+      }),
     );
   };
   return (
-    <div className="accordion">
-      {content.map((item, index) => (
-        <AccordionItem
-          key={item.id}
-          item={item}
-          index={index}
-          toggleItem={toggleItem}
-        />
-      ))}
+    <div className="skills-container">
+      <div className="accordion">
+        {content.map((item, index) => (
+          <AccordionItem
+            key={item.id}
+            item={item}
+            index={index}
+            toggleItem={toggleItem}
+          />
+        ))}
+      </div>
+      <img className="skills-image" src="dogpatchcircuit.png" alt="Dog Patch Circuit" />
     </div>
   );
 }

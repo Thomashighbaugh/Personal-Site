@@ -107,12 +107,12 @@
 
   &__background {
     width: 100vw;
-    height: 50vh;
+    height: 05vh;
     border-radius: 50%;
     position: relative;
     overflow: no-display;
     z-index: 20;
-    top: 0;
+    top: -15rem;
     background-color: var(--bg-color);
     color: var(--secondary-color);
     transition: transform 0.8s cubic-bezier(0.89, 1, 0.7, 1);

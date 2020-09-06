@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Layout from "../layout/Layout";
-import PictureSet from "../components/PictureSet/PictureSet";
-import React from "react";
+import Link from 'next/link';
+import Layout from '../layout/Layout';
+import PictureSet from '../components/PictureSet/PictureSet';
+import React from 'react';
 /* eslint-disable */
 
 const Index = () => {
