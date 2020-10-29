@@ -47,7 +47,7 @@
     "react-responsive": "^8.0.3",
     "react-syntax-highlighter": "^12.2.1",
     "react-transition-group": "^4.3.0",
-    "sass": "^1.26.3",
+    "sass": "^1.27.1",
     "scrollmagic": "^2.0.7",
     "scrollmagic-plugin-gsap": "^1.0.4",
     "webp-loader": "^0.6.0"
