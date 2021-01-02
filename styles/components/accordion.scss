@@ -1,6 +1,6 @@
 .accordion {
   margin-bottom: 4rem;
-
+  padding: 3rem;
   &__item {
     margin: 1rem 1.5rem;
     padding: 1.25rem 1.5rem;
@@ -26,7 +26,7 @@
 
   &__question {
     position: relative;
-    font-size: 1.75rem;
+    font-size: 3rem;
     transition: all 0.4s ease;
   }
 
@@ -36,8 +36,8 @@
     line-height: 2.5rem;
     padding-left: 2rem;
     overflow-y: hidden;
-    transition: all 0.45s ease-in-out;
-    font-size: 1.5rem;
+    transition: all 0.25s ease-in-out;
+    font-size: 1.75rem;
   }
 
   &__answer {

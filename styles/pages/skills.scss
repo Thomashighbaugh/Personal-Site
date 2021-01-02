@@ -1,7 +1,23 @@
-#skills {
+.skills {
   background-color: var(--bg-color);
   border-radius: 18px;
-  border: 0.25 var(--primary-color) soild;
-  margin: 2rem;
+  border: var(--primary-color) solid 0.25rem;
+  margin: 5%;
   overflow: hidden;
+}
+.skills-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-image {
+  height: 100%;
+  padding: 1rem;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  border-radius: 18px;
+  border: var(--secondary-color) solid 0.25rem;
+  @include md {
+    display: none;
+  }
 }

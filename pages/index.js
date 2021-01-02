@@ -8,15 +8,17 @@ const Index = () => {
   return (
     <Layout title="Index" className="index">
       <div className="introduction">
-        <h2 className="heading-2" id="intro">
-          Hi! I&apos;m <br />
-          <span className="introduction__content">Thomas Leon Highbaugh</span>
-        </h2>
+        <div className="col-9">
+          <h2 className="heading-2" id="intro">
+            Hi! I&apos;m <br />
+            <span className="introduction__content">Thomas Leon Highbaugh</span>
+          </h2>
 
-        <hr />
-        <h3 className="heading-3 introduction__subtitle">
-          a Web Developer from Hayward, California
-        </h3>
+          <hr />
+          <h3 className="heading-3 introduction__subtitle">
+            Web Developer from Hayward, California
+          </h3>
+        </div>
       </div>
     </Layout>
   );
