@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Icons = () => (
