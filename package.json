@@ -67,7 +67,7 @@
     "husky": "^4.2.3",
     "prettier": "2.2.1",
     "pretty-quick": "2.0.2",
-    "stylelint": "13.6.1",
+    "stylelint": "13.8.0",
     "stylelint-config-recommended-scss": "4.2.0",
     "stylelint-scss": "3.18.0",
     "typescript": "3.9.7"
