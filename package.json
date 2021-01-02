@@ -71,7 +71,6 @@
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-scss": "^3.18.0",
     "typescript": "^3.9.7"
-
   },
   "browserslist": [
     "> 1%",
