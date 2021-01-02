@@ -14,7 +14,6 @@
 }
 
 .blog-post {
-  @include animate(fadeIn, 5s, 100);
   margin: 2rem 20%;
   padding: 3%;
   background-color: var(--bg-color);
@@ -49,7 +48,6 @@
   }
   &__img-container {
     opacity: 0;
-    @include fadeIn(3);
     width: 250px;
     height: 150px;
     float: left;
