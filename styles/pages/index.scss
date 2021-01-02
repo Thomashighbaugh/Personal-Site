@@ -1,12 +1,12 @@
 .introduction {
-  @include animate(pulse, 1s, 18, 3 );
+  @include animate(pulse, 1s, 18, 3);
   width: 100%;
   display: flex;
   align-content: flex-start;
   flex-direction: column;
   flex: 1 1 auto;
   letter-spacing: 0.55rem;
-  margin-top: 7% ;
+  margin-top: 7%;
   padding: 10rem 25rem 10rem 15rem;
   border-radius: 18px;
   border: 0.25rem var(--primary-color) solid;
