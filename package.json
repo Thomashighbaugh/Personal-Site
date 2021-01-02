@@ -31,7 +31,7 @@
     "chakra-ui": "^0.3.9",
     "cross-env": "^7.0.2",
     "gray-matter": "^4.0.2",
-    "gsap": "^3.2.6",
+    "gsap": "^3.5.1",
     "imagemin-optipng": "^8.0.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.4.4",
