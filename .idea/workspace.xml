@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="README time">
-      <change afterPath="$PROJECT_DIR$/blog_posts/dotfiles-rewrite.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_posts/dotfiles-intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_posts/dotfiles2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_posts/dotfiles3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_posts/electric-tantra-linux-iso.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog_posts/electric-tantra-linux-iso.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/components/spinner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/spinner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/projects.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +29,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -116,7 +108,7 @@
       <workItem from="1597021030220" duration="18124000" />
       <workItem from="1599327867373" duration="11258000" />
       <workItem from="1599349032897" duration="1446000" />
-      <workItem from="1609616483474" duration="733000" />
+      <workItem from="1609616483474" duration="1056000" />
     </task>
     <task id="LOCAL-00001" summary="adding pattern.scss">
       <created>1597021577640</created>
@@ -188,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609616517231</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="README time">
+      <created>1609617298377</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609617298377</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

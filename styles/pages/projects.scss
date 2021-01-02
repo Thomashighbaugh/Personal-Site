@@ -26,13 +26,13 @@
     }
     &__left {
       opacity: 0;
-      transform: translateX(-100px);
-      transition: all 1.5s ease-out;
+      //transform: translateX(-100px);
+      //transition: all 1.5s ease-out;
     }
     &__right {
-      opacity: 0;
-      transform: translateX(100px);
-      transition: all 1.5s ease-out;
+      //opacity: 0;
+      //transform: translateX(100px);
+      //transition: all 1.5s ease-out;
       border-left: var(--gray-color) 0.25rem solid;
     }
     &__left.visible,
