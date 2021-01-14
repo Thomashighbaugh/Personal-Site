@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 3000",
+    "start": "next start -p 3007",
     "check-format": "eslint . --ext .js,.jsx,.ts,.tsx",
     "fix-format": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "lint-scss": "npx stylelint '**/*.scss'",

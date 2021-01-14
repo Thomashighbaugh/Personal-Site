@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -8,7 +6,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 67.5%; // 1rem = 10px
+  font-size: 67.5%;
+  // 1rem = 10px
   background-color: var(--bg-color);
 }
 
@@ -23,8 +22,7 @@ img {
   max-width: 100%;
 }
 
-ul,
-ol {
+ul, ol {
   list-style: none;
 }
 
@@ -41,8 +39,7 @@ label {
   color: var(--svg-color);
 }
 
-input,
-textarea {
+input, textarea {
   font-family: inherit;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -53,20 +50,15 @@ textarea {
   border: none;
 }
 
-// add defaults for placeholder styling
-::-webkit-input-placeholder {
-  color: var(--placeholder-color);
-}
-
 :-ms-input-placeholder {
   color: var(--placeholder-color);
 }
+
 ::placeholder {
   color: var(--placeholder-color);
 }
 
-input:focus::placeholder,
-textarea:focus::placeholder {
+input:focus::placeholder, textarea:focus::placeholder {
   color: transparent;
 }
 

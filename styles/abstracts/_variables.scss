@@ -6,17 +6,16 @@ $md-breakpoint: 916px;
 $lg-breakpoint: 976px;
 $xl-breakpoint: 1024px;
 $xxl-breakpoint: 1200px;
-
 // COLORS
 
 // fallbacks for IE
 $primaryColor: #3FEBFF;
-$secondaryColor: #556;
+$secondaryColor: #555e70;
 
 :root {
   --primary-color: #3FEBFF;
-  --secondary-color: #555566;
-  --font-color: #555566;
+  --secondary-color: #555e70;
+  --font-color: #555e70;
   --bg-color: #fdfdfd;
   --heading-color: #555;
   --white-color: #fdfdfd;
@@ -24,17 +23,17 @@ $secondaryColor: #556;
   --form-color: #eceff2;
   --pagination-color: #c1cad6;
   --placeholder-color: #c1cad6;
-  --gray-color: #555566;
-  --black-color: #24262d;
+  --gray-color: #555e70;
+  --black-color: #1f2032;
 }
 
 [data-theme="dark"] {
   --secondary-color: #fdfdfd;
   --font-color: #fdfdfd;
-  --bg-color: #343a40;
+  --bg-color: #313040;
   --heading-color: #c1cad6;
   --svg-color: #3FEBFF;
-  --pagination-color: #909090;
+  --pagination-color: #8b9cbe;
   --placeholder-color: #c1cad6;
-  --gray-color: #909090;
+  --gray-color: #8b9cbe;
 }

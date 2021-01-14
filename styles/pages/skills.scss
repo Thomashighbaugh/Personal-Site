@@ -3,8 +3,10 @@
   border-radius: 18px;
   border: var(--primary-color) solid 0.25rem;
   margin: 5%;
+  padding: 5%;
   overflow: hidden;
 }
+
 .skills-container {
   display: flex;
   flex-direction: row;
@@ -17,7 +19,9 @@
   margin-bottom: 5%;
   border-radius: 18px;
   border: var(--secondary-color) solid 0.25rem;
+
   @include md {
     display: none;
   }
+
 }

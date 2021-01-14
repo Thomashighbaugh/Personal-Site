@@ -1,22 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
+
 p {
   font-size: 1.6rem;
   font-family: "Baloo Da 2", sans-serif;
-  max-width: 90ch * 0.7986; //https://johndjameson.com/blog/making-sense-of-ch-units/
-  @media only screen and (max-width: $sm-breakpoint) {
+  max-width: 90ch * 0.7986;
+
+  //https://johndjameson.com/blog/making-sense-of-ch-units/
+  @media only screen and (max-width:$sm-breakpoint) {
     font-size: 1.25rem;
   }
+
 }
 
 code {
   font-size: 1.6rem;
   padding: 1rem;
-  @media only screen and (max-width: $sm-breakpoint) {
+
+  @media only screen and (max-width:$sm-breakpoint) {
     font-size: 1.25rem;
   }
+
 }
+
 pre {
   border-radius: 3px;
   padding: 1rem !important;
@@ -35,16 +42,17 @@ pre {
   font-size: 4.5rem;
   text-shadow: var(--heading-color) 0.25rem 0.25rem;
   color: var(--svg-color);
+
   @include sm {
     font-size: 3.5rem;
   }
+
 }
 
 .heading-2 {
   @extend %heading;
   font-size: 4rem;
   text-shadow: var(--gray-color) 0.25rem 0.25rem;
-
   color: var(--primary-color);
 }
 
@@ -62,9 +70,11 @@ pre {
   text-shadow: none;
   font-size: 1.9rem;
   line-height: 1.25;
+
   @include sm {
     font-size: 1.5rem;
   }
+
 }
 
 .heading-5 {
