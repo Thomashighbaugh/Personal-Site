@@ -8,6 +8,8 @@
 // 4. Layout-related sections
 @import "layouts/header", "layouts/footer", "layouts/layout";
 // 5. Components
-@import "components/accordion", "components/blog-roll", "components/button", "components/contact-form", "components/icons", "components/link", "components/promoted-blog", "components/spinner";
+@import "components/accordion", "components/blog-roll", "components/button",
+  "components/contact-form", "components/icons", "components/link",
+  "components/promoted-blog", "components/spinner";
 // 6. Page-specific styles
 @import "pages/index", "pages/blog", "pages/projects", "pages/skills";
