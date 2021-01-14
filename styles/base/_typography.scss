@@ -8,20 +8,18 @@ p {
   max-width: 90ch * 0.7986;
 
   //https://johndjameson.com/blog/making-sense-of-ch-units/
-  @media only screen and (max-width:$sm-breakpoint) {
+  @media only screen and (max-width: $sm-breakpoint) {
     font-size: 1.25rem;
   }
-
 }
 
 code {
   font-size: 1.6rem;
   padding: 1rem;
 
-  @media only screen and (max-width:$sm-breakpoint) {
+  @media only screen and (max-width: $sm-breakpoint) {
     font-size: 1.25rem;
   }
-
 }
 
 pre {
@@ -46,7 +44,6 @@ pre {
   @include sm {
     font-size: 3.5rem;
   }
-
 }
 
 .heading-2 {
@@ -74,7 +71,6 @@ pre {
   @include sm {
     font-size: 1.5rem;
   }
-
 }
 
 .heading-5 {

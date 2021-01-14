@@ -14,7 +14,6 @@
     &:hover {
       border-left: 3px solid var(--primary-color);
     }
-
   }
 
   &__read-more {
@@ -30,7 +29,6 @@
   @include md {
     width: 100%;
   }
-
 }
 
 .blog {
@@ -68,7 +66,5 @@
       align-items: flex-start;
       margin-bottom: 1.5rem;
     }
-
   }
-
 }

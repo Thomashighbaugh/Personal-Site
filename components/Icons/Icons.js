@@ -11,7 +11,8 @@ const Icons = () => (
       <FaLinkedinIn />
     </a>
     <a
-      href="https://github.com/Thomashighbaugh" target="blank"
+      href="https://github.com/Thomashighbaugh"
+      target="blank"
       rel="noopener noreferrer"
     >
       <FaGithub />

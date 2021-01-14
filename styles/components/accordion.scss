@@ -12,7 +12,6 @@
     @include sm {
       margin: 1rem 0rem;
     }
-
   }
 
   &__chevron svg {
@@ -23,7 +22,6 @@
     @include sm {
       margin-right: 0.5rem;
     }
-
   }
 
   .expanded &__chevron svg {
@@ -64,7 +62,6 @@
       font-weight: bold;
       display: inline-block;
     }
-
   }
 
   .expanded &__question {
@@ -75,5 +72,4 @@
     max-height: 1000px;
     opacity: 1;
   }
-
 }
