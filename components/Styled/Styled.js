@@ -1,12 +1,12 @@
-import React from "react"
-import styled, { createGlobalStyle, css } from "styled-components"
-import { mix, shade, transparentize, getContrast } from "polished"
+import React from "react";
+import styled, { createGlobalStyle, css } from "styled-components";
+import { mix, shade, transparentize, getContrast } from "polished";
 
 export const bestContrast = (baseColor, optionOne, optionTwo) => {
-  const contrastOne = getContrast(baseColor, optionOne)
-  const contrastTwo = getContrast(baseColor, optionTwo)
-  return contrastOne > contrastTwo ? optionOne : optionTwo
-}
+  const contrastOne = getContrast(baseColor, optionOne);
+  const contrastTwo = getContrast(baseColor, optionTwo);
+  return contrastOne > contrastTwo ? optionOne : optionTwo;
+};
 
 export const Reset = css`
   html,
@@ -87,7 +87,7 @@ export const Reset = css`
     padding: 0;
     text-align: left;
   }
-`
+`;
 
 export const PrismTheme = css`
   code[class*="language-"],
@@ -262,7 +262,7 @@ export const PrismTheme = css`
   .token.entity {
     cursor: help;
   }
-`
+`;
 
 export const GlobalStyles = createGlobalStyle`
   ${Reset}
@@ -466,7 +466,7 @@ font-family: 'Teko', sans-serif;\
   [contenteditable]:focus {
     outline: none;
   }
-`
+`;
 
 export const Wrapper = styled.div`
   position: relative;
@@ -487,7 +487,7 @@ export const Wrapper = styled.div`
   @media (min-width: ${(props) => props.theme.breakpoints.huge}) {
     max-width: 1920px;
   }
-`
+`;
 
 export const Overlay = styled.div`
   position: absolute;
@@ -497,8 +497,7 @@ export const Overlay = styled.div`
   height: 100%;
   background-color: ${(props) => props.theme.color.black};
   opacity: 0.75;
-`
-
+`;
 
 export const Paper = styled.div`
   position: relative;
@@ -563,7 +562,7 @@ export const Paper = styled.div`
     margin: var(--paper-padding-y) calc(var(--paper-padding-x) * -1) !important;
     overflow: hidden;
   }
-`
+`;
 
 export const Main = styled.main`
   padding: 0;
@@ -584,7 +583,7 @@ export const Main = styled.main`
   @media (min-width: ${(props) => props.theme.breakpoints.small}) {
     padding-bottom: 3rem;
   }
-`
+`;
 
 const ButtonStyles = css`
   display: inline-block;
@@ -660,15 +659,15 @@ const ButtonStyles = css`
       text-shadow: 0.2rem 0.2rem #555e70;
       border: #d2d2d2 solid 0.15rem;
     `};
-`
+`;
 
 export const Button = styled.button`
   ${ButtonStyles}
-`
+`;
 
 export const LinkButton = styled((props) => <Link {...props} />)`
   ${ButtonStyles}
-`
+`;
 
 export const Meta = styled.div`
   display: flex;
@@ -680,14 +679,14 @@ export const Meta = styled.div`
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
-`
+`;
 
 export const MetaActions = styled.span`
   opacity: 1;
   flex: 1 0 auto;
   display: flex;
   justify-content: flex-end;
-`
+`;
 
 export const MetaSpan = styled.span`
   justify-self: flex-start;
@@ -721,7 +720,7 @@ export const MetaSpan = styled.span`
   &:last-child {
     flex: 1 0 auto;
   }
-`
+`;
 
 export const DraftBadge = styled.span`
   display: inline-block;
@@ -736,7 +735,7 @@ export const DraftBadge = styled.span`
   position: absolute;
   top: 0;
   right: 0;
-`
+`;
 
 export const EditButton = styled.button`
   outline: none;
@@ -754,7 +753,7 @@ export const EditButton = styled.button`
   top: 0;
   left: 0;
   cursor: pointer;
-`
+`;
 
 export const PlainInput = styled.input`
   color: inherit;
@@ -770,8 +769,8 @@ export const PlainInput = styled.input`
   border-width: 0;
   display: block;
   width: 100%;
-`
+`;
 
 export const PlainText = (props) => {
-  return <PlainInput {...props.input} />
-}
+  return <PlainInput {...props.input} />;
+};

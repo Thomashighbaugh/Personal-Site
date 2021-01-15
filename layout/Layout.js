@@ -5,7 +5,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { CSSTransition } from "react-transition-group";
 
-
 const Layout = ({ title, children }) => {
   const [pageTitle, setPageTitle] = useState("");
   const [footerVisibility, setFooterVisibility] = useState(false);
