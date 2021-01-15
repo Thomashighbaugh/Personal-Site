@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import styled from "styled-components";
+
 
 const PageTitle = ({ title, subtitle }) => (
   <div className="page-title">
@@ -7,6 +9,8 @@ const PageTitle = ({ title, subtitle }) => (
     <h4 className="heading-4">{subtitle}</h4>
   </div>
 );
+
+
 
 PageTitle.propTypes = {
   title: PropTypes.string.isRequired,
