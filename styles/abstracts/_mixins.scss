@@ -1,49 +1,87 @@
 // breakpoints
 
 @mixin landscape {
-  @media only screen and (orientation: landscape) {
+  @media only screen and (orientation:landscape) {
     @content;
   }
+
 }
+
 @mixin xsm {
-  @media only screen and (max-width: #{$xsm-breakpoint}) {
+  @media only screen and (max-width:# {
+    $xsm-breakpoint
+  }
+
+  ) {
     @content;
   }
+
 }
 
 @mixin sm {
-  @media only screen and (max-width: #{$sm-breakpoint}) {
+  @media only screen and (max-width:# {
+    $sm-breakpoint
+  }
+
+  ) {
     @content;
   }
+
 }
+
 @mixin sm-md {
-  @media only screen and (max-width: #{$sm-md-breakpoint}) {
+  @media only screen and (max-width:# {
+    $sm-md-breakpoint
+  }
+
+  ) {
     @content;
   }
+
 }
 
 @mixin md {
-  @media only screen and (max-width: #{$md-breakpoint}) {
+  @media only screen and (max-width:# {
+    $md-breakpoint
+  }
+
+  ) {
     @content;
   }
+
 }
 
 @mixin lg {
-  @media only screen and (max-width: #{$lg-breakpoint}) {
+  @media only screen and (max-width:# {
+    $lg-breakpoint
+  }
+
+  ) {
     @content;
   }
+
 }
 
 @mixin xl {
-  @media only screen and (max-width: #{$xl-breakpoint}) {
+  @media only screen and (max-width:# {
+    $xl-breakpoint
+  }
+
+  ) {
     @content;
   }
+
 }
 
 @mixin custom($max-width-value) {
-  @media only screen and (max-width: #{$max-width-value} + 'px') {
+  @media only screen and (max-width:# {
+    $max-width-value
+  }
+
+  + 'px') {
     @content;
   }
+
 }
 
 @mixin hover-svg($svg-color, $hover-color, $duration) {
@@ -51,26 +89,33 @@
   fill: $secondaryColor;
   fill: $svg-color;
   transition: all $duration ease-in-out;
+
   &:hover {
     fill: $primaryColor;
     fill: var(--bg-color);
     @include animate(pulse, 0.5s, 20);
   }
+
 }
 
 @mixin link-states($from, $to) {
   color: $primaryColor;
   color: var($from);
   transition: all 0.3s ease-in-out;
-  &:hover,
-  &:focus {
+
+  &:hover, &:focus {
     color: $secondaryColor;
     color: var($to);
   }
+
 }
 
 @mixin fadeIn($duration) {
-  animation: #{$duration}s ease-in 0.5s forwards fadeIn;
+  animation:# {
+    $duration
+  }
+
+  s ease-in 0.5s forwards fadeIn;
 }
 
 @mixin absoluteCentre {
@@ -78,4 +123,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin background {
+  background-color: #fdfdfd;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=!string!viewBox=!string!width=!string!height=!string!%3E%3Cpath fill=!string!fill-opacity=!string!d=!string!%3E%3C/path%3E%3C/svg%3E");
 }
