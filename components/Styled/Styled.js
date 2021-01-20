@@ -1,6 +1,6 @@
-import React from 'react';
-import styled, { createGlobalStyle, css } from 'styled-components';
-import { mix, shade, transparentize, getContrast } from 'polished';
+import React from "react";
+import styled, { createGlobalStyle, css } from "styled-components";
+import { mix, shade, transparentize, getContrast } from "polished";
 
 export const bestContrast = (baseColor, optionOne, optionTwo) => {
   const contrastOne = getContrast(baseColor, optionOne);
@@ -90,11 +90,10 @@ export const Reset = css`
 `;
 
 export const PrismTheme = css`
-  code[class*='language-'],
-  pre[class*='language-'] {
-    color: ${(props) =>
-      transparentize(0.1, props.theme.color.foreground)};
-    font-family: 'Hack', Monaco, 'Courier New', Courier, monospace;
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: ${(props) => transparentize(0.1, props.theme.color.foreground)};
+    font-family: "Hack", Monaco, "Courier New", Courier, monospace;
     direction: ltr;
     text-align: left;
     white-space: pre;
@@ -106,14 +105,10 @@ export const PrismTheme = css`
     border-radius: 0 ${(props) => props.theme.radius.small}
       ${(props) => props.theme.radius.small} 0;
     background-color: ${(props) =>
-      mix(
-        0.975,
-        props.theme.color.background,
-        props.theme.color.foreground,
-      )};
+      mix(0.975, props.theme.color.background, props.theme.color.foreground)};
   }
 
-  code[class*='language-'] {
+  code[class*="language-"] {
     padding: 0 0.25em;
     margin: 0 0.125em;
     font-size: 0.9em;
@@ -123,7 +118,7 @@ export const PrismTheme = css`
       ${(props) => transparentize(0.95, props.theme.color.foreground)};
   }
 
-  pre[class*='language-'] {
+  pre[class*="language-"] {
     position: relative;
     border-radius: 0 ${(props) => props.theme.radius.small}
       ${(props) => props.theme.radius.small} 0;
@@ -152,11 +147,11 @@ export const PrismTheme = css`
     }
   }
 
-  pre[class*='language-'].line-numbers {
+  pre[class*="language-"].line-numbers {
     counter-reset: linenumber;
   }
 
-  pre[class*='language-'].line-numbers > code {
+  pre[class*="language-"].line-numbers > code {
     white-space: inherit;
   }
 
@@ -215,14 +210,12 @@ export const PrismTheme = css`
   .token.constant,
   .token.symbol,
   .token.deleted {
-    color: ${(props) =>
-      mix(0.85, '#F90B61', props.theme.color.foreground)};
+    color: ${(props) => mix(0.85, "#F90B61", props.theme.color.foreground)};
   }
 
   .token.boolean,
   .token.number {
-    color: ${(props) =>
-      mix(0.85, '#9458FF', props.theme.color.foreground)};
+    color: ${(props) => mix(0.85, "#9458FF", props.theme.color.foreground)};
   }
 
   .token.selector,
@@ -231,8 +224,7 @@ export const PrismTheme = css`
   .token.char,
   .token.builtin,
   .token.inserted {
-    color: ${(props) =>
-      mix(0.85, '#91CA1E', props.theme.color.foreground)};
+    color: ${(props) => mix(0.85, "#91CA1E", props.theme.color.foreground)};
   }
 
   .token.operator,
@@ -247,19 +239,16 @@ export const PrismTheme = css`
   .token.atrule,
   .token.attr-value,
   .token.function {
-    color: ${(props) =>
-      mix(0.85, '#C6BE00', props.theme.color.foreground)};
+    color: ${(props) => mix(0.85, "#C6BE00", props.theme.color.foreground)};
   }
 
   .token.keyword {
-    color: ${(props) =>
-      mix(0.85, '#F90B61', props.theme.color.foreground)};
+    color: ${(props) => mix(0.85, "#F90B61", props.theme.color.foreground)};
   }
 
   .token.regex,
   .token.important {
-    color: ${(props) =>
-      mix(0.85, '#FD8F0D', props.theme.color.foreground)};
+    color: ${(props) => mix(0.85, "#FD8F0D", props.theme.color.foreground)};
   }
 
   .token.important,
@@ -285,11 +274,7 @@ font-family: 'Teko', sans-serif;\
     line-height: 1.25;
     color: ${(props) => props.theme.color.foreground};
     background-color: ${(props) =>
-      mix(
-        0.95,
-        props.theme.color.background,
-        props.theme.color.foreground,
-      )};
+      mix(0.95, props.theme.color.background, props.theme.color.foreground)};
 
     /* Hide Scrollbar */
     ::-webkit-scrollbar {
@@ -323,9 +308,8 @@ font-family: 'Teko', sans-serif;\
   blockquote {
     font-size: 1.3rem;
     padding: 1rem 1.5rem;
-    border-radius: 0 ${(props) => props.theme.radius.small} ${(
-  props,
-) => props.theme.radius.small} 0;
+    border-radius: 0 ${(props) => props.theme.radius.small} ${(props) =>
+  props.theme.radius.small} 0;
     background-color: ${(props) =>
       transparentize(0.95, props.theme.color.foreground)};
     box-shadow: -6px 0 0 ${(props) => props.theme.color.primary};
@@ -462,8 +446,7 @@ font-family: 'Teko', sans-serif;\
     }
     &:focus {
       color: ${(props) => shade(0.1, props.theme.color.link)};
-      text-decoration-color: ${(props) =>
-        shade(0.1, props.theme.color.link)};
+      text-decoration-color: ${(props) => shade(0.1, props.theme.color.link)};
     }
     &:active {
       color: ${(props) => shade(0.1, props.theme.color.link)};
@@ -545,11 +528,7 @@ export const Paper = styled.div`
     props.theme.isDarkMode &&
     css`
       background-color: ${(props) =>
-        mix(
-          0.92,
-          props.theme.color.background,
-          props.theme.color.foreground,
-        )};
+        mix(0.92, props.theme.color.background, props.theme.color.foreground)};
       box-shadow: 0 0.5rem 0.5rem 0.5rem
         ${(props) => transparentize(0.9, props.theme.color.black)};
     `};
@@ -568,7 +547,7 @@ export const Paper = styled.div`
     --paper-padding-x: 4rem;
   }
 
-  pre[class*='language-'] {
+  pre[class*="language-"] {
     border-radius: 0;
     padding-left: var(--paper-padding-x);
     padding-right: 0;
@@ -628,7 +607,7 @@ const ButtonStyles = css`
 
   &:after,
   &:before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
@@ -731,7 +710,7 @@ export const MetaSpan = styled.span`
   &:not(:first-child) {
     padding-left: 1rem;
     &:before {
-      content: '—';
+      content: "—";
       position: absolute;
       opacity: 0.5;
       left: 0;
