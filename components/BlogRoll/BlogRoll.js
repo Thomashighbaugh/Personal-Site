@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 function BlogRoll({ allBlogs }) {
   function truncateSummary(content) {
-    return content.slice(0, 150) + "...";
+    return content.slice(0, 300) + "...";
   }
 
   function reformatDate(fullDate) {
