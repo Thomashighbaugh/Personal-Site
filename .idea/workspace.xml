@@ -19,19 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="README time">
+    <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="fixing header issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/components/clipboard.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/components/contact-form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/components/icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/components/link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/link.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/layouts/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/layouts/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/layouts/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/layouts/layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/base/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base/_helpers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +112,7 @@
       <workItem from="1609616483474" duration="1056000" />
       <workItem from="1611132325455" duration="4962000" />
       <workItem from="1611148507418" duration="585000" />
-      <workItem from="1611149350183" duration="2829000" />
+      <workItem from="1611149350183" duration="4765000" />
     </task>
     <task id="LOCAL-00001" summary="adding pattern.scss">
       <created>1597021577640</created>
@@ -205,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611149626765</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fixing header issues">
+      <created>1611152215560</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611152215560</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +235,7 @@
     <MESSAGE value="Fixing Projects 2: Populating the Projects" />
     <MESSAGE value="minor fix to icons and animations" />
     <MESSAGE value="README time" />
-    <option name="LAST_COMMIT_MESSAGE" value="README time" />
+    <MESSAGE value="fixing header issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing header issues" />
   </component>
 </project>

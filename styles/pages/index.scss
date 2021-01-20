@@ -1,5 +1,4 @@
 .introduction {
-  @include animate(pulse, 1s, 18, 3);
   width: 100%;
   display: flex;
   align-content: flex-start;
@@ -19,18 +18,37 @@
     background-blend-mode: soft-light, lighten;
     transition: background-size 0.01s;
     &:hover {
-      background-size: 0 5px;
-      color: #00e3ff;
+      background-size: 100% 20px;
+      color: vsr(--vibrant-color);
     }
+  }
+  &__subtitle__container{
+    display: block;
+    width: 100%;
+
   }
   &__subtitle {
     margin-top: 1rem;
     font-weight: 100;
     letter-spacing: 0;
-    opacity: 0.58;
+    opacity: 0.45;
     font-family: "Baloo Da 2", sans-serif;
     color: var(--heading-color);
     font-size: 2rem;
+    width: 60%;
+    justify-self: space-around;
+    align-self: center;
+    float:left;
+  }  &__location {
+padding:0;
+    font-weight: 100;
+    letter-spacing: 0;
+    opacity: 0.30;
+    font-family: "Baloo Da 2", sans-serif;
+    color: var(--heading-color);
+    font-size: 2rem;
+    width: 20%;
+  float: right;
   }
   &__icon {
     svg {
