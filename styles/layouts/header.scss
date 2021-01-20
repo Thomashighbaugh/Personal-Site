@@ -1,7 +1,6 @@
 header {
   font-size: 1.8rem;
   letter-spacing: 0.15rem;
-  flex: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,17 +8,7 @@ header {
   background: var(--bg-color);
 
   @include lg {
-    height: 16%;
-  }
-  &__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 20%;
-
-    @include sm-md {
-      min-width: 10%;
-    }
+    height: 12%;
   }
   button {
     font-family: "Kanit", sans-serif;
@@ -45,9 +34,6 @@ header {
   }
 }
 
-.theme-switch-container {
-  display: inline-block;
-}
 
 .theme-switch input {
   display: none;
@@ -55,7 +41,11 @@ header {
 
 .lightbulb {
   border-radius: 18px;
-
+  float:left;
+  position:fixed;
+  top:1rem;
+  left: 12rem;
+  background-color: var(--bg-color);
   svg {
     border: 0.25rem var(--primary-color) solid;
     color: var(--secondary-color);
@@ -63,13 +53,12 @@ header {
     min-width: 7rem;
     border-radius: 18px;
     padding: 1rem;
-    margin-right: 3rem;
+color: var(--primary-color);
+
     &:hover {
       @include animate(pulse, 0.5s, 20);
     }
-    @include lg {
-      margin-right: 7rem;
-    }
+
     @include sm {
       transform: scale(0.7);
     }
@@ -91,9 +80,9 @@ header {
   &__button {
     height: 7rem;
     width: 7rem;
-    position: absolute;
+    position: fixed;
     top: 1rem;
-    right: 2rem;
+    right: 3rem;
     border-radius: 18px;
     text-align: center;
     cursor: pointer;
@@ -107,8 +96,6 @@ header {
 
   &__background {
     width: 100vw;
-    height: 05vh;
-    border-radius: 50%;
     position: relative;
     overflow: no-display;
     z-index: 20;
@@ -120,12 +107,7 @@ header {
 
   &__nav {
     height: 100vh;
-    top: 0;
-
-    left: 0;
     z-index: 25;
-    // hides it until check box clicked
-    pointer-events: none;
     opacity: 0;
     width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -134,50 +116,36 @@ header {
   &__list {
     @include absoluteCentre;
     z-index: 25;
-
     width: 100%;
     text-align: center;
-    @include landscape {
-      height: 100vh;
-      overflow: scroll;
-    }
+
   }
 
-  &__item {
-    margin: 1rem;
-  }
 
   &__link {
     border-radius: 18px;
-    color: var(--heading-color);
-    text-shadow: var(--gray-color) 0.125rem 0.125rem;
-    font-size: 3rem;
+    color: var(--primary-color);
+    text-shadow: var(--form-color) 0.125rem 0.125rem;
+font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0.25rem 0.25rem var(--heading-color);
     &:link,
     &:visited {
+      text-shadow: 0.25rem 0.25rem var(--heading-color);
+
       display: inline-block;
+      margin-bottom: 2rem;
       font-weight: 900;
       font-family: "Bungee", "Kanit", sans-serif;
 
       padding: 1rem 5rem;
       text-transform: uppercase;
-      background-image: linear-gradient(
-        90deg,
-        transparent 0%,
-        transparent 50%,
-        rgba(255, 255, 255, 0.9) 50%
-      );
-      background-size: 220%;
       transition: all 0.6s;
       span {
-        margin-right: 1.5rem;
+        margin-right: 1rem;
         display: inline-block;
       }
-      @include sm {
-        font-size: 3rem;
-      }
-      @include landscape {
-        font-size: 3rem;
-      }
+
     }
 
     &:hover,
@@ -185,13 +153,17 @@ header {
       background-position: 100%;
       transform: translateX(1rem);
       color: var(--primary-color);
+      text-shadow: 0.25rem 0.25rem var(--secondary-color);
+
     }
     &.selected {
       background-color: var(--primary-color);
       color: var(--white-color);
       transform: translateX(1rem);
       &:hover {
-        color: var(--primary-color);
+        color: var(--secondary-color);
+        text-shadow: 0.25rem 0.25rem var(--white-color);
+
       }
     }
   }
@@ -251,7 +223,7 @@ header {
   &__text {
     color: var(--primary-color);
     text-shadow: var(--gray-color) 0.125rem 0.125rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-family: "Bungee", "Kanit", sans-serif;
     font-weight: 900;
     display: inline-block;
@@ -276,26 +248,12 @@ header {
 
 @include sm-md {
   .hamburger {
-    position: fixed;
-    top: 0;
-    left: 0;
+
     z-index: 10;
   }
   .lightbulb {
-    margin-top: 0.5rem;
-    margin-right: 5rem;
+
     transform: scale(0.7);
   }
 }
 
-@keyframes rotateLogo {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.gray-light {
-  background-color: var(--bg-color);
-}

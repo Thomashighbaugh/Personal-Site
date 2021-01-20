@@ -1,3 +1,10 @@
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+
 .link {
   text-shadow: var(--gray-color) 0.165rem 0.165rem;
   color: var(--primary-color);

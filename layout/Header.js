@@ -1,6 +1,6 @@
 import Link from "./Link";
 import React, { useState, useEffect } from "react";
-import { GiLightningArc } from "react-icons/gi";
+import { CgDarkMode } from "react-icons/cg";
 
 const Checkbox = (props) => <input type="checkbox" id="checkbox" {...props} />;
 
@@ -78,7 +78,7 @@ function Header() {
           <li className="hamburger__item">
             <Link href="/blog">
               <a className="hamburger__link">
-                <span>03</span>Blog
+                <span>B</span>log
               </a>
             </Link>
             <hr className="divider" />
@@ -87,7 +87,7 @@ function Header() {
           <li className="hamburger__item">
             <Link href="/skills">
               <a className="hamburger__link">
-                <span>04</span>Skills
+                <span>S</span>kills
               </a>
             </Link>
             <hr className="divider" />
@@ -106,7 +106,7 @@ function Header() {
           <label className="theme-switch" htmlFor="checkbox">
             <Checkbox checked={checked} onChange={toggleMode} />
             <div className="lightbulb ">
-              <GiLightningArc className="gray-light" />
+              <CgDarkMode  />
             </div>
           </label>
         </div>
