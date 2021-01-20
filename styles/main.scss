@@ -6,10 +6,9 @@
 // 3. Base stuff
 @import "base/base", "base/animations", "base/typography", "base/helpers";
 // 4. Layout-related sections
-@import "layouts/header", "layouts/footer", "layouts/layout";
+@import "layouts/header", "layouts/footer";
 // 5. Components
 @import "components/accordion", "components/blog-roll", "components/button",
-  "components/icons", "components/link", "components/promoted-blog",
-  "components/spinner";
+  "components/icons", "components/link", "components/promoted-blog";
 // 6. Page-specific styles
 @import "pages/index", "pages/blog", "pages/projects", "pages/skills";

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import AccordionItem from "./AccordionItem";
-import { questionsAndAnswers } from "../../data/accordion-data";
+import React, { useState } from 'react';
+import AccordionItem from './AccordionItem';
+import { questionsAndAnswers } from '../../data/accordion-data';
 
 function Accordion() {
   const [content, setContent] = useState(questionsAndAnswers);
@@ -14,7 +14,7 @@ function Accordion() {
         }
 
         return item;
-      })
+      }),
     );
   };
   return (

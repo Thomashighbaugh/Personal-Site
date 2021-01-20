@@ -1,6 +1,6 @@
-import Link from "next/link";
-import PropTypes from "prop-types";
-import PictureSet from "../PictureSet/PictureSet";
+import Link from 'next/link';
+import PropTypes from 'prop-types';
+import PictureSet from '../PictureSet/PictureSet';
 
 function PromotedBlog({
   blog,
@@ -12,7 +12,7 @@ function PromotedBlog({
   const { alt_text: altText } = promotedBlog;
 
   const truncateSummary = (content) => {
-    return content.slice(0, 250) + "...";
+    return content.slice(0, 250) + '...';
   };
   const tags = promotedBlog.tags.map((tag) => {
     return (
@@ -31,7 +31,9 @@ function PromotedBlog({
               <h1 className="blog__title">{promotedBlog.title}</h1>
               <span className="promoted__msg">Pinned</span>
             </div>
-            <h2 className="blog__subtitle">{promotedBlog.subtitle}</h2>
+            <h2 className="blog__subtitle">
+              {promotedBlog.subtitle}
+            </h2>
             <p>{truncateSummary(content)}</p>
             <div className="blog-list__read-more">Read More</div>
             <ul className="tag-icons">{tags}</ul>

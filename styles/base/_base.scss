@@ -27,12 +27,12 @@ body {
   @include background;
 
   @include sm {
-    padding: 1.5rem;
+    padding:0 !important;
   }
 }
 
 .content {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   // prevents shrinkage http: //bit.ly/1Mn35US for details
   width: 100%;
   padding-left: 2rem;

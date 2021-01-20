@@ -47,7 +47,7 @@ header {
   background-color: var(--bg-color);
   svg {
     border: 0.25rem var(--primary-color) solid;
-    color: var(--secondary-color);
+    color: var(--black-color) !important;
     min-height: 7rem;
     min-width: 7rem;
     border-radius: 18px;

@@ -1,11 +1,13 @@
-import { FaChevronRight } from "react-icons/fa";
-import PropTypes from "prop-types";
+import { FaChevronRight } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 
 function AccordionItem({ item, index, toggleItem }) {
   return (
     <div
       key={item.id}
-      className={item.expanded ? "accordion__item expanded" : "accordion__item"}
+      className={
+        item.expanded ? 'accordion__item expanded' : 'accordion__item'
+      }
       onClick={() => toggleItem(index)}
     >
       <div className="accordion__question">

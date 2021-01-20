@@ -1,12 +1,12 @@
-import React from "react"
-import styled, { createGlobalStyle, css } from "styled-components"
-import { mix, shade, transparentize, getContrast } from "polished"
+import React from 'react';
+import styled, { createGlobalStyle, css } from 'styled-components';
+import { mix, shade, transparentize, getContrast } from 'polished';
 
 export const bestContrast = (baseColor, optionOne, optionTwo) => {
-  const contrastOne = getContrast(baseColor, optionOne)
-  const contrastTwo = getContrast(baseColor, optionTwo)
-  return contrastOne > contrastTwo ? optionOne : optionTwo
-}
+  const contrastOne = getContrast(baseColor, optionOne);
+  const contrastTwo = getContrast(baseColor, optionTwo);
+  return contrastOne > contrastTwo ? optionOne : optionTwo;
+};
 
 export const Reset = css`
   html,
@@ -87,13 +87,14 @@ export const Reset = css`
     padding: 0;
     text-align: left;
   }
-`
+`;
 
 export const PrismTheme = css`
-  code[class*="language-"],
-  pre[class*="language-"] {
-    color: ${(props) => transparentize(0.1, props.theme.color.foreground)};
-    font-family: "Hack", Monaco, "Courier New", Courier, monospace;
+  code[class*='language-'],
+  pre[class*='language-'] {
+    color: ${(props) =>
+      transparentize(0.1, props.theme.color.foreground)};
+    font-family: 'Hack', Monaco, 'Courier New', Courier, monospace;
     direction: ltr;
     text-align: left;
     white-space: pre;
@@ -105,10 +106,14 @@ export const PrismTheme = css`
     border-radius: 0 ${(props) => props.theme.radius.small}
       ${(props) => props.theme.radius.small} 0;
     background-color: ${(props) =>
-      mix(0.975, props.theme.color.background, props.theme.color.foreground)};
+      mix(
+        0.975,
+        props.theme.color.background,
+        props.theme.color.foreground,
+      )};
   }
 
-  code[class*="language-"] {
+  code[class*='language-'] {
     padding: 0 0.25em;
     margin: 0 0.125em;
     font-size: 0.9em;
@@ -118,7 +123,7 @@ export const PrismTheme = css`
       ${(props) => transparentize(0.95, props.theme.color.foreground)};
   }
 
-  pre[class*="language-"] {
+  pre[class*='language-'] {
     position: relative;
     border-radius: 0 ${(props) => props.theme.radius.small}
       ${(props) => props.theme.radius.small} 0;
@@ -147,11 +152,11 @@ export const PrismTheme = css`
     }
   }
 
-  pre[class*="language-"].line-numbers {
+  pre[class*='language-'].line-numbers {
     counter-reset: linenumber;
   }
 
-  pre[class*="language-"].line-numbers > code {
+  pre[class*='language-'].line-numbers > code {
     white-space: inherit;
   }
 
@@ -210,12 +215,14 @@ export const PrismTheme = css`
   .token.constant,
   .token.symbol,
   .token.deleted {
-    color: ${(props) => mix(0.85, "#F90B61", props.theme.color.foreground)};
+    color: ${(props) =>
+      mix(0.85, '#F90B61', props.theme.color.foreground)};
   }
 
   .token.boolean,
   .token.number {
-    color: ${(props) => mix(0.85, "#9458FF", props.theme.color.foreground)};
+    color: ${(props) =>
+      mix(0.85, '#9458FF', props.theme.color.foreground)};
   }
 
   .token.selector,
@@ -224,7 +231,8 @@ export const PrismTheme = css`
   .token.char,
   .token.builtin,
   .token.inserted {
-    color: ${(props) => mix(0.85, "#91CA1E", props.theme.color.foreground)};
+    color: ${(props) =>
+      mix(0.85, '#91CA1E', props.theme.color.foreground)};
   }
 
   .token.operator,
@@ -239,16 +247,19 @@ export const PrismTheme = css`
   .token.atrule,
   .token.attr-value,
   .token.function {
-    color: ${(props) => mix(0.85, "#C6BE00", props.theme.color.foreground)};
+    color: ${(props) =>
+      mix(0.85, '#C6BE00', props.theme.color.foreground)};
   }
 
   .token.keyword {
-    color: ${(props) => mix(0.85, "#F90B61", props.theme.color.foreground)};
+    color: ${(props) =>
+      mix(0.85, '#F90B61', props.theme.color.foreground)};
   }
 
   .token.regex,
   .token.important {
-    color: ${(props) => mix(0.85, "#FD8F0D", props.theme.color.foreground)};
+    color: ${(props) =>
+      mix(0.85, '#FD8F0D', props.theme.color.foreground)};
   }
 
   .token.important,
@@ -262,7 +273,7 @@ export const PrismTheme = css`
   .token.entity {
     cursor: help;
   }
-`
+`;
 
 export const GlobalStyles = createGlobalStyle`
   ${Reset}
@@ -274,7 +285,11 @@ font-family: 'Teko', sans-serif;\
     line-height: 1.25;
     color: ${(props) => props.theme.color.foreground};
     background-color: ${(props) =>
-      mix(0.95, props.theme.color.background, props.theme.color.foreground)};
+      mix(
+        0.95,
+        props.theme.color.background,
+        props.theme.color.foreground,
+      )};
 
     /* Hide Scrollbar */
     ::-webkit-scrollbar {
@@ -308,8 +323,9 @@ font-family: 'Teko', sans-serif;\
   blockquote {
     font-size: 1.3rem;
     padding: 1rem 1.5rem;
-    border-radius: 0 ${(props) => props.theme.radius.small} ${(props) =>
-  props.theme.radius.small} 0;
+    border-radius: 0 ${(props) => props.theme.radius.small} ${(
+  props,
+) => props.theme.radius.small} 0;
     background-color: ${(props) =>
       transparentize(0.95, props.theme.color.foreground)};
     box-shadow: -6px 0 0 ${(props) => props.theme.color.primary};
@@ -446,7 +462,8 @@ font-family: 'Teko', sans-serif;\
     }
     &:focus {
       color: ${(props) => shade(0.1, props.theme.color.link)};
-      text-decoration-color: ${(props) => shade(0.1, props.theme.color.link)};
+      text-decoration-color: ${(props) =>
+        shade(0.1, props.theme.color.link)};
     }
     &:active {
       color: ${(props) => shade(0.1, props.theme.color.link)};
@@ -466,7 +483,7 @@ font-family: 'Teko', sans-serif;\
   [contenteditable]:focus {
     outline: none;
   }
-`
+`;
 
 export const Wrapper = styled.div`
   position: relative;
@@ -487,7 +504,7 @@ export const Wrapper = styled.div`
   @media (min-width: ${(props) => props.theme.breakpoints.huge}) {
     max-width: 1920px;
   }
-`
+`;
 
 export const Overlay = styled.div`
   position: absolute;
@@ -497,8 +514,7 @@ export const Overlay = styled.div`
   height: 100%;
   background-color: ${(props) => props.theme.color.black};
   opacity: 0.75;
-`
-
+`;
 
 export const Paper = styled.div`
   position: relative;
@@ -529,7 +545,11 @@ export const Paper = styled.div`
     props.theme.isDarkMode &&
     css`
       background-color: ${(props) =>
-        mix(0.92, props.theme.color.background, props.theme.color.foreground)};
+        mix(
+          0.92,
+          props.theme.color.background,
+          props.theme.color.foreground,
+        )};
       box-shadow: 0 0.5rem 0.5rem 0.5rem
         ${(props) => transparentize(0.9, props.theme.color.black)};
     `};
@@ -548,7 +568,7 @@ export const Paper = styled.div`
     --paper-padding-x: 4rem;
   }
 
-  pre[class*="language-"] {
+  pre[class*='language-'] {
     border-radius: 0;
     padding-left: var(--paper-padding-x);
     padding-right: 0;
@@ -563,7 +583,7 @@ export const Paper = styled.div`
     margin: var(--paper-padding-y) calc(var(--paper-padding-x) * -1) !important;
     overflow: hidden;
   }
-`
+`;
 
 export const Main = styled.main`
   padding: 0;
@@ -584,7 +604,7 @@ export const Main = styled.main`
   @media (min-width: ${(props) => props.theme.breakpoints.small}) {
     padding-bottom: 3rem;
   }
-`
+`;
 
 const ButtonStyles = css`
   display: inline-block;
@@ -608,7 +628,7 @@ const ButtonStyles = css`
 
   &:after,
   &:before {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 100%;
@@ -660,15 +680,15 @@ const ButtonStyles = css`
       text-shadow: 0.2rem 0.2rem #555e70;
       border: #d2d2d2 solid 0.15rem;
     `};
-`
+`;
 
 export const Button = styled.button`
   ${ButtonStyles}
-`
+`;
 
 export const LinkButton = styled((props) => <Link {...props} />)`
   ${ButtonStyles}
-`
+`;
 
 export const Meta = styled.div`
   display: flex;
@@ -680,14 +700,14 @@ export const Meta = styled.div`
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
-`
+`;
 
 export const MetaActions = styled.span`
   opacity: 1;
   flex: 1 0 auto;
   display: flex;
   justify-content: flex-end;
-`
+`;
 
 export const MetaSpan = styled.span`
   justify-self: flex-start;
@@ -711,7 +731,7 @@ export const MetaSpan = styled.span`
   &:not(:first-child) {
     padding-left: 1rem;
     &:before {
-      content: "—";
+      content: '—';
       position: absolute;
       opacity: 0.5;
       left: 0;
@@ -721,7 +741,7 @@ export const MetaSpan = styled.span`
   &:last-child {
     flex: 1 0 auto;
   }
-`
+`;
 
 export const DraftBadge = styled.span`
   display: inline-block;
@@ -736,7 +756,7 @@ export const DraftBadge = styled.span`
   position: absolute;
   top: 0;
   right: 0;
-`
+`;
 
 export const EditButton = styled.button`
   outline: none;
@@ -754,7 +774,7 @@ export const EditButton = styled.button`
   top: 0;
   left: 0;
   cursor: pointer;
-`
+`;
 
 export const PlainInput = styled.input`
   color: inherit;
@@ -770,8 +790,8 @@ export const PlainInput = styled.input`
   border-width: 0;
   display: block;
   width: 100%;
-`
+`;
 
 export const PlainText = (props) => {
-  return <PlainInput {...props.input} />
-}
+  return <PlainInput {...props.input} />;
+};

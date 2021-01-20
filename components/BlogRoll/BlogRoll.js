@@ -1,20 +1,20 @@
-import Link from "next/link";
-import PropTypes from "prop-types";
-import ReactMarkdown from "react-markdown";
+import Link from 'next/link';
+import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 
 function BlogRoll({ allBlogs }) {
   function truncateSummary(content) {
-    return content.slice(0, 300) + "...";
+    return content.slice(0, 300) + '...';
   }
 
   function reformatDate(fullDate) {
     const date = new Date(fullDate);
     const options = {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
     };
-    return date.toLocaleString("en-GB", options);
+    return date.toLocaleString('en-GB', options);
   }
 
   return (
@@ -38,7 +38,7 @@ function BlogRoll({ allBlogs }) {
                 </h4>
                 <ReactMarkdown
                   source={truncateSummary(
-                    blog.document.content.replace(/<[/]?[pb]>/g, "")
+                    blog.document.content.replace(/<[/]?[pb]>/g, ''),
                   )}
                 />
                 <div className="blog-list__read-more">Read More</div>
