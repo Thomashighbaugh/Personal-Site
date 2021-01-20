@@ -106,7 +106,7 @@ function Header() {
           <label className="theme-switch" htmlFor="checkbox">
             <Checkbox checked={checked} onChange={toggleMode} />
             <div className="lightbulb ">
-              <CgDarkMode  />
+              <CgDarkMode />
             </div>
           </label>
         </div>

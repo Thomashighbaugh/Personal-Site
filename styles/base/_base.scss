@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
   font-size: 67.5%;
 }
-body{
+body {
   @include background;
   font-family: "Kanit", sans-serif;
   font-weight: 300;
@@ -48,8 +48,6 @@ body{
   }
 }
 
-
-
 img {
   max-width: 100%;
 }
@@ -58,7 +56,6 @@ ul,
 ol {
   list-style: none;
 }
-
 
 label {
   font-size: 1.5rem;
