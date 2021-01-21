@@ -12,9 +12,8 @@ In order to reduce the site to only its most relevant bits, I have not included 
 - Skills - my tech related skills, nicely packaged in a bootstrap accordion (many bothans died in this process)
 
 ## Features
+
 - Dark/Light modes, just press the lightbulb
 - Custom logo - designed by me as a personal emblem
 - Pleasant UI - I needed to stare a lot at this site to make it, so I made staring at it not painful
 - Hero Patterns Background - a tasteful way to add flare to the interface
-
-
