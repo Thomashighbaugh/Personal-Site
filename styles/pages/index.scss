@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   letter-spacing: 0.55rem;
-  margin-top: 7%;
+  margin-top: 9%;
   padding: 10rem 25rem 10rem 15rem;
   border-radius: 18px;
   border: 0.25rem var(--primary-color) solid;
@@ -22,8 +22,8 @@
       letter-spacing: normal;
       padding: 0;}
     &:hover {
-      background-size: 100% 20px;
-      color: vsr(--vibrant-color);
+      color: var(--vibrant-color);
+
     }
   }
   &__subtitle__container {
@@ -31,6 +31,7 @@
   }
   &__subtitle {
     margin: 1rem;
+    margin-top: 4rem;
     font-weight: 900;
     letter-spacing: 0;
     opacity: 0.45;

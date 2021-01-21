@@ -13,7 +13,9 @@ const Index = () => {
           </h2>
           <hr />
           <div className="introduction__subtitle__container">
-            <h3 className="heading-3 introduction__subtitle"> Full Stack Web Developer </h3>
+            <h3 className="heading-3 introduction__subtitle">
+                Full Stack Web Developer
+            </h3>
             <h3 className="heading-3 introduction__subtitle">
               Linux Systems Administrator
             </h3>

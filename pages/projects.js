@@ -17,6 +17,7 @@ import TimeIsNighProject from '../components/Projects/Projects/TimeIsNigh/TimeIs
 import ResurgensIIIProject from '../components/Projects/Projects/ResurgensIII/ResurgensIIIProject';
 import OpitxDocsProject from '../components/Projects/Projects/OpitxDocs/OpitxDocsProject';
 import G5CCLifeBlogProject from '../components/Projects/Projects/G5/G5CCLifeBlogProject';
+import ElectricTantraLinux from '../components/Projects/Projects/ElectricTantraLinux/ElectricTantraLinux';
 
 const Projects = () => {
   return (
@@ -24,6 +25,7 @@ const Projects = () => {
       <DynamicComponentWithNoSSR>
         <div className="Projects">
           <div className="projects">
+            <ElectricTantraLinux />
             <TimeIsNighProject />
             <G5CCLifeBlogProject />
             <DotfilesProject />

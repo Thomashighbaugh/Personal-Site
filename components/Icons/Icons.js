@@ -1,5 +1,5 @@
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-
+import {FiGithub, FiLinkedin, FiDribbble} from 'react-icons/fi'
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Icons = () => (
   <div className="social-media-icons">
@@ -8,15 +8,22 @@ const Icons = () => (
       target="blank"
       rel="noopener noreferrer"
     >
-      <FaLinkedinIn />
+      <FiLinkedin />
     </a>
     <a
       href="https://github.com/Thomashighbaugh"
       target="blank"
       rel="noopener noreferrer"
     >
-      <FaGithub />
+      <FiGithub />
     </a>
+      <a
+          href="https://dribbble.com/thighbaugh"
+          target="blank"
+          rel="noopener noreferrer"
+          >
+          <FiDribbble/>
+      </a>
   </div>
 );
 

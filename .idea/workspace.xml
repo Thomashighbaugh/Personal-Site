@@ -20,47 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="fixing header issues">
-      <change afterPath="$PROJECT_DIR$/blog_posts/nextjs-v-gatsbyjs.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/dark-mode.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Projects/Projects/ElectricTantraLinux/ElectricTantraLinux.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/electrictantralogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Accordion/Accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Accordion/Accordion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Accordion/AccordionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Accordion/AccordionItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BlogRoll/BlogRoll.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BlogRoll/BlogRoll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BlogRoll/PromotedBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BlogRoll/PromotedBlog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Icons/Icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Icons/Icons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ScrollMagic/scrollmagic.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ScrollMagic/scrollmagic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Styled/Styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Styled/Styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/WithHighlight/WithHighlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/WithHighlight/WithHighlight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/accordion-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/accordion-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/Dotfiles/Dotfiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/Dotfiles/Dotfiles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/Link.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/Meta.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Meta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/PageTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/PageTitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/abstracts/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/components/spinner.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/javascript/syntax-theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/styles/javascript/syntax-theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/layouts/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/layouts/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/layouts/layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/pages/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/format.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,18 +89,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/Projects" />
       <recent name="$PROJECT_DIR$/components/Projects/Projects/TimeIsNigh" />
       <recent name="$PROJECT_DIR$/components/Projects/Projects/ResurgensIII" />
       <recent name="$PROJECT_DIR$/components/Projects/Projects/OpitxDocs" />
       <recent name="$PROJECT_DIR$/components/Projects/Projects/Opitx" />
-      <recent name="$PROJECT_DIR$/components/Projects/Projects/G5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/Projects/Projects" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/layout/Pagination" />
       <recent name="$PROJECT_DIR$/layout/Meta" />
       <recent name="$PROJECT_DIR$/layout/Link" />
-      <recent name="$PROJECT_DIR$/layout/Layout" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -158,7 +130,8 @@
       <workItem from="1611132325455" duration="4962000" />
       <workItem from="1611148507418" duration="585000" />
       <workItem from="1611149350183" duration="13158000" />
-      <workItem from="1611172152661" duration="3933000" />
+      <workItem from="1611172152661" duration="9019000" />
+      <workItem from="1611269113248" duration="966000" />
     </task>
     <task id="LOCAL-00001" summary="adding pattern.scss">
       <created>1597021577640</created>

@@ -9,7 +9,7 @@ function Project() {
         <div className="project__details project__left">
           <Body
             projectTitle="Dotfiles"
-            projectTag1="C"
+            projectTag1="BASH"
             projectTag2="Lua"
             projectTag3="Linux"
             projectDescription="The main repository housing my numerous"

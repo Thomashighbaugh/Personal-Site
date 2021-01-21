@@ -16,17 +16,13 @@ header {
     border-radius: 18px;
     background: transparent;
     .logo {
-      max-height: 7rem;
-      max-width: 7rem;
+      max-height: 8rem;
+      max-width: 8rem;
       justify-self: center;
       align-self: center;
       padding: 0;
       margin: 0;
-      border: 0.25rem var(--primary-color) solid;
-
-      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
       border-radius: 18px;
-
       &:hover {
         @include animate(pulse, 0.5s, 20);
       }
@@ -41,15 +37,14 @@ header {
 .lightbulb {
   border-radius: 18px;
   float: left;
-  position: fixed;
+  position: absolute;
   top: 1rem;
   left: 12rem;
   background-color: var(--bg-color);
   svg {
-    border: 0.25rem var(--primary-color) solid;
-    color: var(--black-color) !important;
-    min-height: 7rem;
-    min-width: 7rem;
+    color: var(--gray-color) !important;
+    min-height: 8rem;
+    min-width: 8rem;
     border-radius: 18px;
     padding: 1rem;
     color: var(--primary-color);
@@ -105,7 +100,8 @@ header {
   }
 
   &__nav {
-    height: 100vh;
+    padding-top: 56.25%;
+    height: 0;
     z-index: 25;
     opacity: 0;
     width: 0;
