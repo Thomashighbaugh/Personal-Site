@@ -27,10 +27,11 @@ function Header() {
 
   const logoLink = () => (
     <Link href="/">
-      <button className="link">
+      <button className="logo link active">
         <img
           className="logo gray-light"
           id="img-button"
+          alt="Personal Logo of Thomas Leon Highbaugh"
           src={require('../images/logo.svg')}
         />
       </button>

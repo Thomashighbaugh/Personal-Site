@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 0.25rem var(--primary-color) solid;
+  border-bottom: 0.5rem var(--primary-color) solid;
   background: var(--bg-color);
 
   @include lg {
