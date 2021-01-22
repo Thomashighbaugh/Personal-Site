@@ -13,7 +13,7 @@ html {
 }
 body {
   @include background;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 300;
   line-height: 1.6;
   color: var(--font-color);
@@ -27,7 +27,7 @@ body {
   @include background;
 
   @include sm {
-    padding:0 !important;
+    padding: 0 !important;
   }
 }
 

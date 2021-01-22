@@ -5,7 +5,8 @@
   backface-visibility: visible !important;
   @-webkit-keyframes flipInX#{$strength} {
     from {
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, $keyValue);
+      -webkit-transform: perspective(400px)
+        rotate3d(1, 0, 0, $keyValue);
       transform: perspective(400px) rotate3d(1, 0, 0, $keyValue);
       -webkit-animation-timing-function: ease-in;
       animation-timing-function: ease-in;
@@ -13,7 +14,8 @@
     }
 
     40% {
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 0-$keyValue/9);
+      -webkit-transform: perspective(400px)
+        rotate3d(1, 0, 0, 0-$keyValue/9);
       transform: perspective(400px) rotate3d(1, 0, 0, 0-$keyValue/9);
       -webkit-animation-timing-function: ease-in;
       animation-timing-function: ease-in;
@@ -38,7 +40,8 @@
 
   @keyframes flipInX#{$strength} {
     from {
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, $keyValue);
+      -webkit-transform: perspective(400px)
+        rotate3d(1, 0, 0, $keyValue);
       transform: perspective(400px) rotate3d(1, 0, 0, $keyValue);
       -webkit-animation-timing-function: ease-in;
       animation-timing-function: ease-in;
@@ -46,7 +49,8 @@
     }
 
     40% {
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 0-$keyValue/9);
+      -webkit-transform: perspective(400px)
+        rotate3d(1, 0, 0, 0-$keyValue/9);
       transform: perspective(400px) rotate3d(1, 0, 0, 0-$keyValue/9);
       -webkit-animation-timing-function: ease-in;
       animation-timing-function: ease-in;

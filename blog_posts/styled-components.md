@@ -21,16 +21,15 @@ design thought it wouldn't hurt to try and...
 
 ### WOW I GET IT NOW
 
-It is a powerful way to go and without a central stylesheet to muck things up it can be 
-very consistent in how it styles the site, at least if it is just you coding the site. 
+It is a powerful way to go and without a central stylesheet to muck things up it can be
+very consistent in how it styles the site, at least if it is just you coding the site.
 
 ### Everything Has Its Time and Place
 
-I am hardly stripping out all of my well nested SCSS stylesheets though. There is still a place for them in providing a 
+I am hardly stripping out all of my well nested SCSS stylesheets though. There is still a place for them in providing a
 consistent platform upon which the component is styled on. However, I am going to look to incorporate more elements
-of Atomic Design in my sites, including this one, as time goes on and it makes sense for the project before me. 
+of Atomic Design in my sites, including this one, as time goes on and it makes sense for the project before me.
 
-It makes sense from the Atomic Design perspective to use Styled Components, they allow the 
-styling and component to be naturally grouped together. This is great so long as there is 
-some consistency sought by the dev but can be a challenge in teams. 
-
+It makes sense from the Atomic Design perspective to use Styled Components, they allow the
+styling and component to be naturally grouped together. This is great so long as there is
+some consistency sought by the dev but can be a challenge in teams.

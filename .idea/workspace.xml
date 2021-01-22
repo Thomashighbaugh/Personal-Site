@@ -20,8 +20,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19fd05e6-c0a3-4c3a-87f0-116e65cdb08d" name="Default Changelist" comment="fixing header issues">
+      <change afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_posts/brand_story.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog_posts/brand_story.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_posts/dotfiles-rewrite.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog_posts/dotfiles-rewrite.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_posts/electric-tantra-linux-iso.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog_posts/electric-tantra-linux-iso.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_posts/git.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog_posts/git.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_posts/nextjs-v-gatsbyjs.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog_posts/nextjs-v-gatsbyjs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_posts/styled-components.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog_posts/styled-components.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Icons/Icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Icons/Icons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Projects/Projects/ElectricTantraLinux/ElectricTantraLinux.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Projects/Projects/ElectricTantraLinux/ElectricTantraLinux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/abstracts/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/base/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base/_helpers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/accordion.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/link.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/layouts/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/layouts/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/pattern.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/pattern.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/_animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/_animations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounce.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounce.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceIn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceIn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceInDown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceInDown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceInLeft.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceInLeft.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceInRight.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceInRight.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceInUp.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_bounceInUp.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flip.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flip.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flipInX.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flipInX.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flipInY.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flipInY.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flipOut.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flipOut.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flipOutY.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_flipOutY.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_lightSpeedIn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_lightSpeedIn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_lightSpeedOut.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_lightSpeedOut.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_rollIn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_rollIn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_rollOut.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_rollOut.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_rubberBand.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_rubberBand.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_tada.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_tada.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_wobble.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_wobble.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomInDown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomInDown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomInLeft.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomInLeft.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomInRight.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomInRight.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomInUp.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomInUp.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomOutDown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomOutDown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomOutLeft.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomOutLeft.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomOutRight.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomOutRight.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomOutUp.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/vendor/sassimate/animation/_zoomOutUp.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +167,7 @@
       <workItem from="1611148507418" duration="585000" />
       <workItem from="1611149350183" duration="13158000" />
       <workItem from="1611172152661" duration="9019000" />
-      <workItem from="1611269113248" duration="1999000" />
+      <workItem from="1611269113248" duration="3789000" />
     </task>
     <task id="LOCAL-00001" summary="adding pattern.scss">
       <created>1597021577640</created>

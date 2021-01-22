@@ -7,7 +7,10 @@ function Project() {
     <div>
       <div className="project">
         <div className="project__video project__left">
-          <PictureSet pictureName="electrictantralogo.png" altText=" " />
+          <PictureSet
+            pictureName="electrictantralogo.png"
+            altText=" "
+          />
         </div>
         <div className="project__details project__right">
           <Body
