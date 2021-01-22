@@ -11,11 +11,7 @@
   display: inline-block;
   background-position: bottom 0 left 0, bottom 1px left 0;
   background-repeat: no-repeat;
-  background-image: linear-gradient(
-      to right,
-      var(--bg-color),
-      var(--bg-color)
-    ),
+  background-image: linear-gradient(to right, var(--bg-color), var(--bg-color)),
     linear-gradient(32deg, var(--primary-color), var(--vibrant-color));
   background-blend-mode: soft-light, lighten;
 }

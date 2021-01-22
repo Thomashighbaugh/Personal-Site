@@ -49,7 +49,8 @@
     "scrollmagic": "^2.0.7",
     "scrollmagic-plugin-gsap": "^1.0.4",
     "styled-components": "^5.2.1",
-    "webp-loader": "^0.6.0"  },
+    "webp-loader": "^0.6.0"
+  },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "7.12.1",
     "autoprefixer": "9.8.6",

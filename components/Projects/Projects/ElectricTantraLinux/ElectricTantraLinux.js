@@ -1,16 +1,13 @@
-import PictureSet from '../../../PictureSet/PictureSet';
-import React from 'react';
-import Body from '../../Body/Body';
+import PictureSet from "../../../PictureSet/PictureSet";
+import React from "react";
+import Body from "../../Body/Body";
 
 function Project() {
   return (
     <div>
       <div className="project">
         <div className="project__video project__left">
-          <PictureSet
-            pictureName="electrictantralogo.png"
-            altText=" "
-          />
+          <PictureSet pictureName="electrictantralogo.png" altText=" " />
         </div>
         <div className="project__details project__right">
           <Body

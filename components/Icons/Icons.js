@@ -1,5 +1,5 @@
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { FiGithub, FiLinkedin, FiDribbble } from 'react-icons/fi';
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FiGithub, FiLinkedin, FiDribbble } from "react-icons/fi";
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Icons = () => (
   <div className="social-media-icons">

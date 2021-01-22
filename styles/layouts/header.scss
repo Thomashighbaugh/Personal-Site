@@ -11,7 +11,7 @@ header {
     height: 12%;
   }
   button {
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     border: none;
     border-radius: 18px;
     background: transparent;
@@ -131,7 +131,7 @@ header {
       display: inline-block;
       margin-bottom: 2rem;
       font-weight: 900;
-      font-family: 'Bungee', 'Kanit', sans-serif;
+      font-family: "Bungee", "Kanit", sans-serif;
 
       padding: 1rem 5rem;
       text-transform: uppercase;
@@ -199,7 +199,7 @@ header {
 
     &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       transition: all 0.2s;
@@ -216,7 +216,7 @@ header {
     color: var(--primary-color);
     text-shadow: var(--gray-color) 0.125rem 0.125rem;
     font-size: 1.6rem;
-    font-family: 'Bungee', 'Kanit', sans-serif;
+    font-family: "Bungee", "Kanit", sans-serif;
     font-weight: 900;
     display: inline-block;
     margin-top: 0.5rem;

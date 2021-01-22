@@ -1,9 +1,9 @@
 ---
 title: Next.js vs. Gatsby.js
-date: '2021-01-13'
-subtitle: 'A Tale of Two node_modules'
+date: "2021-01-13"
+subtitle: "A Tale of Two node_modules"
 banner: dogpatchcircuit.png
-alt_text: 'Static Site Generators and Dependency Hell'
+alt_text: "Static Site Generators and Dependency Hell"
 tags: [React]
 promoted: false
 ---

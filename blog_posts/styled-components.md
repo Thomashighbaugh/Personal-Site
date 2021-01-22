@@ -1,9 +1,9 @@
 ---
 title: Styled Components
-date: '2020-07-29'
-subtitle: 'Or How I Learned to Stop Fearing and Start Loving Internal Stylesheets'
+date: "2020-07-29"
+subtitle: "Or How I Learned to Stop Fearing and Start Loving Internal Stylesheets"
 banner: dots.jpg
-alt_text: 'Styled Components'
+alt_text: "Styled Components"
 tags: [CSS]
 promoted: false
 ---
