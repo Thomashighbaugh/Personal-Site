@@ -1,7 +1,7 @@
 # Portfolio Site
 
 Thank you for visiting the repository that houses the source code for my portfolio site! This repository is what Vercel, my static website host, uses to build the site in production.
-
+![Screenshot of the Site](./portfolio.png)
 ![Lighthouse Scores](./lighthouse-portfolio.png)
 
 ## Content
