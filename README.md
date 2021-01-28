@@ -2,6 +2,8 @@
 
 Thank you for visiting the repository that houses the source code for my portfolio site! This repository is what Vercel, my static website host, uses to build the site in production.
 
+![Lighthouse Scores](./lighthouse-portfolio.png)
+
 ## Content
 
 In order to reduce the site to only its most relevant bits, I have not included the standard faire of portfolio sites. That's right, no Google Maps of my exact location (creepy), no contact forms (because I list my email seemingly everywhere as is) and no skill sliders because who trusts those anyway. Instead I have focused on providing only the relevant information to demonstrate my aptitude while still doing so with my flare for design.
