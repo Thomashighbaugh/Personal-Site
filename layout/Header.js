@@ -69,7 +69,7 @@ function Header() {
             <hr className="divider" />
           </li>
           <li className="hamburger__item">
-            <Link href="/projects">
+            <Link href="https://project-lab.vercel.app/">
               <a className="hamburger__link">
                 <span>02</span>Projects
               </a>
