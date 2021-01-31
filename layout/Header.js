@@ -38,7 +38,7 @@ function Header() {
 
   const navLinks = () => (
     <div className="nav-links">
-      <Link href="/projects">
+      <Link href="https://project-lab.vercel.app/">
         <button className="link">Projects</button>
       </Link>
       <Link href="/blog">
