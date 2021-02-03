@@ -52,7 +52,7 @@
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "7.12.1",
+    "@babel/plugin-transform-modules-commonjs": "7.12.13",
     "autoprefixer": "9.8.6",
     "eslint": "7.18.0",
     "eslint-config-prettier": "7.2.0",
