@@ -1,5 +1,25 @@
-import App from 'next/app';
-import Router from 'next/router';
-import '../styles.scss';
+import '@/css/tailwind.css'
 
-export default App;
+import { MDXProvider } from '@mdx-js/react'
+import { ThemeProvider } from 'next-themes'
+import { DefaultSeo } from 'next-seo'
+import Head from 'next/head'
+import { SEO } from '@/components/SEO/index'
+import LayoutWrapper from '@/components/LayoutWrapper/index'
+import MDXComponents from '@/components/MDXComponents/index'
+
+export default function App({ Component, pageProps }) {
+  return (
+    <ThemeProvider attribute="class">
+      <MDXProvider components={MDXComponents}>
+        <Head>
+          <meta content="width=device-width, initial-scale=1" name="viewport" />
+        </Head>
+        <DefaultSeo {...SEO} />
+        <LayoutWrapper>
+          <Component {...pageProps} />
+        </LayoutWrapper>
+      </MDXProvider>
+    </ThemeProvider>
+  )
+}

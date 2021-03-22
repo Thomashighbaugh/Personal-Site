@@ -1,32 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://thomasleonhighbaugh.me/404</loc>
+  </url>
 
   <url>
-    <loc>https://thomasleonhighbaugh.me/</loc>
-    <lastmod>2020-05-18T21:55:17+00:00</lastmod>
-    <priority>1.00</priority>
+    <loc>https://thomasleonhighbaugh.me/about</loc>
   </url>
-  <url>
-    <loc>https://thomasleonhighbaugh.me/projects</loc>
-    <lastmod>2020-05-18T21:55:17+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+
   <url>
     <loc>https://thomasleonhighbaugh.me/blog</loc>
-    <lastmod>2020-05-18T21:55:17+00:00</lastmod>
-    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://thomasleonhighbaugh.me/skills</loc>
-    <lastmod>2020-05-18T21:55:17+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://thomasleonhighbaugh.me</loc>
   </url>
 
+  <url>
+    <loc>https://thomasleonhighbaugh.me/tags</loc>
+  </url>
 
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/brand_story</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/dotfiles-rewrite</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/electric-tantra-linux-iso</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/git</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/nextjs-v-gatsbyjs</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/styled-components</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/tailwind-everywhere</loc>
+  </url>
 </urlset>

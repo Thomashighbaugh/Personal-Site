@@ -1,32 +1,41 @@
 module.exports = {
-  env: {
-    node: true, // allows require
-    browser: true, // allows document
+  root: true,
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   settings: {
     react: {
       version: 'detect',
     },
   },
-  parserOptions: {
-    ecmaVersion: 2018, // parsing modern ECMA Script
-    sourceType: 'module', // allows imports
-    ecmaFeatures: {
-      jsx: true, // parsing JSX
-    },
+  env: {
+    browser: true,
+    amd: true,
+    node: true,
   },
-  root: true,
-  rules: {
-    'react/react-in-jsx-scope': 'off', // Next imports React for you
-    camelcase: ['error', { allow: ['alt_text'] }],
-  },
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended', // placed last to override
+    'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
   ],
-};
+  rules: {
+    'prettier/prettier': 'error',
+    'react/react-in-jsx-scope': 'off',
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
+    'react/prop-types': 0,
+    'no-unused-vars': 0,
+    'react/no-unescaped-entities': 0,
+  },
+}

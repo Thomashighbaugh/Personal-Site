@@ -1,0 +1,14 @@
+{
+  "title": "Portfolio",
+  "author": "Thomas Leon Highbaugh",
+  "headerTitle": "TLH",
+  "description": "The site that functions as centerpiece of the web presence of Thomas Leon Highbaugh",
+  "language": "en-US",
+  "siteUrl": "https://thomasleonhighbaugh.me",
+  "siteRepo": "https://github.com/Thomashighbaugh/portfolio",
+  "image": "/static/images/avatar.png",
+  "socialBanner": "/static/images/twitter-card.png",
+  "email": "admin@thomasleonhighbaugh.me",
+  "twitter": "https://twitter.com/thomashighbaugh",
+  "github": "https://github.com/Thomashighbaugh"
+}

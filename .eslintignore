@@ -1,8 +1,2 @@
 node_modules
-build
-.next
-public
-package-lock.json
-test
-next.config.js
-postcss.config.js
+tailwind.config.js
