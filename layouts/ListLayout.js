@@ -55,7 +55,7 @@ export default function ListLayout({ posts, title }) {
                 <article className="p-12 space-y-2 bg-gray-2xl 100 rounded-2xl dark:bg-gray-800 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                   <dl>
                     <dt className="sr-only">Published on</dt>
-                    <dd className="text-sm font-extrabold ext-gray-500 dark:text-gray-400">
+                    <dd className="pr-12 text-sm font-extrabold text-gray-500 border-r-2 border-gray-200 dark:border-gray-700 dark:text-gray-400">
                       <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
                     </dd>
                   </dl>
