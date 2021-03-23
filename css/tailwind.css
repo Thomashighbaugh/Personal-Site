@@ -4,29 +4,33 @@
 @tailwind utilities;
 
 .remark-code-title {
-  @apply px-5 py-3 font-mono text-sm font-bold text-gray-400 bg-gray-800 rounded-t;
+	@apply px-5 py-3 font-mono text-sm font-bold text-gray-400 bg-gray-800 rounded-t;
 }
 
 .remark-code-title + pre {
-  @apply mt-0 rounded-t-none;
+	@apply mt-0 rounded-t-none;
 }
 
 .task-list-item:before {
-  @apply hidden;
+	@apply hidden;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 h1 {
-  text-shadow: 0.15rem 0.15rem #b2bfd9 !important;
-  @apply text-gray-500 dark:text-gray-400;
+	text-shadow: 0.15rem 0.15rem #b2bfd9 !important;
+	@apply text-gray-500 dark:text-gray-400;
 }
 h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply text-gray-500 dark:text-gray-400;
+	@apply text-gray-500 dark:text-gray-400;
+}
+
+.btn {
+	width: 9px !important;
 }
