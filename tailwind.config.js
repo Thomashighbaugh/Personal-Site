@@ -143,7 +143,7 @@ module.exports = {
         gray: {
           DEFAULT: "#555E70",
           50: "#F7F7F9",
-          100: "#E9e9ff",
+          100: "#E9e9ffT",
           200: "#BEC3CE",
           300: "#98A1B1",
           400: "#737E95",
@@ -161,8 +161,7 @@ module.exports = {
           purple: "#d9a9ff",
           red: "#ff8383",
           blue: "#93ddfd",
-          white: "#f7f7f9",
-        },
+      },
       },
       typography: (theme) => ({
         DEFAULT: {
