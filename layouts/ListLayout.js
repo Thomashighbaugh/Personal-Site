@@ -64,7 +64,7 @@ export default function ListLayout({ posts, title }) {
                       <h3 className="text-2xl font-bold tracking-tight">
                         <Link
                           href={`/blog/${slug}`}
-                          className="text-gray-600 hover:text-blue-500 dark:hover:text-gray-400 dark:text-gray-100"
+                          className="text-gray-600 hover:text-blue-500 dark:hover:text-gray-200 dark:text-gray-100"
                         >
                           {title}
                         </Link>
