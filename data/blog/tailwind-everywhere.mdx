@@ -1,13 +1,39 @@
 ---
-title: 'Tailwind Everywhere'
-date: '2021-03-21'
-tags: ['css', 'tailwindcss']
+title: "Tailwind Everywhere"
+date: "2021-03-21"
+tags: ["css", "tailwindcss"]
 draft: true
-summary: 'How my discovery of Tailwind has lead me to rewrite almost all of my personal sites and incorporate a consistent style across my interfaces, while replacing CSS frameworks like Bootstrap seamlessly.'
+summary: "How my discovery of Tailwind has lead me to rewrite almost all of my personal sites and incorporate a consistent style across my interfaces, while replacing CSS frameworks like Bootstrap seamlessly."
 ---
 
-# Tailwind Everywhere
+The decision to write my resume in HTML seems relatively intuitive, after all there is almost no programming language I know better (other than BASH) and its a document markup language at its core that is naturally well suited to the particular needs one has when structuring such a document. However, it appears that this choice is not a common one and of those who do write their resumes in HTML, they conformed mostly to the templates that I was trying to move away from. However, I found one example that I took inspiration from and as I went over the source code, saw it was using Tailwind.css which provided it with numerous useful functions and decided I would try it myself in writing my own resume. 
 
-Tailwind.css is a trendy new way of incorporating the consistency of a CSS framework like Bootstrap into a site. Unlike the traditional means, this framework is unique to your site and totally under your control. This provides fine grained control over the CSS of the site, while enabling most of the styling to be done in the JSX/HTML through classes that either conform to some rather sane defaults or can be tweaked in a Javascript configuration file called `tailwind.config.js`. 
+Now I have rewritten this site, created an entire site to house my projects (more on this in a later post) and am a firm advocate of Tailwind.css that I see as the natural choice for almost any future project of mine for a number of reasons I will illuminate in the rest of this post.
 
-You could write, debug and loose sleep over a typical, voluminous stylesheet broken into dozens of files. The problem is that introduces inconsistency that simply isn't possible with Tailwind, which dynamically generates the stylesheet based on the configuration file (and purges uncessary CSS in the process). 
+## Utilities, Not Just Components
+Tailwind works much like Bootstrap in that it provides a series of classes one incorporates into the HTML/JSX of the site and they provide predictable and consistent styling to various elements within the site. However, whereas Bootstrap provides components one must integrate into their site, Tailwind provides a low level order of control, preferring to provide rules that can be used to make components. 
+
+
+## CSS Integration
+
+Let's say you wanted to create a component, Tailwind absolutely enables you to do so even if it doesn't provide a set of them by default. To create a component, one can apply a set of classes to a class or id in their CSS with the `@about` utility. What that looks like is something like below:
+
+```css
+//tailwind.css
+.cards{
+    @about text-gray-900 rounded-2xl border-gray-900 bg-white hover:border-gray-600
+}
+
+```
+
+Now any element with the `card` class will have the above styles applied to them, making it possible to create Bootstrap like components that can even be ported across projects. 
+
+## Extensibility
+
+## PurgeCSS
+While the `Just in Time` compiler is being developed that would remove the need for this feature
+
+
+## Consistency 
+
+## ColorSchemes 

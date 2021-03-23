@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import tinytime from 'tinytime'
-import Link from '@/components/Link/index'
-import Tag from '@/components/Tag/index'
+import { useState } from "react";
+import tinytime from "tinytime";
+import Link from "@/components/Link/index";
+import Tag from "@/components/Tag/index";
 
-const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
+const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}");
 
 export default function ListLayout({ posts, title }) {
-  const [searchValue, setSearchValue] = useState('')
+  const [searchValue, setSearchValue] = useState("");
   const filteredBlogPosts = posts.filter((frontMatter) =>
     frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
-  )
+  );
 
   return (
     <>
@@ -44,22 +44,30 @@ export default function ListLayout({ posts, title }) {
           </div>
         </div>
         <ul>
-          {!filteredBlogPosts.length && 'No posts found.'}
+          {!filteredBlogPosts.length && "No posts found."}
           {filteredBlogPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, summary, tags } = frontMatter;
             return (
-              <li key={slug} className="py-2 mr-64 border-t-2 border-gray-100 dark:border-gray-800 ml-36">
+              <li
+                key={slug}
+                className="py-2 mr-64 border-t-2 border-gray-100 dark:border-gray-800 ml-36"
+              >
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-sm font-extrabold ext-gray-500 dark:text-gray-400">
-                      <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
+                      <time dateTime={date}>
+                        {postDateTemplate.render(new Date(date))}
+                      </time>
                     </dd>
                   </dl>
                   <div className="space-y-6 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold tracking-tight">
-                        <Link href={`/blog/${slug}`} className="text-gray-600 hover:text-blue-500 dark:hover:text-gray-400 dark:text-gray-100">
+                        <Link
+                          href={`/blog/${slug}`}
+                          className="text-gray-600 hover:text-blue-500 dark:hover:text-gray-400 dark:text-gray-100"
+                        >
                           {title}
                         </Link>
                       </h3>
@@ -75,10 +83,10 @@ export default function ListLayout({ posts, title }) {
                   </div>
                 </article>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
     </>
-  )
+  );
 }

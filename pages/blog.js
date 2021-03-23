@@ -1,12 +1,12 @@
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import siteMetadata from '@/data/siteMetadata'
-import ListLayout from '@/layouts/ListLayout'
-import { PageSeo } from '@/components/SEO/index'
+import { getAllFilesFrontMatter } from "@/lib/mdx";
+import siteMetadata from "@/data/siteMetadata";
+import ListLayout from "@/layouts/ListLayout";
+import { PageSeo } from "@/components/SEO/index";
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
+  const posts = await getAllFilesFrontMatter("blog");
 
-  return { props: { posts } }
+  return { props: { posts } };
 }
 
 export default function Blog({ posts }) {
@@ -19,5 +19,5 @@ export default function Blog({ posts }) {
       />
       <ListLayout posts={posts} title="Blog Posts" />
     </>
-  )
+  );
 }
