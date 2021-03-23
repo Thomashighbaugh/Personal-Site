@@ -32,5 +32,6 @@ h6 {
 }
 
 .btn {
-	width: 32px !important;
+	width: 72px !important;
+	height: 72px !important;
 }
