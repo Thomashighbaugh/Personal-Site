@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import tinytime from 'tinytime'
-import Link from '@/components/Link/index'
-import Tag from '@/components/Tag/index'
+import { useState } from "react";
+import tinytime from "tinytime";
+import Link from "@/components/Link/index";
+import Tag from "@/components/Tag/index";
 
-const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
+const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}");
 
 export default function ListLayout({ posts, title }) {
-  const [searchValue, setSearchValue] = useState('')
+  const [searchValue, setSearchValue] = useState("");
   const filteredBlogPosts = posts.filter((frontMatter) =>
     frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
-  )
+  );
 
   return (
     <>
@@ -44,9 +44,9 @@ export default function ListLayout({ posts, title }) {
           </div>
         </div>
         <ul>
-          {!filteredBlogPosts.length && 'No posts found.'}
+          {!filteredBlogPosts.length && "No posts found."}
           {filteredBlogPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, summary, tags } = frontMatter;
             return (
               <li
                 key={slug}
@@ -56,7 +56,9 @@ export default function ListLayout({ posts, title }) {
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-sm font-extrabold ext-gray-500 dark:text-gray-400">
-                      <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
+                      <time dateTime={date}>
+                        {postDateTemplate.render(new Date(date))}
+                      </time>
                     </dd>
                   </dl>
                   <div className="space-y-6 xl:col-span-3">
@@ -81,10 +83,10 @@ export default function ListLayout({ posts, title }) {
                   </div>
                 </article>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
     </>
-  )
+  );
 }
