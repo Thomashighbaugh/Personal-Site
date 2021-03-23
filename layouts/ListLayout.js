@@ -59,7 +59,7 @@ export default function ListLayout({ posts, title }) {
                       <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
                     </dd>
                   </dl>
-                  <div className="space-y-6 xl:col-span-3">
+                  <div className="space-x-2 space-y-6 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold tracking-tight">
                         <Link
