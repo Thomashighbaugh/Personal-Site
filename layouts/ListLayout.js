@@ -55,11 +55,11 @@ export default function ListLayout({ posts, title }) {
                 <article className="p-12 space-y-2 bg-gray-100 rounded-2xl dark:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline">
                   <dl>
                     <dt className="sr-only">Published on</dt>
-                    <dd className="pr-12 text-sm font-extrabold text-gray-500 border-r-2 border-gray-200 dark:border-gray-900 dark:text-gray-400">
+                    <dd className="pr-12 text-sm font-extrabold text-gray-500 dark:text-gray-400">
                       <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
                     </dd>
                   </dl>
-                  <div className="space-x-2 space-y-6 xl:col-span-3">
+                  <div className="space-x-1 space-y-6 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold tracking-tight">
                         <Link
