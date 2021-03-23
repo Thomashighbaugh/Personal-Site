@@ -1,7 +1,7 @@
-import Mail from './mail.svg'
-import Github from './github.svg'
-import Linkedin from './linkedin.svg'
-import Twitter from './twitter.svg'
+import Mail from "./mail.svg";
+import Github from "./github.svg";
+import Linkedin from "./linkedin.svg";
+import Twitter from "./twitter.svg";
 
 // Icons taken from: https://simpleicons.org/
 
@@ -10,10 +10,10 @@ const components = {
   github: Github,
   linkedin: Linkedin,
   twitter: Twitter,
-}
+};
 
 const SocialIcon = ({ kind, href, size = 8 }) => {
-  const SocialSvg = components[kind]
+  const SocialSvg = components[kind];
 
   return (
     <a target="_blank" rel="noopener noreferrer" href={href}>
@@ -22,7 +22,7 @@ const SocialIcon = ({ kind, href, size = 8 }) => {
         className={`fill-current text-gray-500 dark:text-gray-300 hover:text-blue-500 dark:hover:text-gray-50 border-2 border-gray-400 hover:border-blue-500 dark:hover:border-gray-50 bg-gray-50 dark:bg-gray-800 p-1 rounded-xl h-${size} w-${size} max-h-${size} max-w-${size}`}
       />
     </a>
-  )
-}
+  );
+};
 
-export default SocialIcon
+export default SocialIcon;

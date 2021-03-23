@@ -14,11 +14,10 @@ export default function Footer() {
             {siteMetadata.author}
             {""}
             {""}
-            {` © ${new Date().getFullYear()}`} 
+            {` © ${new Date().getFullYear()}`}
           </Link>
         </div>
       </div>
-
 
       <div className="inline-flex ml-6 space-x-4">
         <SocialIcon
