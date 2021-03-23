@@ -52,10 +52,10 @@ export default function ListLayout({ posts, title }) {
                 key={slug}
                 className="py-2 mr-64 border-t-2 border-gray-100 dark:border-gray-800 ml-36"
               >
-                <article className="p-12 space-y-2 bg-gray-2xl 100 rounded-2xl dark:bg-gray-800 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                <article className="p-12 space-y-2 bg-gray-100 rounded-2xl dark:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline">
                   <dl>
                     <dt className="sr-only">Published on</dt>
-                    <dd className="pr-12 text-sm font-extrabold text-gray-500 border-r-2 border-gray-200 dark:border-gray-700 dark:text-gray-400">
+                    <dd className="pr-12 text-sm font-extrabold text-gray-500 border-r-2 border-gray-200 dark:border-gray-900 dark:text-gray-400">
                       <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
                     </dd>
                   </dl>
