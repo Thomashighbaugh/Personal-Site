@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
-import { Layout } from '@components/LayoutWrapper'
-import { PageSeo } from '@/components/SEO/index'
-import siteMetadata from '@/data/siteMetadata'
+import { PageSeo } from '../components/SEO/index'
+import siteMetadata from '../data/siteMetadata'
 
-import { getSortedPostsData } from '@data/posts'
+import { getSortedPostsData } from '../data/posts'
 import Image from 'next/image'
 
 export default function Home({ allPostsData }) {
@@ -14,7 +13,7 @@ export default function Home({ allPostsData }) {
 
   return (
     // begin page
-    <Layout>
+    <>
       <PageSeo
         title={`Blog - ${siteMetadata.author}`}
         description={siteMetadata.description}
@@ -86,7 +85,7 @@ export default function Home({ allPostsData }) {
       </section>
       {/* End Posts Displayed */}
       {/* End Page */}
-    </Layout>
+    </>
   )
 }
 // Props

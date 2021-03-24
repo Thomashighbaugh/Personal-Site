@@ -1,30 +1,23 @@
-import tinytime from "tinytime";
-import Link from "@/components/Link/index";
+import tinytime from 'tinytime'
+import Link from '../components/Link/index'
 
-import SectionContainer from "@/components/SectionContainer/index";
-import PageTitle from "@/components/PageTitle/index";
-import { BlogSeo } from "@/components/SEO/index";
-import Tag from "@/components/Tag/index";
-import siteMetdata from "@/data/siteMetadata";
+import SectionContainer from '../components/SectionContainer/index'
+import { BlogSeo } from '../components/SEO/index'
+import Tag from '../components/Tag/index'
+import siteMetdata from '../data/siteMetadata'
 
-const editUrl = (fileName) =>
-  `${siteMetdata.siteRepo}/blob/master/data/blog/${fileName}`;
+const editUrl = (fileName) => `${siteMetdata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetdata.siteUrl}/blog/${slug}`
-  )}`;
+  `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetdata.siteUrl}/blog/${slug}`)}`
 
-const postDateTemplate = tinytime("{dddd}, {MMMM} {DD}, {YYYY}");
+const postDateTemplate = tinytime('{dddd}, {MMMM} {DD}, {YYYY}')
 
 export default function PostLayout({ children, frontMatter, next, prev }) {
-  const { slug, fileName, date, title, tags } = frontMatter;
+  const { slug, fileName, date, title, tags } = frontMatter
 
   return (
     <SectionContainer>
-      <BlogSeo
-        url={`${siteMetdata.siteUrl}/blog/${frontMatter.slug}`}
-        {...frontMatter}
-      />
+      <BlogSeo url={`${siteMetdata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
       <article className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
         <header className=" xl:pb-12">
           <div className="space-y-1 text-center">
@@ -32,9 +25,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               <div>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium text-gray-500 dark:text-gray-400">
-                  <time dateTime={date}>
-                    {postDateTemplate.render(new Date(date))}
-                  </time>
+                  <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
                 </dd>
               </div>
             </dl>
@@ -47,7 +38,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
         </header>
         <div
           className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6"
-          style={{ gridTemplateRows: "auto 1fr" }}
+          style={{ gridTemplateRows: 'auto 1fr' }}
         >
           <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
             <dt className="sr-only">Authors</dt>
@@ -56,19 +47,14 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                 <li className="flex items-center space-x-2">
                   <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                     <dt className="sr-only">Name</dt>
-                    <dd className="text-gray-900 dark:text-gray-100">
-                      {siteMetdata.author}
-                    </dd>
+                    <dd className="text-gray-900 dark:text-gray-100">{siteMetdata.author}</dd>
                     <dt className="sr-only">Twitter</dt>
                     <dd>
                       <Link
                         href={siteMetdata.twitter}
                         className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                       >
-                        {siteMetdata.twitter.replace(
-                          "https://twitter.com/",
-                          "@"
-                        )}
+                        {siteMetdata.twitter.replace('https://twitter.com/', '@')}
                       </Link>
                     </dd>
                   </dl>
@@ -77,15 +63,13 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             </dd>
           </dl>
           <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-            <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">
-              {children}
-            </div>
+            <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
             <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
               <Link href={discussUrl(slug)} rel="nofollow">
-                {"Discuss on Twitter"}
+                {'Discuss on Twitter'}
               </Link>
               {` • `}
-              <Link href={editUrl(fileName)}>{"View on GitHub"}</Link>
+              <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
             </div>
           </div>
           <footer className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
@@ -137,5 +121,5 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
         </div>
       </article>
     </SectionContainer>
-  );
+  )
 }

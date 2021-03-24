@@ -1,7 +1,7 @@
 import Link from '@/components/Link/index'
-import { PageSeo } from '@/components/SEO/index'
+import { PageSeo } from '../components/SEO/index'
 import Image from 'next/image'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '../data/siteMetadata'
 
 export default function Home() {
   return (
