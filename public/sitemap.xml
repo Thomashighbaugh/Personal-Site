@@ -17,6 +17,10 @@
   </url>
 
   <url>
+    <loc>https://thomasleonhighbaugh.me/projects</loc>
+  </url>
+
+  <url>
     <loc>https://thomasleonhighbaugh.me/tags</loc>
   </url>
 
@@ -46,5 +50,61 @@
 
   <url>
     <loc>https://thomasleonhighbaugh.me/blog/tailwind-everywhere</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/HTML/html-inputs</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/HTML/html-opitx-docs</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/Javascript/javascript-cv-generator</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/Javascript/javascript-future-value-calculator</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/Javascript/javascript-hello-class</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/Javascript/javascript-invoice-calculator</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/Javascript/javascript-odd-job</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/Javascript/javascript-random-task</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/Javascript/javascript-saar-janak</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-electron-opitx-markdown</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-gatsby-crazy-wise-starter</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-mern-keeper-crm</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-preact-playground</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-startpage</loc>
   </url>
 </urlset>

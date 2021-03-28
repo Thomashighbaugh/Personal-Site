@@ -4,10 +4,10 @@ import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
 
-const postsDirectory = path.join(process.cwd(), '../data/posts')
-const reactDirectory = path.join(process.cwd(), '../data/posts/React')
-const javascriptDirectory = path.join(process.cwd(), '../data/posts/Javascript')
-const htmlDirectory = path.join(process.cwd(), '../data/posts/HTML')
+const postsDirectory = path.join(process.cwd(), 'data/posts')
+const reactDirectory = path.join(process.cwd(), 'data/posts/React')
+const javascriptDirectory = path.join(process.cwd(), 'data/posts/Javascript')
+const htmlDirectory = path.join(process.cwd(), 'data/posts/HTML')
 
 const reactCategory = 'React'
 const javascriptCategory = 'Javascript'
