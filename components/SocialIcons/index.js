@@ -18,9 +18,7 @@ const SocialIcon = ({ kind, href, size = 2 }) => {
   return (
     <a target="_blank" rel="noopener noreferrer" href={href}>
       <span className="sr-only">{kind}</span>
-      <SocialSvg
-        className={`social-icons fill-current text-gray-500 btn dark:text-gray-300 hover:text-blue-500 dark:hover:text-gray-50 border-2 border-gray-400 hover:border-blue-500 dark:hover:border-gray-50 bg-gray-50 dark:bg-gray-800 p-1 rounded-xl h-${size} w-${size} max-h-${size} max-w-${size}`}
-      />
+      <SocialSvg className="w-16 h-16 rounded-xl sm:ml-4  transform rotate-0 hover:-rotate-8 fill-current text-gray-50 dark:text-gray-500 bg-gray-500 dark:bg-gray-50 bg-hero-morphing-diamonds-dark transition-transform ease-linear  border-gray-400 border-2 " />
     </a>
   )
 }

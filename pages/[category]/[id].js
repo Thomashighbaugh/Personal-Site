@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Date from '../../utils/date'
-import PostLayout from "@/layouts/PostLayout";
 
 import { getAllPostIds, getPostData } from '../../utils/posts'
 

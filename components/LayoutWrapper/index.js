@@ -22,7 +22,7 @@ const LayoutWrapper = ({ children }) => {
           </div>
         </div>
         <div className="flex items-center leading-5">
-          <div className="hidden sm:block">
+          <div className="hidden md:block">
             {headerNavLinks.map((link) => (
               <Link
                 key={link.title}

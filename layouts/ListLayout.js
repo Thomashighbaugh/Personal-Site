@@ -14,7 +14,7 @@ export default function ListLayout({ posts, title }) {
   return (
     <>
       <div className="divide-y">
-        <div className="flex justify-between pt-6 pb-8 space-y-2 md:space-y-5">
+        <div className="flex justify-between pt-6 pb-8  md:space-y-5">
           <h1 className="font-extrabold text-gray-700 lg:text-6xl leading-1 dark:text-gray-100 sm:leading-10 sm:text-5xl md:leading-14">
             {title}
           </h1>

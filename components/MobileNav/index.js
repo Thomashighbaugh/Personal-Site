@@ -1,27 +1,27 @@
-import { useState } from "react";
-import Link from "../Link";
-import headerNavLinks from "@/data/headerNavLinks";
+import { useState } from 'react'
+import Link from '../Link'
+import headerNavLinks from '@/data/headerNavLinks'
 
 const MobileNav = () => {
-  const [navShow, setNavShow] = useState(false);
+  const [navShow, setNavShow] = useState(false)
 
   const onToggleNav = () => {
     setNavShow((status) => {
       if (status) {
-        document.body.style.overflow = "auto";
+        document.body.style.overflow = 'auto'
       } else {
         // Prevent scrolling
-        document.body.style.overflow = "hidden";
+        document.body.style.overflow = 'hidden'
       }
-      return !status;
-    });
-  };
+      return !status
+    })
+  }
 
   return (
-    <div className="sm:hidden">
+    <div className="md:hidden">
       <button
         type="button"
-        className="w-8 h-8 ml-1 mr-1 rounded"
+        className="w-16 h-16 ml-16 mr-5 bg-gray-500 dark:bg-gray-50 rounded-2xl  transform rotate-0 hover:rotate-8 dark:bg-gray-50 transition-transform ease-linear border-2 p-2"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
@@ -29,7 +29,7 @@ const MobileNav = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="text-gray-900 dark:text-gray-100"
+          className="text-gray-50  dark:text-gray-500"
         >
           {navShow ? (
             <path
@@ -47,22 +47,31 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed w-full h-full top-24 right-0 bg-gray-200 dark:bg-gray-800 opacity-95 z-10 transform ease-in-out duration-300 ${
-          navShow ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed w-full h-screen top-32 right-0 bg-gray-50 dark:bg-gray-800
+  opacity-90 z-10 transform ease-in-out duration-1000 ${
+    navShow ? 'translate-x-0' : 'translate-x-full'
+  }`}
       >
         <button
           type="button"
           aria-label="toggle modal"
-          className="fixed w-full h-full cursor-auto focus:outline-none"
+          className="fixed w-full  h-full cursor-auto focus:outline-none align-middle"
           onClick={onToggleNav}
         ></button>
         <nav className="fixed h-full mt-8">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12 py-4">
+            <div
+              key={link.title}
+              className="my-12 mx-half border-2 rounded-2xl p-3 text-center w-full m-0justify-items-center justify-center bg-hero-circuit-board
+              hover:bg-hero-circuit-board-blue
+              dark:hover:bg-hero-circuit-board-dark
+              dark:hover:border-gray-200 hover:border-blue-500 "
+            >
               <Link
                 href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-600 dark:text-gray-100"
+                className="text-6xl font-black tracking-widest       text-gray-500
+                hover:text-blue-500
+                dark:hover:text-gray-200  dark:text-gray-50 "
                 onClick={onToggleNav}
               >
                 {link.title}
@@ -72,7 +81,7 @@ const MobileNav = () => {
         </nav>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MobileNav;
+export default MobileNav
