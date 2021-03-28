@@ -1,11 +1,11 @@
-import siteMetadata from "@/data/siteMetadata";
-import headerNavLinks from "@/data/headerNavLinks";
-import Logo from "@/data/logo.svg";
-import Link from "../Link";
-import SectionContainer from "../SectionContainer";
-import Footer from "../Footer";
-import MobileNav from "../MobileNav";
-import ThemeSwitch from "../ThemeSwitch";
+import siteMetadata from '@/data/siteMetadata'
+import headerNavLinks from '@/data/headerNavLinks'
+import Logo from '@/data/logo.svg'
+import Link from '../Link'
+import SectionContainer from '../SectionContainer'
+import Footer from '../Footer'
+import MobileNav from '../MobileNav'
+import ThemeSwitch from '../ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -37,12 +37,12 @@ const LayoutWrapper = ({ children }) => {
           <MobileNav />
         </div>
       </header>
-      <main className="p-6 pt-24 pb-24 mt-2 mb-2 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-900 dark:bg-gray-700 dark:border-gray-300">
+      <main className="p-6 pt-6 pb-6 mt-2 mb-2 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-900 dark:bg-gray-700 dark:border-gray-300">
         {children}
       </main>
       <Footer />
     </SectionContainer>
-  );
-};
+  )
+}
 
-export default LayoutWrapper;
+export default LayoutWrapper

@@ -335,6 +335,7 @@ module.exports = {
         default: '#555e70',
         dark: '#98A1B1',
         blue: '#0badff',
+        darker: '#343945',
       },
 
       // The foreground opacity

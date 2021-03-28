@@ -50,7 +50,7 @@ class MyDocument extends Document {
           <meta name="twitter:site" content="@thomashighbaugh" />
           <meta name="twitter:creator" content="@thomashighbaugh" />
         </Head>
-        <body className="antialiased bg-white dark:bg-gray-900 bg-hero-morphing-diamonds-dark ">
+        <body className="antialiased bg-white dark:bg-gray-900 bg-hero-morphing-diamonds-dark dark:bg-hero-morphing-diamonds-darker">
           <Main />
           <NextScript />
         </body>
