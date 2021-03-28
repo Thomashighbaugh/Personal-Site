@@ -1,18 +1,18 @@
-import siteMetadata from '../data/siteMetadata'
-import { kebabCase } from '../lib/utils'
-import { getAllTags } from '../lib/tags'
-import Tag from '../components/Tag/index'
-import Link from '../components/Link/index'
-import { PageSeo } from '../components/SEO/index'
+import siteMetadata from "../data/siteMetadata";
+import { kebabCase } from "../lib/utils";
+import { getAllTags } from "../lib/tags";
+import Tag from "../components/Tag/index";
+import Link from "../components/Link/index";
+import { PageSeo } from "../components/SEO/index";
 
 export async function getStaticProps() {
-  const tags = await getAllTags('blog')
+  const tags = await getAllTags("blog");
 
-  return { props: { tags } }
+  return { props: { tags } };
 }
 
 export default function Tags({ tags }) {
-  const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a])
+  const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a]);
   return (
     <>
       <PageSeo
@@ -27,7 +27,7 @@ export default function Tags({ tags }) {
           </h1>
         </div>
         <div className="flex flex-wrap max-w-lg">
-          {Object.keys(tags).length === 0 && 'No tags found.'}
+          {Object.keys(tags).length === 0 && "No tags found."}
           {sortedTags.map((t) => {
             return (
               <div key={t} className="m-2">
@@ -39,10 +39,10 @@ export default function Tags({ tags }) {
                   {` (${tags[t]})`}
                 </Link>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </>
-  )
+  );
 }
