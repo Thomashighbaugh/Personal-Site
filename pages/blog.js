@@ -2,7 +2,6 @@ import { getAllFilesFrontMatter } from 'lib/mdx'
 import siteMetadata from 'data/siteMetadata'
 import ListLayout from 'layouts/ListLayout'
 import { PageSeo } from 'components/SEO/index'
-
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
 
