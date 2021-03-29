@@ -65,26 +65,6 @@
   </url>
 
   <url>
-    <loc>https://thomasleonhighbaugh.me/posts/React/react-electron-opitx-markdown</loc>
-  </url>
-
-  <url>
-    <loc>https://thomasleonhighbaugh.me/posts/React/react-gatsby-crazy-wise-starter</loc>
-  </url>
-
-  <url>
-    <loc>https://thomasleonhighbaugh.me/posts/React/react-mern-keeper-crm</loc>
-  </url>
-
-  <url>
-    <loc>https://thomasleonhighbaugh.me/posts/React/react-preact-playground</loc>
-  </url>
-
-  <url>
-    <loc>https://thomasleonhighbaugh.me/posts/React/react-startpage</loc>
-  </url>
-
-  <url>
     <loc>https://thomasleonhighbaugh.me/posts/Javascript/javascript-cv-generator</loc>
   </url>
 
@@ -110,5 +90,25 @@
 
   <url>
     <loc>https://thomasleonhighbaugh.me/posts/Javascript/javascript-saar-janak</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-electron-opitx-markdown</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-gatsby-crazy-wise-starter</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-mern-keeper-crm</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-preact-playground</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/posts/React/react-startpage</loc>
   </url>
 </urlset>
