@@ -18,10 +18,10 @@ const MobileNav = () => {
   }
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden ">
       <button
         type="button"
-        className="w-16 h-16 ml-16 mr-5 bg-gray-500 dark:bg-gray-50 rounded-2xl  transform rotate-0 hover:rotate-8 dark:bg-gray-50 transition-transform ease-linear border-2 p-2"
+        className="w-16 h-16 ml-16 mr-5 bg-gray-500 dark:bg-gray-50 rounded-2xl bg-hero-morphing-diamonds-dark   transform rotate-0 hover:rotate-8 dark:bg-gray-50 transition-transform ease-linear border-2 p-2"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
@@ -55,21 +55,20 @@ const MobileNav = () => {
         <button
           type="button"
           aria-label="toggle modal"
-          className="fixed w-full  h-full cursor-auto focus:outline-none align-middle"
+          className="fixed w-full    bg-hero-morphing-diamonds-dark 
+ h-full cursor-auto focus:outline-none align-middle"
           onClick={onToggleNav}
         ></button>
         <nav className="fixed h-full mt-8">
           {headerNavLinks.map((link) => (
             <div
               key={link.title}
-              className="my-12 mx-half border-2 rounded-2xl p-3 text-center w-full m-0justify-items-center justify-center bg-hero-circuit-board
-              hover:bg-hero-circuit-board-blue
-              dark:hover:bg-hero-circuit-board-dark
-              dark:hover:border-gray-200 hover:border-blue-500 "
+              className="my-12 mx-half border-2 rounded-2xl p-4 text-center w-full m-0justify-items-center justify-center bg-hero-d
+              dark:hover:border-gray-200 hover:border-blue-500  bg-gray-700  "
             >
               <Link
                 href={link.href}
-                className="text-6xl font-black tracking-widest       text-gray-500
+                className="text-6xl font-black tracking-widest    text-gray-500
                 hover:text-blue-500
                 dark:hover:text-gray-200  dark:text-gray-50 "
                 onClick={onToggleNav}

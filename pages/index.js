@@ -1,7 +1,7 @@
-import Link from "@/components/Link/index";
-import { PageSeo } from "../components/SEO/index";
-import Image from "next/image";
-import siteMetadata from "../data/siteMetadata";
+import Link from '@/components/Link/index'
+import { PageSeo } from '../components/SEO/index'
+import Image from 'next/image'
+import siteMetadata from '../data/siteMetadata'
 
 export default function Home() {
   return (
@@ -12,10 +12,10 @@ export default function Home() {
         url={siteMetadata.siteUrl}
       />
       <img
-        className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl"
+        className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 sm:mt-12 sm:mb-12 lg:mb-0 lg:mt-0 lg:p-0"
         src="/static/images/twitter-card.png"
         alt="twitter card & banner"
       />
     </div>
-  );
+  )
 }
