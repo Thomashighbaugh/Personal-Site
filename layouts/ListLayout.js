@@ -52,7 +52,7 @@ export default function ListLayout({ posts, title }) {
                 key={slug}
                 className="py-2 mr-64 border-t-2 border-gray-100 dark:border-gray-800 ml-36"
               >
-                <article className="p-12 space-y-2 bg-gray-100 rounded-2xl dark:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline">
+                <article className="p-12 space-y-2 bg-gray-100 rounded-2xl dark:bg-gray-800 bg-gray-50 xl:grid xl:grid-cols-4 xl:items-baseline">
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="pr-12 text-sm font-extrabold text-gray-500 dark:text-gray-400">
@@ -64,18 +64,19 @@ export default function ListLayout({ posts, title }) {
                       <h3 className="text-2xl font-bold tracking-tight">
                         <Link
                           href={`/blog/${slug}`}
-                          className="text-gray-600 hover:text-blue-500 dark:hover:text-gray-200 dark:text-gray-100"
+                          className="text-gray-500
+                          dark:text-gray-50 hover:text-blue-500 dark:hover:text-gray-200 dark:text-gray-100"
                         >
                           {title}
                         </Link>
                       </h3>
-                      <div className="space-x-4 font-extrabold">
+                      <div className="space-x-2 font-black mt-3">
                         {tags.map((tag) => (
                           <Tag key={tag} text={tag} />
                         ))}
                       </div>
                     </div>
-                    <div className="prose text-gray-500 max-w-none dark:text-gray-300">
+                    <div className="prose font-bold text-gray-500 max-w-none dark:text-gray-200">
                       {summary}
                     </div>
                   </div>
