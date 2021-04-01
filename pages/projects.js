@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { PageSeo } from '../components/SEO/index'
 import siteMetadata from '../data/siteMetadata'
-import Date from '../utils/date'
+import Date from '../lib/date'
 
 import { getSortedPostsData } from '../utils/posts'
 

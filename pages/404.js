@@ -17,7 +17,7 @@ export default function FourZeroFour() {
           <a href="admin@thomasleonhighbaugh.me">admin@thomasleonhighbaugh.me</a>.
         </p>
         <p>Either way, here is some of my artwork!</p>
-        <img src="/static/1.png" alt="Swirling in Infinity" />
+        <img src="/static/images/1.png" alt="Swirling in Infinity" />
         <Link href="/">
           <button className="inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue hover:bg-blue-700 dark:hover:bg-blue-500">
             Back to homepage
