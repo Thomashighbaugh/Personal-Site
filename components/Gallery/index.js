@@ -72,7 +72,7 @@ export default class Gallery extends Component {
         <div>
           <img
             className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 "
-            src="/static/images/7.jpg"
+            src="/static/images/7.png"
             alt="twitter card & banner"
           />{' '}
         </div>{' '}
@@ -90,7 +90,6 @@ export default class Gallery extends Component {
             alt="twitter card & banner"
           />{' '}
         </div>{' '}
-
       </Slider>
     )
   }
