@@ -1,16 +1,16 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import { useState } from 'react'
-import { PageSeo } from '../components/SEO/index'
-import siteMetadata from '../data/siteMetadata'
-import Date from '../lib/date'
+import Head from "next/head";
+import Link from "next/link";
+import { useState } from "react";
+import { PageSeo } from "../components/SEO/index";
+import siteMetadata from "../data/siteMetadata";
+import Date from "../lib/date";
 
-import { getSortedPostsData } from '../lib/posts'
+import { getSortedPostsData } from "../lib/posts";
 
 /** @param {import('next').InferGetStaticPropsType<typeof getStaticProps> } props */
 export default function Projects({ allPostsData }) {
   // Declare what category should be shown
-  const [viewCategory, setCategory] = useState('all')
+  const [viewCategory, setCategory] = useState("all");
 
   return (
     // begin page
@@ -28,31 +28,41 @@ export default function Projects({ allPostsData }) {
         </h1>
         <br />
         <small className="text-gray-900 dark:text-gray-50">
-          <span className="font-black text-gray-700 dark:text-gray-200 ">NOTE: </span>
-          Click on one the categories below and a list of projects will display in a list, choose
-          one and you will be taken to a dynamically generated page with an embedded display of that
-          site for your examination purposes after a short introduction to the site itself and why
-          it was written.
+          <span className="font-black text-gray-700 dark:text-gray-200 ">
+            NOTE:{" "}
+          </span>
+          Click on one the categories below and a list of projects will display
+          in a list, choose one and you will be taken to a dynamically generated
+          page with an embedded display of that site for your examination
+          purposes after a short introduction to the site itself and why it was
+          written.
         </small>
       </section>
       {/* End Title */}
       {/* Categorical Buttons  */}
-      <section className="block justify-center mb-4 text-lg  md:flex rounded-lg" role="group">
+      <section
+        className="block justify-center mb-4 text-lg  md:flex rounded-lg"
+        role="group"
+      >
         <button
           className="text-gray-500 w-full dark:text-gray-300 text-3xl dark:hover:text-gray-50 border-2 border-gray-500   hover:bg-hero-morphing-diamonds-dark hover:text-gray-500 dark:hover:border-gray-50 bg-gray-100 dark:bg-gray-800 px-6 py-4 rounded-xl ml-6 mr-6 font-black dark:hover:bg-hero-morphing-diamonds shadow-lg"
-          onClick={() => setCategory(viewCategory === 'HTML' ? 'all' : 'HTML')}
+          onClick={() => setCategory(viewCategory === "HTML" ? "all" : "HTML")}
         >
           HTML
         </button>
         <button
           className="text-gray-500 w-full dark:text-gray-300 text-3xl dark:hover:text-gray-50 border-2 border-gray-500   hover:bg-hero-morphing-diamonds-dark hover:text-gray-500 dark:hover:border-gray-50 bg-gray-100 dark:bg-gray-800 px-6 py-4 rounded-xl ml-6 mr-6 font-black dark:hover:bg-hero-morphing-diamonds shadow-lg"
-          onClick={() => setCategory(viewCategory === 'Javascript' ? 'all' : 'Javascript')}
+          onClick={() =>
+            setCategory(viewCategory === "Javascript" ? "all" : "Javascript")
+          }
         >
           Javascript
         </button>
         <button
           className="text-gray-500 w-full dark:text-gray-300 text-3xl dark:hover:text-gray-50 border-2 border-gray-500   hover:bg-hero-morphing-diamonds-dark hover:text-gray-500 dark:hover:border-gray-50 bg-gray-100 dark:bg-gray-800 px-6 py-4 rounded-xl ml-6 mr-6 font-black dark:hover:bg-hero-morphing-diamonds shadow-lg"
-          onClick={() => setCategory(viewCategory === 'React' ? 'all' : 'React')}
+          onClick={() =>
+            setCategory(viewCategory === "React" ? "all" : "React")
+          }
         >
           React
         </button>
@@ -68,7 +78,9 @@ export default function Projects({ allPostsData }) {
               style={{
                 display:
                   // Presently set to none, makes a cleaner interface
-                  viewCategory === category || viewCategory === 'none' ? 'block' : 'none',
+                  viewCategory === category || viewCategory === "none"
+                    ? "block"
+                    : "none",
               }}
             >
               {/* Creates Post Link as Heading  */}
@@ -89,14 +101,14 @@ export default function Projects({ allPostsData }) {
       {/* End Posts Displayed */}
       {/* End Page */}
     </>
-  )
+  );
 }
 // Props
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,
     },
-  }
+  };
 }
