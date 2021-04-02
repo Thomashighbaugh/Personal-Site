@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Date from '../../utils/date'
+import Date from '../../lib/date'
 
-import { getAllPostIds, getPostData } from '../../utils/posts'
+import { getAllPostIds, getPostData } from '../../lib/posts'
 
 /** @param {import('next').InferGetStaticPropsType<typeof getStaticProps> } props */
 export default function Post({ postData }) {

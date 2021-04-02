@@ -5,7 +5,7 @@ import { PageSeo } from '../components/SEO/index'
 import siteMetadata from '../data/siteMetadata'
 import Date from '../lib/date'
 
-import { getSortedPostsData } from '../utils/posts'
+import { getSortedPostsData } from '../lib/posts'
 
 /** @param {import('next').InferGetStaticPropsType<typeof getStaticProps> } props */
 export default function Projects({ allPostsData }) {
