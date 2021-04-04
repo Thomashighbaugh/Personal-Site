@@ -16,8 +16,12 @@
     "@mapbox/rehype-prism": "^0.6.0",
     "@mdx-js/loader": "^1.6.20",
     "@mdx-js/react": "^1.6.22",
+<<<<<<< HEAD
     "@next/mdx": "^10.0.9",
     "@tailwindcss/aspect-ratio": "^0.2.0",
+=======
+    "@next/mdx": "^10.1.3",
+>>>>>>> 0c8bc636deef0b908b92a9e3a9957eb1e33ab284
     "@tailwindcss/forms": "^0.3.2",
     "@tailwindcss/jit": "^0.1.6",
     "@tailwindcss/typography": "^0.4.0",
@@ -30,7 +34,7 @@
     "gray-matter": "^4.0.2",
     "image-size": "0.9.7",
     "mobile-detect": "^1.4.5",
-    "next": "10.1.2",
+    "next": "10.1.3",
     "next-mdx-remote": "^2.0.0",
     "next-seo": "4.23.0",
     "next-themes": "^0.0.14",
@@ -59,7 +63,7 @@
     "tinytime": "^0.2.6"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^10.0.9",
+    "@next/bundle-analyzer": "^10.1.3",
     "@svgr/webpack": "^5.5.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
