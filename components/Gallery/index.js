@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
 
-function SampleNextArrow(props) {
+function SimpleNextArrow(props) {
   const { className, style, onClick } = props
   return <div className={className} style={{ ...style, display: 'block' }} onClick={onClick} />
 }
 
-function SamplePrevArrow(props) {
+function SimplePrevArrow(props) {
   const { className, style, onClick } = props
   return <div className={className} style={{ ...style, display: 'block' }} onClick={onClick} />
 }
@@ -20,65 +20,65 @@ export default class Gallery extends Component {
       slidesToScroll: 1,
       adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 7000,
+      autoplaySpeed: 700,
       centerMode: true,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
+      nextArrow: <SimpleNextArrow />,
+      prevArrow: <SimplePrevArrow />,
     }
     return (
       <Slider {...settings}>
         <div>
           <img
-            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 "
+            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
             src="/static/images/twitter-card.png"
             alt="twitter card & banner"
           />{' '}
         </div>
         <div>
           <img
-            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 "
+            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
             src="/static/images/1.png"
             alt="twitter card & banner"
           />{' '}
         </div>
         <div>
           <img
-            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 "
+            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
             src="/static/images/3.png"
             alt="twitter card & banner"
           />{' '}
         </div>
         <div>
           <img
-            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 "
+            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
             src="/static/images/4.png"
             alt="twitter card & banner"
           />{' '}
         </div>
         <div>
           <img
-            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 "
+            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
             src="/static/images/5.jpg"
             alt="twitter card & banner"
           />{' '}
         </div>
         <div>
           <img
-            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 "
+            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
             src="/static/images/6.jpg"
             alt="twitter card & banner"
           />{' '}
         </div>{' '}
         <div>
           <img
-            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 "
+            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
             src="/static/images/7.png"
             alt="twitter card & banner"
           />{' '}
         </div>{' '}
         <div>
           <img
-            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 "
+            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
             src="/static/images/8.jpg"
             alt="twitter card & banner"
           />{' '}
