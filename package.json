@@ -55,7 +55,7 @@
     "slick-carousel": "^1.8.1",
     "tails-ui": "^0.5.5",
     "tailwind-heropatterns": "^0.0.8",
-    "tailwindcss": "^2.0.4",
+    "tailwindcss": "^2.1.2",
     "tinytime": "^0.2.6"
   },
   "devDependencies": {
