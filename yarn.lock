@@ -6517,10 +6517,10 @@ react-image-gallery@^1.0.9:
     react-swipeable "^5.2.0"
     resize-observer-polyfill "^1.5.0"
 
-react-images@^1.2.0-beta.6:
-  version "1.2.0-beta.6"
-  resolved "https://registry.yarnpkg.com/react-images/-/react-images-1.2.0-beta.6.tgz#5a6430fad964fd26e5c2f58b1c69c808dcc0d469"
-  integrity sha512-D0aghnEUorrAlZB9lEivWiz6WlNNHOVbu1Mf2R7H1hC7ndOKLKliby0NIruYp4XIzjTS6JsXzDPO/WHAO3WCwQ==
+react-images@^1.2.0-beta.7:
+  version "1.2.0-beta.7"
+  resolved "https://registry.yarnpkg.com/react-images/-/react-images-1.2.0-beta.7.tgz#8a5804f8a5d08a25e64180eecb43a77d4e023e16"
+  integrity sha512-/ewkPwkwJDqTmc0HMPccFPE5H4A6JVRCfMahBc2j9DTBPmdANSXAglTlYLgZC8Q7iZQjGFado3OxixSrog/02w==
   dependencies:
     a11y-focus-store "^1.0.0"
     cross-env "^7.0.3"
