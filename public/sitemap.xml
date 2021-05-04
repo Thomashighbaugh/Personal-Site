@@ -33,10 +33,6 @@
   </url>
 
   <url>
-    <loc>https://thomasleonhighbaugh.me/blog/electric-tantra-linux-iso</loc>
-  </url>
-
-  <url>
     <loc>https://thomasleonhighbaugh.me/blog/git</loc>
   </url>
 
@@ -53,11 +49,23 @@
   </url>
 
   <url>
+    <loc>https://thomasleonhighbaugh.me/blog/resume</loc>
+  </url>
+
+  <url>
     <loc>https://thomasleonhighbaugh.me/blog/styled-components</loc>
   </url>
 
   <url>
     <loc>https://thomasleonhighbaugh.me/blog/tailwind-everywhere</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/vim</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/vimwiki</loc>
   </url>
 
   <url>
