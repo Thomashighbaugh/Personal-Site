@@ -27,7 +27,7 @@
     "cssnano": "^5.0.1",
     "date-fns": "^2.19.0",
     "fs": "^0.0.1-security",
-    "gray-matter": "^4.0.2",
+    "gray-matter": "^4.0.3",
     "image-size": "1.0.0",
     "mobile-detect": "^1.4.5",
     "next": "10.1.3",
