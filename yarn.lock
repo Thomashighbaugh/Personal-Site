@@ -8183,10 +8183,10 @@ unist-util-visit@2.0.3, unist-util-visit@^2.0.0, unist-util-visit@^2.0.3:
     unist-util-is "^4.0.0"
     unist-util-visit-parents "^3.0.0"
 
-unist-util-visit@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-3.0.0.tgz#a8e239038f7b29aadc649a6080f42bc85ea1a7bc"
-  integrity sha512-RbFwAZhMekKPZxlAhUIiBwim8NogwUtwLbIjvZehaGORYRDWcApsnGI1VDUHr/Jo6yW1u8VOqO/djbd7Hpz88A==
+unist-util-visit@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-3.0.1.tgz#7d37a931321ee4a5c2cb86a905e88eef5244f3c8"
+  integrity sha512-DHyYg2LPkrzcdlhs2CJTWB1TWRRvah+CLiGjw5Ul9k13xPSEi+bK5EMFHVgSiyFNH2AS2/EinkWGZ05HKcXM1w==
   dependencies:
     "@types/unist" "^2.0.0"
     unist-util-is "^5.0.0"
