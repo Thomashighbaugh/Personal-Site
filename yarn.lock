@@ -8152,10 +8152,10 @@ unist-util-visit@2.0.3, unist-util-visit@^2.0.0, unist-util-visit@^2.0.3:
     unist-util-is "^4.0.0"
     unist-util-visit-parents "^3.0.0"
 
-unist-util-visit@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-3.0.0.tgz#a8e239038f7b29aadc649a6080f42bc85ea1a7bc"
-  integrity sha512-RbFwAZhMekKPZxlAhUIiBwim8NogwUtwLbIjvZehaGORYRDWcApsnGI1VDUHr/Jo6yW1u8VOqO/djbd7Hpz88A==
+unist-util-visit@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-3.1.0.tgz#9420d285e1aee938c7d9acbafc8e160186dbaf7b"
+  integrity sha512-Szoh+R/Ll68QWAyQyZZpQzZQm2UPbxibDvaY8Xc9SUtYgPsDzx5AWSk++UUt2hJuow8mvwR+rG+LQLw+KsuAKA==
   dependencies:
     "@types/unist" "^2.0.0"
     unist-util-is "^5.0.0"
