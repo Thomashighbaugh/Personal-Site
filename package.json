@@ -59,7 +59,7 @@
     "tinytime": "^0.2.6"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^10.2.0",
+    "@next/bundle-analyzer": "^10.2.2",
     "@svgr/webpack": "^5.5.0",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.1.0",
