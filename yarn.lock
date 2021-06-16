@@ -1078,10 +1078,10 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-10.2.0.tgz#154dbce2efa3ad067ebd20b7d0aa9aed775e7c97"
   integrity sha512-tsWBsn1Rb6hXRaHc/pWMCpZ4Ipkf3OCbZ54ef5ukgIyEvzzGdGFXQshPP2AF7yb+8yMpunWs7vOMZW3e8oPF6A==
 
-"@next/mdx@^10.2.0":
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-10.2.0.tgz#303bcc4ba4a6902aec8e6d2e677ad0b82dcc0336"
-  integrity sha512-2AwN5Q4Av6McSpVKps2dDGdKEEUdme0cjdmo0iNuBFdBPzMBMeMyIMrT9T/QPCDUtqeB747f6Zkf/Xt2uVwzBg==
+"@next/mdx@^11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-11.0.0.tgz#626e496221a6a856a7dc5aa4c7585dde106f7529"
+  integrity sha512-Ll/u6kFM1y8a2lKvDee10cuCCecOE98QqGLJgsKqz5Y8e1lHlK5hZsGME/ALG/vDuttObdFnNbkg6FsfElXMvw==
 
 "@next/polyfill-module@10.2.0":
   version "10.2.0"
@@ -2649,11 +2649,7 @@ data-uri-to-buffer@3.0.1:
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-3.0.1.tgz#594b8973938c5bc2c33046535785341abc4f3636"
   integrity sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==
 
-<<<<<<< Updated upstream
 date-fns@^2.16.1, date-fns@^2.21.3:
-=======
-date-fns@^2.16.1, date-fns@^2.19.0:
->>>>>>> Stashed changes
   version "2.21.3"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.21.3.tgz#8f5f6889d7a96bbcc1f0ea50239b397a83357f9b"
   integrity sha512-HeYdzCaFflc1i4tGbj7JKMjM4cKGYoyxwcIIkHzNgCkX8xXDNJDZXgDDVchIWpN4eQc3lH37WarduXFZJOtxfw==
@@ -6188,23 +6184,16 @@ postcss@^6.0.9:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-<<<<<<< Updated upstream
-postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15:
-  version "8.2.15"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.15.tgz#9e66ccf07292817d226fc315cbbf9bc148fbca65"
-  integrity sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q==
-=======
 postcss@^8.1.6, postcss@^8.2.1:
   version "8.2.14"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.14.tgz#dcf313eb8247b3ce8078d048c0e8262ca565ad2b"
   integrity sha512-+jD0ZijcvyCqPQo/m/CW0UcARpdFylq04of+Q7RKX6f/Tu+dvpUI/9Sp81+i6/vJThnOBX09Quw0ZLOVwpzX3w==
->>>>>>> Stashed changes
   dependencies:
     colorette "^1.2.2"
     nanoid "^3.1.23"
     source-map "^0.6.1"
 
-postcss@^8.2.12:
+postcss@^8.2.15:
   version "8.2.15"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.15.tgz#9e66ccf07292817d226fc315cbbf9bc148fbca65"
   integrity sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q==
