@@ -1,6 +1,6 @@
-import siteMetadata from "../data/siteMetadata";
-import SocialIcon from "../components/SocialIcons/index";
-import { PageSeo } from "../components/SEO/index";
+import siteMetadata from '../data/siteMetadata'
+import SocialIcon from '../components/SocialIcons/index'
+import { PageSeo } from '../components/SEO/index'
 
 export default function About() {
   return (
@@ -26,9 +26,7 @@ export default function About() {
               Linux Professional, <br />
               Digital Artist
             </div>
-            <div className="text-gray-500 dark:text-gray-400">
-              Stanford University
-            </div>
+            <div className="text-gray-500 dark:text-gray-400">Stanford University</div>
             <div className="flex pt-6 space-x-3">
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
               <SocialIcon kind="github" href={siteMetadata.github} />
@@ -38,17 +36,15 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              Thomas Leon Highbaugh is a full stack web developer, Linux
-              professional and digital artist living in beautiful San Francisco,
-              California.{" "}
+              Thomas Leon Highbaugh is a full stack web developer, Linux professional and digital
+              artist living in beautiful San Francisco, California.{' '}
             </p>
             <p>
-              In regards to web development, his primary language is Javascript,
-              which he employs in various frameworks and on its own in websites
-              with a particular emphasis on creating an attractive and intuitive
-              interface written according to best standards and a color scheme
-              carefully balanced as to be pleasant to look at without
-              compromising on its artistic quality.
+              In regards to web development, his primary language is Javascript, which he employs in
+              various frameworks and on its own in websites with a particular emphasis on creating
+              an attractive and intuitive interface written according to best standards and a color
+              scheme carefully balanced as to be pleasant to look at without compromising on its
+              artistic quality.
             </p>
             {/* <p>
               He has experience with the following languages, frameworks and tools:
@@ -95,5 +91,5 @@ export default function About() {
         </div>
       </div>
     </>
-  );
+  )
 }

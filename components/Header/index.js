@@ -1,7 +1,7 @@
-import Link from "@/components/Link/index";
+import Link from '@/components/Link/index'
 
-import MobileNav from "../MobileNav";
-import ThemeSwitch from "../ThemeSwitch";
+import MobileNav from '../MobileNav'
+import ThemeSwitch from '../ThemeSwitch'
 export default function Footer() {
   return (
     <header className="flex items-center justify-between px-8 py-0 mt-0 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-900 dark:border-gray-300">
@@ -31,5 +31,5 @@ export default function Footer() {
         <MobileNav />
       </div>
     </header>
-  );
+  )
 }

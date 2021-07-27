@@ -1,4 +1,4 @@
-import Link from "@/components/Link/index";
+import Link from '@/components/Link/index'
 
 export default function FourZeroFour() {
   return (
@@ -13,11 +13,8 @@ export default function FourZeroFour() {
           Sorry the page you navigated to doesn't exist!
         </p>
         <p className="mb-8">
-          If you reached this from an internal link, please email me at{" "}
-          <a href="admin@thomasleonhighbaugh.me">
-            admin@thomasleonhighbaugh.me
-          </a>
-          .
+          If you reached this from an internal link, please email me at{' '}
+          <a href="admin@thomasleonhighbaugh.me">admin@thomasleonhighbaugh.me</a>.
         </p>
         <p>Either way, here is some of my artwork!</p>
         <img src="/static/images/1.png" alt="Swirling in Infinity" />
@@ -28,5 +25,5 @@ export default function FourZeroFour() {
         </Link>
       </div>
     </div>
-  );
+  )
 }
