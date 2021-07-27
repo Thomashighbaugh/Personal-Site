@@ -25,8 +25,10 @@
     "clsx": "^1.1.1",
     "concurrently": "^6.0.0",
     "cssnano": "^5.0.7",
+    "css-what": "^5.0.1",
     "date-fns": "^2.21.3",
     "fs": "^0.0.1-security",
+    "glob-parent": "^5.1.2",
     "gray-matter": "^4.0.3",
     "image-size": "1.0.0",
     "mobile-detect": "^1.4.5",
@@ -34,7 +36,7 @@
     "next-mdx-remote": "^3.0.2",
     "next-seo": "4.26.0",
     "next-themes": "^0.0.15",
-    "node-fetch": "2.6.1",
+    "node-fetch": "^2.6.1",
     "postcss": "^8.3.5",
     "postcss-import": "^14.0.0",
     "preact": "^10.5.13",
@@ -56,7 +58,9 @@
     "tails-ui": "^0.5.5",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss": "^2.0.4",
-    "tinytime": "^0.2.6"
+    "tinytime": "^0.2.6",
+    "trim": "^0.0.3",
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^11.0.1",
