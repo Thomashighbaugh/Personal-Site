@@ -33,7 +33,7 @@
     "next": "11.0.1",
     "next-mdx-remote": "^3.0.2",
     "next-seo": "4.26.0",
-    "next-themes": "^0.0.14",
+    "next-themes": "^0.0.15",
     "node-fetch": "2.6.1",
     "postcss": "^8.3.5",
     "postcss-import": "^14.0.0",
