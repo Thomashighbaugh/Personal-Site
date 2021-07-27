@@ -1,6 +1,6 @@
-import Link from "@/components/Link/index";
-import siteMetadata from "@/data/siteMetadata";
-import SocialIcon from "@/components/SocialIcons";
+import Link from '@/components/Link/index'
+import siteMetadata from '@/data/siteMetadata'
+import SocialIcon from '@/components/SocialIcons'
 
 export default function Footer() {
   return (
@@ -17,15 +17,11 @@ export default function Footer() {
         </div>
       </div>
       <div className="inline-flex ml-6 space-x-4">
-        <SocialIcon
-          kind="mail"
-          href={`mailto:${siteMetadata.email}`}
-          size="9"
-        />
+        <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="9" />
         <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="9" />
         <SocialIcon kind="twitter" href={siteMetadata.twitter} size="9" />
         <SocialIcon kind="github" href={siteMetadata.github} size="9" />
       </div>
     </footer>
-  );
+  )
 }
