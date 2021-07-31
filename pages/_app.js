@@ -7,7 +7,6 @@ import Head from 'next/head'
 import { SEO } from '@/components/SEO/index'
 import LayoutWrapper from '@/components/LayoutWrapper/index'
 import MDXComponents from '@/components/MDXComponents/index'
-import '../components/Gallery/slick.css'
 import '../components/Gallery/slick-theme.css'
 export default function App({ Component, pageProps }) {
   return (
