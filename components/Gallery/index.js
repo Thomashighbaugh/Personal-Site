@@ -60,21 +60,21 @@ export default class Gallery extends Component {
 		<div>
           <img
             className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
-            src="/static/images/01.png"
+            src="/static/images/1.png"
             alt="twitter card & banner"
           />{' '}
         </div>{' '}
 		<div>
           <img
             className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
-            src="/static/images/03.png"
+            src="/static/images/3.png"
             alt="twitter card & banner"
           />{' '}
         </div>{' '}
 		<div>
           <img
             className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
-            src="/static/images/04.png"
+            src="/static/images/4.png"
             alt="twitter card & banner"
           />{' '}
         </div>{' '}
