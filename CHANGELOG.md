@@ -22,6 +22,8 @@ The format is based on [Keep a Changelog], at least in spirit if not always in l
 
 ### Removed
 
+- Whiny eslint plugin offering little helpful and complaining a lot.
+
 ### Fixed
 
 - fixed banner display issues
