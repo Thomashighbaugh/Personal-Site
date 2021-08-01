@@ -28,6 +28,7 @@ The format is based on [Keep a Changelog], at least in spirit if not always in l
 
 - fixed banner display issues
 - my tailwind config vanished somehow (I blame me not being careful cutting not copying it for use elsewhere) which obviously spurned a host of issues that once restored, absolved themselves
+- slick gallery module css imports (awesome project, bad documentation) preventing index from loading the banner images.
 
 ### Security
 
