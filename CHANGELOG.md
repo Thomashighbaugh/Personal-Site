@@ -10,6 +10,25 @@ Note that the changes listed below any date or range of dates reflect efforts fr
 
 - more banner images, including crossover with the Github Profile README.md's banner images
 - additional projects, including the almost finished ISO project
+- more blog posts
+
+## 2021-08-03
+
+Recovering from a severe illness that struck in the middle of my work on the site earlier last week, I am returning to finish up as much of the modifications to the site as possible as they have long been nagging at me in the background and this site if any project requires the optimal amount of my attention as it is the front end of my entire effort as a developer.
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Added
+
+- neovim blog post
+
+---
 
 ## 2021-07-31
 
@@ -19,6 +38,7 @@ Note that the changes listed below any date or range of dates reflect efforts fr
 
 - merged dependabot and other automated dependency pull requests that cleared all tests.
 - adjustment to speed of gallery component
+- blog roll background for the articles to the more subtle light gray for the light variant (just noticed, I usually work with the dark version and dark modes generally)
 
 ### Deprecated
 

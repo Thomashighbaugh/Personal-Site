@@ -10,7 +10,7 @@ import ThemeSwitch from '../ThemeSwitch'
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      <header className="flex items-center justify-between px-8 lg:py-0 py-2 mt-2 lg:mt-0 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-900 dark:border-gray-300">
+      <header className="flex items-center justify-between px-8 py-2 mt-2 lg:mt-0 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-800 dark:border-gray-300">
         <div>
           <div className="relative inline-block transform group ">
             <Link
@@ -37,7 +37,7 @@ const LayoutWrapper = ({ children }) => {
           <MobileNav />
         </div>
       </header>
-      <main className="p-6 pt-8 pb-8 lg:p-4 lg:pt-4 lg:pb-4 lg:mt-24 lg:mb-24 mt-6 mb-6 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-700 dark:border-gray-300">
+      <main className="p-6 pt-8 pb-8 lg:p-4 lg:pt-4 lg:pb-4 lg:mt-2 lg:mb- mt-6 mb-6 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-700 dark:border-gray-300">
         {children}
       </main>
       <Footer />

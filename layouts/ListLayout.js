@@ -1,20 +1,20 @@
-import { useState } from "react";
-import tinytime from "tinytime";
-import Link from "@/components/Link/index";
-import Tag from "@/components/Tag/index";
+import { useState } from 'react'
+import tinytime from 'tinytime'
+import Link from '@/components/Link/index'
+import Tag from '@/components/Tag/index'
 
-const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}");
+const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
 
 export default function ListLayout({ posts, title }) {
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) =>
     frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
-  );
+  )
 
   return (
     <>
-      <div className="divide-y">
-        <div className="flex justify-between pt-6 pb-8  md:space-y-5">
+      <div className="md:divide-y ">
+        <div className="flex justify-between   pt-6 pb-8  md:space-y-5">
           <h1 className="font-extrabold text-gray-700 lg:text-6xl leading-1 dark:text-gray-100 sm:leading-10 sm:text-5xl md:leading-14">
             {title}
           </h1>
@@ -44,21 +44,19 @@ export default function ListLayout({ posts, title }) {
           </div>
         </div>
         <ul>
-          {!filteredBlogPosts.length && "No posts found."}
+          {!filteredBlogPosts.length && 'No posts found.'}
           {filteredBlogPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter;
+            const { slug, date, title, summary, tags } = frontMatter
             return (
               <li
                 key={slug}
-                className="py-2 mr-64 border-t-2 border-gray-100 dark:border-gray-800 ml-36"
+                className="py-2  border-t-2 border-gray-100 dark:border-gray-800 min-w-half justify-between"
               >
-                <article className="p-12 space-y-2 bg-gray-100 rounded-2xl dark:bg-gray-800 bg-gray-50 xl:grid xl:grid-cols-4 xl:items-baseline">
+                <article className="p-12 space-y-2  rounded-2xl dark:bg-gray-800 bg-gray-50 xl:grid xl:grid-cols-4 xl:items-baseline">
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="pr-12 text-sm font-extrabold text-gray-500 dark:text-gray-400">
-                      <time dateTime={date}>
-                        {postDateTemplate.render(new Date(date))}
-                      </time>
+                      <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
                     </dd>
                   </dl>
                   <div className="space-x-1 space-y-6 xl:col-span-3">
@@ -84,10 +82,10 @@ export default function ListLayout({ posts, title }) {
                   </div>
                 </article>
               </li>
-            );
+            )
           })}
         </ul>
       </div>
     </>
-  );
+  )
 }
