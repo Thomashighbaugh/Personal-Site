@@ -1,6 +1,6 @@
 ---
 title: AwesomeWM
-date: "2021-06-27"
+date: '2021-06-27'
 tags: []
 draft: true
 summary: I am approaching the end of the most absurdly over the top project I could ever imagine spending so much time on, my AwesomeWM configuration. This is the teaser coming ahead of its release.
@@ -11,6 +11,6 @@ If you go on the subreddit `r/unixporn` and spend a little time looking around, 
 
 A year and half after discovering the Window Manager and using it sporadically, with several flourishes into working on my configuration, I have reached the point where I have written something that integrates all the features I like from almost every configuration I could find, with plenty of my own innovations gluing it together and making the style of each file consistent and sensible, not things Lua is evidently prone. This article will address the flying spaghetti monster of code that my configuration has become and how I managed to make it fly despite its size.
 
-## 400 files? Why Not!
+## Several Hundred Files Later
 
-The whole project comes in at a little over 400 files. About half are files I am explicitly not managing that are dependencies I have learned to keep specific versions of, as submodules introduce instability and instability means seeing the default wallpaper, which I legitimately hate as mentioned. This kind of a code base is beyond obnoxious, yet it works rather well and with minimal system resources being absorbed in its operation.
+One of the most outrageous aspects of the configuration I have come up with is that it is composed of several hundred (yes several hundred) files. Most of these are not very long and exist because rewriting the same code in multiple files sucks. I am also considering making the whole thing more modular in its construction by

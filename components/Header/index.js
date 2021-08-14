@@ -4,7 +4,7 @@ import MobileNav from '../MobileNav'
 import ThemeSwitch from '../ThemeSwitch'
 export default function Footer() {
   return (
-    <header className="flex items-center justify-between px-8 py-0 mt-0 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-900 dark:border-gray-300">
+    <header className="flex items-center justify-between px-8 lg:py-0  mt-0 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-800 dark:border-gray-300">
       <div>
         <div className="relative inline-block transform group ">
           <Link

@@ -1,7 +1,16 @@
 
 @tailwind base;
 @tailwind components;
-
+h1 {
+  text-shadow: 0.15rem 0.15rem #b2bfd9 !important;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-gray-500 dark:text-gray-400;
+}
 @tailwind utilities;
 
 .remark-code-title {
@@ -21,16 +30,7 @@ html {
   
 }
 
-h1 {
-  text-shadow: 0.15rem 0.15rem #b2bfd9 !important;
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply text-gray-500 dark:text-gray-400;
-}
+
 
 .btn {
   width: 72px !important;

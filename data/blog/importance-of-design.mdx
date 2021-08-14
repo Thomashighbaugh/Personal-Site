@@ -1,0 +1,27 @@
+---
+title: Design Begins With Code
+date: '2021-07-03'
+tags: []
+summary: In this article I argue that the design of a site begins in how its code is arranged.
+images: []
+---
+
+Often on GitHub I see websites made as personal portfolios or otherwise describing themselves as minimalist, yet when you look at the source code and/or site itself it seems that it really just means the author didn't bother to do much if anything with the site's CSS. While I do understand how frustrating it can be to work with CSS at times, this is a critical part of the presentation of a site and critical aspect of front end development, with implications across the stack and in other types of software development.
+
+What is most critical to remember is the design of a website begins and exists mostly not in the visual, its visual design should merely be an extension of its underlying code. Designing the source code is more than psuedocode and proofing out the logic on a diagram, its creating a underlying structure rationally organized and easily interpretted by anyone looking at the code. Yes, this includes meaningful comments in the code and while it may be overkill to use the "literate programming" method popular with a certain type of emacs user, something more signficant than personal notes meaningless to everyone else. Good file headers go a long way, as do some description of the function of a section and comment bars separating out portions of the code. No worries, this is something I am working on too and I understand some days you just want to get the project out, but think about how much easier the code will be to deal with if you spend another day designing a readable source for it!
+
+> How does the way you write source code affect the visuals of a site?
+
+In a few ways:
+
+1. If you keep some notes on the code, its much easier to conform the site to a specific look as the CSS is also commented out rationally and you have notes across the site to refer to.
+
+2. Well organized code leads to thinking in well organized manners that will naturally conform our ideas for arranging the site well organized.
+
+3. Minimalism in reality is less about not doing any CSS and about removing unnecessary functionalities in a site, which is easier to when you are thinking about the pieces of a site and how they best fit together.
+
+## Approaches to Source Code Structure
+
+The structure of a site's source code is of vital importance in its design and the first step is to accept that except in very simple sites **using single monolithic files is to be avoided if possible**. There is nothing worse than having to scroll 500 lines up to refer to something in the same file. Generally a better approach, enforced by many JS libraries which is to instead **group single components or objects into their own file**.
+
+Now what if you need to have other files that serve that file, then moving each component into its own directory with the main file something like `index.js` makes the most sense.

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="relative inline-block transform group ">
           <Link
             href="/"
-            className="inline-block font-sans font-black uppercase transition-transform transform border-0 rounded-md  -rotate-1 md:rotate-0 group-hover:-rotate-2 dark:hover:text-gray-50 hover:text-blue-500 hover:animate-pulse"
+            className="inline-block p-6 font-sans font-black uppercase transition-transform transform border-0 rounded-md  -rotate-1 md:rotate-0 group-hover:-rotate-2 dark:hover:text-gray-50 hover:text-blue-500 hover:animate-pulse"
           >
             {siteMetadata.author}
             {` © ${new Date().getFullYear()}`}
@@ -17,10 +17,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="inline-flex ml-6 space-x-4">
-        <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="9" />
-        <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="9" />
-        <SocialIcon kind="twitter" href={siteMetadata.twitter} size="9" />
-        <SocialIcon kind="github" href={siteMetadata.github} size="9" />
+        <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="6" />
+        <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
+        <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
+        <SocialIcon kind="github" href={siteMetadata.github} size="6" />
       </div>
     </footer>
   )
