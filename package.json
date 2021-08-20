@@ -59,7 +59,7 @@
     "tinytime": "^0.2.6"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^11.0.1",
+    "@next/bundle-analyzer": "^11.1.0",
     "@svgr/webpack": "^5.5.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
@@ -75,7 +75,7 @@
     "rehype": "12.0.0",
     "remark-frontmatter": "3.0.0",
     "remark-parse": "10.0.0",
-    "remark-stringify": "9.0.1",
+    "remark-stringify": "10.0.0",
     "unified": "10.1.0",
     "unist-util-visit": "2.0.3"
   },
