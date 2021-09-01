@@ -6757,10 +6757,10 @@ react-full-screen@^1.0.1:
   dependencies:
     fscreen "^1.0.2"
 
-react-image-gallery@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-1.2.6.tgz#51cfa208191b505d612f1073e6a63cdb8e3df022"
-  integrity sha512-+uL8RB3YrsXOtL95KY9oLWup2jww95qvvwsHOkRdV1SOImUO4qGuYh/0+M+vuqzBy7AB7G19+KhgucOPetn6+Q==
+react-image-gallery@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-1.2.7.tgz#2dfb83c52f32828a5340ca565f91bca58241fcfe"
+  integrity sha512-ts7yMWykvZhslGMuvVAUk7a1dJIx9QtIwK6Clv8dOGxPsJid92FRrLvXbZDvkYcUyj48sHalnBhqU6mZNCB2jg==
 
 react-images@^1.2.0-beta.6:
   version "1.2.0-beta.7"
