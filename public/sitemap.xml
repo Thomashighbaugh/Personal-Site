@@ -53,6 +53,14 @@
   </url>
 
   <url>
+    <loc>https://thomasleonhighbaugh.me/blog/importance-of-design</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/neovim-lua</loc>
+  </url>
+
+  <url>
     <loc>https://thomasleonhighbaugh.me/blog/nextjs-v-gatsbyjs</loc>
   </url>
 
@@ -66,6 +74,10 @@
 
   <url>
     <loc>https://thomasleonhighbaugh.me/blog/resume</loc>
+  </url>
+
+  <url>
+    <loc>https://thomasleonhighbaugh.me/blog/secret-of-vscode</loc>
   </url>
 
   <url>
