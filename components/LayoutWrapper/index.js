@@ -27,7 +27,7 @@ const LayoutWrapper = ({ children }) => {
               <Link
                 key={link.title}
                 href={link.href}
-                className="p-1 text-xl font-black text-links sm:p-4 hover:text-blue-300 dark:hover:text-gray-50"
+                className="p-1 text-sm text-links sm:p-4 hover:text-blue-300 dark:hover:text-gray-50 dark:text-gray-200 font-headline"
               >
                 {link.title}
               </Link>
@@ -37,7 +37,7 @@ const LayoutWrapper = ({ children }) => {
           <MobileNav />
         </div>
       </header>
-      <main className="p-6 pt-8 pb-8 lg:p-4 lg:pt-4 lg:pb-4 lg:mt-2 lg:mb- mt-6 mb-6 bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-700 dark:border-gray-300">
+      <main className="p-6 pt-8 pb-8 lg:p-4 lg:pt-4 lg:pb-4 lg:mt-2 lg:mb- mt-6 mb-6 font-sans bg-white border-4 border-gray-500 rounded-2xl dark:bg-gray-700 dark:border-gray-300">
         {children}
       </main>
       <Footer />

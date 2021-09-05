@@ -21,7 +21,7 @@ export default function Footer() {
             <Link
               key={link.title}
               href={link.href}
-              className="p-1 text-xl font-black text-links sm:p-4 hover:text-blue-300 dark:hover:text-gray-50"
+              className="p-1 text-xl font-black text-links sm:p-4 hover:text-blue-300 dark:hover:text-gray-50 transform rotate-0 group-hover:-rotate-22 duration-400 "
             >
               {link.title}
             </Link>

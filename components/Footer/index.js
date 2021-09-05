@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="relative inline-block transform group ">
           <Link
             href="/"
-            className="inline-block p-6 font-sans font-black uppercase transition-transform transform border-0 rounded-md  -rotate-1 md:rotate-0 group-hover:-rotate-2 dark:hover:text-gray-50 hover:text-blue-500 hover:animate-pulse"
+            className="inline-block p-6 font-headline text-sm font-black uppercase transition-transform transform border-0 rounded-md  -rotate-1 md:rotate-0 group-hover:-rotate-2 dark:hover:text-gray-50 hover:text-blue-500 hover:animate-pulse"
           >
             {siteMetadata.author}
             {` © ${new Date().getFullYear()}`}
