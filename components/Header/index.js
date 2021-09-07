@@ -5,7 +5,7 @@ import ThemeSwitch from '../ThemeSwitch'
 import { Logo } from '@/data/logo.svg'
 export default function Footer() {
   return (
-    <header className="flex items-center justify-between px-8 mt-0 bg-white border-4 border-gray-500 lg:py-0 rounded-2xl dark:bg-gray-800 dark:border-gray-300">
+    <header className="flex items-center justify-between px-8 mt-0 bg-opacity-50 bg-white border-4 border-gray-500 lg:py-0 rounded-2xl dark:bg-gray-800 dark:border-gray-300">
       <div>
         <div className="relative inline-block transform group ">
           <Link

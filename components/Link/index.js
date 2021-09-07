@@ -6,8 +6,10 @@ const CustomLink = ({ href, ...rest }) => {
 
   if (isInternalLink) {
     return (
-      <Link className="font-black" href={href}>
-        <a className="font-black" {...rest} />
+      <Link       className="bg-gray-800 color-white "
+      href={href}>
+        <a       className="bg-gray-800 color-white"
+ {...rest} />
       </Link>
     )
   }

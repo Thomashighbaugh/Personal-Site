@@ -1,9 +1,7 @@
-import Mail from './mail.svg'
-import Github from './github.svg'
-import Linkedin from './linkedin.svg'
-import Twitter from './twitter.svg'
-
-// Icons taken from: https://simpleicons.org/
+import Mail from './icons/mail.svg'
+import Github from './icons/github.svg'
+import Linkedin from './icons/linkedin.svg'
+import Twitter from './icons/twitter.svg'
 
 const components = {
   mail: Mail,
@@ -18,7 +16,7 @@ const SocialIcon = ({ kind, href, size = 2 }) => {
   return (
     <a target="_blank" rel="noopener noreferrer" href={href}>
       <span className="sr-only">{kind}</span>
-      <SocialSvg className="w-16 h-16 rounded-xl p-3 sm:ml-4  transform rotate-0 hover:-rotate-8 fill-current text-gray-50 dark:text-gray-500 bg-gray-500 dark:bg-gray-50 bg-hero-morphing-diamonds-dark transition-transform ease-linear  border-gray-400 border-2 " />
+      <SocialSvg className="w-16 h-16 p-3 transition-transform ease-linear transform rotate-0 bg-gray-700 border-gray-700 border-dashed fill-current border-12 rounded-xl sm:ml-4 hover:-rotate-8 text-gray-50 dark:text-gray-500 dark:bg-gray-50 bg-hero-morphing-diamonds-dark " />
     </a>
   )
 }
