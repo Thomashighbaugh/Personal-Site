@@ -46,7 +46,7 @@ export default function Blog({ post, prev, next }) {
           {content}
         </PostLayout>
       ) : (
-        <div className="mt-24 text-center font-sans">
+        <div className="mt-24 text-center font-sans dark:bg-opacity-75 bg-opacity-75">
           <PageTitle>
             Under Construction{' '}
             <span role="img" aria-label="roadwork sign">

@@ -1,15 +1,15 @@
 ---
-title: NeoVim or Why I Learned to Stop Hating Lua and Just Use It
+title: Configuring NeoVim with Lua
 date: '2021-07-31'
 tags: [Lua]
-summary: Lua is not my favorite language, but now I have another reason to use it and use it often, it can be used to configure the nightly version of NeoVim and makes for much better performance. This post is my coming to terms with Lua and acknowledging my experience with it.
+summary: Using Lua to configure your NeoVim installation provides a much better solution for those with highly modified NeoVim environments as it offers a signficant increase in speed, less boot up time and most importantly makes the configuration more readable.
 ---
 
-Lua is not my favorite programming language, I find the way it is written and the conventions that are commonly used in its composition somewhat artifical and disjointed. On top of that, it is not used for a lot of programs that I find myself using either in the Linux or Web Development world. Nonetheless, in pursuit of the optimal desktop environment, I have dove deeply into its articulation and manipulation, a process that is still on going but close itself to completion at the time of writing.
+While other uses of Lua are not so great **cough** awesomewm **cough**, in the context of configuring NeoVim it offers a significant speed advantage to vimscript with the added benefit of being easier to understand and does a lot of heavy lifting for you.
 
-As it turns out though, there is something that I use pretty often that _can_ use Lua and by switching to Lua one can realize some signficant improvements in performance, **VIM configuration**. Being ultimately intended for the configuration of other programs, as it is essentially a wrapper around some specific C functions, Lua bindings have been exposed in the nightly edition of NeoVim (you know the unnecessary seeming variant of VIM that is essentially just continuing VIM's development) and as it turns out using Lua is this context is more than just the painful mess that it is in AwesomeWM, it actually improves the speed and performance of configurations loaded with plugins to the point of actually being a reasonable replacement for an IDE in terms of adding in the functionality important to developers while not making for long load times. This alone makes me think maybe Lua isn't the height of annoying after all, in fact its use in non-AwesomeWM contexts makes it realize the claims of its speed and reliablity, indicating something about AwesomeWM's source code I will discuss in another blog post later.
+## Installing NeoVim's Bleeding Edge Version
 
-There are several all Lua configurations that one can find on GitHub worth looking over before diving into using such a configuration, [my own](https://github.com/Thomashighbaugh/nvim) of course and [NvChad](https://github.com/siduck76/NvChad) are both highly functional and skip none of the necessary features of making NeoVim as much like VS Code(the other IDE I reluctantly use since Sublime is effectively abandoned) as possible. First though you need to make sure you have the right NeoVim installed, to do this enter the commands below into your terminal.
+To employ Lua as the configuration language, you will need to install the latest git version, which I have detailed below for your convenience.
 
 ```bash
 $ git clone https://github.com/neovim/neovim
@@ -24,6 +24,8 @@ $ cd ..
 $ rm neovim
 
 ```
+
+or you can use my script available here `bash <(curl -s https://raw.githubusercontent.com/Thomashighbaugh/nvim/main/bin/install-latest-neovim.sh)`
 
 NeoVim also has dependencies that are dependent on the language you are seeking to use/write in, which you probably also want to get installed locally before running it for the first time.
 
@@ -40,16 +42,38 @@ npm i -g neovim
 yarn global add neovim
 ```
 
-Now if you wanted to install my specific NeoVim configuration, this final set of steps and you are home free
+## Configuration
+
+In order to configure your NeoVim editor in Lua you will need to create a `init.lua` file in the directory where your configuration is stored which on Linux is often `$HOME/.config/nvim`. I also add in a subdirectory called `lua` where additional files will be stored, like the plugin list for Packer, the package manager I use in NeoVim.
+
+## Prebuilt Configurations
+
+### Some Lua-Centric Examples
+
+| Link                                                   | Notes                                                                                                                                                                                                                                                                                                               |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| [NvChad](https://github.com/siduck76/NvChad)           | Pretty slick set up, I used an old variant of this for my set up in the past but have since moved on. Be warned it changes often and substantially, is moving towards in house plugins that work well but lock you in to their choices. Last month it seems that something is always broken or not even initialized |
+| [LunarVim](https://github.com/LunarVim/LunarVim)       | Another nice Lua based set up, more traditional in arrangement of subdirectories. Great color scheme                                                                                                                                                                                                                |
+| [Doom-Nvim](https://github.com/NTBBloodbath/doom-nvim) | Port of the Doom-Emacs Framework to Neovim. A bit bloated.                                                                                                                                                                                                                                                          |
+| [nv-ide](https://github.com/crivotz/nv-ide)            | Awesome tooling for LSPs. Not so wonderful colorscheme.                                                                                                                                                                                                                                                             |
+| [VaporVim] (https://github.com/hackorum/VapourNvim)    | Hardy configuration of the archiac style of directory layout that is probably better than any of the projects with larger dev teams                                                                                                                                                                                 |
+| [StarVim](https://github.com/ashincoder/StarVim)       | By far the best of the large configurations I have evaluated, the same one I used as the basis for my own configuration, since NVChad is moving towards a form of platform lock with its internal plugins                                                                                                           |     |
+| [my own](https://github.com/Thomashighbaugh/nvim)      | My set up, using the Xresources colors for its theme and with tooling for vimwiki included.                                                                                                                                                                                                                         |
+
+Now if you wanted to install my specific NeoVim configuration, this final set of steps and you are home free, (if you do be sure to star the repository when you get a chance please!)
 
 ```bash
 cd ~
-git clone https://github.com/Thomashighbaugh/nvim .config/nvim
+$ git clone https://github.com/Thomashighbaugh/nvim .config/nvim
 
- git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+$ git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-nvim -u "$HOME"/.config/nvim/init.lua +PackerInstall
+$ nvim -u "$HOME"/.config/nvim/init.lua +PackerInstall
 
 ```
 
-Or you could install all these (and so much more) using the installation script associated with [my dotfiles](https://github.com/Thomashighbaugh/dotfiles)
+or use my other script ;] `bash <(curl -s https://raw.githubusercontent.com/Thomashighbaugh/nvim/main/bin/install-latest-neovim.sh)`
+
+## Resources
+
+[Awesome NeoVim](https://github.com/rockerBOO/awesome-neovim#preconfigured-configuration) - seems primarily focused on the Lua side of NeoVim and is loaded with great links to plugins, colorscheme generators and more.

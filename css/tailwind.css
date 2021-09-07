@@ -1,4 +1,4 @@
-@tailwind base;
+@import './base.css';
 @tailwind components;
 h1 {
   text-shadow: 0.15rem 0.15rem #b2bfd9 !important;

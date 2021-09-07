@@ -19,55 +19,33 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
   return (
     <SectionContainer>
       <BlogSeo url={`${siteMetdata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
-      <article className="xl:divide-y dark:bg-gray-900 rounded-2xl p-6 divide-gray-200 dark:divide-gray-700">
+      <article className="xl:divide-y dark:bg-gray-800 dark:bg-opacity-25  bg-opacity-75 rounded-2xl p-4 divide-gray-200 dark:divide-gray-700">
         <header className=" xl:pb-4">
           <div className="space-y-1 text-center">
             <dl>
               <div>
                 <dt className="sr-only">Published on</dt>
-                <dd className="text-base font-bold text-gray-500 dark:text-gray-50">
+                <dd className="text-lg font-bold text-gray-500 dark:text-gray-50">
                   <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
                 </dd>
               </div>
             </dl>
             <div>
-              <h1 className="text-6xl font-extrabold text-gray-700 lg:text-6xl dark:text-gray-100 md:text-5xl">
+              <h1 className="text-6xl font-extrabold text-gray-500 text-shadow-lg lg:text-6xl dark:text-gray-100 md:text-5xl">
                 {title}
               </h1>
             </div>
           </div>
         </header>
         <div
-          className="pb-8 divide-y divide-gray-200  xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6"
+          className="pb-8 divide-y divide-gray-200  xl:divide-y-0 dark:divide-gray-600 xl:grid xl:grid-cols-4 xl:gap-x-6"
           style={{ gridTemplateRows: 'auto 1fr' }}
         >
-          <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
-            <dt className="sr-only">Authors</dt>
-            <dd>
-              <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
-                <li className="flex items-center space-x-2">
-                  <dl className="text-sm font-medium leading-5 whitespace-nowrap">
-                    <dt className="sr-only">Name</dt>
-                    <dd className="text-gray-900 dark:text-gray-50">{siteMetdata.author}</dd>
-                    <dt className="sr-only">Twitter</dt>
-                    <dd>
-                      <Link
-                        href={siteMetdata.twitter}
-                        className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
-                      >
-                        {siteMetdata.twitter.replace('https://twitter.com/', '@')}
-                      </Link>
-                    </dd>
-                  </dl>
-                </li>
-              </ul>
-            </dd>
-          </dl>
           <div className="divide-y divide-gray-200 dark:divide-gray-700 dark:text-gray-50 xl:pb-0 xl:col-span-3 xl:row-span-2">
             <div className="p-10 prose text-gray-600 dark:prose-dark dark:text-gray-50  max-w-none">
               {children}
             </div>
-            <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-100">
+            <div className="pt-6 pb-6 text-sm text-gray-600 dark:text-gray-100">
               <Link href={discussUrl(slug)} rel="nofollow">
                 {'Discuss on Twitter'}
               </Link>
@@ -77,11 +55,11 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
           </div>
           <footer className="text-sm font-medium dark:text-gray-100 leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
             {tags && (
-              <div className="py-4 xl:py-8">
-                <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+              <div className="py-4 xl:py-4">
+                <h2 className="text-lg tracking-wide text-gray-500 uppercase dark:text-gray-400">
                   Tags
                 </h2>
-                <div className="space-x-3 xl:flex xl:flex-col dark:text-gray-50 xl:space-x-0">
+                <div className="space-x-3 xl:flex-row lg:flex-col dark:text-gray-50 xl:space-x-0">
                   {tags.map((tag) => (
                     <Tag key={tag} text={tag} />
                   ))}

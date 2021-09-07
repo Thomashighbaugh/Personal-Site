@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
+    enabled: true,
     content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
     options: {
       safelist: ['type'],
@@ -408,6 +409,7 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
+    require('tailwindcss-textshadow'),
     require('tailwind-heropatterns')({
       // as per tailwind docs you can pass variants
       variants: ['dark'],

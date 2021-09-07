@@ -4,7 +4,7 @@ import SocialIcon from '@/components/SocialIcons'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-row items-center justify-center py-2 bg-opacity-50 m-0 bg-white border-4 border-gray-500 rounded-2xl align-center center dark:bg-gray-900 dark:border-gray-400">
+    <footer className="flex flex-row items-center justify-center py-2 px-2 bg-opacity-75 m-0 bg-white border-4 border-gray-500 rounded-2xl align-center center dark:bg-gray-800 dark:border-gray-400 dark:bg-opacity-75">
       <div className="text-gray-500 dark:text-gray-300">
         <div className="relative inline-block transform group ">
           <Link

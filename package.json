@@ -9,7 +9,7 @@
     "build": "next build && node ./scripts/generate-sitemap",
     "serve": "next start",
     "analyze": "ANALYZE=true next build",
-    "aio": "rm -rvf .next node_modules yarn.lock public/tags && yarn && yarn build && node scripts/generate-sitemap.js && yarn dev"
+    "aio": "rm -rvf .next node_modules yarn.lock public/tags && yarn && yarn upgrade-interactive && yarn build && node scripts/generate-sitemap.js && yarn dev"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
@@ -36,7 +36,7 @@
     "next-themes": "^0.0.15",
     "node-fetch": "^3.0.0",
     "postcss": "^8.2.12",
-    "postcss-import": "^14.0.0",
+    "postcss-import": "^14.0.2",
     "preact": "^10.5.13",
     "purgecss": "^4.0.3",
     "react": "17.0.2",
@@ -76,6 +76,7 @@
     "remark-frontmatter": "4.0.0",
     "remark-parse": "10.0.0",
     "remark-stringify": "10.0.0",
+    "tailwindcss-textshadow": "^2.1.3",
     "unified": "10.1.0",
     "unist-util-visit": "2.0.3"
   },
