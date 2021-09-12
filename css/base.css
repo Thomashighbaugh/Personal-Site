@@ -3,7 +3,7 @@
   border-radius: 1rem;
 }
 code {
-  @apply rounded-box py-5 bg-neutral text-neutral-content;
+  @apply rounded-box py-5 bg-gray-900 text-gray-300;
   &:before {
     content: '';
     @apply block w-3 h-3 rounded-full opacity-30 mb-4;
