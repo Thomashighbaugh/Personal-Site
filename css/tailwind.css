@@ -31,4 +31,5 @@ html {
 .btn {
   width: 72px !important;
   height: 72px !important;
+  @apply rounded-xl
 }
