@@ -13,9 +13,9 @@ export default function ListLayout({ posts, title }) {
 
   return (
     <>
-      <div className="md:divide-y bg-opacity-75 ">
-        <div className="flex justify-between bg-opacity-75  pt-6 pb-8  md:space-y-5">
-          <h1 className="font-extrabold text-gray-700 lg:text-6xl leading-1  dark:text-gray-100 sm:leading-10 sm:text-5xl md:leading-14">
+      <div className="md:divide-y ">
+        <div className="flex justify-between   pt-6 pb-8  md:space-y-5">
+          <h1 className="font-extrabold text-gray-700 lg:text-6xl leading-1 dark:text-gray-100 sm:leading-10 sm:text-5xl md:leading-14">
             {title}
           </h1>
 
@@ -52,19 +52,20 @@ export default function ListLayout({ posts, title }) {
                 key={slug}
                 className="py-2  border-t-2 border-gray-100 dark:border-gray-800 min-w-half justify-between"
               >
-                <article className="p-6 space-y-2  rounded-2xl dark:bg-gray-800 bg-white border-4 border-solid border-gray-400 bg-opacity-75 xl:grid xl:grid-cols-4 xl:items-baseline">
+                <article className="p-12 space-y-2  rounded-2xl dark:bg-gray-800 bg-gray-50 xl:grid xl:grid-cols-4 xl:items-baseline">
                   <dl>
                     <dt className="sr-only">Published on</dt>
-                    <dd className="pr-12 text-xl font-extrabold text-gray-500 dark:text-gray-400">
+                    <dd className="pr-12 text-sm font-extrabold text-gray-500 dark:text-gray-400">
                       <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
                     </dd>
                   </dl>
-                  <div className="space-x-1 space-y-0 xl:col-span-3">
+                  <div className="space-x-1 space-y-6 xl:col-span-3">
                     <div>
-                      <h3 className="text-3xl font-bold tracking-tight">
+                      <h3 className="text-2xl font-bold tracking-tight">
                         <Link
                           href={`/blog/${slug}`}
-                          className="text-gray-500 hover:text-blue-500  mt-0 pt-0 dark:hover:text-gray-200 dark:text-gray-100"
+                          className="text-gray-500
+                          dark:text-gray-50 hover:text-blue-500 dark:hover:text-gray-200 dark:text-gray-100"
                         >
                           {title}
                         </Link>

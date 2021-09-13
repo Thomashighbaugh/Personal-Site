@@ -3,7 +3,6 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    enabled: true,
     content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
     options: {
       safelist: ['type'],
@@ -12,38 +11,6 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      keyframes: {
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        },
-      },
-      animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
-        'spin-slow': 'spin 3s linear infinite',
-      },
-      fontSize: {
-        '4xs': '.125rem',
-        '3xs': '.25rem',
-        '2xs': '.5rem',
-        xs: '.75rem',
-
-        sm: '.875rem',
-
-        tiny: '.875rem',
-        base: '1rem',
-        lg: '1.125rem',
-        xl: '1.25rem',
-        '2xl': '1.5rem',
-
-        '3xl': '1.875rem',
-
-        '4xl': '2.25rem',
-        '5xl': '3rem',
-        '6xl': '4rem',
-
-        '7xl': '5rem',
-      },
       height: {
         auto: 'auto',
         px: '1px',
@@ -245,8 +212,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Kanit', ...defaultTheme.fontFamily.sans],
-        headline: ['"Press Start 2P"'],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         blue: {
@@ -409,7 +375,6 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
-    require('tailwindcss-textshadow'),
     require('tailwind-heropatterns')({
       // as per tailwind docs you can pass variants
       variants: ['dark'],

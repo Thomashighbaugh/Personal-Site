@@ -38,7 +38,7 @@ export default class Gallery extends Component {
       <Slider {...settings}>
         <div>
           <img
-            className="box-border p-0 m-0 bg-white bg-opacity-75 border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
+            className="box-border p-0 m-0 bg-white border-2 border-gray-500 rounded-2xl dark:bg-gray-900 aspect-h-9 aspect-w-16"
             src="/static/images/twitter-card.png"
             alt="twitter card & banner"
           />{' '}

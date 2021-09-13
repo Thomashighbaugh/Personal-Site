@@ -18,20 +18,26 @@ class MyDocument extends Document {
             href="/static/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
-          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#8b9cbe" />
-          <meta name="msapplication-TileColor" content="#8b9cbe" />
-          <meta name="theme-color" content="#8b9cbe" />
+          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#555e70" />
+          <meta name="msapplication-TileColor" content="#555e70" />
+          <meta name="theme-color" content="#555e70" />
           <link rel="alternate" type="application/rss+xml" href="/index.xml" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+          />
+          <link
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            media="print"
+            onLoad="this.media='all'"
           />
           <noscript>
             <link
-              href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
               rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
             />
           </noscript>
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
@@ -44,7 +50,7 @@ class MyDocument extends Document {
           <meta name="twitter:site" content="@thomashighbaugh" />
           <meta name="twitter:creator" content="@thomashighbaugh" />
         </Head>
-        <body className="antialiased bg-white dark:bg-gray-900 bg-hero-morphing-diamonds-dark dark:bg-hero-morphing-diamonds-darker font-sans">
+        <body className="antialiased bg-white dark:bg-gray-900 bg-hero-morphing-diamonds-dark dark:bg-hero-morphing-diamonds-darker">
           <Main />
           <NextScript />
         </body>
