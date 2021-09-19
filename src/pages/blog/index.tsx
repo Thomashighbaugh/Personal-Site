@@ -38,10 +38,10 @@ const BlogPage: React.FunctionComponent<Props> = ({ posts }) => {
       />
 
       <EnterTransition>
-        <section className="flex flex-col items-center max-w-screen-md m-auto">
+        <section className="flex flex-col items-center max-w-xl m-auto">
           <motion.h1
             variants={childVariants}
-            className="text-5xl mb-12 font-extrabold"
+            className="text-5xl mb-12 font-extrabold  bg-gradient-to-r bg-clip-text from-gray-400 to-gray-600"
           >
             Blog Posts
           </motion.h1>

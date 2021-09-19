@@ -17,7 +17,7 @@ const IndexPage: React.FunctionComponent = () => {
         <div className="max-w-6xl bg-gray-50 bg-opacity-50 border-2 border-gray-500 dark:bg-gray-900 dark:bg-opacity-75 rounded-2xl p-4 my-20 mx-auto">
           <motion.section variants={childVariants} className="text-center">
             <h1 className="text-6xl dark:text-white colorful font-bold mx-auto max-w-6xl mb-2">
-              <span className=" bg-gradient-to-r bg-clip-text from-gray-400 to-gray-600">
+              <span className=" bg-gradient-to-r bg-clip-text from-gray-600 to-gray-400 dark:from-gray-200 dark:to-gray-500">
                 Thomas Leon Highbaugh
               </span>
             </h1>
@@ -74,7 +74,7 @@ const IndexPage: React.FunctionComponent = () => {
               </svg>
             </div>
             <div className="flex justify-center">
-              <div className="text-gray-500 dark:text-gray-50 text-center xl:text-3txl lg:text-3xl text-3xl">
+              <div className="text-gray-700 dark:text-gray-50 text-center xl:text-3txl lg:text-3xl text-3xl">
                 <Typewriter
                   options={{
                     autoStart: true,
