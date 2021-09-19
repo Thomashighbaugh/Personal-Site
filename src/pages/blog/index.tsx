@@ -19,7 +19,7 @@ interface Props {
     frontMatter: {
       title: string;
       subtitle: string;
-      datePublished: string;
+      date: string;
       imageAlt?: string;
       imageCreditText?: string;
       imageCreditLink?: string;
@@ -50,8 +50,8 @@ const BlogPage: React.FunctionComponent<Props> = ({ posts }) => {
             {posts
               .sort((first, second) =>
                 compareDesc(
-                  new Date(first.frontMatter.datePublished),
-                  new Date(second.frontMatter.datePublished)
+                  new Date(first.frontMatter.date),
+                  new Date(second.frontMatter.date)
                 )
               )
               .map((post) => (
