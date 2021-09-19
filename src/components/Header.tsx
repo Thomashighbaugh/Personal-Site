@@ -48,7 +48,6 @@ export const Header = () => {
             <Image
               height="64"
               width="64"
-              className="absolute left-0"
               src="/images/logo.png"
               alt="logo"
               className=" mr-4 text-gray-500 dark:text-gray-50  transform rotate-0 hover:-rotate-22 transition-transform ease-linear "
