@@ -37,13 +37,20 @@ const ProjectPage: React.FunctionComponent<Props> = ({ projects }) => {
 
       <EnterTransition>
         <section className="flex flex-col items-center  m-auto">
-          <motion.h1
-            variants={childVariants}
-            className="text-5xl mb-12 font-extrabold"
-          >
-            Project Demo Lab
-          </motion.h1>
-
+          <div className="bg-gray-50  bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-75 rounded-xl border-2 border-gray-500 dark:border-gray-50 mb-12 p-3 ">
+            <motion.h1
+              variants={childVariants}
+              className="text-5xl mb-12 font-extrabold text-center bg-gradient-to-r bg-clip-text from-gray-400 to-gray-700 dark:from-gray-600 dark:to-gray-300 "
+            >
+              Project Demo Lab
+            </motion.h1>
+            <p className="text-xl max-w-4xl mb-12 text-gray-700 dark:text-gray-400  px-8">
+              Below are links to some of my web projects, which are displayed
+              directly in the site, minimizing your exposure to risks to your
+              privacy through redirects and providing a more integrated user
+              experience
+            </p>
+          </div>
           <ul className="list-none p-0 grid grid-cols-3 gap-6 ">
             {projects
               .sort((first, second) =>
@@ -66,12 +73,12 @@ const ProjectPage: React.FunctionComponent<Props> = ({ projects }) => {
                     </Link>
                   </h3>
 
-                  <p className="mt-8 mb-4 text-lg text-gray-700 dark:text-gray-400 ">
+                  <p className="mt-8 mb-8 mx-6 text-lg text-gray-700 dark:text-gray-400 ">
                     {project.frontMatter.summary}
                   </p>
                   <div>
                     <Link href={`/project/${project.slug}`}>
-                      <a className=" underline inline-flex items-center hover:text-gray-600 bg-gray-50 dark:bg-gray-900 border-2 dark:hover:border-gray-300 dark:hover:bg-gray-200 dark:hover:text-gray-800 border-gray-500 dark:border-gray-50 p-2 no-underline rounded-lg">
+                      <a className=" underline inline-flex items-center hover:text-gray-600 bg-gray-50 dark:bg-gray-900 border-2 dark:hover:border-gray-300 dark:hover:text-gray-400 border-gray-500 dark:border-gray-50 p-2 no-underline rounded-lg">
                         <span className="mr-1   ">Check it out</span>{' '}
                         <ArrowRight size={20} />
                       </a>

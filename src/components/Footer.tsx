@@ -36,49 +36,41 @@ export const Footer = () => {
   }, []);
 
   return (
-    <footer className="flex flex-wrap mt-32 relative bottom-0 right-0  justify-between items-center w-full text-lg p-2 px-6 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-75 border-t-2 border-gray-500 text-gray-500 dark:text-gray-50">
-      <span className="flex-1 text-gray-500 dark:text-gray-50">
-        <NavLink href="/" text="Thomas Leon Highbaugh" />
+    <footer className="flex flex-wrap p-5 mt-34 relative bottom-0 right-0  justify-between items-center w-full text-lg p-3 px-6 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-75 border-t-2 border-gray-500 text-gray-500 dark:text-gray-50">
+      <span className=" text-gray-500 dark:text-gray-50  transform rotate-0 hover:rotate-8 transition-transform ease-linear dark:hover:border-gray-500">
+        <NavLink href="/" text=" &copy; 2021 Thomas Leon Highbaugh" />
       </span>
 
-      <ul className="p-0 list-none flex items-center justify-between border-b-2 border-gray-500 dark:border-gray-50">
-        <li className=" text-gray-500 dark:text-gray-50">
-          {' '}
-          <a
-            title="GitHub"
-            href="https://github.com/Thomashighbaugh"
-            target="_blank"
-            rel="noopener"
-            className="text-gray-500 dark:text-gray-50 hover:text-gray-700 dark:hover:text-gray-600"
-          >
-            <GitHub />
-          </a>
-        </li>
-
-        <li>
-          <a
-            title="LinkedIn"
-            href="https://www.linkedin.com/in/thomas-leon-highbaugh/"
-            target="_blank"
-            rel="noopener"
-            className="text-gray-500 dark:text-gray-50  hover:text-gray-700 dark:hover:text-gray-600"
-          >
-            <Linkedin />
-          </a>
-        </li>
-        <li>
-          {' '}
-          <a
-            title="Twitter"
-            href="https://twitter.com/thomashighbaugh"
-            target="_blank"
-            rel="noopener"
-            className="text-gray-500 dark:text-gray-50  dark:hover:text-gray-600 hover:text-gray-700"
-          >
-            <Twitter />
-          </a>
-        </li>
-      </ul>
+      <div className="p-0 list-none flex ">
+        {' '}
+        <a
+          title="GitHub"
+          href="https://github.com/Thomashighbaugh"
+          target="_blank"
+          rel="noopener"
+          className="text-gray-500 dark:text-gray-50 bg-gray-50 bg-opacity-50 dark:bg-gray-800 dark:bg-opacity-75 border-2 border-gray-500 dark:border-gray-50  transform rotate-0 hover:rotate-22 transition-transform ease-linear dark:hover:text-gray-600 hover:text-gray-700 text-gray-500 dark:text-gray-50 flex-1 ml-3 p-1 dark:hover:border-gray-500 rounded-lg"
+        >
+          <GitHub size="32" />
+        </a>
+        <a
+          title="LinkedIn"
+          href="https://www.linkedin.com/in/thomas-leon-highbaugh/"
+          target="_blank"
+          rel="noopener"
+          className="text-gray-500 dark:text-gray-50 bg-gray-50 bg-opacity-50 dark:bg-gray-800 dark:bg-opacity-75 border-2 border-gray-500 dark:border-gray-50  dark:hover:text-gray-600 hover:text-gray-700 text-gray-500  transform rotate-0 hover:-rotate-22 transition-transform ease-linear dark:text-gray-50 flex-1 ml-3  p-1 dark:hover:border-gray-500 rounded-lg"
+        >
+          <Linkedin size="32" />
+        </a>{' '}
+        <a
+          title="Twitter"
+          href="https://twitter.com/thomashighbaugh"
+          target="_blank"
+          rel="noopener"
+          className="text-gray-500 dark:text-gray-50 bg-gray-50 bg-opacity-50 dark:bg-gray-800  transform rotate-0 hover:-rotate-22 transition-transform ease-linear dark:hover:border-gray-500 dark:bg-opacity-75 border-2 border-gray-500 dark:border-gray-50  dark:hover:text-gray-600 hover:text-gray-700  text-gray-500 dark:text-gray-50 flex-1 ml-3 p-1 rounded-lg"
+        >
+          <Twitter size="32" />
+        </a>
+      </div>
     </footer>
   );
 };

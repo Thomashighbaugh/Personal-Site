@@ -62,13 +62,13 @@ const BlogPage: React.FunctionComponent<Props> = ({ posts }) => {
                 >
                   <Link href={`/blog/${post.slug}`}>
                     <a className="no-underline">
-                      <Image
+                      {/* <Image
                         className="m-auto"
                         src={post.frontMatter.image ?? ''}
                         alt={post.frontMatter.imageAlt}
                         width={768}
                         height={432}
-                      />
+                      /> */}
                     </a>
                   </Link>
                   <h3>
@@ -78,12 +78,7 @@ const BlogPage: React.FunctionComponent<Props> = ({ posts }) => {
                       </a>
                     </Link>
                   </h3>
-                  <time className="italic text-base">
-                    {format(
-                      new Date(post.frontMatter.datePublished),
-                      'MMMM do, yyyy'
-                    )}
-                  </time>
+
                   <p className="mt-8 mb-4 text-lg">{post.excerpt}</p>
                   <div>
                     <Link href={`/blog/${post.slug}`}>

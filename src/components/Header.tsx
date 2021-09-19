@@ -1,6 +1,7 @@
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import { FunctionComponent, useEffect, useState } from 'react';
 import { Moon, Sun } from 'react-feather';
 import colors from 'tailwindcss/colors';
@@ -42,35 +43,41 @@ export const Header = () => {
     <ContentWrapper>
       <nav className="flex flex-wrap items-center w-full text-lg mb-16 p-2 px-6 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-75 border-b-2 border-gray-500 text-gray-500 dark:text-gray-50">
         <span className="flex-1 mr-4 text-gray-500 dark:text-gray-50">
-          <NavLink href="/" text="Thomas Leon Highbaugh" />
+          <NavLink href="/" />
+          <Image
+            height="64"
+            width="64"
+            className="absolute left-0"
+            src="/images/logo.png"
+            alt="logo"
+          />
         </span>
 
-        <ul className="p-0 list-none flex items-center m0">
-          <li className="mr-3 text-gray-500 dark:text-gray-50">
+        <div className="p-0 list-none flex items-center m0">
+          <div className="mr-3 text-gray-500 dark:text-gray-50">
             <NavLink href="/blog" text="Blog" hasActiveState />
-          </li>
-          <li className="mr-3 text-gray-500 dark:text-gray-50">
+          </div>
+          <div className="mr-3 text-gray-500 dark:text-gray-50">
             <NavLink href="/projects" text="Projects" hasActiveState />
-          </li>
-          <li>
-            <button
-              className="border-none dark:bg-gray-400 bg-gray-500 p-1 text-gray-50 rounded-lg text-current flex h-8 w-8 items-center justify-center"
-              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-              title={
-                theme === 'dark'
-                  ? 'Switch to light mode'
-                  : 'Switch to dark mode'
-              }
-            >
-              {isMounted &&
-                (theme === 'dark' ? (
-                  <Sun color={theme === 'dark' ? colors.white : colors.black} />
-                ) : (
-                  <Moon />
-                ))}
-            </button>
-          </li>
-        </ul>
+          </div>
+          <div
+            className="border-none dark:text-gray-50 dark:border-gray-50 dark:bg-gray-800 p-1 bg-gray-50 text-gray-700 border-gray-700 border-2 rounded-lg text-current flex items-center justify-center"
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+            title={
+              theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+            }
+          >
+            {isMounted &&
+              (theme === 'dark' ? (
+                <Sun
+                  size="32"
+                  color={theme === 'dark' ? colors.white : colors.black}
+                />
+              ) : (
+                <Moon size="32" />
+              ))}
+          </div>
+        </div>
       </nav>
     </ContentWrapper>
   );
