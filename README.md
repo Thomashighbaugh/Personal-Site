@@ -1,11 +1,19 @@
-# ReadMe
+# kylepollich.com
 
-![twitter card](public/static/images/twitter-card.png)
+My personal site and blog.
 
-Portfolio Site: Next.js, Tailwind.css, HeroPattern background, custom artwork (all rights reserved on that part)
+Built with [Next](https://nextjs.org/) + [Tailwind](https://tailwindcss.com/) and hosted on [Vercel](https://vercel.com/). For some other things I use, check out my [uses](https://kylepollich.com/uses/) page.
 
----
+## Running locally
 
-## Lighthouse Score
+1. Install dependencies via `npm`
 
-![Lighthouse Score](public/static/images/lighthouse.png)
+```sh
+$ npm i
+```
+
+2. Start the local Next.js server
+
+```sh
+$ npm run dev
+```

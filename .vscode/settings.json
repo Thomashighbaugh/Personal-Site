@@ -1,4 +1,8 @@
 {
-  "WillLuke.nextjs.addTypesOnSave": true,
-  "WillLuke.nextjs.hasPrompted": true
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

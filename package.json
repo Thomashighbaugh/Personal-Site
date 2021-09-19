@@ -1,26 +1,12 @@
 {
-  "name": "personal-site-tlh",
-  "version": "0.1.0",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "start": "next dev",
-    "dev": "next dev",
-    "build": "next build && node ./scripts/generate-sitemap",
-    "serve": "next start",
-    "analyze": "ANALYZE=true next build",
-    "aio": "rm -rvf .next node_modules yarn.lock public/tags && yarn && yarn build && node scripts/generate-sitemap.js && yarn dev"
-  },
+  "name": "kylepollich.com",
+  "description": "Thomas Leon Highbaugh Personal Site/Blog",
+  "version": "3.0.0",
+  "author": "Thomas Leon Highbaugh <kpollich1@gmail.com>",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3",
-    "@mapbox/rehype-prism": "^0.7.0",
-    "@mdx-js/loader": "^1.6.20",
-    "@mdx-js/react": "^1.6.22",
-    "@next/mdx": "^11.0.1",
-    "@tailwindcss/aspect-ratio": "^0.2.0",
-    "@tailwindcss/forms": "^0.3.2",
-    "@tailwindcss/jit": "^0.1.6",
+    "@mapbox/rehype-prism": "^0.6.0",
     "@tailwindcss/typography": "^0.4.0",
+<<<<<<< HEAD
     "autoprefixer": "^10.1.0",
     "clsx": "^1.1.1",
     "concurrently": "^6.0.0",
@@ -78,18 +64,57 @@
     "remark-stringify": "9.0.1",
     "unified": "10.1.0",
     "unist-util-visit": "2.0.3"
+=======
+    "common-tags": "^1.8.0",
+    "date-fns": "^2.21.1",
+    "framer-motion": "^4.1.11",
+    "gray-matter": "^4.0.3",
+    "next": "^10.2.0",
+    "next-mdx-remote": "^3.0.1",
+    "next-themes": "^0.0.14",
+    "prism-theme-night-owl": "^1.4.0",
+    "prism-theme-one-dark": "^1.0.0",
+    "prism-theme-one-light-dark": "^1.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-feather": "^2.0.9",
+    "remark-slug": "^6.0.0",
+    "slugify": "^1.5.1",
+    "tailwindcss": "^2.1.2",
+    "typewriter-effect": "^2.18.2"
+>>>>>>> 02f3dee (now in typescript)
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "next build",
+    "export": "next export",
+    "dev": "next dev",
+    "format": "prettier --write '**/*.{js,ts,tsx,md,mdx}'",
+    "lint": "eslint src --ext .ts --ext .tsx",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*.+(js|jsx|ts|tsx)": [
-      "eslint --fix"
-    ],
-    "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
-      "prettier --write"
+    "*.{ts,tsx,json,css}": [
+      "yarn format"
     ]
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.1",
+    "@types/react": "^17.0.4",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "autoprefixer": "^10.2.5",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "postcss": "^8.2.13",
+    "prettier": "^2.2.1",
+    "prompts": "^2.4.1",
+    "typescript": "^4.2.4"
   }
 }
