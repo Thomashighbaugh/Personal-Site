@@ -94,7 +94,7 @@ const IndexPage: React.FunctionComponent = () => {
                 />
               </div>
             </div>
-
+          </motion.section>
         </div>
       </EnterTransition>
     </Layout>
