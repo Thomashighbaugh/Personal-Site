@@ -48,12 +48,12 @@ const BlogPage: React.FunctionComponent<Props> = ({ posts }) => {
 
           <ul className="list-none p-0">
             {posts
-              .sort((first, second) =>
-                compareDesc(
-                  new Date(first.frontMatter.datePublished),
-                  new Date(second.frontMatter.datePublished)
-                )
-              )
+              // .sort((first, second) =>
+              //   compareDesc(
+              //     new Date(first.frontMatter.datePublished),
+              //     new Date(second.frontMatter.datePublished)
+              //   )
+              // )
               .map((post) => (
                 <motion.li
                   variants={childVariants}
