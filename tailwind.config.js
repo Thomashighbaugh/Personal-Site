@@ -2,9 +2,8 @@ module.exports = {
   darkMode: 'class',
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
+    purgeLayersByDefault: false,
     defaultLineHeights: true,
-    standardFontWeights: true,
   },
   purge: [
     './components/**/*.tsx',

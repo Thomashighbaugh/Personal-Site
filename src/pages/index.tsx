@@ -94,42 +94,7 @@ const IndexPage: React.FunctionComponent = () => {
                 />
               </div>
             </div>
-          </motion.section>
 
-          <motion.div
-            variants={childVariants}
-            className="flex justify-around items-center w-36 mx-auto mb-8 pb-2 border-b-2 border-gray-500 dark:border-gray-50"
-          >
-            <a
-              title="GitHub"
-              href="https://github.com/Thomashighbaugh"
-              target="_blank"
-              rel="noopener"
-              className="text-gray-500 dark:text-gray-50 hover:text-gray-700 dark:hover:text-gray-600"
-            >
-              <GitHub />
-            </a>
-
-            <a
-              title="LinkedIn"
-              href="https://www.linkedin.com/in/thomas-leon-highbaugh/"
-              target="_blank"
-              rel="noopener"
-              className="text-gray-500 dark:text-gray-50  hover:text-gray-700 dark:hover:text-gray-600"
-            >
-              <Linkedin />
-            </a>
-
-            <a
-              title="Twitter"
-              href="https://twitter.com/thomashighbaugh"
-              target="_blank"
-              rel="noopener"
-              className="text-gray-500 dark:text-gray-50  dark:hover:text-gray-600 hover:text-gray-700"
-            >
-              <Twitter />
-            </a>
-          </motion.div>
         </div>
       </EnterTransition>
     </Layout>
