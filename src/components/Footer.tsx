@@ -48,7 +48,7 @@ export const Footer = () => {
           href="https://github.com/Thomashighbaugh"
           target="_blank"
           rel="noopener"
-          className="text-gray-500 dark:text-gray-50 bg-gray-50 bg-opacity-50 dark:bg-gray-800 dark:bg-opacity-75 border-2 border-gray-500 dark:border-gray-50  transform rotate-0 hover:rotate-22 transition-transform ease-linear dark:hover:text-gray-600 hover:text-gray-700 text-gray-500 dark:text-gray-50 flex-1 ml-3 p-1 dark:hover:border-gray-500 rounded-lg"
+          className="text-gray-500 dark:text-gray-50 bg-gray-50 bg-opacity-50 dark:bg-gray-800 dark:bg-opacity-75 border-2 border-gray-500 dark:border-gray-50  transform rotate-0 hover:-rotate-22 transition-transform ease-linear dark:hover:text-gray-600 hover:text-gray-700 text-gray-500 dark:text-gray-50 flex-1 ml-3 p-1 dark:hover:border-gray-500 rounded-lg"
         >
           <GitHub size="32" />
         </a>

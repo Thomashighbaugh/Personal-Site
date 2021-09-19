@@ -42,41 +42,49 @@ export const Header = () => {
   return (
     <ContentWrapper>
       <nav className="flex flex-wrap items-center w-full text-lg mb-16 p-2 px-6 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-75 border-b-2 border-gray-500 text-gray-500 dark:text-gray-50">
-        <span className="flex-1 mr-4 text-gray-500 dark:text-gray-50">
-          <NavLink href="/" />
-          <Image
-            height="64"
-            width="64"
-            className="absolute left-0"
-            src="/images/logo.png"
-            alt="logo"
-          />
+        <span className="flex-1 mr-4 ">
+          <a href="/">
+            {' '}
+            <Image
+              height="64"
+              width="64"
+              className="absolute left-0"
+              src="/images/logo.png"
+              alt="logo"
+              className=" mr-4 text-gray-500 dark:text-gray-50  transform rotate-0 hover:-rotate-22 transition-transform ease-linear "
+            />
+          </a>
         </span>
 
-        <div className="p-0 list-none flex items-center m0">
-          <div className="mr-3 text-gray-500 dark:text-gray-50">
-            <NavLink href="/blog" text="Blog" hasActiveState />
-          </div>
-          <div className="mr-3 text-gray-500 dark:text-gray-50">
-            <NavLink href="/projects" text="Projects" hasActiveState />
-          </div>
-          <div
-            className="border-none dark:text-gray-50 dark:border-gray-50 dark:bg-gray-800 p-1 bg-gray-50 text-gray-700 border-gray-700 border-2 rounded-lg text-current flex items-center justify-center"
-            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-            title={
-              theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
-            }
-          >
-            {isMounted &&
-              (theme === 'dark' ? (
-                <Sun
-                  size="32"
-                  color={theme === 'dark' ? colors.white : colors.black}
-                />
-              ) : (
-                <Moon size="32" />
-              ))}
-          </div>
+        <div className="mr-3 text-gray-500 dark:text-gray-50">
+          <NavLink href="/blog" text="Blog" hasActiveState />
+        </div>
+        <div className="mr-3 text-gray-500 dark:text-gray-50">
+          <NavLink href="/projects" text="Projects" hasActiveState />
+        </div>
+        <div className="mr-3 text-gray-500 dark:text-gray-50">
+          <NavLink
+            href="https://resume-thomas-leon-highbaugh.vercel.app/"
+            text="Resume"
+            hasActiveState
+          />
+        </div>
+        <div
+          className=" dark:text-gray-50 dark:border-gray-50 dark:bg-gray-800 p-2 bg-gray-50 text-gray-700 border-gray-700 border-2 rounded-lg   transform rotate-0 hover:-rotate-22 transition-transform ease-linear text-current "
+          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+          title={
+            theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+          }
+        >
+          {isMounted &&
+            (theme === 'dark' ? (
+              <Sun
+                size="32"
+                color={theme === 'dark' ? colors.white : colors.black}
+              />
+            ) : (
+              <Moon size="32" />
+            ))}
         </div>
       </nav>
     </ContentWrapper>

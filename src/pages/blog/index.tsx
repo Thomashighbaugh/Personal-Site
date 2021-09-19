@@ -73,7 +73,7 @@ const BlogPage: React.FunctionComponent<Props> = ({ posts }) => {
                   </Link>
                   <h3>
                     <Link href={`/blog/${post.slug}`}>
-                      <a className="no-underline text-2xl font-bold">
+                      <a className="no-underline text-2xl font-bold text-gray-700 dark:text-gray-400">
                         {post.frontMatter.title}
                       </a>
                     </Link>
