@@ -46,7 +46,6 @@ export function getAllPostData() {
   return postData;
 }
 
-
 export function getAllProjectSlugs() {
   const projectPaths = fs.readdirSync(path.resolve(PROJECTS_PATH));
 
