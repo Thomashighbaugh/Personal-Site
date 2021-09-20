@@ -34,7 +34,7 @@ const BlogPage: React.FunctionComponent<Props> = ({ posts }) => {
     <Layout>
       <MetaTags
         title="Blog"
-        description="Where I blog about web technologies and software engineering culture."
+        description="No one cares about what I think of software development culture or anything like that, these are semiliterate posts about various things I am doing with the hopes of helping others while taking the time to help myself thinking everything over and trying to explain it. "
       />
 
       <EnterTransition>
