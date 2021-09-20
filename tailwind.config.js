@@ -7,7 +7,7 @@ module.exports = {
     defaultLineHeights: false,
   },
 
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: [],
   theme: {
     extend: {
       keyframes: {
