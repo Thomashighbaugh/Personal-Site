@@ -3,7 +3,7 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: false,
     purgeLayersByDefault: false,
-    defaultLineHeights: true,
+    defaultLineHeights: false,
   },
   purge: [
     './components/**/*.tsx',
