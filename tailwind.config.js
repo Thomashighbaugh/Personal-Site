@@ -2,9 +2,9 @@ module.exports = {
   mode: 'jit',
   darkMode: 'class',
   future: {
-    removeDeprecatedGapUtilities: false,
-    purgeLayersByDefault: false,
-    defaultLineHeights: false,
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+    defaultLineHeights: true,
   },
   purge: [
     './pages/**/*.{js,ts,jsx,tsx}',
