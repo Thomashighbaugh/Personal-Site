@@ -1,16 +1,13 @@
 module.exports = {
+  mode: 'jit',
   darkMode: 'class',
   future: {
     removeDeprecatedGapUtilities: false,
     purgeLayersByDefault: false,
     defaultLineHeights: false,
   },
-  purge: [
-    './components/**/*.tsx',
-    './pages/**/*.tsx',
-    './pages/**/*.mdx',
-    './layouts/**/*.tsx',
-  ],
+
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       keyframes: {
