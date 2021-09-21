@@ -21,9 +21,7 @@ module.exports = {
         '3xs': '.25rem',
         '2xs': '.5rem',
         xs: '.75rem',
-
         sm: '.875rem',
-
         tiny: '.875rem',
         base: '1rem',
         lg: '1.125rem',
@@ -34,9 +32,8 @@ module.exports = {
 
         '4xl': '2.25rem',
         '5xl': '3rem',
-        '6xl': '4rem',
-
-        '7xl': '5rem',
+        '6xl': '5rem',
+        '7xl': '7rem',
       },
       height: {
         auto: 'auto',

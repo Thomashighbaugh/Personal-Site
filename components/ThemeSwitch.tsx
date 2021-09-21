@@ -22,7 +22,7 @@ const ThemeSwitch = (): JSX.Element => {
   const maskColor = isDark ? '#22262d' : '#f4f4f7';
   return (
     <button
-      className="theme-button bg-gray-50 border-2 border-gray-400 hover:border-gray-600 dark:bg-gray-900 dark:bg-opacity-10 dark:border-gray-50 hover:dark:text-gray-500 hover:dark:border-gray-500  transform rotate-0 hover:-rotate-12 transition-transform ease-linear  dark:text-gray-50 text-gray-500"
+      className="theme-button bg-gray-50 border-2 border-gray-400 hover:border-gray-600 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-10 dark:border-gray-50 hover:dark:text-gray-500 hover:dark:border-gray-500  transform rotate-0 hover:-rotate-12 transition-transform ease-linear  dark:text-gray-50 text-gray-500"
       type="button"
       aria-label="Toggle Dark Mode"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -33,8 +33,8 @@ const ThemeSwitch = (): JSX.Element => {
         .theme-button {
           position: relative;
           border-radius: 5px;
-          width: 42px;
-          height: 42px;
+          width: 38px;
+          height: 38px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -44,14 +44,14 @@ const ThemeSwitch = (): JSX.Element => {
         }
         .moon-or-sun {
           position: relative;
-          width: 25px;
-          height: 25px;
+          width: 20px;
+          height: 20px;
           border-radius: 50%;
           border: ${isDark ? '4px' : '2px'} solid;
           border-color: ${color};
           background: ${color};
           transform: scale(${isDark ? 0.5 : 1});
-          transition: all 0.45s ease;
+          transition: all 0.95s ease;
           overflow: ${isDark ? 'visible' : 'hidden'};
         }
         .moon-or-sun::before {
@@ -66,7 +66,7 @@ const ThemeSwitch = (): JSX.Element => {
           border-radius: 50%;
           transform: translate(${isDark ? '14px, -14px' : '0, 0'});
           opacity: ${isDark ? 0 : 1};
-          transition: transform 0.45s ease;
+          transition: transform 0.95s ease;
         }
         .moon-or-sun::after {
           content: '';
@@ -81,14 +81,14 @@ const ThemeSwitch = (): JSX.Element => {
             -23px 0 0 ${color}, 15px 15px 0 ${color}, -15px 15px 0 ${color},
             15px -15px 0 ${color}, -15px -15px 0 ${color};
           transform: scale(${isDark ? 1 : 0});
-          transition: all 0.35s ease;
+          transition: all 0.95s ease;
         }
         .moon-mask {
           position: absolute;
           right: 4px;
           top: 4px;
-          height: 20px;
-          width: 20px;
+          height: 18px;
+          width: 18px;
           border-radius: 50%;
           border: 0;
           background: ${maskColor};
