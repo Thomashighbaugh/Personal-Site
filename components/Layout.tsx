@@ -38,7 +38,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
             Thomas Leon Highbaugh
           </a>
           <a
-            href="https://github.com/Thomashighbaugh/Personal-Site/LICENSE"
+            href="https://github.com/Thomashighbaugh/Personal-Site/blob/97e44f7ca9d567ee808f85b41d7485467823fcb0/LICENSE"
             className="mx-2"
           >
             {' '}
