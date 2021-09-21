@@ -1,61 +1,66 @@
 {
-  "name": "personal-site",
-  "description": "Thomas Leon Highbaugh Personal Site/Blog",
-  "version": "3.0.0",
-  "author": "Thomas Leon Highbaugh <thighbaugh@zoho.com>",
-  "dependencies": {
-    "@mapbox/rehype-prism": "^0.6.0",
-    "@tailwindcss/typography": "^0.4.0",
-    "common-tags": "^1.8.0",
-    "date-fns": "^2.21.1",
-    "framer-motion": "^4.1.11",
-    "gray-matter": "^4.0.3",
-    "next": "^11.1.2",
-    "next-mdx-remote": "^3.0.1",
-    "next-themes": "^0.0.14",
-    "postcss-preset-env": "^6.7.0",
-    "prism-theme-night-owl": "^1.4.0",
-    "prism-theme-one-dark": "^1.0.0",
-    "prism-theme-one-light-dark": "^1.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-feather": "^2.0.9",
-    "remark-slug": "^6.0.0",
-    "slugify": "^1.5.1",
-    "tailwindcss": "^2.2.15",
-    "typewriter-effect": "^2.18.2"
-  },
+  "name": "nextjs-typescript-mdx-blog",
+  "author": "@huntarosan",
   "license": "MIT",
-  "main": "n/a",
+  "version": "1.0.0",
   "scripts": {
-    "build": "next build",
-    "export": "next export",
     "dev": "next dev",
-    "format": "prettier --write '**/*.{js,ts,tsx,md,mdx}'",
-    "lint": "eslint src --ext .ts --ext .tsx",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "test": "jest",
+    "test-all": "yarn lint && yarn type-check && yarn test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run type-check"
+    }
   },
   "lint-staged": {
-    "*.{ts,tsx,json,css}": [
+    "*.@(ts|tsx)": [
+      "yarn lint",
       "yarn format"
     ]
   },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "date-fns": "^2.19.0",
+    "gray-matter": "^4.0.2",
+    "mdx-prism": "^0.3.3",
+    "next": "^11.0.1",
+    "next-mdx-remote": "^3.0.2",
+    "next-themes": "^0.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rehype-autolink-headings": "^5.0.1",
+    "rehype-slug": "^4.0.1",
+    "remark-code-titles": "^0.1.1"
+  },
   "devDependencies": {
-    "@types/node": "^15.0.1",
-    "@types/react": "^17.0.4",
-    "@typescript-eslint/eslint-plugin": "^4.22.1",
-    "@typescript-eslint/parser": "^4.22.1",
-    "autoprefixer": "^10.2.5",
-    "eslint": "^7.25.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
-    "postcss": "^8.2.13",
-    "prettier": "^2.2.1",
-    "prompts": "^2.4.1",
-    "typescript": "^4.2.4"
+    "@testing-library/react": "^11.2.5",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "autoprefixer": "^10.2.6",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.19.0",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "jest-watch-typeahead": "^0.6.1",
+    "lint-staged": "^10.0.10",
+    "postcss": "^8.3.5",
+    "prettier": "^2.0.2",
+    "rehype": "^11.0.0",
+    "tailwindcss": "^2.2.4",
+    "typescript": "^4.3.4"
   }
 }
