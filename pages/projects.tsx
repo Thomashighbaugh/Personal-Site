@@ -23,7 +23,7 @@ export const Blog = ({ projects }: BlogProps): JSX.Element => {
             </p>
             <h1 className="mb-2 text-xl">
               <Link as={`/projects/${project.slug}`} href={`/projects/[slug]`}>
-                <a className="text-gray-900 dark:text-white dark:hover:text-blue-400">
+                <a className="text-gray-900 dark:text-gray-50 dark:hover:text-blue-400">
                   {project.title}
                 </a>
               </Link>

@@ -24,12 +24,14 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
         </div>
       </header>
       <main>
-        <div className="max-w-5xl px-8 py-4 mx-auto">{children}</div>
+        <div className="max-w-5xl px-8 py-4 min-h-screen mx-auto">
+          {children}
+        </div>
       </main>
       <footer className="py-8">
         <div className="max-w-5xl px-8 mx-auto">
           <a
-            className="text-gray-900 dark:text-white"
+            className="text-gray-900 dark:text-gray-50"
             href="https://github.com/Thomashighbaugh"
           >
             Thomas Leon Highbaugh

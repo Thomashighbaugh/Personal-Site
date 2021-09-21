@@ -2,10 +2,10 @@ import { format, parseISO } from 'date-fns';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 import Layout from '../components/Layout';
 import { getAllPosts } from '../lib/api';
 import { PostType } from '../types/post';
-import Typewriter from 'typewriter-effect';
 type IndexProps = {
   posts: PostType[];
 };
@@ -16,7 +16,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
       <h1>Home Page</h1>
       <p>Next.js starter for your next blog or personal site. Built with:</p>
       <div className="max-w-6xl bg-gray-50 bg-opacity-50 border-2 border-gray-500 dark:bg-gray-900 dark:bg-opacity-75 rounded-2xl p-4 my-20 mx-auto">
-        <h1 className="text-6xl dark:text-white colorful font-bold mx-auto max-w-6xl mb-2">
+        <h1 className="text-6xl dark:text-gray-50 colorful font-bold mx-auto max-w-6xl mb-2">
           <span className=" bg-gradient-to-r bg-clip-text from-gray-600 to-gray-400 dark:from-gray-200 dark:to-gray-500">
             Thomas Leon Highbaugh
           </span>
@@ -98,7 +98,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
 
       <a
         href="https://github.com/ChangoMan/nextjs-typescript-mdx-blog"
-        className="inline-block px-7 py-3 rounded-md text-white dark:text-white bg-gray-500 hover:bg-gray-700 hover:text-white dark:hover:text-white"
+        className="inline-block px-7 py-3 rounded-md text-gray-50 dark:text-gray-50 bg-gray-500 hover:bg-gray-700 hover:text-gray-50 dark:hover:text-gray-50"
       >
         Check Out the source code!
       </a>
@@ -110,7 +110,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
           </p>
           <h1 className="mb-2 text-xl">
             <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
-              <a className="text-gray-900 dark:text-white dark:hover:text-blue-400">
+              <a className="text-gray-900 dark:text-gray-50 dark:hover:text-blue-400">
                 {post.title}
               </a>
             </Link>

@@ -22,7 +22,7 @@ const ThemeSwitch = (): JSX.Element => {
   const maskColor = isDark ? '#22262d' : '#f4f4f7';
   return (
     <button
-      className="theme-button bg-gray-50 border-2 border-gray-400 hover:border-gray-600 bg-opacity-10 dark:bg-gray-900 dark:bg-opacity-10 hover:dark:border-gray-200 hover:dark:text-gray-200 dark:text-gray-50 text-gray-500"
+      className="theme-button bg-gray-50 border-2 border-gray-400 hover:border-gray-600 dark:bg-gray-900 dark:bg-opacity-10 dark:border-gray-50 hover:dark:text-gray-500 hover:dark:border-gray-500  transform rotate-0 hover:-rotate-12 transition-transform ease-linear  dark:text-gray-50 text-gray-500"
       type="button"
       aria-label="Toggle Dark Mode"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -31,7 +31,6 @@ const ThemeSwitch = (): JSX.Element => {
       <div className="moon-mask" />
       <style jsx>{`
         .theme-button {
-          opacity: 0.95;
           position: relative;
           border-radius: 5px;
           width: 42px;
@@ -39,15 +38,14 @@ const ThemeSwitch = (): JSX.Element => {
           display: flex;
           align-items: center;
           justify-content: center;
-          transition: opacity 0.3s ease;
         }
         .theme-button:hover {
           opacity: 1;
         }
         .moon-or-sun {
           position: relative;
-          width: 20px;
-          height: 20px;
+          width: 25px;
+          height: 25px;
           border-radius: 50%;
           border: ${isDark ? '4px' : '2px'} solid;
           border-color: ${color};
@@ -96,7 +94,7 @@ const ThemeSwitch = (): JSX.Element => {
           background: ${maskColor};
           transform: translate(${isDark ? '4px, -4px' : '0, 0'});
           opacity: ${isDark ? 0 : 1};
-          transition: transform 0.45s ease;
+          transition: transform 0.95s ease;
         }
       `}</style>
     </button>

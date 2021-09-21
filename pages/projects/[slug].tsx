@@ -46,7 +46,7 @@ const ProjectPage = ({
   return (
     <Layout customMeta={customMeta}>
       <article>
-        <h1 className="mb-3 text-gray-900 dark:text-white">
+        <h1 className="mb-3 text-gray-900 dark:text-gray-50">
           {frontMatter.title}
         </h1>
         <p className="mb-10 text-sm text-gray-500 dark:text-gray-400">
