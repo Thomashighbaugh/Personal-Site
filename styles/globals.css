@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /****************************************************************************/
-/*Font*/
+/* Font */
 /****************************************************************************/
 @font-face {
   font-family: 'Dimitri';
@@ -15,7 +15,7 @@
   src: url('/fonts/effects-eighty.woff2') format('woff2');
 }
 
-/*Styles*/
+/* Styles */
 h1,
 h2,
 h3,
@@ -27,7 +27,7 @@ a {
   font-family: 'Dimitri', sans;
 }
 /****************************************************************************/
-/*Background*/
+/* Background */
 /****************************************************************************/
 html,
 body {
@@ -42,7 +42,7 @@ body {
   animation-timing-function: ease;
 }
 /****************************************************************************/
-/*Animations*/
+/* Animations */
 /****************************************************************************/
 .overflow-ellipsis {
   white-space: nowrap;
@@ -181,7 +181,7 @@ body {
   text-indent: 4rem;
 }
 /****************************************************************************/
-/*Base layer styles*/
+/* Base layer styles */
 /****************************************************************************/
 @layer base {
   h1 {
@@ -198,7 +198,7 @@ body {
   }
 }
 
-/*Post styles*/
+/* Post styles */
 .prose pre {
   @apply bg-gray-50 border border-gray-200 dark:border-gray-500 dark:bg-gray-800;
 }
@@ -208,11 +208,11 @@ body {
 }
 
 .prose img {
-  /*Don't apply styles to next/image*/
+  /* Don't apply styles to next/image */
   @apply m-0;
 }
 
-/*Prism Styles*/
+/* Prism Styles */
 .token.comment,
 .token.prolog,
 .token.doctype,
@@ -278,11 +278,11 @@ pre::-webkit-scrollbar {
 }
 
 pre {
-  -ms-overflow-style: none; /*IE and Edge*/
-  scrollbar-width: none; /*Firefox*/
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-/*Remark Styles*/
+/* Remark Styles */
 .remark-code-title {
   @apply text-gray-800 dark:text-gray-200 px-5 py-3 border border-b-0 border-gray-200 dark:border-gray-700 rounded-t bg-gray-200 dark:bg-gray-800 text-sm font-mono font-bold;
 }
