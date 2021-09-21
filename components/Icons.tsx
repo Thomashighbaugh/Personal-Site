@@ -34,7 +34,7 @@ export const GitHub = () => {
   );
 };
 
-export const ThemeToggle = () => {
+export const ThemeToggle = (arg: unknown) => {
   return (
     <svg
       width="24"
