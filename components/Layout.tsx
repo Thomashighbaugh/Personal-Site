@@ -9,14 +9,14 @@ type LayoutProps = {
   customMeta?: MetaProps;
 };
 
-export const WEBSITE_HOST_URL = 'https://nextjs-typescript-mdx-blog.vercel.app';
+export const WEBSITE_HOST_URL = 'https://thomasleonhighbaugh.me';
 
 const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
     <>
       <Head customMeta={customMeta} />
       <header>
-        <div className="max-w-5xl px-8 mx-auto">
+        <div className="px-8 mx-auto">
           <div className="flex items-center justify-between py-6">
             <Navigation />
             <ThemeSwitch />
@@ -28,12 +28,11 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
       </main>
       <footer className="py-8">
         <div className="max-w-5xl px-8 mx-auto">
-          Built by{' '}
           <a
             className="text-gray-900 dark:text-white"
-            href="https://twitter.com/huntarosan"
+            href="https://github.com/Thomashighbaugh"
           >
-            Hunter Chang
+            Thomas Leon Highbaugh
           </a>
         </div>
       </footer>
