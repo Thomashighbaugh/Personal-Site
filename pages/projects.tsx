@@ -5,7 +5,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { getAllProjects } from '../lib/api-projects';
 import { ProjectType } from '../types/projects';
-import Typewriter from 'typewriter-effect';
+
 type BlogProps = {
   projects: ProjectType[];
 };

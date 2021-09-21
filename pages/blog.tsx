@@ -5,7 +5,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { getAllPosts } from '../lib/api';
 import { PostType } from '../types/post';
-import Typewriter from 'typewriter-effect';
+
 type BlogProps = {
   posts: PostType[];
 };

@@ -18,11 +18,11 @@ const ThemeSwitch = (): JSX.Element => {
   }
 
   const isDark = theme === 'dark';
-  const color = isDark ? '#f4f4f7' : '#17191e';
+  const color = isDark ? '#f4f4f7' : '#8b9cbe';
   const maskColor = isDark ? '#22262d' : '#f4f4f7';
   return (
     <button
-      className="theme-button"
+      className="theme-button bg-gray-50 border-2 border-gray-400 hover:border-gray-600 bg-opacity-10 dark:bg-gray-900 dark:bg-opacity-10 hover:dark:border-gray-200 hover:dark:text-gray-200 dark:text-gray-50 text-gray-500"
       type="button"
       aria-label="Toggle Dark Mode"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -31,7 +31,7 @@ const ThemeSwitch = (): JSX.Element => {
       <div className="moon-mask" />
       <style jsx>{`
         .theme-button {
-          opacity: 0.5;
+          opacity: 0.95;
           position: relative;
           border-radius: 5px;
           width: 42px;
