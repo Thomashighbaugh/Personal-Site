@@ -10,8 +10,8 @@ const Navigation = (): JSX.Element => {
         </a>
       </Link>
       <nav className="justify-between align-middle items-center py-2 text-2xl">
-        <Link href="/about">
-          <a className=" px-6 py-6">About</a>
+        <Link href="https://resume-thomas-leon-highbaugh.vercel.app">
+          <a className=" px-6 py-6">Resume</a>
         </Link>
         <Link href="/projects">
           <a className=" px-6 py-6">Projects</a>

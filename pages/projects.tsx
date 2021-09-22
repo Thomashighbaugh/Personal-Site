@@ -13,11 +13,13 @@ type BlogProps = {
 export const Blog = ({ projects }: BlogProps): JSX.Element => {
   return (
     <Layout>
-      <h1>Blog</h1>
-      <p>Check out my blog projects here.</p>
-      <div className="max-w-6xl bg-gray-50 bg-opacity-50 border-2 border-gray-500 dark:bg-gray-900 dark:bg-opacity-75 rounded-2xl p-4 my-20 mx-auto">
+      <div className=" bg-gray-50 bg-opacity-50 border-2 border-gray-500 dark:bg-gray-900 dark:bg-opacity-75 dark:border-gray-50 rounded-2xl p-6 my-20 mx-auto">
+        <h1>Projects</h1>
+        <p>Check out my blog projects here.</p>
+        </div>
+        <div className="grid grid-cols-3 gap-4 ">
         {projects.map((project) => (
-          <article key={project.slug} className="mt-12">
+          <article key={project.slug} className="border-2 border-gray-500 dark:border-gray-50 p-4 bg-gray-50 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-75 rounded-2xl">
             <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
               {format(parseISO(project.date), 'MMMM dd, yyyy')}
             </p>
@@ -36,7 +38,7 @@ export const Blog = ({ projects }: BlogProps): JSX.Element => {
             </p>
           </article>
         ))}
-      </div>
+        </div>
     </Layout>
   );
 };

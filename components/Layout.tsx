@@ -25,12 +25,12 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
         </div>
       </header>
       <main>
-        <div className="max-w-5xl px-8 py-4 min-h-screen mx-auto">
+        <div className="px-8 py-4 min-h-screen mx-auto">
           {children}
         </div>
       </main>
-      <footer className="py-8 flex min-w-full items-center justify-around mt-1 bg-opacity-75 bg-gray-50 dark:bg-opacity-50 border-t-2 border-gray-500 dark:border-gray-50 dark:bg-gray-900">
-        <div className="px-8 mx-auto flex">
+      <footer className="py-1 flex min-w-full items-center justify-around mt-5  bg-opacity-75 bg-gray-50 dark:bg-opacity-60 border-t-2 border-gray-500 dark:border-gray-50 dark:bg-gray-900 ">
+        <div className="px-2 mx-auto flex">
           <a
             href="https://github.com/Thomashighbaugh/Personal-Site/blob/97e44f7ca9d567ee808f85b41d7485467823fcb0/LICENSE"
             className="mx-6"
