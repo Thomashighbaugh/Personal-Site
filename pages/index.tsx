@@ -89,13 +89,6 @@ export const Index = (): JSX.Element => {
           </div>
         </div>
       </div>
-
-      <a
-        href="https://github.com/Thomashighbaugh/Personal-Site"
-        className="inline-block px-7 py-3 rounded-md text-gray-50 dark:text-gray-50 bg-gray-500 hover:bg-gray-700 hover:text-gray-50 dark:hover:text-gray-50"
-      >
-        Check Out the Source Code!
-      </a>
     </Layout>
   );
 };
