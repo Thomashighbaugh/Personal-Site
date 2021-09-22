@@ -9,7 +9,7 @@ const Navigation = (): JSX.Element => {
           <Image width="48" height="48" src="/logo.png" />
         </a>
       </Link>
-      <nav className="justify-between align-middle items-center py-2 text-2xl">
+      <nav className="justify-between align-middle items-center py-4 text-sm">
         <Link href="https://resume-thomas-leon-highbaugh.vercel.app">
           <a className=" px-6 py-6">Resume</a>
         </Link>

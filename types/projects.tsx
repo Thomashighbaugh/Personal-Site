@@ -4,4 +4,7 @@ export type ProjectType = {
   image?: string;
   slug: string;
   title: string;
+  github: string;
+  siteUrl: string;
+  category: string;
 };

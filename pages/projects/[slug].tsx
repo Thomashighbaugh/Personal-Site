@@ -42,18 +42,18 @@ const ProjectPage = ({
     image: `${WEBSITE_HOST_URL}${frontMatter.image}`,
     date: frontMatter.date,
     type: 'article',
+    siteUrl: frontMatter.siteUrl,
+    github: frontMatter.github,
   };
   return (
     <Layout customMeta={customMeta}>
-      <article>
+      <article className="max-w-full mx-auto justify-center block">
         <h1 className="mb-3 text-gray-900 dark:text-gray-50">
           {frontMatter.title}
         </h1>
-        <p className="mb-10 text-sm text-gray-500 dark:text-gray-400">
-          {format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}
-        </p>
         <div className="prose dark:prose-dark">
           <MDXRemote {...source} components={components} />
+          <iframe src={frontMatter.siteUrl} height="800" width="1388"  />
         </div>
       </article>
     </Layout>
