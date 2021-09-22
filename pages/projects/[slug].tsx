@@ -1,4 +1,3 @@
-import { format, parseISO } from 'date-fns';
 import fs from 'fs';
 import matter from 'gray-matter';
 import mdxPrism from 'mdx-prism';
@@ -48,7 +47,7 @@ const ProjectPage = ({
   return (
     <Layout customMeta={customMeta}>
       <article className="max-w-full mx-auto justify-center block">
-        <h1 className="mb-3 text-gray-900 dark:text-gray-50">
+        <h1 className="mb-3 text-gray-700 dark:text-gray-50">
           {frontMatter.title}
         </h1>
         <div className="prose dark:prose-dark">

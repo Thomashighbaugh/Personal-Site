@@ -1,11 +1,9 @@
 import React from 'react';
 import { MetaProps } from '../types/layout';
-import Head from './Head';
-import Navigation from './Navigation';
-import ThemeSwitch from './ThemeSwitch';
-import { Email, GitHub, Twitter } from './Icons';
+
 import Header from './Header';
 import Footer from './Footer';
+import Head from './Head';
 type LayoutProps = {
   children: React.ReactNode;
   customMeta?: MetaProps;
@@ -16,8 +14,11 @@ export const WEBSITE_HOST_URL = 'https://thomasleonhighbaugh.me';
 const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
     <>
+      <Head customMeta={customMeta} />
       <Header />
-      <main className="justify-around mx-16p ">{children}</main>
+      <main className="justify-around px-25p overflow-x-scroll">
+        {children}
+      </main>
       <Footer />
     </>
   );
