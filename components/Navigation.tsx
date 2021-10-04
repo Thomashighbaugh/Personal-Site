@@ -9,15 +9,15 @@ const Navigation = (): JSX.Element => {
           <Image width="64" height="64" src="/logo.png" />
         </a>
       </Link>
-      <nav className="justify-between align-middle items-center py-4 text-xl ">
+      <nav className="justify-between align-middle items-center py-4 text-2xl color-gray-500 dark:color-gray-200 ">
         <Link href="https://resume-thomas-leon-highbaugh.vercel.app">
           <a className=" px-6 py-6 ">Resume</a>
         </Link>
         <Link href="/projects">
-          <a className=" px-6 py-6">Projects</a>
+          <a className=" px-6 py-6 ">Projects</a>
         </Link>
         <Link href="/blog">
-          <a className=" px-6 py-6">Blog</a>
+          <a className=" px-6 py-6 ">Blog</a>
         </Link>
       </nav>
     </div>
