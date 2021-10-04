@@ -13,7 +13,7 @@ type BlogProps = {
 export const Blog = ({ posts }: BlogProps): JSX.Element => {
   return (
     <Layout>
-      <div className="max-w-6xl bg-gray-50 bg-opacity-75 border-2 border-gray-500 dark:bg-gray-900 dark:border-gray-50 dark:bg-opacity-75 rounded-2xl p-6 my-20 mx-auto text-lg">
+      <div className="max-w-6xl bg-gray-50 bg-opacity-75 border-4 border-gray-400 dark:bg-gray-900 dark:border-gray-50 dark:bg-opacity-75 rounded-2xl p-6 my-20 mx-auto text-lg">
         <h1 className="colorful text-5xl text-center">Blog</h1>
         <p className="indent-lg text-xl px-6 font-bold">
           My blog, which I have reorganized to be more code focused and less of
@@ -38,7 +38,7 @@ export const Blog = ({ posts }: BlogProps): JSX.Element => {
             <p className="flex flex-end justify-between flex-row">
               <div className="w-12"  />
               <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
-                <a className="p-2 bg-gray-500 border-2 border-gray-700 dark:border-gray-50 text-gray-50 rounded-lg hover:bg-gray-200">
+                <a className="p-2 bg-gray-500 border-4 border-gray-700 dark:border-gray-50 text-gray-50 rounded-lg hover:bg-gray-200">
                   
                 
                   Read More

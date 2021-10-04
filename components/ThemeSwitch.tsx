@@ -22,7 +22,7 @@ const ThemeSwitch = (): JSX.Element => {
   const maskColor = isDark ? '#22262d' : '#f4f4f7';
   return (
     <button
-      className="theme-button bg-gray-50 border-2 border-gray-400 hover:border-gray-600  dark:bg-gray-900  dark:border-gray-50 hover:dark:text-gray-500 hover:dark:border-gray-500  transform rotate-0 hover:rotate-12 transition-transform ease-linear  dark:text-gray-50 text-gray-500 "
+      className="theme-button bg-gray-50 border-2  border-gray-400 hover:border-gray-600  dark:bg-gray-900  dark:border-gray-50 hover:dark:text-gray-500 hover:dark:border-gray-400  transform rotate-0 hover:rotate-12 transition-transform ease-linear  dark:text-gray-50 text-gray-500 "
       type="button"
       aria-label="Toggle Dark Mode"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -32,7 +32,7 @@ const ThemeSwitch = (): JSX.Element => {
       <style jsx>{`
         .theme-button {
           position: relative;
-          border-radius: 5px;
+          border-radius: 8px;
           width: 48px;
           height: 48px;
           display: flex;
