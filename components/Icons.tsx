@@ -1,8 +1,8 @@
 export const Email = () => {
   return (
     <svg
-      width="36"
-      height="36"
+      width="48"
+      height="48"
       viewBox="0 0 36 36"
       className="inline"
       fill="none"
@@ -19,8 +19,8 @@ export const Email = () => {
 export const GitHub = () => {
   return (
     <svg
-      width="36"
-      height="36"
+      width="48"
+      height="48"
       viewBox="0 0 36 36"
       className="inline"
       fill="none"
@@ -37,9 +37,9 @@ export const GitHub = () => {
 export const ThemeToggle = () => {
   return (
     <svg
-      width="36"
-      height="36"
-      viewBox="0 0 36 36"
+      width="72"
+      height="72"
+      viewBox="0 0 64 64"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -51,8 +51,8 @@ export const ThemeToggle = () => {
 export const Twitter = () => {
   return (
     <svg
-      width="36"
-      height="36"
+      width="48"
+      height="48"
       viewBox="0 0 36 36"
       className="inline"
       fill="none"

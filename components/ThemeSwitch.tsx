@@ -22,7 +22,7 @@ const ThemeSwitch = (): JSX.Element => {
   const maskColor = isDark ? '#22262d' : '#f4f4f7';
   return (
     <button
-      className="theme-button bg-gray-50 border-2 border-gray-400 hover:border-gray-600  dark:bg-gray-900  dark:border-gray-50 hover:dark:text-gray-500 hover:dark:border-gray-500  transform rotate-0 hover:rotate-12 transition-transform ease-linear  dark:text-gray-50 text-gray-500 py-0"
+      className="theme-button bg-gray-50 border-2 border-gray-400 hover:border-gray-600  dark:bg-gray-900  dark:border-gray-50 hover:dark:text-gray-500 hover:dark:border-gray-500  transform rotate-0 hover:rotate-12 transition-transform ease-linear  dark:text-gray-50 text-gray-500 "
       type="button"
       aria-label="Toggle Dark Mode"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -33,8 +33,8 @@ const ThemeSwitch = (): JSX.Element => {
         .theme-button {
           position: relative;
           border-radius: 5px;
-          width: 38px;
-          height: 38px;
+          width: 48px;
+          height: 48px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -44,8 +44,8 @@ const ThemeSwitch = (): JSX.Element => {
         }
         .moon-or-sun {
           position: relative;
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
           border-radius: 50%;
           border: ${isDark ? '4px' : '2px'} solid;
           border-color: ${color};
@@ -59,8 +59,8 @@ const ThemeSwitch = (): JSX.Element => {
           position: absolute;
           right: -9px;
           top: -9px;
-          height: 20px;
-          width: 20px;
+          height: 30px;
+          width: 30px;
           border: 2px solid;
           border-color: ${color};
           border-radius: 50%;
@@ -87,9 +87,10 @@ const ThemeSwitch = (): JSX.Element => {
           position: absolute;
           right: 4px;
           top: 4px;
-          height: 18px;
-          width: 18px;
+          height: 23px;
+          width: 25px;
           border-radius: 50%;
+          opacity: 50%;
           border: 0;
           background: ${maskColor};
           transform: translate(${isDark ? '4px, -4px' : '0, 0'});
