@@ -88,7 +88,7 @@ const ThemeSwitch = (): JSX.Element => {
           right: 4px;
           top: 4px;
           height: 23px;
-          width: 25px;
+          width: 23px;
           border-radius: 50%;
           opacity: 50%;
           border: 0;
