@@ -1,10 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Layout from '../components/Layout';
-import { PostType } from '../types/post';
-type IndexProps = {
-  posts: PostType[];
-};
+
 
 export const Index = (): JSX.Element => {
   return (

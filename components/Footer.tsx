@@ -1,10 +1,7 @@
 import React from 'react';
-import { MetaProps } from '../types/layout';
+
 import { Email, GitHub, Twitter } from './Icons';
 
-type LayoutProps = {
-  customMeta?: MetaProps;
-};
 
 const Footer = (): JSX.Element => {
   return (

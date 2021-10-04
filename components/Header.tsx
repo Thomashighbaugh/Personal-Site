@@ -1,10 +1,8 @@
 import React from 'react';
-import { MetaProps } from '../types/layout';
+
 import Navigation from './Navigation';
 import ThemeSwitch from './ThemeSwitch';
-type LayoutProps = {
-  customMeta?: MetaProps;
-};
+
 const Header = (): JSX.Element => {
   return (
     <>

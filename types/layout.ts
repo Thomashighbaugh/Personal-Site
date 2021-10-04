@@ -6,4 +6,6 @@ export interface MetaProps
    * For the meta tag `og:type`
    */
   type?: string;
+  siteUrl?: string;
+  github?: string;
 }
