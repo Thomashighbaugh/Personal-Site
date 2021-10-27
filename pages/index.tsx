@@ -64,7 +64,7 @@ export const Index = (): JSX.Element => {
               stroke="#555e70"
               strokeWidth="1px"
               transform="matrix(0.836, -0.495, 0.495, 0.836, 80, 80)"
-              stroke="none"
+
             />
           </svg>
         </div>
