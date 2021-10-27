@@ -7,7 +7,7 @@ export const Index = (): JSX.Element => {
   return (
     <Layout>
       <div className="max-w-6xl bg-gray-50 bg-opacity-75 border-4 text-center border-gray-400 dark:border-gray-50 dark:bg-gray-900 dark:bg-opacity-75 rounded-2xl p-4 my-20 mx-auto max-w-6xl">
-        <h1 className="text-7xl dark:text-gray-50 colorful font-bold mx-auto ">
+        <h1 className="lg:text-7xl text-5xl dark:text-gray-50 colorful font-bold mx-auto ">
           <span className=" text-6xl bg-gradient-to-r bg-clip-text from-gray-600 to-gray-400 dark:from-gray-200 dark:to-gray-500">
             Thomas Leon Highbaugh
           </span>
