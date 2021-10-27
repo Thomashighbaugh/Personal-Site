@@ -8,7 +8,7 @@ export const Index = (): JSX.Element => {
     <Layout>
       <div className="bg-gray-50 bg-opacity-95 border-4 text-center border-gray-400 dark:border-gray-50 dark:bg-gray-900 dark:bg-opacity-75 rounded-2xl p-4 my-20 mx-auto  ">
         <h1 className="lg:text-7xl text-5xl dark:text-gray-50 colorful font-bold mx-auto ">
-          <span className=" text-6xl bg-gradient-to-r bg-clip-text from-gray-600 to-gray-400 dark:from-gray-200 dark:to-gray-500">
+          <span className=" text-6xl bg-gradient-to-r bg-clip-text from-gray-600 to-gray-400 dark:from-gray-50 dark:to-gray-200">
             Thomas Leon Highbaugh
           </span>
         </h1>
@@ -44,6 +44,8 @@ export const Index = (): JSX.Element => {
               <path
                 d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
                 fill="url(#Gradient1)"
+              stroke="#555e70"
+              strokeWidth="1px"
               >
                 <animateTransform
                   attributeName="transform"
@@ -59,6 +61,8 @@ export const Index = (): JSX.Element => {
             <path
               d="M 50,0 A 50,50 0 0,0 -50,0Z"
               fill="url(#Gradient3)"
+              stroke="#555e70"
+              strokeWidth="1px"
               transform="matrix(0.836, -0.495, 0.495, 0.836, 80, 80)"
               stroke="none"
             />
