@@ -13,7 +13,7 @@ type BlogProps = {
 export const Blog = ({ posts }: BlogProps): JSX.Element => {
   return (
     <Layout>
-      <div className="max-w-6xl bg-gray-50 bg-opacity-75 border-4 border-gray-400 dark:bg-gray-900 dark:border-gray-50 dark:bg-opacity-75 rounded-2xl p-6 my-20 mx-auto text-lg">
+      <div className="max-w-6xl bg-gray-50 bg-opacity-90 border-4 border-gray-400 dark:bg-gray-900 dark:border-gray-50 dark:bg-opacity-90 rounded-2xl p-6 my-20 mx-auto text-lg">
         <h1 className="colorful text-5xl text-center">Blog</h1>
         <p className="indent-lg text-xl px-6 font-bold">
           My blog, which I have reorganized to be more code focused and less of
