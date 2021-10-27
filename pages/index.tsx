@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 export const Index = (): JSX.Element => {
   return (
     <Layout>
-      <div className="bg-gray-50 bg-opacity-95 border-4 text-center border-gray-400 dark:border-gray-50 dark:bg-gray-900 dark:bg-opacity-75 rounded-2xl p-4 my-20 mx-auto max-w-91p">
+      <div className="bg-gray-50 bg-opacity-95 border-4 text-center border-gray-400 dark:border-gray-50 dark:bg-gray-900 dark:bg-opacity-75 rounded-2xl p-4 my-20 mx-auto  ">
         <h1 className="lg:text-7xl text-5xl dark:text-gray-50 colorful font-bold mx-auto ">
           <span className=" text-6xl bg-gradient-to-r bg-clip-text from-gray-600 to-gray-400 dark:from-gray-200 dark:to-gray-500">
             Thomas Leon Highbaugh
@@ -25,18 +25,18 @@ export const Index = (): JSX.Element => {
             <defs>
               <linearGradient id="Gradient3" x1="0" x2="0" y1="0" y2="1">
                 <stop offset="0%" stopColor="#e9efff" stopOpacity="10" />
-                <stop offset="60%" stopColor="#8b9cbe" stopOpacity="10" />
-                <stop offset="100%" stopColor="#555e70" stopOpacity="10" />
+                <stop offset="60%" stopColor="#0badff" stopOpacity="10" />
+                <stop offset="100%" stopColor="#0872A8" stopOpacity="10" />
               </linearGradient>
               <linearGradient id="Gradient2" x1="0" x2="0" y1="1" y2="1">
-                <stop offset="0%" stopColor="#b2bfd9" stopOpacity="30" />
-                <stop offset="70%" stopColor="#8b9cbe" stopOpacity="80" />
-                <stop offset="100%" stopColor="#555e70" stopOpacity="90" />
+                <stop offset="0%" stopColor="#00caff" stopOpacity="30" />
+                <stop offset="70%" stopColor="#0badff" stopOpacity="80" />
+                <stop offset="100%" stopColor="#0872A8" stopOpacity="90" />
               </linearGradient>
               <linearGradient id="Gradient1" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0%" stopColor="#e9efff" stopOpacity="80" />
-                <stop offset="50%" stopColor="#b2bfd9" stopOpacity="100" />
-                <stop offset="100%" stopColor="#8b9cbe" stopOpacity="80" />
+                <stop offset="0%" stopColor="#00caff" stopOpacity="80" />
+                <stop offset="50%" stopColor="#0badff" stopOpacity="100" />
+                <stop offset="100%" stopColor="#0872a8" stopOpacity="80" />
               </linearGradient>
             </defs>
             <circle cx="80" cy="80" r="50" fill="url(#Gradient2)" />
