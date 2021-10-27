@@ -55,7 +55,7 @@ const ProjectPage = ({
           <iframe src={frontMatter.siteUrl} height="800" width="1388"  />
         </div>
       </article>
-    </Layout>
+    </Layout> 
   );
 };
 
