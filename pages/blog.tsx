@@ -14,7 +14,7 @@ export const Blog = ({ posts }: BlogProps): JSX.Element => {
   return (
     <Layout>
       <div className="max-w-6xl bg-gray-50 bg-opacity-100 border-4 border-gray-400 dark:bg-gray-900 dark:border-gray-50 dark:bg-opacity-100 rounded-2xl p-6 my-20 mx-auto text-lg">
-        <h1 className="colorful text-5xl text-center">Blog</h1>
+        <h1 className="text-5xl text-center text-gray-500">Blog</h1>
         <p className="indent-lg text-xl px-6 font-bold">
           My blog, which I have reorganized to be more code focused and less of
           me droning on and on about my opinions that no one really cares about.
