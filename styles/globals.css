@@ -181,7 +181,7 @@ body {
 }
 
 .prose code {
-  @apply text-gray-600 dark:text-gray-200 px-1 py-0.5 border border-gray-400 dark:border-gray-50 rounded-md bg-gray-100 dark:bg-gray-800 bg-opacity-95 dark:bg-opacity-95;
+  @apply text-gray-600 dark:text-gray-200 px-1 py-0.5 border border-gray-400 dark:border-gray-50 rounded-md bg-gray-100 dark:bg-gray-800 bg-opacity-95 dark:bg-opacity-75;
 }
 
 /* Prism Styles */
