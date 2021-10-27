@@ -34,9 +34,9 @@ export const Index = (): JSX.Element => {
                 <stop offset="100%" stopColor="#0872A8" stopOpacity="90" />
               </linearGradient>
               <linearGradient id="Gradient1" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0%" stopColor="#00caff" stopOpacity="80" />
-                <stop offset="50%" stopColor="#0badff" stopOpacity="100" />
-                <stop offset="100%" stopColor="#0872a8" stopOpacity="80" />
+                <stop offset="0%" stopColor="#e9efff" stopOpacity="80" />
+                <stop offset="50%" stopColor="#ff00aa" stopOpacity="100" />
+                <stop offset="100%" stopColor="#f0ffaa" stopOpacity="80" />
               </linearGradient>
             </defs>
             <circle cx="80" cy="80" r="50" fill="url(#Gradient2)" />
