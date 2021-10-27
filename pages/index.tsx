@@ -82,7 +82,7 @@ export const Index = (): JSX.Element => {
                   .typeString(
                     'Web Developer | Linux Professional | Digital Artist'
                   )
-                  .changeDeleteSpeed(0.01)
+                  .changeDeleteSpeed(1.5)
                   .deleteAll()
                   .start();
               }}
