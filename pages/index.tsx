@@ -7,19 +7,19 @@ export const Index = (): JSX.Element => {
   return (
     <Layout>
       <div className="bg-gray-50 bg-opacity-100 border-4 text-center border-gray-400 dark:border-gray-50 dark:bg-gray-900  rounded-2xl p-4 my-20 mx-auto  ">
-        <h1 className="lg:text-7xl text-5xl dark:text-gray-50 colorful font-bold mx-auto ">
-          <span className=" text-6xl bg-gradient-to-r bg-clip-text from-gray-600 to-gray-400 dark:from-gray-50 dark:to-gray-200">
+        <h1 className="lg:text-7xl text-5xl mb-0 pb-0 dark:text-gray-50 colorful font-bold mx-auto ">
+          <span className="  bg-gradient-to-r bg-clip-text mb-0 pb-0 from-gray-600 to-gray-400 dark:from-gray-50 dark:to-gray-200">
             Thomas Leon Highbaugh
           </span>
         </h1>
-        <div className="flex justify-center items-center ">
+        <div className="flex justify-center items-center m-0 p-0 ">
           <svg
             className="  text-gray-300"
-            width="400"
-            height="400"
+            width="500"
+            height="500"
             viewBox="0 0 160 160"
             fill="url(#Gradient2)"
-            stroke="#00000066"
+            stroke="#555e7099"
             strokeWidth="2px"
           >
             <defs>
@@ -61,7 +61,7 @@ export const Index = (): JSX.Element => {
             <path
               d="M 50,0 A 50,50 0 0,0 -50,0Z"
               fill="url(#Gradient3)"
-              stroke="#555e70"
+              stroke="#00000000"
               strokeWidth="1px"
               transform="matrix(0.836, -0.495, 0.495, 0.836, 80, 80)"
 
