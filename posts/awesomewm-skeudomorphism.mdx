@@ -1,0 +1,130 @@
+---
+title: AwesomeWM Skeudomorphism
+description: Neumorphism is impossible in X11, sorry to the guy faking that configuration on Reddit, but Skeudomorphism is not in AwesomeWM. It just takes a little craftiness with the cairo engine exposed by the API. Here's how I made my configuration skeudomorphic.
+date: "2021-12-26"
+image: "/images/awesome-skeudomorphism.png"
+---
+
+After seeing a screenshot of a configuration of AwesomeWM the poster refused to share the source code for, which I was certain was fake, I explored the means in which Neumorphism could be applied to AwesomeWM. The results of my research were that this is generally impossible in X11 because the shadows cannot be set to be different colors on different parts of the object being shadowed, unlike in CSS where this is possible.
+
+What I discovered by accident a few days later though, was Skeudomorphism can easily be achieved, which to those not as nerdy as I in terms of the nomenclature of design, that means one can achieve a 3D appearance using Lua and AwesomeWM.
+
+## First the Cavets
+
+1. The first cavet is that this will only work on things drawn by the `Window Manager`. One of Awesome's best features over sway/i3 and the like is that Lua can be used to make a litany of windows that the window manager has no issues displaying, giving you the potential to make a `Desktop Environment` out of a window manager.
+
+However, most of the windows your system is drawing on your screen are not being drawn by the window manager, it is focused on things like the titlebar of the window (if any), the system's bar (awesomewm only, i3/sway need third party programs for this), menus specific to the `window manager`, window placement (dynamic, stacking or tiling), etc. Most windows I use are drawn using the `GTK3` style engine you have probably heard of, I prefer it to `QT` but given the state of `GTK4` have recently been exploring alternatives.
+
+In the meantime, the biggest `skeudomorphic` make over I made to the system was applying a `skeudomorphic` GTK theme to it, which I forked and adjusted to fit my system's color pallete. You can find mine [here](https://github.com/the-Electric-Tantra-Linux/Dhumvati-Theme) and the original [here](https://github.com/daniruiz/skeuos-gtk), as you can tell my adjustments were in excess of being simply color shifts but there is still so much of it untouched I could not possibly fail to mention the original in good faith.
+
+2. The second cavet is that this will not apply to every single thing, with a reason I am still trying to decipher but I think is that it cannot be applied on top of itself (I might be wrong). As I will explain, this is mostly about setting a background for various widgets and a hover event that helps tie it all together, so anything drawn over that background it seems won't work.
+
+This requires testing, which I use a personal fork of `awmtt` for, it will start the window manager in `Xephyr` (another strength of X11 over Wayland) and print the error codes coming up to `stdout`, enabling the debugging of a lot of things (but hardly everything, of coure). Error codes related to this issue will tell you that the color you are trying to apply is a "bad" color and spit out the specific input we will go over in the next section.
+
+3. I am not sure if this is specific to the degrees of the gradient I am using, which is typically between 20 & 39, which give an interesting angle to the gradient when used in web development, thus be aware this may be related to why the effect is even working as it does seem to be a sort of hack as the effect is hardly occuring at a 21 degree angle.
+
+## The How (finally...)
+
+### Step 1:
+
+The first step to achieving a `Skeudomorphic` desktop with Awesome is to create variables within your theme that you will use for the background of your various widgets. I create a normal, focus and alt background, for example.
+
+Within that `theme.bg_[whatever]` variable you will save several cairo gradients. Use whatever colors you want, honestly it doesn't really matter what colors, but the key is that of the two colors, one must be a darker or lighter version of the other (I use the `Mate Color Picker` for determining this). So for instance, most of my system uses the following as its background:
+
+```lua
+    theme.bg_normal = "linear:0,0:0,21:0,#2B2E38:1,#1B1D24"
+
+```
+
+Which produces a gradient as you can see in this image:
+
+![Awesome Bar](images/awesome-bar.png)
+
+### Step 2:
+
+The second step is then apply the gradient to everything you seek to give the `skeudomorphic` look to, like the bottom panel as depicted above. That's simply a matter of adding in the `bg` property to the widget template. In the case of the bottom panel depicted above, it is done like this:
+
+```lua
+-- From: layout/bottom-panel/init.lua
+local bottom_panel = function(s)
+    local panel =
+        awful.wibar {
+        ontop = true,
+        screen = s,
+        type = "dock",
+        height = dpi(36),
+        position = "bottom",
+        width = s.geometry.width,
+        maximum_width = s.geometry.width,
+        x = s.geometry.x,
+        y = s.geometry.y,
+        -- relevant line below this one
+        bg = beautiful.bg_normal,
+        fg = beautiful.fg_normal
+    }
+
+```
+
+### Step 3:
+
+Now here comes the more complex part of this process, which is providing the mouse hover event that gives interaction with the interface its most convincingly tactile aspect.
+
+In order to achieve this, you will add both hover and press events setting the background to a lighter gradient and release/leave events resetting the background. All of this I have managed within a module file called by most of my widgets called `clickable_container`, a highly modified variant of a file originally from the annoyingly named but brillaint `glorious dotfiles` by manilarome. Here is that file for your reference on what this looks like (with the ASCII art file header and comment bars I use to separate the file removed so as not to distract you from the lua):
+
+```lua
+local create_click_events = function(widget)
+    local container =
+        wibox.widget {
+        widget,
+        widget = wibox.container.background,
+        shape = function(cr, width, height)
+            gears.shape.rounded_rect(cr, width, height, 4)
+        end,
+        bg = beautiful.bg_normal,
+        border_width = dpi(2),
+        border_color = '#1b1d2488'
+    }
+
+    local old_cursor, old_wibox
+
+    container:connect_signal(
+        'mouse::enter',
+        function()
+            container.bg = beautiful.bg_alternative
+        end
+    )
+
+
+    container:connect_signal(
+        'mouse::leave',
+        function()
+            container.bg = beautiful.bg_normal
+        end
+    )
+
+    container:connect_signal(
+        'button::press',
+        function()
+            container.bg = beautiful.bg_alternative
+        end
+    )
+
+    container:connect_signal(
+        'button::release',
+        function()
+            container.bg = beautiful.bg_normal
+        end
+    )
+
+
+    return container
+end
+
+return create_click_events
+
+
+```
+
+### Step 4:
+
+Profit! Once you have the above assigned everywhere you want it, that's pretty much it. Its a simple trick, discovered accedentally when playing with background gradients, which even without this effect still add a lot to the visual appearance of your `window manager` as compared to a solid color and are worth trying, especially if you are trying for a 'glassy' look by adding transparency.
