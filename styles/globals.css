@@ -17,6 +17,115 @@
   font-family: 'Effects Eighty';
   src: url('/fonts/effects-eighty.woff2') format('woff2');
 }
+/* latin */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Jost-SemiBold.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+0000-007F, U+0080-00FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Jost-SemiBold.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+0100-017F, U+0180-024F, U+0250-02AF, U+1E00-1EFF, U+2C60-2C7F,
+    U+A720-A7FF, U+AB30-AB6F;
+}
+
+/* shared */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Jost-SemiBold.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+2000-206F, U+2070-209F, U+20A0-20CF, U+2100-214F, U+2150-218F,
+    U+2190-21FF, U+2200-22FF, U+25A0-25FF, U+2700-27BF;
+}
+/* latin */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Jost-Bold.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+0000-007F, U+0080-00FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Jost-Bold.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+0100-017F, U+0180-024F, U+0250-02AF, U+1E00-1EFF, U+2C60-2C7F,
+    U+A720-A7FF, U+AB30-AB6F;
+}
+
+/* shared */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Jost-Bold.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+2000-206F, U+2070-209F, U+20A0-20CF, U+2100-214F, U+2150-218F,
+    U+2190-21FF, U+2200-22FF, U+25A0-25FF, U+2700-27BF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Jost-Medium.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+0000-007F, U+0080-00FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Jost-Medium.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+0100-017F, U+0180-024F, U+0250-02AF, U+1E00-1EFF, U+2C60-2C7F,
+    U+A720-A7FF, U+AB30-AB6F;
+}
+/* latin */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Jost-Medium.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+0000-007F, U+0080-00FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Jost-Medium.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+0100-017F, U+0180-024F, U+0250-02AF, U+1E00-1EFF, U+2C60-2C7F,
+    U+A720-A7FF, U+AB30-AB6F;
+}
+/* shared */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Jost-Medium.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+2000-206F, U+2070-209F, U+20A0-20CF, U+2100-214F, U+2150-218F,
+    U+2190-21FF, U+2200-22FF, U+25A0-25FF, U+2700-27BF;
+}
 
 /* Styles */
 h1,
@@ -35,7 +144,7 @@ a {
 /**************************************************************************/
 html,
 body {
-  font-family: 'Effects Eighty', sans;
+  font-family: 'Jost', sans;
   @apply bg-gray-50 dark:bg-gray-900 min-w-full;
   background-size: 304px 304px;
   background-position: center;
@@ -178,7 +287,7 @@ body {
 }
 
 .prose code {
-  @apply text-gray-600 dark:text-gray-200 px-1 py-0.5 border border-gray-400 dark:border-gray-50 rounded-md bg-gray-100 dark:bg-gray-800 bg-opacity-100 ;
+  @apply text-gray-200 px-1 py-0.5 border border-gray-50 rounded-md   bg-gray-800 bg-opacity-100 ;
 }
 
 /* Prism Styles */
@@ -239,7 +348,7 @@ body {
 
 code[class*='language-'],
 pre[class*='language-'] {
-  @apply text-gray-800 dark:text-gray-50;
+  @apply text-gray-50;
 }
 
 /* Remark Styles*/
