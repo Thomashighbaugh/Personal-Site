@@ -16,7 +16,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
     <>
       <Head customMeta={customMeta} />
       <Header />
-      <main className="justify-around xl:px-24 lg:px-18 md:px-12  px-3 overflow-x-scroll">
+      <main className="justify-around xl:px-24 lg:px-18 md:px-12  px-3 ">
         {children}
       </main>
       <Footer />
