@@ -5,19 +5,19 @@ const Navigation = (): JSX.Element => {
   return (
     <div className="flex align-middle ">
       <Link href="/">
-        <a className=" transform rotate-0 hover:-rotate-22 transition-transform ease-linear   ">
+        <a className=" transform rotate-0 hover:-rotate-22 transition-transform ease-linear ">
           <Image width="64" height="64" src="/logo.png" />
         </a>
       </Link>
-      <nav className="justify-between align-middle items-center py-4 text-2xl text-gray-400 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-50">
+      <nav className="justify-between text-center content-center align-middle items-center py-4 text-2xl text-gray-400 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-50">
         <Link href="https://resume-thomas-leon-highbaugh.vercel.app">
-          <a className=" px-6 py-6 ">Resume</a>
+          <a className=" px-6 py-4 ">Resume</a>
         </Link>
         <Link href="/projects">
-          <a className=" px-6 py-6 ">Projects</a>
+          <a className=" px-6 py-4 ">Projects</a>
         </Link>
         <Link href="/blog">
-          <a className=" px-6 py-6 ">Blog</a>
+          <a className=" px-6 py-4 ">Blog</a>
         </Link>
       </nav>
     </div>

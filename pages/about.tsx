@@ -7,10 +7,15 @@ export const About = (): JSX.Element => {
       customMeta={{
         title: 'About - Thomas Leon Highbaugh',
       }}
-    ><div className="bg-gray-50 bg-opacity-100 dark:bg-gray-900 mt-12 p-4 rounded-2xl  border-4 border-gray-400 dark:border-gray-50">
-      <h1>About Page</h1>
-      <p>My name is Thomas Leon Highbaugh, but I bet you knew that by now. I live in beautiful San Francisco, California. Currently I am a freelance, full-stack web developer and Linux system administrator</p>
-    </div>
+    >
+      <div className="bg-gray-50 bg-opacity-100 dark:bg-gray-900 mt-12 p-4 rounded-2xl  border-2 border-gray-400 dark:border-gray-50">
+        <h1>About Page</h1>
+        <p>
+          My name is Thomas Leon Highbaugh, but I bet you knew that by now. I
+          live in beautiful San Francisco, California. Currently I am a
+          freelance, full-stack web developer and Linux system administrator
+        </p>
+      </div>
     </Layout>
   );
 };

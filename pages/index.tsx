@@ -2,11 +2,10 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Layout from '../components/Layout';
 
-
 export const Index = (): JSX.Element => {
   return (
     <Layout>
-      <div className="bg-gray-50 bg-opacity-100 border-4 text-center border-gray-400 dark:border-gray-50 dark:bg-gray-900  rounded-2xl p-4 my-20 mx-auto  ">
+      <div className="bg-gray-50 bg-opacity-50 dark:bg-opacity-90 border-2 text-center border-gray-400 dark:border-gray-50 dark:bg-gray-900  rounded-2xl p-4 my-20 mx-auto  ">
         <h1 className="lg:text-7xl text-5xl mb-0 pb-0 dark:text-gray-50 colorful font-bold mx-auto ">
           <span className="  bg-gradient-to-r bg-clip-text mb-0 pb-0 from-gray-600 to-gray-400 dark:from-gray-50 dark:to-gray-200">
             Thomas Leon Highbaugh
@@ -44,8 +43,8 @@ export const Index = (): JSX.Element => {
               <path
                 d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
                 fill="url(#Gradient1)"
-              stroke="#555e70"
-              strokeWidth="1px"
+                stroke="#555e70"
+                strokeWidth="1px"
               >
                 <animateTransform
                   attributeName="transform"
@@ -64,7 +63,6 @@ export const Index = (): JSX.Element => {
               stroke="#00000000"
               strokeWidth="1px"
               transform="matrix(0.836, -0.495, 0.495, 0.836, 80, 80)"
-
             />
           </svg>
         </div>

@@ -52,10 +52,10 @@ const ProjectPage = ({
         </h1>
         <div className="prose dark:prose-dark">
           <MDXRemote {...source} components={components} />
-          <iframe src={frontMatter.siteUrl} height="800" width="1388"  />
+          <iframe src={frontMatter.siteUrl} height="800" width="1388" />
         </div>
       </article>
-    </Layout> 
+    </Layout>
   );
 };
 

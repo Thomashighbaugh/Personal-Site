@@ -120,7 +120,7 @@ module.exports = {
         '8p': '8.333333%',
         '41p': '41.666667%',
         '58p': '58.333333%',
-        
+
         '91p': '91.666667%',
 
         full: '100%',
@@ -407,17 +407,17 @@ module.exports = {
           900: '#009AC2',
         },
         gray: {
-          DEFAULT: '#3D4659',
-          50: '#ffffff',
-          100: '#C7CCD8',
-          200: '#9FA9BD',
-          300: '#7886A3',
-          400: '#586580',
-          500: '#3D4659',
-          600: '#373F50',
-          700: '#313847',
-          800: '#2f303d',
-          900: '#22262d',
+          DEFAULT: '#3D404B',
+          50: '#FBFBFC',
+          100: '#E5E6EA',
+          200: '#B8BAC5',
+          300: '#8B8FA0',
+          400: '#626678',
+          500: '#3D404B',
+          600: '#363942',
+          700: '#2F313A',
+          800: '#292A32',
+          900: '#222329',
         },
         links: '#8b9cbe',
         orange: {
@@ -481,7 +481,7 @@ module.exports = {
               '&:hover': {
                 color: theme('colors.blue.700'),
               },
-              code: { color: theme('colors.blue.400') },
+              code: { color: theme('colors.links') },
             },
             'h2,h3,h4': {
               'scroll-margin-top': spacing[32],
@@ -495,9 +495,9 @@ module.exports = {
           css: {
             color: theme('colors.gray.50'),
             a: {
-              color: theme('colors.gray.400'),
+              color: theme('colors.gray.100'),
               '&:hover': {
-                color: theme('colors.gray.600'),
+                color: theme('colors.gray.50'),
               },
               code: { color: theme('colors.gray.100') },
             },

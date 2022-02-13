@@ -42,7 +42,7 @@ const PostPage = ({ source, frontMatter }: PostPageProps): JSX.Element => {
   };
   return (
     <Layout customMeta={customMeta}>
-      <article className="mb-3  pt-6 p-3 text-gray-700 dark:text-gray-50 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-90 mt-4 bg-gray-50 rounded ">
+      <article className="mb-3  pt-6 p-3 text-gray-700 dark:text-gray-50 border-2 border-gray-600 dark:border-gray-50 min-w-full w-full dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-90 mt-4 bg-gray-50 rounded-md ">
         <h1 className="mb-1 pt-4 text-gray-700 dark:text-gray-50 text-4xl ">
           {frontMatter.title}
         </h1>
