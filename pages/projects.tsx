@@ -14,7 +14,11 @@ export const Blog = ({ projects }: BlogProps): JSX.Element => {
   return (
     <Layout>
       <div className=" bg-gray-50 bg-opacity-100 border-2 border-gray-400 dark:bg-gray-900  dark:border-gray-50 rounded-2xl p-6 my-20 mx-auto">
-        <h1 className="text-gray-400 dark:text-gray-50">Projects</h1>
+        <h1 className="lg:text-7xl text-5xl mb-0 pb-0 dark:text-gray-50 colorful font-bold mx-auto text-center ">
+          <span className="  bg-gradient-to-r bg-clip-text mb-0 pb-0 from-gray-600 to-gray-400 dark:from-gray-50 dark:to-gray-200">
+            Projects
+          </span>
+        </h1>
         <p className="text-xl">
           A curated selection of my web projects available for demonstration
           within iframes on pages generated from MDX files by Next.js.
