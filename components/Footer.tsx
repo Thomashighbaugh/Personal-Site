@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Email, GitHub, Twitter } from './Icons';
 
-
 const Footer = (): JSX.Element => {
   return (
     <footer className="rounded-t-lg flex min-w-full items-center justify-around mt-5  bg-opacity-100 bg-gray-50  border-t-4 border-gray-400 dark:border-gray-50 dark:bg-gray-900 ">
