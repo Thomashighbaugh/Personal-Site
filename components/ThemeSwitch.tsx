@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { useTheme } from 'next-themes';
 import React from 'react';
 
@@ -18,11 +19,11 @@ const ThemeSwitch = (): JSX.Element => {
   }
 
   const isDark = theme === 'dark';
-  const color = isDark ? '#f4f4f7' : '#8b9cbe';
+  const color = isDark ? '#f4f4f7' : '#717171';
   const maskColor = isDark ? '#22262d' : '#f4f4f7';
   return (
     <button
-      className="theme-button bg-gray-50 bg-opacity-100 border-2  border-gray-400 hover:border-gray-600  dark:bg-gray-900  dark:border-gray-50 dark:hover:text-gray-500 transform rotate-0 hover:rotate-12 transition-transform ease-linear  dark:text-gray-50 text-gray-500 "
+      className="theme-button bg-gray-50 bg-opacity-100 border-2  border-gray-400 hover:border-gray-600  dark:bg-gray-900  dark:border-gray-200  dark:hover:text-gray-500 transform rotate-0 hover:rotate-12 transition-transform ease-linear  dark:text-gray-50 text-gray-500 "
       type="button"
       aria-label="Toggle Dark Mode"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

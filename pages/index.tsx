@@ -5,8 +5,8 @@ import Layout from '../components/Layout';
 export const Index = (): JSX.Element => {
   return (
     <Layout>
-      <div className="bg-gray-50 bg-opacity-50 dark:bg-opacity-90 border-2 text-center border-gray-400 dark:border-gray-50 dark:bg-gray-900  rounded-2xl p-4 my-20 mx-auto  ">
-        <h1 className="lg:text-7xl text-5xl mb-0 pb-0 dark:text-gray-50 colorful font-bold mx-auto ">
+      <div className="bg-gray-50 bg-opacity-70 dark:bg-opacity-90 border-2 text-center border-gray-400 dark:border-gray-200  dark:bg-gray-900  rounded-2xl px-4 my-12 mx-auto  ">
+        <h1 className="lg:text-5xl text-4xl mb-0 pb-0 dark:text-gray-50 colorful font-bold mx-auto ">
           <span className="  bg-gradient-to-r bg-clip-text mb-0 pb-0 from-gray-600 to-gray-400 dark:from-gray-50 dark:to-gray-200">
             Thomas Leon Highbaugh
           </span>
@@ -14,11 +14,11 @@ export const Index = (): JSX.Element => {
         <div className="flex justify-center items-center m-0 p-0 ">
           <svg
             className="  text-gray-300"
-            width="500"
-            height="500"
+            width="450"
+            height="450"
             viewBox="0 0 160 160"
             fill="url(#Gradient2)"
-            stroke="#555e7099"
+            stroke="#444444aa"
             strokeWidth="2px"
           >
             <defs>
@@ -34,8 +34,8 @@ export const Index = (): JSX.Element => {
               </linearGradient>
               <linearGradient id="Gradient1" x1="0" x2="1" y1="0" y2="0">
                 <stop offset="0%" stopColor="#e9efff" stopOpacity="80" />
-                <stop offset="50%" stopColor="#ff00aa" stopOpacity="100" />
-                <stop offset="100%" stopColor="#f0ffaa" stopOpacity="80" />
+                <stop offset="50%" stopColor="#f5143d" stopOpacity="100" />
+                <stop offset="100%" stopColor="#feee76" stopOpacity="80" />
               </linearGradient>
             </defs>
             <circle cx="80" cy="80" r="50" fill="url(#Gradient2)" />
@@ -67,7 +67,10 @@ export const Index = (): JSX.Element => {
           </svg>
         </div>
         <div className="flex justify-center">
-          <div className="text-gray-700 dark:text-gray-50 text-center xl:text-3xl lg:text-2xl text-xl">
+          <div
+            className="text-gray-700 dark:text-gray-50 text-center xl:text-3xl lg:text-2xl text-xl font-bold"
+            id="typewriter"
+          >
             <Typewriter
               options={{
                 autoStart: true,

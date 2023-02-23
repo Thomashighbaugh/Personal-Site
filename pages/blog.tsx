@@ -13,7 +13,7 @@ type BlogProps = {
 export const Blog = ({ posts }: BlogProps): JSX.Element => {
   return (
     <Layout>
-      <div className="max-w-6xl bg-gray-50 border-2 border-gray-400 dark:bg-gray-900 dark:border-gray-50 dark:bg-opacity-90 bg-opacity-50 rounded-2xl p-6 my-20 mx-auto text-lg">
+      <div className="max-w-6xl bg-gray-50 border-2 border-gray-400 dark:bg-gray-900 dark:border-gray-200  dark:bg-opacity-90 bg-opacity-50 rounded-2xl p-6 my-20 mx-auto text-lg">
         <h1 className="lg:text-7xl text-5xl text-center mb-0 pb-0 dark:text-gray-50 colorful font-bold mx-auto ">
           <span className="  bg-gradient-to-r bg-clip-text mb-0 pb-0 from-gray-600 to-gray-400 dark:from-gray-50 dark:to-gray-200">
             Dev Blog
@@ -42,7 +42,7 @@ export const Blog = ({ posts }: BlogProps): JSX.Element => {
             <p className="flex flex-end justify-between flex-row">
               <div className="w-12" />
               <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
-                <a className="p-2 bg-gray-500 border-2 border-gray-700 dark:border-gray-50 text-gray-50 rounded-lg hover:bg-gray-200">
+                <a className="p-2 bg-gray-500 border-2 border-gray-700 dark:border-gray-200  text-gray-50 rounded-lg hover:bg-gray-200">
                   Read More
                 </a>
               </Link>

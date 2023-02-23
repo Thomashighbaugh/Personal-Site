@@ -8,7 +8,7 @@ export const About = (): JSX.Element => {
         title: 'About - Thomas Leon Highbaugh',
       }}
     >
-      <div className="bg-gray-50 bg-opacity-100 dark:bg-gray-900 mt-12 p-4 rounded-2xl  border-2 border-gray-400 dark:border-gray-50">
+      <div className="bg-gray-50 bg-opacity-100 dark:bg-gray-900 mt-12 p-4 rounded-2xl  border-2 border-gray-400 dark:border-gray-200 ">
         <h1>About Page</h1>
         <p>
           My name is Thomas Leon Highbaugh, but I bet you knew that by now. I

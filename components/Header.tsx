@@ -6,9 +6,9 @@ import ThemeSwitch from './ThemeSwitch';
 const Header = (): JSX.Element => {
   return (
     <>
-      <header className="bg-opacity-50 dark:bg-opacity-90 rounded-b-lg bg-gray-50  border-b-2  border-gray-400 dark:border-gray-50 dark:bg-gray-900 ">
-        <div className="lg:px-6 md:px-6 px-0">
-          <div className="flex items-center justify-between py-1">
+      <header className="bg-opacity-50 dark:bg-opacity-90 bg-gray-50  border-b-2  border-gray-400 dark:border-gray-200  dark:bg-gray-900 ">
+        <div className="lg:px-3 md:px-2 px-0">
+          <div className="flex items-center justify-between flex-row">
             <Navigation />
             <ThemeSwitch />
           </div>

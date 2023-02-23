@@ -14,7 +14,9 @@ import rehypeSlug from 'rehype-slug';
 import Layout, { WEBSITE_HOST_URL } from '../../components/Layout';
 import { MetaProps } from '../../types/layout';
 import { ProjectType } from '../../types/projects';
+import * as Button from '../../components/Button';
 import { projectFilePaths, PROJECTS_PATH } from '../../utils/mdxProjects';
+import { Github, Globe } from 'lucide-react';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -46,13 +48,28 @@ const ProjectPage = ({
   };
   return (
     <Layout customMeta={customMeta}>
-      <article className="max-w-full  justify-center block">
-        <h1 className="mb-3 text-gray-700 dark:text-gray-50">
+      <article className="max-w-full p-4 my-6 border-2 border-gray-800 dark:border-gray-200 bg-gray-50 bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-80 rounded-xl  justify-center block">
+        <h1 className="mb-3 text-gray-700 dark:text-gray-50 mt-4">
           {frontMatter.title}
+          <div className="flex flex-row self-center justify-center float-right ">
+            <Button.Button>
+              <a href={frontMatter.siteUrl}>
+                <Globe height={36} width={36} />
+              </a>
+            </Button.Button>
+
+            <Button.Button>
+              <a href={frontMatter.github}>
+                <Github height={36} width={36} />{' '}
+              </a>
+            </Button.Button>
+          </div>
         </h1>
-        <div className="prose dark:prose-dark">
+
+        <div className="prose dark:prose-dark font-bold mt-3 justify-center self-center px-0 mx-0 overflow-visible">
           <MDXRemote {...source} components={components} />
-          <iframe src={frontMatter.siteUrl} height="800" width="1388" />
+
+          <iframe src={frontMatter.siteUrl} height="900" width="1370" />
         </div>
       </article>
     </Layout>
@@ -66,7 +83,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { content, data } = matter(source);
 
   const mdxSource = await serialize(content, {
-    // Optionally pass remark/rehype plugins
+    // Pass remark/rehype plugins
     mdxOptions: {
       remarkPlugins: [require('remark-code-titles')],
       rehypePlugins: [mdxPrism, rehypeSlug, rehypeAutolinkHeadings],

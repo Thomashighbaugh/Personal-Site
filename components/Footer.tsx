@@ -4,29 +4,23 @@ import { Email, GitHub, Twitter } from './Icons';
 
 const Footer = (): JSX.Element => {
   return (
-    <footer className="rounded-t-lg flex min-w-full items-center justify-around bg-opacity-50 dark:bg-opacity-90 bg-gray-50  border-t-2 border-gray-400 dark:border-gray-50 dark:bg-gray-900 ">
-      <div className="px-2 text-xl mx-auto  flex">
+    <footer className="relative bottom-0 flex min-w-full flex-row bg-opacity-50 dark:bg-opacity-90 bg-gray-50  border-t-2 border-gray-400 dark:border-gray-200  dark:bg-gray-900 justify-between ">
+      <div className="self-center mx-8">
         <a
-          href="https://github.com/Thomashighbaugh/Personal-Site/blob/97e44f7ca9d567ee808f85b41d7485467823fcb0/LICENSE"
-          className="mx-6"
-        >
-          {' '}
-          &copy;2021{' '}
-        </a>
-        <a
-          className="text-gray-700 dark:text-gray-50 dark:hover:text-gray-500 text-xl"
+          className="text-gray-700 dark:text-gray-50 dark:hover:text-gray-500  self-center md:text-sm text-xs"
           href="https://thomasleonhighbaugh.me"
         >
-          Thomas Leon Highbaugh
+          Thomas Leon Highbaugh &copy;2023{' '}
         </a>
-
-        <a className="ml-6 mr-1" href="https://github.com/Thomashighbaugh">
+      </div>
+      <div className="self-center">
+        <a className="mr-1" href="https://github.com/Thomashighbaugh">
           <GitHub />
         </a>
         <a className="mx-1" href="https://twitter.com/thomashighbaugh">
           <Twitter />
         </a>
-        <a className="mx-1" href="mailto:thighbaugh@zoho.com">
+        <a className="mx-1 mr-8" href="mailto:me@thomasleonhighbaugh.me">
           <Email />
         </a>
       </div>
