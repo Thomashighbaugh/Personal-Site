@@ -373,6 +373,6 @@ pre[class*='language-'] {
 }
 
 /* typewriter */
-#typewriter *{
+#typewriter * {
   font-family: 'Jost', sans;
 }
