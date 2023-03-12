@@ -1,0 +1,21 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"version": 2,
+	"alias": "thomasleonhighbaugh.me",
+	"cleanUrls": true,
+	"public": true,
+	"regions": ["lhr1"],
+	"redirects": [
+		{ "source": "/github", "destination": "https://github.com/tobitenno" },
+		{ "source": "/linkedin", "destination": "https://www.linkedin.com/in/voborilmatej" },
+		{ "source": "/portfolio", "destination": "/projects" },
+		{ "source": "/twitter", "destination": "https://twitter.com/tobitenno" },
+		{
+			"source": "/contact",
+			"destination": "https://twitter.com/direct_messages/create/tobitenno"
+		},
+		{
+			"source": "/cal", "destination": "https://cal.com/matej"
+		}
+	]
+}

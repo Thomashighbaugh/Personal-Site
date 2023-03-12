@@ -1,0 +1,68 @@
+[
+	{
+		"date": "06-29-2022",
+		"title": "Started @ PayIt",
+		"description": "time to help simplify government",
+		"icon": "heroicons-outline:scale"
+	},
+	{
+		"date": "06-27-2022",
+		"title": "Departed Cerner",
+		"description": "Left Cerner",
+		"icon": "feather:log-out"
+	},
+	{
+		"date": "01-12-2021",
+		"title": "Promoted to SSE",
+		"description": "Became a senior software engineer",
+		"icon": "heroicons-outline:arrow-up-right"
+	},
+	{
+		"date": "10-18-2017",
+		"title": "Launched hub.warframestat.us",
+		"description": "Started w/ EricSihaoLin",
+		"icon": "feather:monitor",
+		"link": {
+			"text": "Warframe Hub",
+			"url": "https://hub.warframestat.us"
+		}
+	},
+	{
+		"date": "10-18-2017",
+		"title": "Genesis on GitHub",
+		"description": "Migrated Genesis over to Github!",
+		"icon": "feather:github",
+		"link": {
+			"text": "GitHub",
+			"url": "https://github.com/wfcd/genesis"
+		}
+	},
+	{
+		"date": "02-07-2017",
+		"title": "Warframe Status Launch",
+		"description": "Launched the Warframe Status API",
+		"icon": "feather:github",
+		"link": {
+			"text": "API Docs",
+			"url": "https://docs.warframestat.us"
+		}
+	},
+	{
+		"date": "06-07-2013",
+		"title": "Started @ Cerner",
+		"description": "First big job",
+		"icon": "feather:monitor"
+	},
+	{
+		"date": "05-23-2013",
+		"title": "Graduated Benedictine",
+		"description": "BA in CS",
+		"icon": "heroicons-outline:academic-cap"
+	},
+	{
+		"date": "07-05-2012",
+		"title": "Interned @ Cerner",
+		"description": "College internship!",
+		"icon": "feather:briefcase"
+	}
+]
