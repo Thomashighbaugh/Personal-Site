@@ -33,4 +33,4 @@ Build for production
 yarn build
 ```
 
-[![GitHub Trends SVG](https://api.githubtrends.io/user/svg/Thomashighbaugh/langs?include_private=true&compact=true)](https://githubtrends.io)
+
