@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Loading: React.FC = () => {
+export function Loading(): JSX.Element {
 	return (
 		<div className="flex space-x-4 w-full max-w-sm mx-auto px-4 py-4 bg-white/50 dark:bg-primary-900/50 dark:text-primary-600 shadow-lg rounded-lg">
 			<div className="flex-1 space-y-4 py-1">
@@ -11,4 +11,3 @@ const Loading: React.FC = () => {
 	);
 };
 
-export default Loading;
