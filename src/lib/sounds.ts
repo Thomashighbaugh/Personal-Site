@@ -1,10 +1,10 @@
 import { useSound } from 'use-sound';
-import { usePersistantState } from '.';
+import { usePersistentState } from '.';
 
 import type { ReturnedValue } from 'use-sound/dist/types';
 
 export function useClick(): ReturnedValue | [() => void, null] {
-	const state = usePersistantState();
+	const state = usePersistentState();
 	const result = useSound('/sounds/click.ogg', {
 		volume: 0.05,
 	});
