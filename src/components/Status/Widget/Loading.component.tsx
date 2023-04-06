@@ -9,5 +9,4 @@ export function Loading(): JSX.Element {
 			</div>
 		</div>
 	);
-};
-
+}
