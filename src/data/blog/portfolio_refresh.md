@@ -31,7 +31,7 @@ The navigation improvement is triggered by the use of the <kbd>Tab</kbd> key and
 
 ### Added Elements of New Design Trends
 
-In creating this site, I wanted to include some elements of the new design trends that I have come across and used in other projects. While neumorphism poses accessibility challenges, I have styled much of the site using the related design paradigm `glassmorphism` to give additional visual flare to the site's elements such as the menus and page content.   
+In creating this site, I wanted to include some elements of the new design trends that I have come across and used in other projects. While neumorphism poses accessibility challenges, I have styled much of the site using the related design paradigm `glassmorphism` to give additional visual flare to the site's elements such as the menus and page content. This flare comes in the form of outlines around each menu and content box, as well as some transparency applied to each which I have carefully insured did not impact the readablity of the content. 
 
 #### New SVG Background 
 
