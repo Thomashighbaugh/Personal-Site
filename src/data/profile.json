@@ -16,23 +16,28 @@
 			"slug": "the-Electric-Tantra-Linux",
 			"ignore": [
 				".github",
-        "matangi-gtk-theme",
-        "electric-tantra-linux-iso",
-        "electric-tantra-repo",
-        "tantrik-artools",
-        "yups"
+				"matangi-gtk-theme",
+				"electric-tantra-linux-iso",
+				"electric-tantra-repo",
+				"tantrik-artools",
+				"yups"
 			]
+		},
+		{
+			"type": "orgs",
+			"slug": "Sanatana-Linux",
+			"ignore": [".github"]
 		},
 		{
 			"type": "users",
 			"slug": "Thomashighbaugh",
 			"ignore": [
-        "coolStarter",
-        "crazy-wise-gatsby-starter",
-        "electric-tantra-xfce4-branding",
-        "electric-tantra-pkgbuilds",
-        "manjaro-hypervisor-playbook"
-      			]
+				"coolStarter",
+				"crazy-wise-gatsby-starter",
+				"electric-tantra-xfce4-branding",
+				"electric-tantra-pkgbuilds",
+				"manjaro-hypervisor-playbook"
+			]
 		}
 	],
 	"pagesIgnore": [],

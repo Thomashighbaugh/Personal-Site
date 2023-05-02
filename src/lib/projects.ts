@@ -5,7 +5,7 @@ import type { GitHubRepos, Project, ProjectPost } from '~/types';
 import { projectSrcs } from '~/data/profile.json';
 import { ProjectSrc } from '~/types/profile';
 
- const fetchRepos = async ({ slug, type, ignore }: ProjectSrc): Promise<GitHubRepos> => {
+const fetchRepos = async ({ slug, type, ignore }: ProjectSrc): Promise<GitHubRepos> => {
 	const response = await fetch(`https://api.github.com/${type}/${slug}/repos?per_page=100`, {
 		headers: {
 			...(process.env.GITHUB_PAT && {
@@ -27,12 +27,12 @@ import { ProjectSrc } from '~/types/profile';
 		return null;
 	}
 
-	const repos = await response.json() as GitHubRepos;
+	const repos = (await response.json()) as GitHubRepos;
 
 	return repos.filter((repo) => {
 		return !ignore.includes(repo.name);
 	});
-}
+};
 
 /**
  * Fetch Projects
@@ -60,7 +60,7 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 			// Strip the emoji suffix from the repo description
 			// const trimmedDescription = (repo.description || '').split(' ');
 			// trimmedDescription.shift();
-			const description = repo.description || ''
+			const description = repo.description || '';
 
 			// Check if there is a matching blog post to attach
 			const repoPost =

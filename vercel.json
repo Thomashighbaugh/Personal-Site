@@ -6,16 +6,17 @@
 	"public": true,
 	"regions": ["lhr1"],
 	"redirects": [
-		{ "source": "/github", "destination": "https://github.com/tobitenno" },
-		{ "source": "/linkedin", "destination": "https://www.linkedin.com/in/voborilmatej" },
+		{ "source": "/github", "destination": "https://github.com/Thomashighbaugh" },
+		{ "source": "/linkedin", "destination": "https://www.linkedin.com/in/thomas-leon-highbaugh" },
 		{ "source": "/portfolio", "destination": "/projects" },
-		{ "source": "/twitter", "destination": "https://twitter.com/tobitenno" },
+		{ "source": "/twitter", "destination": "https://twitter.com/thomashighbaugh" },
 		{
 			"source": "/contact",
-			"destination": "https://twitter.com/direct_messages/create/tobitenno"
+			"destination": "https://twitter.com/direct_messages/create/thomashighbaugh"
 		},
 		{
-			"source": "/cal", "destination": "https://cal.com/matej"
+			"source": "/cal",
+			"destination": "https://cal.com/thomashighbaugh"
 		}
 	]
 }

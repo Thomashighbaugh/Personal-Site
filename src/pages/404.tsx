@@ -24,19 +24,22 @@ export default function Error(): JSX.Element {
 							<br />
 							You have navigated to a page that does not exist! If you were brought
 							here by an internal link please send me an email{' '}
-							<a href="mailto:me@thomasleonhighbaugh.me">me@thomasleonhighbaugh.me</a>.
+							<a href="mailto:me@thomasleonhighbaugh.me">me@thomasleonhighbaugh.me</a>
+							.
 						</p>
 						<div className="mt-6 flex justify-center items-center space-x-4">
 							<Button.Standard
 								type={NavigationItemType.ACTION}
 								onClick={(): void => history.go(-1)}
-								icon="feather:arrow-left">
+								icon="feather:arrow-left"
+							>
 								Back
 							</Button.Standard>
 							<Button.Standard
 								type={NavigationItemType.LINK}
 								href="/"
-								icon="feather:home">
+								icon="feather:home"
+							>
 								Home
 							</Button.Standard>
 						</div>

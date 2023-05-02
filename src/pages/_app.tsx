@@ -63,7 +63,9 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
 						1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
 						1px 30px 60px rgba(16, 16, 16, 0.4);
 				}
-				.project-title, .post-title, .blog-title {
+				.project-title,
+				.post-title,
+				.blog-title {
 					font-family: 'Dimitri', sans;
 				}
 				#nprogress .bar {

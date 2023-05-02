@@ -20,7 +20,8 @@ export function _Post({ index, frontmatter }: PostProps): JSX.Element {
 			<a
 				aria-label={ariaLabel}
 				className="flex flex-col bg-white bg-opacity-75 dark:bg-primary-900 dark:bg-opacity-75 backdrop-filter backdrop-blur-sm border-2 border-primary-100 dark:border-primary-400 rounded-2xl overflow-hidden hover:shadow-xl cursor-pointer transform motion-safe:hover:-translate-y-1 default-transition default-focus"
-				href={href}>
+				href={href}
+			>
 				{frontmatter.banner && index <= 2 && (
 					<div className="relative flex justify-center w-full max-w-xl my-auto rounded-t-lg overflow-hidden">
 						<div className="w-full h-full lg:h-48 bg-primary-200 dark:bg-primary-600 motion-safe:animate-pulse" />
@@ -39,7 +40,8 @@ export function _Post({ index, frontmatter }: PostProps): JSX.Element {
 					className={clsx(
 						'flex-1 flex flex-col justify-between p-6 rounded-2xl ',
 						frontmatter.banner && index <= 2 && 'lg:(rounded-tr-none rounded-tl-none)',
-					)}>
+					)}
+				>
 					<div className="flex flex-col flex-1 justify-around rounded-lg text-primary-600 dark:text-white default-focus">
 						<h4 className="text-xl font-bold text-primary-900 dark:text-primary-50 post-title">
 							{frontmatter.title}
@@ -47,7 +49,8 @@ export function _Post({ index, frontmatter }: PostProps): JSX.Element {
 						{((frontmatter.description && frontmatter.description_show) || true) && (
 							<p
 								aria-label={frontmatter.description}
-								className="mt-3 text-base line-clamp-2">
+								className="mt-3 text-base line-clamp-2"
+							>
 								{frontmatter.description}
 							</p>
 						)}

@@ -4,9 +4,5 @@
 	"eslint.validate": ["html", "javascriptreact", "typescriptreact"],
 	"prettier.enable": true,
 	"typescript.tsdk": "node_modules/typescript/lib",
-	"cSpell.words": [
-		"clsx",
-		"glassmorphism",
-		"Iconify"
-	]
+	"cSpell.words": ["clsx", "glassmorphism", "Iconify"]
 }

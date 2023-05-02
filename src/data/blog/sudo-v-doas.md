@@ -1,11 +1,11 @@
 ---
 
 title_prefix: Guide To
-title: doas v sudo
-description: A discussion about the sudo alternative doas comparing the two and why I switched to doas.
-date: '2023-29-04'
+title: "doas v sudo"
+description: "A discussion about the sudo alternative doas comparing the two and why I switched to doas."
+date: '2023-04-29'
 banner: '/blog/sudo/sudo.jpg'
-banner_alt: a very bad idea to run that command, it means delete the whole file tree of the system and is a commonly discussed novice mistake we all make at some point using Linux.
+banner_alt: it is a very bad idea to run that command, it means delete the whole file tree of the system and is a commonly discussed novice mistake we all make at some point using Linux.
 
 ---
 

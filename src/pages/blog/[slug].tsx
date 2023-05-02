@@ -65,7 +65,8 @@ export default function BlogPost({ post }: BlogPostProps): JSX.Element {
 							},
 						],
 					},
-				}}>
+				}}
+			>
 				<div className="relative px-4 py-16 overflow-hidden">
 					<div className="relative px-4 sm:px-6 lg:px-8">
 						{post.frontmatter.banner && (post.frontmatter.banner_show ?? true) && (

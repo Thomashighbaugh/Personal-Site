@@ -1,7 +1,5 @@
 import type { MDXRemoteSerializeResult } from 'next-mdx-remote';
 
-
-
 export interface RawFrontMatter {
 	banner_alt?: string;
 	banner_show?: boolean;

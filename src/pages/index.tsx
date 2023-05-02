@@ -1,10 +1,8 @@
-import dynamic from 'next/dynamic';
 import { Icon } from '@iconify/react';
 
 import { Animate, Button, Pill } from '~/components';
 import { NavigationItemType } from '~/types';
 import { Layout } from '~/layouts';
-
 
 import type { NavigationItem } from '~/types';
 
@@ -32,36 +30,38 @@ const ACTIONS: Array<NavigationItem> = [
 
 export default function HomePage(): JSX.Element {
 	const description = `Web Developer | Linux Professional | Digital Artist`;
-const location = `San Francisco, California`
+	const location = `San Francisco, California`;
 	return (
 		<Layout.Default>
 			<div className="min-h-screen flex flex-col items-center justify-between py-12">
 				<div className="max-w-md sm:max-w-lg md:sm:max-w-2xl lg:sm:max-w-3xl w-full space-8 text-center grid ">
-
 					<Animate
 						as="h1"
 						animation={{
 							opacity: [0, 1],
-							scale: [0.75, 1],
+							scale: [0.25, 1],
 						}}
-						className="col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-primary-50 text-4xl sm:text-4xl md:text-4xl lg:text-5xl tracking-tight font-extrabold col-start-1 row-start-1 drop-shadow-xl opacity-100 z-5 index-title">
+						className="col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-primary-50 text-4xl sm:text-4xl md:text-4xl lg:text-5xl tracking-tight font-extrabold drop-shadow-xl opacity-100 z-5 index-title"
+					>
 						<Pill.Standard>Thomas Leon Highbaugh</Pill.Standard>
-</Animate>
+					</Animate>
 					<Animate
 						as="div"
 						animation={{
 							opacity: [0, 1],
-							scale: [0.75, 1],
+							scale: [0.25, 1],
 						}}
-						className="text-primary-600 col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight font-extrabold col-start-1 row-start-1 ">
-            <svg
-            className="mx-auto self-center z-50 "
+						className="text-primary-600 col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight font-extrabold col-start-1 row-start-1 "
+					>
+						<svg
+							className="mx-auto self-center z-50 "
 							width="420"
 							height="420"
 							viewBox="0 0 160 160"
 							fill="url(#Gradient2)"
 							stroke="#444444aa"
-							strokeWidth="2px">
+							strokeWidth="2px"
+						>
 							<defs>
 								<linearGradient id="Gradient3" x1="0" x2="0" y1="0" y2="1">
 									<stop offset="0%" stopColor="#94e4ff" stopOpacity="10" />
@@ -85,7 +85,8 @@ const location = `San Francisco, California`
 									d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
 									fill="url(#Gradient1)"
 									stroke="#555555aa"
-									strokeWidth="1px">
+									strokeWidth="1px"
+								>
 									<animateTransform
 										attributeName="transform"
 										type="rotate"
@@ -105,20 +106,21 @@ const location = `San Francisco, California`
 								transform="matrix(0.836, -0.495, 0.495, 0.836, 80, 80)"
 							/>
 						</svg>
-</Animate>
+					</Animate>
 					<Animate
 						as="p"
 						animation={{
 							opacity: [0, 1],
-							scale: [0.75, 1],
+							scale: [0.25, 1],
 						}}
 						className="w-full mt-0 md:mt-1 mx-auto text-base dark:text-primary-200 text-primary-700 font-bold sm:text-lg md:text-xl "
 						transition={{
-							delay: 0.5,
-						}}>
+							delay: 1.5,
+						}}
+					>
 						{description}
-                        <br/>
-                        {location}
+						<br />
+						{location}
 					</Animate>
 
 					<div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-4 space-y-1 sm:space-y-0 w-full mt-4 sm:mt-2">
@@ -135,7 +137,8 @@ const location = `San Francisco, California`
 									key={index}
 									transition={{
 										delay: 0.1 * (index + 2) + 0.5,
-									}}>
+									}}
+								>
 									<Button.Outline href={action.href}>
 										{action.icon}
 										<span>{action.text}</span>

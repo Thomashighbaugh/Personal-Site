@@ -24,7 +24,8 @@ export function Action({
 				'relative inline-flex justify-center h-16 w-16 self-center px-3 py-2 bg-white text-primary-700 dark:(text-primary-50 bg-primary-900) hover:(text-primary-900 bg-primary-200) dark:(hover:bg-primary-700 hover:text-primary-300) rounded-xl',
 				className,
 			)}
-			{...rest}>
+			{...rest}
+		>
 			{children}
 		</Component>
 	);

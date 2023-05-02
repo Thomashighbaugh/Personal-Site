@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 
@@ -17,12 +16,7 @@ interface ItemProps extends WithChildren {
 	title: string;
 }
 
-export function Item({
-	actions,
-	children,
-	description,
-	title,
-}: ItemProps): JSX.Element {
+export function Item({ actions, children, description, title }: ItemProps): JSX.Element {
 	return (
 		<li className="bg-white bg-opacity-75 dark:bg-primary-900 dark:bg-opacity-75 backdrop-filter backdrop-blur-sm border border-primary-100 dark:border-primary-300 rounded-xl transition ease-in-out duration-300">
 			<div className="flex flex-col sm:flex-row items-center justify-between px-4 py-4 sm:px-6">
@@ -48,7 +42,8 @@ export function Item({
 										<Action
 											aria-label={action.label}
 											key={index}
-											onClick={action.onClick}>
+											onClick={action.onClick}
+										>
 											<span className="sr-only">{action.label}</span>
 											<Icon className="  self-center" icon={action.icon} />
 										</Action>
@@ -63,7 +58,8 @@ export function Item({
 												key={index}
 												onClick={action.onClick}
 												rel="noopener noreferrer"
-												target="_blank">
+												target="_blank"
+											>
 												<span className="sr-only">{action.label}</span>
 												<Icon className=" self-center" icon={action.icon} />
 											</Action>
@@ -75,9 +71,13 @@ export function Item({
 												as="a"
 												aria-label={action.label}
 												key={index}
-												onClick={action.onClick}>
+												onClick={action.onClick}
+											>
 												<span className="sr-only">{action.label}</span>
-												<Icon className="  self-center" icon={action.icon} />
+												<Icon
+													className="  self-center"
+													icon={action.icon}
+												/>
 											</Action>
 										</Link>
 									);

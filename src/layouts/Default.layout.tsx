@@ -5,15 +5,11 @@ import { useSeoProps } from '~/lib';
 
 import type { WithChildren, WithProps } from '~/types';
 
-
 interface DefaultLayoutProps extends WithChildren {
 	seo?: Partial<WithProps<typeof NextSeo>>;
 }
 
-export function DefaultLayout({
-	children,
-	seo: customSeo,
-}: DefaultLayoutProps): JSX.Element {
+export function DefaultLayout({ children, seo: customSeo }: DefaultLayoutProps): JSX.Element {
 	const seo = useSeoProps(customSeo);
 
 	return (
@@ -22,7 +18,7 @@ export function DefaultLayout({
 			<Navbar.Standard />
 			<main className="flex flex-col justify-center px-8 min-h-full min-w-full">
 				{children}
-			</main> 
+			</main>
 		</>
 	);
 }

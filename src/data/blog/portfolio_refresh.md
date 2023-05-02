@@ -37,4 +37,17 @@ In creating this site, I wanted to include some elements of the new design trend
 
 Thanks to my discovery of [Pattern Monster](https://pattern.monster/), I have found a fresh SVG image to replace the one provided by [Hero Patterns](heropatterns.com/) that helps keep the design looking fresh and visually interesting. The `Pattern Monster` pattern provided came as an `SVG` file, which I copied into the site's `background:` CSS attribute in the same manner that the `Hero Patterns` option was, which took a little finesse but worked perfectly and even works well in both light and dark mode due to the added transparency. 
 
+---
 
+### GitHub's API 
+
+I found using the GitHub API to query for personal and organizational repositories is a great way to showcase my coding projects on my portfolio website. With the GitHub API, I can access information about my repositories, such as their names, descriptions, and URLs, and display them in a visually appealing manner on my website. I can also customize the display of my repositories by adding filters, sorting options, and pagination. This API allows me to showcase my coding skills and experience in an efficient and organized way, while also giving visitors the ability to browse and interact with my projects. Overall, integrating the GitHub API into my portfolio website is a great way to showcase my coding prowess and demonstrate my commitment to my craft.
+
+#### On Redesigning the Projects Section 
+
+By leveraging the GitHub API, I am display real-time information about my latest projects and highlight the full range of my coding skills and experience. Visitors to my portfolio can view detailed information about each project, including its name, description, and repository link, giving them a clear understanding of my work and accomplishments. This approach also makes it easy to keep my portfolio up-to-date, as new projects are automatically added and removed as they are created or retired. Overall, redesigning the projects section of my portfolio to pull GitHub information and link to the repository is an effective way to showcase my software development skills and experience and impress potential employers and clients.
+
+
+### Code Base Refactoring 
+
+Reorganizing my portfolio website's code into a `src` directory containing subdirectories for components, data, layouts, lib, pages, and types can help clean up the top level of the repository and make it more organized and manageable. By separating my code into these distinct directories, I can better compartmentalize my codebase and make it easier to navigate and find specific files. The `components` directory can contain reusable React components, while the `data` directory can hold any data files or configurations needed by my application. The `layouts` directory can contain reusable layout components, and the `lib` directory can contain any utility functions or third-party libraries used by my application. The `pages` directory can hold my Next.js pages, and the `types` directory can contain any TypeScript type definitions used throughout the codebase. By adopting this organization, you can create a more modular and maintainable codebase, enabling easier collaboration with other developers and improving my overall productivity.

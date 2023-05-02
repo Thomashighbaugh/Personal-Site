@@ -63,12 +63,10 @@ export function useNavigation(): {
 } {
 	const state = usePersistentState();
 	const { animations: sound } = state.get();
-	
+
 	const { theme, setTheme } = useTheme();
 
-	const menuItems: NavigationItems = [
-		...staticMenuItems,
-	];
+	const menuItems: NavigationItems = [...staticMenuItems];
 
 	const settingsItems: NavigationItems = [
 		[

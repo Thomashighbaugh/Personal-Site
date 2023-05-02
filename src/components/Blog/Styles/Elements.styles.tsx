@@ -2,9 +2,14 @@ export function ElementsStyles(): JSX.Element {
 	return (
 		<style global jsx>
 			{`
-      h1,h2,h3,h4,h5,h6{
-        @apply dark:text-white text-primary-600;
-      }
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					@apply dark:text-white text-primary-600;
+				}
 				a {
 					@apply dark:text-gray-50 no-underline rounded transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-primary-500 focus:ring-offset-2;
 
@@ -20,7 +25,7 @@ export function ElementsStyles(): JSX.Element {
 				p,
 				ul,
 				li {
-					@apply text-primary-600 dark:text-white ;
+					@apply text-primary-600 dark:text-white;
 				}
 
 				strong {
@@ -40,7 +45,7 @@ export function ElementsStyles(): JSX.Element {
 				}
 
 				code {
-					@apply  rounded-xl;
+					@apply rounded-xl;
 
 					&:after,
 					&:before {
@@ -49,7 +54,7 @@ export function ElementsStyles(): JSX.Element {
 				}
 
 				pre {
-					@apply  m-0 dark:text-white border-2 border-primary-400 dark:border-primary-400 rounded-xl;
+					@apply m-0 dark:text-white border-2 border-primary-400 dark:border-primary-400 rounded-xl;
 				}
 
 				th {
@@ -60,11 +65,11 @@ export function ElementsStyles(): JSX.Element {
 				}
 
 				ol li::before {
-          @apply rounded-xl
+					@apply rounded-xl;
 				}
 
 				.remark-code-title {
-					@apply g-white px-4 py-2 text-primary-600 dark:text-white font-medium border-2 border-primary-600 dark:border-primary-400 rounded-lg ;
+					@apply g-white px-4 py-2 text-primary-600 dark:text-white font-medium border-2 border-primary-600 dark:border-primary-400 rounded-lg;
 				}
 			`}
 		</style>
