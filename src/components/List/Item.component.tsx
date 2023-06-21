@@ -18,23 +18,21 @@ interface ItemProps extends WithChildren {
 
 export function Item({ actions, children, description, title }: ItemProps): JSX.Element {
 	return (
-		<li className="bg-white bg-opacity-75 dark:bg-primary-900 dark:bg-opacity-20 backdrop-filter backdrop-blur-sm border border-primary-100 dark:border-primary-300 rounded-xl transition ease-in-out duration-300">
-			<div className="flex flex-col  items-center justify-between px-4 py-4 sm:px-6">
-				<div className="flex flex-1 items-center justify-start w-full">
-					<div className="min-w-0 flex-1 px-4">
-						<h1 className="text-primary-700 dark:text-white text-2xl w-full text-center font-bold project-title">
+		<li className="bg-white bg-opacity-50 dark:bg-primary-900 max-h-full min-h-full h-full dark:bg-opacity-10 backdrop-filter backdrop-blur-sm border border-primary-100 dark:border-primary-300 rounded-xl transition ease-in-out duration-300">
+			<div className="flex flex-col h-full   px-4 py-4 sm:px-6">
+		
+						<h1 className="text-primary-700 dark:text-white text-2xl w-full text-center  project-title">
 							{title}
 						</h1>
 						{description && (
-							<p className="flex items-center mt-1 text-primary-500 dark:text-primary-200 text-sm">
+							<p className="flex-1 items-center mt-2 text-primary-500 dark:text-primary-200 text-sm">
 								{description}
 							</p>
 						)}
-					</div>
-				</div>
+	
 
 				{actions && (
-					<div className="inline-flex items-center align-middle justify-end space-x-2 w-full  mt-1 sm:mt-1">
+					<div className="inline-flex place-content-end items-center align-middle justify-end relative end-0 right-0  bottom-0 w-full  mt-1 sm:mt-1">
 						{actions.map((action, index) => {
 							switch (action.type) {
 								case ListActionType.BUTTON:
