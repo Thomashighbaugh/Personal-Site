@@ -39,7 +39,7 @@ export default function ProjectsPage({ stringifiedProjects }: ProjectProps): JSX
 								animation={{ y: [50, 0], opacity: [0, 1] }}
 								key={index}
 								transition={{
-									delay: 0.1 * index,
+									delay: 0.2 * index,
 								}}
 							>
 								<List.Item

@@ -26,7 +26,9 @@ export default function Error(): JSX.Element {
 						<p className="mt-8 text-sm font-medium text-primary-ry-ry-300 dar-primary-imary-imary-400">
 							Looks like something went wrong on our end.
 							<br />
-							This isn&apos;t your fault, it&apos;s ours. Please try again later.
+							Please send me an email describing what happened so I can prevent this
+							from happening to anyone else!{' '}
+							<a href="mailto:thighbaugh@zoho.com">thighbaugh@zoho.com</a>
 						</p>
 						<div className="mt-6 flex justify-center items-center space-x-4">
 							<Button.Standard

@@ -18,11 +18,11 @@ interface ItemProps extends WithChildren {
 
 export function Item({ actions, children, description, title }: ItemProps): JSX.Element {
 	return (
-		<li className="bg-white bg-opacity-75 dark:bg-primary-900 dark:bg-opacity-75 backdrop-filter backdrop-blur-sm border border-primary-100 dark:border-primary-300 rounded-xl transition ease-in-out duration-300">
-			<div className="flex flex-col sm:flex-row items-center justify-between px-4 py-4 sm:px-6">
+		<li className="bg-white bg-opacity-75 dark:bg-primary-900 dark:bg-opacity-20 backdrop-filter backdrop-blur-sm border border-primary-100 dark:border-primary-300 rounded-xl transition ease-in-out duration-300">
+			<div className="flex flex-col  items-center justify-between px-4 py-4 sm:px-6">
 				<div className="flex flex-1 items-center justify-start w-full">
 					<div className="min-w-0 flex-1 px-4">
-						<h1 className="text-primary-700 dark:text-white text-2xl font-bold project-title">
+						<h1 className="text-primary-700 dark:text-white text-2xl w-full text-center font-bold project-title">
 							{title}
 						</h1>
 						{description && (

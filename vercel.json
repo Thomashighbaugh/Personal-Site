@@ -7,7 +7,10 @@
 	"regions": ["lhr1"],
 	"redirects": [
 		{ "source": "/github", "destination": "https://github.com/Thomashighbaugh" },
-		{ "source": "/linkedin", "destination": "https://www.linkedin.com/in/thomas-leon-highbaugh" },
+		{
+			"source": "/linkedin",
+			"destination": "https://www.linkedin.com/in/thomas-leon-highbaugh"
+		},
 		{ "source": "/portfolio", "destination": "/projects" },
 		{ "source": "/twitter", "destination": "https://twitter.com/thomashighbaugh" },
 		{

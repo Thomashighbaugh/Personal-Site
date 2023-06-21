@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: thomasleonhighbaugh.me
-Token: 4dcda190ba3d58030d0732cde5fd6576d19b7a2798ed3333b552e3bab84e5d4a

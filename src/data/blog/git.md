@@ -4,11 +4,14 @@ banner: /blog/git/octocat.png
 title_prefix: Guide To
 title: Get the Git
 description: A quick, down and dirty introduction to the Git version control system and its usage within thecontext of Github
-date: '2019-09-05'
+date: "2019-09-05"
 ---
+
 Let's say you want to backup your settings (or dotfiles in Linux parlance) on someone else's server as demanded by best practices and better judgement. To do this, you could use one of a million commercial cloud services that all work about the same and are easy enough to use with the GUI but lack the simplicity of a single command line to bring your data to your system and another to provision that data. So there are still innumerable options offering those features, but let's say you aren't seeking to be a super nerd and go with a solution favored by many, using the VCS (Version Control System) called git.
 
-> Note:This tutorial will assume you have git installed, which on Linux is package manager dependent, so consult your distro's documentation. As for Windows or Mac, I do not know, sorry, I don't use either.
+> Note
+>
+> This tutorial will assume you have git installed, which on Linux is package manager dependent, so consult your distro's documentation. As for Windows or Mac, I do not know, sorry, but there are bound to be plenty of high-quality guides on installing git on either platform available via Google search queries.
 
 ### Get the Git
 

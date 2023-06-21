@@ -20,8 +20,6 @@ export default function Error(): JSX.Element {
 							Whoops!
 						</h1>
 						<p className="mt-8 text-sm font-medium text-primary-300 dark:text-primary-400">
-							Looks like you took a wrong turn.
-							<br />
 							You have navigated to a page that does not exist! If you were brought
 							here by an internal link please send me an email{' '}
 							<a href="mailto:me@thomasleonhighbaugh.me">me@thomasleonhighbaugh.me</a>
