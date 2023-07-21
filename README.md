@@ -15,7 +15,22 @@
 
 </div>
 
+## Features and Tech Stack
+
+-   Next.js 
+-   Typescript *Preact* 
+-   Tailwind.css 
+-   Windicss
+-   Blog posts rendered from Markdown files
+-   Navigation and Settings Buttons revealing modal popup menus 
+-   Vercel as host for easy and reliable deployment
+-   Github API to automate projects section
+-   SVG background from [pattern monster](https://pattern.monster)
+-   Animated SVG in the hero section on the site's first page
+
 ## Development
+
+If you want to modify the site for your own purposes, or submit a Pull Request to help me out, then you will need to do the following to get started:
 
 Install dependencies
 
@@ -38,4 +53,5 @@ Build for production
 ```zsh
 
 yarn build
+
 ```
