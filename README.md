@@ -15,18 +15,14 @@
 
 </div>
 
-## Features and Tech Stack
+## Personal Ecosystem
 
--   Next.js 
--   Typescript *Preact* 
--   Tailwind.css 
--   Windicss
--   Blog posts rendered from Markdown files
--   Navigation and Settings Buttons revealing modal popup menus 
--   Vercel as host for easy and reliable deployment
--   Github API to automate projects section
--   SVG background from [pattern monster](https://pattern.monster)
--   Animated SVG in the hero section on the site's first page
+This site is the core of my personal branding online ecosystem, that has separate pieces leveraged on it that also function as stand alone sites (which is useful for giving out links without expecting third parties to wade through this site to quickly find what they need). 
+
+The other components of this ecosystem are:
+    - [my resume](https://resume-thomas-leon-highbaugh.vercel.app/) [github](https://github.com/Thomashighbaugh/resume)
+    - [biolink: a linktree alternative](https://biolink-delta.vercel.app/) [github](https://github.com/Thomashighbaugh/biolink)
+
 
 ## Development
 
