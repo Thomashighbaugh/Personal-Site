@@ -12,10 +12,6 @@
 /.next/
 /out/
 
-# next-sitemap
-public/robots.txt
-public/sitemap*.xml
-
 # production
 /build
 
@@ -29,23 +25,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*.local
 
-# Yarn
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-
-# Vercel
+# vercel
 .vercel
 
-# JetBrains
-.idea/
-.fleet/
+# typescript
+*.tsbuildinfo
+next-env.d.ts
