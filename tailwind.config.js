@@ -34,9 +34,7 @@ module.exports = {
 					900: '#0a0a0a',
 				},
 			},
-			fontFamily: {
-				inter: ['Inter', ...defaultTheme.fontFamily.sans],
-			},
+
 		},
 	},
 	variants: {},

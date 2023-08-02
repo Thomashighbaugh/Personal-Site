@@ -6,7 +6,7 @@ import { ThemeProvider } from 'next-themes';
 import { useEffectOnce, useEvent } from 'react-use';
 import { useRouter } from 'next/router';
 
-import 'inter-ui/inter.css';
+
 import 'nprogress/nprogress.css';
 import 'windi.css';
 

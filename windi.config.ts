@@ -24,9 +24,6 @@ export default defineConfig({
 				15: '0.15',
 			},
 			colors,
-			fontFamily: {
-				sans: ['Inter', ...defaultTheme.fontFamily.sans],
-			},
 			keyframes: {
 				wave: {
 					'0%': { transform: 'rotate(0deg)' },
