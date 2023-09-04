@@ -21,7 +21,7 @@ export function Item({ actions, children, description, title }: ItemProps): JSX.
 		<li className="bg-white bg-opacity-50 dark:bg-primary-900 max-h-full min-h-full h-full dark:bg-opacity-10 backdrop-filter backdrop-blur-sm border border-primary-100 dark:border-primary-300 rounded-xl transition ease-in-out duration-300">
 			<div className="flex flex-col h-full   px-4 py-4 sm:px-6">
 		
-						<h1 className="text-primary-700 dark:text-white text-2xl w-full text-center  project-title">
+						<h1 className="text-primary-700 dark:text-white text-2xl w-full text-center  project-title overflow-hidden">
 							{title}
 						</h1>
 						{description && (

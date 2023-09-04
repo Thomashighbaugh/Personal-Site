@@ -22,7 +22,7 @@ export function _Post({ index, frontmatter }: PostProps): JSX.Element {
 				className="flex flex-col bg-white bg-opacity-75 dark:bg-primary-900 dark:bg-opacity-75 backdrop-filter backdrop-blur-sm border-2 border-primary-100 dark:border-primary-400 rounded-2xl overflow-hidden hover:shadow-xl cursor-pointer transform motion-safe:hover:-translate-y-1 default-transition default-focus"
 				href={href}
 			>
-				{frontmatter.banner && index <= 2 && (
+				{frontmatter.banner && (
 					<div className="relative flex justify-center w-full max-w-xl my-auto rounded-t-lg overflow-hidden">
 						<div className="w-full h-full lg:h-48 bg-primary-200 dark:bg-primary-600 motion-safe:animate-pulse" />
 						<Image

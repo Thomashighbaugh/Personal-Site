@@ -34,9 +34,9 @@ export default function BlogPage({ serialisedFrontmatters }: BlogProps): JSX.Ele
 	return (
 		<Layout.Default seo={{ title: `${alias} ─ blog` }}>
 			<div className="mt-8 sm:mt-16 mb-20 mx-0 sm:mx-6 lg:mb-28 lg:mx-8">
-				<div className="relative max-w-6xl mx-auto">
+				<div className="relative max-w-6xl w-full mx-auto">
 					<Blog.Latest frontmatter={latestPost} />
-					<div className="mt-4 lg:mt-12 grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:max-w-none">
+					<div className="mt-4 lg:mt-12 grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:max-w-none">
 						{frontmatters.map((frontmatter, i) => (
 							<Blog.Post key={i} frontmatter={frontmatter} index={i} />
 						))}

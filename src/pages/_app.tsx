@@ -6,7 +6,6 @@ import { ThemeProvider } from 'next-themes';
 import { useEffectOnce, useEvent } from 'react-use';
 import { useRouter } from 'next/router';
 
-
 import 'nprogress/nprogress.css';
 import 'windi.css';
 
@@ -56,11 +55,20 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
 				}
 				.index-title {
 					font-family: 'Dimitri', sans;
-					text-shadow: 1px 1px 1px #2d2f32, 1px 2px 1px #2d2f32, 1px 3px 1px #2d2f32,
-						1px 4px 1px #575760, 1px 5px 1px #575760, 1px 6px 1px #575760,
-						1px 7px 1px #575760, 1px 8px 1px #575760, 1px 9px 1px #6d6e71,
-						1px 10px 1px #6d6e71, 1px 18px 6px rgba(16, 16, 16, 0.4),
-						1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+					text-shadow:
+						1px 1px 1px #2d2f32,
+						1px 2px 1px #2d2f32,
+						1px 3px 1px #2d2f32,
+						1px 4px 1px #575760,
+						1px 5px 1px #575760,
+						1px 6px 1px #575760,
+						1px 7px 1px #575760,
+						1px 8px 1px #575760,
+						1px 9px 1px #6d6e71,
+						1px 10px 1px #6d6e71,
+						1px 18px 6px rgba(16, 16, 16, 0.4),
+						1px 22px 10px rgba(16, 16, 16, 0.2),
+						1px 25px 35px rgba(16, 16, 16, 0.2),
 						1px 30px 60px rgba(16, 16, 16, 0.4);
 				}
 				.project-title,

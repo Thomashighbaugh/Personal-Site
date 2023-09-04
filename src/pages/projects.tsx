@@ -2,7 +2,7 @@ import { fetchProjects } from '~/lib/projects';
 import { Layout } from '~/layouts';
 import { Animate, List } from '~/components';
 import { ListActionType } from '~/types';
-
+import { Pill } from '~/components';
 import type { GetStaticProps } from 'next';
 
 import type { ListAction, Project } from '~/types';
@@ -32,7 +32,18 @@ export default function ProjectsPage({ stringifiedProjects }: ProjectProps): JSX
 	return (
 		<Layout.Default seo={{ title: `${alias} ─ projects` }}>
 			<div className="my-24 mx-2 sm:mx-6 lg:mb-28 lg:mx-8">
-				<div className="relative max-w-xl mx-auto">
+				<Animate
+					as="h1"
+					animation={{
+						opacity: [0, 1],
+						scale: [0.25, 1],
+					}}
+					className="col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-primary-50 text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight font-extrabold drop-shadow-xl opacity-100 z-5 index-title"
+				>
+					<Pill.Standard>Projects</Pill.Standard>
+				</Animate>
+
+				<div className="relative max-w-5xl w-full mx-auto">
 					<List.Container>
 						{projects.map((project, index) => (
 							<Animate

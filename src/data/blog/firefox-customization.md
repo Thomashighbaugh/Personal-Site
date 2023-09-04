@@ -1,6 +1,6 @@
 ---
 banner_alt: Firefox Logo
-banner: https://www.cnet.com/a/img/resize/82b15b96bcf305233e7d01b9bc28a5c170129f4a/hub/2019/06/05/644162fd-5f99-4a9c-becf-37ebcf2d97ea/firefox-new-icon-2019-06.jpg?auto=webp&fit=crop&height=675&width=1200
+banner: "/blog/firefox-customization/banner.jpg"
 title_prefix: Guide to
 title: Firefox userChrome.js Modification
 description: A response to a Reddit question that surveys the world of Firefox userChrome.js customization which I have spent way too much time on.
