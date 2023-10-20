@@ -6,7 +6,7 @@ import type { ReturnedValue } from 'use-sound/dist/types';
 export function useClick(): ReturnedValue | [() => void, null] {
 	const state = usePersistentState();
 	const result = useSound('/sounds/click.ogg', {
-		volume: 0.05,
+		volume: 0.85,
 	});
 
 	if (!state.get().sound)

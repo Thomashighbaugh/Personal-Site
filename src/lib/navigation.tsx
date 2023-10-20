@@ -36,15 +36,15 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 		{
 			type: NavigationItemType.LINK,
 			icon: 'feather:globe',
-			text: 'Around the Web',
+			text: 'Social Links',
 			href: 'https://biolink-delta.vercel.app',
 			external: true,
 		},
 		social.twitter && {
 			type: NavigationItemType.LINK,
-			icon: 'feather:twitter',
-			text: 'Twitter',
-			href: `https://twitter.com/${social.twitter}`,
+			icon: 'feather:linkedin',
+			text: 'LinkedIn',
+			href: `https://linkedin.com/in/${social.linkedin}`,
 			external: true,
 		},
 		social.github && {
@@ -62,7 +62,7 @@ export function useNavigation(): {
 	settings: NavigationItems;
 } {
 	const state = usePersistentState();
-	const { animations: sound } = state.get();
+	const { sound } = state.get();
 
 	const { theme, setTheme } = useTheme();
 
@@ -72,9 +72,9 @@ export function useNavigation(): {
 		[
 			{
 				type: NavigationItemType.ACTION,
-				icon: sound ? 'feather:volume-2' : 'feather:volume-x',
-				endIcon: sound ? 'feather:check-circle' : 'feather:circle',
-				text: `Sounds ${sound ? 'On' : 'Off'}`,
+				icon: sound? 'feather:volume-2' : 'feather:volume-x',
+				endIcon: sound? 'feather:check-circle' : 'feather:circle',
+				text: `Sounds ${sound? 'On' : 'Off'}`,
 				onClick: () =>
 					state.set((settings) => ({
 						...settings,

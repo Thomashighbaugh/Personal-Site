@@ -16,8 +16,8 @@ type AnimateProps<T extends ElementType> = {
 } & Omit<ComponentPropsWithRef<T>, 'animation' | 'as' | 'transition'>;
 
 const defaultTransition: AnimationOptionsWithOverrides = {
-	delay: 0,
-	duration: 1500,
+	delay: 1.25,
+	duration: 1000,
 	easing: spring(),
 	repeat: 0,
 };
@@ -30,18 +30,17 @@ export function Animate<T extends ElementType>({
 	transition,
 	...rest
 }: AnimateProps<T>): JSX.Element {
-	const { animations } = usePersistentState().get();
 	const prefersReducedMotion = useMedia('(prefers-reduced-motion)', true);
 
 	const ref = useRef<HTMLElement | null>(null);
 
 	useEffect(() => {
-		if (ref.current && enabled && animations && !(prefersReducedMotion || isCrawlerUserAgent()))
+		if (ref.current && enabled && !(prefersReducedMotion || isCrawlerUserAgent()))
 			animate(ref.current, animation, {
 				...defaultTransition,
 				...transition,
 			});
-	}, [animation, animations, enabled, prefersReducedMotion, transition]);
+	}, [animation, enabled, prefersReducedMotion, transition]);
 
 	return (
 		// @ts-expect-error Valid component

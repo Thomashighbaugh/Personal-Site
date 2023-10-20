@@ -38,12 +38,12 @@ export default function ProjectsPage({ stringifiedProjects }: ProjectProps): JSX
 						opacity: [0, 1],
 						scale: [0.25, 1],
 					}}
-					className="col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-primary-50 text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight font-extrabold drop-shadow-xl opacity-100 z-5 index-title"
+					className="col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-primary-50 text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight font-extrabold drop-shadow-xl opacity-100 z-5 project-title"
 				>
 					<Pill.Standard>Projects</Pill.Standard>
 				</Animate>
 
-				<div className="relative max-w-5xl w-full mx-auto">
+				<div className="relative max-w-5xl w-full mx-auto min-h-full">
 					<List.Container>
 						{projects.map((project, index) => (
 							<Animate

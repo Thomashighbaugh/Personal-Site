@@ -26,7 +26,7 @@ export function Outline({
 		<Link href={href} passHref>
 			<a
 				className={clsx(
-					'inline-flex items-center justify-center  w-full sm:w-auto hover:bg-white hover:text-primary-400 dark:hover:bg-primary-800 dark:(border-primary-400 hover:border-primary-600) dark:(text-white hover:text-primary-500) text-primary-700 font-extrabold border-3 border-primary-600 rounded-lg cursor-pointer default-transition default-focus',
+					'inline-flex items-center justify-center  w-full sm:w-auto hover:bg-white hover:text-primary-400 dark:hover:bg-primary-800 dark:(border-primary-400 hover:border-primary-600) dark:(text-white hover:text-primary-500) text-primary-700 font-extrabold border-2 border-primary-600 rounded-lg cursor-pointer default-transition default-focus',
 					small ? 'px-4 py-1 text-sm' : 'px-8 py-2',
 					className,
 				)}

@@ -21,7 +21,7 @@ export function Latest({ frontmatter }: LatestProps): JSX.Element {
 				href={href}
 			>
 				{(frontmatter.banner_show ?? true) && (
-					<div className="relative flex justify-center my-auto w-full xl:w-2/4 h-64 border-b-2 sm:h-72 sm:border-0 sm:border-r-2 border-primary-100 dark:border-primary-500 overflow-hidden rounded-2xl rounded-b-none lg:max-w-xl lg:h-96 lg:rounded-l-2xl lg:rounded-r-none default-transition">
+					<div className="relative flex justify-center my-auto w-full xl:w-2/4 h-48 border-b-2 sm:h-48 sm:border-0 sm:border-r-2 border-primary-100 dark:border-primary-500 overflow-hidden rounded-2xl rounded-b-none lg:max-w-xl lg:h-64 lg:rounded-l-2xl lg:rounded-r-none default-transition">
 						<div className="w-full h-full mb-8 bg-primary-200 dark:bg-primary-600 rounded-lg rounded-l-none lg:(rounded-l-lg rounded-r-none motion-safe:animate-pulse)" />
 						<Image
 							alt={frontmatter.banner_alt ?? frontmatter.title}

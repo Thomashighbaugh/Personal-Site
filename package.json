@@ -28,6 +28,7 @@
 		"format": "prettier --write \"**/*.{css,js,json,jsx,ts,tsx,vue}\""
 	},
 	"dependencies": {
+		"@fullhuman/postcss-purgecss": "^5.0.0",
 		"@headlessui/react": "^1.4.1",
 		"@hookstate/core": "^3.0.13",
 		"@hookstate/persistence": "^3.0.0",
@@ -48,6 +49,7 @@
 		"next-themes": "^0.1.1",
 		"nprogress": "^0.2.0",
 		"ogl-typescript": "^0.1.40",
+		"postcss": "^8.4.31",
 		"preact": "^10.10.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",

@@ -45,7 +45,7 @@ export function ElementsStyles(): JSX.Element {
 				}
 
 				code {
-					@apply rounded-xl;
+					@apply  bg-primary-200 text-blue-500;
 
 					&:after,
 					&:before {

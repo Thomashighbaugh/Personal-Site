@@ -82,14 +82,14 @@ export default function BlogPost({ post }: BlogPostProps): JSX.Element {
 							</div>
 						)}
 
-						<div className="flex flex-col space-y-4 max-w-prose mx-auto my-4 text-lg text-center">
+						<div className="flex flex-col space-y-4 max-w-6xl mx-auto my-4 text-lg text-center">
 							<div>
 								{post.frontmatter.title_prefix && (
-									<span className="block text-primary-600 font-semibold tracking-wide uppercase text-base text-center">
+									<span className="block text-primary-600 dark:text-primary-100 font-semibold tracking-wide uppercase text-xl text-center">
 										{post.frontmatter.title_prefix}
 									</span>
 								)}
-								<span className="text-primary-900 dark:text-white sm:text-4xl text-3xl text-center leading-8 font-extrabold tracking-tight">
+								<span className="text-primary-900 dark:text-white sm:text-5xl text-4xl text-center leading-8 font-extrabold blog-title tracking-tight">
 									{post.frontmatter.title}
 								</span>
 							</div>
@@ -105,7 +105,7 @@ export default function BlogPost({ post }: BlogPostProps): JSX.Element {
 							)}
 						</div>
 
-						<article className="max-w-prose prose prose-primary prose-lg text-primary-500 dark:text-white bg-white dark:bg-primary-900 bg-opacity-75 rounded-xl border border-gray-300 dark:border-gray-400 p-12  mx-auto">
+						<article className="max-w-6xl prose prose-primary prose-lg text-primary-500 dark:text-white bg-white dark:bg-primary-900 bg-opacity-75 rounded-xl border border-gray-300 dark:border-gray-400 p-12  mx-auto">
 							<MDXRemote {...post.source} components={Blog.X} />
 						</article>
 					</div>

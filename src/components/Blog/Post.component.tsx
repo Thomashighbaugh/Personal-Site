@@ -23,7 +23,7 @@ export function _Post({ index, frontmatter }: PostProps): JSX.Element {
 				href={href}
 			>
 				{frontmatter.banner && (
-					<div className="relative flex justify-center w-full max-w-xl my-auto rounded-t-lg overflow-hidden">
+					<div className="relative flex justify-center w-full max-w-4xl my-auto rounded-t-lg overflow-hidden">
 						<div className="w-full h-full lg:h-48 bg-primary-200 dark:bg-primary-600 motion-safe:animate-pulse" />
 						<Image
 							alt={frontmatter.title}

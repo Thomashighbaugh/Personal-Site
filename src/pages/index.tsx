@@ -34,7 +34,7 @@ export default function HomePage(): JSX.Element {
 	return (
 		<Layout.Default>
 			<div className="min-h-screen flex flex-col items-center justify-between py-12">
-				<div className="max-w-md sm:max-w-lg md:sm:max-w-2xl lg:sm:max-w-3xl w-full space-8 text-center grid ">
+				<div className="max-w-md sm:max-w-lg md:sm:max-w-2xl lg:sm:max-w-3xl w-full space-4 text-center grid ">
 					<Animate
 						as="h1"
 						animation={{
@@ -55,11 +55,11 @@ export default function HomePage(): JSX.Element {
 					>
 						<svg
 							className="mx-auto self-center z-50 "
-							width="420"
-							height="420"
+							width="480"
+							height="480"
 							viewBox="0 0 160 160"
 							fill="url(#Gradient2)"
-							stroke="#444444aa"
+							stroke="#333333aa"
 							strokeWidth="2px"
 						>
 							<defs>
@@ -76,7 +76,7 @@ export default function HomePage(): JSX.Element {
 								<linearGradient id="Gradient1" x1="0" x2="1" y1="0" y2="0">
 									<stop offset="0%" stopColor="#e9efff" stopOpacity="80" />
 									<stop offset="50%" stopColor="#f5143d" stopOpacity="100" />
-									<stop offset="100%" stopColor="#feee76" stopOpacity="80" />
+									<stop offset="100%" stopColor="#feee70" stopOpacity="80" />
 								</linearGradient>
 							</defs>
 							<circle cx="80" cy="80" r="50" fill="url(#Gradient2)" />
@@ -84,7 +84,7 @@ export default function HomePage(): JSX.Element {
 								<path
 									d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
 									fill="url(#Gradient1)"
-									stroke="#555555aa"
+									stroke="#222222aa"
 									strokeWidth="1px"
 								>
 									<animateTransform
@@ -111,11 +111,11 @@ export default function HomePage(): JSX.Element {
 						as="p"
 						animation={{
 							opacity: [0, 1],
-							scale: [0.25, 1],
+							scale: [0.75, 1],
 						}}
-						className="w-full mt-0 md:mt-1 mx-auto text-base dark:text-primary-200 text-primary-700 font-bold sm:text-lg md:text-xl "
+						className="w-full mt-0 mb-2  mx-auto text-base dark:text-primary-200 text-primary-700 font-bold sm:text-lg md:text-xl "
 						transition={{
-							delay: 1.5,
+							delay: 1.25,
 						}}
 					>
 						{description}
@@ -123,7 +123,7 @@ export default function HomePage(): JSX.Element {
 						{location}
 					</Animate>
 
-					<div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-4 space-y-1 sm:space-y-0 w-full mt-4 sm:mt-2">
+					<div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-4 space-y-1 sm:space-y-0 w-full mt-6 sm:mt-2">
 						{ACTIONS.map((action, index) => {
 							if (action.type !== NavigationItemType.LINK) return null;
 
