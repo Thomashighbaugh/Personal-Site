@@ -24,7 +24,7 @@ type StandardProps =
 	  } & DefaultProps);
 
 const ButtonStyles =
-	'flex justify-center items-center h-12 px-8 py-4 bg-white hover:(bg-primary-100 bg-opacity-50 text-primary-400) dark:(bg-primary-900 hover:bg-primary-600) text-base font-bold text-primary-600 rounded-lg default-transition default-focus';
+'flex justify-center items-center h-12 px-8 py-4 bg-white hover:(bg-primary-100 bg-opacity-50 text-primary-400) dark:(bg-primary-900 hover:bg-primary-600 ) bg-opacity-50 text-base font-bold text-primary-600 rounded-lg backdrop-filter backdrop-blur-sm filter default-transition default-focus';
 
 export function Standard({ children, className, icon, ...rest }: StandardProps): JSX.Element {
 	switch (rest.type) {

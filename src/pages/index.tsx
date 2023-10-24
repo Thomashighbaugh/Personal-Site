@@ -41,7 +41,7 @@ export default function HomePage(): JSX.Element {
 							opacity: [0, 1],
 							scale: [0.25, 1],
 						}}
-						className="col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-primary-50 text-4xl sm:text-4xl md:text-4xl lg:text-5xl tracking-tight font-extrabold drop-shadow-xl opacity-100 z-5 index-title"
+						className="col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-white text-4xl sm:text-4xl md:text-4xl lg:text-5xl tracking-tight font-extrabold drop-shadow-xl opacity-100 z-5 index-title"
 					>
 						<Pill.Standard>Thomas Leon Highbaugh</Pill.Standard>
 					</Animate>
@@ -51,7 +51,7 @@ export default function HomePage(): JSX.Element {
 							opacity: [0, 1],
 							scale: [0.25, 1],
 						}}
-						className="text-primary-600 col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight font-extrabold col-start-1 row-start-1 "
+						className="text-primary-700 col-start-1 row-start-1 self-center text-center justify-center align-middle items-center content-center  dark:text-white text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight font-extrabold col-start-1 row-start-1 "
 					>
 						<svg
 							className="mx-auto self-center z-50 "

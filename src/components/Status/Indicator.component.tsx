@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 
-import { colors } from '~/lib';
 
 import type { WithClassName } from '~/types';
 
@@ -11,7 +10,6 @@ interface IndicatorProps extends WithClassName {
 
 export function Indicator({
 	className,
-	color = 'gray',
 	pulse = false,
 }: IndicatorProps): JSX.Element {
 	return (
@@ -24,13 +22,11 @@ export function Indicator({
 			<span className="absolute flex h-3 w-3">
 				{pulse && (
 					<span
-						className="absolute inline-flex w-full h-full opacity-75 rounded-full motion-safe:animate-ping"
-						style={{ backgroundColor: colors?.[color]?.['400'] }}
+						className="bg-primary-400 absolute inline-flex w-full h-full opacity-75 rounded-full motion-safe:animate-ping"
 					/>
 				)}
 				<span
-					className="relative inline-flex w-3 h-3 rounded-full"
-					style={{ backgroundColor: colors?.[color]?.['500'] }}
+        className="relative bg-primary-600 inline-flex w-3 h-3 rounded-full"
 				/>
 			</span>
 		</span>

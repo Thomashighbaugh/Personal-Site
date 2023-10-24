@@ -85,16 +85,16 @@ export function Dropdown({ children, items, position = 'top-left' }: StandardPro
 					<Transition
 						appear={true}
 						enter="transition ease-in-out"
-						enterFrom="transform scale-95 opacity-0"
+						enterFrom="transform scale-50 opacity-0"
 						enterTo="transform scale-100 opacity-100"
 						leave="transition ease-in-out"
 						leaveFrom="transform scale-100 opacity-100"
-						leaveTo="transform scale-95 opacity-0"
+						leaveTo="transform scale-50 opacity-0"
 						show={open}
 					>
 						<Menu.Items
 							className={clsx(
-								'absolute w-[calc(100vw-1rem)] sm:w-56 mt-2 bg-white bg-opacity-75 dark:bg-primary-900 dark:bg-opacity-75 backdrop-filter backdrop-blur-sm border border-primary-100 dark:border-primary-500 rounded-md shadow-lg divide-y divide-primary-100 dark:divide-primary-500 focus:outline-none',
+								'absolute w-[calc(100vw-1rem)] sm:w-56 mt-2 bg-white bg-opacity-50 dark:bg-primary-900 dark:bg-opacity-50 backdrop-filter filter  backdrop-blur-sm border border-primary-100 dark:border-primary-500 rounded-md shadow-lg divide-y divide-primary-100 dark:divide-primary-500 focus:outline-none',
 								position === 'top-left' && 'origin-top-left left-0',
 								position === 'top-right' && 'origin-top-right right-0',
 							)}
@@ -109,7 +109,7 @@ export function Dropdown({ children, items, position = 'top-left' }: StandardPro
 														return (
 															<StyledMenuItem
 																active={active}
-																className="group"
+																className="group focus:outline-1"
 																onClick={(): void => item.onClick()}
 															>
 																<MenuButtonIcon icon={item.icon} />

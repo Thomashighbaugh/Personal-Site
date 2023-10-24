@@ -1,7 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const {nextui} = require("@nextui-org/react");
+
 
 module.exports = {
 	mode: 'jit',
+  content: [
+      "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
 	purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 	darkMode: 'class',
 	theme: {
@@ -38,5 +43,5 @@ module.exports = {
 		},
 	},
 	variants: {},
-	plugins: [require('@tailwindcss/line-clamp'), require('@tailwindcss/typography')],
+	plugins: [require('@tailwindcss/line-clamp'), require('@tailwindcss/typography'), nextui()],
 };
