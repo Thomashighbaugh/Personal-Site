@@ -2,7 +2,8 @@
 title: Vice Color Scheme
 description: Behind much of my work that is personal or represents me in some way, I use a color scheme I designed for base16. This is a description of what it is and why I even went through the trouble of perfecting it.
 date: '2021-12-26'
-image: '/blog/vice-color-scheme/vice.png'
+banner: '/blog/vice-color-scheme/vice.png'
+banner_alt: Example usage of the Vice Color Scheme
 ---
 
 In the ever-evolving realm of software development, where functionality meets aesthetics, the importance of a well-designed and visually appealing terminal cannot be overstated. Enter "Vice," a base16 terminal color scheme that pays homage to the vibrant and colorful aura of the 70s and 80s Miami-inspired American culture. In this article, we'll dive into the allure of "Vice" and why it's a must-try for any developer seeking a stylish and nostalgic coding environment.

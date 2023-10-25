@@ -1,7 +1,8 @@
 ---
 title: Create a Typescript testing sandbox
-description: Create your first typescript testing sandbox!
-image: /blog/typescript/typescript.png
+description: Create a typescript sandbox for those new to typescript to get their hands dirty and see type definitions are not that scary!
+banner: /blog/typescript/typescript.png
+banner_alt: Typescript written over the brand colors associated with it
 date: 2022-03-25
 ---
 

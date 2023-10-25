@@ -1,12 +1,12 @@
 ---
-title: "doas v sudo"
-description: "A discussion about the sudo alternative doas comparing the two and why I switched to doas."
+title: doas v sudo
+description: >-
+  A discussion about the sudo alternative doas comparing the two and why I
+  switched to doas.
 date: '2023-04-29'
-image: '/blog/sudo/sudo.jpg'
-
+banner: /blog/sudo/sudo.jpg
+banner_alt: Banner for Doas vs. Sudo article
 ---
-
-
 The command-line interface is the battleground of Unix-like operating systems, where users and permissions reign supreme. At the heart of it all lies the trusted guardian: `sudo`. But there's a contender in the ring, a newcomer called `doas`, ready to challenge the status quo. In this article, we'll delve into the epic showdown between `sudo` and `doas` and explore why I made the switch to the underdog of the terminal world.
 
 ## The Tale of `sudo` and `doas`
@@ -50,39 +50,3 @@ While seemingly minor, the act of typing `doas` versus `sudo` can be a game-chan
 In the battle between `sudo` and `doas`, the latter emerges as a compelling contender. Its advantages in simplicity, security, portability, lightweightness, and ergonomics make it a worthy choice for systems administrators and Linux enthusiasts alike. While `sudo` remains a staple tool for managing permissions, don't underestimate the potential of `doas`. It might just be the perfect fit for your organization, ensuring a secure and seamless terminal experience.
 
 If you're a fan of Linux and adore the elegance of `doas`, give it a try and see if it aligns with your terminal-centered lifestyle. The terminal awaits, and the choice is yours!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

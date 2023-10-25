@@ -2,7 +2,8 @@
 title: Mastering Layouts in AwesomeWM
 description: The bling library is great, but I find a lot of it is unnecessary for my uses and while I love the mstab layout, I don't love the tab bar it provides. Instead let's make our own layout without the tab bar or bloat!
 date: 2021-09-01
-image: /blog/stack-layout-awesomewm/aweesome-stack.png
+banner: /blog/stack-layout-awesomewm/aweesome-stack.png
+banner_alt: "Awesome Stack Layout in Action"
 ---
 # Mastering Layouts in AwesomeWM: Create Your Own Tabless mstab
 

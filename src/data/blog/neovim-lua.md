@@ -1,5 +1,6 @@
 ---
-image: /blog/neovim/neovim.png
+banner: /blog/neovim/neovim.png
+banner_alt: "NeoVim in action"
 title: NeoVim Bleeding Edge Installation
 description: A guide for how to set up NeoVim with all of its really awesome new features, like Lua configuration that makes NeoVim much faster and true rival to an IDE.
 date: 2021-07-04

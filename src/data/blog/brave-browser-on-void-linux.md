@@ -1,5 +1,6 @@
 ---
-image: /blog/brave_on_void/void.png
+banner: /blog/brave_on_void/void.png
+banner_alt: "Brave logo on brand colored background"
 title: Installing Brave Browser on Void Linux
 description: An inductive discussion about the means of accessing out-of-repo packages on Void Linux
 date: 2021-12-28

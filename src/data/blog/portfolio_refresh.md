@@ -1,5 +1,6 @@
 ---
-image: /blog/portfolio/banner_portfolio.png
+banner: /blog/portfolio/banner_portfolio.png
+banner_alt: "Banner custom designed with the new logo I am using for myself"
 title: Portfolio Refresh
 description: "I have redesigned and updated my portfolio website, where this blog is hosted from. This post describes some of the new features and my motivation for this update."
 date: 2023-01-30
@@ -29,7 +30,7 @@ The website's visual appeal extends to embracing contemporary design trends. Whi
 
 ### New SVG Background
 
-A fresh background image from [Pattern Monster](https://pattern.monster/) has replaced the previous one sourced from [Hero Patterns](heropatterns.com/). This change injects a refreshing visual twist to the site. The SVG pattern was effortlessly integrated into the `background:` CSS attribute, seamlessly adapting to both light and dark modes while preserving its original appeal.
+A fresh background banner from [Pattern Monster](https://pattern.monster/) has replaced the previous one sourced from [Hero Patterns](heropatterns.com/). This change injects a refreshing visual twist to the site. The SVG pattern was effortlessly integrated into the `background:` CSS attribute, seamlessly adapting to both light and dark modes while preserving its original appeal.
 
 ### Unleashing the GitHub API
 

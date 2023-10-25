@@ -1,5 +1,6 @@
 ---
-image: /blog/git/octocat.png
+banner: /blog/git/octocat.png
+banner_alt: "The octocat in education apparel"
 title: Get the Git
 description: A quick, down and dirty introduction to the Git version control system and its usage within thecontext of Github
 date: 2019-09-05

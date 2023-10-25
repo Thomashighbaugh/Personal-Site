@@ -2,7 +2,8 @@
 title: AwesomeWM Remember Geometry
 description: Using client.connect_signal you can insure that after maximizing a window, it will be restored to its original size and position. Doing this doesn't require much in terms of code but is a quality of life feature you'll be glad to have.
 date: '2021-09-01'
-image: /blog/remember-geometry-awesomewm/aweesome-geo.png
+banner: /blog/remember-geometry-awesomewm/aweesome-geo.png
+banner_alt:  "Awesome Geometry Banner"
 ---
 # Optimize Window Management in AwesomeWM
 

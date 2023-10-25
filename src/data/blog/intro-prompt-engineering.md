@@ -2,7 +2,8 @@
 title: An Introduction to Prompt Engineering 
 description: Recently I have been maximizing my productivity with generativee AI in a process called Prompt Engineering. This post introduces the subject and provides the necessary context for the reader to grasp the concept and begin their own journey. 
 date: 2023-01-27
-image: '/blog/intro-prompt-engineering/chatbot.jpg'
+banner: '/blog/intro-prompt-engineering/chatbot.jpg'
+banner_alt: "A picture of a representation of a chat bot"
 ---
 
 # Mastering the Art of Prompt Engineering: Crafting Conversational AI
