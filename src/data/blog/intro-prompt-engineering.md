@@ -1,11 +1,14 @@
 ---
-title: An Introduction to Prompt Engineering 
-description: Recently I have been maximizing my productivity with generativee AI in a process called Prompt Engineering. This post introduces the subject and provides the necessary context for the reader to grasp the concept and begin their own journey. 
-date: 2023-01-27
-banner: '/blog/intro-prompt-engineering/chatbot.jpg'
-banner_alt: "A picture of a representation of a chat bot"
+title: An Introduction to Prompt Engineering
+description: >-
+  Recently I have been maximizing my productivity with generativee AI in a
+  process called Prompt Engineering. This post introduces the subject and
+  provides the necessary context for the reader to grasp the concept and begin
+  their own journey.
+date: '2023-01-27'
+banner: /blog/intro-prompt-engineering/chatbot.jpg
+banner_alt: A picture of a representation of a chat bot
 ---
-
 # Mastering the Art of Prompt Engineering: Crafting Conversational AI
 
 In the dynamic landscape of AI and natural language processing, the art of prompt engineering has emerged as a pivotal skill. It empowers developers and data scientists to fine-tune their models, boost performance, and craft meaningful interactions. In this article, we'll embark on a journey to explore prompt engineering, diving into what it is, why it's essential, and how to harness its capabilities effectively.

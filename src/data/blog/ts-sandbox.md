@@ -1,11 +1,12 @@
 ---
 title: Create a Typescript testing sandbox
-description: Create a typescript sandbox for those new to typescript to get their hands dirty and see type definitions are not that scary!
+description: >-
+  Create a typescript sandbox for those new to typescript to get their hands
+  dirty and see type definitions are not that scary!
 banner: /blog/typescript/typescript.png
 banner_alt: Typescript written over the brand colors associated with it
-date: 2022-03-25
+date: '2022-03-25'
 ---
-
 # Exploring TypeScript: A Guide to Getting Started
 
 TypeScript (TS) is a powerful superset of JavaScript (JS) that offers developers the benefits of a statically typed language while maintaining compatibility with JavaScript. In this article, we will dive into the world of TypeScript, explore its key differences from JavaScript, and guide you through setting up a TypeScript project for seamless development.

@@ -1,9 +1,11 @@
 ---
-banner: "/blog/firefox-customization/banner.jpg"
-banner_alt: "Firefox logo in brand colors"
+banner: /blog/firefox-customization/banner.jpg
+banner_alt: Firefox logo in brand colors
 title: Firefox userChrome.js Modification
-description: A response to a Reddit question that surveys the world of Firefox userChrome.js customization which I have spent way too much time on.
-date: 2023-03-15
+description: >-
+  A response to a Reddit question that surveys the world of Firefox
+  userChrome.js customization which I have spent way too much time on.
+date: '2023-03-15'
 ---
 # Firefox Customization: Mastering user.js and userChrome.js
 

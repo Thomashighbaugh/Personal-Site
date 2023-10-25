@@ -1,11 +1,12 @@
 ---
 banner: /blog/git/octocat.png
-banner_alt: "The octocat in education apparel"
+banner_alt: The octocat in education apparel
 title: Get the Git
-description: A quick, down and dirty introduction to the Git version control system and its usage within thecontext of Github
-date: 2019-09-05
+description: >-
+  A quick, down and dirty introduction to the Git version control system and its
+  usage within thecontext of Github
+date: '2019-09-05'
 ---
-
 # Get the Git
 
 Whether you're a Linux enthusiast safeguarding your precious dotfiles or simply seeking an efficient way to back up your data, you'll find Git to be a versatile and developer-friendly solution. This tutorial will guide you through the process of using Git to secure your configurations efficiently.
@@ -77,7 +78,7 @@ You may be asked for your GitHub username and password.
 
 ## Downloading the Repository on Another System
 
-You've successfully backed up your configurations. Now, let's explore how to use these configurations on another system. 
+You've successfully backed up your configurations. Now, let's explore how to use these configurations on another system.
 
 **It's remarkably simple:**
 

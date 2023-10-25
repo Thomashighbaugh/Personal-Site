@@ -1,11 +1,13 @@
 ---
 banner: /blog/portfolio/banner_portfolio.png
-banner_alt: "Banner custom designed with the new logo I am using for myself"
+banner_alt: Banner custom designed with the new logo I am using for myself
 title: Portfolio Refresh
-description: "I have redesigned and updated my portfolio website, where this blog is hosted from. This post describes some of the new features and my motivation for this update."
-date: 2023-01-30
+description: >-
+  I have redesigned and updated my portfolio website, where this blog is hosted
+  from. This post describes some of the new features and my motivation for this
+  update.
+date: '2023-01-30'
 ---
-
 As a dedicated web developer, I've always been passionate about creating visually appealing and accessible websites. Recently, I embarked on a journey to revamp my portfolio site, aiming to harness the latest web technologies while ensuring top-notch accessibility for all users. In the ever-evolving realm of web development, staying current with the latest trends and techniques is key. By leveraging cutting-edge technologies like CSS Grid, CSS Flexbox, and responsive design, I aimed to craft a website that not only wows with its visual aesthetics but also functions seamlessly, catering to users of all abilities and disabilities. My ultimate goal? A showcase of my skills and talents wrapped in a user-friendly experience.
 
 ## Shaping My Vision

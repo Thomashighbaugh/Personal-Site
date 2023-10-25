@@ -1,11 +1,12 @@
 ---
 banner: /blog/brave_on_void/void.png
-banner_alt: "Brave logo on brand colored background"
+banner_alt: Brave logo on brand colored background
 title: Installing Brave Browser on Void Linux
-description: An inductive discussion about the means of accessing out-of-repo packages on Void Linux
-date: 2021-12-28
+description: >-
+  An inductive discussion about the means of accessing out-of-repo packages on
+  Void Linux
+date: '2021-12-28'
 ---
-
 # Installing Brave Browser on Void Linux: A Guide
 
 For those diving into the exciting world of Void Linux and craving the Brave browser experience, you're in luck. While Void Linux might not have Brave in its official repositories, there are a few methods you can employ to bring Brave into your Void Linux environment. In this article, we'll explore these methods and provide you with valuable insights into why Brave might not make its way into the official XBPS repositories anytime soon.

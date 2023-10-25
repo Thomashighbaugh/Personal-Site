@@ -1,11 +1,12 @@
 ---
 banner: /blog/neovim/neovim.png
-banner_alt: "NeoVim in action"
+banner_alt: NeoVim in action
 title: NeoVim Bleeding Edge Installation
-description: A guide for how to set up NeoVim with all of its really awesome new features, like Lua configuration that makes NeoVim much faster and true rival to an IDE.
-date: 2021-07-04
+description: >-
+  A guide for how to set up NeoVim with all of its really awesome new features,
+  like Lua configuration that makes NeoVim much faster and true rival to an IDE.
+date: '2021-07-04'
 ---
-
 NOTE: I now use NixOS, which makes very little easy but it at the very least makes this process as simple as installing NeoVim, but for many distros this is still not true, so this may still help you.
 
 # Mastering NeoVim: Get the Latest Git Version
