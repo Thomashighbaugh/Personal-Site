@@ -1,10 +1,8 @@
 ---
-title_prefix: Guide To
 title: Claude vs. ChatGPT
 description: I recently discovered Claude as an alternative chat bot that can be interfaced with via web browser and find it is offers some excellent features compared to ChatGPT that are worth considering for those working with these technologies that I go over in this article.
-date: "2023-07-20"
-banner: "/blog/claude-vs-chatgpt/banner.jpg"
-banner_alt: The rockem sockem robots toy that signifies the competition between the chatbots compared in the article.
+date: 2023-07-20
+image: "/blog/claude-vs-chatgpt/banner.jpg"
 ---
 
 # Claude vs. ChatGPT

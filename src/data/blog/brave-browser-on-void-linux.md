@@ -1,37 +1,46 @@
 ---
-banner_alt: Void Linux Logo
-banner: /blog/brave_on_void/void.png
-title_prefix: Guide To
+image: /blog/brave_on_void/void.png
 title: Installing Brave Browser on Void Linux
 description: An inductive discussion about the means of accessing out-of-repo packages on Void Linux
-date: '2021-12-28'
----
-> Note: This is a cross post with a response I made to someone on the Void Linux subreddit who was looking for a way to install Brave Browser on Void. I installed it, as stated below, to verify 2/3 methods were functional personally, then wrote this up after the discussion had died as a means of providing help to those who at some later date find themselves scouring the internet looking for an answer to this same question. See it as a gist [here](https://gist.github.com/Thomashighbaugh/ffee6596b04f6236c44caac625c88c11).
-
-## Installing Brave Browser on Void Linux
-
-For anyone curious in the future:
-
-Yes, you can relatively easily install brave browser on void linux, if that is somehow a non-negotiable for you fear not. There are three methods that I am aware of:
-
-1. Add [this template file](https://notabug.org/reback00/void-goodies/src/master/srcpkgs/brave-bin) to your fork of `void-packages` locally and build the `./xbps-src` package like any other.
-
-2. Use flatpak, which I need not explain since instructions are on the flathub listing itself. (Note: will be isolated from the system which can be a bit of a pain, especially using things like keepassxc)
-
-3. using the utility script `xdeb` [located here](https://github.com/toluschr/xdeb) to convert the `.deb` of Brave [found here](https://github.com/brave/brave-browser/releases) to a `xbps` package which the utility spits out a command for you to copy-paste to install it.
-
-I have tried both 2&3 personally, tested the browser functions and then uninstalled it as I have 0 desire to use it for anything (and it looks awful with my GTK theme) due to using a heavily modified (CSS & JS) Firefox.
-
+date: 2021-12-28
 ---
 
-### Why It Will Not Be in the XBPS Repos Anytime Soon
+# Installing Brave Browser on Void Linux: A Guide
 
-The developers are somewhat hostile to using build-server infrastructure to build any additional forks of Chromium or Firefox, as well as generally citing more variable reasons with the former ranging from patched code to the difficulty of packaging a browser and followed by warnings to those who would maintain (and cross compile) the thing.
+For those diving into the exciting world of Void Linux and craving the Brave browser experience, you're in luck. While Void Linux might not have Brave in its official repositories, there are a few methods you can employ to bring Brave into your Void Linux environment. In this article, we'll explore these methods and provide you with valuable insights into why Brave might not make its way into the official XBPS repositories anytime soon.
 
-These reasons are rather good, and we are ever so thankful for their efforts with maintaining the madhouse that is the repos after all. What they fail to mention is the above three alternatives maybe because its not recommended by them (I wouldn't know) or maybe because they don't know these are options.
+## Three Ways to Get Brave on Void Linux
 
-Whatever the case may indeed be, even with some dramatic musical chairs going on at the center of `void-linux` this policy has been stable, and unless significant changes occur involving the costs of build-server time or the Frankenstein's monsters that modern browsers are under-the-hood, don't expect any changes on this front and please spare them the unneeded issues raised (or comments posted) on the `void-packages` Github repo, after all we don't want them getting discouraged providing us such a wonderful service out of the kindness of their hearts as is now the case.
+### Method 1: Build from Source
 
----
+One of the primary ways to install Brave on Void Linux is by building it from source. Here's how you can do it:
 
-Just thought I would leave a clear and helpful blurb up for the community.
+1. Start by adding [this template file](https://notabug.org/reback00/void-goodies/src/master/srcpkgs/brave-bin) to your fork of `void-packages` locally.
+
+2. Build the `xbps-src` package just like you would with any other package. This method gives you control over the build process and allows you to customize it to your liking.
+
+### Method 2: Using Flatpak
+
+Flatpak provides another avenue to install Brave. Instructions can be found directly on the [Flathub listing](https://flathub.org/apps/details/com.brave.Browser). However, be aware that using Flatpak will isolate Brave from your system, which might lead to some inconveniences when using certain system-integrated tools like KeePassXC.
+
+### Method 3: xdeb Utility
+
+The third method involves the use of the `xdeb` utility, available [here](https://github.com/toluschr/xdeb). This nifty tool lets you convert the `.deb` package of Brave, found on their [official GitHub releases page](https://github.com/brave/brave-browser/releases), into an `xbps` package.
+
+Using `xdeb` is a breeze. Simply follow the provided instructions, and the utility will generate a command for you to copy-paste and install Brave. It's a quick and straightforward solution if you prefer convenience over building from source.
+
+I personally tested methods 2 and 3, ensuring the browser functions correctly before moving on. However, my preferences led me back to my heavily customized Firefox, thanks to CSS and JavaScript modifications.
+
+## Why Brave Won't Be in XBPS Repos Anytime Soon
+
+While it would be convenient to have Brave readily available in the XBPS repositories, there are a few significant reasons why it's not likely to happen soon.
+
+1. **Hostility to Building Additional Forks:** The developers behind Void Linux express reluctance when it comes to using build-server infrastructure to create additional forks of Chromium or Firefox. They cite issues like patched code and the complexity of packaging a browser. This position is understandable, given the complexities involved.
+
+2. **Stable Policy:** Despite some shifts in the Void Linux landscape, this policy remains stable. Unless there are substantial changes concerning the costs of build-server time or the intricate nature of modern web browsers, we shouldn't expect any shifts in this stance.
+
+3. **Alternatives Exist:** The three methods we've explored here are viable options for obtaining Brave, even if they aren't officially endorsed by Void Linux. While the developers may not officially recommend these alternatives, they are indeed options for users who want Brave on Void Linux.
+
+In conclusion, while we might wish for Brave to be readily available in the XBPS repositories, it's crucial to appreciate the hard work and dedication of the developers behind Void Linux. They provide us with an outstanding service out of the kindness of their hearts, and we shouldn't deter them with unnecessary issues or comments on the `void-packages` GitHub repo.
+
+This article aims to offer clarity and guidance for the Void Linux community, making it easier for users to access Brave while respecting the principles and practices of the Void Linux ecosystem.
