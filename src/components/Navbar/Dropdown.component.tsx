@@ -94,7 +94,7 @@ export function Dropdown({ children, items, position = 'top-left' }: StandardPro
 					>
 						<Menu.Items
 							className={clsx(
-								'absolute w-[calc(100vw-1rem)] sm:w-56 mt-2 bg-white bg-opacity-50 dark:bg-primary-900 dark:bg-opacity-50 backdrop-filter filter  backdrop-blur-sm border border-primary-100 dark:border-primary-500 rounded-md shadow-lg divide-y divide-primary-100 dark:divide-primary-500 focus:outline-none',
+								'menu-items',
 								position === 'top-left' && 'origin-top-left left-0',
 								position === 'top-right' && 'origin-top-right right-0',
 							)}
@@ -127,7 +127,7 @@ export function Dropdown({ children, items, position = 'top-left' }: StandardPro
 														);
 													case NavigationItemType.DIVIDER:
 														return (
-															<hr className="pb-2 mt-2 border-primary-100 dark:border-primary-500" />
+															<hr className="nav-divider" />
 														);
 													case NavigationItemType.LINK:
 														const external = item.external ?? false;
