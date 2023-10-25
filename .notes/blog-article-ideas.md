@@ -1,0 +1,21 @@
+# Blog Article Ideas
+
+- Prompt Engineering
+  - Introduction
+  - Styles of prompts 
+  - Manners and AI
+  - Average Median Human
+  - Resources and Finding More
+  - Stable Diffusion 2 prompts
+- NixOS flakes
+  - resources
+  - my configuration
+  - declarative configuration
+  - functional programming
+- AwesomeWM
+  - introducing the book
+  - functional programming
+    - currying in signals
+  - virtues of modular configuration
+  - why post configuration publicly
+  - Resources My List 

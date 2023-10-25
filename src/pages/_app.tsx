@@ -15,7 +15,7 @@ import { Theme } from '~/types';
 NProgress.configure({
 	easing: 'ease',
 	minimum: 0.3,
-	showSpinner: false,
+	showSpinner: true,
 	speed: 800,
 });
 
@@ -81,8 +81,8 @@ text-stroke: 1px #00000088;
 				}
 				#nprogress .bar {
 					height: 0.25rem;
-					background-color: ${colors.primary[500]};
-					color: ${colors.primary[900]};
+					background-color:#4d4d4d;
+					color: #d5d5d5;
 				}
 			`}</style>
 		</ThemeProvider>
