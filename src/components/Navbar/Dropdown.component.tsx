@@ -36,7 +36,7 @@ const StyledMenuItem = forwardRef<HTMLAnchorElement, MenuLinkProps>(function Sty
 				'flex items-center px-4 py-3 text-sm font-medium tracking-wide cursor-pointer default-transition',
 				active
 					? 'bg-primary-100/50 text-primary-900 dark:bg-primary-700/50 dark:text-white'
-					: 'text-primary-300 hover:text-primary-700 dark:hover:text-white',
+					: 'text-primary-300 hover:text-primary-700 dark:hover:text-primary-200 dark:text-white',
 				className,
 			)}
 			ref={ref}
@@ -77,7 +77,7 @@ function MenuLink({ children, href, onClick, ...rest }: MenuLinkProps): JSX.Elem
 
 export function Dropdown({ children, items, position = 'top-left' }: StandardProps): JSX.Element {
 	return (
-		<Menu as="div" className="relative inline-block text-left">
+		<Menu as="div" className="inline-block relative text-left">
 			{({ open }): JSX.Element => (
 				<>
 					<Menu.Button as={Fragment}>{children}</Menu.Button>
@@ -127,7 +127,7 @@ export function Dropdown({ children, items, position = 'top-left' }: StandardPro
 														);
 													case NavigationItemType.DIVIDER:
 														return (
-															<hr className="mt-2 pb-2 border-primary-100 dark:border-primary-500" />
+															<hr className="pb-2 mt-2 border-primary-100 dark:border-primary-500" />
 														);
 													case NavigationItemType.LINK:
 														const external = item.external ?? false;
