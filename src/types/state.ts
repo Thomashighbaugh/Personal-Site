@@ -1,4 +1,4 @@
 export interface Settings {
-	animations: boolean,
-	sound: boolean;
+  animations: boolean;
+  sound: boolean;
 }

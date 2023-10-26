@@ -1,51 +1,50 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { Pill } from '~/components';
+import { Pill } from "~/components";
 
-import type { FrontMatter } from '~/types';
+import type { FrontMatter } from "~/types";
 
 interface LatestProps {
-	frontmatter: FrontMatter;
+  frontmatter: FrontMatter;
 }
 
 export function Latest({ frontmatter }: LatestProps): JSX.Element {
-	const ariaLabel = `Read blog post: ${frontmatter.title}`;
-	const href = `/blog/${frontmatter.slug}`;
+  const ariaLabel = `Read blog post: ${frontmatter.title}`;
+  const href = `/blog/${frontmatter.slug}`;
 
-	return (
-		<Link aria-label={ariaLabel} href={href} passHref>
-			<a
-				aria-label={ariaLabel}
-				className="flex flex-col lg:flex-row mt-12 bg-white/75 dark:bg-primary-900/75 dark:border-primary-500 backdrop-filter backdrop-blur-sm rounded-2xl hover:shadow-xl cursor-pointer border-2 border-primary-100 transform motion-safe:hover:-translate-y-1 default-transition default-focus"
-				href={href}
-			>
-				{(frontmatter.banner_show ?? true) && (
-					<div className="relative flex justify-center my-auto w-full xl:w-2/4 h-48 border-b-2 sm:h-48 sm:border-0 sm:border-r-2 border-primary-100 dark:border-primary-500 overflow-hidden rounded-2xl rounded-b-none lg:max-w-xl lg:h-64 lg:rounded-l-2xl lg:rounded-r-none default-transition">
-						<div className="w-full h-full mb-8 bg-primary-200 dark:bg-primary-600 rounded-lg rounded-l-none lg:(rounded-l-lg rounded-r-none motion-safe:animate-pulse)" />
-						<Image
-							alt={frontmatter.banner_alt ?? frontmatter.title}
-							className="absolute top-0 left-0 w-full h-full rounded-lg rounded-b-none lg:(rounded-l-lg rounded-r-none) object-cover select-none"
-							draggable={false}
-							layout="fill"
-							src={frontmatter.banner}
-						/>
-					</div>
-				)}
-				<div className="flex flex-col flex-1 justify-evenly m-auto sm:m-0 pb-3 sm:p-1 sm:pt-0 lg:px-12 text-primary-300 dark:text-primary-400">
-					<h2 className="mt-6 mx-4 py-4 text-3xl sm:text-4xl lg:mt-0 lg:mx-0 lg:text-5xl font-bold line-clamp-4 text-primary-500 dark:text-white text-left blog-title">
-						{frontmatter.title || frontmatter.title}
-					</h2>
-					{((frontmatter.description && frontmatter.description_show) || true) && (
-						<p className="mt-6 lg:mt-0 mx-6 lg:mx-0 text-lg line-clamp-3">
-							{frontmatter.description || frontmatter.description}
-						</p>
-					)}
-					<div className="flex items-center mt-6 lg:mt-0 mx-6 lg:mx-0 pb-4 lg:pb-0">
-						<Pill.Date>{frontmatter.date}</Pill.Date>
-					</div>
-				</div>
-			</a>
-		</Link>
-	);
+  return (
+    <Link
+      aria-label={ariaLabel}
+      className="default-transition default-focus mt-12 flex transform cursor-pointer flex-col rounded-2xl border-2 border-primary-100 bg-white/75 backdrop-blur-sm backdrop-filter hover:shadow-xl motion-safe:hover:-translate-y-1 dark:border-primary-500 dark:bg-primary-900/75 lg:flex-row"
+      href={href}
+    >
+      {(frontmatter.banner_show ?? true) && (
+        <div className="default-transition relative my-auto flex h-48 w-full justify-center overflow-hidden rounded-2xl rounded-b-none border-b-2 border-primary-100 dark:border-primary-500 sm:h-48 sm:border-0 sm:border-r-2 lg:h-64 lg:max-w-xl lg:rounded-l-2xl lg:rounded-r-none xl:w-2/4">
+          <div className="lg:(rounded-l-lg motion-safe:animate-pulse) mb-8 h-full w-full rounded-lg rounded-l-none rounded-r-none bg-primary-200 dark:bg-primary-600" />
+          <Image
+            alt={frontmatter.banner_alt ?? frontmatter.title}
+            className="lg:(rounded-l-lg rounded-r-none) absolute left-0 top-0 h-full w-full select-none rounded-lg rounded-b-none object-cover"
+            draggable={false}
+            layout="fill"
+            src={frontmatter.banner}
+          />
+        </div>
+      )}
+      <div className="m-auto flex flex-1 flex-col justify-evenly pb-3 text-primary-300 dark:text-primary-400 sm:m-0 sm:p-1 sm:pt-0 lg:px-12">
+        <h2 className="blog-title mx-4 mt-6 line-clamp-4 py-4 text-left text-3xl font-bold text-primary-500 dark:text-white sm:text-4xl lg:mx-0 lg:mt-0 lg:text-5xl">
+          {frontmatter.title || frontmatter.title}
+        </h2>
+        {((frontmatter.description && frontmatter.description_show) ||
+          true) && (
+          <p className="mx-6 mt-6 line-clamp-3 text-lg lg:mx-0 lg:mt-0">
+            {frontmatter.description || frontmatter.description}
+          </p>
+        )}
+        <div className="mx-6 mt-6 flex items-center pb-4 lg:mx-0 lg:mt-0 lg:pb-0">
+          <Pill.Date>{frontmatter.date}</Pill.Date>
+        </div>
+      </div>
+    </Link>
+  );
 }

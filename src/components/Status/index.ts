@@ -1,1 +1,1 @@
-export { Indicator } from './Indicator.component';
+export { Indicator } from "./Indicator.component";

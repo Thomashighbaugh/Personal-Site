@@ -1,34 +1,29 @@
-import clsx from 'clsx';
+import clsx from "clsx";
 
-
-import type { WithClassName } from '~/types';
+import type { WithClassName } from "~/types";
 
 interface IndicatorProps extends WithClassName {
-	color?: string;
-	pulse?: boolean;
+  color?: string;
+  pulse?: boolean;
 }
 
 export function Indicator({
-	className,
-	pulse = false,
+  className,
+  pulse = false,
 }: IndicatorProps): JSX.Element {
-	return (
-		<span
-			className={clsx(
-				'relative inline-flex justify-center items-center w-5 h-5 mr-3',
-				className,
-			)}
-		>
-			<span className="absolute flex h-3 w-3">
-				{pulse && (
-					<span
-						className="bg-primary-400 absolute inline-flex w-full h-full opacity-75 rounded-full motion-safe:animate-ping"
-					/>
-				)}
-				<span
-        className="relative bg-primary-600 inline-flex w-3 h-3 rounded-full"
-				/>
-			</span>
-		</span>
-	);
+  return (
+    <span
+      className={clsx(
+        "relative mr-3 inline-flex h-5 w-5 items-center justify-center",
+        className,
+      )}
+    >
+      <span className="absolute flex h-3 w-3">
+        {pulse && (
+          <span className="absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75 motion-safe:animate-ping" />
+        )}
+        <span className="relative inline-flex h-3 w-3 rounded-full bg-primary-600" />
+      </span>
+    </span>
+  );
 }
