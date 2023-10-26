@@ -12,7 +12,8 @@
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "react": [ "./node_modules/@types/react" ]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
