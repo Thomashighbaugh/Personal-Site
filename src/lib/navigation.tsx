@@ -35,8 +35,8 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
   [
     {
       type: NavigationItemType.LINK,
-      icon: "feather:globe",
-      text: "Contact Links",
+      icon: "feather:message-square",
+      text: "Contact",
       href: "https://biolink-delta.vercel.app",
       external: true,
     },
