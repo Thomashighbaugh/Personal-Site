@@ -26,18 +26,18 @@ interface MenuButtonIconProps extends WithClassName {
   direction?: "left" | "right";
 }
 
-const StyledMenuItem = forwardRef<HTMLAnchorElement, MenuLinkProps>(
-  function StyledMenuItem({ active, children, className, ...rest }, ref) {
+const StyledMenuItem = forwardRef<HTMLElement, MenuLinkProps>(
+  function StyledMenuItem({ active, children, className, ...rest }, ref: null) {
     return (
       <div
         className={clsx(
           "default-transition flex cursor-pointer items-center px-4 py-3 text-sm font-medium tracking-wide",
           active
-            ? "bg-primary-100/50 text-primary-900 dark:bg-primary-600/50 dark:text-white"
+            ? "bg-primary-100/50 text-primary-900 dark:bg-primary-700/50 dark:text-white"
             : "text-primary-300 hover:text-primary-700 dark:text-white dark:hover:text-primary-200",
           className,
         )}
-        ref={null}
+        ref={ref}
         {...rest}
       >
         {children}
