@@ -33,11 +33,11 @@ const StyledMenuItem = forwardRef<HTMLAnchorElement, MenuLinkProps>(
         className={clsx(
           "default-transition flex cursor-pointer items-center px-4 py-3 text-sm font-medium tracking-wide",
           active
-            ? "bg-primary-100/50 text-primary-900 dark:bg-primary-600/50 dark:text-primary-200"
+            ? "bg-primary-100/50 text-primary-900 dark:bg-primary-600/50 dark:text-white"
             : "text-primary-300 hover:text-primary-700 dark:text-white dark:hover:text-primary-200",
           className,
         )}
-        ref={ref}
+        ref={null}
         {...rest}
       >
         {children}
@@ -97,7 +97,7 @@ export function Dropdown({
   position = "top-left",
 }: StandardProps): JSX.Element {
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu as="div" className="inline-block relative text-left">
       {({ open }): JSX.Element => (
         <>
           <Menu.Button as={Fragment}>{children}</Menu.Button>
