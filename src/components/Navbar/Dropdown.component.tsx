@@ -26,10 +26,10 @@ interface MenuButtonIconProps extends WithClassName {
   direction?: "left" | "right";
 }
 
-const StyledMenuItem: React.FC<React.PropsWithChildren<MenuLinkProps>> = forwardRef<HTMLAnchorElement, MenuLinkProps>(
+const StyledMenuItem = forwardRef<HTMLAnchorElement, MenuLinkProps>(
   function StyledMenuItem({ active, children, className, ...rest }, ref) {
     return (
-      <div
+      <a
         className={clsx(
           "default-transition flex cursor-pointer items-center px-4 py-3 text-sm font-medium tracking-wide",
           active
@@ -41,7 +41,7 @@ const StyledMenuItem: React.FC<React.PropsWithChildren<MenuLinkProps>> = forward
         {...rest}
       >
         {children}
-      </div>
+      </a>
     );
   },
 );
