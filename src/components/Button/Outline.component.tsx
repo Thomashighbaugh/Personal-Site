@@ -28,8 +28,8 @@ export function Outline({
     <Link
       passHref
       className={clsx(
-        "dark:(border-primary-300 text-white) default-transition default-focus inline-flex w-full cursor-pointer items-center justify-center rounded-lg border-2 border-primary-600 bg-primary-800 bg-white  bg-opacity-10 bg-opacity-10 font-extrabold text-primary-700 filter backdrop-blur-sm backdrop-filter hover:bg-opacity-50 dark:hover:bg-opacity-50 dark:hover:text-primary-300 sm:w-auto",
-        small ? "px-4 py-1 text-sm" : "px-8 py-2",
+        " btn-outline text-black ",
+        small ? "px-4 py-2 text-sm w-auto" : "px-8 py-4",
         className,
       )}
       href={href}

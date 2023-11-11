@@ -97,7 +97,7 @@ export function Dropdown({
   position = "top-left",
 }: StandardProps): JSX.Element {
   return (
-    <Menu as="div" className="inline-block relative text-left">
+    <Menu as="div" className="relative inline-block text-left">
       {({ open }): JSX.Element => (
         <>
           <Menu.Button as={Fragment}>{children}</Menu.Button>

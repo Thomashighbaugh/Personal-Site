@@ -35,35 +35,11 @@ export default function HomePage(): JSX.Element {
     <Layout.Default>
       <div className="flex min-h-screen flex-col items-center justify-between py-4">
         <div className="space-2 grid w-full max-w-md text-center sm:max-w-lg md:sm:max-w-2xl lg:sm:max-w-3xl">
-          <Animate
-            as="h1"
-            animation={{
-              opacity: [0, 1],
-              scale: [0.25, 1],
-            }}
-            className="z-5 index-title col-start-1 row-start-1 content-center items-center justify-center self-center text-center align-middle text-4xl font-black tracking-tight text-white opacity-100 drop-shadow-md dark:text-white sm:text-4xl md:text-4xl lg:text-5xl"
-          >
-            <Pill.Standard>Thomas Leon Highbaugh</Pill.Standard>
-          </Animate>
           <Hero.SVG />
 
-          <Animate
-            as="p"
-            animation={{
-              opacity: [0, 1],
-              scale: [0.75, 1],
-            }}
-            className="mx-auto mb-2 mt-0 w-full items-center justify-center self-center text-center text-base font-black text-primary-700 drop-shadow-md dark:text-white sm:text-lg md:text-xl"
-            transition={{
-              delay: 1.25,
-            }}
-          >
-            {description}
-            <br />
-            {location}
-          </Animate>
+          <Hero.Card />
 
-          <div className="mt-6 flex w-full flex-col items-center justify-center space-y-1 sm:mt-2 sm:flex-row sm:space-x-4 sm:space-y-0">
+          <div className="mt-6 flex w-full flex-col items-center justify-center space-y-1  sm:flex-row sm:space-x-4 sm:space-y-0">
             {ACTIONS.map((action, index) => {
               if (action.type !== NavigationItemType.LINK) return null;
 
