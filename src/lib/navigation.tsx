@@ -36,10 +36,17 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
     {
       type: NavigationItemType.LINK,
       icon: "feather:message-square",
-      text: "Contact",
-      href: "https://biolink-delta.vercel.app",
+      text: "Social Links",
+      href: "https://links.thomasleonhighbaugh.me",
       external: true,
     },
+       {
+     type: NavigationItemType.LINK,
+     icon: "feather:message-square",
+     text: "Resume",
+     href: "https://resume.thomasleonhighbaugh.me",
+     external: true,
+   },
     social.twitter && {
       type: NavigationItemType.LINK,
       icon: "feather:linkedin",
