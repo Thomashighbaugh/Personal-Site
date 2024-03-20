@@ -2,7 +2,7 @@
 
 - Prompt Engineering
   - Introduction
-  - Styles of prompts 
+  - Styles of prompts
   - Manners and AI
   - Average Median Human
   - Resources and Finding More
@@ -18,4 +18,4 @@
     - currying in signals
   - virtues of modular configuration
   - why post configuration publicly
-  - Resources My List 
+  - Resources My List

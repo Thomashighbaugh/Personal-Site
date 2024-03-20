@@ -15,13 +15,13 @@
 
 </div>
 
-## Personal Ecosystem
+# thomasleonhighbaugh.me
 
 This site is the core of my personal branding online ecosystem, that has separate pieces leveraged on it that also function as stand alone sites (which is useful for giving out links without expecting third parties to wade through this site to quickly find what they need). 
 
 The other components of this ecosystem are:
-    - [my resume](https://resume-thomas-leon-highbaugh.vercel.app/) [github](https://github.com/Thomashighbaugh/resume)
-    - [biolink: a linktree alternative](https://biolink-delta.vercel.app/) [github](https://github.com/Thomashighbaugh/biolink)
+    - [resume.thomasleonhighbaugh.me](https://resume.thomasleonhighbaugh.me) [github](https://github.com/Thomashighbaugh/resume)
+    - [links.thomasleonhighbaugh.me](https://links.thomasleonhighbaugh.me) [github](https://github.com/Thomashighbaugh/biolink)
 
 
 ## Development
