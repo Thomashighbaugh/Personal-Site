@@ -1,0 +1,135 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import ArrowCard from "@components/ArrowCard"
+import StackCard from "@components/StackCard.astro"
+import { SITE, SOCIALS } from "@consts"
+
+const posts = (await getCollection("blog"))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0,3)
+
+const projects = (await getCollection("projects"))
+  .filter(project => !project.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0,3)
+
+const stack = [
+  { 
+    text: "Astro", 
+    icon: "astro", 
+    href: "https://astro.build" 
+  },
+  { 
+    text: "Javascript", 
+    icon: "javascript", 
+    href: "https://www.javascript.com" 
+  },
+  { 
+    text: "Typescript", 
+    icon: "typescript", 
+    href: "https://www.typescriptlang.org" 
+  },
+  { 
+    text: "Tailwind", 
+    icon: "tailwind", 
+    href: "https://tailwindcss.com" 
+  },
+]
+---
+
+<PageLayout title="About" description={SITE.DESCRIPTION}>
+  <div class="relative bg-white dark:bg-black">
+    <div class="mx-auto max-w-screen-lg p-5 space-y-12 pb-16 mt-16">
+
+      <!-- About Section -->
+      <section class="animate">
+        <article>
+          <p>I am a <b><i>passionate LLM advocate</i></b>, <b><i>Linux enthusiast</i></b>, <b><i>mentally agile software engineering autodidact</i></b>, <b><i>NixOS devotee</i></b>, <b><i>architectural purist</i></b>, and <b><i>perpetual systems thinker</i></b>.</p>
+          <p>My intellectual curiosity drives me to explore the intersection of human cognition and artificial intelligence, while my hands remain firmly planted in the pragmatic world of elegant code architecture. I find particular joy in the reproducible, declarative beauty of NixOS—because who doesn't appreciate a system that treats configuration as code and makes "it works on my machine" an antiquated phrase?</p>
+          <p>Philosophy meets practice</p>
+          <p>I believe that large language models represent a fundamental shift in how we approach problem-solving and knowledge synthesis. My work focuses on bridging the gap between theoretical AI capabilities and practical software engineering solutions, always with an eye toward systems that are as intellectually satisfying as they are functionally robust.</p>
+          <p>In the trenches</p>
+          <p>My autodidactic journey has taken me through the depths of functional programming paradigms, the elegance of immutable infrastructure, and the fascinating complexity of emergent AI behaviors. I approach each project as both an engineering challenge and an opportunity to push the boundaries of what's possible when human insight meets machine capability.</p>
+          <p>Despite being labeled an LLM advocate, I remain skeptical of the hype—drawing from the doctrine of three bodies in Indian philosophy, I believe true intelligence requires the integration of physical, subtle, and causal embodiments that current AI fundamentally lacks.</p>
+          <p>While I'm passionate about Linux and NixOS, I believe everyone should use whatever tools work best for them—my enthusiasm stems from personal preference, not evangelism.</p>
+        </article>
+      </section>
+
+      <div class="lg:grid lg:grid-cols-2 lg:gap-2 space-y-24 lg:space-y-0">
+        <!-- Blog Preview Section -->
+        <section class="animate  lg:border-black/50 dark:lg:border-white/50 border p-4">
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <h3 class="font-semibold text-black dark:text-white">
+                Recent posts
+              </p>
+              <a href="/blog" class="w-fit col-span-4 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+                <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                  All posts
+                </span>
+              </a>
+            </div>
+            <ul class="space-y-4">
+              {posts.map((post) => (
+                <li>
+                  <ArrowCard entry={post} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <!-- Project Preview Section -->
+        <section class="animate  lg:border-black/50 dark:lg:border-white/50 border p-4">
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <h3 class="font-semibold text-black dark:text-white">
+                Recent projects
+              </p>
+              <a href="/projects" class="w-fit col-span-4 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+                <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                  All projects
+                </span>
+              </a>
+            </div>
+            <ul class="space-y-4">
+              {projects.map((project) => (
+                <li>
+                  <ArrowCard entry={project} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Tech Stack Section -->
+      <section class="animate">
+        <div class="space-y-4">
+          <p class="font-semibold text-black dark:text-white">
+            Website build with
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {stack.map(item => (
+              <StackCard 
+                text={item.text}
+                icon={item.icon}
+                href={item.href}
+              />
+            ))}
+          </div>
+          <div>
+            Performing reactivity and statefulness, special guest
+            <a href="https://www.solidjs.com/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                SolidJS
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</PageLayout>
