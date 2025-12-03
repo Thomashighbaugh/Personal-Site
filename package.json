@@ -2,6 +2,9 @@
   "name": "thomasleonhighbaugh.me",
   "type": "module",
   "version": "6.2.1",
+  "engines": {
+    "node": ">=24.x"
+  },
   "scripts": {
     "dev": "astro dev",
     "dev:network": "astro dev --host",
