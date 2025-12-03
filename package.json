@@ -25,14 +25,12 @@
     "@astrojs/tailwind": "^5.1.5",
     "@tailwindcss/typography": "^0.5.19",
     "astro": "^4.16.19",
-    "astro-sphere": "link:",
     "clsx": "^2.1.1",
     "fuse.js": "^7.1.0",
     "sharp": "^0.33.5",
     "solid-js": "^1.9.10",
     "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.18",
-    "thomasleonhighbaugh.me": "link:",
     "typescript": "^5.9.3"
   }
 }
