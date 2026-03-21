@@ -11,148 +11,79 @@ tags:
   - MCP
 ---
 
-You know what the weirdest part of working with swarm engineering is? It's the moment when you realize you're not just writing code anymore — you're managing a simulated team. An orchestrator agent breaks down your task, spawns specialists to handle subtasks in parallel, and you're basically doing the work of a tech lead coordinating three or four engineers who happen to all be API calls to the same foundation model with different system prompts.
+The oddest thing about swarm engineering is how it shifts your role. Instead of writing every line, you break a problem into pieces, spawn specialized agents for those pieces, and review their work. It's like coordinating a tiny team — except the team members are API calls with different prompts.
 
-And the really wild part? The entire infrastructure to do this costs about ten dollars.
+And yes, in many cases the infrastructure can be surprisingly cheap.
 
-## What Swarm Engineering Actually Means
+## What swarm engineering means in practice
 
-At its core, swarm engineering is an **async, multi-agent pattern** where:
+Swarm engineering is an async, multi-agent pattern:
 
-1. A **central orchestrator** receives a high-level task
-2. It decomposes that task into smaller, independent subtasks
-3. It spawns **specialized subagents** — each with its own role, context, and instructions
-4. These subagents work in parallel (actual async API calls, not sequential)
-5. Each subagent reports back to the orchestrator when finished
-6. The orchestrator merges results, handles dependencies, and spawns the next wave
+1. An orchestrator takes a high-level task
+2. It decomposes the work into smaller subtasks
+3. It spawns specialized subagents with role-specific prompts
+4. Subagents run concurrently and report back
+5. The orchestrator merges results, resolves dependencies, and continues
 
-It's basically the actor model applied to LLMs. You get concurrency, isolation, and role specialization without spinning up actual infrastructure.
+Think of it as applying the actor model to text-based agents: you get parallelism and separation of concerns without provisioning servers for each role.
 
-## Why This Feels Like a Simulated Company
+## Why it can feel like running a tiny company
 
-Here's where it gets interesting. With tools like OpenCode, you can define agents with extremely fine-grained roles. Not just "write code" but:
+You can give agents precise roles instead of the generic "write code" prompt. For example:
 
-- **Backend engineer** (focused on API design, database schema)
-- **Frontend specialist** (knows React patterns, accessibility)
-- **DevOps engineer** (handles CI/CD, Docker, deployment)
-- **Code reviewer** (adversarial, nitpicky, catches edge cases)
-- **Documentation writer** (technical writing, user guides)
-- **QA tester** (writes test cases, finds regressions)
+- backend engineer: API design and schema work
+- frontend specialist: UI patterns and accessibility
+- devops: CI/CD and deployment scripts
+- code reviewer: adversarial checks and edge cases
+- doc writer: user guides and examples
+- QA tester: test cases and regression checks
 
-Each agent has its own system prompt, its own expertise, its own standards. You can even give them different personalities — make the reviewer sarcastic and hyper-critical, make the backend engineer obsessed with performance.
+Each agent runs with its own prompt and context. When you start a feature, the orchestrator might spawn a few agents to work in parallel. They finish at different times; the orchestrator resolves ordering and handles conflicts when agents touch related files.
 
-When you kick off a feature request, the orchestrator might spawn:
-- Agent A to refactor the database schema
-- Agent B to update the API endpoints
-- Agent C to adjust the frontend components
+That delegation-and-review loop starts to look a lot like lightweight engineering management.
 
-They all run at the same time. They finish at different speeds. The orchestrator tracks dependencies — Agent C can't start until Agent B finishes — and handles the merge conflicts when two agents touch related code.
+## Agents that act beyond the repo
 
-You're not writing code anymore. You're delegating work, reviewing pull requests from bots, and unblocking dependencies. It feels disturbingly similar to actual engineering management.
+With protocols that let agents call external tools, they can do more than edit files.
 
-## MCP: When Agents Leave the Codebase
+For example, an agent could query a Postgres schema, hit a staging API, post results to Slack, open a ticket, or make commits and open PRs.
 
-Here's where swarm engineering stops being a neat party trick and starts being genuinely powerful. With **Model Context Protocol (MCP)**, agents can call external tools and interact with the world beyond your filesystem.
+That capability makes the "simulated company" metaphor less fanciful. You can set up agents that monitor CI, update docs when APIs change, or run nightly checks and file issues.
 
-An agent can:
-- Query a Postgres database to understand your schema
-- Hit your staging API to test an endpoint
-- Post to Slack when a task finishes
-- Open a Jira ticket when it finds a bug
-- Send an email with a deployment summary
-- Fetch documentation from an internal wiki
-- Even **make commits and open PRs autonomously**
+I haven't wired up an agent to handle on-call for me, but it's technically possible: page an agent, let it read logs, suggest (or apply) a fix, deploy, and post a summary.
 
-This is where the "simulated company" metaphor gets uncomfortable. You can configure a swarm where:
-- The DevOps agent monitors your CI pipeline and auto-fixes failures
-- The documentation agent listens for API changes and updates your OpenAPI spec
-- The QA agent runs tests nightly and files issues for regressions
+## Costs and feasibility
 
-The agents aren't just generating code suggestions. They're **taking actions** — persistent, stateful, external interactions. They're behaving like actual team members with responsibilities.
+Two years ago this would have been prohibitively expensive. Now there are free or cheap inference options and that changes the math.
 
-You could, in theory, wire up a swarm that handles on-call rotations. An agent gets paged when your service goes down, reads logs, identifies the issue, applies a fix, deploys, and then posts a postmortem to Slack. All while you're asleep.
+Free and low-cost endpoints and subscriptions mean you can run multiple agents for small, frequent tasks without a huge bill. Your mileage will vary depending on models, token needs, and rate limits.
 
-I'm not saying I've done this. But the fact that it's *possible* with free-tier API access is kind of wild.
+For a medium refactor I run a planning call and a handful of worker calls; that can be a few hundred thousand tokens. Depending on provider and context length, that might cost a couple of dollars, not dozens.
 
-## The Cost Breakdown (Or: Why This Is Even Feasible)
+## How much control you have
 
-Let's be honest — if Claude API usage cost what it did two years ago, swarm engineering would be a research toy. Running six agents in parallel on a medium-sized task could burn through $50 in tokens before you blink.
+Where this differs from a simple chat interface is the control over agent behavior. You can:
 
-But the economics have shifted dramatically:
+- define agent types with focused system prompts
+- inject role-specific context ("you're a Rust engineer, avoid unwrap")
+- restrict tool access per agent
+- require verification steps, like running tests before finishing
+- configure review workflows and retry policies
 
-**Free inference endpoints:**
-- GitHub Models (with Copilot subscription): Free Sonnet 3.5 calls
-- OpenRouter free tier: $10 credit gets you surprisingly far
-- Gemini 1.5 Flash: Practically free for most workloads
-- DeepSeek, Qwen, Llama via Groq: Actually free with rate limits
+I keep a NixOS architect agent described in a short markdown file. It follows my conventions and refuses to write inline configs. Writing that file took minutes and pays off any time I refactor.
 
-**Cheap paid options:**
-- GitHub Copilot: $10/month, includes model access
-- OpenRouter pay-as-you-go: ~$3-15/month for serious usage
-- Nano GPT / smaller distilled models: Pennies per session
+## When it helps — and when it doesn't
 
-A typical swarm session for me:
-- Orchestrator: 1 long-context planning call (~50k tokens)
-- 4 parallel workers: ~20k tokens each
-- 1 reviewer pass per worker: ~15k tokens each
-- Total: ~200k tokens, maybe $2 worth of API calls
+Swarm engineering isn't a silver bullet. It works best when tasks can be broken into clear subtasks, when the codebase is reasonably structured, and when you can state acceptance criteria. It struggles with tightly coupled changes, tasks that need a single continuous vision, or when the request itself is vague.
 
-And that's for something that would have taken me half a day. The cost per unit of cognitive leverage is absurdly low.
+Use it to scale routine work — refactors, tests, migrations, docs. Keep the architectural decisions under your control.
 
-## The Control You Actually Get
+## Where this pattern could lead
 
-One of the things that makes swarm engineering feel different from "just using ChatGPT" is the **granularity of control** you have over each agent's behavior.
+The orchestrator-plus-specialist pattern applies beyond code. You could build swarms for content workflows, customer support triage, or data analysis pipelines — researcher, writer, editor agents working together.
 
-With OpenCode (and similar harnesses), you can:
-
-- Define **custom agent types** with specialized system prompts
-- Inject **role-specific context** (e.g., "you are a Rust engineer, never use `unwrap()`")
-- Control **tool access** per agent (the frontend agent can't touch database migrations)
-- Set **verification gates** (force agents to run tests before reporting completion)
-- Configure **review workflows** (all code must pass an adversarial review)
-- Adjust **retry limits** and failure handling per subtask
-
-I have a NixOS module architect agent that knows my flake structure, my naming conventions, my preferred abstractions. It will refuse to write inline config — everything goes in a module under `modules/`. It yells at me if I try to import something directly instead of enabling it via option.
-
-That agent is 40 lines of markdown in a file called `nixos-architect.md`. It took me ten minutes to write. And now every time I refactor my system config, I get a specialist who *actually knows my conventions* instead of generic Nix advice.
-
-The degree of customization you can achieve — without writing any actual code, just prose descriptions of what the agent should do — is kind of staggering.
-
-## When It Works (And When It Doesn't)
-
-Swarm engineering is not magic. There are failure modes:
-
-**It works well when:**
-- Tasks are decomposable into independent subtasks
-- Each subtask has clear acceptance criteria
-- The codebase has structure (agents struggle with spaghetti code)
-- You can specify what "done" looks like
-
-**It struggles when:**
-- The task requires deep, holistic understanding
-- Subtasks have tight coupling and hidden dependencies
-- You don't know what you want (garbage in, garbage out)
-- The changes require non-local reasoning across many files
-
-Swarm engineering is best for **horizontal scaling** of grunt work — refactoring, boilerplate generation, migrations, adding tests, updating docs. It is less good at **vertical problems** that require a single, coherent vision.
-
-You still need to be the architect. The swarm is your construction crew.
-
-## The Broader Implications
-
-Here's the thing that keeps me up at night: this pattern is not just for software development.
-
-Imagine a swarm configured for:
-- **Content creation**: Researcher agent gathers sources, writer drafts, editor revises, SEO specialist optimizes
-- **Customer support**: Triage agent categorizes tickets, specialist agents handle by domain, escalation agent pings humans for edge cases
-- **Data analysis**: Ingestion agent cleans data, stats agent runs models, visualization agent generates charts, report writer summarizes findings
-
-The **orchestrator + specialist** pattern is universal. And now that the compute cost to run it has dropped to nearly zero, the only barrier is designing the workflow.
-
-We're in this weird moment where the tooling is almost ahead of our ability to imagine what to do with it. The question isn't "can we build a simulated company with LLMs?" — it's "what do we want that company to do?"
-
-And the answer to that is starting to feel like: *whatever we can describe clearly enough*.
+Tools are maturing faster than our collective imagination for how to use them. The practical constraint now is designing good workflows and clear acceptance criteria.
 
 ---
 
-*If this sounds like science fiction, I promise it's not. The entire swarm setup I use daily is open source tooling, free API endpoints, and markdown files. The future is already here — it's just unusually cheap this time.*
+If this sounds far-fetched, it's not. My daily setup uses open-source tools, cheap inference endpoints, and a few markdown files describing agents. It makes some hard jobs simpler, and it feels oddly useful.

@@ -1,160 +1,130 @@
-# Thomas Leon Highbaugh
+thomasleonhighbaugh.me
 
-Thomas Leon Highbaugh is a modern, statically generated portfolio and blog built on cutting-edge web technologies, emphasizing performance, developer experience, and maintainable architecture.
+This is my personal website — a portfolio and a working example of the stack I use.
 
-## 🏗️ Technical Architecture
+Built with Astro, TypeScript, Tailwind CSS, and deployed on Vercel (or any similar host).
 
-### Core Framework & Build System
+## Technical architecture
 
-The site leverages **Astro** as its primary framework, utilizing its islands architecture to deliver optimal performance through selective hydration. Astro's file-based routing system manages page generation, while its content collections API provides type-safe content management for blogs, projects, and legal documents.
+Core framework and build
 
-The build process employs Astro's static site generation capabilities, pre-rendering all pages at build time to deliver maximum performance and SEO benefits. TypeScript compilation is integrated into the build pipeline with strict null checks enabled, ensuring robust type safety throughout the application.
+The site uses Astro with an islands approach: most pages are static HTML and small interactive pieces hydrate only when needed. Routing is file-based and content collections are typed for blogs, projects, and legal pages.
 
-### Styling & Design System
+Pages are pre-rendered at build time for predictable performance. TypeScript runs with strict checks to catch issues early.
 
-**Tailwind CSS** serves as the primary styling framework, configured with custom theme extensions including:
+Styling and design
 
-- **Typography System**: Extended with `@tailwindcss/typography` for rich content rendering
-- **Custom Animations**: CSS keyframe animations for `twinkle` and `meteor` effects creating dynamic visual elements
-- **Dark Mode**: Class-based dark mode implementation with seamless theme switching
-- **Custom Fonts**: Atkinson font family integration with fallback to system fonts
+Tailwind CSS handles most styling. Highlights:
 
-The design system emphasizes utility-first CSS with component-specific styling where necessary, maintaining consistency while allowing for flexible customization.
+- `@tailwindcss/typography` for post content
+- a few small, deliberate animations
+- class-based dark mode
+- Atkinson font with system fallbacks
 
-### Content Management & Type Safety
+The site favors utility classes and small, focused component styles.
 
-The site implements Astro's content collections system with Zod schema validation, providing:
+Content and types
 
-- **Blog Collection**: Typed content with title, summary, date, tags, and draft status
-- **Projects Collection**: Extended with demo and repository URLs
-- **Legal Collection**: Simplified schema for privacy and terms documents
-- **Work Collection**: Employment history with date ranges and role information
+Content uses Astro collections validated with Zod. Collections include:
 
-Content is authored in Markdown with MDX support for embedded components, enabling rich interactive content while maintaining the simplicity of Markdown authoring.
+- Blog: title, summary, date, tags, draft flag
+- Projects: demo and repo URLs
+- Legal: privacy and terms
+- Work: employment history and roles
 
-### Interactive Components & State Management
+Posts are written in Markdown; MDX is available for embedded components.
 
-SolidJS powers the site's interactive components, chosen for its fine-grained reactivity and minimal runtime overhead:
+Interactive components
 
-- **Search Functionality**: Implements Fuse.js for fuzzy search across blog posts and projects with real-time filtering
-- **Theme Management**: Reactive theme switching with persistence
-- **Navigation**: Dynamic drawer and header components with responsive behavior
+SolidJS powers small interactive pieces. Examples:
 
-The hybrid approach allows static content to remain purely HTML while enabling interactive features where needed, optimizing for both performance and user experience.
+- Fuse.js for client-side search
+- persistent theme switching
+- responsive drawer and header
 
-### Search & Discovery
+Most pages remain static; interactive bits hydrate independently to keep the bundle small.
 
-The search system utilizes **Fuse.js** for client-side fuzzy search capabilities:
+Search
 
-```typescript
-const fuse = new Fuse(data, {
-  keys: ["slug", "data.title", "data.summary", "data.tags"],
-  includeMatches: true,
-  minMatchCharLength: 2,
-  threshold: 0.4,
-})
-```
+Client-side search uses Fuse.js and looks across titles, summaries, tags, and slugs with a moderate fuzzy threshold.
 
-This configuration searches across content titles, summaries, tags, and slugs with configurable match thresholds and minimum query lengths.
+Visual effects
 
-### Visual Effects & Animation System
+Lightweight SVG and CSS animations provide atmosphere without slowing things down. Timings are tuned to avoid jank on mid-range devices.
 
-The site features custom CSS animations and JavaScript-driven visual effects:
+SEO and web standards
 
-- **Twinkling Stars**: Procedurally generated SVG stars with CSS keyframe animations
-- **Meteor Shower**: Animated background elements using transform and opacity transitions
-- **Smooth Transitions**: Hardware-accelerated CSS transitions for theme changes and interactions
+The site uses semantic HTML, Open Graph meta tags, RSS feeds, an auto-generated sitemap, and basic Schema.org markup.
 
-Animation timing and easing are carefully tuned for 60fps performance across devices.
+Development
 
-### SEO & Web Standards
+Tooling focuses on fast feedback:
 
-The architecture prioritizes web standards and SEO optimization:
+- TypeScript with strict checks
+- ESLint for linting
+- HMR for quick iteration
+- local network dev for testing on devices
 
-- **Semantic HTML**: Proper heading hierarchy and semantic elements
-- **Open Graph**: Dynamic meta tag generation for social media sharing
-- **RSS/Atom Feeds**: Automatically generated XML feeds for blog and project content
-- **Sitemap Generation**: Automated sitemap creation via Astro's sitemap integration
-- **Structured Data**: Schema.org markup for enhanced search engine understanding
+Deployment and performance
 
-### Development Environment
+The build output is static assets ready for CDN or edge hosting. Images are optimized with Sharp and code is split to keep initial loads small.
 
-The development stack emphasizes modern tooling and developer experience:
+Configuration
 
-- **TypeScript**: Strict type checking with path mapping for clean imports
-- **ESLint**: Code linting with modern ECMAScript rules
-- **Hot Module Replacement**: Instant development server updates
-- **Network Development**: Local network access for cross-device testing
+Environment-specific constants live in `src/consts.ts` and provide site metadata, navigation, social links, and page settings.
 
-### Deployment & Performance
+## Deploy
 
-The static build output is optimized for edge deployment:
+Use the Vercel or Netlify one-click buttons in the repo, or deploy the static output to any CDN-compatible host.
 
-- **Asset Optimization**: Automatic image optimization via Sharp
-- **Bundle Splitting**: Intelligent code splitting for optimal loading
-- **CDN Ready**: Static assets suitable for global CDN distribution
-- **Edge Compatibility**: Serverless deployment ready for Vercel, Netlify, and similar platforms
+## Development commands
 
-### Configuration Management
-
-Environment-specific configuration is centralized in `src/consts.ts`, providing type-safe access to:
-
-- Site metadata and branding
-- Navigation structure
-- Social media links
-- Page-specific configurations
-
-This approach ensures consistency across components while maintaining flexibility for environment-specific deployments.
-
-## 🚀 Deploy
-
-[![Deploy with Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere)  [![Deploy with Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere)
-
-## 💻 Development Commands
-
-All commands are run from the root of the project, from a terminal:
+Run these from the project root:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run dev:network`     | Starts dev server on local network               |
-| `npm run sync`            | Generates TypeScript types for all Astro modules|
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run sync`            | Generates TypeScript types for Astro collections |
+| `npm run build`           | Build the production site to `./dist/`           |
+| `npm run preview`         | Preview your build locally before deploying      |
 | `npm run preview:network` | Starts preview server on local network           |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm run astro ...`       | Run Astro CLI commands                           |
 | `npm run lint`            | Run ESLint                                       |
 | `npm run lint:fix`        | Auto-fix ESLint issues                           |
 
-## 📚 Technical Dependencies
+## Technical dependencies
 
-### Core Framework
-- **Astro** `^4.4.13` - Static site generator with islands architecture
-- **SolidJS** `^1.8.15` - Reactive UI library for interactive components
-- **TypeScript** `^5.3.3` - Type-safe JavaScript development
+Core framework
 
-### Styling & UI
-- **Tailwind CSS** `^3.4.1` - Utility-first CSS framework
-- **@tailwindcss/typography** `^0.5.10` - Rich text styling plugin
-- **clsx** `^2.1.0` - Conditional class name utility
-- **tailwind-merge** `^2.2.1` - Tailwind class merging utility
+- Astro `^4.4.13`
+- SolidJS `^1.8.15`
+- TypeScript `^5.3.3`
 
-### Content & Search
-- **@astrojs/mdx** `^2.1.1` - MDX support for Astro
-- **Fuse.js** `^7.0.0` - Fuzzy search library
-- **@astrojs/rss** `^4.0.5` - RSS feed generation
-- **@astrojs/sitemap** `^3.1.1` - XML sitemap generation
+Styling and UI
 
-### Build Tools & Optimization
-- **@astrojs/check** `^0.5.6` - TypeScript checking for Astro files
-- **Sharp** `^0.33.2` - High-performance image processing
+- Tailwind CSS `^3.4.1`
+- `@tailwindcss/typography` `^0.5.10`
+- clsx `^2.1.0`
+- tailwind-merge `^2.2.1`
 
-## 🏛️ License
+Content and search
+
+- `@astrojs/mdx` `^2.1.1`
+- Fuse.js `^7.0.0`
+- `@astrojs/rss` `^4.0.5`
+- `@astrojs/sitemap` `^3.1.1`
+
+Build tools and optimization
+
+- `@astrojs/check` `^0.5.6`
+- Sharp `^0.33.2`
+
+## License
 
 MIT
 
-## ✨ Acknowledgement
+## Acknowledgement
 
-Architecture inspired by modern static site generation principles and performance-first web development practices.
+Architecture inspired by static-site best practices and a focus on performance.
