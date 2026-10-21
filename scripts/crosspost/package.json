@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "markdown-it": "^14.1.0",
+    "markdown-it": "^14.3.3",
     "pino": "^9.5.0",
     "undici": "^7.0.0"
   },
